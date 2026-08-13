@@ -1,0 +1,486 @@
+\subsection{Review of Vector Calculus}
+    \subsubsection{Vectors and Scalars}
+        This is basically just a summary of the Physics 116 curriculum. Anyway. 
+        
+        A \textbf{scalar} $a\in\R$ is a quantity with magnitude. For the purposes of this notes, scalars are denoted in italic script. A scalar is in the set of real numbers
+        \begin{equation}
+            a\in\R
+        \end{equation}
+        An example of a scalar is the temperature in a room, $T_0$, time $t$, and other single valued quantities. 
+
+        A \textbf{vector} is a collection of scalars, usually indicating magnitude and direction. We represent vectors in math bold face. A vector of $n$ dimensions is represented by $n$ numbers, $v_i$, where $i$ represents the $i$-th element of the vector. A vector can be a column vector or a row vector.
+        \begin{equation}
+            \vf{v}=\bmat{v_1\\v_2\\v_3}\qquad \vf{v}^\top=\bparnmat{v_1&v_2&v_3}
+        \end{equation}
+        An example of a vector is a particle's position in space 
+        \begin{equation}
+            \vf{r}=\bmat{x\\y\\z}
+        \end{equation}
+        A tensor is a generalization of vectors. It is essentially an $n$ dimmensional (More commonly called rank) vector. This is generally beyond the scope of this notes, but I included it for generality. An example of a tensor is the stress energy tensor. 
+        \begin{equation}
+            T=\bmat{
+                T_{11}&T_{12}\\
+                T_{21}&T_{22}
+            }
+        \end{equation}
+        It's essentially a matrix, but more general. A matrix is a rank 2 tensor. A vector is a rank 1 tensor, while a scalar is a rank 0 tensor.
+        \subsubsubsection{Vector operations}
+            There are several operations that can be done with vectors and scalars. Here are some of them.
+            \paragraph{Scalar multiplication}
+                A vector multiplied by a scalar is equivalent to multiplying all its elements with the scalar. As a shorthand, we can represent vectors and all it's elements with one expression $\vf{v}=v_i$, where the index $i$ runs over from 1 to $n$. Given $a\in\R$, a scalar multiplication is
+                \begin{equation}
+                    a\vf{v}=\bmat{a v_1\\av_2\\av_3}=av_i
+                \end{equation}
+
+            \paragraph{Dot Product}
+                The dot product of two vectors is the sum of the product of the $i$-th element of each vector. For example, given a vector $\vf{v}=v_i$ and $\vf{u}=u_i$, their dot product is
+                \begin{equation}
+                    \vf{u}\cdot\vf{v} = 
+                    u_1v_1 + u_2v_2+u_3v_3 = \sum_i u_i v_i
+                \end{equation}
+                We will encounter a lot of these sums in general, so we introduce the \textit{Einstein summation convention} where, if we see repeated indices, this implies that the expression is being summed over that index. As such, we can more conveniently define a dot product as 
+                \begin{equation}
+                    \vf{u}\cdot\vf{v} = u_i v_i
+                \end{equation}
+            \paragraph{Cross Product} 
+                The cross product is pretty hard to define, but in general, it is shown the vector which is the determinant of the matrix of the vector elements. But first, we introduce the following vectors 
+                \begin{equation}
+                    \ihat =\bmat{1\\0\\0},\quad 
+                    \jhat =\bmat{0\\1\\0},\quad
+                    \khat =\bmat{0\\0\\1}
+                \end{equation}
+                There are known as basis vectors of the vector space. Basically unit vectors of a single dimension. We can represent any vector in $\R^3$ in this notation.
+                \begin{equation}
+                    \vf{v} = \bmat{v_1\\v_2\\v_3} = v_1\ihat + v_2\jhat + v_3\khat 
+                \end{equation}
+                In that definition, then, we often see the dot product defined as
+                \begin{equation}
+                    \vf{u}\times\vf{v} = 
+                    \abs{\mqty{
+                        \ihat & \jhat  & \khat \\
+                        u_1 & u_2 & u_3 \\
+                        v_1 & v_2 & v_3 \\
+                    }} = (u_2v_3-u_3v_2)\ihat-(u_1v_3-u_3v_1)\jhat+(u_1v_2-u_2v_1)\khat
+                \end{equation}
+                \paragraph{The Kronecker Delta and LeviCivita operators}
+                The Kronecker delta is an operator which basically turns on or of a product depending on it's indices. Formally, it is defined as 
+                \begin{equation}
+                    \krondelta{ij}=\begin{cases}
+                        1\text{ if $i=j$}\\ 
+                        0\text{ if $i\neq j$}
+                    \end{cases}
+                \end{equation} 
+                and the Levi-Civita symbol is defined to be 1 if the indices are an even permutation of $i,j,k$ and zero if it is not. 
+                \begin{equation}
+                    \epsilon_{ijk}=\begin{cases}
+                        1&\text{ if } ijk\text{ is }123, 312, 231\\
+                        -1&\text{ if } ijk\text{ is }132, 321, 213\\
+                        0&\text{ if $i=j$ or $j=k$ or $i=k$}
+                    \end{cases}
+                \end{equation}
+                with this, we can more succintly define the dot and cross product as 
+                \begin{equation}
+                    \vf{u}\cdot\vf{v} = \delta_{ij}u_iv_j
+                \end{equation}
+                \begin{equation}
+                    [\vf u \times \vf v]_k = \epsilon_{ijk}  u_i v_j
+                \end{equation}
+        \subsubsection{Vector Properties}
+            \subsubsubsection{The Vector Norm} 
+                The vector norm is the \textit{length} of the vector, so to speak. It is defined as 
+                \begin{equation}
+                    \norm{\vf v} = \sqrt{\vf{v}^2}=\sqrt{\vf v \cdot \vf v}
+                \end{equation}
+                Note that we define the square of a vector to be its dot product with itself. $\vf v^2 = \vf v $
+            \subsubsubsection{Vector Axioms} 
+            Technically, a vector is really just defined as an element of a vector space, which is an abstract space which obeys the following properties. 
+            
+            Let $\vf{u}$,$\vf{v}$ and $\vf{w}$ be vectors in $\mathbb{V}$. The space $\mathbb{V}$ is a vector space if the following conditions hold 
+        
+            These operations are defined
+            \begin{enumerate}
+                \item Vector addition, $+:V\times \bb V\to \bb V$
+                \item Scalar multiplication, $\cdot:\R\times \bb V\to \bb V$
+            \end{enumerate}
+            and these conditions must hold
+            \begin{enumerate}
+                \item Closure under addition, $\vf{u}+\vf{v}\in\bb{V}$
+                \item Commutativity, $\vf{u}+\vf{v}=\vf{v}+\vf{u}$
+                \item Associativity, $(\vf{u}+\vf{v})+\vf{w}=\vf{v}+(\vf{u}+\vf{w})$
+                \item Additive identity (zero vector $\hat{0})$, $\forall\vf{v}\in\bb{V},\exists\hat{0}\in\bb{V}:\vf{v}+\hat{0}=\vf{v}$
+                \item Additive inverse, $\forall\vf{v}\in\bb{V},\exists-\vf{v}\in\bb{V}:\vf{v}+(-\vf{v})=\hat{0}$
+                \item Closure under scalar multiplication, $\forall a \in\R\land \vf{v}\in\bb{V}, a\vf{v}\in\bb{V}$
+                \item Distributivity of scalar multiplication under vector addition, $a(\vf{u}+\vf{v})=a\vf{u}+a\vf{v}$
+                \item Distributivity of scalar multiplication under scalar addition, $\forall a,b\in\R, (a+b)\vf{v}=a\vf{v}+b\vf{v}$
+                \item Associativity of scalar multiplication, $a(b\vf{v})=(ab)\vf{v}$
+                \item Existence of multiplicative identity, $\forall \vf{v}\in\bb{V},\exists1:1\cdot \vf{v}=\vf{v}$
+            \end{enumerate}
+            \subsubsubsection{Vector derivatives and Integrals}
+            To take the derivative of a vector, one must apply the derivative on all of it's components, just like normal derivatives. Chain rule and other calculus methods still apply.
+            \begin{equation}
+				\frac{d\vf v}{dt} = \bmat{
+					\dfrac{dv_1}{dt}\\[10pt]
+					\dfrac{dv_2}{dt}\\[10pt]
+					\dfrac{dv_3}{dt}}
+				=\dif{v_i}{t}
+            \end{equation}
+            Similarly, the same applies for integration, along with path integrals and the like which will not be part of this section.
+            \begin{equation}
+				\int \vf v \df t = \bmat{\int v_1 \df t\\[8pt]  \int v_2 \df t\\[8pt] \int v_3 \df t} =  \int v_i \df  t
+            \end{equation}
+    \subsubsection{Field}
+        A \textit{field} is a function that assigns a value to every point in a defined space.  
+        It can be:
+        \begin{itemize}
+            \item \textbf{Scalar field:} assigns a scalar value, e.g., temperature $T(x,y,z)$. This returns a space where every point has a scalar value.
+            \item \textbf{Vector field:} assigns a vector value, e.g., velocity $\mathbf{v}(x,y,z)$. This returns a space where every point has a vector value. 
+        \end{itemize}
+        \begin{figure}[H]
+            \centering
+            \subfloat[A scalar field]{
+            \includegraphics[width=3in]{scalarfield.png}
+            \label{}
+            }
+            \hspace{0.5em}
+            \subfloat[A vector field]{
+            \includegraphics[width=2.25in]{vectorfield.png}
+            \label{}
+            }
+            \caption{Types of Fields}
+            \label{}
+        \end{figure}
+    \subsubsection{The Del Operator}
+        The Del operator $\nabla$ is the generalization of the derivative. We define it as a vector of the partial derivative with respect to the dimension, i.e.
+        \begin{equation}
+            \nabla = \pd{}{x}\ihat + \pd{}{y}\jhat + \pd{}{z}\khat = \bmat{\pd{}{x}\\[4pt]\pd{}{y}\\[4pt]\pd{}{z}}
+        \end{equation}
+        As a shorthand, we can represent it as $\displaystyle \pd{}{x_i}$, where $x_i$ is the general dimension. This can be further shorthanded to $\p_i$. Thus, a compact vector definition of the Del operator is 
+        \begin{equation}
+            \nabla = \partial_i
+        \end{equation}
+    \subsubsection{Gradient}
+        We often represent fields as $\psi(x,y,z)$; however, we can just make $x, y, z$ into a vector $\mathbf{r} = (x, y, z)$. In that case, the physical interpretation of the gradient becomes clearer.
+        
+        The \textbf{gradient} of a scalar field $\phi(\mathbf{r})$ is a vector field that points in the direction of the greatest rate of increase of $\phi$:
+        \begin{equation}
+            \nabla \phi = 
+            \frac{\partial \phi}{\partial x} \ihat +
+            \frac{\partial \phi}{\partial y} \jhat +
+            \frac{\partial \phi}{\partial z} \khat
+            = 
+            \begin{bmatrix}
+                \dfrac{\partial \phi}{\partial x}\\[4pt]
+                \dfrac{\partial \phi}{\partial y}\\[4pt]
+                \dfrac{\partial \phi}{\partial z}
+            \end{bmatrix}
+        \end{equation}
+        It measures how rapidly the scalar field changes and in which direction this change is maximum. For example, in a temperature field $T(x,y,z)$, the gradient $\nabla T$ points in the direction where temperature increases most rapidly, and its magnitude gives the rate of increase per unit distance.
+        
+        In index notation, we can write
+        \begin{equation}
+            \grad \phi = \partial_i \phi,
+        \end{equation}
+        where $\partial_i$ denotes differentiation with respect to $x_i$.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6in]{gradient.png}
+            \caption{A scalar field and its gradient}
+            \label{fig:placeholder}
+        \end{figure}
+    \subsubsection{Divergence}
+        The \textbf{divergence} of a vector field $\mathbf{F}(\mathbf{r})$ measures the net flux per unit volume leaving a point:
+        \begin{equation}
+            \nabla \cdot \mathbf{F} =
+            \frac{\partial F_x}{\partial x} +
+            \frac{\partial F_y}{\partial y} +
+            \frac{\partial F_z}{\partial z}.
+        \end{equation}
+        A positive divergence indicates a \textit{source} (more field lines leaving than entering), while a negative divergence indicates a \textit{sink} (field lines converging). If $\nabla \cdot \mathbf{F} = 0$, the field is said to be \textbf{solenoidal}, meaning it has no net flux out of any closed surface.
+        
+        This operation is essentially the dot product of the del operator with the vector field:
+        \begin{equation}
+            \grad \cdot \mathbf{F} = \delta_{ij}\, \partial_i F_j,
+        \end{equation}
+        
+        Divergence appears naturally in continuity equations. For instance, $\nabla \cdot \mathbf{E} = \rho/\varepsilon_0$ in Gauss’s law for electricity, where it represents the electric charge density acting as a source of the field.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6in]{divergence.png}
+            \caption{Examples of vector fields with positive and negative divergences}
+            \label{fig:placeholder}
+        \end{figure}
+    \subsubsection{Curl}
+        The \textbf{curl} of a vector field $\mathbf{F}(\mathbf{r})$ measures its local rotation or the tendency to induce circulation around a point:
+        \begin{equation}
+            \nabla \times \mathbf{F} =
+            \begin{vmatrix}
+                \hat{\mathbf{i}} & \hat{\mathbf{j}} & \hat{\mathbf{k}} \\
+                \partial/\partial x & \partial/\partial y & \partial/\partial z \\
+                F_x & F_y & F_z
+            \end{vmatrix}.
+        \end{equation}
+        The direction of $\nabla \times \mathbf{F}$ gives the axis of rotation (using the right-hand rule), and its magnitude gives the rotational strength.
+        
+        This is equivalent to taking the cross product of the del operator with the vector field:
+        \begin{equation}
+            [\curl \mathbf{F}]_k = \epsilon_{ijk}\, \partial_i F_j,
+        \end{equation}
+        
+        In physical contexts, the curl represents quantities such as the rotational velocity of a fluid or the magnetic field induced by a current. For example, in electromagnetism, $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$ expresses Faraday’s law of induction.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6in]{curl.png}
+            \caption{Example of vector fields with positive and negative curl}
+            \label{fig:placeholder}
+        \end{figure}
+		\subsubsection{Laplacian}
+		The \textbf{Laplacian} operator acts on scalar or vector fields and is defined as the divergence of the gradient:
+		\begin{equation}
+			\nabla^2 \phi = \nabla \cdot (\nabla \phi)
+			= \frac{\partial^2 \phi}{\partial x^2}
+			+ \frac{\partial^2 \phi}{\partial y^2}
+			+ \frac{\partial^2 \phi}{\partial z^2}.
+		\end{equation}
+		It measures how a field value at a point compares to its average in the surrounding region — in other words, how “curved” or “peaked” the field is locally. It is worthy to note that the laplacian of a scalar field is also a scalar field.
+
+		In index notation, this becomes
+		\begin{equation}
+			\nabla^2 \phi = \delta_{ij}\, \partial_i \partial_j \phi.
+		\end{equation}
+
+		The Laplacian appears in many fundamental physical equations:
+		\begin{itemize}
+			\item Poisson’s equation: $\nabla^2 \phi = -\rho/\varepsilon_0$ (electrostatics)
+			\item Heat equation: $\partial \phi / \partial t = D \nabla^2 \phi$ (diffusion)
+			\item Schrödinger equation: $\nabla^2 \psi$ governs spatial variations in quantum wavefunctions
+		\end{itemize}
+
+		If $\nabla^2 \phi = 0$, the field is called \textbf{harmonic}, meaning it satisfies Laplace’s equation and represents an equilibrium distribution such as steady-state temperature or potential.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=6in]{lpc.png}
+			\caption{Scalar field and its Laplacian}
+			\label{fig:placeholder}
+		\end{figure}
+
+		\subsubsection{Gauss and Stokes Theorem}
+
+		Gauss's and Stokes' theorems are two of the most important results in vector calculus, providing relationships between surface and volume (or line and surface) integrals. They serve as generalizations of the Fundamental Theorem of Calculus to higher dimensions, allowing one to convert integrals over regions into integrals over their boundaries.
+
+		For reference, a line integral is defined as the integral over the path $\Gamma$ of a parameterized vector path function $\vf r(t)$ over scalar field $f$ or vector field $\vf F$ with respect to a parameter $t$. Go figure. It comes in two forms, scalar line integrals and vector line integrals 
+		\begin{equation}
+			\int_\Gamma \phi (\vf r) \df s = \int_\Gamma \phi(\vf r) \norm{\dif{\vf r}{t}}dt 
+		\end{equation}
+		\begin{equation}
+			\int_\Gamma \vf F(\vf{r})\cdot d\vf r = \int_\Gamma \vf F(\vf r) \cdot \dif{\vf r}{t}dt 
+		\end{equation}
+		\paragraph{Gauss's Divergence Theorem}
+		The divergence theorem, also known as Gauss's theorem, relates the flux of a vector field through a closed surface to the divergence of the field inside the volume enclosed by that surface. Mathematically, it is expressed as
+		\begin{equation}
+			\iiint_V (\nabla \cdot \mathbf{F}) \, dV = \oiint_S \mathbf{F} \cdot d\mathbf{S},
+		\end{equation}
+		where $V$ is the volume enclosed by the closed surface $S$, $\mathbf{F}$ is a continuously differentiable vector field, and $d\mathbf{S}$ is the outward-pointing area element on $S$. This theorem is widely used in electromagnetism, fluid mechanics, and gravitational theory.
+
+		\paragraph{Stokes' Theorem}
+		Stokes' theorem relates the circulation of a vector field around a closed curve to the curl of the field over the surface bounded by that curve. It can be written as
+		\begin{equation}
+			\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S},
+		\end{equation}
+		where $C$ is the positively oriented boundary curve of the surface $S$. Stokes' theorem generalizes the concept of Green's theorem in the plane to three dimensions.
+
+		\paragraph{Interpretation}
+		In essence, both theorems express how local differential properties of vector fields (divergence and curl) are related to global integral quantities (flux and circulation). They form the mathematical foundation for many physical laws, such as Gauss's law in electromagnetism and the conservation of mass and momentum in fluid dynamics.
+
+		\subsubsection{Dirac Delta Point Source}
+		The \textbf{Dirac delta function} $\delta(\mathbf{r})$ (or $\delta^{(3)}(\mathbf r)$ for three dimensions) models an idealized point source. Its defining property is the sifting integral:
+		\begin{equation}
+			\int_V f(\mathbf{r})\,\delta(\mathbf{r}-\mathbf{r}_0)\, d^3r = f(\mathbf{r}_0),
+		\end{equation}
+		for any test function $f$ and any volume $V$ containing $\mathbf r_0$. The delta is zero for $\mathbf r\neq\mathbf r_0$, singular at $\mathbf r=\mathbf r_0$, and normalized so that its integral over all space is 1:
+		\begin{equation}
+			\int_{\mathbb{R}^3} \delta(\mathbf r)\, d^3r = 1.
+		\end{equation}
+
+		\paragraph{Delta and differential operators}
+		The Dirac delta often appears as the source term in Poisson-like equations. Two classic identities (in three dimensions) are:
+		\begin{align}
+			\nabla^2\!\left(\frac{1}{r}\right) &= -4\pi \,\delta^{(3)}(\mathbf r), \label{eq:lap1r}\\
+			\nabla\!\cdot\!\left(\frac{\mathbf r}{r^3}\right) &= 4\pi \,\delta^{(3)}(\mathbf r). \label{eq:divrhat}
+		\end{align}
+		These relations are to be understood in the distributional sense: the left-hand side vanishes for $\mathbf r\neq\mathbf 0$ but the integral over any volume containing the origin produces the stated constant.
+
+		\paragraph{Example: point charge in electrostatics}
+		For an electrostatic potential of a point charge $q$ at the origin,
+		\[
+			\phi(\mathbf r) = \frac{q}{4\pi\varepsilon_0}\,\frac{1}{r},
+		\]
+		Poisson's equation $\nabla^2\phi = -\rho/\varepsilon_0$ is satisfied with $\rho(\mathbf r)=q\,\delta^{(3)}(\mathbf r)$ because of \eqref{eq:lap1r}.
+
+		% \bigskip
+
+		% \newpage
+		% \subsubsection*{Laplacian in orthogonal curvilinear coordinates}
+
+		% We introduce an orthogonal curvilinear coordinate system $(q_1,q_2,q_3)$ with orthonormal coordinate directions $\hat{\mathbf e}_1,\hat{\mathbf e}_2,\hat{\mathbf e}_3$ and scale factors (metric coefficients)
+		% \[
+		% 	h_i(q_1,q_2,q_3) = \left\| \frac{\partial \mathbf r}{\partial q_i} \right\|,\qquad i=1,2,3.
+		% \]
+		% Infinitesimal displacement is
+		% \[
+		% 	d\mathbf r = h_1\,dq_1\,\hat{\mathbf e}_1 + h_2\,dq_2\,\hat{\mathbf e}_2 + h_3\,dq_3\,\hat{\mathbf e}_3,
+		% \]
+		% and the volume element is
+		% \[
+		% 	dV = h_1 h_2 h_3 \, dq_1 dq_2 dq_3.
+		% \]
+
+		% The gradient of a scalar $\phi$ is
+		% \begin{equation}
+		% 	\nabla\phi = \sum_{i=1}^3 \frac{1}{h_i}\,\frac{\partial\phi}{\partial q_i}\,\hat{\mathbf e}_i.
+		% \end{equation}
+		% A vector field has components $F_i$ in the $\hat{\mathbf e}_i$ basis:
+		% \[
+		% 	\mathbf F = \sum_{i=1}^3 F_i\,\hat{\mathbf e}_i.
+		% \]
+
+		% The divergence in orthogonal curvilinear coordinates is
+		% \begin{equation}\label{eq:div_general}
+		% 	\nabla\cdot\mathbf F
+		% 	= \frac{1}{h_1 h_2 h_3}
+		% 	\sum_{i=1}^3
+		% 	\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i}\,F_i \right).
+		% \end{equation}
+
+		% From this, the Laplacian of a scalar $\phi$ (divergence of the gradient) becomes
+		% \begin{equation}\label{eq:lap_general}
+		% 	\boxed{\;
+		% 	\nabla^2 \phi
+		% 	= \frac{1}{h_1 h_2 h_3}
+		% 	\sum_{i=1}^3
+		% 	\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i^2}\,\frac{\partial\phi}{\partial q_i} \right)
+		% 	\;}
+		% \end{equation}
+		% which is the standard formula for the Laplacian in an orthogonal coordinate system.
+
+		% \subsubsubsection*{Verification: cylindrical coordinates}
+		% Cylindrical coordinates $(r,\theta,z)$:
+		% \[
+		% \mathbf r = (r\cos\theta,\, r\sin\theta,\, z),\qquad
+		% h_r = 1,\; h_\theta = r,\; h_z = 1.
+		% \]
+		% Compute $h_1 h_2 h_3 = r$. Plugging into \eqref{eq:lap_general}:
+		% \begin{align*}
+		% 	\nabla^2 \phi
+		% 	&= \frac{1}{r}\left\{
+		% 	\frac{\partial}{\partial r}\!\left(r\frac{\partial\phi}{\partial r}\right)
+		% 	+ \frac{\partial}{\partial \theta}\!\left(\frac{1}{r}\frac{\partial\phi}{\partial \theta}\right)
+		% 	+ \frac{\partial}{\partial z}\!\left(r\frac{\partial\phi}{\partial z}\right)
+		% 	\right\}\frac{1}{\;1\;}\\
+		% 	&= \frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial\phi}{\partial r}\right)
+		% 	+ \frac{1}{r^2}\frac{\partial^2\phi}{\partial \theta^2}
+		% 	+ \frac{\partial^2\phi}{\partial z^2},
+		% \end{align*}
+		% which is the familiar cylindrical Laplacian.
+
+		% \subsubsubsection*{Verification: spherical coordinates}
+		% Spherical coordinates $(r,\theta,\varphi)$ with $\theta$ the polar angle and $\varphi$ the azimuth:
+		% \[
+		% 	\mathbf r = \big(r\sin\theta\cos\varphi,\; r\sin\theta\sin\varphi,\; r\cos\theta\big),
+		% 	\qquad h_r=1,\; h_\theta=r,\; h_\varphi=r\sin\theta.
+		% \]
+		% Here $h_1 h_2 h_3 = r^2\sin\theta$. Plugging into \eqref{eq:lap_general}:
+		% \begin{align*}
+		% 	\nabla^2 \phi
+		% 	&= \frac{1}{r^2\sin\theta}\Bigg\{
+		% 	\frac{\partial}{\partial r}\!\Big(r^2\sin\theta\,\frac{\partial\phi}{\partial r}\Big)
+		% 	+ \frac{\partial}{\partial \theta}\!\Big(\sin\theta\,\frac{1}{r^2}\,r^2\frac{\partial\phi}{\partial \theta}\Big) \\
+		% 	&\qquad\qquad\qquad
+		% 	+ \frac{\partial}{\partial \varphi}\!\Big(\frac{r^2\sin\theta}{(r\sin\theta)^2}\frac{\partial\phi}{\partial \varphi}\Big)
+		% 	\Bigg\}\\[6pt]
+		% 	&= \frac{1}{r^2}\frac{\partial}{\partial r}\!\left(r^2\frac{\partial\phi}{\partial r}\right)
+		% 	+ \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\!\left(\sin\theta\frac{\partial\phi}{\partial \theta}\right)
+		% 	+ \frac{1}{r^2\sin^2\theta}\frac{\partial^2\phi}{\partial \varphi^2},
+		% \end{align*}
+		% the standard spherical Laplacian.
+
+		% \bigskip
+
+		% \subsubsection*{Divergence of a radial inverse-square field and the Dirac delta}
+
+		% Consider the radial inverse-square field in $\mathbb R^3$,
+		% \[
+		% 	\mathbf F(\mathbf r) = k\,\frac{\hat{\mathbf r}}{r^2} = k\,\frac{\mathbf r}{r^3},
+		% 	\qquad r=\|\mathbf r\|,\; \hat{\mathbf r}=\mathbf r/r,
+		% \]
+		% with constant $k$.
+
+		% \paragraph{1. Away from the origin}
+		% For $r\neq 0$ one may compute the divergence using spherical components or directly note that $\mathbf F$ is the gradient of a $1/r$-type potential up to sign:
+		% \[
+		% 	\mathbf F = k\,\frac{\mathbf r}{r^3} = -k\,\nabla\!\left(\frac{1}{r}\right).
+		% \]
+		% Because $\nabla^2(1/r)=0$ for $r\neq 0$, it follows that
+		% \[
+		% 	\nabla\cdot\mathbf F = -k\,\nabla\cdot\nabla\!\left(\frac{1}{r}\right) = -k\,\nabla^2\!\left(\frac{1}{r}\right) = 0
+		% 	\qquad (r\neq 0).
+		% \]
+
+		% \paragraph{2. Flux through a sphere and the distributional divergence}
+		% Let $S_R$ be the sphere of radius $R$ centered at the origin. The outward flux is
+		% \[
+		% 	\Phi(R) = \iint_{S_R} \mathbf F\cdot d\mathbf S
+		% 	= \iint_{S_R} k\frac{\hat{\mathbf r}}{r^2}\cdot(\hat{\mathbf r}\,R^2 d\Omega)
+		% 	= k\iint_{S_R} d\Omega
+		% 	= 4\pi k.
+		% \]
+		% This flux is independent of $R$ (for any $R>0$). By the divergence theorem, for any volume $V$ containing the origin,
+		% \[
+		% 	\int_V \nabla\cdot\mathbf F\, d^3r = \iint_{\partial V} \mathbf F\cdot d\mathbf S = 4\pi k.
+		% \]
+		% If $V$ does \emph{not} contain the origin the flux is zero. These facts characterize the divergence of $\mathbf F$ as a distribution:
+		% \[
+		% 	\boxed{\;
+		% 	\nabla\cdot\left(k\,\frac{\mathbf r}{r^3}\right) = 4\pi k\,\delta^{(3)}(\mathbf r)
+		% 	\;}
+		% \]
+		% because the distribution on the right is precisely the one that integrates to $4\pi k$ over any volume containing the origin and to $0$ otherwise.
+
+		% \paragraph{3. Relation to the Laplacian of \(1/r\)}
+		% Since $\mathbf F = -k\nabla(1/r)$, taking the divergence gives
+		% \[
+		% 	\nabla\cdot\mathbf F = -k\,\nabla^2\!\left(\frac{1}{r}\right).
+		% \]
+		% Comparing with the previous boxed result yields the standard identity
+		% \[
+		% 	\boxed{\;
+		% 	\nabla^2\!\left(\frac{1}{r}\right) = -4\pi\,\delta^{(3)}(\mathbf r).
+		% 	\;}
+		% \]
+
+		% \paragraph{Remark (distributional sense)}
+		% All statements above about $\nabla\cdot\mathbf F$ and $\nabla^2(1/r)$ must be interpreted distributionally: point wise equalities hold for $r\neq 0$, while at the origin the singular behavior is captured by the Dirac delta. Equivalently, for any smooth test function $\varphi$ with compact support,
+		% \[
+		% 	\int_{\mathbb{R}^3}\nabla^2\!\left(\frac{1}{r}\right)\varphi(\mathbf r)\,d^3r
+		% 	= -4\pi\,\varphi(\mathbf 0).
+		% \]
+\newpage
+    \subsection{Electrostatics: The Electric Field}
+\newpage
+    \subsection{Electrostatics: Boundary Conditions, work and energy, conductors}
+\newpage
+    \subsection{Calculating Scalar Potentials I}
+\newpage
+    \subsection{Calculating Scalar Potentials II}
+\newpage
+    \subsection{Dielectrics}
+\newpage
+    \subsection{Electric Displacement}
+\newpage
+    \subsection{Energy in dielectrics, Magnetostatics}
+\newpage
+    \subsection{Magnetic Vector Potential}
+\newpage
+    \subsection{Unit Summary}

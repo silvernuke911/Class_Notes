@@ -1,0 +1,204 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             DOCUMENT SETTINGS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{5pt}
+\newlength{\originalparindent}
+\newlength{\originalparskip}
+\AtBeginDocument{%
+  \setlength{\originalparindent}{\parindent}%
+  \setlength{\originalparskip}{\parskip}%
+}
+
+
+
+% Definition counter linked to section
+\newcounter{definition}[section]
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+
+% Example counter linked to section
+\newcounter{example}[section]
+\renewcommand{\theexample}{\thesection.\arabic{example}}
+
+\newtcolorbox{definition}[2][]{
+  colback=white,
+  colframe=black,
+  boxrule=0.5pt,
+  arc=0pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  fonttitle=\bfseries,
+  title={%
+    \stepcounter{definition}% Increment counter
+    Definition \thedefinition{} : #2% Then display
+  },
+  #1
+}
+
+\newtcolorbox{example}[2][]{
+  breakable,
+  colback=white,
+  colframe=black,
+  boxrule=0.5pt,
+  arc=4pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  fonttitle=\bfseries,
+  parbox=false,  % Don't use parbox mode
+  before upper={%
+    \setlength{\parindent}{\originalparindent}%
+    \setlength{\parskip}{\originalparskip}%
+    \noindent%
+  },
+  title={%
+    \stepcounter{example}%
+    Example \theexample{} : #2%
+  },
+  #1
+}
+
+% Theorem counter linked to section
+\newcounter{theorem}[section]
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\definecolor{darkred}{RGB}{139, 0, 0} 
+\newtcolorbox{theorem}[2][]{
+  colback=white,
+  colframe=darkred,  % Dark red border
+  coltitle=white,              % White title text for contrast
+  colbacktitle=darkred, % Dark red title background
+  boxrule=0.5pt,
+  arc=0pt,                     % Sharp corners (0 curves)
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  fonttitle=\bfseries,
+  title={%
+    \stepcounter{theorem}%
+    Theorem \thetheorem{} : #2%
+  },
+  #1
+}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\LARGE\bfseries}
+\titleformat*{\subsubsection}{\Large\bfseries}
+\titleformat*{\subsubsubsection}{\large\bfseries}
+
+\newcommand{\module}[1]{
+  \clearpage
+  \refstepcounter{section}
+  \vspace*{1cm}
+  {\LARGE\bfseries\noindent Module \thesection\par}
+  \vspace{0.5cm}
+  {\noindent\Huge\bfseries #1\par}
+  \vspace{2cm}
+  \addcontentsline{toc}{section}{Module \thesection : #1}
+}
+
+\newcommand{\unitsec}[1]{
+  \clearpage
+  \refstepcounter{section}
+  \vspace*{1cm}
+  {\LARGE\bfseries\noindent Unit \thesection\par}
+  \vspace{0.5cm}
+  {\noindent\Huge\bfseries #1\par}
+  \vspace{2cm}
+  \addcontentsline{toc}{section}{Unit \thesection : #1}
+}
+
+\newcommand{\chaptersec}[1]{
+  \clearpage
+  \refstepcounter{section}
+  \vspace*{1cm}
+  {\LARGE\bfseries\noindent Chapter \thesection\par}
+  \vspace{0.5cm}
+  {\noindent\Huge\bfseries #1\par}
+  \vspace{2cm}
+  \addcontentsline{toc}{section}{Chapter \thesection : #1}
+}
+
+\renewenvironment{solution_pset}{
+  \noindent\textbf{\Large Solution}
+}{
+  \newpage
+}
+
+\numberwithin{equation}{subsection}
+
+% Definition counter linked to section
+\newcounter{definition}[section]
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+
+% Example counter linked to section
+\newcounter{example}[section]
+\renewcommand{\theexample}{\thesection.\arabic{example}}
+
+\newtcolorbox{definition}[2][]{
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    fonttitle=\bfseries,
+    title={%
+        \stepcounter{definition}% Increment counter
+        Definition \thedefinition{} : #2% Then display
+    },
+    #1
+}
+
+\newtcolorbox{example}[2][]{
+    breakable,
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    fonttitle=\bfseries,
+    parbox=false,  % Don't use parbox mode
+    before upper={%
+        \setlength{\parindent}{\originalparindent}%
+        \setlength{\parskip}{\originalparskip}%
+        \noindent%
+    },
+    title={%
+        \stepcounter{example}%
+        Example \theexample{} : #2%
+    },
+    #1
+}
+
+% Theorem counter linked to section
+\newcounter{theorem}[section]
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\definecolor{darkred}{RGB}{139, 0, 0} 
+\newtcolorbox{theorem}[2][]{
+    colback=white,
+    colframe=darkred,  % Dark red border
+    coltitle=white,              % White title text for contrast
+    colbacktitle=darkred, % Dark red title background
+    boxrule=0.5pt,
+    arc=0pt,                     % Sharp corners (0 curves)
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    fonttitle=\bfseries,
+    title={%
+        \stepcounter{theorem}%
+        Theorem \thetheorem{} : #2%
+    },
+    #1
+}

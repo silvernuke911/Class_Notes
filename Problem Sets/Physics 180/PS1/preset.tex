@@ -292,33 +292,37 @@
 %        PYTHON LISTING STYLE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \definecolor{vscodeBackground}{RGB}{255,255,255}
 \definecolor{vscodeForeground}{RGB}{10,10,10}
-\definecolor{vscodeKeyword}{RGB}{86,156,214}
-\definecolor{vscodeString}{RGB}{206,145,120}
-\definecolor{vscodeComment}{RGB}{106,153,85}
+\definecolor{vscodeKeyword}{RGB}{60,60,200}
+\definecolor{vscodeString}{RGB}{230,0,0}
+\definecolor{vscodeComment}{RGB}{0,100,0}
 \definecolor{vscodeFunction}{RGB}{220,220,170}
 \definecolor{vscodeOperator}{RGB}{212,212,212}
 \definecolor{vscodeNumber}{RGB}{181,206,168}
 
 \lstdefinestyle{vscodepython}{
-  backgroundcolor=\color{vscodeBackground},
-  basicstyle=\ttfamily\small\color{vscodeForeground},
-  commentstyle=\color{vscodeComment}\itshape,
-  keywordstyle=\color{vscodeKeyword}\bfseries,
-  stringstyle=\color{vscodeString},
-  numberstyle=\tiny\color{vscodeForeground},
-  identifierstyle=\color{vscodeForeground},
-  morekeywords={True, False, None},
-  frame=single,
-  rulecolor=\color{vscodeForeground},
-  breaklines=true,
-  numbers=left,
-  numbersep=5pt,
-  showstringspaces=false,
-  tabsize=4,
-  captionpos=b,
+    backgroundcolor=\color{vscodeBackground},
+    basicstyle=\ttfamily\footnotesize\color{vscodeForeground},
+    commentstyle=\color{vscodeComment}, %\itshape
+    keywordstyle=\color{vscodeKeyword}\bfseries,
+    stringstyle=\color{vscodeString},
+    numberstyle=\tiny\color{vscodeForeground},
+    identifierstyle=\color{vscodeForeground},
+    morekeywords={True, False, None},
+    frame=single,
+    rulecolor=\color{vscodeForeground},
+    breaklines=true,
+    numbers=left,
+    numbersep=5pt,
+    showstringspaces=false,
+    tabsize=4,
+    captionpos=b,
 }
+\lstset{style=vscodepython, language=Python, literate={α}{{$\alpha$}}1}
+
+% Set Python as default language
 \lstset{style=vscodepython, language=Python}
 
 

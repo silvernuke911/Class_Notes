@@ -51,13 +51,151 @@
 	}
 	\begin{problem}
 		The $B/A$ plot looks like it peaks at a specific value of $A$. Using the curve 
-		approximated by SEMF, find the value of A that achieves this and find 
+		approximated by SEMF, find the value of $A$ that achieves this and find 
 		the peak value. What is the element that achieves this
 		\begin{center}
 			\includegraphics[width=3in]{images/BAplot.png}
 		\end{center}
 	\end{problem}
 	\begin{solution_pset}
+		From \cite{flores2026nuclear}, we have the Bethe-Weizs\"acker or SEMF formula.
+		\begin{equation}
+			B = a_1 A - a_2 A^{2/3} - a_3\frac{Z^2}{A^{1/3}} - a_4 \frac{(Z - A/2)^2}{A} \pm a_5 A^{-1/2}
+			\label{eq: SEMF formula}
+		\end{equation}
+		Dividing by $A$, we have
+		\begin{equation}
+		    \frac{B}{A} = a_1 - a_2 A^{-1/3} - a_3\frac{Z^2}{A^{4/3}} - a_4 \frac{(Z - A/2)^2}{A^2} \pm a_5 A^{-3/2}
+		\end{equation}
+		We aim to maximize $B/A$ with respect to $A$. Note, however
+		that the function is both a function of $A$ and $Z$, so the resulting equation will be dependent of $Z$. 
+		An important point here is that $Z$ is dependent of $A$.
+		Since we wish to know which isobar $Z$ gives the mosty stable element, 
+		we must first maximize $B/A$ with respect to $Z$. This is similar to tbe operation performed inclass about finding $N/Z$,
+		but we find the stability ratio for $Z/A$ multiplied by $A$.
+
+		We find $Z(A)$ for which $Z$ gives the most tightly bound isobar. Ignoring the pairing term for
+		the smooth SEMF curve, we have
+		\begin{equation}
+			\pdv{B(Z,A)}{Z}) = 0
+		\end{equation}
+		Therefore, we have
+		\begin{align}
+			\pdv{}{Z} B &= \pdv{}{Z} \qty(a_1 A - a_2 A^{2/3} - a_3\frac{Z^2}{A^{1/3}} - a_4 \frac{(Z - A/2)^2}{A} \pm a_5 A^{-1/2})\\
+			\pdv{}{Z} B &= - 2 a_3 \frac{Z}{A^{1/3}} - 2 a_4 \frac{(Z - A/2)}{A} \\
+			0 &= - 2 a_3 \frac{Z}{A^{1/3}} - 2 a_4 \frac{(Z - A/2)}{A} 
+		\end{align}
+		We multiply the expression with $-A/2$ to simplifiy
+		\begin{align}
+			0 &= a_3 Z A^{2/3} + a_4 \qty(Z - \frac{A}{2} )\\
+			0 &= a_3 Z A^{2/3} + a_4 Z - \frac{a_4 A}{2}\\
+			Z(a_3  A^{2/3} + a_4 ) &= \frac{a_4 A}{2}
+		\end{align}	
+		Thus, we have the most stable $Z$ value for a given $A$ 
+		\begin{equation}
+			Z(A) = \frac{a_4 A}{2 \qty(a_3 A^{2/3} + a_4) }
+			\label{eq: ZA}
+		\end{equation}
+		We substitute this back to $B/A$.
+		\begin{equation}
+		    \frac{B}{A} = a_1 - a_2 A^{-1/3} - a_3\frac{Z(A)^2}{A^{4/3}} - a_4 \frac{(Z(A) - A/2)^2}{A^2} \pm a_5 A^{-3/2}
+		\end{equation}
+		from this, we get
+		\begin{equation}
+		    \frac{B}{A} = 
+				a_1 
+				- a_2 A^{-1/3} 
+				- a_3\frac{\qty( \frac{a_4 A}{2 \qty(a_3 A^{2/3} + a_4) })^2}{A^{4/3}} 
+				- a_4 \frac{\qty( \frac{a_4 A}{2 \qty(a_3 A^{2/3} + a_4) }) - A/2)^2}{A^2} 
+				\pm a_5 A^{-3/2}
+		\end{equation}
+		This simplifies to the following
+		\begin{equation}
+		    \frac{B}{A} = 
+				a_1 
+				- a_2 A^{-1/3} 
+				- a_3 \frac{a_4^2 A^{2/3}}{4(a_3 A^{2/3} + a_4)^2} 
+				- a_4 \frac{a_3^2 A^{4/3}}{4(a_3 A^{2/3} + a_4)^2}  
+				\pm a_5 A^{-3/2}
+		\end{equation}
+		Combining the $a_3$ and $a_4$ terms, we have
+		\begin{align}
+				- a_3 \frac{a_4^2 A^{2/3}}{4(a_3 A^2/3 + a_4)^2} 
+				- a_4 \frac{a_3^2 A^{4/3}}{4(a_3 A^2/3 + a_4)^2}  
+				&= -\frac{a_3a_4A^{2/3} (a_4 + a_3 A^{2/3}) }{4 (a_3 A^{2/3} + a_4)^2} \\
+				&= -\frac{a_3a_4A^{2/3} }{4 (a_3 A^{2/3} + a_4)} 
+		\end{align}
+		Hence,
+		\begin{equation}
+			\frac{B}{A} = 
+			  a_1 
+			- a_2 A^{-1/3} 
+			- \frac{a_3a_4A^{2/3} }{4 (a_3 A^{2/3} + a_4)} 
+			\pm a_5 A^{-3/2} 
+		\end{equation}
+		Now, we maximize this in terms of $A$. We have\footnote{At this point I just used mathematica to solve for this shit}
+		\begin{align}
+			\pdv{}{A}\qty(\frac{B}{A})  
+				&= 
+					\frac{a_2}{3} A^{-4/3} 
+					- \frac{a_3a_4}{4}\pdv{}{A}\qty[\frac{A^{2/3}}{a_3A^{2/3}+a_4}] 
+					\mp \frac{3a_5}{2} A^{-5/2}  \\ 
+				&= 
+					\frac{a_2}{3} A^{-4/3} 
+					- \frac{a_3a_4^2}{6}  \frac{A^{-1/3}}{(a_3A^{2/3}+a_4)^2} 
+					\mp \frac{3a_5}{2} A^{-5/2}   
+		\end{align}
+		This maximum satisfies
+		\begin{equation}
+			\frac{a_2}{3} A^{-4/3} 
+			- \frac{a_3a_4^2}{6}  \frac{A^{-1/3}}{(a_3A^{2/3}+a_4)^2} 
+			\mp \frac{3a_5}{2} A^{-5/2}   
+			= 0
+		\end{equation}
+		For a smooth SEMF curve, we usually drop the pairing term, giving us
+		\begin{equation}
+			\frac{a_2}{3} A^{-4/3} 
+			- \frac{a_3a_4^2}{6}  \frac{A^{-1/3}}{(a_3A^{2/3}+a_4)^2} 
+			= 0
+		\end{equation}
+		This can then be further simplified by multiplying by $6A^{4/3}$
+		\begin{equation}
+		    2a_2 - \frac{a_3a_4^2 A}{(a_3A^{2/3}+a_4)^2} 
+		\end{equation}
+		Therefore
+		\begin{equation}
+			2a_2(a_3A^{2/3} + a_4)^2 = a_3 a_4^2 A
+		\end{equation}
+		If we solve for $A$, we end up with this quartic equation if $A=x^3$
+		\begin{equation}
+			2a_2 a_3^2 A^{4/3} - a_3 a_4^2 A + 4a_2 a_3 a_4 A^{2/3} + 2a_2a_4^2 = 0
+		\end{equation}
+		We solve for this numerically. I just used the Newton-Raphson zero finding algorithm. 
+		Code is provided on the appendices to show how that works.
+
+		Anyways, the resulting number for stable $A$, using the provided coefficients\cite{flores2026nuclear}
+		\begin{align*}
+			a_1 &= \SI{15.56}{MeV}\\
+			a_2 &= \SI{17.23}{MeV}\\
+			a_3 &= \SI{0.697}{MeV}\\
+			a_4 &= \SI{93.14}{MeV}\\
+			a_5 &= \SI{12}{MeV}
+		\end{align*}
+		We numerically solve for $A \approx 62$, see Appendices for the python code. 
+		Using the derived equation (\ref{eq: ZA}), we can calculate the most stable
+		$Z$ value for this $A$, and this results to $Z \approx 27$, or, \textbf{Nickel-62}.
+		\begin{emphasis}
+			\begin{align}
+				N &\approx 62\\
+				Z &\approx 27
+			\end{align}
+		\end{emphasis}
+		While I expected something akin to Iron-56, turns out,
+		when you derive the actual energies, the actual answer is also Nickel-62, since it has the highest nuclear binding energy per nucleon. 
+		However, Iron-56 is more commonly called the most stable end-product of stellar nucleosynthesis because it 
+		has the lowest mass per nucleon and is produced in massive quantities by stars \cite{baird2024moststable}
+		
+		So hopefully this passes by the checker. Nickel and Iron are just beside each other on the periodic table.
 
 	\end{solution_pset}
 	\newpage
@@ -70,7 +208,86 @@
 	\section*{Appendices}
 		\label{appendix}
 		\subsection*{Code} 
-		No code was used for this problem set
+\begin{lstlisting}[language=Python, caption=Newton-Raphson solver script for $A$ and $Z$, label=lst:newton]
+import numpy as np
+
+# SEMF coefficients from [1]
+a1 = 15.56  # MeV
+a2 = 17.23
+a3 = 0.697
+a4 = 93.14
+a5 = 12.00
+
+# Function definition f(A) (eq 3.23)
+def f(A):
+    return 2*a2*a3**2 * A**(4/3) - a3*a4**2 * A + 4*a2*a3*a4 * A**(2/3) + 2*a2*a4**2
+
+# Function derivative f'(A)
+def f_prime(A):
+    return (8/3)*a2*a3**2 * A**(1/3) - a3*a4**2 + (8/3)*a2*a3*a4 * A**(-1/3)
+
+# Newton-Raphson method
+def newton_raphson(A0, tol=1e-12, max_iter=100):
+    A = A0
+    print(f"Iteration 0: A = {A:.10f}, f(A) = {f(A):.10e}")
+    
+    for i in range(max_iter):
+        f_val = f(A)
+        f_prime_val = f_prime(A)
+        
+        if abs(f_prime_val) < 1e-15:
+            print("Derivative too small, method failure.")
+            break
+        
+        A_new = A - f_val / f_prime_val
+        
+        print(f"Iteration {i+1}: A = {A_new:.10f}, f(A) = {f(A_new):.10e}")
+        
+        if abs(A_new - A) < tol:
+            print(f"\nConverged after {i+1} iterations.")
+            print(f"Maximal value for    :  A = {A_new:.10f}")
+            return A_new
+        
+        A = A_new
+    
+    print(f"\nMax iterations reached. A = {A:.10f}")
+    return A
+
+# Solve for A
+print("=" * 60)
+print("Solving for A using Newton-Raphson method")
+print("=" * 60)
+
+A0 = 100  # Starting guess
+print(f"\nStarting with A0 = {A0}")
+print("-" * 60)
+solution = newton_raphson(A0)
+
+def Z(A):
+    num = a4 * A 
+    den = 2 * (a3 * A**(2/3) + a4)
+    return num/den 
+
+print(f"\nMost stable element: Z = {Z(solution):.10f}")
+\end{lstlisting}
+{\noindent \large \textbf{Output:}}
+\begin{verbatim}
+============================================================
+Solving for A using Newton-Raphson method
+============================================================
+
+Starting with A0 = 100
+------------------------------------------------------------
+Iteration 0: A = 100.0000000000, f(A) = -2.0154515672e+05
+Iteration 1: A =  61.9746717109, f(A) = -1.6138514552e+03
+Iteration 2: A =  61.6645809668, f(A) = -1.7247545923e-01
+Iteration 3: A =  61.6645478197, f(A) = -1.9790604711e-09
+Iteration 4: A =  61.6645478197, f(A) =  0.0000000000e+00
+
+Converged after 4 iterations.
+Maximal value      : A = 61.6645478197
+Most stable element: Z = 27.4076237435
+\end{verbatim}
 	\vfill
 	\begin{center}
 		\textsc{Physica Vincit Omnia}

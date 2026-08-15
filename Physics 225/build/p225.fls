@@ -615,6 +615,7 @@ INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT preamble\references.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
@@ -690,6 +691,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy5.tf
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT .\content\meeting2.tex
 INPUT .\content\meeting2.tex
 INPUT .\content\meeting2.tex
@@ -707,6 +709,8 @@ INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\es
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmex10.pfb

@@ -9,7 +9,7 @@
 \contentsline {paragraph}{Written Exam}{2}{section*.7}%
 \contentsline {paragraph}{Oral Exam}{2}{section*.8}%
 \contentsline {section}{Main References}{3}{section*.8}%
-\contentsline {section}{Reminders}{4}{Item.13}%
+\contentsline {section}{Reminders}{4}{Item.14}%
 \contentsline {section}{Chapter 1: Review of Newtonian Physics}{7}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{7}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Newton's Law of Gravitation}{7}{subsubsection.1.1.1}%
@@ -20,23 +20,23 @@
 \contentsline {subsection}{\numberline {1.2}Einstein's Equivalence Principle}{15}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Inertial Frames}{15}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Universality of Free Fall}{15}{subsubsection.1.2.2}%
-\contentsline {paragraph}{Weak, Strong, and Einstein Equivalence Principles}{16}{section*.10}%
-\contentsline {subsection}{\numberline {1.3}History of Relativity}{17}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Relativity Before Einstein}{17}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Maxwell's Results}{18}{subsubsection.1.3.2}%
-\contentsline {paragraph}{Ad Hoc Solutions to the Aether Problem.}{18}{section*.11}%
-\contentsline {subsubsection}{\numberline {1.3.3}Einstein's Contribution}{19}{subsubsection.1.3.3}%
-\contentsline {paragraph}{Lorentz Transformations and Covariance}{19}{section*.12}%
-\contentsline {paragraph}{How About Gravity?}{20}{section*.13}%
-\contentsline {paragraph}{Minkowski Spacetime}{20}{section*.14}%
-\contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{21}{subsubsection.1.3.4}%
-\contentsline {paragraph}{Machian and Relational Ideas}{21}{section*.15}%
-\contentsline {paragraph}{Relativity Is More General Than Light}{22}{section*.16}%
-\contentsline {paragraph}{The Role of $c$}{22}{section*.17}%
-\contentsline {section}{Chapter 2: Special Relativity}{23}{section.2}%
-\contentsline {section}{Chapter 3: Aspects of Differential Geometry}{24}{section.3}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{25}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{26}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{27}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{28}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{29}{section.8}%
+\contentsline {paragraph}{Weak, Strong, and Einstein Equivalence Principles}{17}{section*.10}%
+\contentsline {subsection}{\numberline {1.3}History of Relativity}{18}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Relativity before Einstein}{18}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Maxwell's Results}{19}{subsubsection.1.3.2}%
+\contentsline {paragraph}{Ad Hoc Solutions to the Aether Problem.}{19}{section*.11}%
+\contentsline {subsubsection}{\numberline {1.3.3}Einstein's Contribution}{20}{subsubsection.1.3.3}%
+\contentsline {paragraph}{Lorentz Transformations and Covariance}{20}{section*.12}%
+\contentsline {paragraph}{How About Gravity?}{21}{section*.13}%
+\contentsline {paragraph}{Minkowski Spacetime}{22}{section*.14}%
+\contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{22}{subsubsection.1.3.4}%
+\contentsline {paragraph}{Machian and Relational Ideas}{22}{section*.15}%
+\contentsline {paragraph}{Relativity Is More General Than Light}{23}{section*.16}%
+\contentsline {paragraph}{The Role of $c$}{23}{section*.17}%
+\contentsline {section}{Chapter 2: Special Relativity}{24}{section.2}%
+\contentsline {section}{Chapter 3: Aspects of Differential Geometry}{25}{section.3}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{26}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{27}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{28}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{29}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{30}{section.8}%

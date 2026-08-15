@@ -215,13 +215,6 @@
 \renewcommand\qedsymbol{$\square$}
 
 
-%%% Matrices
-\newcommand{\parnmat}[1]{\qty(\mqty{#1})}
-\newcommand{\bmat}[1]{\qty[\mqty{#1}]}
-\newcommand{\bparnmat}[1]{\qty[\mqty{#1}]}
-\newcommand{\vmat}[1]{\qty{\mqty{#1}}}
-\newcommand{\detmat}[1]{\abs{\mqty{#1}}}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       CUSTOM HEADER / SECTION STYLES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -259,10 +252,11 @@
 \setcounter{tocdepth}{4}
 
 %%% CUSTOM SECTION TITLE FONT SIZES
-\titleformat*{\section}{\LARGE\bfseries}
-\titleformat*{\subsection}{\Large\bfseries}
-\titleformat*{\subsubsection}{\large\bfseries}
-\setlength{\parskip}{10pt}
+% \titleformat*{\section}{\LARGE\bfseries}
+% \titleformat*{\subsection}{\Large\bfseries}
+% \titleformat*{\subsubsection}{\large\bfseries}
+% \setlength{\parskip}{10pt}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %             ENVIRONMENTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -277,18 +271,6 @@
   \begin{array}{@{}*{#1}{c}|c@{}}}{
 \end{array}\right]}
 
-\newenvironment{problem}{
-  \hrule
-  \vspace{5pt}
-}{
-  \vspace{10pt}\hrule\vspace{10pt}
-}
-
-\newenvironment{solution_pset}{
-  \noindent\textbf{\Large Solution}
-}{
-  \newpage
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %          THEOREM STYLES

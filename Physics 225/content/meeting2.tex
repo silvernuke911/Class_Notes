@@ -1,6 +1,8 @@
 % DATE - 14 - 08 -26
 % MEETING 2
-
+%===========================================================
+%    IN CLASS NOTES
+%===========================================================
 % \subsection{Einstein's Equivalence Principle}
 	% \subsubsection{Inertial Frames}
 		% The Weinberg definition is, at every point in space time i.e $(t,x,y,z)$ in a gravitational field,
@@ -238,6 +240,10 @@
 		% Carolian relativity. And if you assign $c$ to be an arbitrary number between $[0,\infty)$, you get General Relativity.
 
 
+%===========================================================
+% CLEANED UP VERSION
+%===========================================================
+
 \subsection{Einstein's Equivalence Principle}
 
 	\subsubsection{Inertial Frames}
@@ -272,7 +278,9 @@
 
 	\subsubsection{Universality of Free Fall}
 
-		The usual way this is expressed is to imagine a person in a box conducting a free-fall experiment. Suppose they perform some experiment in which they can measure the acceleration of objects.
+		The usual way this is expressed is to imagine a person in a closed box with no reference to the outside world. To gain 
+		information about his environment, he begins conducting a free-fall experiment. Suppose they perform some experiment in 
+		which they can measure the acceleration of objects.
 
 		For an object $o_1$, they measure
 
@@ -293,8 +301,51 @@
 		\end{equation}
 
 		under the same circumstances, regardless of the nature or mass of the objects. This is called the \textit{universality of free fall}.
+		
+		Suppose that the box is accelerating upward with acceleration $g\vu{z}$.
+		\begin{equation}
+			\vb{a}_\text{box} = g\vu{z}
+		\end{equation}
+
+		The observer releases the ball. From his perspective, the ball appears to accelerate downwards.
+		\begin{equation}
+			\vb{a}_\text{ball} = -g\vu{z}
+		\end{equation}
+		Therefore, it is reasonable to conclude that ``there is a gravitational field pulling the force downward".
+
+		But there isn't. The ball is actually just continuing along its inertial trajectory while the box accelerates upward.
+
+		Now compare this with another box which is stationary, with another observer sitting on the surface of Earth.
+
+		You release the same ball, and it falls downward with approximately
+
+		\begin{equation}
+			\vb{a}_\text{ball} = -g\vu{z}
+		\end{equation}
+		Inside the box, the experiment looks the same. So locally, motion due to acceleration is indistiguishable from motion
+		incduced by a gravitational field. There is no experiment that can be performed by the two observers that can differentiate
+		one from another. This is the strong equivalence principle.
 
 		In Newtonian language, this corresponds to the equality of gravitational and inertial mass. The important point for the equivalence principle is that all sufficiently small freely falling objects respond to the gravitational field in the same way.
+
+		Now, imagine the observer is in a box or elevator that is freely falling towards Earth.
+		The box and everything inside it are accelerating downward together.
+		Suppose the observer release a ball inside the box.
+		The ball is falling toward Earth, but so is the box. Since both have essentially the same gravitational acceleration,
+		\begin{equation}
+			\vb{a}_\text{ball}\approx \vb{a}_\text{box}
+		\end{equation}
+		their relative acceleration is approximately zero:
+		\begin{equation}
+			\vb{a}_\text{relative} = \vb{a}_\text{ball} - \vb{a}_\text{box} \approx 0
+		\end{equation}
+		so the ball appears to float. The observer could throw it, and it would move approximately in a straight line at constant velocity relative to the observer.
+
+		The observer would therefore reasonably conclude ``There is no gravity here. I'm in an inertial frame."
+
+		But but the observer actually are in Earth's gravitational field. In actual inertial motion, the same observations will take place.
+		Therefore, a falling observer is indistinguishable from an inertial observer. That is the weak equivalence principle.
+
 
 		In a simple example, we can write the gravitational field as a non-inertial frame:
 
@@ -328,19 +379,22 @@
 
 		For the strong equivalence principle, one extends the statement to gravitationally self-interacting or strongly gravitating systems, so that the equivalence applies more broadly than to test particles alone.
 
-		The Einstein equivalence principle goes further: ``laws of nature'' means all nongravitational laws of nature. It is one of the conceptual foundations of general relativity.
+		The Einstein equivalence principle goes further: ``laws of nature'' genuinely means all laws of nature. It is one of the conceptual foundations of general relativity.
 
 		In any theory of gravity, one can attempt to remove $g$ locally by an appropriate choice of coordinates. What makes general relativity special is the geometric interpretation of what remains after the local gravitational acceleration has been removed.
 
 		It means that gravity is genuinely fictitious locally if no experiment confined to that sufficiently small region can tell that we are in a gravitational field. If one can remove gravity, then what remains should be the stage itself: the underlying spacetime structure and its geometry.
 
+		In summary, over a sufficiently small region of space and time, a fictitious gravitational field produced by acceleration is indistinguishable from a gravitational field produced by mass (strong equivalence principle).
+		Likewise, within a sufficiently small region of space, a freely falling observer cannot distinguish between free fall in a gravitational field and inertial motion in the absence of gravity (weak equivalence principle). 
+		Therefore, a freely falling observer is locally an inertial observer.
 \subsection{History of Relativity}
 
 	The notion of inertiality plays a major role in relativity. Let us first explain relativity in its historical context.
 
 	We begin with special relativity and Newtonian gravity. The combination of these ideas eventually leads us toward general relativity, where gravity is incorporated into the structure of spacetime itself.
 
-	\subsubsection{Relativity Before Einstein}
+	\subsubsection{Relativity before Einstein}
 
 		What is relativity? It is an old notion that existed even by the time of Newton. The essential idea is that there should exist observers for which the laws of nature take the same form. Regardless of where the observer is or how they move within the appropriate class of frames, the laws of nature should be invariant.
 
@@ -372,13 +426,14 @@
 
 		Newtonian theory therefore satisfies Galilean relativity: it is invariant under Galilean transformations.
 
-		From the development of Newtonian mechanics onward, classical mechanics became the fundamental framework of physics. For several centuries, this was the dominant picture of physical law.
+		From the development of Newtonian mechanics onward, classical mechanics became the fundamental framework of physics.
+		From 1687 onwards, the only fundamental laws of physics is Newtonian physics.
 
 	\subsubsection{Maxwell's Results}
 
 		For roughly three centuries, Newtonian mechanics was the jewel of physics. Then electromagnetism broke this picture.
 
-		In the nineteenth century, Maxwell showed that Maxwell's equations are not Galilean invariant. They therefore do not satisfy Galilean relativity in the same way that Newton's equations do. This challenged centuries of orthodoxy.
+		In 1862, Maxwell showed that Maxwell's equations are not Galilean invariant. They therefore do not satisfy Galilean relativity in the same way that Newton's equations do. This challenged centuries of orthodoxy.
 
 		The response of academia was initially to deny that Maxwell's equations were fundamental in the same sense as Newtonian mechanics. One possibility was that Maxwell's equations were only correct in the rest frame of some physical medium, and that medium was called the \textit{aether}.
 
@@ -442,7 +497,8 @@
 			\beta &= \frac{v}{c}.
 		\end{align}
 
-		The project, according to Einstein, is to rewrite all of physics so that it is in ``relativistically covariant'' form: the equations should be invariant in form from one inertial observer to another.
+		The project, according to Einstein, is to rewrite all of physics so that it is in ``relativistically covariant'' form: the equations 
+		should be invariant in form from one inertial observer to another\footnote{This isn't too difficult back in 1905, since the only fundamental theories of physics at the time were Newton's and Maxwells.}.
 
 		The form of these transformations is
 
@@ -564,28 +620,23 @@
 		The only essential role of Maxwell's theory in this historical development is to establish $c$ as a universal constant that characterizes the structure of spacetime.
 
 		We can approach relativity with different values of the invariant speed. If we assign
-
 		\begin{equation}
 			c=\infty,
 		\end{equation}
-
 		we recover Galilean relativity.
 
 		If we assign
-
 		\begin{equation}
 			c=0,
 		\end{equation}
-
 		we obtain Carrollian relativity.
 
 		And if we assign $c$ to be an arbitrary finite number between $0$ and $\infty$,
-
 		\begin{equation}
 			c\in(0,\infty),
 		\end{equation}
-
 		we obtain the relativistic structure associated with special relativity, and ultimately the framework in which general relativity is formulated. We will tackle this in the next chapter.
+
 
 
 

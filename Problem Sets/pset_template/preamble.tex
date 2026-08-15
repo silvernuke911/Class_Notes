@@ -123,12 +123,6 @@
   \addcontentsline{toc}{section}{Chapter \thesection : #1}
 }
 
-\renewenvironment{solution_pset}{
-  \noindent\textbf{\Large Solution}
-}{
-  \newpage
-}
-
 \numberwithin{equation}{subsection}
 
 % Definition counter linked to section
@@ -201,4 +195,39 @@
         Theorem \thetheorem{} : #2%
     },
     #1
+}
+
+\newenvironment{remark}
+	{\par\noindent\textit{\textbf{Remark : }}\par}
+	{\par}
+
+
+\newenvironment{note}
+	{\par\noindent\textit{Note : }\par}
+	{\par}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+
+\usepackage{amsmath}\numberwithin{equation}{section}\renewcommand{\theequation}{\thesection.\arabic{equation}} 
+
+\newenvironment{problem}{
+  \hrule
+  \vspace{5pt}
+}{
+  \vspace{10pt}\hrule\vspace{10pt}
+}
+
+\newenvironment{solution_pset}
+{%
+    \noindent
+	{ \Large
+    \textbf{Solution}
+	}
+    \par
+    \vspace*{10pt}%
+}
+{%
+    \newpage
 }

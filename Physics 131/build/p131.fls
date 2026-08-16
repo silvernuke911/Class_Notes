@@ -657,7 +657,6 @@ OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 INPUT .\content\1_1.tex
 INPUT .\content\1_1.tex
 INPUT content\1_1.tex
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
@@ -669,6 +668,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx5.
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib5.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy5.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
@@ -741,6 +741,42 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi1
 INPUT .\content\1_2.tex
 INPUT .\content\1_2.tex
 INPUT content\1_2.tex
+INPUT .\images\charge_distrib.png
+INPUT .\images\charge_distrib.png
+INPUT .\images\charge_distrib.png
+INPUT .\images\charge_distrib.png
+INPUT .\images\charge_distrib.png
+INPUT .\images\charge_distrib.png
+INPUT .\content\1_3.tex
+INPUT .\content\1_3.tex
+INPUT content\1_3.tex
+INPUT .\content\1_4.tex
+INPUT .\content\1_4.tex
+INPUT content\1_4.tex
+INPUT .\content\1_5.tex
+INPUT .\content\1_5.tex
+INPUT content\1_5.tex
+INPUT .\content\1_6.tex
+INPUT .\content\1_6.tex
+INPUT content\1_6.tex
+INPUT .\content\1_7.tex
+INPUT .\content\1_7.tex
+INPUT content\1_7.tex
+INPUT .\content\1_8.tex
+INPUT .\content\1_8.tex
+INPUT content\1_8.tex
+INPUT .\content\1_9.tex
+INPUT .\content\1_9.tex
+INPUT content\1_9.tex
+INPUT .\content\2_1.tex
+INPUT .\content\2_1.tex
+INPUT content\2_1.tex
+INPUT .\content\2_2.tex
+INPUT .\content\2_2.tex
+INPUT content\2_2.tex
+INPUT .\content\2_3.tex
+INPUT .\content\2_3.tex
+INPUT content\2_3.tex
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out

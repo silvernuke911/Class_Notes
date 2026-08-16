@@ -670,13 +670,12 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{remark}
 		% % \bigskip
 
-		\newpage
 	\subsubsection{Laplacian in orthogonal curvilinear coordinates}
 
 		We introduce an orthogonal curvilinear coordinate system $(q_1,q_2,q_3)$ with orthonormal coordinate directions $\hat{\mathbf e}_1,\hat{\mathbf e}_2,\hat{\mathbf e}_3$ and scale factors (metric coefficients) \[
 			h_i(q_1,q_2,q_3) = \left\| \frac{\partial \mathbf r}{\partial q_i} \right\|,\qquad i=1,2,3.
 		\]
-		Infinitesimal displacement is
+		The infinitesimal displacement is
 		\[
 			d\mathbf r = h_1\,dq_1\,\hat{\mathbf e}_1 + h_2\,dq_2\,\hat{\mathbf e}_2 + h_3\,dq_3\,\hat{\mathbf e}_3,
 		\]
@@ -703,18 +702,20 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 		\end{equation}
 
 		From this, the Laplacian of a scalar $\phi$ (divergence of the gradient) becomes
-		\begin{equation}\label{eq:lap_general}
-			{\;
-			\nabla^2 \phi
-			= \frac{1}{h_1 h_2 h_3}
-			\sum_{i=1}^3
-			\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i^2}\,\frac{\partial\phi}{\partial q_i} \right)
-			\;}
-		\end{equation}
+		\begin{definition}{Laplacian in terms of scale factors}
+			\begin{equation}\label{eq:lap_general}
+				{
+				\nabla^2 \phi
+				= \frac{1}{h_1 h_2 h_3}
+				\sum_{i=1}^3
+				\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i^2}\,\frac{\partial\phi}{\partial q_i} \right)
+				}
+			\end{equation}
+		\end{definition}
 		which is the standard formula for the Laplacian in an orthogonal coordinate system.
 
-		\subsubsubsection{Verification: Cylindrical coordinates}
-			Cylindrical coordinates $(r,\theta,z)$:
+		\subsubsubsection{Cylindrical coordinates}
+			Cylindrical coordinates are expressed as $(r,\theta,z)$:
 			\[
 			\mathbf r = (r\cos\theta,\, r\sin\theta,\, z),\qquad
 			h_r = 1,\; h_\theta = r,\; h_z = 1.
@@ -733,8 +734,8 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{align*}
 			which is the familiar cylindrical Laplacian.
 
-		\subsubsubsection{Verification: Spherical coordinates}
-			Spherical coordinates $(r,\theta,\varphi)$ with $\theta$ the polar angle and $\varphi$ the azimuth:
+		\subsubsubsection{Spherical coordinates}
+			Spherical coordinates are expressed as  $(r,\theta,\varphi)$ with $\theta$ the polar angle and $\varphi$ the azimuth:
 			\[
 				\mathbf r = \big(r\sin\theta\cos\varphi,\; r\sin\theta\sin\varphi,\; r\cos\theta\big),
 				\qquad h_r=1,\; h_\theta=r,\; h_\varphi=r\sin\theta.
@@ -754,64 +755,179 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{align*}
 			the standard spherical Laplacian.
 
-	\bigskip
+		\subsubsection{Divergence and the Dirac Delta}
+			As is required from the course notes goals, we aim to prove that the
+			divergence of a radial inverse square vector field is consistent with
+			the Dirac delta point source/sink.
 
-	\subsubsection{Divergence of a radial inverse-square field and the Dirac delta}
+			Consider the radial inverse-square vector field
+			\begin{equation}
+				\vb{F}(\vb{r}) = \alpha \frac{1}{r^2}\vu{r} = \alpha \frac{\vb{r}}{r^3}  
+			\end{equation}
+			where $r = \norm{\vb{r}}$,$\vu{r}=\vb{r}/r$, and $\alpha\in\R$ is constant.
+			
+			We want to show that the divergence is zero on this field everywhere except
+			at the origin, where it is represented by a Dirac delta:
+			\begin{equation}
+				\div\vb{F} = 4\pi\alpha\delta^{(3)}(\vb{r})
+			\end{equation}
+			For $\alpha>0$, this is a point source, and for $\alpha<0$, a point sink.
+			\begin{proof}
 
-		Consider the radial inverse-square field in $\mathbb R^3$,
-		\[
-			\mathbf F(\mathbf r) = k\,\frac{\hat{\mathbf r}}{r^2} = k\,\frac{\mathbf r}{r^3},
-			\qquad r=\|\mathbf r\|,\; \hat{\mathbf r}=\mathbf r/r,
-		\]
-		with constant $k$.
+				We prove the relation with the following arguments:
+				\begin{enumerate}
+					\item \textbf{Divergence away from the origin}
+						  
+						  For a purely radial field 
+						  \begin{equation}
+							  \vb{F} = F_r(r)\vu{r}
+						  \end{equation}
+						  the divergence in spherical coordinates is
+						  \begin{equation}
+							  \div\vb{F} = \frac{1}{r^2}\dv{}{r}\qty(r^2 F_r) 
+						  \end{equation}
+						  Here, the magnitude of $F_r$ is
+						  \begin{equation}
+						      F_r = \frac{\alpha}{r^2} 
+						  \end{equation}
+						  so,
+						  \begin{equation}
+						      r^2 F_r = \alpha
+						  \end{equation}
+						  and therefore, for $r\neq 0$, 
+						  \begin{align}
+							  \div\vb{F} &= \frac{1}{r^2} \dv{\alpha}{r}\\
+										 &= \frac{1}{r^2} \cdot 0\\ 
+										 &= 0.
+						  \end{align}
+						  Thus,
+						  \begin{equation}
+							  \div\vb{F} = 0\quad(r\neq 0).
+						  \end{equation}
+						Therefore, any nonzero divergence must be concentrated at $r=0$.
+					\item \textbf{Flux through a sphere about the origin}
 
-		\paragraph{1. Away from the origin}
-		For $r\neq 0$ one may compute the divergence using spherical components or directly note that $\mathbf F$ is the gradient of a $1/r$-type potential up to sign:
-		\[
-			\mathbf F = k\,\frac{\mathbf r}{r^3} = -k\,\nabla\!\left(\frac{1}{r}\right).
-		\]
-		Because $\nabla^2(1/r)=0$ for $r\neq 0$, it follows that
-		\[
-			\nabla\cdot\mathbf F = -k\,\nabla\cdot\nabla\!\left(\frac{1}{r}\right) = -k\,\nabla^2\!\left(\frac{1}{r}\right) = 0
-			\qquad (r\neq 0).
-		\]
+						Suppose a sphere $S_R$ of radius $R$ centered at the origin. Since
+						\begin{equation}
+							\vb{F} = \frac{\alpha}{R^2}\vu{r} 
+						\end{equation}
+						on the sphere, and 
+						\begin{equation}
+							d\vb{A} = \vu{r} R^2 \sin\theta\dd{\theta}\dd{\phi},
+						\end{equation}
+						the flux is
+						\begin{equation}
+							\oint_{S_R}\vb{F}\cdot\dd{\vb{A}} 
+								= \int_0^{2\pi} \int_0^\pi 
+								  \frac{\alpha}{R^2} R^2  
+								  \sin\theta\dd{\theta}\dd{\phi},
+						\end{equation}
+						Evaluating this, we have
+						\begin{equation}
+							\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = \alpha \cdot (4\pi)
+						\end{equation}
+						Therefore,
+						\begin{equation}
+							\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = 4\pi\alpha 
+						\end{equation}
+						Note that this is independent of $R$.
+					\item \textbf{Gauss' Law}
 
-		\paragraph{2. Flux through a sphere and the distributional divergence}
-		Let $S_R$ be the sphere of radius $R$ centered at the origin. The outward flux is
-		\[
-			\Phi(R) = \iint_{S_R} \mathbf F\cdot d\mathbf S
-			= \iint_{S_R} k\frac{\hat{\mathbf r}}{r^2}\cdot(\hat{\mathbf r}\,R^2 d\Omega)
-			= k\iint_{S_R} d\Omega
-			= 4\pi k.
-		\]
-		This flux is independent of $R$ (for any $R>0$). By the divergence theorem, for any volume $V$ containing the origin,
-		\[
-			\int_V \nabla\cdot\mathbf F\, d^3r = \iint_{\partial V} \mathbf F\cdot d\mathbf S = 4\pi k.
-		\]
-		If $V$ does \emph{not} contain the origin the flux is zero. These facts characterize the divergence of $\mathbf F$ as a distribution:
-		\[
-			{\;
-			\nabla\cdot\left(k\,\frac{\mathbf r}{r^3}\right) = 4\pi k\,\delta^{(3)}(\mathbf r)
-			\;}
-		\]
-		because the distribution on the right is precisely the one that integrates to $4\pi k$ over any volume containing the origin and to $0$ otherwise.
+						For an ordinary smooth field, the divergence theorem gives
+						\begin{equation}
+							\int_V \div\vb{F}\dd[3]{r} = \oint_{\partial V}\vb{F}\cdot d\vb{A}
+						\end{equation}
+						Thus, for any volume containig the origin,
+						\begin{equation}
+							\int_V \div\vb{F}\dd[3]{r} = 4\pi \alpha 
+						\end{equation}
+						From argument 1, we already established that the divergence 
+						is zero everywhere except the origin. Thus, the entire $4\pi\alpha$
+						must be concetrated at the single point $\vb{r}=0$.
 
-		\paragraph{3. Relation to the Laplacian of \(1/r\)}
-		Since $\mathbf F = -k\nabla(1/r)$, taking the divergence gives
-		\[
-			\nabla\cdot\mathbf F = -k\,\nabla^2\!\left(\frac{1}{r}\right).
-		\]
-		Comparing with the previous boxed result yields the standard identity
-		\[
-			{\;
-			\nabla^2\!\left(\frac{1}{r}\right) = -4\pi\,\delta^{(3)}(\mathbf r).
-			\;}
-		\]
+						As such, we desire a function $g(\vb{r})$ that satisfies
+						\begin{align}
+							g(\vb{r}) =0,\quad \vb{r}\neq 0
+						\end{align}
+						but 
+						\begin{equation}
+							\int_V g(\vb{r})\dd[3]r = 4\pi\alpha
+						\end{equation} 
+						Whenever $V$ containts the origin.
+					\item \textbf{Property of the Dirac Delta}
+						The three dimensional Dirac delta is defined by 
+						\begin{equation}
+							\int_V \delta^{(3)}(\vb{r})\dd[3]r =
+							\begin{cases}
+								1,\quad &0\in V\\
+								0,\quad &0\not\in V
+							\end{cases}
+						\end{equation}
+						Therefore, $4\pi\alpha\delta^{(3)}(\vb{r})$ has the property
+						\begin{equation}
+						    \int_V 4\pi \alpha \delta^{(3)}(\vb{r})\dd[3]r =
+							\begin{cases}
+								4\pi\alpha \quad & 0\in V\\
+								0 &0\not\in V
+							\end{cases}
+						\end{equation}
+						Which is precisely what we require of our function $g(\vb{r})$
 
-		\paragraph{Remark (distributional sense)}
-		All statements above about $\nabla\cdot\mathbf F$ and $\nabla^2(1/r)$ must be interpreted distributionally: point wise equalities hold for $r\neq 0$, while at the origin the singular behavior is captured by the Dirac delta. Equivalently, for any smooth test function $\varphi$ with compact support,
-		\[
-			\int_{\mathbb{R}^3}\nabla^2\!\left(\frac{1}{r}\right)\varphi(\mathbf r)\,d^3r
-			= -4\pi\,\varphi(\mathbf 0).
-		\]
+						Therefore, in the sense of distributions,
+						\begin{equation}
+							\div\vb{F} = 4\pi\alpha \delta^{(3)}(\vb{r})
+						\end{equation}
+				\end{enumerate}
+				Since $\vb{F}=\dfrac{\alpha}{r^2}\vu{r}$, then we find that
+				\begin{equation}
+					\div\qty(\alpha\frac{1}{r^2}\vu{r}) = 4\pi\alpha\delta^{(3)}(\vb{r})
+				\end{equation}
+				We can cancel the $\alpha$, since it's simply a constant indicating source/sink 
+				dynamics. Doing this, we find that
+				\begin{equation}
+					\div(\frac{1}{r^2}\vu{r}) = 4\pi\delta^{(3)}(\vb{r})
+				\end{equation}
+				Which is what we set out to prove.
+			\end{proof}
+			Thus, we have
+			\begin{theorem}{Divergence of a radial inverse quadratic field}
+			    The divergence of a radial inverse quadratic vector field
+				is consistent with the Dirac delta point source/sink
+				\begin{equation}
+					\div(\frac{\alpha}{r^2}\vu{r}) = 4\pi\alpha\delta^{(3)}(\vb{r})
+				\end{equation}
+				Where $\alpha$ is a parameter that determines whether the
+				point is a source $(\alpha > 0)$ or sink $(\alpha < 0)$
+			\end{theorem}
+			
+			A particularly familiar example of this is the electric field.
+			\begin{equation}
+				\vb{E} = \frac{q}{4\pi\varepsilon_0} \frac{1}{r^2} \vu{r} 
+			\end{equation}
+			for which
+			\begin{equation}
+				\div\vb{E} = \frac{q}{\varepsilon_0}\delta^{(3)}(\vb{r}) 
+			\end{equation}
+			
 \newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

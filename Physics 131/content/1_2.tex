@@ -1,18 +1,146 @@
 
 \subsection{The Electric Field}
+	\subsubsection{Definition}
+		The fundamental problem that electrodynamic hopes to solve is this:
+		We have some collection of electric charges $q_1,q_2,q_3,\ldots$, called
+		\textit{source charges}; What force do they exert on another charge $q_0$, called
+		\textit{text charge}? The positions of the source charges are given (all as functions of time)
+		and the trajectory of the test particle is \textit{to be calculated}. In general,
+		both the source charges and test charge are in motion.
+
+		The solution to this problem is facilitated by the \textbf{principle of superposition},
+		which states that the interaction between any two charges is completely unnafected by
+		the presence of others. That means that to determine the force on $q_0$, we must first 
+		determine the force $\vb{F}_1$ due to $q_1$ alone, then $q_2$, and so on. Finally, we take 
+		the vector sum of these individual forces.
+		\[
+			\sum\vb{F} = \vb{F}_1 + \vb{F}_2 \vb{F}_3 + \cdots
+		\]
+		Thus, if we can find the force on $q_0$ due to a \textit{single} source charge $q$, we 
+		are, in principle, done, and the rest is just repitition.
+
+		A priori, this seems easy. However, upon further study, we find that the force on $q_0$
+		not only depends on the separation distance $r$ between the charges, but also depends on
+		both their velocities and on the acceleration of $q$. Moreover, it is not those states 
+		at this instant that matters, but the state that $q$ had in an earlier time, since information
+		travels at a finite speed $c$, and we can only grasp what happened after the information reached 
+		us.
+
+		Therefore, in spite of the fact that the basic question (``What is the force on
+		$q_0$ due to $q$?'') is easy to state, it does not pay to confront it head on; rather, we
+		shall go at it by stages. In the meantime, the theory we develop will allow for the
+		solution of more subtle electromagnetic problems that do not present themselves
+		in quite this simple format. To begin with, we shall consider the special case
+		of \textbf{electrostatics} in which all the \textit{source charges are stationary} (though the test
+		charge may be moving).
+	\subsubsection{Coulomb's Law}
+		The force on a test charge $q_0$ due to a single point charge $q$, that is at \textit{rest} a 
+		distance $r$ away, is given (based on experiments) by \textbf{Coulomb's Law},
+		a fundamental principle first established by Charles-Augustin de Coulomb in 1785 using a torsion balance experiment.
+		
+		It is expressed as the following:
+		\begin{definition}{Coulomb's Law}
+			\begin{equation}
+				\vb{F} = \frac{1}{4\pi\varepsilon_0} \frac{q_0 q}{r^2}\vu{r} 
+			\end{equation}
+		\end{definition}
+		\newpage
+		The constant $\varepsilon_0$ is called the \textbf{permitivity of free space}. In
+		SI units, it is defined as 
+		\begin{definition}{Permitivity of free space}
+		    \begin{equation}
+				\varepsilon_0 = \SI{8.85e-12}{C^2/Nm^2}
+		    \end{equation}
+		\end{definition}
+		In other words, then, the force is proportional to the product of the charges,
+		and inversely proportional to the square of their distances\footnote{Newton much?}.
+		The vector $\vb{r}$ is the separation vector from $\vb{x}$, the location of $q$, and to $\vb{x}_0$,
+		the location of the $q_0$ 
+		\[
+			\vb{r} = \vb{x} - \vb{x}_0
+		\]
+		and $r$ is the magnitude of this separation vector, $r=\norm{\vb{r}}$. The 
+		force points along the line from $q$ to $q_0$; it is repulsive if $q_0$ and 
+		$q$ are the same sign, and attractive if their signs are the opposite.
+		
+		Coulomb’s law and the principle of superposition constitute the physical input
+		for electrostatics—the rest, except for some special properties of matter, is 
+		mathematical elaboration of these fundamental rules.
+	\subsubsection{The Electric Field}
+		If we have \textit{several} point charges $q_1,q_2,q_3,\ldots,q_n$, at distances
+		$r_1,r_2,r_3,\ldots,r_n$ from $q_0$, then the total force on $q_0$ is trivially
+		\begin{align*}
+			\vb{F} &= \vb{F}_1 + \vb{F}_2 + \vb{F}_3 + \cdots \\
+				   &= \frac{1}{4\pi\varepsilon_0} \qty(
+						\frac{q_0q_1}{r_1^2}\vu{r}_1 + 
+						\frac{q_0q_2}{r_2^2}\vu{r}_2 + 
+						\frac{q_0q_3}{r_3^2}\vu{r}_3 + 
+					  \cdots )\\
+				   &= \frac{q_0}{4\pi\varepsilon_0} \qty(
+						\frac{q_1}{r_1^2}\vu{r}_1 + 
+						\frac{q_2}{r_2^2}\vu{r}_2 + 
+						\frac{q_3}{r_3^2}\vu{r}_3 + 
+					  \cdots )\\
+		\end{align*}
+		or
+		\begin{equation}
+		    \vb{F} = q_0 \vb{E}
+		\end{equation}
+		where
+		\begin{definition}{Discrete definition of the Electric field}
+			\begin{equation} \label{eq: discrete E}
+				\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n \frac{q_i}{r_i^2}\vu{r}_i  
+			\end{equation}
+		\end{definition}
+		$\vb{E}$ is called the \textbf{electric field} of the source charges. Notice that it is 
+		a function of position $(\vb{r})$ because the separation vectors $\vb{r}$ depend on the location of 
+		the field point $P$. But it makes no reference to the test charge $q$. The electric field is a vector
+		quantity which varies from point to point and is determined by the configuration of 
+		source charges. Physically ,$\vb{E}(\vb{r})$ is the force per unit charge that would
+		be exerted on a text charge if you were to place one on $P$.
+	\subsubsection{Continuus Charge Distribution}
+		Our definition of the electric field (\ref{eq: discrete E}) assumes that the source
+		of the fields is a collection of discrete point charges $q_i$ (Fig \ref{fig:charge distribution}.a). If instead, the charge
+		is distributed continuously over some region, the sum thus becomes an integral
+		\begin{equation}
+			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0}\int \frac{1}{r^2}\vu{r}\dd{q} 
+		\end{equation}
+		There are multiple ways where in charges can be distributed over a region.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.4\textwidth]{images/charge_distrib}
+			\caption{Charge distributions}
+			\label{fig:charge distribution}
+		\end{figure}
+
+		If the charge is spread out along a \textit{line} (Fig \ref{fig:charge distribution}.b), with the charge-per-unit-length $\lambda$,
+		then $dq = \lambda \dd{l}$, where $dl$ is a length element along the line. If the charge
+		is smeared over a \textit{surface} (Fig \ref{fig:charge distribution}.c), with charge-per-unit-area $\sigma$, then $dq = \sigma \dd{S}$,
+		where $dS$ is an area element on the surface. And if the charge fills a \textit{volume} (Fig \ref{fig:charge distribution}.d),
+		with charge-per-unit-volume $\rho$, then $dq = \rho \dd{V}$, where $dV$ is a volume element.
+		\[
+			dq \to \lambda dl \sim \sigma dS \sim \rho dV
+		\]
+		Thus, the electric field of a line charge is 
+		\begin{equation}
+			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0} \int \frac{\lambda(\vb{r})}{r^2} \vu{r} \dd{l} ;
+		\end{equation}
+		For a surface charge, we have
+		\begin{equation}
+			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0} \int \frac{\sigma(\vb{r})}{r^2} \vu{r} \dd{S} ;
+		\end{equation}
+		And for a volume charge
+		\begin{definition}{Continuum definition of the Electric Field}
+			\begin{equation} \label{eq: cont E}
+				\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0} \int \frac{\rho(\vb{r})}{r^2} \vu{r} \dd{V} ;
+			\end{equation}
+		\end{definition}
+		Equation \ref{eq: cont E} is often times referred to as ``Coulomb's Law'' because it is such
+		a short step from the original, and because a volume charge is in a sense the most general
+		and realisitic case. 
+
+
+	\subsubsection{Divergence and Curl of Electrostatic Fields}
+
+
 \newpage
-\subsection{Boundary Conditions, work and energy, conductors}
-\newpage
-\subsection{Calculating Scalar Potentials I}
-\newpage
-\subsection{Calculating Scalar Potentials II}
-\newpage
-\subsection{Dielectrics}
-\newpage
-\subsection{Electric Displacement}
-\newpage
-\subsection{Energy in dielectrics, Magnetostatics}
-\newpage
-\subsection{Magnetic Vector Potential}
-\newpage
-\subsection{Unit Summary}

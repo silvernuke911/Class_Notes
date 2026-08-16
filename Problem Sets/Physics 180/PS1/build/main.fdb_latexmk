@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/main"] 1786877806.59042 "build/main.aux" "build/main.bbl" "build/main" 1786885048.62226 0
+["bibtex build/main"] 1786877806.59042 "build/main.aux" "build/main.bbl" "build/main" 1786885495.38734 0
   "./references.bib" 1786877791 2259 878718359248e5cfe87d6ecbc904cf5e ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/unsrtnat.bst" 1284455456 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "build/main.aux" 1786885044 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
+  "build/main.aux" 1786885490 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1786885035.28144 "main.tex" "main.pdf" "main" 1786885048.62439 2
+["pdflatex"] 1786885480.31187 "main.tex" "main.pdf" "main" 1786885495.40825 2
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1785515589 278015 b5ae8789d05c9394f564dcef5be6e51a ""
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1759457975 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1759457984 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -385,13 +385,13 @@
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1750428951 2269 2de6c7a5fd634dfef00a960544463a38 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
-  "build/main.aux" 1786885044 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
+  "build/main.aux" 1786885490 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
   "build/main.bbl" 1786877807 2148 2b1a16d5cd018c97cfae984c0ad76002 "bibtex build/main"
-  "build/main.out" 1786885043 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/main.out" 1786885489 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "code.tex" 1786884894 3027 0d86cee227ec081a183610970a340050 ""
   "code/BAplot.pdf" 1786878181 233925 3bd2f0463dbb41609718da5fc02e8777 ""
   "images/BAplot.png" 1786822013 31212 c714beec2b780afb999071faf94add85 ""
-  "main.tex" 1786885032 12473 4aa6f481fad60ba0c75d6e659311f54f ""
+  "main.tex" 1786885474 12503 adeba7ee4b9a0a8f40498af845d278b9 ""
   "preamble.tex" 1786819842 5481 ee4d4cdc63b39988ac3c609a5118d52c ""
   "preset.tex" 1786877012 16121 44e57bdaa08684b94e44c15bf641cf4a ""
   "title.tex" 1786833785 615 b786c9adec804c690a4a7298bc0bbdac ""

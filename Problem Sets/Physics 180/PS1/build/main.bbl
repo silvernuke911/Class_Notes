@@ -1,15 +1,48 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{flores2026nuclear}
+\bibitem[Ning et~al.(2026)Ning, Cai, Wang, and Yoo]{ning2026}
+Zhuan Ning, Rong-Gen Cai, Shao-Jiang Wang, and Chul-Moon Yoo.
+\newblock Long-term 3+1 simulations of primordial black hole formation during
+  radiation domination.
+\newblock \emph{arXiv preprint}, 2026.
+\newblock \doi{10.48550/arXiv.2608.13206}.
+\newblock URL \url{https://doi.org/10.48550/arXiv.2608.13206}.
+\newblock Submitted on 13 Aug 2026. Report number: NU-QG-25.
+
+\bibitem[Weinberg(1967)]{weinberg1967leptons}
+Steven Weinberg.
+\newblock {A Model of Leptons}.
+\newblock \emph{Physical Review Letters}, 19:\penalty0 1264--1266, Nov 1967.
+\newblock \doi{10.1103/PhysRevLett.19.1264}.
+\newblock URL \url{https://doi.org/10.1103/PhysRevLett.19.1264}.
+\newblock Submitted November 1967.
+
+\bibitem[Flores(2026)]{flores2026nuclear}
 M.~Flores.
 \newblock {Lecture Slides \textit{Physics 180: Nuclear and Particle Physics}}.
 \newblock Digital lecture slides, 2026.
-\newblock Available from course website.
+\newblock Available from course website,
+  \href{https://uvle.upd.edu.ph/pluginfile.php/182451/mod_resource/content/1/Physics%20180%20Lecture%201%20-%20Orientation.pdf}{UVL\'e}.
 
-\bibitem{baird2024moststable}
+\bibitem[Wang et~al.(2021)Wang, Huang, Kondev, Audi, and Naimi]{ame2020}
+Meng Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.
+\newblock {The AME 2020 atomic mass evaluation (II). Tables, graphs and
+  references}.
+\newblock \emph{Chinese Physics C}, 45\penalty0 (3):\penalty0 030003, 2021.
+\newblock \doi{10.1088/1674-1137/abddaf}.
+\newblock URL \url{https://doi.org/10.1088/1674-1137/abddaf}.
+
+\bibitem[Baird(2024)]{baird2024moststable}
 Christopher~S. Baird.
 \newblock What is the most stable nucleus?
-\newblock Science Questions with Surprising Answers, July 2024.
+\newblock \textit{Science Questions with Surprising Answers}, July 2024.
+\newblock URL
+  \url{https://www.wtamu.edu/~cbaird/sq/mobile/2024/07/23/what-is-the-most-stable-nucleus/}.
 \newblock Accessed: 16-08-2026.
 
 \end{thebibliography}

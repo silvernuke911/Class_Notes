@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <math.h>
+
+// SEMF coefficients from [1]
+double a1 = 15.56;
+double a2 = 17.23;
+double a3 =  0.697;
+double a4 = 93.14;
+double a5 = 12.00;
+
+// Function definition f(A) - eq. 3.23
+double f(double A) {
+	double result =
+		  2 * a2 * pow(a3,2) * pow(A,4.0/3.0)
+		- a3 * pow(a4,2) * A 
+		+ 4 * a2 * a3 * a4 * pow(A,2.0/3.0)
+		+ 2 * a2 * pow(a4, 2);
+	return result;
+}
+
+// Function derivative definition - fprime
+double fp(double A) {
+	double result = 
+		  (8.0/3) * a2 * pow(a3,2) * pow(A, 1.0/3)
+		- a3 * pow(a4,2)
+		+ (8.0/3) * a2 * a3 * a4 * pow(A, -1.0/3);
+	return result;
+}
+
+// Most stable Z for A
+double Z(double A) {
+	double num = a4 * A;
+	double den = 2 * (a3 * pow(A,2.0/3) + a4);
+	return num / den;
+}
+
+// Newton Raphson algorithm
+double newton_raphson (double A0, double tol, int max_iter) 
+{
+	double A = A0;
+	printf("Iteration 0: A = %.8f, f(A) = %12.5e\n", A, f(A));
+
+	double f_val;  // function value
+	double fp_val; // function derivative value
+	double A_new;  // iterable var
+	for (int i = 1; i <= max_iter; i++) {
+		f_val = f(A);
+		fp_val = fp(A);
+
+		if (fabs(fp_val) < 1e-15) {
+			printf("Derivative too small, method failure\n");
+		}
+
+		A_new = A - f_val / fp_val;
+		printf("Iteration %d: A = %12.8f, f(A) = %12.5e\n", i, A_new, f(A_new));
+
+		if (fabs(A_new - A) < tol) {
+			printf("\nConverged after %d iterations.\n", i);
+			return A_new;
+		} 
+
+		A = A_new;
+	}
+
+	printf("\nMax iterations reeached. Final A = %.8f\n", A);
+	return A;
+}
+
+void horzline(char ch,int len) {
+	for (int i = 0; i < len; i++) {
+		printf("%c",ch);
+	}
+	printf("\n");
+}
+
+int main() 
+{
+	horzline('=',60);
+	printf("Solving for A using NR method\n");
+	horzline('=',60);
+
+	double A0 = 100;
+	printf("\nStarting with A0 = %.8f\n", A0);
+	horzline('-',60);
+	float solution = newton_raphson(A0, 1e-12, 100);
+	printf("Maximal value for A: A = %.8f\n", solution);
+	printf("Most stable element: Z = %.8f\n\n", Z(solution));
+	horzline('=',60);
+	return 0;
+}

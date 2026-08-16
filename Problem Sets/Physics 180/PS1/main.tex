@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \input{preset}
 \input{preamble}
+\usepackage[numbers]{natbib}
 
 \begin{document}
 	\input{title}
@@ -25,7 +26,36 @@
 		\end{enumerate}
 	\end{problem}
 	\begin{solution_pset}
-
+		\begin{enumerate}[label=\textbf{\arabic*.}]
+			\item The first four numbers in an \texttt{arXiv} paper stand for the year and 
+				  month that the paper is published. The numbering system goes like 
+				  \[
+					  \texttt{arXiv:YYMM:NNNNN}
+				  \]
+				  where \texttt{YY} is the last two digits of the year, and \texttt{MM} is
+				  the month of the submission. As such, majority of the recent 
+				  \texttt{arXiv} submissions in the time of writing has the identifier code
+				  \texttt{arXiv.2608.NNNNN}. The rest of the numbers identify the paper 
+				  within that month's submission sequence.
+			\item The paper shown in slides 22 and 23 have the following \texttt{arXiv} identifier numbers:
+				  \begin{itemize}
+					  \item ATLAS Run 2 searches for electroweak production of supersymmetric particles interpreted within the pMSSM  
+							\[ \texttt{arXiv.2402.01392}\text{(hep-ex)} \]
+					  \item	Multi-Higgs boson probes of the dark sector
+							\[ \texttt{arXiv.1912.02204}\text{(hep-ph)} \]
+					  \item Hitting two BSM particles with one lepton-jet: Search for a top partner decaying to a dark photon, resulting in a lepton-jet.
+							\[ \texttt{arXiv.2112.08425}\text{(hep-ph)} \]
+				  \end{itemize}
+			\item A particular paper that I found interesting is \texttt{arXiv.2608.13206}(gr-qc)\cite{ning2026}, entitled 
+				  ``Long-term 3+1 simulations of primordial black hole formation during radiation domination" by Ning et al. This interests
+				  me, well, because my field primarily right now is GR and I'm studying under Dr. Vega, so papers regarding 
+				  general relativity and cosmology are of high interest to me. Reading the paper, they deal with the 
+				  mathematics of primordial blackholes in 3+1 dimensions, and simulates the evolution of the collapse of such black holes during the early universe.
+				  and how it behaves near-critical collaps and how it evolves post-formation, and explicitly studies non-spherical
+				  symmetry. Very interesting indeed. I myself believe that primordial black holes were abundant in the 
+				  early universe and is possibly one of the contributors of dark matter, so this paper is right up my
+				  alley. It's pretty neat!
+		\end{enumerate}
 	\end{solution_pset}
 	\newpage
 
@@ -41,7 +71,23 @@
 		highly cited?
 	\end{problem}
 	\begin{solution_pset}
+		The most cited paper in \texttt{InSpire-HEP} in 1967 is \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.19.1264}{``A Model of Leptons"} by Steven Weinberg \cite{weinberg1967leptons}, which is also 
+		one of the most cited papers in physics of all time. The paper's influence appears to be from its groundbreaking proposal that leptons can 
+		be described by gauge fields and that bosons can acquire mass through spontaneous symmetry breaking, which is a revolutionary concept at the time.
+		Skimming through the introduction, it describes a model in which the symmetry between the electromagnetic and weak interactions is 
+		spontenaeously broken, but Goldstone bosons (which is massless) are avoided. It introduces the photon and intermediate
+		boson fields as gauge fields.  
 
+		Looking past that, and reading even more papers about it, this paper is probably widely cited because it introduces an elegant model which unifies the electromagnetic
+		and weak forces into what we now call the electroweak force, which is one of the stepping stones towards a unified theory 
+		of nature. It also shows how the W boson can acquire mass, and this paper led to testable predictions regarding the 
+		masses of the W and Z bosons, the existence of weak neutral currents mediated by the Z boson, and also predicted the 
+		existence of a new particle which would give mass to other particles, later known as the Higgs boson. 
+		These predictions are then confirmed in the following decades. And once the theory has been proven to be renormalizable
+		(which the paper at its conclusion, wasn't really sure about), and once it was known to be compatible
+		with the theory of the strong force, it became the foundation of the standard model.
+
+		Revolutionary content in just three pages. Insane.
 	\end{solution_pset}
 	\newpage
 	% ===========================
@@ -52,7 +98,7 @@
 	\begin{problem}
 		The $B/A$ plot looks like it peaks at a specific value of $A$. Using the curve 
 		approximated by SEMF, find the value of $A$ that achieves this and find 
-		the peak value. What is the element that achieves this
+		the peak value. What is the element that achieves this?
 		\begin{center}
 			\includegraphics[width=3in]{images/BAplot.png}
 		\end{center}
@@ -166,12 +212,13 @@
 		\begin{equation}
 			2a_2(a_3A^{2/3} + a_4)^2 = a_3 a_4^2 A
 		\end{equation}
-		If we solve for $A$, we end up with this quartic equation if $A=x^3$
+		If we solve for $A$, we end up with this quartic equation if $A=x^3$, basically a fractional power.
+		This has no trivial closed form analytic solution.
 		\begin{equation}
 			2a_2 a_3^2 A^{4/3} - a_3 a_4^2 A + 4a_2 a_3 a_4 A^{2/3} + 2a_2a_4^2 = 0
 		\end{equation}
-		We solve for this numerically. I just used the Newton-Raphson zero finding algorithm. 
-		Code is provided on the appendices to show how that works.
+		We solve for this numerically. I just used the Newton-Raphson zero finding algorithm in \texttt{C}. 
+		Code is provided on the appendices to show how that works (see Listing \ref{lst:nr}). 
 
 		Anyways, the resulting number for stable $A$, using the provided coefficients\cite{flores2026nuclear}
 		\begin{align*}
@@ -181,7 +228,7 @@
 			a_4 &= \SI{93.14}{MeV}\\
 			a_5 &= \SI{12}{MeV}
 		\end{align*}
-		We numerically solve for $A \approx 62$, see Appendices for the python code. 
+		Numerically solving for $A$ results to the value  $A \approx 62$.
 		Using the derived equation (\ref{eq: ZA}), we can calculate the most stable
 		$Z$ value for this $A$, and this results to $Z \approx 27$, or, \textbf{Nickel-62}.
 		\begin{emphasis}
@@ -190,8 +237,8 @@
 				Z &\approx 27
 			\end{align}
 		\end{emphasis}
-		While I expected something akin to Iron-56, turns out,
-		when you derive the actual energies, the actual answer is also Nickel-62, since it has the highest nuclear binding energy per nucleon. 
+		The relevant graph is provided in the appendices (see Fig. \ref{fig: BA_plot}), compared with actual binding energy per nucleon \cite{ame2020}. While I expected something akin to $\ce{^{56}_{26}Fe}$, turns out,
+		when you derive the actual energies, the actual answer is also $\ce{^{62}_{27}Ni}$, since it has the highest nuclear binding energy per nucleon. 
 		However, Iron-56 is more commonly called the most stable end-product of stellar nucleosynthesis because it 
 		has the lowest mass per nucleon and is produced in massive quantities by stars \cite{baird2024moststable}
 		
@@ -201,93 +248,23 @@
 	\newpage
 	% ===========================
 	\stepcounter{section}
-	\bibliographystyle{unsrt} 
-	\bibliography{references} 
+	\bibliographystyle{unsrtnat} 
+	\bibliography{references}
+	% \bibliography{references}
 	\stepcounter{section}
 	% ===========================
 	\section*{Appendices}
 		\label{appendix}
+		\subsection*{Graph}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=5in]{code/BAplot.pdf}
+			\caption{Binding energy per nucleon: SEMF vs. AME2020 data}
+			\label{fig: BA_plot}
+		\end{figure}
+		\newpage	
 		\subsection*{Code} 
-\begin{lstlisting}[language=Python, caption=Newton-Raphson solver script for $A$ and $Z$, label=lst:newton]
-import numpy as np
-
-# SEMF coefficients from [1]
-a1 = 15.56  # MeV
-a2 = 17.23
-a3 = 0.697
-a4 = 93.14
-a5 = 12.00
-
-# Function definition f(A) (eq 3.23)
-def f(A):
-    return 2*a2*a3**2 * A**(4/3) - a3*a4**2 * A + 4*a2*a3*a4 * A**(2/3) + 2*a2*a4**2
-
-# Function derivative f'(A)
-def f_prime(A):
-    return (8/3)*a2*a3**2 * A**(1/3) - a3*a4**2 + (8/3)*a2*a3*a4 * A**(-1/3)
-
-# Newton-Raphson method
-def newton_raphson(A0, tol=1e-12, max_iter=100):
-    A = A0
-    print(f"Iteration 0: A = {A:.10f}, f(A) = {f(A):.10e}")
-    
-    for i in range(max_iter):
-        f_val = f(A)
-        f_prime_val = f_prime(A)
-        
-        if abs(f_prime_val) < 1e-15:
-            print("Derivative too small, method failure.")
-            break
-        
-        A_new = A - f_val / f_prime_val
-        
-        print(f"Iteration {i+1}: A = {A_new:.10f}, f(A) = {f(A_new):.10e}")
-        
-        if abs(A_new - A) < tol:
-            print(f"\nConverged after {i+1} iterations.")
-            print(f"Maximal value for    :  A = {A_new:.10f}")
-            return A_new
-        
-        A = A_new
-    
-    print(f"\nMax iterations reached. A = {A:.10f}")
-    return A
-
-# Solve for A
-print("=" * 60)
-print("Solving for A using Newton-Raphson method")
-print("=" * 60)
-
-A0 = 100  # Starting guess
-print(f"\nStarting with A0 = {A0}")
-print("-" * 60)
-solution = newton_raphson(A0)
-
-def Z(A):
-    num = a4 * A 
-    den = 2 * (a3 * A**(2/3) + a4)
-    return num/den 
-
-print(f"\nMost stable element: Z = {Z(solution):.10f}")
-\end{lstlisting}
-{\noindent \large \textbf{Output:}}
-\begin{verbatim}
-============================================================
-Solving for A using Newton-Raphson method
-============================================================
-
-Starting with A0 = 100
-------------------------------------------------------------
-Iteration 0: A = 100.0000000000, f(A) = -2.0154515672e+05
-Iteration 1: A =  61.9746717109, f(A) = -1.6138514552e+03
-Iteration 2: A =  61.6645809668, f(A) = -1.7247545923e-01
-Iteration 3: A =  61.6645478197, f(A) = -1.9790604711e-09
-Iteration 4: A =  61.6645478197, f(A) =  0.0000000000e+00
-
-Converged after 4 iterations.
-Maximal value      : A = 61.6645478197
-Most stable element: Z = 27.4076237435
-\end{verbatim}
+			\input{code}
 	\vfill
 	\begin{center}
 		\textsc{Physica Vincit Omnia}

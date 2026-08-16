@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  16 AUG 2026 06:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  16 AUG 2026 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1727,12 +1727,18 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip157
+\bibsep=\skip158
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count444
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
 .
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1741,51 +1747,58 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ld\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
+\scratchcounter=\count445
 \scratchdimen=\dimen386
 \scratchbox=\box153
-\nofMPsegments=\count445
-\nofMParguments=\count446
+\nofMPsegments=\count446
+\nofMParguments=\count447
 \everyMPshowfont=\toks75
-\MPscratchCnt=\count447
+\MPscratchCnt=\count448
 \MPscratchDim=\dimen387
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
 \everyMPtoPDFconversion=\toks76
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count450
+\c@lstlisting=\count451
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -1793,7 +1806,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 5.
+or `english'. on input line 6.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -1801,9 +1814,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `default' on line 5.
+Package chemgreek Info: Activating mapping `default' on line 6.
 
-Package hyperref Info: Link coloring ON on input line 5.
+Package hyperref Info: Link coloring ON on input line 6.
 
 (C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS1\bui
 ld\main.out)
@@ -1846,95 +1859,112 @@ ld\main.out)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \d on input line 5.
-LaTeX Info: Redefining \partial on input line 5.
-LaTeX Info: Redefining \grad on input line 5.
-LaTeX Info: Redefining \div on input line 5.
-LaTeX Info: Redefining \curl on input line 5.
-LaTeX Info: Redefining \laplacian on input line 5.
-LaTeX Info: Redefining \Re on input line 5.
-LaTeX Info: Redefining \Im on input line 5.
+LaTeX Info: Redefining \d on input line 6.
+LaTeX Info: Redefining \partial on input line 6.
+LaTeX Info: Redefining \grad on input line 6.
+LaTeX Info: Redefining \div on input line 6.
+LaTeX Info: Redefining \curl on input line 6.
+LaTeX Info: Redefining \laplacian on input line 6.
+LaTeX Info: Redefining \Re on input line 6.
+LaTeX Info: Redefining \Im on input line 6.
 (title.tex [1
 
 {C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/verc
 i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}{C:/Users/verci/
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}])
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-15.
+16.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+2.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+32.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+32.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
+2.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 32
+.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+2.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 	\end{solution_pset}
+l.59 	\end{solution_pset}
                           [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts
-/enc/dvips/lm/lm-rmtt.enc}] [2]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-3.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-53.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-53.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 53.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 53.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 53.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
-
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
-
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
-3.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 53
-.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-<images/BAplot.png, id=62, 384.6872pt x 312.41719pt>
+/enc/dvips/lm/lm-rmtt.enc}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/e
+nc/dvips/lm/lm-ts1.enc}] [2]
+<images/BAplot.png, id=71, 384.6872pt x 312.41719pt>
 File: images/BAplot.png Graphic file (type png)
 <use images/BAplot.png>
-Package pdftex.def Info: images/BAplot.png  used on input line 57.
+Package pdftex.def Info: images/BAplot.png  used on input line 103.
 (pdftex.def)             Requested size: 216.81pt x 176.08223pt.
 [3{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
 c}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
 c} <./images/BAplot.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 136.
+(Font)              <10> on input line 182.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 136.
+(Font)              <7> on input line 182.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 136.
+(Font)              <5> on input line 182.
 [4] [5]
 (C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS1\bui
 ld\main.bbl)
+<code/BAplot.pdf, id=140, 316.80139pt x 205.07382pt>
+File: code/BAplot.pdf Graphic file (type pdf)
+<use code/BAplot.pdf>
+Package pdftex.def Info: code/BAplot.pdf  used on input line 261.
+(pdftex.def)             Requested size: 361.34999pt x 233.92424pt.
+[6 <./code/BAplot.pdf>] (code.tex (C:\Users\verci\AppData\Local\Programs\MiKTeX
+\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 211.
-LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 212.
-[6] [7]
+nput line 1.
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 2.
+[7]) [8]
 (C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS1\bui
 ld\main.aux)
  ***********
@@ -1945,35 +1975,43 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 68631 strings out of 474542
- 1721730 string characters out of 5744446
- 2923431 words of memory out of 5000000
- 89822 multiletter control sequences out of 15000+600000
- 639906 words of font info for 112 fonts, out of 8000000 for 9000
+ 69383 strings out of 474542
+ 1732676 string characters out of 5744446
+ 3136189 words of memory out of 5000000
+ 90514 multiletter control sequences out of 15000+600000
+ 640596 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,11n,110p,779b,2703s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb
-><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><
-C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C
-:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/
-Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users
-/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users
-/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users
-/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+ 106i,14n,110p,779b,2897s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/verci/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/verci/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/verci/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/verci/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/verci/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/verci/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/verci/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/verci/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/verci/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/verci/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/verci/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/verci/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/verci/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/verci/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/verci/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/verci/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/verci/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/verci/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/verci/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\P
-hysics 180\PS1\build\main.pdf" (8 pages, 416515 bytes).
+hysics 180\PS1\build\main.pdf" (9 pages, 674411 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

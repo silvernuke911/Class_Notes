@@ -11,18 +11,18 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 
         A \textbf{vector} is a collection of scalars, usually indicating magnitude and direction. We represent vectors in math bold face. A vector of $n$ dimensions is represented by $n$ numbers, $v_i$, where $i$ represents the $i$-th element of the vector. A vector can be a column vector or a row vector.
         \begin{equation}
-            \vb{v}=\bmat{v_1\\v_2\\v_3}\qquad \vb{v}^\top=\bparnmat{v_1&v_2&v_3}
+			\vb{v}=\mqty[v_1\\v_2\\v_3]\qquad \vb{v}^\top=\mqty[v_1&v_2&v_3]
         \end{equation}
         An example of a vector is a particle's position in space 
         \begin{equation}
-            \vb{r}=\bmat{x\\y\\z}
+			\vb{r}=\mqty[x\\y\\z]
         \end{equation}
         A tensor is a generalization of vectors. It is essentially an $n$ dimmensional (More commonly called rank) vector. This is generally beyond the scope of this notes, but I included it for generality. An example of a tensor is the stress energy tensor. 
         \begin{equation}
-            T=\bmat{
+            T=\mqty[
                 T_{11}&T_{12}\\
                 T_{21}&T_{22}
-            }
+				]
         \end{equation}
         It's essentially a matrix, but more general. A matrix is a rank 2 tensor. A vector is a rank 1 tensor, while a scalar is a rank 0 tensor.
         \subsubsubsection{Vector operations}
@@ -35,7 +35,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
             \paragraph{Scalar multiplication}
                 A vector multiplied by a scalar is equivalent to multiplying all its elements with the scalar. As a shorthand, we can represent vectors and all it's elements with one expression $\vb{v}=v_i$, where the index $i$ runs over from 1 to $n$. Given $a\in\R$, a scalar multiplication is
                 \begin{equation}
-                    a\vb{v}=\bmat{a v_1\\av_2\\av_3}=av_i
+					a\vb{v}=\mqty[a v_1\\av_2\\av_3]=av_i\vu{e}_i
                 \end{equation}
 
             \paragraph{Dot Product}
@@ -51,13 +51,13 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
             \paragraph{Cross Product} 
                 The cross product is pretty hard to define, but in general, it is shown the vector which is the determinant of the matrix of the vector elements. But first, we introduce the following vectors 
                 \begin{equation}
-					\vu{e}_1 = \ihat =\bmat{1\\0\\0},\quad 
-					\vu{e}_2 = \jhat =\bmat{0\\1\\0},\quad
-					\vu{e}_3 = \khat =\bmat{0\\0\\1}
+					\vu{e}_1 = \ihat =\mqty[1\\0\\0],\quad 
+					\vu{e}_2 = \jhat =\mqty[0\\1\\0],\quad
+					\vu{e}_3 = \khat =\mqty[0\\0\\1]
                 \end{equation}
-                There are known as basis vectors of the vector space. Basically unit vectors of a single dimension. We can represent any vector in $\R^3$ in this notation.
+				There are known as \textbf{elementary orthogonal basis vectors} of the vector space. Basically unit vectors of a single dimension. We can represent any vector in $\R^3$ in this notation.
                 \begin{equation}
-					\vb{v} = \bmat{v_1\\v_2\\v_3} = v_1\ihat + v_2\jhat + v_3\khat = v_i\vu{e}_i
+					\vb{v} = \mqty[v_1\\v_2\\v_3] = v_1\ihat + v_2\jhat + v_3\khat = v_i\vu{e}_i
                 \end{equation}
 				It must be noted that $\vb{v}= v_i(x,y,z)\vu{e}_i$. In that definition, then, we often see the dot product defined as
                 \begin{equation}
@@ -71,12 +71,12 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
                 \paragraph{The Kronecker Delta and LeviCivita operators}
                 The Kronecker delta is an operator which basically turns on or of a product depending on it's indices. Formally, it is defined as 
                 \begin{equation}
-                    \krondelta{ij}=\begin{cases}
+					\krondelta{ij}= \vu{e}_i \cdot \vu{e}_j =\begin{cases}
                         1\text{ if $i=j$}\\ 
                         0\text{ if $i\neq j$}
                     \end{cases}
                 \end{equation} 
-                and the Levi-Civita symbol is defined to be 1 if the indices are an even permutation of $i,j,k$ and zero if it is not. 
+                and the Levi-Civita symbol is defined to be 0 if two indices are the same, 1 if the indices are an even permutation of $i,j,k$ and -1 if it is not. 
                 \begin{equation}
                     \epsilon_{ijk}=\begin{cases}
                         1&\text{ if } ijk\text{ is }123, 312, 231\\
@@ -140,22 +140,266 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 		\subsubsubsection{Vector derivatives and Integrals}
 		To take the derivative of a vector, one must apply the derivative on all of it's components, just like normal derivatives. Chain rule and other calculus methods still apply.
 		\begin{equation}
-			\frac{d\vb v}{dt} = \bparnmat{
+			\frac{d\vb v}{dt} = \mqty[
 				\dfrac{dv_1}{dt}\\[10pt]
 				\dfrac{dv_2}{dt}\\[10pt]
-				\dfrac{dv_3}{dt}}
+				\dfrac{dv_3}{dt}]
 			=\dv{v_i}{t}
 		\end{equation}
 		Similarly, the same applies for integration, along with path integrals and the like which will not be part of this section.
 		\begin{equation}
-			\int \vb {v} \dd{t} = \bmat{\int v_1 \dd{t}\\[8pt]  \int v_2 \dd{t}\\[8pt] \int v_3 \dd{t}} =  \int v_i \dd{t}
+			\int \vb {v} \dd{t} = \mqty[\int v_1 \dd{t}\\[8pt]  \int v_2 \dd{t}\\[8pt] \int v_3 \dd{t}] =  \int v_i \dd{t}
 		\end{equation}
+	\subsubsection{Vector Transformations}
+		\subsubsubsection{Linear transformations}
+			Consider a vector 
+			\[
+				\vb{v} = \mqty[
+					v_1\\
+					v_2\\
+					v_3
+					] = v_i\vu{e}_i
+			\]
+			A linear transformation is the operation
+			\begin{equation}
+				\vb{v}' = A\vb{v}
+			\end{equation}
+			where $A$ is an $n\times n$ matrix. Linearity in this case means
+			\begin{equation}
+				A(a\vb{u} + b\vb{v}) = aA\vb{u} + bA\vb{v}
+			\end{equation}
+			The matrix $A$ is described as 
+			\begin{equation}
+				A = \mqty[
+					a_{11} & a_{12} & \cdots & a_{1n} \\
+					a_{21} & a_{22} & \cdots & a_{2n} \\
+					\vdots & \vdots & \ddots & \vdots \\
+					a_{n1} & a_{n2} & \cdots & a_{nn}
+				]
+			\end{equation}
+			\paragraph{Notation} A matrix is denoted in index notation as 
+			\[
+				A = a_{ij}
+			\]
+			It has a few defining properties, but we consider the determinant and the trace.
+			The trace is defined as follows
+			\[
+				A^\top = a_{ji}
+			\]
+			It is assumed that the reader already knows the determinant.
+
+			Multipliying matrices $A$ and $B$ are defined as follows
+			\[
+				AB = a_{il}b_{lj}
+			\]
+
+			A general $2\times2$ linear transformation is described in matrix form as 
+			\begin{align}
+				\vb{v}' &= A \vb{v}\\
+				\mqty[x'\\y'] &= \mqty[a&b\\c&d] \mqty[x\\y]
+			\end{align}
+			As such,
+			\begin{align}
+				x' =  ax + by && y' = cx + dy
+			\end{align}
+		\subsubsubsection{Eigenvectors, Eigenvalues}
+			An \textbf{eigenvector} is a vector whose direction is unchanged by a transformation.
+			\begin{definition}{Eigenvector}
+			    \begin{equation}
+					A\vb{v} =\lambda \vb{v}
+			    \end{equation}
+			\end{definition}
+			Where $\lambda$ is known as the \textbf{eigenvalue}. To find an eigenvalue, consider
+			\begin{equation}
+				(A - \lambda \mathbbm{1})\vb{v} = 0
+			\end{equation}
+			where $\mathbbm{1}$ is an identity matrix
+			\begin{equation}
+				\mathbbm{1} = \mqty[
+					1 & 0 & 0 & \cdots & 0 \\
+					0 & 1 & 0 & \cdots & 0 \\
+					0 & 0 & 1 & \cdots & 0 \\
+					\vdots & \vdots & \vdots & \ddots & \vdots \\
+					0 & 0 & 0 & \cdots & 1
+				]
+			\end{equation}
+			For a non trivial vector, we have
+			\begin{definition}{Characteristic equation}
+			\begin{equation} \label{eq:chareq}
+				\det(A-\lambda \mathbbm{1}) = 0 
+			\end{equation}
+			\end{definition}
+			This is the \textbf{characteristic equation}. Once $\lambda$ is known, (\ref{eq:chareq}) is solvable.
+			
+		\subsubsubsection{Translation}
+			Translation is differernt from ordinary matrix multiplications, because
+			\begin{equation}
+				\vb{r}' = \vb{r} + \vb{a}
+			\end{equation}
+			where $\vb{a}$ is another vector. Doing this moves or \textit{translates} the vector.
+			
+			For example
+			\begin{equation}
+				\mqty[x'\\y'] = \mqty[x\\y] + \mqty[a\\b]
+			\end{equation}
+			This is not linear, because generally
+			\begin{equation}
+				T(a\vb{v}) \neq a T(\vb{v})
+			\end{equation}
+			It is instead an \textit{affine transformation}
+
+			A general affine transformation is 
+			\begin{equation}
+				\vb{r}' = A\vb{r} + \vb{b}
+			\end{equation}
+		\subsubsubsection{Rotation}
+			\paragraph{2 Dimensions}
+				A rotation in two dimensions through an angle $\theta$ is represented by
+				\begin{definition}{Rotation Matrix ($SO(2)$)}
+					\begin{equation}
+					R(\theta) - \mqty[
+						\cos\theta & -\sin\theta\\
+						\sin\theta & \cos\theta
+					] 
+					\end{equation}
+				\end{definition}
+				and, the transformation is defined by
+				\begin{equation}
+				    \vb{v}' = R(\theta) \vb{v}
+				\end{equation}
+				thus
+				\begin{align}
+					x' &= x\cos\theta - y\sin\theta\\
+					y' &= x\sin\theta + y\cos\theta
+				\end{align}
+				The defining property of a rotation matrix is 
+				\begin{equation}
+					R^\top R = \mathbbm{1}
+				\end{equation}
+				and
+				\begin{equation}
+					\det(R) = \mathbbm{1}
+				\end{equation}
+				The set of all such $2\times2$ matrices form the special orthogonal group in 2 dimensions $SO(2)$.
+
+				Rotations preserve lengths and angles during their transformations.
+				\[
+					\norm{\vb{v}'} = \norm{\vb{v}}
+				\]
+			\paragraph{3 Dimensions}
+				In three dimensions, rotations are represented as much the same.
+				\[
+					\vb{v}' = R \vb{v}
+				\]
+				with the same properties as $SO(2)$. All such matrices form the group
+				known as $SO(3)$. Unlike $SO(2)$, a 3D rotation generally has a rotation axis
+				\begin{equation}
+					R_z(\theta) = \mqty[
+						\cos\theta & -\sin\theta & 0 \\
+						\sin\theta & \cos\theta & 0 \\
+						0 & 0 & 1
+					]
+				\end{equation}
+				\begin{equation}
+					R_x(\theta) = \mqty[
+						1 & 0 & 0 \\
+						0 & \cos\theta & -\sin\theta\\
+						0 & \sin\theta & \cos\theta
+					]
+				\end{equation}
+				\begin{equation}
+					R_y(\theta) = \mqty[
+					\cos\theta & 0 & -\sin\theta \\
+					0 & 1 & 0 \\
+					\sin\theta & 0 &  \cos\theta 
+					]
+				\end{equation}
+			\newpage
     \subsubsection{Field}
-        A \textit{field} is a function that assigns a value to every point in a defined space. 
-        It can be:
-        \begin{itemize}
-            \item \textbf{Scalar field:} assigns a scalar value, e.g., temperature $T(x,y,z)$. This returns a space where every point has a scalar value.
-            \item \textbf{Vector field:} assigns a vector value, e.g., velocity $\mathbf{v}(x,y,z)$. This returns a space where every point has a vector value.
+		A \textit{field} is a function that assigns a value to every point in a
+		defined space. In other words, a field takes the position of a point in
+		space as its input and returns some physical or mathematical quantity
+		associated with that point.
+
+		For a three-dimensional space, we can specify the position of a point
+		using the position vector
+		\[
+			\vb{r} =
+			\mqty[
+				x\\
+				y\\
+				z
+			].
+		\]
+		The field is then a function of this position vector. Depending on the
+		type of quantity being assigned, we distinguish between scalar fields
+		and vector fields.
+		\subsubsubsection{Scalar field}
+
+			A scalar field assigns a single scalar
+			value to every point in space. For example, the temperature
+			distribution in a room can be represented by
+			\[
+				T(\vb{r}) = T(x,y,z).
+			\]
+			Here, the input $\vb{r}$ specifies a particular point in space,
+			while the output $T(\vb{r})$ is the temperature at that point.
+
+			Thus, a scalar field can be thought of as a rule that associates
+			one number with every point:
+			\[
+				\vb{r} \longmapsto T(\vb{r}).
+			\]
+			For example,
+			\[
+				T(1,2,3)=300~\mathrm{K}
+			\]
+			would mean that the temperature at the point $(1,2,3)$ is
+			$300~\mathrm{K}$.
+
+			We often write a scalar field as
+			\[
+				\phi(\vb{r}),
+			\]
+			where $\phi$ denotes the field and $\vb{r}$ specifies the position
+			at which the field is evaluated.
+		\subsubsubsection{Vector field}
+			A vector field assigns a vector to
+			every point in space. For example, the velocity of a fluid flowing
+			through a region of space can be represented by
+			\[
+				\vb{v}(\vb{r}) = \vb{v}(x,y,z).
+			\]
+			Unlike a scalar field, which returns a single number, a vector field
+			returns a vector whose components are themselves functions of
+			position.
+
+			We can therefore write
+			\[
+				\vb{F}(\vb{r}) =
+				\mqty[
+					F_1(\vb{r})\\
+					F_2(\vb{r})\\
+					F_3(\vb{r})
+				]
+				= F_i(\vb{r}) \vu{e}_i
+			\]
+			where each component
+			\[
+				F_i(\vb{r})
+			\]
+			specifies the corresponding component of the vector at the point
+			$\vb{r}$.
+
+			Thus, at each point in space, the field provides both a direction
+			and a magnitude.
+
+		The important distinction is therefore that $\vb{r}$ identifies
+		\textit{where} we are evaluating the field, while $\phi(\vb{r})$ or
+		$\vb{F}(\vb{r})$ tells us what \textit{value} the field assigns at that
+		point.
+						  
+						  
         \end{itemize}
         \begin{figure}[H]
             \centering
@@ -171,190 +415,222 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
             \caption{Types of Fields}
             \label{}
         \end{figure}
-    \subsubsection{The Del Operator}
-        The Del operator $\nabla$ is the generalization of the derivative. We define it as a vector of the partial derivative with respect to the dimension, i.e.
-		\begin{definition}{$\nabla$ operator}
-			\begin{equation}
-				\nabla 
-				= \pdv{}{x}\ihat + \pdv{}{y}\jhat + \pdv{}{z}\khat 
-				= \bmat{
-					\displaystyle\pdv*{}{x}\\[8pt]
-					\displaystyle\pdv*{}{y}\\[8pt]
-					\displaystyle\pdv*{}{z}
-				}
-        \end{equation}
-		\end{definition}
-        As a shorthand, we can represent it as $\displaystyle \pdv{}{x_i}$, where $x_i$ is the general dimension. This can be further shorthanded to $\p_i$. Thus, a compact vector definition of the Del operator is
-        \begin{equation}
-            \nabla = \partial_i
-        \end{equation}
-    \subsubsection{Gradient}
-        We often represent fields as $\psi(x,y,z)$; however, we can just make $x, y, z$ into a vector $\mathbf{r} = (x, y, z)$. In that case, the physical interpretation of the gradient becomes clearer.
-        
-        The \textbf{gradient} of a scalar field $\phi(\mathbf{r})$ is a vector field that points in the direction of the greatest rate of increase of $\phi$:
-		\begin{definition}{Gradient}
-			\begin{equation}
-				\nabla \phi =
-				\frac{\partial \phi}{\partial x} \ihat +
-				\frac{\partial \phi}{\partial y} \jhat +
-				\frac{\partial \phi}{\partial z} \khat
-				=
-				\begin{bmatrix}
-					\dfrac{\partial \phi}{\partial x}\\[10pt]
-					\dfrac{\partial \phi}{\partial y}\\[10pt]
-					\dfrac{\partial \phi}{\partial z}
-				\end{bmatrix}
+	\subsubsection{Differential Calculus}
+		\subsubsubsection{The Del Operator}
+			The Del operator $\nabla$ is the generalization of the derivative. We define it as a vector of the partial derivative with respect to the dimension, i.e.
+			\begin{definition}{$\nabla$ operator}
+				\begin{equation}
+					\nabla 
+					= \pdv{}{x}\ihat + \pdv{}{y}\jhat + \pdv{}{z}\khat 
+					= \mqty[
+						\displaystyle\pdv*{}{x}\\[8pt]
+						\displaystyle\pdv*{}{y}\\[8pt]
+						\displaystyle\pdv*{}{z}
+						]
 			\end{equation}
-		\end{definition}
-        It measures how rapidly the scalar field changes and in which direction this change is maximum. For example, in a temperature field $T(x,y,z)$, the gradient $\nabla T$ points in the direction where temperature increases most rapidly, and its magnitude gives the rate of increase per unit distance.
-        
-        In index notation, we can write
-        \begin{equation}
-            \grad \phi = \partial_i \phi,
-        \end{equation}
-        where $\partial_i$ denotes differentiation with respect to $x_i$.
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=6in]{images/gradient.png}
-            \caption{A scalar field and its gradient}
-            \label{fig:placeholder}
-        \end{figure}
-		\newpage
-    \subsubsection{Divergence}
-		The \textbf{divergence} of a vector field $\mathbf{F}(\mathbf{r}) = \bmat{F_x&F_y&F_z}^\top$ measures the net flux per unit volume leaving a point:
-		\begin{definition}{Divergence}
+			\end{definition}
+			As a shorthand, we can represent it as $\displaystyle \pdv{}{x_i}$, where $x_i$ is the general dimension. This can be further shorthanded to $\p_i$. Thus, a compact vector definition of the Del operator is
 			\begin{equation}
-				\nabla \cdot \mathbf{F} =
-				\frac{\partial F_x}{\partial x} +
-				\frac{\partial F_y}{\partial y} +
-				\frac{\partial F_z}{\partial z}.
+				\nabla = \partial_i \vu{e}_i
 			\end{equation}
-		\end{definition}
-        A positive divergence indicates a \textit{source} (more field lines leaving than entering), while a negative divergence indicates a \textit{sink} (field lines converging). If $\nabla \cdot \mathbf{F} = 0$, the field is said to be \textbf{solenoidal}, meaning it has no net flux out of any closed surface.
-        
-        This operation is essentially the dot product of the del operator with the vector field:
-        \begin{equation}
-            \grad \cdot \mathbf{F} = \delta_{ij}\, \partial_i F_j,
-        \end{equation}
-        
-        Divergence appears naturally in continuity equations. For instance, $\nabla \cdot \mathbf{E} = \rho/\varepsilon_0$ in Gauss’s law for electricity, where it represents the electric charge density acting as a source of the field.
+		\subsubsubsection{Gradient}
+			We often represent fields as $\psi(x,y,z)$; however, we can just make $x, y, z$ into a vector $\mathbf{r} = (x, y, z)$. In that case, the physical interpretation of the gradient becomes clearer.
+			
+			The \textbf{gradient} of a scalar field $\phi(\mathbf{r})$ is a vector field that points in the direction of the greatest rate of increase of $\phi$:
+			\begin{definition}{Gradient}
+				\begin{equation}
+					\nabla \phi =
+					\frac{\partial \phi}{\partial x} \ihat +
+					\frac{\partial \phi}{\partial y} \jhat +
+					\frac{\partial \phi}{\partial z} \khat
+					=
+					\begin{bmatrix}
+						\dfrac{\partial \phi}{\partial x}\\[10pt]
+						\dfrac{\partial \phi}{\partial y}\\[10pt]
+						\dfrac{\partial \phi}{\partial z}
+					\end{bmatrix}
+				\end{equation}
+			\end{definition}
+			It measures how rapidly the scalar field changes and in which direction this change is maximum. For example, in a temperature field $T(x,y,z)$, the gradient $\nabla T$ points in the direction where temperature increases most rapidly, and its magnitude gives the rate of increase per unit distance.
+			
+			In index notation, we can write
+			\begin{equation}
+				\grad \phi = \partial_i \phi\, \vu{e}_i,
+			\end{equation}
+			where $\partial_i$ denotes differentiation with respect to $x_i$.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=6in]{images/gradient.png}
+				\caption{A scalar field and its gradient}
+				\label{fig:placeholder}
+			\end{figure}
+			\newpage
+		\subsubsubsection{Divergence}
+		The \textbf{divergence} of a vector field $\displaystyle \mathbf{F}(\mathbf{r}) = \mqty[F_x\\F_y\\F_z]= F_i\vu{e}_i$ measures the net flux per unit volume leaving a point:
 
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=6in]{images/divergence.png}
-            \caption{Examples of vector fields with positive and negative divergences}
-            \label{fig:placeholder}
-        \end{figure}
-    \subsubsection{Curl}
-        The \textbf{curl} of a vector field $\mathbf{F}(\mathbf{r})$ measures its local rotation or the tendency to induce circulation around a point:
-		\begin{definition}{Curl}
+			\begin{definition}{Divergence}
+				\begin{equation}
+					\nabla \cdot \mathbf{F} =
+					\frac{\partial F_x}{\partial x} +
+					\frac{\partial F_y}{\partial y} +
+					\frac{\partial F_z}{\partial z}.
+				\end{equation}
+			\end{definition}
+			A positive divergence indicates a \textit{source} (more field lines leaving than entering), while a negative divergence indicates a \textit{sink} (field lines converging). If $\nabla \cdot \mathbf{F} = 0$, the field is said to be \textbf{solenoidal}, meaning it has no net flux out of any closed surface.
+			
+			This operation is essentially the dot product of the del operator with the vector field:
 			\begin{equation}
-				\nabla \times \mathbf{F} =
-				\begin{vmatrix}
-					\ihat & \jhat & \khat \\[5pt]
-					\dfrac{\partial}{\partial x} & 
-					\dfrac{\partial}{\partial y} &
-					\dfrac{\partial}{\partial z} \\[10pt]
-					F_x & F_y & F_z
-				\end{vmatrix}.
+				\grad \cdot \mathbf{F} = \delta_{ij}\, \partial_i F_j,
 			\end{equation}
-		\end{definition}
-        The direction of $\nabla \times \mathbf{F}$ gives the axis of rotation (using the right-hand rule), and its magnitude gives the rotational strength.
-        
-        This is equivalent to taking the cross product of the del operator with the vector field:
-        \begin{equation}
-			\curl \mathbf{F} = \varepsilon_{ijk} \partial_i F_j \vu{e}_k
-        \end{equation}
-        
-        In physical contexts, the curl represents quantities such as the rotational velocity of a fluid or the magnetic field induced by a current. For example, in electromagnetism, $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$ expresses Faraday’s law of induction.
+			
+			Divergence appears naturally in continuity equations. For instance, $\nabla \cdot \mathbf{E} = \rho/\varepsilon_0$ in Gauss’s law for electricity, where it represents the electric charge density acting as a source of the field.
 
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=6in]{images/curl.png}
-            \caption{Example of vector fields with positive and negative curl}
-            \label{fig:placeholder}
-        \end{figure}
-	\subsubsection{Laplacian}
-		The \textbf{Laplacian} operator acts on scalar or vector fields and is defined as the divergence of the gradient:
-		\begin{definition}{Laplacian}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=6in]{images/divergence.png}
+				\caption{Examples of vector fields with positive and negative divergences}
+				\label{fig:placeholder}
+			\end{figure}
+			\newpage
+		\subsubsubsection{Curl}
+			The \textbf{curl} of a vector field $\mathbf{F}(\mathbf{r})$ measures its local rotation or the tendency to induce circulation around a point:
+			\begin{definition}{Curl}
+				\begin{equation}
+					\nabla \times \mathbf{F} =
+					\begin{vmatrix}
+						\ihat & \jhat & \khat \\[5pt]
+						\dfrac{\partial}{\partial x} & 
+						\dfrac{\partial}{\partial y} &
+						\dfrac{\partial}{\partial z} \\[10pt]
+						F_x & F_y & F_z
+					\end{vmatrix}.
+				\end{equation}
+			\end{definition}
+			The direction of $\nabla \times \mathbf{F}$ gives the axis of rotation (using the right-hand rule), and its magnitude gives the rotational strength.
+			
+			This is equivalent to taking the cross product of the del operator with the vector field:
 			\begin{equation}
-				\nabla^2 \phi = \nabla \cdot (\nabla \phi)
-				= \frac{\partial^2 \phi}{\partial x^2}
-				+ \frac{\partial^2 \phi}{\partial y^2}
-				+ \frac{\partial^2 \phi}{\partial z^2}.
+				\curl \mathbf{F} = \varepsilon_{ijk} \partial_i F_j \vu{e}_k
 			\end{equation}
-		\end{definition}
-		It measures how a field value at a point compares to its average in the surrounding region — in other words, how “curved” or “peaked” the field is locally. It is worthy to note that the laplacian of a scalar field is also a scalar field.
+			
+			In physical contexts, the curl represents quantities such as the rotational velocity of a fluid or the magnetic field induced by a current. For example, in electromagnetism, $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$ expresses Faraday’s law of induction.
 
-		In index notation, this becomes
-		\begin{equation}
-			\nabla^2 \phi = \delta_{ij}\, \partial_i \partial_j \phi.
-		\end{equation}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=6in]{images/curl.png}
+				\caption{Example of vector fields with positive and negative curl}
+				\label{fig:placeholder}
+			\end{figure}
+			\newpage
+		\subsubsubsection{Laplacian}
+			The \textbf{Laplacian} operator acts on scalar or vector fields and is defined as the divergence of the gradient:
+			\begin{definition}{Laplacian}
+				\begin{equation}
+					\nabla^2 \phi = \nabla \cdot (\nabla \phi)
+					= \frac{\partial^2 \phi}{\partial x^2}
+					+ \frac{\partial^2 \phi}{\partial y^2}
+					+ \frac{\partial^2 \phi}{\partial z^2}.
+				\end{equation}
+			\end{definition}
+			It measures how a field value at a point compares to its average in the surrounding region — in other words, how “curved” or “peaked” the field is locally. It is worthy to note that the laplacian of a scalar field is also a scalar field.
 
-		The Laplacian appears in many fundamental physical equations:
-		\begin{itemize}
-			\item Poisson’s equation: $\nabla^2 \phi = -\rho/\varepsilon_0$ (electrostatics)
-			\item Heat equation: $\partial \phi / \partial t = \alpha \nabla^2 \phi$ (diffusion)
-			\item Schrödinger equation: $\nabla^2 \psi$ governs spatial variations in quantum wavefunctions
-			\item Newtonian Field equation for Gravity: $\lpc \Phi = 4\pi G \rho$
-		\end{itemize}
+			In index notation, this becomes
+			\begin{equation}
+				\nabla^2 \phi = \delta_{ij}\, \partial_i \partial_j \phi.
+			\end{equation}
 
-		If $\nabla^2 \phi = 0$, the field is called \textbf{harmonic}, meaning it satisfies Laplace’s equation and represents an equilibrium distribution such as steady-state temperature or potential.
+			The Laplacian appears in many fundamental physical equations:
+			\begin{itemize}
+				\item Poisson’s equation: $\nabla^2 \phi = -\rho/\varepsilon_0$ (electrostatics)
+				\item Heat equation: $\partial \phi / \partial t = \alpha \nabla^2 \phi$ (diffusion)
+				\item Schrödinger equation: $\nabla^2 \psi$ governs spatial variations in quantum wavefunctions
+				\item Newtonian Field equation for Gravity: $\lpc \Phi = 4\pi G \rho$
+			\end{itemize}
 
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=6in]{images/lpc.png}
-			\caption{Scalar field and its Laplacian}
-			\label{fig:placeholder}
-		\end{figure}
-	\subsubsection{Operations on these Operators}
-		The usual differentiation rules still apply for $\grad,\div,$ and $\curl$, because 
-		the are built from ordinary partial derivatives. One only has to account for the fact
-		that the fields may be scalar or vector valued.
-		\subsubsubsection{Product Rule}
-			For scalar fields $f,g$
-			\begin{equation}
-			    \grad(fg) = f\grad g + g \grad f
-			\end{equation}
-			For a scalar $f$ and a vector field $\vb{A}$
-			\begin{equation}
-				\div(f\vb{A}) = f(\div \vb{{A}}) + (\grad f)\cdot \vb{A}
-			\end{equation}
-			and
-			\begin{equation}
-				\curl(f\vb{A}) = f(\curl\vb{A}) + (\grad f) \times \vb{A}
-			\end{equation}
-		\subsubsubsection{Chain Rule}
-			This also applies for these operations.
+			If $\nabla^2 \phi = 0$, the field is called \textbf{harmonic}, meaning it satisfies Laplace’s equation and represents an equilibrium distribution such as steady-state temperature or potential.
 
-			Suppose $f=f(u)$ and $u = u(x_1,x_2,x_3)$, then
-			\begin{equation}
-			    \grad f(u) = \dv{f}{u} \grad u 
-			\end{equation}
-			More generally, if $f = f(u,v)$ and $u = u(x,y,z)$ and $v = v(x,y,z)$
-			\begin{equation}
-			    \grad f(u,v) = \pdv{f}{u}\grad u + \pdv{f}{v} \grad v  
-			\end{equation}
-		\subsubsubsection{Quotient Rules}
-			For scalar fields $f,g$ and vector field $\vb{A}$, we have three possible quotient rules.
-			\begin{align*}
-				\grad\qty(\frac{f}{g}) &= \frac{g\grad f - f\grad g}{g^2}\\
-				\div(\frac{\vb{A}}{g}) &= \frac{g(\div \vb{A}) - \vb{A} \cdot (\grad g)}{g^2}\\
-				\curl\qty(\frac{\vb{A}}{g}) &= \frac{g(\curl \vb A) + \vb{A}\times (\grad g)}{g^2} 
-			\end{align*}
-		\subsubsubsection{Additional Rules}
-			Some other useful identities are
-			\begin{align*}
-				\div(\vb{A} + \vb{B}) &= \div \vb{A} + \div \vb{B}\\
-				\curl(\vb{A} + \vb{B}) &= \curl \vb{A} + \curl \vb{B}
-			\end{align*}
-			And other second derivative identies
-			\begin{align*}
-				\div(\grad f) &= \lpc f\\
-				\curl(\grad f) &= 0\\
-				\div(\curl \vb{A}) &= 0
-			\end{align*}
-	\subsubsection{Line, Surface, and Volume Integrals}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=6in]{images/lpc.png}
+				\caption{Scalar field and its Laplacian}
+				\label{fig:placeholder}
+			\end{figure}
+		\subsubsubsection{Operations on these Operators}
+			The usual differentiation rules still apply for $\grad,\div,$ and $\curl$, because 
+			the are built from ordinary partial derivatives. One only has to account for the fact
+			that the fields may be scalar or vector valued.
+			\paragraph{Product Rule}
+				For scalar fields $f,g$
+				\begin{equation}
+					\grad(fg) = f\grad g + g \grad f
+				\end{equation}
+				For a scalar $f$ and a vector field $\vb{A}$
+				\begin{equation}
+					\div(f\vb{A}) = f(\div \vb{{A}}) + (\grad f)\cdot \vb{A}
+				\end{equation}
+				and
+				\begin{equation}
+					\curl(f\vb{A}) = f(\curl\vb{A}) + (\grad f) \times \vb{A}
+				\end{equation}
+			\paragraph{Chain Rule}
+				This also applies for these operations.
+
+				Suppose $f=f(u)$ and $u = u(x_1,x_2,x_3)$, then
+				\begin{equation}
+					\grad f(u) = \dv{f}{u} \grad u 
+				\end{equation}
+				More generally, if $f = f(u,v)$ and $u = u(x,y,z)$ and $v = v(x,y,z)$
+				\begin{equation}
+					\grad f(u,v) = \pdv{f}{u}\grad u + \pdv{f}{v} \grad v  
+				\end{equation}
+			\paragraph{Quotient Rules}
+				For scalar fields $f,g$ and vector field $\vb{A}$, we have three possible quotient rules.
+				\begin{align*}
+					\grad\qty(\frac{f}{g}) &= \frac{g\grad f - f\grad g}{g^2}\\
+					\div(\frac{\vb{A}}{g}) &= \frac{g(\div \vb{A}) - \vb{A} \cdot (\grad g)}{g^2}\\
+					\curl\qty(\frac{\vb{A}}{g}) &= \frac{g(\curl \vb A) + \vb{A}\times (\grad g)}{g^2} 
+				\end{align*}
+			\paragraph{Additional Rules}
+				Some other useful identities are
+				\begin{align*}
+					\div(\vb{A} + \vb{B}) &= \div \vb{A} + \div \vb{B}\\
+					\curl(\vb{A} + \vb{B}) &= \curl \vb{A} + \curl \vb{B}
+				\end{align*}
+				And other second derivative identies
+				\begin{align*}
+					\div(\grad f) &= \lpc f\\
+					\curl(\grad f) &= 0\\
+					\div(\curl \vb{A}) &= 0
+				\end{align*}
+	\subsubsection{Integral Calculus}
+		% \subsubsubsection{Fundamental Theorem of Calculus}
+		% 	Recall from introductory calculus the FTOC. Suppose $f(x)$ is a function of 
+		% 	one variable $x$, then:
+		% 	\begin{equation}
+		% 		\int_a^b \qty(\dv{f}{x})  \dd{x} = f(b) - f(a)
+		% 	\end{equation}
+		% 	Similar to that, we have a fundamental theorem for gradients as well. 
+		% 	Suppose we have a scalar function $F$. Starting at a point $\vb{a}$,
+		% 	we move a small distance $\dd{\vb{r}}$. Then, the function $F$ will 
+		% 	change by 
+		% 	\[
+		% 		dF = (\grad F)\cdot \dd{\vb{r}}
+		% 	\]
+		% 	Moving infinetiesimally, we journey to a point $\vb{b}$. At each point,
+		% 	we compute the gradient of $F$, and dot it to the displacement $\dd{\vb{r}}$.
+		% 	Eventually, the total change in $T$ from $\vb{a}$ to $\vb{b}$ is:
+		% 	\begin{theorem}{Fundamental theorem of Gradients}
+		% 		\begin{equation}
+		% 			\int_{\vb{a}}^{\vb{b}} \qty(\grad F) \cdot \dd{\vb{r}} = F(\vb{b}) - F(\vb{{b}})
+		% 		\end{equation}
+		% 	\end{theorem}
+		% 	For countour integrals (paths which end up on the same point) covering a region $\Omega$ in a conservative field, we find 
+		% 	that 
+		% 	\begin{equation}
+		% 		\oint_\Omega (\grad F)\cdot \dd{\vb{r}} = 0
+		% 	\end{equation}
+			
+			
 		\subsubsubsection{Line integrals}
 
 			For reference, a line integral is defined as the integral over the path $\Gamma$ of a parameterized vector path function $\vb r(t)$ over a scalar field $\phi$ or a vector field $\vb F$ with respect to a parameter $t$. Go figure. It comes in two forms: scalar line integrals and vector line integrals.
@@ -423,15 +699,15 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 				\vb F = -\grad \phi,
 			\end{equation}
 
-			then the integral depends only on the endpoints of the curve rather than on the path taken. In that case,
-
-			\begin{equation}
-				\int_\Gamma \vb F\cdot d\vb r
-				=
-				\phi(\vb r_a)-\phi(\vb r_b),
-			\end{equation}
-
-			where $\vb r_a$ and $\vb r_b$ are the initial and final points of the path. Equivalently, for a closed curve,
+			then the integral depends only on the endpoints of the curve rather than on the path taken. In that case, we have the fundamental theorem of gradients.
+			\begin{theorem}{Fundamental theorem of Gradients}
+				\begin{equation}
+					\int_{\vb{a}}^{\vb{b}} \vb F\cdot d\vb r
+					=
+					\phi(\vb a)-\phi(\vb b),
+				\end{equation}
+			\end{theorem}
+			where $\vb a$ and $\vb b$ are the initial and final points of the path. Equivalently, for contour integral of a closed curve (where the endpoints are the same),
 
 			\begin{equation}
 				\oint_\Gamma \vb F\cdot d\vb r = 0.
@@ -670,244 +946,605 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{remark}
 		% % \bigskip
 
-	\subsubsection{Laplacian in orthogonal curvilinear coordinates}
+	\subsubsection{Curvilinear coordinates}
 
-		We introduce an orthogonal curvilinear coordinate system $(q_1,q_2,q_3)$ with orthonormal coordinate directions $\hat{\mathbf e}_1,\hat{\mathbf e}_2,\hat{\mathbf e}_3$ and scale factors (metric coefficients) \[
-			h_i(q_1,q_2,q_3) = \left\| \frac{\partial \mathbf r}{\partial q_i} \right\|,\qquad i=1,2,3.
-		\]
-		The infinitesimal displacement is
+		Cartesian coordinates are not the only way to describe position in space. More generally, we may specify a point using three coordinates $(q_1,q_2,q_3)$ whose coordinate surfaces need not be planes. Such a system is called a \textit{curvilinear coordinate system}. The familiar cylindrical and spherical coordinates are important examples.
+
+		We introduce an orthogonal curvilinear coordinate system $(q_1,q_2,q_3)$ with mutually perpendicular unit vectors
+		$\vu{e}_1,\vu{e}_2,\vu{e}_e$
+		and scale factors (metric coefficients)
 		\[
-			d\mathbf r = h_1\,dq_1\,\hat{\mathbf e}_1 + h_2\,dq_2\,\hat{\mathbf e}_2 + h_3\,dq_3\,\hat{\mathbf e}_3,
+			h_i(q_1,q_2,q_3) =
+			\abs{\pdv{\vb{r}}{q_i}},
+			\qquad i=1,2,3.
 		\]
-		and the volume element is
+		The scale factor $h_i$ measures the physical distance corresponding to a small change $dq_i$ in the coordinate $q_i$. Consequently, the infinitesimal displacement is
 		\[
-			dV = h_1 h_2 h_3 \, dq_1 dq_2 dq_3.
+			\dd{\vb{r}} =
+			h_1\dd{q}_1\vu{e}_1
+			+
+			h_2\dd{q}_2\vu{e}_2
+			+
+			h_3\dd{q}_3\vu{e}_3
 		\]
-
-		The gradient of a scalar $\phi$ is
-		\begin{equation}
-			\nabla\phi = \sum_{i=1}^3 \frac{1}{h_i}\,\frac{\partial\phi}{\partial q_i}\,\hat{\mathbf e}_i.
-		\end{equation}
-		A vector field has components $F_i$ in the $\hat{\mathbf e}_i$ basis:
+		The important difference from Cartesian coordinates is that the basis vectors
+		$\vu{e}_i$ and the scale factors $h_i$ can depend on position. In Cartesian coordinates,
 		\[
-			\mathbf F = \sum_{i=1}^3 F_i\,\hat{\mathbf e}_i.
+			h_x=h_y=h_z=1,
+		\]
+		and the basis vectors are constant throughout space. In curvilinear coordinates, however, the direction of the basis vectors can change as we move from one point to another.
+
+		For an orthogonal coordinate system, a small coordinate volume
+		$dq_1,dq_2,dq_3$ corresponds to the physical volume
+		\[
+			dV
+			=
+			h_1h_2h_3\dd{q_1}\dd{q_2}\dd{q_3}.
 		\]
 
-		The divergence in orthogonal curvilinear coordinates is
-		\begin{equation}\label{eq:div_general}
-			\nabla\cdot\mathbf F
-			= \frac{1}{h_1 h_2 h_3}
-			\sum_{i=1}^3
-			\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i}\,F_i \right).
-		\end{equation}
+		Similarly, the area element of a surface on which $q_i$ is constant is
+		\[
+			\dd{A_i}
+			=
+			\frac{h_1h_2h_3}{h_i} dq_j dq_k,
+			\qquad i\neq j\neq k.
+		\]
+		Thus, the scale factors determine not only distances but also the geometry of infinitesimal areas and volumes.
 
-		From this, the Laplacian of a scalar $\phi$ (divergence of the gradient) becomes
-		\begin{definition}{Laplacian in terms of scale factors}
-			\begin{equation}\label{eq:lap_general}
-				{
-				\nabla^2 \phi
-				= \frac{1}{h_1 h_2 h_3}
+		\paragraph{Gradient.}
+
+			The gradient of a scalar field $\phi$ is
+			\begin{definition}{Gradient in General Curvilinear Coordinates}
+				\begin{equation}
+					\grad\phi
+					=
+					\sum_i
+					\frac{1}{h_i}
+					\pdv{\phi}{q_i}
+					\vu{e}_i
+				\end{equation}
+			\end{definition}
+
+			The factors $1/h_i$ are required because $\partial\phi/\partial q_i$ describes the change in $\phi$ per unit change in the coordinate $q_i$, whereas the gradient describes change per unit \textit{physical distance}. Since
+			\[
+				ds_i=h_i\dd{q_i},
+			\]
+			we have
+			\[
+				\frac{\partial\phi}{\partial s_i}
+				=
+				\frac{1}{h_i}
+				\frac{\partial\phi}{\partial q_i}.
+			\]
+
+		\paragraph{Divergence.}
+
+			The divergence measures the net outward flux of a vector field per unit volume. In orthogonal curvilinear coordinates,
+			\begin{definition}{Divergence in general curvilinear coordinates}
+			\begin{equation}\label{eq:div_general}
+				\nabla\cdot\mathbf F
+				=
+				\frac{1}{h_1h_2h_3}
 				\sum_{i=1}^3
-				\frac{\partial}{\partial q_i}\!\left( \frac{h_1 h_2 h_3}{h_i^2}\,\frac{\partial\phi}{\partial q_i} \right)
-				}
+				\frac{\partial}{\partial q_i}
+				\left(
+				\frac{h_1h_2h_3}{h_i}F_i
+				\right).
 			\end{equation}
-		\end{definition}
-		which is the standard formula for the Laplacian in an orthogonal coordinate system.
+			\end{definition}
+
+			The factors involving $h_i$ account for the fact that the areas and volumes associated with the coordinate directions may change from point to point. In Cartesian coordinates, where all $h_i=1$, this reduces immediately to
+		\paragraph{Curl.}
+
+			The curl measures the local tendency of a vector field to circulate around a point. For an orthogonal curvilinear coordinate system,
+			\begin{definition}{Curl in general curvilinear coordinates}
+			\begin{equation}\label{eq:curl_general}
+				\nabla\times\mathbf F
+				=
+				\frac{1}{h_1h_2h_3}
+				\abs{\mqty{
+					h_1\hat{\mathbf e}_1 &
+					h_2\hat{\mathbf e}_2 &
+					h_3\hat{\mathbf e}_3 \\[3pt]
+					\dfrac{\partial}{\partial q_1} &
+					\dfrac{\partial}{\partial q_2} &
+					\dfrac{\partial}{\partial q_3} \\[14pt]
+					h_1F_1 &
+					h_2F_2 &
+					h_3F_3
+				}}
+			\end{equation}
+			\end{definition}
+			
+			Equivalently, its components are
+			\begin{align}
+				(\nabla\times\mathbf F)_1
+				&=
+				\frac{1}{h_2h_3}
+				\left[
+				\frac{\partial}{\partial q_2}(h_3F_3)
+				-
+				\frac{\partial}{\partial q_3}(h_2F_2)
+				\right]\\
+				(\nabla\times\mathbf F)_2
+				&=
+				\frac{1}{h_3h_1}
+				\left[
+				\frac{\partial}{\partial q_3}(h_1F_1)
+				-
+				\frac{\partial}{\partial q_1}(h_3F_3)
+				\right]\\
+				(\nabla\times\mathbf F)_3
+				&=
+				\frac{1}{h_1h_2}
+				\left[
+				\frac{\partial}{\partial q_1}(h_2F_2)
+				-
+				\frac{\partial}{\partial q_2}(h_1F_1)
+				\right].
+			\end{align}
+
+		\paragraph{Laplacian.}
+
+			The Laplacian of a scalar field is defined as the divergence of its gradient:
+			\[
+				\nabla^2\phi
+				=
+				\nabla\cdot(\nabla\phi).
+			\]
+			Using the gradient and divergence formulas above gives
+			\begin{definition}{Laplacian in general curvilinear coordinates}
+				\begin{equation}\label{eq:lap_general}
+					\nabla^2\phi
+					=
+					\frac{1}{h_1h_2h_3}
+					\sum_{i=1}^3
+					\frac{\partial}{\partial q_i}
+					\left(
+					\frac{h_1h_2h_3}{h_i^2}
+					\frac{\partial\phi}{\partial q_i}
+					\right).
+				\end{equation}
+			\end{definition}
+			This is the standard form of the scalar Laplacian in an orthogonal curvilinear coordinate system.
 
 		\subsubsubsection{Cylindrical coordinates}
-			Cylindrical coordinates are expressed as $(r,\theta,z)$:
+
+			Cylindrical coordinates $(r,\theta,z)$ describe a point by its distance $r$ from the $z$-axis, its azimuthal angle $\theta$ about the $z$-axis, and its height $z$. They are related to Cartesian coordinates by
 			\[
-			\mathbf r = (r\cos\theta,\, r\sin\theta,\, z),\qquad
-			h_r = 1,\; h_\theta = r,\; h_z = 1.
+				x=r\cos\theta,
+				\qquad
+				y=r\sin\theta,
+				\qquad
+				z=z,
 			\]
-			Compute $h_1 h_2 h_3 = r$. Plugging into \eqref{eq:lap_general}:
+			or equivalently
+			\[
+				\mathbf r
+				=
+				(r\cos\theta,
+				r\sin\theta,
+				z).
+			\]
+			The corresponding local unit vectors are
 			\begin{align*}
-				\nabla^2 \phi
-				&= \frac{1}{r}\left\{
-				\frac{\partial}{\partial r}\!\left(r\frac{\partial\phi}{\partial r}\right)
-				+ \frac{\partial}{\partial \theta}\!\left(\frac{1}{r}\frac{\partial\phi}{\partial \theta}\right)
-				+ \frac{\partial}{\partial z}\!\left(r\frac{\partial\phi}{\partial z}\right)
-				\right\}\frac{1}{\;1\;}\\
-				&= \frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial\phi}{\partial r}\right)
-				+ \frac{1}{r^2}\frac{\partial^2\phi}{\partial \theta^2}
-				+ \frac{\partial^2\phi}{\partial z^2},
+				\vu{e}_r	
+				&=
+				(\cos\theta,\sin\theta,0)\\
+				\vu{e}_\theta
+				&=
+				(-\sin\theta,\cos\theta,0)\\
+				\vu{e}_z
+				&=
+				(0,0,1)
 			\end{align*}
-			which is the familiar cylindrical Laplacian.
+			Unlike Cartesian basis vectors, $\vu{e}_r$ and $\vu{e}_\theta$ depend on $\theta$ and therefore change direction from point to point.
+
+			The scale factors are
+			\begin{align*}
+				h_r = 1 && h_\theta = r && h_z = 1
+			\end{align*}
+			Thus
+			\[
+				\dd{\vb r} = r\dd{r} \vu{e}_r + r\dd{\theta}\vu{e}_\theta + \dd{z}\vu{e}_z
+			\]
+			and
+			\[
+				\dd{V} = r\dd{r}\dd{\theta}\dd{z}
+			\]
+			A vector field is written as
+			\[
+				\vb{F} = F_r \vu{e}_r + F_\theta \vu{e}_\theta + F_z \vu{e}_z
+			\]
+
+			Using \eqref{eq:div_general}, its divergence is
+			\begin{equation}
+				\nabla\cdot\mathbf F
+				=
+				\frac{1}{r}\frac{\partial}{\partial r}(rF_r)
+				+
+				\frac{1}{r}\frac{\partial F_\theta}{\partial\theta}
+				+
+				\frac{\partial F_z}{\partial z}
+			\end{equation}
+			Using \eqref{eq:curl_general}, its curl is
+			\begin{equation}
+				\nabla\times\mathbf F
+				=
+				\left(
+					\frac{1}{r}\frac{\partial F_z}{\partial\theta}
+					-
+					\frac{\partial F_\theta}{\partial z}
+				\right) \vu{e}_r
+				+
+				\left(
+					\frac{\partial F_r}{\partial z}
+					-
+					\frac{\partial F_z}{\partial r}
+				\right)
+				\vu{e}_\theta
+				+
+				\frac{1}{r}
+				\left(
+				\frac{\partial}{\partial r}(rF_\theta)
+				-
+				\frac{\partial F_r}{\partial\theta}
+				\right)
+				\vu{e}_z
+			\end{equation}
+			For the scalar Laplacian, $h_1h_2h_3=r$, so
+			\begin{align*}
+				\nabla^2\phi
+				&=
+				\frac{1}{r}
+				\left[
+				\frac{\partial}{\partial r}
+				\left(r\frac{\partial\phi}{\partial r}\right)
+				+
+				\frac{\partial}{\partial\theta}
+				\left(
+				\frac{1}{r}\frac{\partial\phi}{\partial\theta}
+				\right)
+				+
+				\frac{\partial}{\partial z}
+				\left(
+				r\frac{\partial\phi}{\partial z}
+				\right)
+				\right]\\[4pt]
+				&=
+				\frac{1}{r}
+				\frac{\partial}{\partial r}
+				\left(
+				r\frac{\partial\phi}{\partial r}
+				\right)
+				+
+				\frac{1}{r^2}
+				\frac{\partial^2\phi}{\partial\theta^2}
+				+
+				\frac{\partial^2\phi}{\partial z^2}
+			\end{align*}
 
 		\subsubsubsection{Spherical coordinates}
-			Spherical coordinates are expressed as  $(r,\theta,\varphi)$ with $\theta$ the polar angle and $\varphi$ the azimuth:
+
+			Spherical coordinates $(r,\theta,\varphi)$ describe a point by its radial distance $r$ from the origin, its polar angle $\theta$ measured from the positive $z$-axis, and its azimuthal angle $\varphi$ measured around the $z$-axis.
+
+			They are related to Cartesian coordinates by
 			\[
-				\mathbf r = \big(r\sin\theta\cos\varphi,\; r\sin\theta\sin\varphi,\; r\cos\theta\big),
-				\qquad h_r=1,\; h_\theta=r,\; h_\varphi=r\sin\theta.
+				x=r\sin\theta\cos\varphi,
+				\qquad
+				y=r\sin\theta\sin\varphi,
+				\qquad
+				z=r\cos\theta,
+				\]
+				so that
+				\[
+				\mathbf r
+				=
+				\big(
+				r\sin\theta\cos\varphi,,
+				r\sin\theta\sin\varphi,,
+				r\cos\theta
+				\big).
 			\]
-			Here $h_1 h_2 h_3 = r^2\sin\theta$. Plugging into \eqref{eq:lap_general}:
+
+			The corresponding unit vectors are
 			\begin{align*}
-				\nabla^2 \phi
-				&= \frac{1}{r^2\sin\theta}\Bigg\{
-				\frac{\partial}{\partial r}\!\Big(r^2\sin\theta\,\frac{\partial\phi}{\partial r}\Big)
-				+ \frac{\partial}{\partial \theta}\!\Big(\sin\theta\,\frac{1}{r^2}\,r^2\frac{\partial\phi}{\partial \theta}\Big) \\
-				&\qquad\qquad\qquad
-				+ \frac{\partial}{\partial \varphi}\!\Big(\frac{r^2\sin\theta}{(r\sin\theta)^2}\frac{\partial\phi}{\partial \varphi}\Big)
-				\Bigg\}\\[6pt]
-				&= \frac{1}{r^2}\frac{\partial}{\partial r}\!\left(r^2\frac{\partial\phi}{\partial r}\right)
-				+ \frac{1}{r^2\sin\theta}\frac{\partial}{\partial \theta}\!\left(\sin\theta\frac{\partial\phi}{\partial \theta}\right)
-				+ \frac{1}{r^2\sin^2\theta}\frac{\partial^2\phi}{\partial \varphi^2},
+				\vu{e}_r
+				&=
+				(\sin\theta\cos\varphi,
+				\sin\theta\sin\varphi,
+				\cos\theta)\\
+			    \vu{e}_\theta
+				&=
+				(\cos\theta\cos\varphi,
+				\cos\theta\sin\varphi,
+				-\sin\theta)\\
+				\vu{e}_\varphi
+				&=
+				(-\sin\varphi,
+				\cos\varphi,
+				0)
 			\end{align*}
-			the standard spherical Laplacian.
+			Again, the basis is position-dependent. In particular, $\vu{e}_r$ changes whenever either $\theta$ or $\varphi$ changes, while $\vu{e}_\varphi$ changes as $\varphi$ changes.
 
-		\subsubsection{Divergence and the Dirac Delta}
-			As is required from the course notes goals, we aim to prove that the
-			divergence of a radial inverse square vector field is consistent with
-			the Dirac delta point source/sink.
+			The scale factors are
+			\[
+				h_r=1,
+				\qquad
+				h_\theta=r,
+				\qquad
+				h_\varphi=r\sin\theta.
+			\]
+			Thus
+			\[
+				\dd{\vb{r}}
+				=
+				\dd{r}\vb{e}_r
+				+
+				r\dd{\theta}\vu{e}_\theta
+				+
+				r\sin\theta\dd{\varphi}\vu{e}_\varphi
+			\]
+			and
+			\[
+				dV
+				=
+				r^2\sin\theta,
+				\dd{r},\dd{\theta},\dd{\varphi}
+			\]
 
-			Consider the radial inverse-square vector field
+			A vector field is written as
+			\[
+				\vb{F} = F_r\vu{e}_r + F_\theta \vu{e}_\theta + F_\varphi \vu{e}_\varphi
+			\]
+
+			Using \eqref{eq:div_general}, its divergence becomes
 			\begin{equation}
-				\vb{F}(\vb{r}) = \alpha \frac{1}{r^2}\vu{r} = \alpha \frac{\vb{r}}{r^3}  
+				\nabla\cdot\mathbf F
+				=
+				\frac{1}{r^2}
+				\frac{\partial}{\partial r}(r^2F_r)
+				+
+				\frac{1}{r\sin\theta}
+				\frac{\partial}{\partial\theta}
+				(\sin\theta\,F_\theta)
+				+
+				\frac{1}{r\sin\theta}
+				\frac{\partial F_\varphi}{\partial\varphi}
 			\end{equation}
-			where $r = \norm{\vb{r}}$,$\vu{r}=\vb{r}/r$, and $\alpha\in\R$ is constant.
+			Its curl is
+			\begin{equation}
+				\curl\vb{F} =
+				\mqty[
+					\dfrac{1}{r\sin\theta}
+					\left(
+					\dfrac{\partial}{\partial\theta}
+					(\sin\thetaF_\varphi)
+					-
+					\dfrac{\partial F_\theta}{\partial\varphi}
+					\right)\\
+					\dfrac{1}{r}
+					\left(
+					\dfrac{1}{\sin\theta}
+					\dfrac{\partial F_r}{\partial\varphi}
+					-
+					\dfrac{\partial}{\partial r}(rF_\varphi)
+					\right)\\
+					\dfrac{1}{r}
+					\left(
+					\dfrac{\partial}{\partial r}(rF_\theta)
+					-
+					\dfrac{\partial F_r}{\partial\theta}
+					\right)
+				]
+			\end{equation}
+
+			For the scalar Laplacian, $h_1h_2h_3=r^2\sin\theta$. Substituting into \eqref{eq:lap_general} gives
+			\begin{align*}
+				\nabla^2\phi
+				&=
+				\frac{1}{r^2\sin\theta}
+				\Bigg[
+				\frac{\partial}{\partial r}
+				\left(
+				r^2\sin\theta
+				\frac{\partial\phi}{\partial r}
+				\right)
+				+
+				\frac{\partial}{\partial\theta}
+				\left(
+				\sin\theta
+				\frac{\partial\phi}{\partial\theta}
+				\right)\
+				+
+				\frac{\partial}{\partial\varphi}
+				\left(
+				\frac{1}{\sin\theta}
+				\frac{\partial\phi}{\partial\varphi}
+				\right)
+				\Bigg]\\[4pt]
+				&=
+				\frac{1}{r^2}
+				\frac{\partial}{\partial r}
+				\left(
+				r^2\frac{\partial\phi}{\partial r}
+				\right)
+				+
+				\frac{1}{r^2\sin\theta}
+				\frac{\partial}{\partial\theta}
+				\left(
+				\sin\theta\frac{\partial\phi}{\partial\theta}
+				\right)
+				+
+				\frac{1}{r^2\sin^2\theta}
+				\frac{\partial^2\phi}{\partial\varphi^2}
+			\end{align*}
+
+	\subsubsection{Divergence and the Dirac Delta}
+		As is required from the course notes goals, we aim to prove that the
+		divergence of a radial inverse square vector field is consistent with
+		the Dirac delta point source/sink.
+
+		Consider the radial inverse-square vector field
+		\begin{equation}
+			\vb{F}(\vb{r}) = \alpha \frac{1}{r^2}\vu{r} = \alpha \frac{\vb{r}}{r^3}  
+		\end{equation}
+		where $r = \norm{\vb{r}}$,$\vu{r}=\vb{r}/r$, and $\alpha\in\R$ is constant.
+		
+		We want to show that the divergence is zero on this field everywhere except
+		at the origin, where it is represented by a Dirac delta:
+		\begin{equation}
+			\div\vb{F} = 4\pi\alpha\delta^{(3)}(\vb{r})
+		\end{equation}
+		For $\alpha>0$, this is a point source, and for $\alpha<0$, a point sink.
+		\begin{proof}
+
+			We prove the relation with the following arguments:
+			\begin{enumerate}
+				\item \textbf{Divergence away from the origin}
+					  
+					  For a purely radial field 
+					  \begin{equation}
+						  \vb{F} = F_r(r)\vu{r}
+					  \end{equation}
+					  the divergence in spherical coordinates is
+					  \begin{equation}
+						  \div\vb{F} = \frac{1}{r^2}\dv{}{r}\qty(r^2 F_r) 
+					  \end{equation}
+					  Here, the magnitude of $F_r$ is
+					  \begin{equation}
+						  F_r = \frac{\alpha}{r^2} 
+					  \end{equation}
+					  so,
+					  \begin{equation}
+						  r^2 F_r = \alpha
+					  \end{equation}
+					  and therefore, for $r\neq 0$, 
+					  \begin{align}
+						  \div\vb{F} &= \frac{1}{r^2} \dv{\alpha}{r}\\
+									 &= \frac{1}{r^2} \cdot 0\\ 
+									 &= 0.
+					  \end{align}
+					  Thus,
+					  \begin{equation}
+						  \div\vb{F} = 0\quad(r\neq 0).
+					  \end{equation}
+					Therefore, any nonzero divergence must be concentrated at $r=0$.
+				\item \textbf{Flux through a sphere about the origin}
+
+					Suppose a sphere $S_R$ of radius $R$ centered at the origin. Since
+					\begin{equation}
+						\vb{F} = \frac{\alpha}{R^2}\vu{r} 
+					\end{equation}
+					on the sphere, and 
+					\begin{equation}
+						d\vb{A} = \vu{r} R^2 \sin\theta\dd{\theta}\dd{\phi},
+					\end{equation}
+					the flux is
+					\begin{equation}
+						\oint_{S_R}\vb{F}\cdot\dd{\vb{A}} 
+							= \int_0^{2\pi} \int_0^\pi 
+							  \frac{\alpha}{R^2} R^2  
+							  \sin\theta\dd{\theta}\dd{\phi},
+					\end{equation}
+					Evaluating this, we have
+					\begin{equation}
+						\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = \alpha \cdot (4\pi)
+					\end{equation}
+					Therefore,
+					\begin{equation}
+						\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = 4\pi\alpha 
+					\end{equation}
+					Note that this is independent of $R$.
+				\item \textbf{Gauss' Law}
+
+					For an ordinary smooth field, the divergence theorem gives
+					\begin{equation}
+						\int_V \div\vb{F}\dd[3]{r} = \oint_{\partial V}\vb{F}\cdot d\vb{A}
+					\end{equation}
+					Thus, for any volume containig the origin,
+					\begin{equation}
+						\int_V \div\vb{F}\dd[3]{r} = 4\pi \alpha 
+					\end{equation}
+					From argument 1, we already established that the divergence 
+					is zero everywhere except the origin. Thus, the entire $4\pi\alpha$
+					must be concetrated at the single point $\vb{r}=0$.
+
+					As such, we desire a function $g(\vb{r})$ that satisfies
+					\begin{align}
+						g(\vb{r}) =0,\quad \vb{r}\neq 0
+					\end{align}
+					but 
+					\begin{equation}
+						\int_V g(\vb{r})\dd[3]r = 4\pi\alpha
+					\end{equation} 
+					Whenever $V$ containts the origin.
+				\item \textbf{Property of the Dirac Delta}
+
+					The three dimensional Dirac delta is defined by 
+					\begin{equation}
+						\int_V \delta^{(3)}(\vb{r})\dd[3]r =
+						\begin{cases}
+							1,\quad &0\in V\\
+							0,\quad &0\not\in V
+						\end{cases}
+					\end{equation}
+					Therefore, $4\pi\alpha\delta^{(3)}(\vb{r})$ has the property
+					\begin{equation}
+						\int_V 4\pi \alpha \delta^{(3)}(\vb{r})\dd[3]r =
+						\begin{cases}
+							4\pi\alpha \quad & 0\in V\\
+							0 &0\not\in V
+						\end{cases}
+					\end{equation}
+					Which is precisely what we require of our function $g(\vb{r})$
+
+					Therefore, in the sense of distributions,
+					\begin{equation}
+						\div\vb{F} = 4\pi\alpha \delta^{(3)}(\vb{r})
+					\end{equation}
+			\end{enumerate}
+			Since $\vb{F}=\dfrac{\alpha}{r^2}\vu{r}$, then we find that
+			\begin{equation}
+				\div\qty(\alpha\frac{1}{r^2}\vu{r}) = 4\pi\alpha\delta^{(3)}(\vb{r})
+			\end{equation}
+			We can cancel the $\alpha$, since it's simply a constant indicating source/sink 
+			dynamics. Doing this, we find that
+			\begin{equation}
+				\div(\frac{1}{r^2}\vu{r}) = 4\pi\delta^{(3)}(\vb{r})
+			\end{equation}
+			Which is what we set out to prove.
+		\end{proof}
+		Thus, we have
+		\begin{theorem}{Divergence of a radial inverse quadratic vector field}
+			The divergence of a radial inverse quadratic vector field
+			is consistent with the Dirac delta point source/sink
+			\begin{equation}
+				\div(\frac{1}{r^2}\vu{r}) = 4\pi\delta^{(3)}(\vb{r})
+			\end{equation}
+		\end{theorem}
+		A particular consequence of this is that the Laplacian of the potential field $\phi = \frac{1}{r}$ (whose
+		gradient field is $\vb{F} = \frac{1}{r^2}\vu{r}$) is also a Dirac delta.
+		\begin{align*}
+			\grad\qty(\frac{1}{r}) &= - \frac{1}{r^2}\vu{r}\\
+			\div\grad\qty(\frac{1}{r}) &= - \div\qty(\frac{1}{r^2}\vu{r})\\
+			\lpc\qty(\frac{1}{r}) &= - 4\pi\delta^{(3)}(\vb r)
+		\end{align*}
+		\begin{theorem}{Laplacian of an radial inverse potential field}
+			\begin{equation}
+				\lpc(\frac{1}{r}) = -4\pi\delta^{(3)}(\vb{r})
+			\end{equation}
+		\end{theorem}
 			
-			We want to show that the divergence is zero on this field everywhere except
-			at the origin, where it is represented by a Dirac delta:
-			\begin{equation}
-				\div\vb{F} = 4\pi\alpha\delta^{(3)}(\vb{r})
-			\end{equation}
-			For $\alpha>0$, this is a point source, and for $\alpha<0$, a point sink.
-			\begin{proof}
-
-				We prove the relation with the following arguments:
-				\begin{enumerate}
-					\item \textbf{Divergence away from the origin}
-						  
-						  For a purely radial field 
-						  \begin{equation}
-							  \vb{F} = F_r(r)\vu{r}
-						  \end{equation}
-						  the divergence in spherical coordinates is
-						  \begin{equation}
-							  \div\vb{F} = \frac{1}{r^2}\dv{}{r}\qty(r^2 F_r) 
-						  \end{equation}
-						  Here, the magnitude of $F_r$ is
-						  \begin{equation}
-						      F_r = \frac{\alpha}{r^2} 
-						  \end{equation}
-						  so,
-						  \begin{equation}
-						      r^2 F_r = \alpha
-						  \end{equation}
-						  and therefore, for $r\neq 0$, 
-						  \begin{align}
-							  \div\vb{F} &= \frac{1}{r^2} \dv{\alpha}{r}\\
-										 &= \frac{1}{r^2} \cdot 0\\ 
-										 &= 0.
-						  \end{align}
-						  Thus,
-						  \begin{equation}
-							  \div\vb{F} = 0\quad(r\neq 0).
-						  \end{equation}
-						Therefore, any nonzero divergence must be concentrated at $r=0$.
-					\item \textbf{Flux through a sphere about the origin}
-
-						Suppose a sphere $S_R$ of radius $R$ centered at the origin. Since
-						\begin{equation}
-							\vb{F} = \frac{\alpha}{R^2}\vu{r} 
-						\end{equation}
-						on the sphere, and 
-						\begin{equation}
-							d\vb{A} = \vu{r} R^2 \sin\theta\dd{\theta}\dd{\phi},
-						\end{equation}
-						the flux is
-						\begin{equation}
-							\oint_{S_R}\vb{F}\cdot\dd{\vb{A}} 
-								= \int_0^{2\pi} \int_0^\pi 
-								  \frac{\alpha}{R^2} R^2  
-								  \sin\theta\dd{\theta}\dd{\phi},
-						\end{equation}
-						Evaluating this, we have
-						\begin{equation}
-							\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = \alpha \cdot (4\pi)
-						\end{equation}
-						Therefore,
-						\begin{equation}
-							\oint_{S_R} \vb{F}\cdot\dd{\vb{A}} = 4\pi\alpha 
-						\end{equation}
-						Note that this is independent of $R$.
-					\item \textbf{Gauss' Law}
-
-						For an ordinary smooth field, the divergence theorem gives
-						\begin{equation}
-							\int_V \div\vb{F}\dd[3]{r} = \oint_{\partial V}\vb{F}\cdot d\vb{A}
-						\end{equation}
-						Thus, for any volume containig the origin,
-						\begin{equation}
-							\int_V \div\vb{F}\dd[3]{r} = 4\pi \alpha 
-						\end{equation}
-						From argument 1, we already established that the divergence 
-						is zero everywhere except the origin. Thus, the entire $4\pi\alpha$
-						must be concetrated at the single point $\vb{r}=0$.
-
-						As such, we desire a function $g(\vb{r})$ that satisfies
-						\begin{align}
-							g(\vb{r}) =0,\quad \vb{r}\neq 0
-						\end{align}
-						but 
-						\begin{equation}
-							\int_V g(\vb{r})\dd[3]r = 4\pi\alpha
-						\end{equation} 
-						Whenever $V$ containts the origin.
-					\item \textbf{Property of the Dirac Delta}
-						The three dimensional Dirac delta is defined by 
-						\begin{equation}
-							\int_V \delta^{(3)}(\vb{r})\dd[3]r =
-							\begin{cases}
-								1,\quad &0\in V\\
-								0,\quad &0\not\in V
-							\end{cases}
-						\end{equation}
-						Therefore, $4\pi\alpha\delta^{(3)}(\vb{r})$ has the property
-						\begin{equation}
-						    \int_V 4\pi \alpha \delta^{(3)}(\vb{r})\dd[3]r =
-							\begin{cases}
-								4\pi\alpha \quad & 0\in V\\
-								0 &0\not\in V
-							\end{cases}
-						\end{equation}
-						Which is precisely what we require of our function $g(\vb{r})$
-
-						Therefore, in the sense of distributions,
-						\begin{equation}
-							\div\vb{F} = 4\pi\alpha \delta^{(3)}(\vb{r})
-						\end{equation}
-				\end{enumerate}
-				Since $\vb{F}=\dfrac{\alpha}{r^2}\vu{r}$, then we find that
-				\begin{equation}
-					\div\qty(\alpha\frac{1}{r^2}\vu{r}) = 4\pi\alpha\delta^{(3)}(\vb{r})
-				\end{equation}
-				We can cancel the $\alpha$, since it's simply a constant indicating source/sink 
-				dynamics. Doing this, we find that
-				\begin{equation}
-					\div(\frac{1}{r^2}\vu{r}) = 4\pi\delta^{(3)}(\vb{r})
-				\end{equation}
-				Which is what we set out to prove.
-			\end{proof}
-			Thus, we have
-			\begin{theorem}{Divergence of a radial inverse quadratic field}
-			    The divergence of a radial inverse quadratic vector field
-				is consistent with the Dirac delta point source/sink
-				\begin{equation}
-					\div(\frac{\alpha}{r^2}\vu{r}) = 4\pi\alpha\delta^{(3)}(\vb{r})
-				\end{equation}
-				Where $\alpha$ is a parameter that determines whether the
-				point is a source $(\alpha > 0)$ or sink $(\alpha < 0)$
-			\end{theorem}
 			
-			A particularly familiar example of this is the electric field.
-			\begin{equation}
-				\vb{E} = \frac{q}{4\pi\varepsilon_0} \frac{1}{r^2} \vu{r} 
-			\end{equation}
-			for which
-			\begin{equation}
-				\div\vb{E} = \frac{q}{\varepsilon_0}\delta^{(3)}(\vb{r}) 
-			\end{equation}
+			% A particularly familiar example of this is the electric field.
+			% \begin{equation}
+			% 	\vb{E} = \frac{q}{4\pi\varepsilon_0} \frac{1}{r^2} \vu{r} 
+			% \end{equation}
+			% for which
+			% \begin{equation}
+			% 	\div\vb{E} = \frac{q}{\varepsilon_0}\delta^{(3)}(\vb{r}) 
+			% \end{equation}
 			
 \newpage
 

@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{eso-pic} % For background/overlay images
+\usepackage{calc}
+
+% Remove indentation
+\setlength{\parindent}{1em}
+\setlength{\parskip}{1em}
+
+\pagestyle{empty}
+% Add UP logo as overlay on top-right corner
+\AddToShipoutPictureBG{%
+    \AtPageUpperLeft{%
+        \hspace*{1.3in}% 1in from right edge
+        \raisebox{-\height}{%
+            \raisebox{-1.7in}{% 1in from top
+                \includegraphics[width=1.2in]{uplogo.png}%
+            }%
+        }%
+    }%
+}
+
+\renewcommand{\today}{August 24, 2026}
+
+\begin{document}
+
+% Letterhead - centered
+\begin{center}
+    \textbf{\large COLLEGE OF HUMAN KINETICS}\\
+    \textsc{University of the Philippines}\\
+    Diliman, Quezon City 1101
+\end{center}
+% Date
+\vspace{1em}
+\noindent\today
+
+
+% Recipient address
+\begin{flushleft}
+\textbf{Golden Gays Manila \\Foundation}\\
+57 Antipolo St. Pasay City, 1301 \\
+\textit{To whom it may concern}
+\end{flushleft}
+
+\vspace{1.5em}
+
+% Salutation
+\noindent Dear Sir/Madam,
+
+\vspace{1em}
+
+% Body of the letter
+We are NSTP-CWTS students from the University of the Philippines 
+College of Human Kinetics, Diliman, Quezon City. As part of our 
+academic requirements, we are tasked to implement our nation-building 
+community engagement project entitled \textbf{``\textit{Rampanalo}: 
+Audiovisual Art as a Celebration of Pride and Power for the Home of 
+the Golden Gays''}. Said student initiative shall be held on October 
+5, 2026, with the aim of fulfilling the following objectives:
+
+\vspace{0.5em}
+\begin{enumerate}
+    \item Produce a documentary about the Home of the Golden Gays;
+    \item Promote self-expression and creativity through movement, 
+		  performance art, and fashion;
+    \item Provide a platform for elder queers to share their stories 
+		  and perceive solidarity from the queer community;
+    \item Strengthen overall support for the queer community and 
+		  increase awareness for the struggles and experiences.
+\end{enumerate}
+\vspace{0.5em}
+
+Crucial to the accomplishment of these objectives, we kindly request
+your support in facilitating the production and filming during the 
+first two weeks of October at your foundation. The project will involve 
+at least twenty local participants, all of whom are residents and 
+beneficiaries of your foundation, and whom we envision to benefit 
+greatly from this initiative. We have attached our planned itinerary 
+details for your perusal.
+
+With this juncture, may we respectfully request on your good end, your 
+consent to be interviewed, filmed, and to allow us to document your 
+location and beneficiaries, to help us realize our nation-building 
+project within the stated time period? Your kind assistance would mean 
+a great deal to us, as it will not only help us fulfill our academic 
+requirements, but also enable us to achieve our nation-building aspirations 
+and, more importantly, deliver the intended benefits of our project to 
+the community.
+
+Thank you very much!
+
+% Closing
+\begin{flushleft}
+Very truly yours, \\[2em]
+\textbf{Christa Liofe Ducos} \\
+NSTP-CWTS Class Section MBD \\
+0916 331 3556
+\end{flushleft}
+
+
+% Noted/Endorsed by
+\begin{flushright}
+Noted/Endorsed by: \\[2em]
+\textbf{Ted Nichol Siquian} \\
+Class Adviser
+\end{flushright}
+
+\end{document}

@@ -108,7 +108,7 @@ plt.legend(loc="lower right", fontsize = 9)
 
 # Add annotation with arrow
 plt.annotate(
-    r'Peak at $A=62$, $Z = 27 \to \text{Ni}^{62}$',  # Text label
+    r'Peak at $A=62$, $Z = 28 \to \text{Ni}^{62}$',  # Text label
     xy=(61.665, BA62),              # Point to point to (blue dot)
     xytext=(85, 6.5),               # Position of text (adjust these values)
     arrowprops=dict(

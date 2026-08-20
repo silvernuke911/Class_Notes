@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  14 AUG 2026 02:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  20 AUG 2026 04:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -751,6 +751,12 @@ Package: tensor 2023/07/18 v2.2 tensor indices package (PGR)
 \tnsr@Spe=\toks48
 \tnsr@Sbe=\toks49
 \ncld@Mno=\toks50
+) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count320
@@ -1928,11 +1934,11 @@ Package rerunfilecheck Info: File `p180.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 67987 strings out of 474542
- 1715391 string characters out of 5744446
- 2645670 words of memory out of 5000000
- 89291 multiletter control sequences out of 15000+600000
- 593788 words of font info for 72 fonts, out of 8000000 for 9000
+ 68019 strings out of 474542
+ 1716089 string characters out of 5744446
+ 2645832 words of memory out of 5000000
+ 89318 multiletter control sequences out of 15000+600000
+ 600754 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,10n,110p,788b,1006s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -1944,11 +1950,12 @@ public/lm/lmex10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/lm/lmmi12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/lm/lmr12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/lm/lmr17.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmri12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/lm/lmsy10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 180\bu
-ild\p180.pdf" (4 pages, 192277 bytes).
+ild\p180.pdf" (4 pages, 210280 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

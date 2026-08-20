@@ -1,0 +1,234 @@
+\documentclass[tikz,border=8pt]{standalone}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    >=Stealth,
+    line width=0.8pt,
+    every node/.style={font=\small},
+]
+
+% ============================================================
+% (a) POINT CHARGE
+% ============================================================
+
+\begin{scope}[xshift=0cm,yshift=6.2cm]
+
+    % Charge q
+    \fill (0,0) circle (1.3pt);
+    \node[below left] at (0,0) {$q$};
+
+    % Point P
+    \fill (1.65,2.35) circle (1.3pt);
+    \node[above] at (1.65,2.35) {$P$};
+
+    % r_QP
+    \draw[->] (0.04,0.05) -- (1.65,2.35)
+        node[midway,left=2pt] {$\mathbf r_{qP}$};
+
+    % Caption
+    \node[below] at (0.8,-0.65) {Point charge};
+    \node[below] at (0.8,-1.00) {(a)};
+
+\end{scope}
+
+
+% ============================================================
+% (b) LINE CHARGE
+% ============================================================
+
+\begin{scope}[xshift=6.4cm,yshift=6.2cm]
+
+    % Line charge
+    \draw (0.0,0.0) -- (0.75,3.15);
+
+    % L labels
+    \node[below left] at (0.0,0.0) {$L$};
+    \node[above right] at (0.75,3.15) {$\lambda$};
+
+    % Positive charges along line
+    \foreach \y in {0.35,0.68,1.01,1.34,1.67,2.00,2.33,2.66} {
+        \node at ({0.75*\y/3.15 - 0.08},\y) {$+$};
+    }
+
+    % Differential element
+    \coordinate (Q) at (0.39,1.60);
+
+    % dq bracket/marker
+    \draw[thick] ($(Q)+(-0.06,-0.12)$) -- ($(Q)+(0.01,0.17)$);
+	\node[above left] at (0.34,1.55) {$dl$}
+
+    % P
+    \fill (2.55,2.55) circle (1.3pt);
+    \node[above right] at (2.55,2.55) {$P$};
+
+    % r_QP
+    \draw[->] ($(Q)+(0.02,0.02)$) -- (2.55,2.55)
+        node[midway,above=1pt] {$\mathbf r_{qP}$};
+
+    % Differential charge equations
+    \node[align=left] at (1.75,1.00) {
+        $dq=\lambda\,dl$\\[-1pt]
+        $\ \ q=\displaystyle\int_L\lambda\,dl$
+    };
+
+    % Caption
+    \node[below] at (1.25,-0.65) {Line charge};
+    \node[below] at (1.25,-1.00) {(b)};
+
+\end{scope}
+
+
+% ============================================================
+% (c) SURFACE CHARGE
+% ============================================================
+
+\begin{scope}[xshift=0cm,yshift=0cm]
+
+\coordinate (A) at (-0.25,0.25);
+\coordinate (B) at (1.65,1.25);
+\coordinate (C) at (1.65,3.25);
+\coordinate (D) at (-0.25,2.25);
+
+\draw (A) -- (B) -- (C) -- (D) -- cycle;
+% Surface label
+\node at (0.25,0.70) {$S$};
+
+% Surface charge density
+\node[above left] at (-0.25,2.25) {$\sigma$};
+
+% 4x4 grid of charges aligned with the parallelogram
+% The parallelogram has basis vectors:
+% v1 = B - A = (1.90, 1.00)
+% v2 = D - A = (0.00, 2.00)
+% So any point = A + u*v1 + v*v2, where u,v in [0,1]
+\foreach \i in {1,2,3,4} {
+    \foreach \j in {1,2,3,4} {
+        % u and v go from 0.125 to 0.875 (centered in each cell)
+        \pgfmathsetmacro{\u}{(\i-0.5)/4}
+        \pgfmathsetmacro{\v}{(\j-0.5)/4}
+        
+        % Compute position: P = A + u*(B-A) + v*(D-A)
+        \pgfmathsetmacro{\px}{-0.25 + \u*1.90 + \v*0.00}
+        \pgfmathsetmacro{\py}{0.25 + \u*1.00 + \v*2.00}
+        
+        \node at (\px,\py) {$+$};
+    }
+}
+
+% Differential surface element dS (small parallelogram aligned with S)
+\coordinate (dS_center) at (0.65,1.75);
+
+% Scale down the parallelogram by factor s
+\pgfmathsetmacro{\s}{0.18}
+
+% The parallelogram corners relative to center:
+% A: (-0.25, 0.25) -> relative to center: (-0.90, -1.50)
+% B: (1.65, 1.25)  -> relative: (1.00, -0.50)
+% C: (1.65, 3.25)  -> relative: (1.00, 1.50)
+% D: (-0.25, 2.25) -> relative: (-0.90, 0.50)
+
+\coordinate (dA) at ($(dS_center) + \s*(-0.90, -1.50)$);
+\coordinate (dB) at ($(dS_center) + \s*(1.00, -0.50)$);
+\coordinate (dC) at ($(dS_center) + \s*(1.00, 1.50)$);
+\coordinate (dD) at ($(dS_center) + \s*(-0.90, 0.50)$);
+
+% Draw dS as a small parallelogram
+\draw[thick] (dA) -- (dB) -- (dC) -- (dD) -- cycle;
+
+
+% dS label
+\node[above right] at ($(dC)+(0.05,0.05)$) {$dS$};
+
+% P
+\fill (3.10,2.55) circle (1.3pt);
+\node[above right] at (3.10,2.55) {$P$};
+
+% r_QP
+\draw[->] ($(dS_center)+(0.0,0.0)$) -- (3.10,2.55)
+    node[above right] at ($(dS_center)!0.5!(3.10,2.55)$) {$\mathbf r_{qP}$};
+
+% Equations
+\node[align=left] at (0.00,3.55) {
+    $dq=\sigma\,dS$\\[-1pt]
+    $q=\displaystyle\int_S\sigma\,dS$
+};
+
+% Caption
+\node[below] at (0.70,-0.35) {Surface charge};
+\node[below] at (0.70,-0.70) {(c)};
+
+\end{scope}
+
+
+% ============================================================
+% (d) VOLUME CHARGE
+% ============================================================
+
+\begin{scope}[xshift=6.4cm,yshift=0cm]
+
+    % Bean-shaped volume boundary
+    \draw
+        (1.00,0.40)
+        .. controls (0.20,0.30) and (-0.10,0.90) .. (0.15,1.40)
+        .. controls (0.30,1.70) and (0.60,2.00) .. (1.00,2.20)
+        .. controls (1.40,2.40) and (2.00,2.55) .. (2.40,2.35)
+        .. controls (2.80,2.15) and (2.90,1.70) .. (2.80,1.30)
+        .. controls (2.70,0.90) and (2.40,0.60) .. (2.00,0.48)
+        .. controls (1.60,0.38) and (1.20,0.42) .. cycle;
+
+    % V label
+    \node at (2.15,0.75) {$V$};
+
+    % Additional charges to fill the bean shape
+    \foreach \p in {
+		(0.75,1.50),
+        (0.65,1.80),
+        (0.90,2.00),
+		(2.0,2.10),
+        (2.25,1.90),
+	   (1.9,0.85),
+	   (0.70,0.65),
+        (0.50,0.80)
+    } {
+        \node at \p {$+$};
+    }
+
+    % Differential volume element
+    \coordinate (dV) at (1.20,1.50);
+
+ % Small cube indication of dV (3D perspective)
+\draw ($(dV)+(-0.15,-0.15)$) rectangle ($(dV)+(0.15,0.15)$);
+\draw ($(dV)+(-0.15,-0.15)+(0.08,0.08)$) rectangle ($(dV)+(0.15,0.15)+(0.08,0.08)$);
+\draw ($(dV)+(-0.15,-0.15)$) -- ($(dV)+(-0.15,-0.15)+(0.08,0.08)$);
+\draw ($(dV)+(0.15,-0.15)$) -- ($(dV)+(0.15,-0.15)+(0.08,0.08)$);
+\draw ($(dV)+(0.15,0.15)$) -- ($(dV)+(0.15,0.15)+(0.08,0.08)$);
+\draw ($(dV)+(-0.15,0.15)$) -- ($(dV)+(-0.15,0.15)+(0.08,0.08)$);
+\node[right] at ($(dV)+(0.18,-0.05)$) {$dV$};
+    % P
+    \fill (3.00,2.65) circle (1.3pt);
+    \node[above right] at (3.00,2.65) {$P$};
+
+    % r_QP
+    \draw[->] ($(dV)+(0.0,0.0)$) -- (3.00,2.65)
+        node[midway,above] {$\mathbf r_{qP}$};
+
+    % Equations
+    \node[align=left] at (0.15,2.80) {
+        $q=\displaystyle\int_V\rho\,dV$\\[-1pt]
+        $dq=\rho\,dV$
+    };
+
+    % Caption
+    \node[below] at (1.25,0.00) {Volume charge};
+    \node[below] at (1.25,-0.35) {(d)};
+
+\end{scope}
+
+\end{tikzpicture}
+
+\end{document}

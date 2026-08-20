@@ -100,23 +100,39 @@
 		be exerted on a text charge if you were to place one on $P$.
 	\subsubsection{Continuus Charge Distribution}
 		Our definition of the electric field (\ref{eq: discrete E}) assumes that the source
-		of the fields is a collection of discrete point charges $q_i$ (Fig \ref{fig:charge distribution}.a). If instead, the charge
+		of the fields is a collection of discrete point charges $q_i$ (Fig \ref{subfig: efield ptcharge}). If instead, the charge
 		is distributed continuously over some region, the sum thus becomes an integral
 		\begin{equation}
 			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0}\int \frac{1}{r^2}\vu{r}\dd{q} 
 		\end{equation}
 		There are multiple ways where in charges can be distributed over a region.
-		\begin{figure}[h!]
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.4\textwidth]{images/charge_distrib}
+			\subfloat[Point charge]{
+			\includegraphics[width=2in]{images/pointcharge.pdf}
+			\label{subfig: efield ptcharge}
+			}
+			\subfloat[Line charge]{
+			\includegraphics[width=2in]{images/linecharge2.pdf}
+			\label{subfig: efield linecharge}
+			}
+			\hspace{0.5em}
+			\subfloat[Surface charge]{
+			\includegraphics[width=2in]{images/surfacecharge.pdf}
+			\label{subfig: efield surfcharge}
+			}
+			\hspace{0.5em}
+			\subfloat[Volume charge]{
+			\includegraphics[width=2in]{images/volumecharge.pdf}
+			\label{subfig: efield volcharge}
+			}
 			\caption{Charge distributions}
-			\label{fig:charge distribution}
+			\label{fig: charge distributions}
 		\end{figure}
-
-		If the charge is spread out along a \textit{line} (Fig \ref{fig:charge distribution}.b), with the charge-per-unit-length $\lambda$,
+		If the charge is spread out along a \textit{line} (Fig \ref{subfig: efield linecharge}), with the charge-per-unit-length $\lambda$,
 		then $dq = \lambda \dd{l}$, where $dl$ is a length element along the line. If the charge
-		is smeared over a \textit{surface} (Fig \ref{fig:charge distribution}.c), with charge-per-unit-area $\sigma$, then $dq = \sigma \dd{S}$,
-		where $dS$ is an area element on the surface. And if the charge fills a \textit{volume} (Fig \ref{fig:charge distribution}.d),
+		is smeared over a \textit{surface} (Fig \ref{subfig: efield surfcharge}), with charge-per-unit-area $\sigma$, then $dq = \sigma \dd{S}$,
+		where $dS$ is an area element on the surface. And if the charge fills a \textit{volume} (Fig \ref{subfig: efield volcharge}),
 		with charge-per-unit-volume $\rho$, then $dq = \rho \dd{V}$, where $dV$ is a volume element.
 		\[
 			dq \to \lambda dl \sim \sigma dS \sim \rho dV
@@ -141,6 +157,21 @@
 
 
 	\subsubsection{Divergence and Curl of Electrostatic Fields}
+		We begin with the simples possible case of electrostatics. A single point
+		$q$, situataed at the origin.
+		\[
+			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \vu{r} 
+		\]
+		We then have a plot which looks akin to this, the field lines of 
+		this point source\footnote{Unfortunately \texttt{matplotlib} does not have a convenient field line functionality so we have to do \texttt{streamplot} for now}
+	
+	\begin{figure}[h]
+	    \centering
+	    \includegraphics[width=2in]{../code/efield.pdf}
+	    \caption{Electric field lines}
+	    \label{fig:efieldlines}
+	\end{figure}
+	
 
 
 \newpage

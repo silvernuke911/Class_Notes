@@ -317,7 +317,7 @@
 
 		Now compare this with another box which is stationary, with another observer sitting on the surface of Earth.
 
-		You release the same ball, and it falls downward with approximately
+		The observer releases the same ball, and it falls downward with approximately
 
 		\begin{equation}
 			\vb{a}_\text{ball} = -g\vu{z}
@@ -375,15 +375,15 @@
 
 		\paragraph{Weak, Strong, and Einstein Equivalence Principles}
 
-		We have the weak equivalence principle, where the ``laws of nature'' are understood primarily as the laws of mechanics and the universality of free fall.
+			We have the weak equivalence principle, where the ``laws of nature'' are understood primarily as the laws of mechanics and the universality of free fall.
 
-		For the strong equivalence principle, one extends the statement to gravitationally self-interacting or strongly gravitating systems, so that the equivalence applies more broadly than to test particles alone.
+			For the strong equivalence principle, one extends the statement to gravitationally self-interacting or strongly gravitating systems, so that the equivalence applies more broadly than to test particles alone.
 
-		The Einstein equivalence principle goes further: ``laws of nature'' genuinely means all laws of nature. It is one of the conceptual foundations of general relativity.
+			The Einstein equivalence principle goes further: ``laws of nature'' genuinely means all laws of nature. It is one of the conceptual foundations of general relativity.
 
-		In any theory of gravity, one can attempt to remove $g$ locally by an appropriate choice of coordinates. What makes general relativity special is the geometric interpretation of what remains after the local gravitational acceleration has been removed.
+			In any theory of gravity, one can attempt to remove $g$ locally by an appropriate choice of coordinates. What makes general relativity special is the geometric interpretation of what remains after the local gravitational acceleration has been removed.
 
-		It means that gravity is genuinely fictitious locally if no experiment confined to that sufficiently small region can tell that we are in a gravitational field. If one can remove gravity, then what remains should be the stage itself: the underlying spacetime structure and its geometry.
+			It means that gravity is genuinely fictitious locally if no experiment confined to that sufficiently small region can tell that we are in a gravitational field. If one can remove gravity, then what remains should be the stage itself: the underlying spacetime structure and its geometry.
 
 		In summary, over a sufficiently small region of space and time, a fictitious gravitational field produced by acceleration is indistinguishable from a gravitational field produced by mass (strong equivalence principle).
 		Likewise, within a sufficiently small region of space, a freely falling observer cannot distinguish between free fall in a gravitational field and inertial motion in the absence of gravity (weak equivalence principle). 
@@ -410,7 +410,6 @@
 		This is called \textit{Galilean relativity}. There is a class of observers which all move relative to each other with uniform velocities.
 
 		The transformation between two such frames can be written as
-
 		\begin{align}
 			t' &= t\\
 			\vb{x}' &= \vb{x} - \vb{v}t
@@ -491,9 +490,9 @@
 		The Poincar\'e-Lorentz transformations provide the appropriate transformations:
 
 		\begin{align}
-			ct' &= \gamma(ct-\beta x)\\
-			x' &= \gamma(x - \beta c t)\\
-			\gamma &= \frac{1}{\sqrt{1-\beta^2}}\\
+			ct' &= \gamma(ct-\beta x) \\
+			x'  &= \gamma(x - \beta ct) \\
+			\gamma &= \frac{1}{\sqrt{1-\beta^2}} \\
 			\beta &= \frac{v}{c}.
 		\end{align}
 
@@ -503,7 +502,7 @@
 		The form of these transformations is
 
 		\begin{equation}
-			x^{\mu'} = \Lambda^\mu_{\ \nu} x^\nu.
+			x^{\mu'} = \tensor{\Lambda}{^\mu_\nu} x^\nu.
 		\end{equation}
 
 		Where
@@ -515,8 +514,8 @@
 		and
 
 		\begin{equation}
-			\Lambda^\mu_{\ \nu} =
-			\bmat{
+			\tensor{\Lambda}{^\mu_\nu} =
+			\bmqty{
 				\gamma & -\gamma \beta & 0 & 0\\
 				-\gamma \beta & \gamma & 0 & 0 \\
 				0 & 0 & 1 & 0 \\
@@ -562,11 +561,11 @@
 
 		\begin{equation}
 			\eta_{\mu\nu} =
-			\bmat{
+			\bmqty{
 				-1 & 0 & 0 & 0 \\
-				0 & 1 & 0 & 0 \\
-				0 & 0 & 1 & 0 \\
-				0 & 0 & 0 & 1
+				\phantom{-}0 & 1 & 0 & 0 \\
+				\phantom{-}0 & 0 & 1 & 0 \\
+				\phantom{-}0 & 0 & 0 & 1
 			}
 		\end{equation}
 

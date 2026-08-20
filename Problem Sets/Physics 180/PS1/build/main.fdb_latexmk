@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex build/main"] 1786877806.59042 "build/main.aux" "build/main.bbl" "build/main" 1786885495.38734 0
+["bibtex build/main"] 1786877806.59042 "build/main.aux" "build/main.bbl" "build/main" 1787203158.07111 0
   "./references.bib" 1786877791 2259 878718359248e5cfe87d6ecbc904cf5e ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/unsrtnat.bst" 1284455456 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "build/main.aux" 1786885490 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
+  "build/main.aux" 1787203153 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1786885480.31187 "main.tex" "main.pdf" "main" 1786885495.40825 2
-  "C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1785515589 278015 b5ae8789d05c9394f564dcef5be6e51a ""
+["pdflatex"] 1787203142.98427 "main.tex" "main.pdf" "main" 1787203158.07491 2
+  "C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787083256 318527 8def323dfc0d66077db486995b31d841 ""
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1759457975 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1759457984 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/verci/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs7.tfm" 1759457995 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
@@ -61,6 +61,8 @@
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr7.tfm" 1256929440 11852 5a9022f105fd1ee2797df861e79ae9a0 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr8.tfm" 1256929440 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmri12.tfm" 1256929440 16968 09a34e0af90920bbcece784f13606525 ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmri7.tfm" 1256929440 16984 f7462c768466838a2a9e916b6dee71c6 ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmri8.tfm" 1256929440 16976 7228e7c7bc486e2318fc496e0de33875 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtk10.tfm" 1256929440 1336 cd5d5949a1a8258ba2142355fab78e6f ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtt12.tfm" 1256929440 1336 3f1d3798f35e35601b79a222d795ee97 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtt8.tfm" 1256929440 1348 031da1f909f0873a1967fa7d7d17d43e ""
@@ -385,13 +387,13 @@
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1750428951 2269 2de6c7a5fd634dfef00a960544463a38 ""
   "C:/Users/verci/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
-  "build/main.aux" 1786885490 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
+  "build/main.aux" 1787203153 1534 3d663cc3a279d3dae381688d47bdce56 "pdflatex"
   "build/main.bbl" 1786877807 2148 2b1a16d5cd018c97cfae984c0ad76002 "bibtex build/main"
-  "build/main.out" 1786885489 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "code.tex" 1786884894 3027 0d86cee227ec081a183610970a340050 ""
-  "code/BAplot.pdf" 1786878181 233925 3bd2f0463dbb41609718da5fc02e8777 ""
+  "build/main.out" 1787203151 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "code.tex" 1787202925 3027 741c7e6248dba9107523ce791a23f99c ""
+  "code/BAplot.pdf" 1787203092 233925 f6e38914128576576b745536f6d75e48 ""
   "images/BAplot.png" 1786822013 31212 c714beec2b780afb999071faf94add85 ""
-  "main.tex" 1786885474 12503 adeba7ee4b9a0a8f40498af845d278b9 ""
+  "main.tex" 1787203140 12571 ab5dea625ed05348cd2d2b62d97683b9 ""
   "preamble.tex" 1786819842 5481 ee4d4cdc63b39988ac3c609a5118d52c ""
   "preset.tex" 1786877012 16121 44e57bdaa08684b94e44c15bf641cf4a ""
   "title.tex" 1786833785 615 b786c9adec804c690a4a7298bc0bbdac ""

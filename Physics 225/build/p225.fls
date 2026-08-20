@@ -242,6 +242,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tensor\tensor.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tensor\tensor.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\translations.sty
@@ -597,6 +599,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT .\preamble\course_info.tex

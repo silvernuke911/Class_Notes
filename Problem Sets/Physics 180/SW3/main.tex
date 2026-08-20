@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[a6paper, margin=1cm]{geometry}
+\input{preset}
+\thispagestyle{empty}
+\begin{document}
+	\noindent Vercil Juan \hfill August 20, 2026
+
+	\noindent \textsc{Physics 180}\hfill \textbf{Seatwork 3}
+	\vspace{1em}
+	\hrule\vspace{5pt}
+		Show that the number of degenerate energy levels 
+		for an atom when summing over $2l+1$ from $l=0$ to 
+		$l=n-1$, then multiplying the result by 2 is indeed 
+		$2n^2$
+		\begin{equation}\label{eq:1}
+			n_d = 2\sum_{l=0}^{n-1}(2l+1) = 2n^2
+		\end{equation}
+	\hrule
+	\begin{proof}
+
+		We evaluate the sum:
+		\begin{align*}
+			\sum_{l=0}^{n-1}(2l+1) 
+			&= 2\sum_{l=0}^{n-1} l + \sum_{l=0}^{n-1} 1\\
+			&= 2 \frac{(n-1)n}{2} + n\\
+			&= n(n-1) + n\\
+			&= n^2 - n + n\\
+			&= n^2
+		\end{align*}
+		Therefore, we show (\ref{eq:1})
+		\begin{equation}
+			\boxed{
+				2 \sum_{l=0}^{n-1}(2l+1)  = 2n^2
+			}
+		\end{equation}
+	\end{proof}
+\end{document}

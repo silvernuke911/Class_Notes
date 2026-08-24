@@ -1,2 +1,223 @@
-\subsection{Boundary Conditions, work and energy, conductors}
+% \subsection{Boundary Conditions, work and energy, conductors}
+\subsection{Electric Potential}
+	\subsubsection{Introduction}
+		\label{subsubsec:electricpotential intro}
+		The electric field $\vb E$ is not just \textit{any} old vector function. It is 
+		a special kind of vector function, one whose curl is zero. $\vb E = y\vu x$, for 
+		example, could not possibly be an electrostatic field. No set of charges, regardless
+		of their sizes and positions, could ever produce such a field. 
+
+		We're going to exploit this special property of electric fields to reduce a vector
+		problem (finding $\vb{E}$), to a much simpler \textit{scalar} problem. Theorem 1.4
+		states that any vector field whose curl is zero is equal to the gradient of some scalar
+		field. What we are going to do now amounts to a proof of such claim, in the context
+		of electrostatics.
+
+		Because $\curl\vb{E}=\vb{0}$, the line integral of $\vb E$ around any closed loop is
+		zero.\footnote{From Stokes' Theorem} Because $\displaystyle \oint \vb{E}\cdot\dd{\vb*{\ell}}=0$,
+		the line integral of $\vb E$ from a point $\vb a$ to point $\vb b$, is the same for all paths\footnote{otherwise you could go \textit{out} along a path $a$ and return
+		along a path $b$, and obtain $\oint\vb{E}\cdot\dd{\vb*{\ell}}\neq0$}. Because the line integral
+		is independent of path, we can define a function
+		\begin{equation}\label{eq:E_linepath}
+			V(\vb{r}) \equiv -\int_{\mathcal{O}}^{\vb{r}} \vb{E}\cdot\dd{\vb*{\ell}}
+		\end{equation}
+		Here, $\mathcal{O}$ is some standard reference point on which we have agreed to 
+		beforehand. $V$ then depends only on the point $\vb r$. It is called the \textbf{Electric potential}.
+
+		The potential \textit{difference} between two points $\vb a$ and $\vb b$ is:
+		\begin{align*}
+		    V(\vb b) - V(\vb a) 
+			&= 
+			-\int_{\mathcal{O}}^{\vb{b}} \vb{E}\cdot\dd{\vb*{\ell}} 
+			+\int_{\mathcal{O}}^{\vb{a}} \vb{E}\cdot\dd{\vb*{\ell}} \\
+			&= 
+			-\int_{\mathcal{O}}^{\vb{b}} \vb{E}\cdot\dd{\vb*{\ell}} 
+			-\int^{\mathcal{O}}_{\vb{a}} \vb{E}\cdot\dd{\vb*{\ell}} \\
+			&= 
+			-\int_{\vb{a}}^{\vb{b}} \vb{E}\cdot\dd{\vb*{\ell}} 
+		\end{align*}
+		Now, the fundamental theorem for gradients state that
+		\begin{equation}
+			V(\vb b) - V(\vb a) = \int_{\vb a}^{\vb b} (\grad V)\cdot \dd{\vb*{\ell}}
+		\end{equation}
+		so,
+		\begin{equation}
+			\int_{\vb a}^{\vb b} (\grad V)\cdot \dd{\vb*{\ell}}
+			=
+			-\int_{\vb{a}}^{\vb{b}} \vb{E}\cdot\dd{\vb*{\ell}} 
+		\end{equation}
+		Since, finally, this is true for any points $\vb{a}$ and $\vb{b}$, the 
+		integrands must be equal. Hence:
+		\begin{theorem}{Electric fields come from scalar potentials}
+			\begin{equation}\label{eq:E_potential}
+		       \vb{E} = -\grad V
+			\end{equation} 
+		\end{theorem}
+		Equation (\ref{eq:E_potential}) is the differential version of (\ref{eq:E_linepath});
+		it says that the electric field is the gradient of a scalar potential, which we set out
+		to prove.
+
+		Notice the subtle but crucial role played by the path independence (or equivalently,
+		the fact that $\curl\vb{E}=\vb{0}$) in this argument. If the line integral of $\vb E$
+		depended on the path taken, then the definition of $V$ (\ref{eq:E_potential}), would become nonsense.
+		It simply would not define a function, since changing the path would alter the value of 
+		$V(\vb r)$. 
+		
+	\subsubsection{Some comments on Potentials}
+		\subsubsubsection{The name}
+			The word ``potential'' is sort of a misnomer, because it reminds you of the concept
+			of potential \textit{energy}. While there is a connection between the two, that
+			is not precisely what electric potential means, and they are completely different terms.
+			Although, the name potential here comes from the fact that taking the gradient
+			results in a force, which is analogous to gravitational potential $\Phi$,
+			\[
+				\vb{F} = -\grad\Phi,
+			\]
+			and in fact all kinds of other \textit{potentials} used in other physics terms. Hence, for this reference, the name potential is appropriate.
+			Incidentally, a surface over which the potential is constant is called an \textbf{equipotential}
+		\subsubsubsection{Advantage of the potential formula}
+			Knowledge of the potential field $V$ immediately means that you can get $\vb E$, just by takign the gradient $\vb E = -\grad V$.
+			This is quite fascinating, since $\vb E$ is a vector quantity of three components, while $V$ is simply a scalar of one
+			component. As such, the possibility that one function contains all the information of three independent functions is
+			quite absurd. However, the answer is that the three components of $\vb E$ are not really quite independent.
+			They are, in fact, explicitly related by the condition we used to prove the potential, and that is $\curl\vb E = \vb{0}$
+
+			In terms of components, they can be expressed as
+			\begin{align*}
+				\pdv{E_x}{y}=\pdv{E_y}{x}&&
+				\pdv{E_z}{y}=\pdv{E_y}{z}&&
+				\pdv{E_x}{z}=\pdv{E_z}{x}
+			\end{align*}
+
+			As such, the components of $\vb E$ are really coupled differential equations that relate to each other.
+			This brings us back to our observation in the beginning, $\vb E$ is a \textit{special kind} of vector field,
+			and the potential formulation exploits these feauture to a maximun advantage, reducing a vector problem to
+			a scalar one, where there is no need to inconvenience ourselves with components.
+		\subsubsubsection{The arbitrary reference point}
+			The choice for an arbitrary reference point $\mathcal{O}$ seems quite strange. However, here,
+			we argue that the electric potential is inherently defined only up to an arbitrary additive constant,
+			because the choice of reference point $\mathcal O$ is arbitrary. If the reference point is changed from, say
+			$\mathcal O$ to $\mathcal{O}'$, then
+			\begin{align*}
+				V'(r) 
+				&= -\int_{\mathcal{O}'}^{\vb r} \vb{E} \cdot \dd{\vb*{\ell}}\\
+				&= -\int_{\mathcal{O}}^{\vb r} \vb{E} \cdot \dd{\vb*{\ell}}
+				   -\int_{\mathcal{O}'}^{\mathcal{O}} \vb{E} \cdot \dd{\vb*{\ell}}\\
+				&= V(\vb r) + K
+			\end{align*}
+			where $K$ is a constant independent of $\vb r$. Consequently, 
+			\[
+				V'(\vb b) - V'(\vb a) = V(\vb b) - V(\vb a)
+			\]
+			and as such, potential differences are physically meaningful, while the absolute 
+			value of the potential is not. Since $V'$ is only $V+K$, then
+			\[
+				\grad V' = \grad V
+			\]
+			and as such the electric field is likewise unchanged even though the absolute potential
+			is different. The choice of reference point is therefore mostly a matter of convenience.
+			One can choose $V=0$ at any convenient location, much like choosing where to define zero
+			altitude. What matters physically is the difference in potential between two points. Therefore,
+			saying a point has a particular \textit{absolute} potential has no intrinsic meaning unless
+			a reference has been specified.
+			
+			As such, there is no physically privileged zero of electric potential, and one may
+			choose the reference point wherever convenient, because changing it does not alter
+			the potential difference nor the vector field that arises from the potential.
+
+			There is, however, a particularly convenient convention in electrostatics: take the potential
+			to vanish at infinity, i.e.,
+			\[
+				V(\infty)= 0
+			\]
+			Ordinarily, then, we ``set the zero of potential at infinity''. Since $V(\mathcal{O})=0$, choosing a reference
+			point is equivalent to selecting a place where $V$ is to be zero). This works naturally for 
+			localized charge distributions because the electric field becomes 
+			negligible sufficiently far away. For an infinite plane of charge, however, this convention 
+			fails: the potential does not approach a finite value at infinity. For example,	
+			\[
+				V(z) = -\int_\infty^z \frac{\sigma}{2\varepsilon_0}\dd{z} = -\frac{\sigma}{2\varepsilon_0}(z-\infty)
+			\]
+			The potential in this case is not finite. 
+			The remedy is simply to choose some other reference point. However, this problem is merely theoretical. 
+			In practice, there is no electric potential that extends infinitely, and one can always define a point
+			be $V=0$. 
+		\subsubsubsection{Potentials obey superposition}
+			The original superposition principle pertains to the force acting on some test 
+			charge $q$. It says that the total force acting on $q$ is the vector sum of all
+			the forces attributable to the source charges individually.
+			\[
+				\vb{F} = \vb{F}_1 + \vb{F}_2 + \cdots
+			\]
+			Dividing by $q$, we see that the electric field also obeys the principle of superposition.
+			\[
+				\vb{E} = \vb{E}_1 + \vb{E}_2 + \cdots
+			\]
+			If we integrate from the common reference point to $\vb r$, it follows that the 
+			potential also satisfies such principle
+			\[
+				V = V_1 + V_2 + \cdots
+			\]
+			Therefore, the potential at any given point is the sum of the potentials due to
+			all the charges separately. Only this time, the quantity is an ordinary sum, not 
+			a vector sum, which makes it more convenient and easier to work with.
+		\subsubsubsection{Units of Potential}
+			In the customary \textit{Syst\`eme International} (SI) units, force is measured in
+			newtons and charge in coulombs, and as such, electric fields are measured in newtons per 
+			coulomb. Accordingly, potentials are measured in newton-meters per coulomb.
+
+			A joule per coulomb is called a \textbf{volt}
+			\[
+				\SI{1}{V} = 1 \frac{\unit{Nm}}{\unit{C}} 
+			\]
+	\subsubsection{Poisson's and Laplace's Equation}
+		We found in \S \ref{subsubsec:electricpotential intro} that the electric field 
+		can be written as the gradient of a scalar potential
+		\[
+			\vb{E} = -\grad V
+		\]
+		The question then arises: What do the divergence and curl of  the electrice field $\vb E$,
+		$\div\vb E = \rho/\varepsilon_0$ and $\curl\vb E = \vb{0}$, look like in terms
+		of $V$? Well, we have
+		\begin{align*}
+			\vb{E} &= -\grad V\\
+			\div\vb{E} &= \div(-\grad V)\\
+			\div\vb{E} &= -\lpc V
+		\end{align*}
+
+		And so, apart from the persistent minus sign, the divergence of $\vb E$ is the 
+		Laplacian of $V$. Gauss's Law, then, says that
+		\begin{theorem}{Poisson's Equation}
+			\begin{equation}
+				\lpc V = -\frac{\rho}{\epszero} 
+			\end{equation}	
+		\end{theorem}
+		This is known as \textbf{Poisson's equation}. In regions where there are no charge, so
+		$\rho=0$, Poisson's equation reduces to \textbf{Laplace's equation}
+		\begin{theorem}{Laplace's Equation}
+		    \begin{equation}
+		        \lpc V = 0
+		    \end{equation}
+		\end{theorem}
+		For the curl, we have
+		\[
+			\curl\vb E = \curl(-\grad V) = \vb{0}
+		\]
+		But that is no condition on $V$. The curl of a gradient is \textit{always} zero. 
+		In fact, we used the curl law to show that $\vb E$ could be expressed as a gradient
+		of a scalar, so it's not really surprising that this is the case. $\curl\vb E = \vb{0}$
+		\textit{permits} $\vb E = -\grad V$, and in return, $\vb E = -\grad V$ \textit{guarantees}
+		$\curl\vb E = \vb{0}$. It only takes one differential equation, Poisson's equation,
+		to determine $V$, because $V$ is a scalar. For $\vb E$, we needed two, the divergence 
+		and the curl. 
+
+		In this case, then, we can say that $\lpc V = - \dfrac{\rho}{\epszero}$ is the 
+		\textbf{\textit{field equation}} governing electrostatics.
+		
+	\subsubsection{The Potential of a Localized Charge Distribution}
+	\subsubsection{Boundary Conditions}
+	\newpage
+\subsection{Work and Energy}
+	\newpage
+\subsection{Conductors}
 \newpage

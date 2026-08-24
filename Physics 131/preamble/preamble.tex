@@ -2,7 +2,7 @@
 %             DOCUMENT SETTINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{2em}
 \setlength{\parskip}{5pt}
 \newlength{\originalparindent}
 \newlength{\originalparskip}
@@ -13,6 +13,7 @@
 
 
 
+\newcommand{\epszero}{\varepsilon_0}
 % Definition counter linked to section
 \newcounter{definition}[section]
 \renewcommand{\thedefinition}{\thesection.\arabic{definition}}
@@ -104,11 +105,11 @@
 \newcommand{\unitsec}[1]{
   \clearpage
   \refstepcounter{section}
-  \vspace*{1cm}
+  \vspace*{0.75cm}
   {\LARGE\bfseries\noindent Unit \thesection\par}
   \vspace{0.5cm}
-  {\noindent\Huge\bfseries #1\par}
-  \vspace{2cm}
+  {\noindent\huge\bfseries #1\par}
+  \vspace{1.5cm}
   \addcontentsline{toc}{section}{Unit \thesection : #1}
 }
 
@@ -182,32 +183,53 @@
 
 % Theorem counter linked to section
 \newcounter{theorem}[section]
-\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
-\definecolor{darkred}{RGB}{139, 0, 0} 
+\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
+
+\definecolor{darkred}{RGB}{139, 0, 0}
+
 \newtcolorbox{theorem}[2][]{
     colback=white,
-    colframe=darkred,  % Dark red border
-    coltitle=white,              % White title text for contrast
-    colbacktitle=darkred, % Dark red title background
+    colframe=darkred,
+    coltitle=white,
+    colbacktitle=darkred,
     boxrule=0.5pt,
-    arc=0pt,                     % Sharp corners (0 curves)
+    arc=0pt,
     left=6pt,
     right=6pt,
     top=6pt,
     bottom=6pt,
     fonttitle=\bfseries,
-    title={%
-        \stepcounter{theorem}%
-        Theorem \thetheorem{} : #2%
-    },
+    before={\refstepcounter{theorem}},
+    title={Theorem \thetheorem{} : #2},
     #1
 }
 
-\newenvironment{remark}
-	{\par\noindent\textit{\textbf{Remark : }}\par}
-	{\par}
+\definecolor{darkgray}{RGB}{100, 100, 100}
 
+\newtcolorbox{note}{
+    colback=white,
+    colframe=darkgray,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    before upper={
+		\noindent{\textit{Note : }}\par\vspace{1em}
+    }
+}
 
-\newenvironment{note}
-	{\par\noindent\textit{Note : }\par}
-	{\par}
+\newtcolorbox{remark}{
+    colback=white,
+    colframe=darkgray,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    before upper={
+		\noindent\textbf{\textit{Remark : }}\par\vspace{1em}
+    }
+}

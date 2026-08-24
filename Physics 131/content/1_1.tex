@@ -1,9 +1,8 @@
 \subsection{Review of Vector Calculus}
-This is basically just a summary of the {\color{red}\textbf{Physics 116 curriculum}}, and as such, \textbf{I will be pasting an abridged copy of my notes there to here}. Anyway. 
-
-    \subsubsection{Vectors and Scalars}
-        
-        A \textbf{scalar} $a\in\R$ is a quantity with magnitude. For the purposes of this notes, scalars are denoted in italic script. A scalar is in the set of real numbers
+	This is basically just a summary of the {\color{red} \textbf{Physics 116 curriculum}}, and as such, 
+	\textbf{I will be pasting an abridged copy of my notes from that notebook to here}. Anyway.
+	\subsubsection{Vectors and Scalars}
+		A \textbf{scalar} $a\in\R$ is a quantity with magnitude. For the purposes of this notes, scalars are denoted in italic script. A scalar is in the set of real numbers
         \begin{equation}
             a\in\R
         \end{equation}
@@ -106,13 +105,26 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 					\end{equation}
 	\subsubsection{Vector Properties}
 		\subsubsubsection{The Vector Norm} 
-			The vector norm is the \textit{length} of the vector, so to speak. It is defined as 
+			The vector norm is the \textit{length} of the vector, so to speak. It is defined as
+			the square root of the sums of the components, i.e,
+			\begin{equation}
+				\norm{\vb{v}} = \sqrt{\sum_i v_i^2}
+			\end{equation}
+			In more explicit notation, we have:
 			\begin{equation}
 				\norm{\vb v} = \sqrt{\vb{v}^2}=\sqrt{\vb v \cdot \vb v}
 			\end{equation}
-			Note that we define the square of a vector to be its dot product with itself. $\vb v^2 = \vb v $
+			Note that we define the square of a vector to be its dot product with itself. $\vb v^2 = \vb v $. Furthermore, sometimes we denote 
+			the norm to be italic font of the vector. 
+			\[
+				\norm{\vb{v}} \equiv v
+			\]
 		\subsubsubsection{Vector Axioms} 
-		Technically, a vector is really just defined as an element of a vector space, which is an abstract space which obeys the following properties\footnote{This comes from the Math 40 curriculum}.
+		Technically, a vector is really just defined as an element of a vector space.
+		\[
+			\vb{v}\in\bb{V}
+		\]
+		Vector spaces are an abstract space which obeys the following properties\footnote{This comes from the Math 40 curriculum}.
 		
 		\begin{definition}{Vector Axioms}
 			Let $\vb{u}$,$\vb{v}$ and $\vb{w}$ be vectors in $\mathbb{V}$. The space $\mathbb{V}$ is a vector space if the following conditions hold: \vspace{1em}
@@ -128,8 +140,8 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 				\item Closure under addition, $\vb{u}+\vb{v}\in\bb{V}$
 				\item Commutativity, $\vb{u}+\vb{v}=\vb{v}+\vb{u}$
 				\item Associativity, $(\vb{u}+\vb{v})+\vb{w}=\vb{v}+(\vb{u}+\vb{w})$
-				\item Additive identity (zero vector $\hat{0})$, $\forall\vb{v}\in\bb{V},\exists\hat{0}\in\bb{V}:\vb{v}+\hat{0}=\vb{v}$
-				\item Additive inverse, $\forall\vb{v}\in\bb{V},\exists-\vb{v}\in\bb{V}:\vb{v}+(-\vb{v})=\hat{0}$
+				\item Additive identity (zero vector $\vb{0})$, $\forall\vb{v}\in\bb{V},\exists\vb{0}\in\bb{V}:\vb{v}+\vb{0}=\vb{v}$
+				\item Additive inverse, $\forall\vb{v}\in\bb{V},\exists-\vb{v}\in\bb{V}:\vb{v}+(-\vb{v})=\vb{0}$
 				\item Closure under scalar multiplication, $\forall a \in\R\land \vb{v}\in\bb{V}, a\vb{v}\in\bb{V}$
 				\item Distributivity of scalar multiplication under vector addition, $a(\vb{u}+\vb{v})=a\vb{u}+a\vb{v}$
 				\item Distributivity of scalar multiplication under scalar addition,\\ $\forall a,b\in\R, (a+b)\vb{v}=a\vb{v}+b\vb{v}$
@@ -257,7 +269,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 				A rotation in two dimensions through an angle $\theta$ is represented by
 				\begin{definition}{Rotation Matrix ($SO(2)$)}
 					\begin{equation}
-					R(\theta) - \mqty[
+					R(\theta) = \mqty[
 						\cos\theta & -\sin\theta\\
 						\sin\theta & \cos\theta
 					] 
@@ -404,12 +416,12 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
         \begin{figure}[H]
             \centering
             \subfloat[A scalar field]{
-            \includegraphics[width=2.5in]{images/scalarfield.pdf}
+            \includegraphics[width=1.8in]{images/scalarfield.pdf}
             \label{}
             }
             \hspace{0.5em}
             \subfloat[A vector field]{
-            \includegraphics[width=2.5in]{images/vectorfield.pdf}
+            \includegraphics[width=1.8in]{images/vectorfield.pdf}
             \label{}
             }
             \caption{Types of Fields}
@@ -460,7 +472,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			where $\partial_i$ denotes differentiation with respect to $x_i$.
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=6in]{images/gradient.pdf}
+				\includegraphics[width=4in]{images/gradient.pdf}
 				\caption{A scalar field and its gradient}
 				\label{fig:placeholder}
 			\end{figure}
@@ -487,9 +499,9 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=6in]{images/divergence.pdf}
+				\includegraphics[width=4in]{images/divergence.pdf}
 				\caption{Examples of vector fields with positive and negative divergences}
-				\label{fig:placeholder}
+				\label{fig:divergence}
 			\end{figure}
 			\newpage
 		\subsubsubsection{Curl}
@@ -517,9 +529,9 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=6in]{images/curl.pdf}
+				\includegraphics[width=4in]{images/curl.pdf}
 				\caption{Example of vector fields with positive and negative curl}
-				\label{fig:placeholder}
+				\label{fig:curl}
 			\end{figure}
 			\newpage
 		\subsubsubsection{Laplacian}
@@ -543,7 +555,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\begin{itemize}
 				\item Poisson’s equation: $\nabla^2 \phi = -\rho/\varepsilon_0$ (electrostatics)
 				\item Heat equation: $\partial \phi / \partial t = \alpha \nabla^2 \phi$ (diffusion)
-				\item Schrödinger equation: $\nabla^2 \psi$ governs spatial variations in quantum wavefunctions
+				% \item Schrödinger equation: $\nabla^2 \psi$ governs spatial variations in quantum wavefunctions
 				\item Newtonian Field equation for Gravity: $\lpc \Phi = 4\pi G \rho$
 			\end{itemize}
 
@@ -551,9 +563,9 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=6in]{images/lpc.pdf}
+				\includegraphics[width=4in]{images/lpc.pdf}
 				\caption{Scalar field and its Laplacian}
-				\label{fig:placeholder}
+				\label{fig:laplacian}
 			\end{figure}
 		\subsubsubsection{Operations on these Operators}
 			The usual differentiation rules still apply for $\grad,\div,$ and $\curl$, because 
@@ -596,12 +608,37 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 					\div(\vb{A} + \vb{B}) &= \div \vb{A} + \div \vb{B}\\
 					\curl(\vb{A} + \vb{B}) &= \curl \vb{A} + \curl \vb{B}
 				\end{align*}
-				And other second derivative identies
+				Some useful second-derivative identities are
 				\begin{align*}
 					\div(\grad f) &= \lpc f\\
-					\curl(\grad f) &= 0\\
-					\div(\curl \vb{A}) &= 0
+					\curl(\grad f) &= \vb{0}\\
+					\div(\curl \vb{A}) &= 0\\
+					\curl(\curl \vb{A})
+						&= \grad(\div \vb{A}) - \lpc \vb{A}
 				\end{align*}
+				For vector products,
+				\begin{align*}
+					\div(\vb{A}\times\vb{B})
+						&= \vb{B}\vdot\curl\vb{A}
+							- \vb{A}\vdot\curl\vb{B}\\
+					\curl(\vb{A}\times\vb{B})
+						&= \vb{A}(\div\vb{B})
+							- \vb{B}(\div\vb{A})
+							+ (\vb{B}\vdot\grad)\vb{A}
+							- (\vb{A}\vdot\grad)\vb{B}
+				\end{align*}
+				And some useful cross-product identities are
+				\begin{align*}
+					\vb{A}\times(\vb{B}\times\vb{C})
+						&= \vb{B}(\vb{A}\vdot\vb{C})
+							- \vb{C}(\vb{A}\vdot\vb{B})\\
+					(\vb{A}\times\vb{B})\times\vb{C}
+						&= \vb{B}(\vb{A}\vdot\vb{C})
+							- \vb{A}(\vb{B}\vdot\vb{C})\\
+					\vb{A}\times\vb{B}
+						&= -\vb{B}\times\vb{A}
+				\end{align*}
+				\newpage
 	\subsubsection{Integral Calculus}
 		% \subsubsubsection{Fundamental Theorem of Calculus}
 		% 	Recall from introductory calculus the FTOC. Suppose $f(x)$ is a function of 
@@ -831,6 +868,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{definition}
 
 			These constructions form the basis for the integral versions of the fundamental theorems of vector calculus, including Green's theorem, Stokes' theorem, and the divergence theorem. These theorems relate derivatives of a field within some region to the behavior of that field on the boundary of the region.
+			\newpage
 	\subsubsection{Gauss and Stokes Theorem}
 
 		Gauss's and Stokes' theorems are two of the most important results in vector calculus, providing relationships between surface and volume (or line and surface) integrals. They serve as generalizations of the Fundamental Theorem of Calculus to higher dimensions, allowing one to convert integrals over regions into integrals over their boundaries.
@@ -839,27 +877,37 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			The divergence theorem, also known as Gauss's theorem, relates the flux of a vector field through a closed surface to the divergence of the field inside the volume enclosed by that surface. Mathematically, it is expressed as
 			\begin{theorem}{Gauss' Theorem}
 				\begin{equation}
-					\iiint_V (\nabla \cdot \mathbf{F}) \, dV = \oiint_S \mathbf{F} \cdot d\mathbf{S},
+					\iiint_V (\nabla \cdot \vb{F}) \dd{V} = \oiint_S \mathbf{F} \cdot d\mathbf{S},
 				\end{equation}
 			\end{theorem}
-			where $V$ is the volume enclosed by the closed surface $S$, $\mathbf{F}$ is a continuously differentiable vector field, and $d\mathbf{S}$ is the outward-pointing area element on $S$. This theorem is widely used in electromagnetism, fluid mechanics, and gravitational theory.
+			where $V$ is the volume enclosed by the closed surface $S$, $\mathbf{F}$ is a continuously differentiable vector field, and $d\mathbf{S}$ is the outward-pointing area element on $S$, sometimes denoted $\vu{n}\dd{S}$, where
+			$\vu{n}$ is the surface normal unit vector on the surface.
+			This theorem is widely used in electromagnetism, fluid mechanics, and gravitational theory.
+
+			The divergence $\nabla\cdot\mathbf{F}$ measures the local tendency of the vector field to act as a source or sink. A positive divergence indicates that, locally, more field is flowing out of a small volume than into it, while a negative divergence indicates a net inward flow. The divergence theorem states that the total of these local sources and sinks throughout a volume is equal to the net outward flux through its boundary. Thus, it provides a direct connection between a local differential quantity and a global integral quantity. The theorem requires the surface to be closed, since every point on the boundary must enclose a volume over which the divergence can be integrated.
 
 			This is sometimes shortened as 
 			\begin{equation}
 				\int_\Omega \div \vb{F} \dd{V} = \oint_{\partial\Omega} \vb{F}\cdot \dd{\vb{S}}
 			\end{equation}
 
+			\newpage
 		\subsubsubsection{Stokes' Theorem}
 			Stokes' theorem relates the circulation of a vector field around a closed curve to the curl of the field over the surface bounded by that curve. It can be written as
 			\begin{theorem}{Stokes' Theorem}
 				\begin{equation}
-					\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S},
+					\oint_C \vb{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S},
 				\end{equation}
 			\end{theorem}
 			where $C$ is the positively oriented boundary curve of the surface $S$. Stokes' theorem generalizes the concept of Green's theorem in the plane to three dimensions.
 
-		\paragraph{Interpretation}
-			In essence, both theorems express how local differential properties of vector fields (divergence and curl) are related to global integral quantities (flux and circulation). They form the mathematical foundation for many physical laws, such as Gauss's law in electromagnetism and the conservation of mass and momentum in fluid dynamics.
+			The quantity $\nabla\times\mathbf{F}$, called the curl of the vector field, measures the local tendency of the field to produce circulation about an axis. The line integral on the left measures the total circulation of the field around the boundary curve $C$. Stokes' theorem therefore relates the local rotational behavior of a vector field throughout a surface to the total circulation observed along its boundary. Unlike the divergence theorem, which concerns flux through a closed surface, Stokes' theorem concerns circulation around a closed curve and the surface spanning that curve.
+
+			\begin{remark}
+				In essence, both theorems express how local differential properties of vector fields (divergence and curl) are related to global integral quantities (flux and circulation). They form the mathematical foundation for many physical laws, such as Gauss's law in electromagnetism and the conservation of mass and momentum in fluid dynamics.
+			\end{remark}
+
+			\newpage
 
 		\subsubsection{Dirac Delta Point Source}
 			The \textbf{Dirac delta function} $\delta(\mathbf{r})$ (or $\delta^{(3)}(\mathbf r)$ for three dimensions) models an idealized point source. 
@@ -894,25 +942,32 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{align}
 			These relations are to be understood in the distributional sense: the left-hand side vanishes for $\mathbf r\neq\mathbf 0$ but the integral over any volume containing the origin produces the stated constant.
 
-			\paragraph{Example: point charge in electrostatics}
-			For an electrostatic potential of a point charge $q$ at the origin,
-			\[
-				\phi(\mathbf r) = \frac{q}{4\pi\varepsilon_0}\,\frac{1}{r},
-			\]
-			Poisson's equation $\nabla^2\phi = -\rho/\varepsilon_0$ is satisfied with $\rho(\mathbf r)=q\,\delta^{(3)}(\mathbf r)$ because of \eqref{eq:lap1r}.
-
+			% \paragraph{Example: point charge in electrostatics}
+			% For an electrostatic potential of a point charge $q$ at the origin,
+			% \[
+			% 	\phi(\mathbf r) = \frac{q}{4\pi\varepsilon_0}\,\frac{1}{r},
+			% \]
+			% Poisson's equation $\nabla^2\phi = -\rho/\varepsilon_0$ is satisfied with $\rho(\mathbf r)=q\,\delta^{(3)}(\mathbf r)$ because of \eqref{eq:lap1r}.
+			% \newpage
 	\subsubsection{Potential fields}
 		\subsubsubsection{Irrotational fields}
 			If the curl of a vector field $\vb{F}$ vanishes everywhere, then $\vb{F}$ can be written
 			as the gradient of a scalar potential field $V$.
 			\begin{equation}
-				\grad \vb{F} = 0 \iff \vb{F} = -\grad V
+				\curl \vb{F} = \vb{0} \iff \vb{F} = -\grad V
 			\end{equation}
 
 			\begin{theorem}{Curl-less or irrotational fields}
+				\label{theorem:irrotational_fields}
+
+    % \makeatletter
+    % \typeout{THEOREM COUNTER = \thetheorem}
+    % \typeout{CURRENT LABEL = \@currentlabel}
+    % \makeatother
+
 				The following conditions are equivalent.
 				\begin{enumerate}[(a)]
-					\item $\curl \vb{F} = 0$ 
+					\item $\curl \vb{F} = \vb{0}$ 
 					\item $\displaystyle\int_a^b \vb{F}\cdot \dd{\vb l}$ is independent of path for any given end points.
 					\item $\displaystyle\oint \vb{F} \cdot \dd{\vb l} = 0$ 
 					\item $\vb{F} = - \grad V$
@@ -1033,7 +1088,9 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{equation}
 			\end{definition}
 
-			The factors involving $h_i$ account for the fact that the areas and volumes associated with the coordinate directions may change from point to point. In Cartesian coordinates, where all $h_i=1$, this reduces immediately to
+			The factors involving $h_i$ account for the fact that the areas and volumes associated with the coordinate directions may change from point to point. In Cartesian coordinates, where all $h_i=1$, this reduces immediately to 
+			the familiar definition of the divergence.
+			\newpage
 		\paragraph{Curl.}
 
 			The curl measures the local tendency of a vector field to circulate around a point. For an orthogonal curvilinear coordinate system,
@@ -1108,6 +1165,12 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{definition}
 			This is the standard form of the scalar Laplacian in an orthogonal curvilinear coordinate system.
 
+			Using all these definitions of vector calculus in curvilinear (or general) coordinates,
+			one would be able to derive the relevant values for other coordinate systems, provided
+			that the scale factors for each coordinate system is known. Later on, we will realize
+			that this all has something to do with what is called the \textit{metric}, but that
+			is for a General Relativity class, and this is not a general relativity class.
+			\newpage
 		\subsubsubsection{Cylindrical coordinates}
 
 			Cylindrical coordinates $(r,\theta,z)$ describe a point by its distance $r$ from the $z$-axis, its azimuthal angle $\theta$ about the $z$-axis, and its height $z$. They are related to Cartesian coordinates by
@@ -1169,29 +1232,26 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{equation}
 			Using \eqref{eq:curl_general}, its curl is
 			\begin{equation}
-				\nabla\times\mathbf F
-				=
-				\left(
+				\curl\vb{F} = \bmqty{
 					\frac{1}{r}\frac{\partial F_z}{\partial\theta}
 					-
-					\frac{\partial F_\theta}{\partial z}
-				\right) \vu{e}_r
-				+
-				\left(
-					\frac{\partial F_r}{\partial z}
+					\dfrac{\partial F_\theta}{\partial z}
+					\\
+					\dfrac{\partial F_r}{\partial z}
 					-
-					\frac{\partial F_z}{\partial r}
-				\right)
-				\vu{e}_\theta
-				+
-				\frac{1}{r}
-				\left(
-				\frac{\partial}{\partial r}(rF_\theta)
-				-
-				\frac{\partial F_r}{\partial\theta}
-				\right)
-				\vu{e}_z
+					\dfrac{\partial F_z}{\partial r}
+					\\
+					\dfrac{1}{r}
+					\left(
+					\dfrac{\partial}{\partial r}(rF_\theta)
+					-
+					\dfrac{\partial F_r}{\partial\theta}
+					\right)
+				}
 			\end{equation}
+			Bear in mind that the components in vector component form
+			are still relative to $\vu{e}_r, \vu{e}_\theta$, and $\vu{e}_\phi$.
+
 			For the scalar Laplacian, $h_1h_2h_3=r$, so
 			\begin{align*}
 				\nabla^2\phi
@@ -1319,7 +1379,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 					\dfrac{1}{r\sin\theta}
 					\left(
 					\dfrac{\partial}{\partial\theta}
-					(\sin\thetaF_\varphi)
+					(\sin\theta F_\varphi)
 					-
 					\dfrac{\partial F_\theta}{\partial\varphi}
 					\right)\\
@@ -1379,7 +1439,22 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 				\frac{1}{r^2\sin^2\theta}
 				\frac{\partial^2\phi}{\partial\varphi^2}
 			\end{align*}
+		\subsubsubsection{Miscellaneous Geometries}
+			There are a host of other geometries which may prove relevant
+			in the study of vector calculus. To name a few, there are the 
+			parabolic coordinates $(\sigma,\tau,\phi)$, Elliptic cylindrical $(\mu,\nu,z)$,
+			parabolic cylindrical $(\mu,\nu,z)$, spheroidal (for oblate/prolate spheroids), $(\xi,\eta,\phi)$,
+			and toroidal coordinate systems ($\eta,\xi,\phi$). However, for the most part, cylindrical
+			and spherical systems are the most prevalent systems one will encounter while working
+			with majority of physics, so it is handy to have certain formulae in hand 
+			to get these quantities. 
 
+			If the need arises to tackle these other bizarre geometries (if one were 
+			studying General Relativity, for example), then the defined gradient, curl, divergence, and laplacian
+			formulae at the beginning of this section will be utilized, provided that the metric for the 
+			coordinate system is known. Then, deriving a specific formula for such coordinate system
+			is trivial.
+			\newpage
 	\subsubsection{Divergence and the Dirac Delta}
 		As is required from the course notes goals, we aim to prove that the
 		divergence of a radial inverse square vector field is consistent with
@@ -1389,7 +1464,7 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 		\begin{equation}
 			\vb{F}(\vb{r}) = \alpha \frac{1}{r^2}\vu{r} = \alpha \frac{\vb{r}}{r^3}  
 		\end{equation}
-		where $r = \norm{\vb{r}}$,$\vu{r}=\vb{r}/r$, and $\alpha\in\R$ is constant.
+		where $r = \norm{\vb{r}}$,\ $\vu{r}=\vb{r}/r$, and $\alpha\in\R$ is constant.
 		
 		We want to show that the divergence is zero on this field everywhere except
 		at the origin, where it is represented by a Dirac delta:
@@ -1515,11 +1590,12 @@ This is basically just a summary of the {\color{red}\textbf{Physics 116 curricul
 			\end{equation}
 			Which is what we set out to prove.
 		\end{proof}
-		Thus, we have
+		\newpage
+		Thus, from these results, we have the following theorems:
 		\begin{theorem}{Divergence of a radial inverse quadratic vector field}
 			The divergence of a radial inverse quadratic vector field
 			is consistent with the Dirac delta point source/sink
-			\begin{equation}
+			\begin{equation}\label{eq: divergence of inverse quadratic}
 				\div(\frac{1}{r^2}\vu{r}) = 4\pi\delta^{(3)}(\vb{r})
 			\end{equation}
 		\end{theorem}

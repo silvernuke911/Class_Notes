@@ -2,7 +2,7 @@
 %             DOCUMENT SETTINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{2em}
 \setlength{\parskip}{5pt}
 \newlength{\originalparindent}
 \newlength{\originalparskip}
@@ -11,7 +11,7 @@
   \setlength{\originalparskip}{\parskip}%
 }
 
-
+% A5 PAPER
 
 % Definition counter linked to section
 \newcounter{definition}[section]
@@ -107,19 +107,19 @@
   \vspace*{1cm}
   {\LARGE\bfseries\noindent Unit \thesection\par}
   \vspace{0.5cm}
-  {\noindent\Huge\bfseries #1\par}
-  \vspace{2cm}
+  {\noindent\huge\bfseries #1\par}
+  \vspace{1.5cm}
   \addcontentsline{toc}{section}{Unit \thesection : #1}
 }
 
 \newcommand{\chaptersec}[1]{
   \clearpage
   \refstepcounter{section}
-  \vspace*{1cm}
+  \vspace*{0.5cm}
   {\LARGE\bfseries\noindent Chapter \thesection\par}
   \vspace{0.5cm}
-  {\noindent\Huge\bfseries #1\par}
-  \vspace{2cm}
+  {\noindent\huge\bfseries #1\par}
+  \vspace{1.5cm}
   \addcontentsline{toc}{section}{Chapter \thesection : #1}
 }
 
@@ -203,11 +203,32 @@
     #1
 }
 
-\newenvironment{remark}
-	{\par\noindent\textit{\textbf{Remark : }}\par}
-	{\par}
+\definecolor{darkgray}{RGB}{100, 100, 100}
 
+\newtcolorbox{note}{
+    colback=white,
+    colframe=darkgray,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    before upper={
+		\noindent{\textit{Note : }}\par\vspace{1em}
+    }
+}
 
-\newenvironment{note}
-	{\par\noindent\textit{Note : }\par}
-	{\par}
+\newtcolorbox{remark}{
+    colback=white,
+    colframe=darkgray,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    before upper={
+		\noindent\textbf{\textit{Remark : }}\par\vspace{1em}
+    }
+}

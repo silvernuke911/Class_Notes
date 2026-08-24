@@ -3,25 +3,49 @@
 \subsection{Introduction}
 
 	\begin{quote}
-		\hspace{1em}``That gravity should be innate, inherent, and essential to matter, so that one body may act upon another at a distance through a vacuum, without the mediation of anything else... is to me so great an absurdity that I believe no man who has in philosophical matters any competent faculty of thinking can ever fall into it."
+		\hspace{1em}``That gravity should be innate, inherent, and essential 
+		to matter, so that one body may act upon another at a distance through
+		a vacuum, without the mediation of anything else... is to me so great
+		an absurdity that I believe no man who has, in philosophical matters,
+		any competent faculty of thinking can ever fall into it."
 		\hfill --  \textsc{Newton}
 	\end{quote}
-	We start with the assumption that you have no idea what General Relativity is.
+	We begin this course with the assumption that you have no idea what General Relativity is.
 	How do we quantify what is gravity? What even is gravity? We begin with the classical equations of motion.
 
-	To motivate ourselves, we describe three concepts introduced over the history of classical mechanics and explain how 
-	it leads to certain contradictions or problems that motivated the invention of general relativity
+	The classical equations of motion, first described by Galileo and formalized by Isaac Newton, 
+	have long served as the default model for describing the behavior of classical objects under 
+	the influence, or lack thereof, of external forces, and remain a fundamental part of physics
+	education due to their success in describing matter within the scope of ordinary human observation.
+	However, in the dawn of the 20th century, contradictions between these classical descriptions
+	and experimental observations began to surface, making it apparent that a new description of
+	reality was needed to reconcile theory with these results.
 
+	To motivate ourselves, we describe three concepts introduced over the history of classical mechanics and explain how 
+	it leads to certain contradictions or problems that motivated the realization and invention of general relativity
+	\newpage
 	\subsubsection{Newton's Law of Gravitation}
 
 		Newton's Laws as he prescribed them is expressed as follows:
-
 		\begin{equation}
-			\vb{F} = -\frac{GMm}{r^2}\vb{\hat{r}} 
+			m_N\dv[2]{\vb{x}_N}{t} 
+			= 
+			G \sum_M 
+			\frac{
+				m_N m_M (\vb{x}_M - \vb{x}_N)
+			}{
+				\norm{\vb{x}_M - \vb{x}_N}^3
+			} 
 		\end{equation}
+		More often, it is shortened as:
+		\begin{definition}{Newton's Law of Gravity}
+			\begin{equation}
+				\vb{F} = -\frac{GMm}{r^2}\vb{\hat{r}} 
+			\end{equation}
+		\end{definition}
 
 		This is the familiar form of Newtonian gravity, and is perhaps one of the most recognizable equations in physics.
-		This is what every high schooler knows and what every mentor presents, and is trivial.
+		This is what every high schooler knows and what every mentor presents, and is trivial to derive via experimentation.
 
 		We can separate the mass $m$ experiencing the force from the mass $M$ producing it, and write
 
@@ -29,7 +53,7 @@
 			\vb{F} = m_g \qty(-\frac{GM}{r^2}\hat{\vb{r}})
 		\end{equation}
 
-		We can henceforth call $m_g$ as the \textit{gravitational mass} and the quantity $-\frac{GM}{r^2}\hat{\vb{r}}$ as the \textit{gravitational field}
+		We can henceforth call $m_g$ as the \textit{gravitational mass} and the quantity $-\dfrac{GM}{r^2}\hat{\vb{r}}$ as the \textit{gravitational field}
 
 		We can express it more generally by recognizing the force field is simply the negative gradient of a potential field.
 		\begin{equation}
@@ -105,11 +129,11 @@
 		\end{equation}
 		Thus, we arrived with the fundamental field equation which governs Newtonian Gravity
 
-		\begin{definition}{Field Equation for Newtonian Gravity}
+		\begin{theorem}{Field Equation for Newtonian Gravity}
 			\begin{equation}
 			   \lpc \Phi = 4\pi G \rho  
 			\end{equation}
-		\end{definition}
+		\end{theorem}
 		The significance of a field equation is that it relates a field to its sources. In this case, the mass density $\rho$ acts as the source of the gravitational potential field $\Phi$. 
 		
 		Note the following
@@ -129,7 +153,7 @@
 		The corresponding requirement in GR is that, in the appropriate weak-field and slow-motion limit, general relativity must reduce to Newtonian gravity.
 
 		Now that we have the potential of the field that the source creates, and thus the force, how do we determine how an object moves in response to that field?
-		\newpage
+		% \newpage
 	\subsubsection{Newton's Equations of Motion}
 		The quintessential equation governing the motion of classical bodies was expressed by Newton as
 		\begin{equation}
@@ -148,7 +172,7 @@
 			\label{eq: a = 1/m f}
 		\end{equation}
 
-		Notice that the $m$ term acts as a kind of resistance term\footnote{Recall Ohm's Law $V = IR$.}, similar to the concept of inertia. This is to be expected, since Newton's first law can essentially be understood as the statement that, in the absence of a net force, an object does not change its state of motion.
+		Notice that the $m$ term acts as a kind of \textit{resistance} term\footnote{Recall Ohm's Law $V = IR$.}, similar to the concept of inertia. This is to be expected, since Newton's first law can essentially be understood as the statement that, in the absence of a net force, an object does not change its state of motion.
 
 		Hence, we name this quantity the \textit{inertial mass}, $m_i$. Inertia denotes the difficulty or resistance of an object to a change in its state of motion.
 
@@ -242,42 +266,10 @@
 		In particle physics, one generally begins with a fixed flat spacetime $\R^4$ and defines fields upon that background. Gravity can then be treated as a field on this background, rather than as the geometry of spacetime itself. This approach is sound as a field-theoretic formulation and provides a natural route toward quantizing gravity and describing gravitons, but it is ugly and inelegant. Regardless, you can bootstrap yourself from there and arrive on the EFE
 
 		The distinction of perspectives can be summarized as follows:
-
 		\begin{center}
-			\begin{tikzpicture}[>=stealth, node distance=2.5cm]
-				\node (rel) {
-					\begin{tabular}{c}
-						\textbf{Relativist perspective}\\[2mm]
-						Spacetime structure is variant\\
-						$\downarrow$\\
-						Gravity is the manifestation\\ 
-						of Riemannian space time\\ 
-						curvature and it governs\\
-						particle motion
-					\end{tabular}
-				};
-
-				\node (part) [right=4cm of rel] {
-					\begin{tabular}{c}
-						\textbf{Particle physicist perspective}\\[2mm]
-						Fixed spacetime, \\fields live on top of it\\
-						$\downarrow$\\
-						Gravity is a special \\gauge field in $SO(3,1)$\\
-						which couples to\\ everything universally
-					\end{tabular}
-				};
-
-				\node (metric) [above=1.2cm of $(rel)!0.5!(part)$] {
-					\textbf{Metric}
-				};
-
-				\draw[->] (metric) -- (rel);
-				\draw[->] (metric) -- (part);
-			\end{tikzpicture}
+			\includegraphics[width=4in,height=2in]{images/metricperspective.pdf}
 		\end{center}
-
 		Regardless of the formalism, the different approaches must reproduce the same classical predictions. The geometric formulation of GR ultimately leads to the Einstein field equations.
-		\newpage
 	\subsubsection{A Theory of Gravity}
 		General Relativity, to be a theory of gravity, must explain gravitational phenomena.
 
@@ -345,27 +337,26 @@
 			that the GR formulation reduces to the Newtonian formulation in weak fields.
 		\end{enumerate}
 		\par
-		\noindent{\textit{\textbf{Remark : }}}
-		\par
-		Notice that $\lpc \Phi = 4\pi G \rho$ and $
-				R_{\mu\nu}
-				-\frac{1}{2}g_{\mu\nu}R
-				=
-				8\pi G T_{\mu\nu}
-				$ 
-		are inherently similar. They basically describe the same thing, but in different fields of geometry.
-		Notice
-		\begin{align*} 
-			\underbrace{\lpc\Phi}_{\text{some form of }\partial^2} &= \underbrace{4\pi G\rho}_{\text{constant multiplied to matter distribution}}
-			\\
-			\underbrace{R_{\mu\nu}
-			-\frac{1}{2}g_{\mu\nu}R}
-			_{\text{some combination of }\partial^2}
-																   &=
-			\underbrace{8\pi G T_{\mu\nu}}
-			_{\text{constant multiplied by matter distribution}}
-		\end{align*}
-
+		\begin{remark}
+			Notice that $\lpc \Phi = 4\pi G \rho$ and $
+					R_{\mu\nu}
+					-\frac{1}{2}g_{\mu\nu}R
+					=
+					8\pi G T_{\mu\nu}
+					$ 
+			are inherently similar. They basically describe the same thing, but in different fields of geometry.
+			Note the following:
+			\begin{align*} 
+				\underbrace{\lpc\Phi}_{\text{some combination of }\partial^2} &= \underbrace{4\pi G\rho}_{\text{constant multiplied to matter distribution}}
+				\\
+				\underbrace{R_{\mu\nu}
+				-\frac{1}{2}g_{\mu\nu}R}
+				_{\text{some combination of }\partial^2}
+																	   &=
+				\underbrace{8\pi G T_{\mu\nu}}
+				_{\text{constant multiplied by matter distribution}}
+			\end{align*}
+		\end{remark}
 		These three ingredients are the basic structure of a theory of gravity: a dynamical variable, a law governing how it affects matter, and a field equation governing how matter produces it.
 
 		GR is inherently nonlinear. Going from the field to the motion of objects is already more complicated than in Newtonian gravity, but the field equation itself is also nonlinear: the metric determines the curvature, while the curvature determines the metric.

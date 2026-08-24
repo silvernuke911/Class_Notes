@@ -4,10 +4,20 @@ INPUT p225.tex
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.log
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT .\preamble\preset.tex
 INPUT .\preamble\preset.tex
 INPUT .\preamble\preset.tex
@@ -49,8 +59,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
@@ -199,8 +207,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbhooks.code.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbtheorems.code.tex
@@ -460,13 +466,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\reru
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
@@ -502,7 +501,7 @@ INPUT preamble\preamble.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
@@ -530,15 +529,15 @@ INPUT .\preamble\title.tex
 INPUT .\preamble\title.tex
 INPUT .\preamble\title.tex
 INPUT preamble\title.tex
-INPUT ..\covers\P225.pdf
-INPUT ..\covers\P225.pdf
-INPUT ..\covers\P225.pdf
-INPUT ..\covers\P225.pdf
-INPUT ..\covers\P225.pdf
-INPUT ..\covers\P225.pdf
+INPUT .\images\cover_img.pdf
+INPUT .\images\cover_img.pdf
+INPUT .\images\cover_img.pdf
+INPUT .\images\cover_img.pdf
+INPUT .\images\cover_img.pdf
+INPUT .\images\cover_img.pdf
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr17.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr17.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
@@ -556,7 +555,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
@@ -586,7 +585,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint1
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
@@ -612,19 +611,59 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmtt12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmtt10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rmtt.enc
 INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT preamble\references.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy5.tfm
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT preamble\reminders.tex
+INPUT .\preamble\toc.tex
+INPUT .\preamble\toc.tex
+INPUT .\preamble\toc.tex
+INPUT .\preamble\toc.tex
+INPUT preamble\toc.tex
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
+INPUT .\content\meeting1.tex
+INPUT .\content\meeting1.tex
+INPUT .\content\meeting1.tex
+INPUT .\content\meeting1.tex
+INPUT content\meeting1.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
@@ -645,56 +684,12 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.t
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT .\preamble\toc.tex
-INPUT .\preamble\toc.tex
-INPUT .\preamble\toc.tex
-INPUT .\preamble\toc.tex
-INPUT preamble\toc.tex
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof
-INPUT .\content\meeting1.tex
-INPUT .\content\meeting1.tex
-INPUT .\content\meeting1.tex
-INPUT .\content\meeting1.tex
-INPUT content\meeting1.tex
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib5.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy5.tfm
-INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
-INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT .\images\metricperspective.pdf
+INPUT .\images\metricperspective.pdf
+INPUT .\images\metricperspective.pdf
+INPUT .\images\metricperspective.pdf
+INPUT .\images\metricperspective.pdf
+INPUT .\images\metricperspective.pdf
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT .\content\meeting2.tex
 INPUT .\content\meeting2.tex
@@ -704,13 +699,24 @@ INPUT content\meeting2.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri8.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
-INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
-INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
@@ -723,6 +729,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
@@ -731,24 +739,32 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.p
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr5.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy5.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

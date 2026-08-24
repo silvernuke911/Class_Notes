@@ -44,7 +44,6 @@
 				\vb{F} = \frac{1}{4\pi\varepsilon_0} \frac{q_0 q}{r^2}\vu{r} 
 			\end{equation}
 		\end{definition}
-		\newpage
 		The constant $\varepsilon_0$ is called the \textbf{permitivity of free space}. In
 		SI units, it is defined as 
 		\begin{definition}{Permitivity of free space}
@@ -66,6 +65,7 @@
 		Coulomb’s law and the principle of superposition constitute the physical input
 		for electrostatics—the rest, except for some special properties of matter, is 
 		mathematical elaboration of these fundamental rules.
+		\newpage
 	\subsubsection{The Electric Field}
 		If we have \textit{several} point charges $q_1,q_2,q_3,\ldots,q_n$, at distances
 		$r_1,r_2,r_3,\ldots,r_n$ from $q_0$, then the total force on $q_0$ is trivially
@@ -98,6 +98,15 @@
 		quantity which varies from point to point and is determined by the configuration of 
 		source charges. Physically ,$\vb{E}(\vb{r})$ is the force per unit charge that would
 		be exerted on a text charge if you were to place one on $P$.
+
+		The principle of superposition also means that the electric field produced by a
+		collection of charges can be determined independently of any other charges that
+		may subsequently be introduced into the system. Each source charge contributes its 
+		own electric field at the point $P$, and the total field is simply the vector sum
+		of these individual contributions. This is particularly useful because the field 
+		can be calculated once for a given configuration of source charges and then used
+		to determine the force on any test charge placed within that field.
+		\newpage
 	\subsubsection{Continuus Charge Distribution}
 		Our definition of the electric field (\ref{eq: discrete E}) assumes that the source
 		of the fields is a collection of discrete point charges $q_i$ (Fig \ref{subfig: efield ptcharge}). If instead, the charge
@@ -106,24 +115,26 @@
 			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0}\int \frac{1}{r^2}\vu{r}\dd{q} 
 		\end{equation}
 		There are multiple ways where in charges can be distributed over a region.
+		In essence, for every dimension (0,1,2,3), there is a corresponding region 
+		where charges can be distributed, and where charges can be effectively calculated.
 		\begin{figure}[H]
 			\centering
 			\subfloat[Point charge]{
-			\includegraphics[width=2in]{images/pointcharge.pdf}
+			\includegraphics[width=1.75in]{images/pointcharge.pdf}
 			\label{subfig: efield ptcharge}
 			}
 			\subfloat[Line charge]{
-			\includegraphics[width=2in]{images/linecharge2.pdf}
+			\includegraphics[width=1.75in]{images/linecharge2.pdf}
 			\label{subfig: efield linecharge}
 			}
 			\hspace{0.5em}
 			\subfloat[Surface charge]{
-			\includegraphics[width=2in]{images/surfacecharge.pdf}
+			\includegraphics[width=1.75in]{images/surfacecharge.pdf}
 			\label{subfig: efield surfcharge}
 			}
 			\hspace{0.5em}
 			\subfloat[Volume charge]{
-			\includegraphics[width=2in]{images/volumecharge.pdf}
+			\includegraphics[width=1.75in]{images/volumecharge.pdf}
 			\label{subfig: efield volcharge}
 			}
 			\caption{Charge distributions}
@@ -155,23 +166,440 @@
 		a short step from the original, and because a volume charge is in a sense the most general
 		and realisitic case. 
 
-
+		Note carefully the meaning of $\vb{r}$ in these formulae. In general, $\vb{r}$ pertains to the 
+		vector from the source charge $q$ to the field point $P$, which means, the meain distance from $\dd{l},\dd{S},\dd{V}$ from
+		the point $P$. Although, since these regions are differentials, they reduce to almost pointlike
+		at the limits, so the analogy of \textit{distance from the source point to the field point} still stands.
+		\newpage
 	\subsubsection{Divergence and Curl of Electrostatic Fields}
-		We begin with the simples possible case of electrostatics. A single point
+		We begin with the simplest possible case of electrostatics. A single point
 		$q$, situataed at the origin.
 		\[
 			\vb{E}(\vb{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \vu{r} 
 		\]
 		We then have a plot which looks akin to this, the field lines of 
 		this point source\footnote{Unfortunately \texttt{matplotlib} does not have a convenient field line functionality so we have to do \texttt{streamplot} for now}
-	
-	\begin{figure}[h]
-	    \centering
-	    \includegraphics[width=2in]{../code/efield.pdf}
-	    \caption{Electric field lines}
-	    \label{fig:efieldlines}
-	\end{figure}
-	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1.75in]{../code/efield.pdf}
+			\caption{Electric field lines}
+			\label{fig:efieldlines}
+		\end{figure}
+		These field lines are indicative of the strength of the field. More field lines mean
+		a stronger field, denser field lines imply larger field strength, and so on. Such
+		diagrams are convinient for representing more complicated fields. Field lines begin
+		from positive charges and end on negative charges, and cannot simply terminate mid-field,
+		though, they might extend from infinity. Moreover, field lines can never cross,
+		% (if they did, the divergence of {$\vb{E}$} would not be zero, and (as we shall soon see) that cannot happen in empty space)
+		for at such an intersection, the field would have two different directions at once. 
+		With all these in mind, it is easy to sketch out the field of any simple configuration of point charges.
+		Begin by drawing the line from the positive, calling it a \textit{source}, and ending it on
+		the negative point, the \textit{sink}.
 
+		In this model, the \textit{flux} of $\vb E$ through a surface $S$
+		\[
+			\Phi_E = \int_S \vb{E}\cdot \dd{\vb S}
+		\]
+		is a measure of the number of field lines passing through $S$\footnote{\protect{$\dd{\vb S}$} in this case pertains to $\vu{n} \dd{S}$}.
+		Though in this notes, we will mainly be showing stream plots, which show the flow of the vector field,
+		instead of actual field lines, due to aforementioned limitations. However, in general, the strength
+		of the field is proportional to the number of lines through a given sampling area. The dot product $\vb E \cdot \dd{\vb S}$
+		picks out the components of $d\vb{S}$ which is along the direction of $\vb{E}$ 
+		
+		\begin{figure}[H]
+		    \centering
+		    \subfloat[Opposite charges]{
+				\includegraphics[width=1.75in]{images/oppositecharges.pdf}	
+		    \label{subfig:opposite charges}
+		    }
+		    \hspace{0.5em}
+		    \subfloat[Equal charges]{
+				\includegraphics[width=1.75in]{images/equalcharges.pdf}	
+		    \label{subfig:equal charges}
+		    }
+		    \caption{Charge interactions}
+		    \label{fig:charge interactions}
+		\end{figure}
+			
+		
 
+		This suggests that the flux through any closed surface is a measure of the
+		total charge inside. For the field lines that originate on a positive charge must
+		either pass out through the surface or else terminate on a negative charge inside (Fig \ref{subfig:opposite charges}).
+		On the other hand, a charge outside the surface will contribute
+		nothing to the total flux, since its field lines pass in one side and out the other (Fig \ref{subfig:equal charges}).
+		This is the \textit{essence} of Gauss’s law.
+
+		Quantitatively, this can be expressed as the following:
+		Suppose a point charge $q$ at the origin. The flux of $\vb E$ through a spherical surface of radius $r$ is:
+		\begin{align}
+			\oint \vb{E}\cdot\dd{\vb S}  
+			&= \iint \frac{1}{4\pi \varepsilon_0} \pqty{\frac{q}{r^2}\vu{r}}\cdot\pqty{r^2\sin\theta\dd{\theta}\dd{\phi}\vu{r}} \\
+			&= \frac{1}{4\pi\varepsilon_0} \cdot 4\pi q \\
+			&= \frac{1}{\varepsilon_0}q 
+		\end{align}
+		Notice that the radius of the sphere cancels out, for while the surface area goes up as $r^2$, the field strength
+		goes down as $\frac{1}{r^2}$, and as such the product is constant, regardless of the size of the sphere. 
+		While we approach this from a spherical picture centered at the origin, it is notable that any closed
+		surface, regardless of its shape, would be pierced by the same number of field lines. As such, 
+		the flux through any surface is constant, $q/\varepsilon_0$.
+
+		Now, suppose that instead of a single charge at the origin, we have a group
+		of charges scattered around. According to the principle of superposition,
+		the total field is the sum of all the individual fields.
+		\[
+			\vb{E} = \sum_i \vb{E}_i
+		\]
+		Thus, the flux through a surface that encloses them all is 
+		\begin{align*}
+			\oint \vb{E}\cdot\dd{\vb S} 
+			&= \sum_i \pqty{\oint \vb{E}_i \cdot \dd{\vb S}}\\
+			&= \sum_i \pqty{\frac{1}{\varepsilon_0}q_i}
+		\end{align*}
+		For any closed surface, then
+		\begin{equation}
+			\oint\vb{E}\cdot\dd{\vb S} = \frac{1}{\varepsilon_0}Q_\text{enc} 
+		\end{equation}
+		where $Q_\text{enc}$ is the total charge enclosed within the surface. This is the 
+		quantitative statement of Gauss' law.
+
+		As it stands, Gauss's law is an \textit{integral} equation, but one can easily
+		turn it into a \textit{differential} one by applying the divergence theorem
+		\begin{equation}
+		    \oint_S \vb{E}\cdot \dd{\vb S} = \int_V\pqty{\div\vb{E}}\dd{V}
+		\end{equation}
+		We rewrite $Q_\text{enc}$ in terms of the charge density $\rho$, we have
+		\begin{equation}
+			Q_\text{enc} = \int_V \rho \dd{V}
+		\end{equation}
+		So Gauss's law becomes
+		\begin{equation}
+			\int_V (\div\vb E)\dd{V} = \int_V \pqty{\frac{\rho}{\varepsilon_0}}\dd{V}
+		\end{equation}
+		Since this holds for any volume, this implies that the integrands are equal, hence:
+		\begin{theorem}{Gauss's Law}
+			\begin{equation}
+				\div\vb E = \frac{\rho}{\varepsilon_0} 
+			\end{equation}
+		\end{theorem}
+		This is Gauss's law in differential form. The differential version is more compact and tidier,
+		but the integral form has the advantage in that it accomodates point, line, and surface charges
+		more naturally.
+
+		\subsubsubsection{The Divergence of $\vb{E}$}
+			Let us then return and calculate the divergence of $\vb E$ diretly from Eq. \ref{eq: cont E}
+			\begin{equation}
+				\vb{E}(\vb r) = \frac{1}{4\pi\varepsilon_0}\int \frac{\rho(\vb{r})}{r^2}\vu{r}\dd{V}  
+			\end{equation}
+			Note that $\vb{r} = \vb{x} - \vb{q}$, where $\vb{x}$ is the point being evaluated and $\vb{q}$ is the
+			source point. We note the $\vb{x}$ independence in $\vb{r}$. We apply the divergence operator on this field. Thus:
+			\begin{equation}
+				\div \vb E
+				= 
+				\frac{1}{4\pi\varepsilon_0}\int\div\pqty{\frac{\vu{r}}{r^2}}\rho(\vb r)\dd{V} 
+			\end{equation}
+			Using Eq. \ref{eq: divergence of inverse quadratic}, we know that
+			\[
+				\div(\frac{\vu{r}}{r^2}) = 4\pi\delta^3(\vb{r})
+			\]
+			Thus
+			\begin{align*}
+				\div\vb E 
+				&= \frac{1}{4\pi\varepsilon_0}\int 4\pi\delta^3(\vb x - \vb q) \rho(\vb q) \dd{V} \\
+				&= \frac{1}{\varepsilon_0}\rho(\vb{x}) 
+			\end{align*}
+			This is simply Gauss's law in differential form. To recover the integral form, we run the 
+			previous steps in reverse, integrating over a volume and applying the divergence theorem
+			\begin{equation}
+				\int_V \div \vb{E}\dd{V} = \oint \vb{E}\cdot \dd{\vb S} = \frac{1}{\varepsilon_0} \int_V \rho \dd{V} = \frac{1}{\varepsilon_0} Q_\text{enc}  
+			\end{equation}
+		\subsubsubsection{The Curl of $\vb E$}
+			We calculate the curl of $\vb E$ by studying first the simplest possible configuration: a point 
+			charge at the origin. In this case, we have
+			\[
+				\vb{ E } = \frac{1}{4\pi\epszero} \frac{q}{r^2}\vu{r} 
+			\]
+			A single glance at Fig. \ref{fig:efieldlines} should tell one that the curl of this field 
+			has to be zero. However, we aim to be rigourous, and so, suppose we calculate the 
+			line integral of this field from some point $\vb a$ to another point $\vb b$. 
+			\[
+				\int_{\vb{a}}^{\vb{b}} \vb{E}\cdot\dd{\vb*{\ell}}
+			\]
+			In spherical coordinates, $\dd{\vb* \ell}=\dd{r}\vu{r}+ r\dd{\theta}\vu*{\theta}+r\sin\theta\dd{\phi}\vu*{\phi}$, therefore
+			\[
+				\vb{E}\cdot\dd{\vb* \ell} = \frac{1}{4\pi\epszero}\frac{q}{r^2}\dd{r} 
+			\]
+			Therefore:
+			\begin{align*}
+			    \int_{\vb a}^{\vb b}\vb{E}\cdot\dd{\vb* \ell}
+				&= \frac{1}{4\pi\epszero} \int_{\vb a}^{\vb b} \frac{q}{r^2}\dd{r}\\
+				&= -\frac{1}{4\pi\epszero}\eval{\frac{q}{r}}_{r_a}^{r_b}\\
+				&= \frac{1}{4\pi\epszero}\pqty{
+					\frac{q}{r_a}
+					-
+					\frac{q}{r_b} 
+				} 
+			\end{align*}
+			where $r_a$ is the distance of the origin from $\vb a$ and $r_b$ is
+			the distance of the origin from $\vb b$. The integral around a \textit{closed}
+			path is evidently zero (because $r_a=r_b$), hence:
+			\begin{equation}
+				\oint \vb{E}\cdot\dd{\vb* \ell} = 0
+			\end{equation}
+			from this, we apply Stokes's theorem
+			\begin{equation}
+				\curl\vb{E} = \vb{0}
+			\end{equation}
+			Proving this for a single point charge at the origin would suffice, but 
+			it all seems rather arbitrary. However, these results should hold no matter 
+			\textit{where} the charge is located. Moreover, if there are multiple charges,
+			the principle of superposition states that the total field is the vector sum 
+			of all the individual fields. Thus, we have
+			\begin{align*}
+			    \curl\vb{E} 
+				&=\curl\sum_i \vb{E}_i\\
+				&=\curl\pqty{\vb{E}_1 + \vb{E}_2 + \cdots}\\
+				&=(\curl \vb{E}_1) + (\curl \vb{E}_2) + \cdots\\
+				&=\vb{0} + \vb{0} + \cdots\\
+				&=\vb{0}
+			\end{align*}
+			Hence, we have proven that the curl of an electrostatic field,
+			as a consequence of Coulomb's law, is zero everywhere. 
+			From this we have the electrostatic condition
+			\begin{theorem}{Electrostatic condition}
+			   \begin{equation}
+				   \curl\vb E = \vb{0}
+			   \end{equation} 
+			\end{theorem}
+			
+			
+			\begin{remark}
+			    We can also prove this by showing that the electric field arises from
+				the gradient of a scalar field potential $\vb E = -\grad \Phi$ by the 
+				inverse quadratic nature of a point source, and as such is conservative. From
+			    theorem 1.4, it is then trivial to show
+				that $\curl\vb E = \vb{0}$.
+			\end{remark}
+			 % \ref{theorem:irrotational_fields},
+			% fucker won't work. fucking idiot.
+			\newpage
+	\subsubsection{Dipoles}
+		As another part of what we need to prove in the course notes, we have the following problem.
+
+		\vspace{1em}\hrule\vspace{0.6em}
+			Consider a dipole with charge $q$ with separation distance $a$ and dipole moment $p=qa$. Evaluate the electric
+			potential and electric field due to this configuration. Then take the point dipole limit $a\to0$ with $p$ finite.
+			Find the far-field electric potential and electric field.
+		\vspace{1em}\hrule\vspace{1em}
+
+		\paragraph{Solution} Suppose that the dipole is oriented along the $z$-axis with $+q$ at $z=+a/2$ and $-q$ at $z=-a/2$.
+		Then:
+		\begin{equation}
+			\vb{p} = qa\vu{z}
+		\end{equation}
+		Let this observation point be described by spherical coordinates $(r,\theta,\phi)$, where $\theta$ describes the angle
+		measured from the positive dipole axis.
+
+		We show the following
+		\begin{enumerate}
+			\item \textbf{Potential field}
+
+				  We find the distances of the observation points to the positive and negative charges. 
+				  Let $r_+$ be the distance of the observation point from the positive charge, and $r_-$ be
+				  its distance from the negative charge. We evaluate from the origin's perspective.
+				  From the cosine law, we have
+				  \begin{align}
+					  r_+ &= \sqrt{r^2 + \frac{a^2}{4} - ar\cos\theta }\\
+					  r_- &= \sqrt{r^2 + \frac{a^2}{4} + ar\cos\theta }
+				  \end{align}
+				  Therefore, by superposition
+				  \begin{align}
+					  V &= \frac{1}{4\pi\epszero}\pqty{
+						  \frac{q}{r_+} + \frac{-q}{r_-}  
+					  } \\
+						&= \frac{q}{4\pi\epszero}\pqty{
+						  \frac{1}{r_+} - \frac{1}{r_-}  
+					  } 
+				  \end{align}
+				  or, explicitly,
+				  \begin{equation}
+					  V = \frac{q}{4\pi\epszero}\pqty{
+						  \frac{1}{\sqrt{r^2 + \frac{a^2}{4} - ar\cos\theta }}
+						  - 
+						  \frac{1}{\sqrt{r^2 + \frac{a^2}{4} + ar\cos\theta }}
+					  } 
+				  \end{equation}
+			\item \textbf{Electric field}
+				  
+				  The electric field then follows by
+				  \begin{equation}
+				      \vb{E} = -\grad V
+				  \end{equation}
+				  However, taking that directly from the potential seems mathematically
+				  cumbersome and tiring, so I have elected to not do it. Instead, I will derive
+				  the vector field for each point individually, and sum them at the end.
+				  \begin{enumerate}
+				      \item $+q$ \textbf{Electric field} 
+						    
+						    We start with the assumption that we have a point source at the origin. We 
+							know its electric field
+							\begin{equation}
+								\vb{E_+} = \frac{q}{4\pi\epszero}\frac{\vu{r}}{r^2}  = \frac{q}{4\pi\epszero}\frac{\vb{r}}{r^3}
+							\end{equation}
+							We then \textit{translate} this point source ${a}/{2}$ units on the $+z$ direction.
+							\begin{equation}
+								\vb{E_+} = \frac{q}{4\pi\epszero}\frac{(\vb{r}-\frac{a}{2}\vu{z})}{r_+^3}
+							\end{equation}
+					  \item $-q$ \textbf{Electric field}
+						    We take the same logic from the previous step but translate the negative point
+							down by ${a}/{2}$, to the $-z$ direction.
+							\begin{equation}
+							    \vb{E}_- = -\frac{q}{4\pi\epszero}\frac{(\vb{r}+\frac{a}{2}\vu{z})}{r_-^3}
+							\end{equation}
+				  \end{enumerate}
+				  Taking the vector sum of this results to the total electric field
+				  \[
+					  \vb{E} = \vb{E}_+ + \vb{E}_-
+				  \]
+				  Explicitly, we have
+				  \begin{equation}
+					  \vb{E} = \frac{q}{4\pi\epszero}\pqty{
+						  \frac{\vb{r}-\frac{a}{2}\vu{z}}{r_+^3} 
+						  -
+						  \frac{\vb{r}+\frac{a}{2}\vu{z}}{r_-^3} 
+					  } 
+				  \end{equation}
+			\item \textbf{Point dipole limit}
+				  Now, we take the the limit as
+				  \begin{align}
+					  a\to 0 && q\to\infty
+				  \end{align}
+				  while keeping 
+				  \begin{equation}
+				      p = qa
+				  \end{equation}
+				  finite.
+
+				  With $a\ll r$, we can take the binomial expansion of the inverse distances. 
+				  \begin{align}
+					  \frac{1}{r_+}&\approx \frac{1}{r}+\frac{a\cos\theta}{2r^2}  \\
+					  \frac{1}{r_-}&\approx \frac{1}{r}-\frac{a\cos\theta}{2r^2}  
+				  \end{align}
+				  The difference of these is
+				  \begin{equation}
+				      \frac{1}{r_+} - \frac{1}{r_-} \approx \frac{a\cos\theta}{r^2}   
+				  \end{equation}
+				  We can then substitute this value for the $\frac{1}{r}$ in the potential
+				  field.
+			\item \textbf{Far field electric potential}
+				
+				  The potential field is defined as
+				  \begin{equation}
+					  V = \frac{1}{4\pi\epszero}{\frac{q}{r}} 
+				  \end{equation}
+					  We know that $\dfrac{1}{r}\to\dfrac{a\cos\theta}{r^2}$ at the limit.
+				  Therefore:
+				  \begin{equation}
+					  V = \frac{1}{4\pi\epszero}{\frac{qa\cos\theta}{r^2}} 
+				  \end{equation}
+				  Since $qa=p$,
+				  \begin{align}\label{eq:farfield potential}
+					  V = \frac{1}{4\pi\epszero}\frac{p\cos\theta}{r^2} 
+				  \end{align}
+				  At the dipole limit. In vector form this is:
+				  \begin{equation}
+					  V = \frac{1}{4\pi\epszero}\frac{\vb{p}\cdot\vu{r}}{r^2} 
+				  \end{equation}
+				  or alternatively
+				  \begin{equation}
+					  V = \frac{1}{4\pi\epszero}\frac{\vb{p}\cdot\vb{r}}{r^3}
+				  \end{equation}
+			\item \textbf{Far field electric field}
+				  
+				  We take the negative of the gradient of (\ref{eq:farfield potential})
+				  \begin{equation}
+				      \vb{E} = -\grad V
+				  \end{equation}
+				  Expressing this explicitly (in spherical basis vectors), we have
+				  \begin{equation}
+					  \vb{E} = \bmqty{
+						  \displaystyle \pdv{}{r}\\[10pt]
+						  \displaystyle \frac{1}{r}  \pdv{}{\theta}\\[10pt]
+						  \displaystyle \frac{1}{r\sin\theta}  \pdv{}{\phi}
+					  }
+					  \frac{1}{4\pi\epszero}\frac{p\cos\theta}{r^2} 
+				  \end{equation}
+				  Evaluating this, we have
+				  \begin{align}
+					  \vb{E} 
+					  &= 
+					  \frac{1}{4\pi\epszero}
+					  \bmqty{
+						  \displaystyle \pdv{}{r}\\[10pt]
+						  \displaystyle \frac{1}{r}  \pdv{}{\theta}\\[10pt]
+						  \displaystyle \frac{1}{r\sin\theta}  \pdv{}{\phi}
+					  }
+					  \frac{p\cos\theta}{r^2} \\
+					  &=
+					  \frac{1}{4\pi\epszero}
+					  \bmqty{
+						  \displaystyle \pdv{}{r}
+						  \frac{p\cos\theta}{r^2}\\[10pt] 
+						  \displaystyle \frac{1}{r}  \pdv{}{\theta}
+						  \frac{p\cos\theta}{r^2}\\[10pt] 
+						  \displaystyle \frac{1}{r\sin\theta}  \pdv{}{\phi}
+						  \frac{p\cos\theta}{r^2}
+					  }\\
+					  &=
+					  \frac{1}{4\pi\epszero}
+					  \bmqty{
+						  -\dfrac{2p\cos\theta}{r^3}\\[10pt] 
+						  -\dfrac{p\sin\theta}{r^3}\\[10pt] 
+						  0
+					  }\\
+				  \end{align}
+				  Hence, in the spherical basis $(\vu{r},\vu*{\theta},\vu*{\phi})$, the electric field has the form
+				  \begin{equation}
+				      \vb{E} 
+					  =
+					  \frac{p}{4\pi\epszero r^3}
+					  \bmqty{
+						  2\cos\theta\\
+						  \sin\theta\\
+						  0
+					  }
+				  \end{equation}
+				  In vector form, it has the expression
+				  \begin{equation}
+					  \vb{E}(\vb r) = \frac{1}{4\pi\epszero}\frac{1}{r^3}
+					  \pqty{
+						  3(\vb{p}\cdot\vu{r})\vu{r} - \vb{p}
+					  }
+				  \end{equation}
+		\end{enumerate}
+		Here are the plots of $V$ and $\vb E$ for each case solved in the problem.	
+		\begin{figure}[H]
+			\centering
+			\subfloat[Dipole potential $V$]{
+				\includegraphics[width=1.85in]{images/dipole_normal_V.pdf}
+			\label{sfig:dipolenormalV}
+			}
+			\hspace{0.5em}
+			\subfloat[Dipole vector field $\vb{E}$]{
+				\includegraphics[width=1.85in]{images/dipole_normal_E.pdf}
+			\label{sfig:dipolenormalE}
+			}
+			\hspace{0.5em}
+			\subfloat[Dipole limit potential $V$]{
+				\includegraphics[width=1.85in]{images/dipole_limit_V.pdf}
+			\label{sfig:dipolelimitV}
+			}
+			\hspace{0.5em}
+			\subfloat[Dipile limit vector field $\vb{E}$]{
+				\includegraphics[width=1.85in]{images/dipole_limit_E.pdf}
+			\label{sfig:dipolelimitE}
+			}
+			\caption{Dipole electric potential fields at distance $a$ and at the limit $a\to 0$}
+			\label{fig:dipole}
+		\end{figure}
 \newpage

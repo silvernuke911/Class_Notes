@@ -618,17 +618,24 @@
 				\end{align*}
 				For vector products,
 				\begin{align*}
+					\grad(\vb{A}\cdot\vb{B})
+						&=
+							\vb{A}\cross(\curl\vb{B}) + \vb{B}\cross(\curl\vb{A})
+							+ (\vb{A}\cdot\grad)\vb{B} + (\vb{B}\cdot\grad)\vb{A}\\
 					\div(\vb{A}\times\vb{B})
-						&= \vb{B}\vdot\curl\vb{A}
-							- \vb{A}\vdot\curl\vb{B}\\
+						&= \vb{B}\vdot(\curl\vb{A})
+							- \vb{A}\vdot(\curl\vb{B})\\
 					\curl(\vb{A}\times\vb{B})
 						&= \vb{A}(\div\vb{B})
 							- \vb{B}(\div\vb{A})
 							+ (\vb{B}\vdot\grad)\vb{A}
 							- (\vb{A}\vdot\grad)\vb{B}
 				\end{align*}
-				And some useful cross-product identities are
+				And some useful cross-product and triple product identities are
 				\begin{align*}
+					\vb{A}\cdot(\vb{B}\cross\vb{C}) 
+						&= \vb{B}\cdot(\vb{C}\cross\vb{A}) 
+						 = \vb{C}\cdot(\vb{A}\cross\vb{B})\\
 					\vb{A}\times(\vb{B}\times\vb{C})
 						&= \vb{B}(\vb{A}\vdot\vb{C})
 							- \vb{C}(\vb{A}\vdot\vb{B})\\

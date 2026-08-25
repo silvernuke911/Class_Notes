@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  25 AUG 2026 01:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  25 AUG 2026 02:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2413,13 +2413,13 @@ Package pdftex.def Info: images/lpc.pdf  used on input line 566.
 (pdftex.def)             Requested size: 289.07999pt x 132.29605pt.
 [24{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
  <./images/lpc.pdf>] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
-Overfull \hbox (0.79422pt too wide) in paragraph at lines 1008--1011
+Overfull \hbox (0.79422pt too wide) in paragraph at lines 1015--1018
 []\OT1/lmr/m/n/10 We in-tro-duce an or-thog-o-nal curvi-lin-ear co-or-di-nate s
 ys-tem $(\OML/lmm/m/it/10 q[]; q[]; q[]\OT1/lmr/m/n/10 )$
  []
 
 [35] [36] [37] [38] [39]
-Overfull \hbox (4.66353pt too wide) in paragraph at lines 1402--1403
+Overfull \hbox (4.66353pt too wide) in paragraph at lines 1409--1410
 []\OT1/lmr/m/n/10 For the scalar Lapla-cian, $\OML/lmm/m/it/10 h[]h[]h[] \OT1/l
 mr/m/n/10 = \OML/lmm/m/it/10 r[] [] ^^R$\OT1/lmr/m/n/10 . Sub-sti-tut-ing into 
 []
@@ -2602,7 +2602,7 @@ ci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 ><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm7.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 131\bu
-ild\p131.pdf" (78 pages, 2476889 bytes).
+ild\p131.pdf" (78 pages, 2477242 bytes).
 PDF statistics:
  1597 PDF objects out of 1728 (max. 8388607)
  402 named destinations out of 1000 (max. 500000)

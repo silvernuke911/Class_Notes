@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  24 AUG 2026 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  26 AUG 2026 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1877,7 +1877,7 @@ LaTeX Info: Redefining \laplacian on input line 6.
 LaTeX Info: Redefining \Re on input line 6.
 LaTeX Info: Redefining \Im on input line 6.
 (preamble/title.tex
-<images/cover_img.pdf, id=140, 289.08pt x 289.08pt>
+<images/cover_img.pdf, id=156, 289.08pt x 289.08pt>
 File: images/cover_img.pdf Graphic file (type pdf)
 <use images/cover_img.pdf>
 Package pdftex.def Info: images/cover_img.pdf  used on input line 4.
@@ -2714,7 +2714,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 146.
 [12] [13] [14] [15]
-<images/metricperspective.pdf, id=312, 289.08pt x 144.54pt>
+<images/metricperspective.pdf, id=332, 289.08pt x 144.54pt>
 File: images/metricperspective.pdf Graphic file (type pdf)
 <use images/metricperspective.pdf>
 Package pdftex.def Info: images/metricperspective.pdf  used on input line 270.
@@ -2771,18 +2771,14 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-[31]) [32] [33
+[31]) [32] (content/meeting3.tex [33
 
-]
+] [34]) [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 26.
+(hyperref)                removing `\\' on input line 27.
 
-[34
-
-] [35
-
-] [36
+[36
 
 ] [37
 
@@ -2790,22 +2786,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [39
 
+] [40
+
+] [41
+
 ] (C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `p225.out' has not changed.
-(rerunfilecheck)             Checksum: 4E91F38E350A73B712FF495B491F60CA;4600.
+
+Package rerunfilecheck Warning: File `p225.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `p225.out':
+(rerunfilecheck)             Before: 77A1A6629662950ED519A7021E233DE7;5336
+(rerunfilecheck)             After:  24DCDE032783B9E71D1D1E9F31360BF5;5571.
  ) 
 Here is how much of TeX's memory you used:
- 68447 strings out of 474542
- 1723304 string characters out of 5744446
- 2653678 words of memory out of 5000000
- 89557 multiletter control sequences out of 15000+600000
+ 68484 strings out of 474542
+ 1724070 string characters out of 5744446
+ 2655678 words of memory out of 5000000
+ 89573 multiletter control sequences out of 15000+600000
  650816 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,17n,110p,788b,1136s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,17n,110p,788b,1179s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esi
 nt10.pk><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
@@ -2840,9 +2846,9 @@ e1/public/lm/lmsy8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (40 pages, 2465420 bytes).
+ild\p225.pdf" (42 pages, 2477498 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

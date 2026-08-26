@@ -517,12 +517,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 INPUT .\preamble\title.tex
 INPUT .\preamble\title.tex
@@ -598,6 +592,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
@@ -638,6 +633,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy5.tf
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
@@ -648,19 +644,12 @@ INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT preamble\toc.tex
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 INPUT .\content\1_1.tex
 INPUT .\content\1_1.tex
 INPUT content\1_1.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
@@ -844,6 +833,13 @@ INPUT content\2_2.tex
 INPUT .\content\2_3.tex
 INPUT .\content\2_3.tex
 INPUT content\2_3.tex
+INPUT .\content\2_4.tex
+INPUT .\content\2_4.tex
+INPUT content\2_4.tex
+INPUT .\preamble\endnote.tex
+INPUT .\preamble\endnote.tex
+INPUT preamble\endnote.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
@@ -937,6 +933,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr9.pf
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr9.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb

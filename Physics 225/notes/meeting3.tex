@@ -1,0 +1,374 @@
+%meeting 3  26 - 08 - 26
+Kindly clean this up, this is a relativity lecture. Add proper equations, fix spelling, flesh out the arguments, and know what shit means, as best you can. Make \subsubsections in appropriate points.
+Keept it mostly verbatim in the clear sections.
+Use the physics package macros when you can. Return in latex and your own ddisplay. 
+
+\subsection{Relativity without Light}
+
+This is in contrast to standard methods of deriving SR.
+
+Suppose framce of references S and S', where S is fixed and S' is moving at a speed $v$
+graph of space.
+
+In galilean 
+
+Then
+\begin{align*}
+	x' = \bar[X](x,t;v)
+	t' = \bar{T}(x,t;v)
+\end{align*}
+
+Task: Determine function $\bar X$ and $\bar T$
+
+Goal - the transpfolation lorentz 
+x' 
+t' 
+gamma 
+beta
+(x' t) = gramma ( 1 -v \\ -beta 1 ) (x,t)
+
+
+Assujme relativity principle
+S and S' are equivalent
+
+X bar and T bar are transformation functions. The role is to find them because they are undetermined functions and we want to find them out.
+
+x = \bar{X} (X, t', -v)
+t = \bar T (x',t', -v)
+
+This also assumes the isotropgy od space
+
+Hence (eq 1)
+
+\begin{align}
+	x = \bar X ( \bar X(t,x,v), \bar{T}(x,t,v),-v )
+	t - \bar T ( bar X(t,x,v), \bar{T}(x,t,v), - v )
+\end{align}
+
+I sotrophy of space means no difference between +x and -x directions.
+
+Reversing the t direction amounts to changing 
+x\to-x 
+v\to - v
+
+x' = -\bar X ( -x, t, -v )
+t' = \bar T (-x, t, -v)
+
+\bar X (-x,t,-v) = -\bar X (x,t,v)
+\bar T (-x,t,-v) = -\bar T (x,t,v)
+
+The invariance of straight lines
+
+Free particles must move along straight lines, in both $S$ amd S'
+The first law of motion of Newnton, principle of inertia
+
+let $x^\mu = (t,x)$ amd $x'^\mu = (t',x')$  
+
+Suppose $x^\mu = (t(\tau), x(\tau))$ and $x'\mu = (t'(\tau),t'(\tau))$
+
+How does oen express straight lines in S
+\begin{equation}
+	\dv[2{x^\mu}{}\tau^2 = 0
+\end{equation}
+we impose that 
+\begin{equation}
+	\dv[2{x^\mu}{}\tau^2 = 0 \implies \dv[2]{x'^\mu}{\tau^2} 
+\end{equation}
+
+
+We can then write
+\begin{equation}
+    \dv{}\tau{}x'^\mu = \dv{\bar X^\mu}{x^\nu} \dv{x^\nu}{\tau}   
+\end{equation}
+
+HEre, we impose the einstain notation convention. 
+
+\begin{equation}
+	\dv[2]{}\tau{}x'^\mu = \dv{}{\tau}( \dv{\bar X^\mu}{x^nu} ) \dv{x^\nu}{\tau} + \pdv{\bar X^\mu}{x^\nu} \pdv{x^\nu}{\tau}   
+\end{equation}
+
+We demand that the second term vanishes to zero. However, since the LHS = 0 , then we find that 
+\begin{equation}
+\dv{}{\tau}( \dv{\bar X^\mu}{x^nu} ) \dv{x^\nu}{\tau}
+\end{equation}
+Then
+\begin{equation}
+	0 = \pqty{
+		\pdv[2]{\bar x^\mu}{\partial x^\nu \partial x^\sigma} \dv{x^\nu}{\tau} \dv{x^\sigma}{\tau}   
+	}
+\end{equation}
+
+Hence
+\begin{equation}
+    \frac{\partial \bar X^\mu}{\partial x^\nu \partial x^\sigma} = 0 
+\end{equation}
+
+We only get that if we assume $\bar X$ is a linear function of $x^\mu $ or (t,x).
+
+$\bar X (t,x,v) = A(v)x+ B(v)t+ E(v)$ 
+$\bar T (t,x,v) = C(v)x+ D(v)t+ E(v)$ 
+
+Weve not done anything but write a straight line in general.
+
+There is no preferred zero for x in t in both S' and S, that's the homogeneity of space time.
+
+Assumption: Space and time are homogeneous.
+
+We can choose for the origins of $S$ and $S'$ 's origins correspand
+
+We demand that the origin of S gets mapped to the origin of S'
+\begin{equation}
+    x = t = 0 \iff x' = t' = 0
+\end{equation}
+
+This is not really essential, but it makes calculations easier, making E  and F determinable (they would be 
+difficult to obtain) so we can simplify E and F to be 0.
+
+Now we only require four free functions
+
+$\bar X (t,x,v) = A(v)x+ B(v)t
+$\bar T (t,x,v) = C(v)x+ D(v)t
+The problem now is finding four functions of $V$. 
+
+\[
+	-A(-v) x + B(-v) t = -A(v)x - B(v)t\\
+	-C(-v) x + D(-v) t = C(v)x + D(v) t
+\]
+
+recall from the condition that 
+\bar X (-x,t,-v) = -\bar X (x,t,v)
+\bar T (-x,t,-v) = -\bar T (x,t,v)
+
+This mist be true for all of X and T. THe only way this can hold true if the eq is equal. These holds four impositions
+
+Therefore
+\[
+	A(-v)  = A(v)
+\]
+\[
+	D(-v)  = D(v)
+\]
+\[
+	B(-v) = -B(v)
+\]
+\[
+	C(-v) = - C(v)
+\]
+
+Therefore a and D need to be even functions ,and B and C need to be odd functions.
+
+we can then write equation 1 as
+\[
+	x = A(-v)\bar X(t,x,v) + B(-v) \bar T(t,x,v)\\
+	t = C(-v)\var X(t,x,v) + D(0v) \bar T(x,t,v)
+\]
+
+
+There is still a \bar X and \bar T that appears. We can write that moer out
+
+\[
+	x = A(-v) ( A(v)x + B(v)t + B(-v)) (C(v)x + D(v) t)
+	  + D(-v)(C(v)x + D(v)t)
+	t = C(0v)( A(v) x + B(v)t ) + D(-v)(C(v)x + D(v))
+\]
+
+We impose the odd and even conditions on the eqn. We can then noew write
+\[
+	x = (A^2 - BC) x _ (AB - BD) t\\
+	t = (-AC+CD)x + (-BC + D^2)
+\]
+We use the argument that x and t are arbitrary. We can then find
+\[
+	A^2 - BC = 1\\
+	B(A-D) = 0\\
+	C(A0D) = 0\\
+	D^2 -BC = 1
+\]
+So far, no magic. We just used natural assumptions and principle of relativity. 
+We focus on the two conditions that equat to zero. 
+We have two options
+A \neq D or A = D
+
+If A\neq D \implies B = C = 0, we are forced to conclude.
+
+if that is true,then
+A=\pm 1
+D =\mp 1
+
+What happesn to the transformation?
+
+x' = \pm x 
+t' = \mp t
+
+What does that not mean? It's a trivial transformation, but we find that S and S' has these posibilities.
+It's a cousin of the identity transformation, it satisfies the conditions that we constrain, but this is tribvial, and not interesting
+
+But when A = D, B and C no longer has to be equal
+
+Let's look at the other case
+
+if A = D
+
+Notice that these two collapse to the same condition
+
+A = D \implies C = A^2 - 1  / B
+
+Now we have three constraints in essence. Now, we only have two free functions. since onece you know A and B you know C
+
+A and B are the only free functions left 
+
+Note that (Consider the trajectory of S' and S) S' moves in S in a fixed velicity v. So its trajectory in S is x = vt
+Again, that is for the spatial origin. That means that entire line needs to be mapped to x' = 0.
+
+Now, we impose the C = A^2 -1 / B
+
+x' = Ax + Bt
+t' - (A^2 - 1 / B) + At
+
+hence
+0 = Avt + Bt \\
+B = -vA
+
+how we only have one free functions
+
+Thus we have redcued it to the following
+
+\bqty{
+	x'\\t'
+} =
+\bqty{
+	A & -vA \\
+	- \frac{(A^2-1)}{vA} & A
+}
+\bqty{x\\t}
+
+Now we only need to know A, except we dont know what properties of A is
+
+That matrix needs to reduce to the identiy matrix when v = 0
+
+Thus we impose
+
+A(v)\to 1, v\to 0. Since fraction, it must vanish sufficiently fasst.
+therefore, A^2 - 1 \approx \order{v^2}
+
+What happens if there's a third observer?
+
+Consider a new frame S'' moving with a speed u wrt S' 
+
+It's the same framework. Now we relate S'' to S.
+
+So now we have
+
+\bqty{
+	x'\\t'
+} 
+= 
+\bqty{
+	A(u) & -uA(u) \\
+	- \frac{(A(u)^2-1)}{uA(u)} & A(u)
+} 
+\bqty{
+	A & -vA \\
+	- \frac{(A^2-1)}{vA} & A
+}
+\bqty{x\\t}
+
+Now, we demand closure under composition. That must be of the samme form as before. 
+Therefoer it must be the same matrix form but with a different argument. Say that S'' travels at a speed w wrt S
+
+Now, we multiply
+\bqty{
+	A(u) A(v) + (A^2(v) - 1) \frac{u A(u)}{v A(v)}  & - (u+v)A(u) A(v)\\
+	-(A^2(u)-1) \frac{A(v)}{uA(u)} - (A^2(v)-1 ) \frac{A(v)}{vA(v)} & A(u) A(v) + (A(u)^2 - 1 )  \frac{v A(v)}{u A u} \\
+}
+
+From the form, we require that M^{00} and M^{11} are equal.
+
+Therefore we find
+\begin{equation}
+    A^2(v) - 1 / v^2 A^2(u) = A^2(u) - 1 / u^2 A^2 u
+\end{equation}
+
+Notice that the lhs depends entirely on v and the rhs depends entirely on u. As such, the whole combination needs to be constant. No matter
+what u or v you put, it has to equal. hence
+
+A^2  - 1 / v^2 A^2 = k
+
+A = \frac{1}{\sqrt(1-kv^2)} 
+
+k has to have a unit of 1/v^2. 
+
+the M&{01} term becoems A^2 -1 / va = -kA V
+
+Hecne
+
+\bqty{
+	x'\\t'
+}
+=
+\bqty{
+	A & - vA\\
+	-AkV & A
+}
+\bqty{
+	x\\t
+}
+\bqty{
+	x\\t
+}
+
+Factor out A
+
+\bqty{
+	x'\\t'
+}
+=
+\frac{1}{\sqrt{1-kv^2}} 
+\bqty{
+	1 & - v\\
+	-kV & 1
+}
+\bqty{
+	x\\t
+}
+\bqty{
+	x\\t
+}
+this is exactly the form of the lorentz transfomration.
+
+Thus we can find out that 
+\begin{equation}
+    W = \frac{u+v}{1 + kuv} 
+\end{equation}
+this is the relativistic velocity addition formula.
+
+If V = 1/sqrt{k}, the $w= \frac{1}{\sqrt ko} $
+
+Therefore, ralativity demands that some speed to be invariant.
+There must exist some invariant speed. That speed needs to be v = 1/sqrt k
+
+We dont need light. It does not need anything.
+This is the biggest principle to come ouyt. Relativity works from pure logic alone.
+All physics must bow down to this principle
+
+v tends to infinity id k = 0. therefore
+
+we arrive to the galilean transfomrations.
+
+It does not need to be the speed of light, it could be tghe speed of anything, ut just happens to be light.
+It does not mean that relativity demands Em to be true for it to be true. 
+
+Empirically, we find em has an invariant speed. Em is a calibrator for relativity.
+
+You can imagine a consistent universe that the invariant speed is infinity. 
+
+Carrolian Geometry.  Causality 
+
+For anything finite, reality tends to be a light cone. 
+The light cone opens up.
+at V = 0, the light cone closes, and you cannot move
+
+Infinity, finite, or zero. 
+Galileo, Lorentz, Carol
+
+Thus, we prove that relavity, by logic alone, demans that an invariant speed must exist in the universe.

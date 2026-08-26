@@ -702,6 +702,11 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri8.tfm
+INPUT .\content\meeting3.tex
+INPUT .\content\meeting3.tex
+INPUT .\content\meeting3.tex
+INPUT .\content\meeting3.tex
+INPUT content\meeting3.tex
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out

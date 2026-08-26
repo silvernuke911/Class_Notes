@@ -1,0 +1,146 @@
+%=============================================
+% Date: August 26, 2026
+% Topic: deriving relativity without light
+%=============================================
+
+\subsection{Relativity without Light}
+	We begin this section by doing a derivation of special relativity 
+	in large contrast with standard methods which introduce relatvity
+	with light-based thought experiments. Our derivation follows the 
+	elegant logic developed by von Ignatowsky (1910) and later refined
+	by others, showing that the Lorentz transformations follow from 
+	fundamental symmetries alone.  
+
+	\subsubsection{The Transformation Problem}
+		Consider two inertial reference frames $S$ and $S'$, where $S$
+		is taken as a \textit{rest} frame of reference, and $S'$ moves 
+		with a constant velocity $v$ along the $x$ axis with respect to
+		$S$. We can express these as follows:
+		
+		In Galilean transformations, the relationship betwen the two reference
+		frames can be described as 
+		\begin{align*}
+			x' &= x + vt\\
+			t' &= t'
+		\end{align*}
+		That is, expressed in matrix form, 
+		\begin{equation}
+			\bmqty{
+				x'\\t'
+			}
+			= 
+			\bmqty{
+				1 & v\\
+				0 & 1
+			}
+			\bmqty{
+				x\\t
+			}
+		\end{equation}
+		That implies that time $t$ is absolute, and, the reference frames
+		$S$ and $S'$ are not strictly equivalent.
+		
+		As such, we need a more robust transformation. We seek the most general 
+		transformation between the coordinates of the two frames.
+		\begin{align}
+		    x' = \overline X(x,t;v)\\
+			t' = \overline T(x,t;v)
+			\label{eq:general_transform}
+		\end{align}
+		The functions $\overline X$ and $\overline T$ are transformation functions that are initially unknown and undetermined.
+		Our task, then, is to determine them from general physical principles. Eventually, our goal
+		is to obtain a transformation in the form of Lorentzian transfromations.
+
+		\begin{equation}
+			\bmqty{
+				x'\\ t'
+			}
+			=
+			\gamma
+			\bmqty{
+				1 & -v \\
+				-\beta & 1
+			}
+			\bmqty{
+				x\\t
+			}
+		\end{equation}
+		where $\gamma = \dfrac{1}{\sqrt{1-\beta^2}}$ and $\beta = \dfrac{v^2}{c^2}$
+
+		An interesting question arises: Where does $c$ come from if we never assume light?
+
+		\subsubsection{Principle of relativity}
+
+		The first assumption we make is the principle of relativity.
+		\begin{quote}
+		    The laws of physics take the same form in all inertial reference frames.
+		\end{quote}
+
+		In particular, $S$ and $S'$ are physically equivalent. There is no reason to regard 
+		the transformation from $S$ to $S'$ as fundamentally different from the transfomration 
+		from $S'$ back to $S$.
+
+		If $S'$ moves at velocity $v$ relative to $S$, then $S$ moves at a velocity $-v$ relative 
+		to $S'$. Hence, the inverse transformation of \ref{eq:general_transform} must have the same functional form:
+		\begin{align*}
+		    x' = \overline X(x,t;-v)\\
+			t' = \overline T(x,t;-v)
+		\end{align*}
+
+		This implies that if we apply the forward transformation followed by the inverse transformation, 
+		we recover the original coordinates:
+		\begin{equation}
+			\begin{aligned}
+				x &= \bar{X}\bigl(\bar{X}(x,t,v), \bar{T}(x,t,v), -v\bigr) \\
+				t &= \bar{T}\bigl(\bar{X}(x,t,v), \bar{T}(x,t,v), -v\bigr)
+			\end{aligned}
+			\label{eq:composition-identity}
+		\end{equation}
+
+		\subsubsection{Isotropy of Space}
+
+		The isotropy of space means that physics has no preferred direction. 
+		In particular, the physics cannot distinguish between the $+x$ and $-x$ directions.
+		This imposes the following:
+
+		Consider reversing the spatial axis,
+		\begin{equation}
+			x\rightarrow -x.
+		\end{equation}
+		Under this reversal, the relative velocity also changes sign,
+		\begin{equation}
+			v\rightarrow -v.
+		\end{equation}
+
+		The spatial coordinate must therefore transform as
+		\begin{equation}
+			x'=-\bar X(x,t;v),
+		\end{equation}
+
+		while time, being a scalar under spatial reflection, satisfies
+		\begin{equation}
+			t=\bar T(x,t;v).
+		\end{equation}
+		This distinction is important: $x$ changes sign under spatial reflection, but $t$ does not.
+
+		Under time reversal combined with spatial reflection:
+
+		\begin{equation}
+			\begin{aligned}
+				x' &= -\bar{X}(-x, t, -v) \\
+				t' &= \bar{T}(-x, t, -v)
+			\end{aligned}
+			\label{eq:isotropy-conditions}
+		\end{equation}
+
+		For these to be consistent with the original transformations, we require:
+
+		\begin{equation}
+			\begin{aligned}
+				\bar{X}(-x, t, -v) &= -\bar{X}(x, t, v) \\
+				\bar{T}(-x, t, -v) &= \bar{T}(x, t, v)
+			\end{aligned}
+			\label{eq:parity-conditions}
+		\end{equation}
+	\subsubsection{The Invariance of Straigt Lines}
+

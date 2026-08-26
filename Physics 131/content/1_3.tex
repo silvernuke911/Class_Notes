@@ -110,7 +110,7 @@
 				V'(\vb b) - V'(\vb a) = V(\vb b) - V(\vb a)
 			\]
 			and as such, potential differences are physically meaningful, while the absolute 
-			value of the potential is not. Since $V'$ is only $V+K$, then
+			value of the potential is not. Since $V'(\vb r)$ is only $V(\vb r)+K$, then
 			\[
 				\grad V' = \grad V
 			\]
@@ -188,7 +188,7 @@
 		And so, apart from the persistent minus sign, the divergence of $\vb E$ is the 
 		Laplacian of $V$. Gauss's Law, then, says that
 		\begin{theorem}{Poisson's Equation}
-			\begin{equation}
+			\begin{equation}\label{eq:poisson_theorem}
 				\lpc V = -\frac{\rho}{\epszero} 
 			\end{equation}	
 		\end{theorem}
@@ -215,6 +215,90 @@
 		\textbf{\textit{field equation}} governing electrostatics.
 		
 	\subsubsection{The Potential of a Localized Charge Distribution}
+		We defined $V$ in terms of $\vb E$, and found that it is more convenient to do so since
+		it makes calculations significantly easier. Normally, though, it's $\vb E$ that we are looking
+		for (if we already knew $\vb E$, there wouldn't be much point in calculating $V$). The idea is that
+		it might be easier to get $V$ first, and then calculate $\vb E$ by taking the gradient. Typically, then,
+		we know where the charge is (i.e, we know $\rho$), and we want to find $V$. Poisson's equation
+		relates $V$ and $\rho$, but unfortunately, it is formulated in such a way that it provides $\rho$
+		given that we already knew $V$, whereas we want to know $V$, knowing $\rho$. What we must do then, is 
+		``invert'' Poisson's equation. For this section, that is the task which we set out to do. However,
+		 we shall do it by roundabout means, beginning, as usual, with a point charge at the origin.
+
+		 The electric field is
+		 \[
+			 \vb{E} = \frac{1}{4\pi\epszero} \frac{1}{r^2}\vu{r}  
+		 \]
+		 and the line element is
+		 \[
+			 \dd{\vb* \ell} = \dd{r}\vu{r} + r\dd{\theta}\vu*{\theta} + r\sin\theta\dd{\phi}\vu*{\phi}
+		 \]
+		 Hence, we have
+		 \[
+			 \vb{E}\cdot \dd{\vb* \ell} = \frac{1}{4\pi\epszero} \frac{q}{r^2} \dd{r}
+		 \]
+		 Setting the reference point at infinity, the potential of the point charge $q$ at the origin is
+		 \begin{align*}
+		     V(r) 
+			 &=
+			 -\int_{\mathcal{O}}^{r}\vb{E}\cdot \dd{\vb* \ell}\\
+			 &=
+			 -\frac{1}{4\pi\epszero} \int_{\infty}^r \frac{q}{r'^2}\dd{r'} \\
+			 &=
+			 \frac{1}{4\pi\epszero}\eval{\frac{q}{r'}}^r_\infty\\
+			 &=
+			 \frac{1}{4\pi\epszero} \frac{q}{r} 
+		 \end{align*}
+		 We see here the advantage of using infinity as a reference point; it kills the lower limit
+		 of the integral. Notice the sign of $V$; presumably, the conventional minus sign in the definition (\ref{eq:poisson_theorem})
+		 was chosen in order to make the potential of a positive charge come out positive. It is useful to remember that regions og positive
+		 charge are potential `hills', whereas regions of negative charge are potential	`valleys', and the electric field always points
+		\textit{downhill} from the high point of the potential to the low point.
+		
+		In general, the potential of a point charge $q$ is
+		\begin{equation}
+		   V(\vb x) = \frac{1}{4\pi\epszero} \frac{q}{r}   
+		\end{equation}
+		where $r$ is the distance from $q$ to a point $\vb x$\footnote{Forgive the change of variables, the text becomes confusing so this is to help me}.
+		i.e., $\vb r = \vb{x} - \vb{x}_q$, where $\vb{x}_q$ is the position of $q$. Invoking the superposition principle, then, we find that the potential
+		of a collection of charges is 
+		\begin{equation}
+		    V(\vb x) = \frac{1}{4\pi\epszero} \sum_i \frac{q}{r_i},
+		\end{equation}
+		or, for a continuous distribution,
+		\begin{equation}
+			V(\vb x) = \frac{1}{4\pi\epszero}\int \frac{1}{r} \dd{q}
+		\end{equation}
+		In particular, for a volume charge, it is,
+		\begin{theorem}{Potential for a charge distribution}
+			\begin{equation}\label{eq:charge_potential}
+				V(\vb x) = \frac{1}{4\pi\epszero}\int \frac{\rho(\vb x')}{r}\dd{V}  
+			\end{equation}
+		\end{theorem}
+		
+		Here, $\vb x'$ denotes the test point being integrated over all $\R^3$ in the integral. 
+		This is the equation we were looking for, which tells us how to compute $V$ when we know
+		$\rho$. It is, if you will, the \textit{solution} to Poisson's equation, for a localized charge
+		distribution. Compare this to the corresponding equation for the electric field:
+		\begin{equation}
+			\vb{E}(\vb x) = \frac{1}{4\pi\epszero} \int \frac{\rho(\vb x')}{r^2} \vu{r} \dd{V}
+		\end{equation}
+		The main point here is that the pesky unit vector $\vu{r}$ is gone, so there is no need to
+		fuss with components. Here, we go back to denoting general position to $\vb r$, since it is an 
+		arbitrary point and may be relabeled.. The potentials of line and surface charges are
+		\begin{equation}
+			V(\vb r) = \frac{1}{4\pi\epszero}\int \frac{\lambda(\vb r')}{r^2}\dd{\ell}  
+		\end{equation}
+		and
+		\begin{equation}
+			V(\vb r) = \frac{1}{4\pi\epszero}\int \frac{\sigma(\vb r')}{r^2}\dd{S}  
+		\end{equation}
+		We warn you, however, that everything presented in this section is predicated upon the assumption
+		that the reference point is at infinity. This is hardly apparent from (\ref{eq:charge_potential}),
+		but remember that we \textit{got} that equation of the potential from a point charge at the origin, which
+		is only valid when $\mathcal{O} = \infty$. If one tries to apply these formulae to one of those 
+		artificial problems where the charge itself extends to infinity, the integral will diverge.
+
 	\subsubsection{Boundary Conditions}
 	\newpage
 \subsection{Work and Energy}

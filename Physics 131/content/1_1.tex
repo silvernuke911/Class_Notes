@@ -68,7 +68,7 @@
                     }} = (u_2v_3-u_3v_2)\ihat-(u_1v_3-u_3v_1)\jhat+(u_1v_2-u_2v_1)\khat
                 \end{equation}
                 \paragraph{The Kronecker Delta and LeviCivita operators}
-                The Kronecker delta is an operator which basically turns on or of a product depending on it's indices. Formally, it is defined as 
+                The Kronecker delta is an operator which basically turns on or off a product depending on it's indices. Formally, it is defined as 
                 \begin{equation}
 					\krondelta{ij}= \vu{e}_i \cdot \vu{e}_j =\begin{cases}
                         1\text{ if $i=j$}\\ 
@@ -967,16 +967,11 @@
 			\begin{theorem}{Curl-less or irrotational fields}
 				\label{theorem:irrotational_fields}
 
-    % \makeatletter
-    % \typeout{THEOREM COUNTER = \thetheorem}
-    % \typeout{CURRENT LABEL = \@currentlabel}
-    % \makeatother
-
 				The following conditions are equivalent.
 				\begin{enumerate}[(a)]
 					\item $\curl \vb{F} = \vb{0}$ 
-					\item $\displaystyle\int_a^b \vb{F}\cdot \dd{\vb l}$ is independent of path for any given end points.
-					\item $\displaystyle\oint \vb{F} \cdot \dd{\vb l} = 0$ 
+					\item $\displaystyle\int_a^b \vb{F}\cdot \dd{\vb* \ell}$ is independent of path for any given end points.
+					\item $\displaystyle\oint \vb{F} \cdot \dd{\vb* \ell} = 0$ 
 					\item $\vb{F} = - \grad V$
 				\end{enumerate}
 			\end{theorem}
@@ -992,8 +987,8 @@
 				The follorwing conditions are equivalent.
 				\begin{enumerate}[(a)]
 					\item $\div \vb{F} = 0$ 
-					\item $\displaystyle\int \vb{F}\cdot \dd{\vb a}$ is independent of surface for any given boundary line.
-					\item $\displaystyle\oint \vb{F} \cdot \dd{\vb a} = 0$ 
+					\item $\displaystyle\int \vb{F}\cdot \dd{\vb s}$ is independent of surface for any given boundary line.
+					\item $\displaystyle\oint \vb{F} \cdot \dd{\vb s} = 0$ 
 					\item $\vb{F} = \curl \vb{A}$
 				\end{enumerate}
 			\end{theorem}

@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1787726324.22349 "meeting3.tex" "meeting3.pdf" "meeting3" 1787726329.60599 2
+  "C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787083256 318527 8def323dfc0d66077db486995b31d841 ""
+  "C:/Users/verci/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707738060 24210787 d51e6a8fbe27beaac69122c4270a406d ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "build/meeting3.aux" 1787726324 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "meeting3.tex" 1787726322 7754 6f6fae3ed0046eed132533d3aefa41b5 ""
+  (generated)
+  "build/meeting3.aux"
+  "build/meeting3.log"
+  "meeting3.pdf"
+  (rewritten before read)

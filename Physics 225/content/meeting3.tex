@@ -15,8 +15,18 @@
 		Consider two inertial reference frames $S$ and $S'$, where $S$
 		is taken as a \textit{rest} frame of reference, and $S'$ moves 
 		with a constant velocity $v$ along the $x$ axis with respect to
-		$S$. We can express these as follows:
+		$S$. 
 		
+		\begin{center}
+			\includegraphics[width=4in, height=1.9in]{images/frames_in_motion.pdf}
+		\end{center}
+		% \begin{figure}[h]
+		% 	\centering
+		% 	\includegraphics[width=4in, height=1.5in]{images/frames_in_motion.pdf}
+		% 	\caption{Frames $S$ and $S'$}
+		% 	\label{fig:frames-in-motion}
+		% \end{figure}
+
 		In Galilean transformations, the relationship betwen the two reference
 		frames can be described as 
 		\begin{align*}
@@ -37,7 +47,10 @@
 				x\\t
 			}
 		\end{equation}
-		That implies that time $t$ is absolute, and, the reference frames
+		This relationship is what is naively 
+		assumed during day to day life, and in fact, it is
+		readily apparent for observers without any knowledge of relativity. However,
+		it has some issues. It implies that time $t$ is absolute, and, the reference frames
 		$S$ and $S'$ are not strictly equivalent.
 		
 		As such, we need a more robust transformation. We seek the most general 
@@ -48,7 +61,10 @@
 			\label{eq:general_transform}
 		\end{align}
 		The functions $\overline X$ and $\overline T$ are transformation functions that are initially unknown and undetermined.
-		Our task, then, is to determine them from general physical principles. Eventually, our goal
+
+		Our task, then, is to determine them from general physical principles. Simply 
+		logic and mathematics, without any reference to experimental data whatsoever.
+		This is, essentially, a purely mathematical approach. Eventually, our goal
 		is to obtain a transformation in the form of Lorentzian transfromations.
 
 		\begin{equation}
@@ -68,6 +84,7 @@
 		where $\gamma = \dfrac{1}{\sqrt{1-\beta^2}}$ and $\beta = \dfrac{v^2}{c^2}$
 
 		An interesting question arises: Where does $c$ come from if we never assume light?
+		\newpage
 
 		\subsubsection{Principle of relativity}
 
@@ -77,11 +94,11 @@
 		\end{quote}
 
 		In particular, $S$ and $S'$ are physically equivalent. There is no reason to regard 
-		the transformation from $S$ to $S'$ as fundamentally different from the transfomration 
+		the transformation from $S$ to $S'$ as fundamentally different from the transformation 
 		from $S'$ back to $S$.
 
 		If $S'$ moves at velocity $v$ relative to $S$, then $S$ moves at a velocity $-v$ relative 
-		to $S'$. Hence, the inverse transformation of \ref{eq:general_transform} must have the same functional form:
+		to $S'$. Hence, the inverse transformation of (\ref{eq:general_transform}) must have the same functional form:
 		\begin{align*}
 		    x' = \overline X(x,t;-v)\\
 			t' = \overline T(x,t;-v)
@@ -91,8 +108,8 @@
 		we recover the original coordinates:
 		\begin{equation}
 			\begin{aligned}
-				x &= \bar{X}\bigl(\bar{X}(x,t,v), \bar{T}(x,t,v), -v\bigr) \\
-				t &= \bar{T}\bigl(\bar{X}(x,t,v), \bar{T}(x,t,v), -v\bigr)
+				x &= \overline{X}\bigl(\overline{X}(x,t,v), \overline{T}(x,t,v), -v\bigr) \\
+				t &= \overline{T}\bigl(\overline{X}(x,t,v), \overline{T}(x,t,v), -v\bigr)
 			\end{aligned}
 			\label{eq:composition-identity}
 		\end{equation}
@@ -114,12 +131,12 @@
 
 		The spatial coordinate must therefore transform as
 		\begin{equation}
-			x'=-\bar X(x,t;v),
+			x'=-\overline X(x,t;v),
 		\end{equation}
 
 		while time, being a scalar under spatial reflection, satisfies
 		\begin{equation}
-			t=\bar T(x,t;v).
+			t'=\overline T(x,t;v).
 		\end{equation}
 		This distinction is important: $x$ changes sign under spatial reflection, but $t$ does not.
 
@@ -127,8 +144,8 @@
 
 		\begin{equation}
 			\begin{aligned}
-				x' &= -\bar{X}(-x, t, -v) \\
-				t' &= \bar{T}(-x, t, -v)
+				x' &= -\overline{X}(-x, t, -v) \\
+				t' &= \overline{T}(-x, t, -v)
 			\end{aligned}
 			\label{eq:isotropy-conditions}
 		\end{equation}
@@ -137,10 +154,629 @@
 
 		\begin{equation}
 			\begin{aligned}
-				\bar{X}(-x, t, -v) &= -\bar{X}(x, t, v) \\
-				\bar{T}(-x, t, -v) &= \bar{T}(x, t, v)
+				\overline{X}(-x, t, -v) &= -\overline{X}(x, t, v) \\
+				\overline{T}(-x, t, -v) &= \overline{T}(x, t, v)
 			\end{aligned}
 			\label{eq:parity-conditions}
 		\end{equation}
-	\subsubsection{The Invariance of Straigt Lines}
 
+	\subsubsection{The Invariance of Straigt Lines}
+		Free particles must move along straight lines in both frames. This is required
+		by Newton's first law, the principle of inertia. In space time coodinates, we denote
+		$x^\mu = (x,t)$\footnote{This is tensor notation, where $\mu$ identifies the component.
+		In this 1+1 dimensional case, $x^1=x$ and $x^0 = t$. However, in general, $x^\mu=\bmqty{t,x,y,z}^\top$}
+		and $x'^\mu = (x',t')$. Straight line motion in $S$ is therefore characterized by:
+		\begin{equation}
+			\dv[2]{x^\mu}{\tau} = 0 
+		\end{equation}
+		Where $\tau$ is some affine parameter\footnote{Affine parameter is an arbitrary parameter for which
+		the geodesic equation is said to hold and takes the form of uniform motion wtihout introducing artificial
+		acceleration through the choice of parameter. i.e, affine parameters allow 
+		reparametrization to be linear transformations. I don't understand it either, go figure. In this case, $\tau$ is called
+		the \textit{proper time}}.
+
+		The principle of inertia demands that straight lines map to straight lines.
+		\begin{equation}
+			\dv[2]{\overline x^\mu}{\tau} = 0 \implies \dv[2]{x'^\mu}{\tau} = 0  
+		\end{equation}
+		Using the chain rule, we can more explicity show that the derivative is a product of a jacobian term and a velocity term 
+		\begin{equation}
+			\dv{x'^\mu}{\tau} = \sum_\nu \pdv{\overline{X}^\mu}{x^\nu} \dv{x^\nu}{\tau}
+			\label{eq:chain-rule-first}
+		\end{equation}
+		Here, we impose the Einstein summation convention, where twice repeated indices are implicitly summed. 
+		Explicitly:
+		\begin{equation}
+			\dv{x'^\mu}{\tau} = \pdv{\overline{X}^\mu}{x^0} \dv{x^0}{\tau} + \pdv{\overline{X}^\mu}{x^1} \dv{x^1}{\tau}
+		\end{equation}
+		Henceforth, we write this compactly as:
+		\begin{equation}
+			\dv{x'^\mu}{\tau} = \pdv{\overline{X}^\mu}{x^\nu} \dv{x^\nu}{\tau}
+		\end{equation}
+		with the understanding that $\nu$ is summed over its range. 
+
+		Continuing the derivation, we have
+		\begin{equation}
+			\dv[2]{x'^\mu}{\tau} 
+			= 
+			\dv{}{\tau}\pqty{\pdv{\overline{X}^\mu}{x^\nu}} \dv{x^\nu}{\tau} 
+			+ \pdv{\overline{X}^\mu}{x^\nu} \dv[2]{x^\nu}{\tau}
+			\label{eq:chain-rule-second}
+		\end{equation}
+		The second term vanishes by the straight-line condition in $S$
+		\begin{equation}
+			\cancel{
+			\dv[2]{x'^\mu}{\tau}}
+		= 
+		\dv{}{\tau}\pqty{\pdv{\overline{X}^\mu}{x^\nu}} \dv{x^\nu}{\tau} 
+		+ \cancel{\pdv{\overline{X}^\mu}{x^\nu} \dv[2]{x^\nu}{\tau}}
+		\label{eq:chain-rule-second-term}
+		\end{equation}
+		Therefore, from this result, we demand that the following relation must hold.
+		\begin{equation}
+			0 = \pdv[2]{\overline{X}^\mu}{x^\nu}{x^\sigma} \dv{x^\nu}{\tau} \dv{x^\sigma}{\tau}
+			\label{eq:second-derivative-condition}
+		\end{equation}
+		For arbitrary velocities $\displaystyle\dv{x^\nu}{\tau}$, this requires:
+		\begin{equation}
+			\pdv[2]{\overline{X}^\mu}{x^\nu}{x^\sigma} = 0
+			\label{eq:linearity-condition}
+		\end{equation}
+		Therefore, $\overline{X}^\mu$ must be a linear function of the coordinates. Hence, we can write:
+		\begin{align*}
+			\overline{X}(x,t,v) &= A(v)x + B(v)t + E(v)\\
+			\overline{T}(x,t,v) &= C(v)x + D(v)t + F(v)
+		\end{align*}
+		These are just equations of general straight lines. 
+	\subsubsection{Homogeneity of Spacetime}
+		The next assumption we use is the homogeneity of space time.
+		Spacetime homogeniety implies no preferred origin.
+
+		Any point in both $S$ and $S'$ can be an 
+		origin and spacetime would remain the same, so therefore we can choose the 
+		location of the origin for both. 
+
+		Therefore, we demand that the origin of S gets mapped to the origin of S' at $t=0$.
+		\begin{equation}
+			x = t = 0 \iff x' = t' = 0
+		\end{equation}
+		This is not really essential. However, it makes the derivation simpler and easier, since we can
+		then set the constants $E(v)$ and $F(v)$ to zero. Doing otherwise would make the constant 
+		terms indeterminable, which would increase the difficulty od the problem. However, the general
+		result is the same. With this assumption, we can reduce our transformations to
+		\begin{equation}
+			\begin{aligned}
+				\overline{X}(x,t,v) &= A(v)x + B(v)t \\
+				\overline{T}(x,t,v) &= C(v)x + D(v)t
+			\end{aligned}
+			\label{eq:linear-no-constants}
+		\end{equation}
+		Thus, only four free functions of velocity  remain to be determined: $A(v), B(v), C(v),$ and $D(v)$.
+		Our task, then, is to reduce these four free functions to just one function by exploiting properties
+		that were previosuly shown. 
+
+	\subsubsection{Parity Constraints}
+		Applying the parity conditions from Eq.~(\ref{eq:parity-conditions}) to the linear forms, we have
+		\begin{equation}
+			\begin{aligned}
+				\overline{X}(-x,t,-v) &= -\overline{X}(x,t,v) \\
+				\overline{T}(-x,t,-v) &= \overline{T}(x,t,v)
+			\end{aligned}
+		\end{equation}
+		This yields the following:
+		\begin{equation}
+			\begin{aligned}
+				-A(-v)x + B(-v)t &= -A(v)x - B(v)t \\
+				-C(-v)x + D(-v)t &= C(v)x + D(v)t
+			\end{aligned}
+			\label{eq:parity-linear}
+		\end{equation}
+		For these to hold for all $x$ and $t$, the following must be true
+		\begin{equation}
+			\begin{aligned}
+				A(-v)&=A(v)\\
+				D(-v)&=D(v)\\
+				B(-v)&=-B(v)\\
+				C(-v)&=-C(v)
+			\end{aligned}
+			\label{eq:parity-results}
+		\end{equation}
+		Thus, $A(v)$, $D(v)$ are even functions of $v$, and $B(v)$, $C(v)$ are odd functions of $v$
+	\subsubsection{Inverse transformation and composition constraints}
+		The inverse transformation from $S'$ to $S$ is
+		\begin{equation}
+		    \bmqty{
+		    	x\\t
+		    }
+			=
+			\bmqty{
+				A(-v) & B(-v)\\
+				C(-v) & D(-v)
+			}
+			\bmqty{
+				x'\\t'
+			}
+		\end{equation}
+		Explicitly,
+		\begin{equation}
+			\begin{aligned}
+				x &= A(-v)x'+B(-v)t' \\
+				t &= C(-v)x'+D(-v)t'
+			\end{aligned}
+			\label{eq:inverse-transform}
+		\end{equation}
+		Using the parity relations (\ref{eq:parity-results}),
+		\begin{align*}
+			x &= A(v)x'-B(v)t' \\
+			t &= -C(v)x'+D(v)t'
+		\end{align*}
+		Substituting
+		\begin{align*}
+			x' &= A(v)x+B(v)t \\
+			t' &= C(v)x+D(v)t
+		\end{align*}
+		to (\ref{eq:inverse-transform}), we obtain
+		\begin{align*}
+			x &= \phantom{-}A(Ax+Bt)-B(Cx+Dt) \\
+			t &= -C(Ax+Bt)+D(Cx+Dt)
+		\end{align*}
+		Collecting coefficients we have,
+		\begin{align*}
+			x &= (A^2-BC)x + B(A-D)t \\
+			t &= C(D-A)x + (D^2-BC)t
+		\end{align*}
+		Since $x$ and $t$ are arbitrary, the coefficients must satisfy
+		\begin{equation}
+		    \begin{aligned}
+				A^2-BC&=1 \\
+				B(A-D)&=0 \\
+				C(D-A)&=0 \\
+				D^2-BC&=1
+		    \end{aligned}
+			\label{eq:coefficient-conditions}
+		\end{equation}
+		So far, nothing specifically relativistic has appeared, there's no magic yet.
+		We just used natural assumptions that come from geometry, and principle of relativity. 
+	\subsubsection{Two possibilities}
+		The conditions
+		\begin{align}
+			B(A-D)&=0\\
+			C(D-A)&=0
+		\end{align}
+		give us two cases.
+
+		\paragraph{Case 1:} $A\neq D$
+
+			If $A\neq D$, then, we are forced to conclude
+			\begin{equation}
+				B = C = 0
+			\end{equation}
+			The remaining equations give
+			\begin{equation}
+				A^2 = D^2 = 1
+			\end{equation}
+			Therefore,
+			\begin{align*}
+				A = \pm 1\\
+				D = \mp 1
+			\end{align*}
+
+			Thus, the transformation becomes
+			\begin{align*}
+				x' &= \pm x\\
+				t' &= \mp t
+			\end{align*}
+			This is a trivial transformation, corresponding to an identity/reflection type transformation
+			rather than a continuosly varying boost between each reference frame. This is obvious. Of course, when you
+			flip a frame, all the assumptions and constraints still hold. This is uninteresting.
+
+			They are therefore not the nontrivial transformation we seek.
+		\paragraph{Case 2:} $A=D$
+
+			This is the nontrivial condition. The physically interesting case is therefore
+			\begin{equation}
+			A(v)=D(v).
+			\end{equation}
+			The condition
+			\begin{equation}
+				A^2-BC=1
+			\end{equation}
+			then gives
+			\begin{equation}
+				BC=A^2-1.
+			\end{equation}
+			provided that $B\neq 0$
+			Thus:
+			\begin{equation}
+				C = \frac{A(v)^2-1}{B(v)}.
+			\end{equation}
+			We have reduced the four unknown free functions to two, since $A=D$, and once you know $A$ and $B$, you know C.
+	\subsubsection{The motion of the origin of $S'$}
+		Consider the motion of $S'$ through $S$.
+		The spatial origin of (S') is defined by
+		\begin{equation}
+			x'=0
+		\end{equation}
+
+		Since $S'$ moves at velocity $v$ relative to $S$, its origin follows the trajectory
+		\begin{equation}
+			x=vt
+		\end{equation}
+		But every event on this worldline must satisfy $x'=0$.
+		Again, that is for the spatial origin. That means that entire \textit{world} line needs to be mapped to $x' = 0$.
+		
+		Using 
+		\begin{equation}
+		    x' = Ax+ Bt
+		\end{equation}
+		we therefore have
+		\begin{align*}
+			0 
+			&= A(vt) + Bt\\
+			&= (Av + B)t
+		\end{align*}
+		Since this must hold for an arbitrary $t$, then
+		\begin{equation}
+		    B(v) = -v A(v)
+		\end{equation}
+		Now we only have one free function, $A(v)$.
+
+		Consequently, we have
+		\begin{equation}
+		    C = \frac{A^2(v)-1}{vA(v)} 
+		\end{equation}
+		Thus, we have reduced the transformation to the following
+		\begin{equation}
+			\bmqty{
+				x'\\t'
+			} =
+			\bmqty{
+				A & -vA \\[4pt]
+				- \dfrac{(A^2-1)}{vA} & A
+			}
+			\bmqty{x\\t}
+		\end{equation}
+
+		Now we only need to know $A$, except we dont know what properties of $A$ is.
+		The only thing we can say for now is that matrix needs to reduce to the identiy matrix when $v = 0$
+
+		Thus we impose
+		\[
+			A(v)\to 1,\quad v\to 0. 
+		\]
+
+		Since the 1,0 term is a fraction with $v$ in the denominator, it must vanish sufficiently fast.
+		therefore, $A^2 - 1 \approx \order{v^2}$
+	\subsubsection{Introduction of a third observer}
+		Consider a third inertial frame $S''$.
+
+		Suppose $S''$ moves with constant velocity $u$ relative to $S'$, while $S'$ moves with
+		constant velocity $v$ relative to $S$.
+
+		It's the same framework, then. The transformation from $S'$ to $S''$ takes a similar form
+		as from $S$ to $S'$. Let 
+		\begin{equation}
+		    M(v) = 
+			\bmqty{
+				A(v) & -vA(v) \\[4pt]
+				- \dfrac{(A(v)^2-1)}{vA(v)} & A(v)
+			}
+		\end{equation}
+		We can therefore denote the transformation from the $S$ frame to the $S'$ frame to be
+		\begin{equation}
+		    x'^\mu = M(v) x^\mu
+		\end{equation}
+		Since the transformation is the same, then the transformation from $S'$ to $S''$ is
+		\begin{equation}
+		    x''^\mu = M(u) x'^\mu
+		\end{equation}
+		Suppose that $S''$ is moving at a speed $w$ relative to $S$. Then
+		\begin{equation}
+		    x''^\mu = M(w) x^\mu
+		\end{equation}
+		However, we demand the closure of transformations under composition. i.e, the form of the transformation is the 
+		same, just with a different argument.
+		Then, the transformation from $S$ to $S''$ is obtained by composing the two transformations from the intermediate reference
+		frame.
+		\begin{equation}
+		    x''^\mu = M(u)M(v) x^\mu
+		\end{equation}
+		That is, the form of the transformation from $S$ to $S''$ is the same form as the transformations
+		from the other frames of reference.
+		\begin{equation}
+			M(w) = M(u)M(v)
+		\end{equation}
+		The crucial requirement is that the composition of two allowed transformations must itself be an allowed transformation.
+	\subsubsection{The Emergence of an Invariant Speed}
+		We evaluate the composition by doing matrix multiplication.
+		\begin{equation*}
+		    M(w) = 
+			\bmqty{
+				A(u) & -uA(u) \\[4pt]
+				- \dfrac{(A(u)^2-1)}{uA(u)} 
+					 & A(u)
+			}
+			\bmqty{
+				A(v) & -vA(v) \\[4pt]
+				- \dfrac{(A(v)^2-1)}{vA(v)} 
+					 & A(v)
+			}
+		\end{equation*}
+		Therefore, we have
+		{\scriptsize
+			\begin{equation*}
+			M(w) =
+			\begin{bmatrix}
+				A(u)A(v) + \dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} & 
+				-(u+v)A(u)A(v) \\[14pt]
+				-\dfrac{\bigl(A(u)^2-1\bigr)A(v)}{uA(u)} - \dfrac{A(u)\bigl(A(v)^2-1\bigr)}{vA(v)} & 
+				A(u)A(v) + \dfrac{vA(v)\bigl(A(u)^2-1\bigr)}{uA(u)}
+			\end{bmatrix}
+			\end{equation*}
+		}
+		By the nature of $M$, we see that the diagonal elements of the transformation matrix
+		are equal, $M_{00}=M_{11}$. Therefore, we require the 
+		equality of the elements. We equate:
+		\begin{equation}
+			A(u)A(v) + \dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} 
+			=
+			A(u)A(v) + \dfrac{vA(v)\bigl(A(u)^2-1\bigr)}{uA(u)}
+		\end{equation}
+		Simplifying, we find that
+
+		\begin{equation*}
+			\cancel{A(u)A(v)} + \dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} 
+			=
+			\cancel{A(u)A(v)} + \dfrac{vA(v)\bigl(A(u)^2-1\bigr)}{uA(u)}
+		\end{equation*}
+		\begin{equation}
+			\dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} 
+			=
+			\dfrac{vA(v)\bigl(A(u)^2-1\bigr)}{uA(u)}
+		\end{equation}
+		\begin{equation}
+			\dfrac{\bigl(A(v)^2-1\bigr)}{v^2A^2(v)} 
+			=
+			\dfrac{\bigl(A(u)^2-1\bigr)}{u^2A^2(u)}
+		\end{equation}
+		The left hand side only depends on $u$, and the right hand side only depends on $v$.
+		Since $u$ and $v$ are arbitrary, both sides must equal a universal constant.
+
+		Let that constant be $k$:
+		\begin{equation}
+		    \frac{A^2(v) -1}{v^2A^2(v)} = k
+		\end{equation}
+		Rearranging, we have
+		\begin{align*}
+			A^2(v) - 1 & = kv^2A^2(v)\\
+			A^2(v)(1-kv^2) & = 1
+		\end{align*}
+		Therefore,
+		\begin{equation}
+			A = \frac{1}{\sqrt{1 - kv^2}} 
+		\end{equation}
+		where we choose the positive branch because the transformation must 
+		continuously approach the identity as $v\to 0$, thus reducing to the Galilean limit.
+		\begin{equation}
+		    A(0) = 1
+		\end{equation}
+		Note the units of $k$. For $A$ to be dimensionless, it has to have units which are $[L^{-2}][T^2]$, i.e, the inverse 
+		of the units of the square of velocity.
+
+		Now, notice that $M_{10}$ reduces to
+		\begin{equation}
+		    \frac{A^2 - 1}{vA} = kvA 
+		\end{equation}
+		
+		Thus the transformation becomes
+		\begin{equation}
+			\bmqty{
+				x'\\t'
+			}=
+		    A 
+			\bmqty{
+				1 & -v \\
+				-kv & 1
+			}
+			\bmqty{
+				x\\t
+			}
+		\end{equation}
+
+		Equivalently,
+		\begin{align}
+			x'
+			&=
+			\frac{x-vt}{\sqrt{1-kv^2}}
+			\\[4pt]
+			t'
+			&=
+			\frac{t-kvx}{\sqrt{1-kv^2}}
+		\end{align}
+
+		This is already the Lorentz transformation in generalized form.
+
+		From this, we can derive that
+		\begin{equation}
+			w = \frac{u+v}{1 + kuv} 
+		\end{equation}
+		This is the familiar relativistic velocity addition formula. 
+
+		Writing $k$ always in terms of $1/k^2$ is a bit cumbersome, especially when writing longer proofs.
+		We hereby assign a new symbol for the speed.
+		Let $\kappa = \frac{1}{\sqrt{k}}$.
+
+		Suppose we set $u = \kappa$. Then, we find
+		\begin{equation}
+		    w = \frac{\kappa + v}{1+kv\kappa} 
+		\end{equation}
+		Since $k\kappa = \dfrac{1}{\kappa}$, we then obtain
+		\begin{align*}
+			w &= \frac{\kappa + v}{1 + \frac{v}{\kappa}} \\
+			  &= \frac{\kappa + v}{(\kappa + v)/\kappa} \\
+			  &= \kappa
+		\end{align*}
+		thus:
+		\begin{equation}
+		    u = \kappa \implies w = \kappa
+		\end{equation}
+		The speed $\kappa$ is therefore invariant under the velocity-composition law. 
+
+		This is the crucial result from all that derivation.
+		The principle of relativity does not tell us what the invariant speed is. It 
+		tells us that:
+		\begin{theorem}{Universal invariant speed}
+			\hspace{2em}For the Lorentzian branch of the kinematics, there must exist a 
+			universal invariant speed $\kappa$.
+		\end{theorem}
+		
+	\subsubsection{The Relevance of Light}
+		Where did light enter the discussion? It has not entered the argument at all. We only 
+		began with the following fundamental principles
+		\begin{enumerate}
+		    \item principle of relativity
+			\item homogeneity of space
+			\item homogeneity of time
+			\item isotropy of space
+			\item principle of inertia
+			\item closure of transformations under compositions
+		\end{enumerate}
+		and these assumptions led us to find the transformation equations. Nowhere did 
+		Maxwell or electromagnetics come into the picture.
+
+		We did not need light at all. In this sense, the theory of relativity is derived
+		and works on pure mathematical logic alone. All of physics bows down to this principle.
+
+		The empirical question that can then be raised is: Which value $k$ describes our universe?
+
+		Experiment tells us that the invarient speed is the speed of light in a vacuum.
+		\begin{equation}
+		    \kappa = c
+		\end{equation}
+		so that
+		\begin{equation}
+		    k = \frac{1}{c^2} 
+		\end{equation}
+		It did not need to be light. If we were more sensitive to gravitational waves,
+		we would have called it thus. However, we are a species who evolved to sense light
+		better, and it was this that lead us to stumble upon relativity. But there is in 
+		fact no need at all for it. A a blind society, insensitive to light, just with principles and logic, can
+		establish relativity. Thus, electromagnetism does not need to be used to \textit{derive} the Lorentz
+		transformation. Instead, electromagnetism provides us an empirical way of identifying
+		the invarient speed. 
+		
+		In this sense, light acts as a calibrator of the kinematics rather than as the logical 
+		foundation of the transformation.
+		
+	\subsubsection{The Galilean Limit}
+		There is another possibility.
+
+		If we set $\kappa\to 0$, then $\kappa\to\infty$ and $A\to1$,
+		the transformation thus becomes
+		\[
+		    \bmqty{
+		    	x'\\t'
+		    } =
+			\bmqty{
+				1 & -v \\
+				0 & 1
+			} \bmqty{
+				x\\t	
+			} 
+		\]
+		These are precisely the Galilean transformations. The corresponding 
+		velocity addition law is then
+		\[
+			w = u + v
+		\]
+		In this case, the invariant speed is effectively infinite. Thus, Galilean relativity can 
+		be viwed as the $\kappa \to \infty$ limit of the generalized transformation.
+	\subsubsection{Lorentzian, Galilean, and Carrollian kinematics}
+		The parameter $k$ therefore distinguishes different possible kinematic structures.
+
+		For $k>0$, there is a finite invariant speed
+		\[
+			\kappa = \frac{1}{\sqrt{k}} 
+		\]
+		giving us Lorentzian relativity.
+
+		For $k=0$, the invariant speed becomes infinite, giving Galilean relativity.
+		The main reason that Galilean relativity took hold for so long is for quite some 
+		time in the enlightenment, people thought that the speed of light is infinite, 
+		and so that is the logical conclusion.
+
+		While inaccurate at relativistic scales, Galilean relativity, and by extension 
+		Newtonian physics, remains central to physics education because, for systems 
+		involving velocities $v\ll c$ and ordinary spatial and temporal scales, it provides
+		an excellent approximation to relativistic physics. In this regime, the corrections
+		predicted by special relativity are negligible, making the Galilean description both 
+		sufficiently accurate and considerably simpler as a description of reality.
+
+		There is also a limiting case in which the invariant speed tends to zero. As $k\to\infty$,
+		\begin{equation}
+		    \kappa \to 0
+		\end{equation}
+		This is associated with the Carrolian limit of relativity.
+		In this regime, the causal structure becomes increasingly restrictive: events 
+		at distinct spatial locations cannot influence one another within any finite
+		time interval, and the notion of spatial propagation effectively disappears. 
+		The resulting Carrollian kinematics therefore describes a theory in which particles 
+		may evolve in time while remaining effectively frozen in space, providing the 
+		opposite extreme to the Galilean limit of instantaneous p``ropagation.
+
+		These three structures can therefore be understood schematically as:
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in,height=2in]{images/cones_types_of_relativity.pdf}
+			\caption{Lightcones in different types of relativity}
+			\label{fig:cones-types-of-relativity}
+		\end{figure}
+
+		The light cone structure which posits finite travel of information belongs to 
+		the finite Lorentzian case. The causal cone has a finite opening angle because 
+		there is a finite maximum invariant speed. In the Galilean limit, the cone opens 
+		out to incompase instantaneous propagation of information, no matter the distance
+		of the interaction. In the Carollian limit, the cone collapses, corresponding to
+		the extreme opposite situation where spatial propagation, and travel of information,
+		is suppressed, and a body can only travel forwards in time, and no other.
+
+	\subsubsection{Conclusion}
+		This, and this is a point that I will not get tired telling you\footnote{Actual verbatim quote from sir}
+		proves the point that the derivation of the Lorentz transformation does not logically require 
+		the existence of light. The transformation
+		\[
+			\bmqty{
+		    	x'\\t'
+		    } =
+			\gamma
+			\bmqty{
+				1 & -v \\
+				-\beta & 1
+			} \bmqty{
+				x\\t	
+			} 
+		\]
+		can be obtained from the structure of inertial frames and the relativity principle alone, 
+		with the constant $c$ initially appearing simply as an arbitrary invariant speed. Experiment
+		then tells us that this invariant speed is 
+		\begin{equation}
+			c = \SI{299792458}{m/s}
+		\end{equation}
+		and that electromagnetic wave propagation also happens to have an invariant speed, and that speed turned out
+		to be $c$ as well, for electromagnetic radiation travel precisely this speed in a vacuum.
+
+		The logical relationship can be summarized as 
+		\[
+			\text{Relativity}\implies\text{possible invariant speed } \kappa
+		\]
+		while experiment estabishes
+		\[
+			\kappa = c
+		\]
+		Electromagnetism therefore provides an empirical realization of the invariant speed; 
+		it is not necessary as a premise in the kinematic derivation itself.
+
+		The deeper lesson is that the Lorentz transformations and relativity itself is fundamentally a statement about 
+		the symmetry of spacetime, not specifically about light.
+		
+		

@@ -1,44 +1,58 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{Course Information}{2}{Doc-Start}%
-\contentsline {paragraph}{Description: }{2}{section*.1}%
-\contentsline {paragraph}{Problem Sets}{2}{section*.2}%
-\contentsline {paragraph}{Written Exam}{2}{section*.3}%
-\contentsline {paragraph}{Oral Exam}{2}{section*.4}%
-\contentsline {section}{Main References}{3}{section*.4}%
-\contentsline {section}{Reminders}{5}{section*.4}%
-\contentsline {section}{Contents}{6}{section*.4}%
-\contentsline {section}{Chapter 1: Review of Newtonian Physics}{9}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Introduction}{9}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Newton's Law of Gravitation}{10}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Newton's Equations of Motion}{13}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Weak Equivalence Principle}{15}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}A Theory of Gravity}{17}{subsubsection.1.1.4}%
-\contentsline {paragraph}{DISTINCTION: }{18}{section*.5}%
-\contentsline {subsection}{\numberline {1.2}Einstein's Equivalence Principle}{20}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Inertial Frames}{20}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Universality of Free Fall}{20}{subsubsection.1.2.2}%
-\contentsline {paragraph}{Weak, Strong, and Einstein Equivalence Principles}{23}{section*.6}%
-\contentsline {subsection}{\numberline {1.3}History of Relativity}{24}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Relativity before Einstein}{24}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Maxwell's Results}{25}{subsubsection.1.3.2}%
-\contentsline {paragraph}{Ad Hoc Solutions to the Aether Problem.}{26}{section*.7}%
-\contentsline {subsubsection}{\numberline {1.3.3}Einstein's Contribution}{26}{subsubsection.1.3.3}%
-\contentsline {paragraph}{Lorentz Transformations and Covariance}{27}{section*.8}%
-\contentsline {paragraph}{How About Gravity?}{28}{section*.9}%
-\contentsline {paragraph}{Minkowski Spacetime}{29}{section*.10}%
-\contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{29}{subsubsection.1.3.4}%
-\contentsline {paragraph}{Machian and Relational Ideas}{30}{section*.11}%
-\contentsline {paragraph}{Relativity is more general than Light}{30}{section*.12}%
-\contentsline {paragraph}{The Role of $c$}{31}{section*.13}%
-\contentsline {section}{Chapter 2: Special Relativity}{33}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Relativity without Light}{33}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}The Transformation Problem}{33}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Principle of relativity}{34}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Isotropy of Space}{35}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}The Invariance of Straigt Lines}{35}{subsubsection.2.1.4}%
-\contentsline {section}{Chapter 3: Aspects of Differential\\ Geometry}{36}{section.3}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{37}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{38}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{39}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{40}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{41}{section.8}%
+\contentsline {section}{Preface}{2}{Doc-Start}%
+\contentsline {section}{Course Information}{4}{Doc-Start}%
+\contentsline {paragraph}{Description: }{4}{section*.1}%
+\contentsline {paragraph}{Problem Sets}{4}{section*.2}%
+\contentsline {paragraph}{Written Exam}{4}{section*.3}%
+\contentsline {paragraph}{Oral Exam}{4}{section*.4}%
+\contentsline {section}{Main References}{5}{section*.4}%
+\contentsline {section}{Reminders}{7}{section*.4}%
+\contentsline {section}{Contents}{8}{section*.4}%
+\contentsline {section}{Chapter 1: Review of Newtonian Physics}{11}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{11}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Newton's Law of Gravitation}{12}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Newton's Equations of Motion}{15}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Weak Equivalence Principle}{17}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}A Theory of Gravity}{19}{subsubsection.1.1.4}%
+\contentsline {paragraph}{DISTINCTION: }{20}{section*.5}%
+\contentsline {subsection}{\numberline {1.2}Einstein's Equivalence Principle}{22}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Inertial Frames}{22}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Universality of Free Fall}{22}{subsubsection.1.2.2}%
+\contentsline {paragraph}{Weak, Strong, and Einstein Equivalence Principles}{25}{section*.6}%
+\contentsline {subsection}{\numberline {1.3}History of Relativity}{26}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Relativity before Einstein}{26}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Maxwell's Results}{27}{subsubsection.1.3.2}%
+\contentsline {paragraph}{Ad Hoc Solutions to the Aether Problem.}{28}{section*.7}%
+\contentsline {subsubsection}{\numberline {1.3.3}Einstein's Contribution}{28}{subsubsection.1.3.3}%
+\contentsline {paragraph}{Lorentz Transformations and Covariance}{29}{section*.8}%
+\contentsline {paragraph}{How About Gravity?}{30}{section*.9}%
+\contentsline {paragraph}{Minkowski Spacetime}{31}{section*.10}%
+\contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{31}{subsubsection.1.3.4}%
+\contentsline {paragraph}{Machian and Relational Ideas}{32}{section*.11}%
+\contentsline {paragraph}{Relativity is more general than Light}{32}{section*.12}%
+\contentsline {paragraph}{The Role of $c$}{33}{section*.13}%
+\contentsline {section}{Chapter 2: Special Relativity}{35}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Relativity without Light}{35}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}The Transformation Problem}{35}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Principle of relativity}{37}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Isotropy of Space}{37}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}The Invariance of Straigt Lines}{38}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Homogeneity of Spacetime}{40}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Parity Constraints}{40}{subsubsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}Inverse transformation and composition constraints}{41}{subsubsection.2.1.7}%
+\contentsline {subsubsection}{\numberline {2.1.8}Two possibilities}{42}{subsubsection.2.1.8}%
+\contentsline {paragraph}{Case 1:}{42}{section*.14}%
+\contentsline {paragraph}{Case 2:}{43}{section*.15}%
+\contentsline {subsubsection}{\numberline {2.1.9}The motion of the origin of $S'$}{43}{subsubsection.2.1.9}%
+\contentsline {subsubsection}{\numberline {2.1.10}Introduction of a third observer}{44}{subsubsection.2.1.10}%
+\contentsline {subsubsection}{\numberline {2.1.11}The Emergence of an Invariant Speed}{45}{subsubsection.2.1.11}%
+\contentsline {subsubsection}{\numberline {2.1.12}The Relevance of Light}{48}{subsubsection.2.1.12}%
+\contentsline {subsubsection}{\numberline {2.1.13}The Galilean Limit}{49}{subsubsection.2.1.13}%
+\contentsline {subsubsection}{\numberline {2.1.14}Lorentzian, Galilean, and Carrollian kinematics}{49}{subsubsection.2.1.14}%
+\contentsline {subsubsection}{\numberline {2.1.15}Conclusion}{51}{subsubsection.2.1.15}%
+\contentsline {section}{Chapter 3: Aspects of Differential\\ Geometry}{52}{section.3}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{53}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{54}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{55}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{56}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{57}{section.8}%

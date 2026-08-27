@@ -41,8 +41,8 @@
 \contentsline {subsubsection}{\numberline {2.1.6}Parity Constraints}{39}{subsubsection.2.1.6}%
 \contentsline {subsubsection}{\numberline {2.1.7}Inverse transformation and composition constraints}{40}{subsubsection.2.1.7}%
 \contentsline {subsubsection}{\numberline {2.1.8}Two possibilities}{41}{subsubsection.2.1.8}%
-\contentsline {paragraph}{Case 1:}{41}{section*.14}%
-\contentsline {paragraph}{Case 2:}{42}{section*.15}%
+\contentsline {paragraph}{Case 1:}{41}{section*.15}%
+\contentsline {paragraph}{Case 2:}{42}{section*.16}%
 \contentsline {subsubsection}{\numberline {2.1.9}The motion of the origin of $S'$}{42}{subsubsection.2.1.9}%
 \contentsline {subsubsection}{\numberline {2.1.10}Introduction of a third observer}{43}{subsubsection.2.1.10}%
 \contentsline {subsubsection}{\numberline {2.1.11}The Emergence of an Invariant Speed}{44}{subsubsection.2.1.11}%

@@ -376,11 +376,14 @@
 		\paragraph{Weak, Strong, and Einstein Equivalence Principles}
 
 			We have the weak equivalence principle, where the ``laws of nature'' are understood primarily as the laws of mechanics and the universality of free fall.
-
 			For the strong equivalence principle, one extends the statement to gravitationally self-interacting or strongly gravitating systems, so that the equivalence applies more broadly than to test particles alone.
 
 			The Einstein equivalence principle goes further: ``laws of nature'' genuinely means all laws of nature. It is one of the conceptual foundations of general relativity.
-
+			\begin{theorem}{The Principle of Relativity}
+				\label{thm:principle_of_relativity}
+			    The laws of nature take the same form in all inertial observers.
+			\end{theorem}
+			
 			In any theory of gravity, one can attempt to remove $g$ locally by an appropriate choice of coordinates. What makes general relativity special is the geometric interpretation of what remains after the local gravitational acceleration has been removed.
 
 			It means that gravity is genuinely fictitious locally if no experiment confined to that sufficiently small region can tell that we are in a gravitational field. If one can remove gravity, then what remains should be the stage itself: the underlying spacetime structure and its geometry.
@@ -486,36 +489,35 @@
 
 	\paragraph{Lorentz Transformations and Covariance}
 
-		Maxwell's theory is relativistic. It is relativistically covariant: under the appropriate relativistic transformations, its mathematical form does not change.
+		Maxwell's theory is relativistic, meaning that is relativistically covariant: under the appropriate relativistic transformations, its mathematical form does not change.
+		This covariance is not apparent in the separate electric and magnetic fields, which transform into one another between inertial frames. Relativity instead unifies them as aspects of a single electromagnetic field.
 
 		The task is therefore to find the correct transformation laws that keep Maxwell's equations invariant.
+		These transformations will replace the Galilean transformation laws and reveal the kinematic structure required by electromagnetism.
 
-		The Poincar\'e-Lorentz transformations provide the appropriate transformations:
-
-		\begin{align}
-			ct' &= \gamma(ct-\beta x) \\
-			x'  &= \gamma(x - \beta ct) \\
-			\gamma &= \frac{1}{\sqrt{1-\beta^2}} \\
-			\beta &= \frac{v}{c}.
-		\end{align}
+		It is then found that the Poincar\'e-Lorentz transformations, initially formulated to explain the null result of Michelson-Morley and to save the aether hypothesis, provide the appropriate transformations:
+		\begin{theorem}{Lorentz Transformations}
+			Transformations of coordinates that allow $c$ to be invariant across all inertial observers.
+			\begin{align}
+				ct' &= \gamma(ct-\beta x) \\
+				x'  &= \gamma(x - \beta ct) \\
+				\gamma &= \frac{1}{\sqrt{1-\beta^2}} \\
+				\beta &= \frac{v}{c}.
+			\end{align}
+		\end{theorem}
 
 		The project, according to Einstein, is to rewrite all of physics so that it is in ``relativistically covariant'' form: the equations 
 		should be invariant in form from one inertial observer to another\footnote{This isn't too difficult back in 1905, since the only fundamental theories of physics at the time were Newton's and Maxwells.}.
 
 		The form of these transformations is
-
 		\begin{equation}
 			x^{\mu'} = \tensor{\Lambda}{^\mu_\nu} x^\nu.
 		\end{equation}
-
-		Where
-
+		where
 		\begin{equation}
 			x^\mu = (ct, x^1, x^2, x^3)
 		\end{equation}
-
 		and
-
 		\begin{equation}
 			\tensor{\Lambda}{^\mu_\nu} =
 			\bmqty{
@@ -527,12 +529,10 @@
 		\end{equation}
 
 		Now, the force equation becomes
-
 		\begin{equation}
 			\dv{\vb{p}}{t} = \vb{F}\implies \dv{p^\mu}{\tau} = F^\mu.
 		\end{equation}
-
-		The second equation reduces to the first in the appropriate nonrelativistic, low-velocity limit.
+		The second equation (the four momentum and the four force) reduces to the first equation (the Newtonian vector form),  in the appropriate nonrelativistic, low-velocity limit.
 
 	\paragraph{How About Gravity?}
 

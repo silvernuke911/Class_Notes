@@ -1,7 +1,7 @@
-PWD C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout
+PWD C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4
 INPUT C:\Users\verci\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT main.tex
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.log
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.log
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -232,7 +232,7 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings.code.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.pdf
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.pdf
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbposter.code.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\lmodern.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\lmodern.sty
@@ -501,10 +501,10 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.aux
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.aux
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.aux
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.aux
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.aux
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.aux
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.aux
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.aux
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -516,13 +516,13 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
 INPUT .\title.tex
 INPUT .\title.tex
 INPUT .\title.tex
@@ -538,19 +538,86 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rmsc.en
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr17.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmex10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.bbl
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.bbl
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.bbl
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.bbl
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.bbl
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.bbl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.aux
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
-INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.aux
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\build\main.out
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb

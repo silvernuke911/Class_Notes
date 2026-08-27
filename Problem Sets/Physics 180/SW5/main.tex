@@ -1,0 +1,71 @@
+\documentclass[9pt]{extarticle}
+\usepackage[a6paper, margin=0.5cm]{geometry}
+\input{preset}
+\thispagestyle{empty}
+\begin{document}
+	\noindent Vercil Juan \hfill August 27, 2026
+
+	\noindent \textsc{Physics 180} THV-1\hfill \textbf{Seatwork 5}
+	\vspace{1em}
+	\hrule\vspace{5pt}
+		Show that the probability per unit time $\lambda$ given by\footnote{$\omega(a)$ depends on $Z$}
+		\begin{equation}
+			\lambda = \omega(\alpha) \frac{v}{2R}e^{-G} 
+		\end{equation}
+		indeed leads to the Geiger-Nuttall relation $\log_{10}t_{1/2}=\alpha + bZE_{\alpha}^{-1/2}$,
+		where the constant $\alpha$ depends on $Z$ but $b$ does not.
+		\vspace{5pt}
+	\hrule
+		\vspace{5pt}
+	% Some relevant results and identites:
+	% \[
+	% 	G\propto\frac{Z}{\beta}\propto \frac{Z}{\sqrt{E_\alpha}} 
+	% \]
+	% \[
+	% 	t_{1/2} = \frac{1}{\lambda}\ln 2 = \frac{0.693}{\lambda}  
+	% \]
+	% \[
+	% 	\ln x = \ln 10 \cdot \log_{10} x
+	% \]
+	\begin{proof}
+
+		Starting from
+		\[
+			\lambda=\omega(\alpha)\frac{v}{2R}e^{-G},
+			\qquad
+			t_{1/2}=\frac{\ln2}{\lambda},
+		\]
+		we have
+		\[
+			\ln t_{1/2}
+			=
+			\ln\left(\frac{2R\ln2}{\omega(\alpha)v}\right)+G.
+		\]
+		Since $G\propto ZE_{\alpha}^{1/2}$, then
+		\[
+			G=\kappa\frac{Z}{\sqrt{E_\alpha}},
+		\]
+		where $\kappa$ is some constant. Therefore
+		\[
+			\log_{10}t_{1/2}
+			=
+			\log_{10}\left(\frac{2R\ln2}{\omega(\alpha)v}\right)
+			+\frac{\kappa}{\ln10}\frac{Z}{\sqrt{E_\alpha}}.
+		\]
+		Defining
+		\[
+		\alpha=\log_{10}\left(\frac{2R\ln2}{\omega(\alpha)v}\right),
+		\qquad
+			b=\frac{\kappa}{\ln10},
+		\]
+		gives
+		\begin{equation}
+			\boxed{
+				\log_{10}t_{1/2}
+				=
+				\alpha+bZE_\alpha^{-1/2}
+			}
+		\end{equation}
+		Since \(\omega(\alpha)=\omega(\alpha,Z)\), \(\alpha=\alpha(Z)\), while \(b\) is independent of \(Z\).
+	\end{proof}
+\end{document}

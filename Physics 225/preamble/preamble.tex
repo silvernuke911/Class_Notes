@@ -127,14 +127,31 @@
     },
     #1
 }
+%%% LIST OF THEOREMS
+\makeatletter
+
+\newcommand{\listtheoremname}{List of Theorems}
+
+\newcommand{\listoftheorems}{%
+    \section*{\listtheoremname}%
+    \addcontentsline{toc}{section}{\listtheoremname}%
+    \@starttoc{lot}%
+}
+
+\newcommand{\l@theorem}{\@dottedtocline{1}{1.5em}{3.0em}}
+
+\makeatother
 
 %%% THEOREM ENVIRONMENT
 % Theorem counter linked to section
 \newcounter{theorem}[section]
 \renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+
 \definecolor{darkred}{RGB}{139, 0, 0} 
+
 \newenvironment{theorem}[2][]{%
     \refstepcounter{theorem}%
+    \addcontentsline{lot}{theorem}{\protect\numberline{\thetheorem}#2}%
     \begin{tcolorbox}[
         colback=white,
         colframe=darkred,

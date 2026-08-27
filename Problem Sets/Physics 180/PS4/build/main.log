@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  16 AUG 2026 02:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  28 AUG 2026 03:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1643,90 +1643,6 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 \c@definition=\count441
 \c@example=\count442
 \c@theorem=\count443
-
-! LaTeX Error: Command \c@definition already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 \newcounter{definition}
-                             [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@example already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 \newcounter{example}
-                          [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \definition already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \example already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@theorem already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 \newcounter{theorem}
-                          [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \theorem already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1737,8 +1653,8 @@ LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\
-build\main.aux)
+(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
+ld\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1805,10 +1721,10 @@ Package chemgreek Info: Activating mapping `default' on line 5.
 
 Package hyperref Info: Link coloring ON on input line 5.
 
-(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\
-build\main.out)
-(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\
-build\main.out)
+(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
+ld\main.out)
+(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
+ld\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -1854,36 +1770,78 @@ LaTeX Info: Redefining \curl on input line 5.
 LaTeX Info: Redefining \laplacian on input line 5.
 LaTeX Info: Redefining \Re on input line 5.
 LaTeX Info: Redefining \Im on input line 5.
-(title.tex
-! You can't use `macro parameter character #' in horizontal mode.
-<argument>  Subject \\[5pt] Problem Set ##
-                                           
-l.16 		}
-        }
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-[1
+(title.tex [1
 
 {C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/verc
 i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}{C:/Users/verci/
 AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}])
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+8.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+18.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+18.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+8.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
+.
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 	\end{solution_pset}
-                          [1]
-(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\
-build\main.bbl
+l.33 	\end{solution_pset}
+                          [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts
+/enc/dvips/lm/lm-mathit.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+[2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
+c}]
+(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
+ld\main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [2]
-(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\problem_set_layout\
-build\main.aux)
+) [3]
+(C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
+ld\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1892,22 +1850,27 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 67825 strings out of 474542
- 1711513 string characters out of 5744446
- 2645441 words of memory out of 5000000
- 89183 multiletter control sequences out of 15000+600000
- 587486 words of font info for 47 fonts, out of 8000000 for 9000
+ 67969 strings out of 474542
+ 1714325 string characters out of 5744446
+ 2650188 words of memory out of 5000000
+ 89274 multiletter control sequences out of 15000+600000
+ 616739 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,5n,110p,779b,993s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb
->
-Output written on "C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\p
-roblem_set_layout\build\main.pdf" (3 pages, 118626 bytes).
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.p
+fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.
+pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.
+pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.p
+fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
+:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\P
+hysics 180\PS4\build\main.pdf" (4 pages, 186367 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

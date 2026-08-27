@@ -4,96 +4,97 @@
 \contentsline {paragraph}{Credits: }{2}{section*.2}%
 \contentsline {section}{Main References}{3}{Item.2}%
 \contentsline {section}{Reminders}{4}{Item.2}%
-\contentsline {section}{Contents}{5}{Item.2}%
-\contentsline {section}{Unit 1: Electostatics}{7}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Review of Vector Calculus}{7}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Vectors and Scalars}{7}{subsubsection.1.1.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.1.1}Vector operations}{8}{subsubsubsection.1.1.1.1}%
-\contentsline {paragraph}{Vector addition}{8}{section*.3}%
-\contentsline {paragraph}{Scalar multiplication}{8}{section*.4}%
-\contentsline {paragraph}{Dot Product}{8}{section*.5}%
-\contentsline {paragraph}{Cross Product}{9}{section*.6}%
-\contentsline {paragraph}{The Kronecker Delta and LeviCivita operators}{9}{section*.7}%
-\contentsline {paragraph}{Einstein Summation Notation}{10}{section*.8}%
-\contentsline {subsubsection}{\numberline {1.1.2}Vector Properties}{10}{subsubsection.1.1.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.2.1}The Vector Norm}{10}{subsubsubsection.1.1.2.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.2.2}Vector Axioms}{11}{subsubsubsection.1.1.2.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.2.3}Vector derivatives and Integrals}{12}{subsubsubsection.1.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.1.3}Vector Transformations}{12}{subsubsection.1.1.3}%
-\contentsline {subsubsubsection}{\numberline {1.1.3.1}Linear transformations}{12}{subsubsubsection.1.1.3.1}%
-\contentsline {paragraph}{Notation}{13}{section*.9}%
-\contentsline {subsubsubsection}{\numberline {1.1.3.2}Eigenvectors, Eigenvalues}{13}{subsubsubsection.1.1.3.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.3.3}Translation}{14}{subsubsubsection.1.1.3.3}%
-\contentsline {subsubsubsection}{\numberline {1.1.3.4}Rotation}{14}{subsubsubsection.1.1.3.4}%
-\contentsline {paragraph}{2 Dimensions}{14}{section*.10}%
-\contentsline {paragraph}{3 Dimensions}{15}{section*.11}%
-\contentsline {subsubsection}{\numberline {1.1.4}Field}{16}{subsubsection.1.1.4}%
-\contentsline {subsubsubsection}{\numberline {1.1.4.1}Scalar field}{16}{subsubsubsection.1.1.4.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.4.2}Vector field}{17}{subsubsubsection.1.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.1.5}Differential Calculus}{18}{subsubsection.1.1.5}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.1}The Del Operator}{18}{subsubsubsection.1.1.5.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.2}Gradient}{18}{subsubsubsection.1.1.5.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.3}Divergence}{20}{subsubsubsection.1.1.5.3}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.4}Curl}{21}{subsubsubsection.1.1.5.4}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.5}Laplacian}{22}{subsubsubsection.1.1.5.5}%
-\contentsline {subsubsubsection}{\numberline {1.1.5.6}Operations on these Operators}{23}{subsubsubsection.1.1.5.6}%
-\contentsline {paragraph}{Product Rule}{23}{section*.17}%
-\contentsline {paragraph}{Chain Rule}{23}{section*.18}%
-\contentsline {paragraph}{Quotient Rules}{23}{section*.19}%
-\contentsline {paragraph}{Additional Rules}{24}{section*.20}%
-\contentsline {subsubsection}{\numberline {1.1.6}Integral Calculus}{25}{subsubsection.1.1.6}%
-\contentsline {subsubsubsection}{\numberline {1.1.6.1}Line integrals}{25}{subsubsubsection.1.1.6.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.6.2}Surface Integrals}{27}{subsubsubsection.1.1.6.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.6.3}Volume Integrals}{28}{subsubsubsection.1.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.1.7}Gauss and Stokes Theorem}{29}{subsubsection.1.1.7}%
-\contentsline {subsubsubsection}{\numberline {1.1.7.1}Gauss's Divergence Theorem}{29}{subsubsubsection.1.1.7.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.7.2}Stokes' Theorem}{30}{subsubsubsection.1.1.7.2}%
-\contentsline {subsubsection}{\numberline {1.1.8}Dirac Delta Point Source}{31}{subsubsection.1.1.8}%
-\contentsline {paragraph}{Delta and differential operators}{31}{section*.21}%
-\contentsline {subsubsection}{\numberline {1.1.9}Potential fields}{32}{subsubsection.1.1.9}%
-\contentsline {subsubsubsection}{\numberline {1.1.9.1}Irrotational fields}{32}{subsubsubsection.1.1.9.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.9.2}Solenoidal Fields}{32}{subsubsubsection.1.1.9.2}%
-\contentsline {subsubsection}{\numberline {1.1.10}Curvilinear coordinates}{33}{subsubsection.1.1.10}%
-\contentsline {paragraph}{Gradient.}{34}{section*.22}%
-\contentsline {paragraph}{Divergence.}{34}{section*.23}%
-\contentsline {paragraph}{Curl.}{35}{section*.24}%
-\contentsline {paragraph}{Laplacian.}{35}{section*.25}%
-\contentsline {subsubsubsection}{\numberline {1.1.10.1}Cylindrical coordinates}{36}{subsubsubsection.1.1.10.1}%
-\contentsline {subsubsubsection}{\numberline {1.1.10.2}Spherical coordinates}{37}{subsubsubsection.1.1.10.2}%
-\contentsline {subsubsubsection}{\numberline {1.1.10.3}Miscellaneous Geometries}{38}{subsubsubsection.1.1.10.3}%
-\contentsline {subsubsection}{\numberline {1.1.11}Divergence and the Dirac Delta}{39}{subsubsection.1.1.11}%
-\contentsline {subsection}{\numberline {1.2}The Electric Field}{43}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Definition}{43}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Coulomb's Law}{44}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}The Electric Field}{45}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Continuus Charge Distribution}{46}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Divergence and Curl of Electrostatic Fields}{48}{subsubsection.1.2.5}%
-\contentsline {subsubsubsection}{\numberline {1.2.5.1}The Divergence of $\vb {E}$}{51}{subsubsubsection.1.2.5.1}%
-\contentsline {subsubsubsection}{\numberline {1.2.5.2}The Curl of $\vb E$}{52}{subsubsubsection.1.2.5.2}%
-\contentsline {subsubsection}{\numberline {1.2.6}Dipoles}{54}{subsubsection.1.2.6}%
-\contentsline {paragraph}{Solution}{54}{section*.29}%
-\contentsline {subsection}{\numberline {1.3}Electric Potential}{59}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Introduction}{59}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Some comments on Potentials}{60}{subsubsection.1.3.2}%
-\contentsline {subsubsubsection}{\numberline {1.3.2.1}The name}{60}{subsubsubsection.1.3.2.1}%
-\contentsline {subsubsubsection}{\numberline {1.3.2.2}Advantage of the potential formula}{61}{subsubsubsection.1.3.2.2}%
-\contentsline {subsubsubsection}{\numberline {1.3.2.3}The arbitrary reference point}{61}{subsubsubsection.1.3.2.3}%
-\contentsline {subsubsubsection}{\numberline {1.3.2.4}Potentials obey superposition}{62}{subsubsubsection.1.3.2.4}%
-\contentsline {subsubsubsection}{\numberline {1.3.2.5}Units of Potential}{63}{subsubsubsection.1.3.2.5}%
-\contentsline {subsubsection}{\numberline {1.3.3}Poisson's and Laplace's Equation}{63}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}The Potential of a Localized Charge Distribution}{64}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}Boundary Conditions}{67}{subsubsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.4}Work and Energy}{68}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Conductors}{69}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Calculating Scalar Potentials}{70}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Dielectrics}{71}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Electric Displacement}{72}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}Energy in dielectrics, Magnetostatics}{73}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}Magnetic Vector Potential}{74}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}Unit Summary}{75}{subsection.1.11}%
-\contentsline {section}{Unit 2: Magnetostatics}{76}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Introduction}{76}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Magnetic fields in Matter}{77}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Boundary Value Problems}{78}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Unit Summary}{79}{subsection.2.4}%
-\contentsline {section}{End note}{80}{subsection.2.4}%
+\contentsline {section}{Preface}{5}{Item.2}%
+\contentsline {section}{Contents}{6}{Item.2}%
+\contentsline {section}{Unit 1: Electostatics}{10}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Review of Vector Calculus}{10}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Vectors and Scalars}{10}{subsubsection.1.1.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.1.1}Vector operations}{11}{subsubsubsection.1.1.1.1}%
+\contentsline {paragraph}{Vector addition}{11}{section*.3}%
+\contentsline {paragraph}{Scalar multiplication}{11}{section*.4}%
+\contentsline {paragraph}{Dot Product}{11}{section*.5}%
+\contentsline {paragraph}{Cross Product}{12}{section*.6}%
+\contentsline {paragraph}{The Kronecker Delta and LeviCivita operators}{12}{section*.7}%
+\contentsline {paragraph}{Einstein Summation Notation}{13}{section*.8}%
+\contentsline {subsubsection}{\numberline {1.1.2}Vector Properties}{13}{subsubsection.1.1.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.2.1}The Vector Norm}{13}{subsubsubsection.1.1.2.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.2.2}Vector Axioms}{14}{subsubsubsection.1.1.2.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.2.3}Vector derivatives and Integrals}{15}{subsubsubsection.1.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.1.3}Vector Transformations}{15}{subsubsection.1.1.3}%
+\contentsline {subsubsubsection}{\numberline {1.1.3.1}Linear transformations}{15}{subsubsubsection.1.1.3.1}%
+\contentsline {paragraph}{Notation}{16}{section*.9}%
+\contentsline {subsubsubsection}{\numberline {1.1.3.2}Eigenvectors, Eigenvalues}{16}{subsubsubsection.1.1.3.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.3.3}Translation}{17}{subsubsubsection.1.1.3.3}%
+\contentsline {subsubsubsection}{\numberline {1.1.3.4}Rotation}{17}{subsubsubsection.1.1.3.4}%
+\contentsline {paragraph}{2 Dimensions}{17}{section*.10}%
+\contentsline {paragraph}{3 Dimensions}{18}{section*.11}%
+\contentsline {subsubsection}{\numberline {1.1.4}Field}{19}{subsubsection.1.1.4}%
+\contentsline {subsubsubsection}{\numberline {1.1.4.1}Scalar field}{19}{subsubsubsection.1.1.4.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.4.2}Vector field}{20}{subsubsubsection.1.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.1.5}Differential Calculus}{21}{subsubsection.1.1.5}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.1}The Del Operator}{21}{subsubsubsection.1.1.5.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.2}Gradient}{21}{subsubsubsection.1.1.5.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.3}Divergence}{23}{subsubsubsection.1.1.5.3}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.4}Curl}{24}{subsubsubsection.1.1.5.4}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.5}Laplacian}{25}{subsubsubsection.1.1.5.5}%
+\contentsline {subsubsubsection}{\numberline {1.1.5.6}Operations on these Operators}{26}{subsubsubsection.1.1.5.6}%
+\contentsline {paragraph}{Product Rule}{26}{section*.17}%
+\contentsline {paragraph}{Chain Rule}{26}{section*.18}%
+\contentsline {paragraph}{Quotient Rules}{26}{section*.19}%
+\contentsline {paragraph}{Additional Rules}{27}{section*.20}%
+\contentsline {subsubsection}{\numberline {1.1.6}Integral Calculus}{28}{subsubsection.1.1.6}%
+\contentsline {subsubsubsection}{\numberline {1.1.6.1}Line integrals}{28}{subsubsubsection.1.1.6.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.6.2}Surface Integrals}{30}{subsubsubsection.1.1.6.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.6.3}Volume Integrals}{31}{subsubsubsection.1.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.1.7}Gauss and Stokes Theorem}{32}{subsubsection.1.1.7}%
+\contentsline {subsubsubsection}{\numberline {1.1.7.1}Gauss's Divergence Theorem}{32}{subsubsubsection.1.1.7.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.7.2}Stokes' Theorem}{33}{subsubsubsection.1.1.7.2}%
+\contentsline {subsubsection}{\numberline {1.1.8}Dirac Delta Point Source}{34}{subsubsection.1.1.8}%
+\contentsline {paragraph}{Delta and differential operators}{34}{section*.21}%
+\contentsline {subsubsection}{\numberline {1.1.9}Potential fields}{35}{subsubsection.1.1.9}%
+\contentsline {subsubsubsection}{\numberline {1.1.9.1}Irrotational fields}{35}{subsubsubsection.1.1.9.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.9.2}Solenoidal Fields}{35}{subsubsubsection.1.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.1.10}Curvilinear coordinates}{36}{subsubsection.1.1.10}%
+\contentsline {paragraph}{Gradient.}{37}{section*.22}%
+\contentsline {paragraph}{Divergence.}{37}{section*.23}%
+\contentsline {paragraph}{Curl.}{38}{section*.24}%
+\contentsline {paragraph}{Laplacian.}{38}{section*.25}%
+\contentsline {subsubsubsection}{\numberline {1.1.10.1}Cylindrical coordinates}{39}{subsubsubsection.1.1.10.1}%
+\contentsline {subsubsubsection}{\numberline {1.1.10.2}Spherical coordinates}{40}{subsubsubsection.1.1.10.2}%
+\contentsline {subsubsubsection}{\numberline {1.1.10.3}Miscellaneous Geometries}{41}{subsubsubsection.1.1.10.3}%
+\contentsline {subsubsection}{\numberline {1.1.11}Divergence and the Dirac Delta}{42}{subsubsection.1.1.11}%
+\contentsline {subsection}{\numberline {1.2}The Electric Field}{46}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Definition}{46}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Coulomb's Law}{47}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}The Electric Field}{48}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Continuus Charge Distribution}{49}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Divergence and Curl of Electrostatic Fields}{51}{subsubsection.1.2.5}%
+\contentsline {subsubsubsection}{\numberline {1.2.5.1}The Divergence of $\vb {E}$}{54}{subsubsubsection.1.2.5.1}%
+\contentsline {subsubsubsection}{\numberline {1.2.5.2}The Curl of $\vb E$}{55}{subsubsubsection.1.2.5.2}%
+\contentsline {subsubsection}{\numberline {1.2.6}Dipoles}{57}{subsubsection.1.2.6}%
+\contentsline {paragraph}{Solution}{57}{section*.29}%
+\contentsline {subsection}{\numberline {1.3}Electric Potential}{62}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Introduction}{62}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Some comments on Potentials}{63}{subsubsection.1.3.2}%
+\contentsline {subsubsubsection}{\numberline {1.3.2.1}The name}{63}{subsubsubsection.1.3.2.1}%
+\contentsline {subsubsubsection}{\numberline {1.3.2.2}Advantage of the potential formula}{63}{subsubsubsection.1.3.2.2}%
+\contentsline {subsubsubsection}{\numberline {1.3.2.3}The arbitrary reference point}{64}{subsubsubsection.1.3.2.3}%
+\contentsline {subsubsubsection}{\numberline {1.3.2.4}Potentials obey superposition}{65}{subsubsubsection.1.3.2.4}%
+\contentsline {subsubsubsection}{\numberline {1.3.2.5}Units of Potential}{66}{subsubsubsection.1.3.2.5}%
+\contentsline {subsubsection}{\numberline {1.3.3}Poisson's and Laplace's Equation}{66}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}The Potential of a Localized Charge Distribution}{67}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Boundary Conditions}{70}{subsubsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.4}Work and Energy}{71}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Conductors}{72}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Calculating Scalar Potentials}{73}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Dielectrics}{74}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Electric Displacement}{75}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Energy in dielectrics, Magnetostatics}{76}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Magnetic Vector Potential}{77}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Unit Summary}{78}{subsection.1.11}%
+\contentsline {section}{Unit 2: Magnetostatics}{79}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{79}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Magnetic fields in Matter}{80}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Boundary Value Problems}{81}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Unit Summary}{82}{subsection.2.4}%
+\contentsline {section}{Author's Note}{83}{subsection.2.4}%

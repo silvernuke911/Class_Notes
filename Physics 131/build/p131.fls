@@ -7,17 +7,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT .\preamble\preset.tex
 INPUT .\preamble\preset.tex
 INPUT .\preamble\preset.tex
@@ -59,6 +48,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
@@ -207,6 +198,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbhooks.code.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbtheorems.code.tex
@@ -490,14 +483,18 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\physics2\phy-braket
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\physics2\phy-braket.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\physics2\phy-ab.braket.sty
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\physics2\phy-ab.braket.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT .\preamble\preamble.tex
 INPUT .\preamble\preamble.tex
 INPUT .\preamble\preamble.tex
 INPUT .\preamble\preamble.tex
 INPUT preamble\preamble.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
@@ -517,6 +514,12 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 INPUT .\preamble\title.tex
 INPUT .\preamble\title.tex
@@ -639,12 +642,23 @@ INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT preamble\reminders.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT preamble\preface.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT preamble\toc.tex
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 INPUT .\content\1_1.tex
 INPUT .\content\1_1.tex
@@ -840,6 +854,7 @@ INPUT .\preamble\endnote.tex
 INPUT .\preamble\endnote.tex
 INPUT preamble\endnote.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out

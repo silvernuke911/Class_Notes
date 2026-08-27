@@ -1,8 +1,8 @@
 \documentclass[10pt,a5paper]{article}
-\usepackage[a5paper,top=0.75in,bottom=0.75in,left=0.75in,right=0.75in,marginparwidth=1.75cm]{geometry}
 \input{preamble/preset}
 \input{preamble/preamble}
 
+\newcommand{\epszero}{\varepsilon_0} %put to preamble.tex, change to epsz
 \begin{document}
 	\input{preamble/title} 
 	\newpage
@@ -14,13 +14,14 @@
 	\newpage
 	\input{preamble/reminders}
 	\newpage
+	\input{preamble/preface}
+	\newpage
 	\input{preamble/toc}
 	\newpage
 	\unitsec{Electostatics}
 		\input{content/1_1.tex}
 		\input{content/1_2.tex}
 		\input{content/1_3.tex}
-		aaaa
 		\input{content/1_4.tex}
 		\input{content/1_5.tex}
 		\input{content/1_6.tex}

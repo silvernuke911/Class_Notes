@@ -21,7 +21,124 @@
 		\end{equation}
 	\end{problem}
 	\begin{solution_pset}
+		\begin{proof}
+			From \cite{flores2026}, we have the definition of $\Lambda$ in terms of the principal and 
+			angular quantum numbers.
+			\begin{equation}
+				\Lambda = 2n + \ell -2
+			\end{equation}
+			and the energy eigenvalues
+			\begin{equation}
+				E_{nl} = \hbar \omega \pqty{\Lambda + \frac{3}{2}}
+			\end{equation}
+			From this, we can infer that every combination of $n$ and $\ell$ producing the same
+			$\Lambda$ have the same energy. 
 
+			We can solve for $\ell$ from $\Lambda$
+			\begin{equation}
+				\ell = \Lambda - 2(n-1)
+			\end{equation}
+			and since $n=1,2,3,\ldots$, the allowed values for $\ell$ for a given $\Lambda$ are
+			\[
+				\ell = \Lambda, \Lambda - 2, \Lambda - 4, \ldots
+			\]
+			With the sequence terminating at $\ell=0$ for an even $\Lambda$, and $\ell=1$ for odd $\Lambda$.
+			
+			For each $\ell$, there are $2\ell + 1$ possible values of the magnetic quantum number $m$, while
+			the factor of $2$ accounts for the two possible spin states. 
+
+			Again, given from \cite{flores2026}, we are given the number of states with degenerate energy levels as:\footnote{This was proven in Quiz 3}
+			\begin{equation}
+				n_d = 2 \sum_{\ell=0}^{n-1}(2\ell+1)
+			\end{equation}
+			However, since the value of $\ell$ is constrained, we have
+			\begin{equation}
+				\label{eq:nd2}
+				n_d = 2 \sum_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1)
+			\end{equation}
+			and this might have different results depending on even or odd $\Lambda$. We evaluate this separately for both cases
+
+			\newpage
+			\noindent\textbf{Even $\Lambda$}
+
+			Let $\Lambda = 2k$. Then, the allowed values of $\ell$ are
+			\begin{equation}
+				\ell = 2k, 2k-2,\ldots,2,0
+			\end{equation}
+			Thus, we have the sum:
+			\begin{align*}
+				\sum_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) 
+				&= (2(2k) + 1) + (2(2k-2) + 1) + \cdots + (2(2 - 2) + 1)\\
+				&= (4k  + 1) * (4k - 3) + \cdots + 5 + 1 
+			\end{align*}
+			This is an aritmetic series, with $k + 1$ terms (from $k$ to 0 inclusive). Hence, the 
+			arithmetic series is 
+			\begin{align*}
+				\sum^{\text{even}}_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) 
+				&= (k+1) \frac{(4k + 1) + 1}{2} \\
+				&= \frac{(k+1)(4k+1) + k + 1}{2}\\
+				&= \frac{4k^2 + 5k + 1 + k + 1}{2}\\
+				&= \frac{4k^2 + 6k + 2}{2}\\
+				&= 2k^2 + 3k + 1\\
+				&= (k+1)(2k+1)
+			\end{align*}
+			Since $\Lambda = 2k$, then
+			\begin{align*}
+				\sum^{\text{even}}_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) 
+				&= \pqty{\frac{\Lambda}{2}+1}(\Lambda + 1)\\
+				&= \pqty{\frac{\Lambda + 2}{2}}(\Lambda + 1)\\
+				&= \frac{(\Lambda + 2)(\Lambda + 1)}{2} 
+			\end{align*}
+
+			\noindent\textbf{Odd $\Lambda$}
+
+			Let $\Lambda = 2k + 1$. Then
+			\[
+				\ell = 2k+1, 2k-1,\ldots, 3, 1
+			\]
+			Therefore, the series is
+			\begin{align*}
+				\sum^{\text{odd}}_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) 
+				&= (2(2k+1) + 1) + (2(2k-1) + 1) + \cdots + 7 + 3\\
+				&= (4k+3) + (4k - 1) + \cdots + 7 + 3 
+			\end{align*}
+			Once again, this has $k+1$ terms, from $0$ to $k$ inclusive.
+			Therefore, the total sum of the arithmetic series is
+			\begin{align*}
+				\sum^{\text{odd}}_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1)
+				&= (k+1)\frac{(4k+3) + 3}{2}\\
+				&= \frac{4k^2 + 7k + 3 + 3k + 3}{2} \\
+				&= \frac{4k^2 + 10k + 6}{2} \\
+				&= 2k^2 + 5k + 3 \\
+				&= (k+1)(2k+3)
+			\end{align*}
+			However, $\Lambda + 1 = 2k + 2$, and $\Lambda + 2 = 2k+3$. Hence
+			\begin{equation}
+				\sum^{\text{odd}}_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) = \frac{(\Lambda + 1)(\Lambda + 2)}{2} 
+			\end{equation}
+			Thus, for both cases, we have
+			\begin{equation}
+				\sum_{\ell=\Lambda, \Lambda-2,\ldots}(2\ell+1) = \frac{(\Lambda + 1)(\Lambda + 2)}{2} 
+			\end{equation}
+			Since (\ref{eq:nd2}) 
+			\begin{equation}
+				n_d = 2 \sum_{\ell = \Lambda, \Lambda - 2, \ldots} (2\ell+1)
+			\end{equation}
+			then
+			\begin{equation}
+				n_d = 2 \cdot \frac{(\Lambda + 1)(\Lambda + 2)}{2} 
+			\end{equation}
+			Therefore:
+			\begin{equation}
+				\boxed{
+					n_d = (\Lambda + 1)(\Lambda + 2)
+				}
+			\end{equation}
+		\end{proof}
+			\vfill
+			\begin{center}
+			    \textit{Thank you, Mr. Kong}.
+			\end{center}
 	\end{solution_pset}
 	\newpage
 

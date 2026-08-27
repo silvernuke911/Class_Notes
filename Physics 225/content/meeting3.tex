@@ -64,7 +64,9 @@
 
 		Our task, then, is to determine them from general physical principles. Simply 
 		logic and mathematics, without any reference to experimental data whatsoever.
-		This is, essentially, a purely mathematical approach. Eventually, our goal
+		This is, essentially, a purely mathematical approach. 
+
+		Eventually, our goal
 		is to obtain a transformation in the form of Lorentzian transfromations.
 
 		\begin{equation}
@@ -160,7 +162,7 @@
 			\label{eq:parity-conditions}
 		\end{equation}
 
-	\subsubsection{The Invariance of Straigt Lines}
+	\subsubsection{The Invariance of Straight Lines}
 		Free particles must move along straight lines in both frames. This is required
 		by Newton's first law, the principle of inertia. In space time coodinates, we denote
 		$x^\mu = (x,t)$\footnote{This is tensor notation, where $\mu$ identifies the component.
@@ -169,17 +171,17 @@
 		\begin{equation}
 			\dv[2]{x^\mu}{\tau} = 0 
 		\end{equation}
-		Where $\tau$ is some affine parameter\footnote{Affine parameter is an arbitrary parameter for which
-		the geodesic equation is said to hold and takes the form of uniform motion wtihout introducing artificial
+		Where $\tau$ is some affine parameter\footnote{An affine parameter is an arbitrary parameter for which
+		the geodesic equation is said to hold and takes the form of uniform motion without introducing artificial
 		acceleration through the choice of parameter. i.e, affine parameters allow 
 		reparametrization to be linear transformations. I don't understand it either, go figure. In this case, $\tau$ is called
 		the \textit{proper time}}.
 
 		The principle of inertia demands that straight lines map to straight lines.
 		\begin{equation}
-			\dv[2]{\overline x^\mu}{\tau} = 0 \implies \dv[2]{x'^\mu}{\tau} = 0  
+			\dv[2]{x^\mu}{\tau} = 0 \implies \dv[2]{x'^\mu}{\tau} = 0  
 		\end{equation}
-		Using the chain rule, we can more explicity show that the derivative is a product of a jacobian term and a velocity term 
+		The transformation from $S$ to $S'$ is represented in tensor notation as $x'^\mu = \overline{X}^\mu(x^\nu; v)$. Using the chain rule, with $x^\nu = x^\nu(\tau)$, we have:
 		\begin{equation}
 			\dv{x'^\mu}{\tau} = \sum_\nu \pdv{\overline{X}^\mu}{x^\nu} \dv{x^\nu}{\tau}
 			\label{eq:chain-rule-first}
@@ -217,17 +219,17 @@
 			0 = \pdv[2]{\overline{X}^\mu}{x^\nu}{x^\sigma} \dv{x^\nu}{\tau} \dv{x^\sigma}{\tau}
 			\label{eq:second-derivative-condition}
 		\end{equation}
-		For arbitrary velocities $\displaystyle\dv{x^\nu}{\tau}$, this requires:
+		For arbitrary velocities $\displaystyle\dv{x^\nu}{\tau}$,the quadratic form above must vanish for every possible velocity vector. this requires:
 		\begin{equation}
 			\pdv[2]{\overline{X}^\mu}{x^\nu}{x^\sigma} = 0
 			\label{eq:linearity-condition}
 		\end{equation}
-		Therefore, $\overline{X}^\mu$ must be a linear function of the coordinates. Hence, we can write:
+		Therefore, $\overline{X}^\mu$ must be a linear function of the coordinates. Hence, we can write its components as:
 		\begin{align*}
 			\overline{X}(x,t,v) &= A(v)x + B(v)t + E(v)\\
 			\overline{T}(x,t,v) &= C(v)x + D(v)t + F(v)
 		\end{align*}
-		These are just equations of general straight lines. 
+		These are just general equations of straight lines. 
 	\subsubsection{Homogeneity of Spacetime}
 		The next assumption we use is the homogeneity of space time.
 		Spacetime homogeniety implies no preferred origin.
@@ -236,13 +238,13 @@
 		origin and spacetime would remain the same, so therefore we can choose the 
 		location of the origin for both. 
 
-		Therefore, we demand that the origin of S gets mapped to the origin of S' at $t=0$.
+		Therefore, we demand that the origin of $S$ gets mapped to the origin of $S'$ at $t=0$.
 		\begin{equation}
 			x = t = 0 \iff x' = t' = 0
 		\end{equation}
 		This is not really essential. However, it makes the derivation simpler and easier, since we can
 		then set the constants $E(v)$ and $F(v)$ to zero. Doing otherwise would make the constant 
-		terms indeterminable, which would increase the difficulty od the problem. However, the general
+		terms indeterminable, which would increase the difficulty of the problem. However, the general
 		result is the same. With this assumption, we can reduce our transformations to
 		\begin{equation}
 			\begin{aligned}
@@ -402,8 +404,8 @@
 		\begin{equation}
 			x=vt
 		\end{equation}
-		But every event on this worldline must satisfy $x'=0$.
-		Again, that is for the spatial origin. That means that entire \textit{world} line needs to be mapped to $x' = 0$.
+		But every event on this trajectory must satisfy $x'=0$.
+		Again, that is for the spatial origin. That means that entire \textit{worldline} needs to be mapped to $x' = 0$.
 		
 		Using 
 		\begin{equation}
@@ -445,7 +447,7 @@
 			A(v)\to 1,\quad v\to 0. 
 		\]
 
-		Since the 1,0 term is a fraction with $v$ in the denominator, it must vanish sufficiently fast.
+		Since the $\tensor{M}{^1_0}$ term is a fraction with $v$ in the denominator, it must vanish sufficiently fast.
 		therefore, $A^2 - 1 \approx \order{v^2}$
 	\subsubsection{Introduction of a third observer}
 		Consider a third inertial frame $S''$.
@@ -454,9 +456,9 @@
 		constant velocity $v$ relative to $S$.
 
 		It's the same framework, then. The transformation from $S'$ to $S''$ takes a similar form
-		as from $S$ to $S'$. Let 
+		as from $S$ to $S'$. Let $M$ be a matrix such that 
 		\begin{equation}
-		    M(v) = 
+			\tensor{M}{^\mu_\nu}(v) = 
 			\bmqty{
 				A(v) & -vA(v) \\[4pt]
 				- \dfrac{(A(v)^2-1)}{vA(v)} & A(v)
@@ -464,33 +466,33 @@
 		\end{equation}
 		We can therefore denote the transformation from the $S$ frame to the $S'$ frame to be
 		\begin{equation}
-		    x'^\mu = M(v) x^\mu
+			x'^\mu = \tensor{M}{^\mu_\nu}(v) x^\nu
 		\end{equation}
 		Since the transformation is the same, then the transformation from $S'$ to $S''$ is
 		\begin{equation}
-		    x''^\mu = M(u) x'^\mu
+			x''^\mu = \tensor{M}{^\mu_\nu}(u) x'^\nu
 		\end{equation}
 		Suppose that $S''$ is moving at a speed $w$ relative to $S$. Then
 		\begin{equation}
-		    x''^\mu = M(w) x^\mu
+			x''^\mu = \tensor{M}{^\mu_\nu}(w) x^\nu
 		\end{equation}
 		However, we demand the closure of transformations under composition. i.e, the form of the transformation is the 
 		same, just with a different argument.
 		Then, the transformation from $S$ to $S''$ is obtained by composing the two transformations from the intermediate reference
 		frame.
 		\begin{equation}
-		    x''^\mu = M(u)M(v) x^\mu
+			x''^\mu = \tensor{M}{^\mu_\nu}(u)\tensor{M}{^\nu_\sigma}(v) x^\sigma
 		\end{equation}
 		That is, the form of the transformation from $S$ to $S''$ is the same form as the transformations
 		from the other frames of reference.
 		\begin{equation}
-			M(w) = M(u)M(v)
+			\tensor{M}{^\mu_\sigma}(w) = \tensor{M}{^\mu_\nu}(u)\tensor{M}{^\nu_\sigma}(v)
 		\end{equation}
 		The crucial requirement is that the composition of two allowed transformations must itself be an allowed transformation.
 	\subsubsection{The Emergence of an Invariant Speed}
 		We evaluate the composition by doing matrix multiplication.
 		\begin{equation*}
-		    M(w) = 
+			\tensor{M}{^\mu_\nu}(w) = 
 			\bmqty{
 				A(u) & -uA(u) \\[4pt]
 				- \dfrac{(A(u)^2-1)}{uA(u)} 
@@ -505,7 +507,7 @@
 		Therefore, we have
 		{\scriptsize
 			\begin{equation*}
-			M(w) =
+			\tensor{M}{^\mu_\nu}(w) = 
 			\begin{bmatrix}
 				A(u)A(v) + \dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} & 
 				-(u+v)A(u)A(v) \\[14pt]
@@ -515,7 +517,7 @@
 			\end{equation*}
 		}
 		By the nature of $M$, we see that the diagonal elements of the transformation matrix
-		are equal, $M_{00}=M_{11}$. Therefore, we require the 
+		are equal, $\tensor{M}{^0_0}=\tensor{M}{^1_1}$. Therefore, we require the 
 		equality of the elements. We equate:
 		\begin{equation}
 			A(u)A(v) + \dfrac{uA(u)\bigl(A(v)^2-1\bigr)}{vA(v)} 
@@ -741,7 +743,7 @@
 		is suppressed, and a body can only travel forwards in time, and no other.
 
 	\subsubsection{Conclusion}
-		This, and this is a point that I will not get tired telling you\footnote{Actual verbatim quote from sir}
+		This, and this is a point that I will not get of tired telling you,\footnote{Actual verbatim quote from sir}
 		proves the point that the derivation of the Lorentz transformation does not logically require 
 		the existence of light. The transformation
 		\[
@@ -769,14 +771,22 @@
 		\[
 			\text{Relativity}\implies\text{possible invariant speed } \kappa
 		\]
-		while experiment estabishes
+		while experiment establishes
 		\[
 			\kappa = c
 		\]
 		Electromagnetism therefore provides an empirical realization of the invariant speed; 
 		it is not necessary as a premise in the kinematic derivation itself.
-
 		The deeper lesson is that the Lorentz transformations and relativity itself is fundamentally a statement about 
 		the symmetry of spacetime, not specifically about light.
-		
+		\begin{remark}
+			Some points because I wasn't able to elaborate on them. $\overline{X}^\mu(x^\nu)$ is simply 
+			the tensor packaging of the transformation functions, where $\overline{X}^0(x^\nu;v) = \overline{X}(x,t;v)$
+			and $\overline{X}^1(x^\nu;v) = \overline{T}(x,t;v)$. It is a vector valued function. Whereas $\tensor{M}{^\mu_\nu}$
+			is a matrix. Once linearity is proven, we can show that $\tensor{M}{^\mu_\nu}$ is a Jacobian, related to $\overline{X}^\mu$
+			by
+			\[
+				\tensor{M}{^\mu_\nu} = \pdv{\overline{X}^\mu}{x^\nu} 
+			\]
+		\end{remark}	
 		

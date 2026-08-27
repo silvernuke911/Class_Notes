@@ -13,77 +13,77 @@
 
 
 
-% Definition counter linked to section
-\newcounter{definition}[section]
-\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+% % Definition counter linked to section
+% \newcounter{definition}[section]
+% \renewcommand{\thedefinition}{\thesection.\arabic{definition}}
 
-% Example counter linked to section
-\newcounter{example}[section]
-\renewcommand{\theexample}{\thesection.\arabic{example}}
+% % Example counter linked to section
+% \newcounter{example}[section]
+% \renewcommand{\theexample}{\thesection.\arabic{example}}
 
-\newtcolorbox{definition}[2][]{
-  colback=white,
-  colframe=black,
-  boxrule=0.5pt,
-  arc=0pt,
-  left=6pt,
-  right=6pt,
-  top=6pt,
-  bottom=6pt,
-  fonttitle=\bfseries,
-  title={%
-    \stepcounter{definition}% Increment counter
-    Definition \thedefinition{} : #2% Then display
-  },
-  #1
-}
+% \newtcolorbox{definition}[2][]{
+%   colback=white,
+%   colframe=black,
+%   boxrule=0.5pt,
+%   arc=0pt,
+%   left=6pt,
+%   right=6pt,
+%   top=6pt,
+%   bottom=6pt,
+%   fonttitle=\bfseries,
+%   title={%
+%     \stepcounter{definition}% Increment counter
+%     Definition \thedefinition{} : #2% Then display
+%   },
+%   #1
+% }
 
-\newtcolorbox{example}[2][]{
-  breakable,
-  colback=white,
-  colframe=black,
-  boxrule=0.5pt,
-  arc=4pt,
-  left=6pt,
-  right=6pt,
-  top=6pt,
-  bottom=6pt,
-  fonttitle=\bfseries,
-  parbox=false,  % Don't use parbox mode
-  before upper={%
-    \setlength{\parindent}{\originalparindent}%
-    \setlength{\parskip}{\originalparskip}%
-    \noindent%
-  },
-  title={%
-    \stepcounter{example}%
-    Example \theexample{} : #2%
-  },
-  #1
-}
+% \newtcolorbox{example}[2][]{
+%   breakable,
+%   colback=white,
+%   colframe=black,
+%   boxrule=0.5pt,
+%   arc=4pt,
+%   left=6pt,
+%   right=6pt,
+%   top=6pt,
+%   bottom=6pt,
+%   fonttitle=\bfseries,
+%   parbox=false,  % Don't use parbox mode
+%   before upper={%
+%     \setlength{\parindent}{\originalparindent}%
+%     \setlength{\parskip}{\originalparskip}%
+%     \noindent%
+%   },
+%   title={%
+%     \stepcounter{example}%
+%     Example \theexample{} : #2%
+%   },
+%   #1
+% }
 
-% Theorem counter linked to section
-\newcounter{theorem}[section]
-\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
-\definecolor{darkred}{RGB}{139, 0, 0} 
-\newtcolorbox{theorem}[2][]{
-  colback=white,
-  colframe=darkred,  % Dark red border
-  coltitle=white,              % White title text for contrast
-  colbacktitle=darkred, % Dark red title background
-  boxrule=0.5pt,
-  arc=0pt,                     % Sharp corners (0 curves)
-  left=6pt,
-  right=6pt,
-  top=6pt,
-  bottom=6pt,
-  fonttitle=\bfseries,
-  title={%
-    \stepcounter{theorem}%
-    Theorem \thetheorem{} : #2%
-  },
-  #1
-}
+% % Theorem counter linked to section
+% \newcounter{theorem}[section]
+% \renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+% \definecolor{darkred}{RGB}{139, 0, 0} 
+% \newtcolorbox{theorem}[2][]{
+%   colback=white,
+%   colframe=darkred,  % Dark red border
+%   coltitle=white,              % White title text for contrast
+%   colbacktitle=darkred, % Dark red title background
+%   boxrule=0.5pt,
+%   arc=0pt,                     % Sharp corners (0 curves)
+%   left=6pt,
+%   right=6pt,
+%   top=6pt,
+%   bottom=6pt,
+%   fonttitle=\bfseries,
+%   title={%
+%     \stepcounter{theorem}%
+%     Theorem \thetheorem{} : #2%
+%   },
+%   #1
+% }
 
 \titleformat*{\section}{\LARGE\bfseries}
 \titleformat*{\subsection}{\LARGE\bfseries}
@@ -125,77 +125,77 @@
 
 \numberwithin{equation}{subsection}
 
-% Definition counter linked to section
-\newcounter{definition}[section]
-\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+% % Definition counter linked to section
+% \newcounter{definition}[section]
+% \renewcommand{\thedefinition}{\thesection.\arabic{definition}}
 
-% Example counter linked to section
-\newcounter{example}[section]
-\renewcommand{\theexample}{\thesection.\arabic{example}}
+% % Example counter linked to section
+% \newcounter{example}[section]
+% \renewcommand{\theexample}{\thesection.\arabic{example}}
 
-\newtcolorbox{definition}[2][]{
-    colback=white,
-    colframe=black,
-    boxrule=0.5pt,
-    arc=0pt,
-    left=6pt,
-    right=6pt,
-    top=6pt,
-    bottom=6pt,
-    fonttitle=\bfseries,
-    title={%
-        \stepcounter{definition}% Increment counter
-        Definition \thedefinition{} : #2% Then display
-    },
-    #1
-}
+% \newtcolorbox{definition}[2][]{
+%     colback=white,
+%     colframe=black,
+%     boxrule=0.5pt,
+%     arc=0pt,
+%     left=6pt,
+%     right=6pt,
+%     top=6pt,
+%     bottom=6pt,
+%     fonttitle=\bfseries,
+%     title={%
+%         \stepcounter{definition}% Increment counter
+%         Definition \thedefinition{} : #2% Then display
+%     },
+%     #1
+% }
 
-\newtcolorbox{example}[2][]{
-    breakable,
-    colback=white,
-    colframe=black,
-    boxrule=0.5pt,
-    arc=4pt,
-    left=6pt,
-    right=6pt,
-    top=6pt,
-    bottom=6pt,
-    fonttitle=\bfseries,
-    parbox=false,  % Don't use parbox mode
-    before upper={%
-        \setlength{\parindent}{\originalparindent}%
-        \setlength{\parskip}{\originalparskip}%
-        \noindent%
-    },
-    title={%
-        \stepcounter{example}%
-        Example \theexample{} : #2%
-    },
-    #1
-}
+% \newtcolorbox{example}[2][]{
+%     breakable,
+%     colback=white,
+%     colframe=black,
+%     boxrule=0.5pt,
+%     arc=4pt,
+%     left=6pt,
+%     right=6pt,
+%     top=6pt,
+%     bottom=6pt,
+%     fonttitle=\bfseries,
+%     parbox=false,  % Don't use parbox mode
+%     before upper={%
+%         \setlength{\parindent}{\originalparindent}%
+%         \setlength{\parskip}{\originalparskip}%
+%         \noindent%
+%     },
+%     title={%
+%         \stepcounter{example}%
+%         Example \theexample{} : #2%
+%     },
+%     #1
+% }
 
-% Theorem counter linked to section
-\newcounter{theorem}[section]
-\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
-\definecolor{darkred}{RGB}{139, 0, 0} 
-\newtcolorbox{theorem}[2][]{
-    colback=white,
-    colframe=darkred,  % Dark red border
-    coltitle=white,              % White title text for contrast
-    colbacktitle=darkred, % Dark red title background
-    boxrule=0.5pt,
-    arc=0pt,                     % Sharp corners (0 curves)
-    left=6pt,
-    right=6pt,
-    top=6pt,
-    bottom=6pt,
-    fonttitle=\bfseries,
-    title={%
-        \stepcounter{theorem}%
-        Theorem \thetheorem{} : #2%
-    },
-    #1
-}
+% % Theorem counter linked to section
+% \newcounter{theorem}[section]
+% \renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+% \definecolor{darkred}{RGB}{139, 0, 0} 
+% \newtcolorbox{theorem}[2][]{
+%     colback=white,
+%     colframe=darkred,  % Dark red border
+%     coltitle=white,              % White title text for contrast
+%     colbacktitle=darkred, % Dark red title background
+%     boxrule=0.5pt,
+%     arc=0pt,                     % Sharp corners (0 curves)
+%     left=6pt,
+%     right=6pt,
+%     top=6pt,
+%     bottom=6pt,
+%     fonttitle=\bfseries,
+%     title={%
+%         \stepcounter{theorem}%
+%         Theorem \thetheorem{} : #2%
+%     },
+%     #1
+% }
 
 \newenvironment{remark}
 	{\par\noindent\textit{\textbf{Remark : }}\par}

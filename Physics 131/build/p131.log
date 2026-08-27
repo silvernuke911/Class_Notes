@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  26 AUG 2026 03:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  27 AUG 2026 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,42 +22,19 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks18
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(preamble/preset.tex (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/ba
-se\inputenc.sty
+) (preamble/preset.tex (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/
+base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count198
-\U@D=\dimen149
+\babel@savecnt=\count195
+\U@D=\dimen141
 \l@unhyphenated=\language79
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count199
+\bbl@dirlevel=\count196
 *************************************
 * Local config file bblopts.cfg used
 *
@@ -81,8 +58,8 @@ Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (
 C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\xs_counta=\count266
-\xs_countb=\count267
+\xs_counta=\count197
+\xs_countb=\count198
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
@@ -93,22 +70,22 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen150
+\@emptytoks=\toks19
+\ex@=\dimen142
 )) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen151
+\pmbraise@=\dimen143
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count268
+\inf@bad=\count199
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count269
-\leftroot@=\count270
+\uproot@=\count266
+\leftroot@=\count267
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count271
-\DOTSCASE@=\count272
+\classnum@=\count268
+\DOTSCASE@=\count269
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -118,34 +95,34 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen152
+\big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count273
+\macc@depth=\count270
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count274
+\c@MaxMatrixCols=\count271
 \dotsspace@=\muskip16
-\c@parentequation=\count275
-\dspbrk@lvl=\count276
-\tag@help=\toks22
-\row@=\count277
-\column@=\count278
-\maxfields@=\count279
-\andhelp@=\toks23
-\eqnshift@=\dimen153
-\alignsep@=\dimen154
-\tagshift@=\dimen155
-\tagwidth@=\dimen156
-\totwidth@=\dimen157
-\lineht@=\dimen158
-\@envbody=\toks24
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks20
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks21
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks22
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks25
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
@@ -159,44 +136,47 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
 \thm@preskip=\skip53
 \thm@postskip=\skip54
 \thm@headsep=\skip55
-\dth@everypar=\toks31
+\dth@everypar=\toks29
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count280
-\calc@Bcount=\count281
-\calc@Adimen=\dimen159
-\calc@Bdimen=\dimen160
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count282
+\calc@Ccount=\count279
 \calc@Cskip=\skip58
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count283
-\l_MT_multwidth_dim=\dimen161
+\g_MT_multlinerow_int=\count280
+\l_MT_multwidth_dim=\dimen153
 \origjot=\skip59
-\l_MT_shortvdotswithinadjustabove_dim=\dimen162
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen163
-\l_MT_above_intertext_sep=\dimen164
-\l_MT_below_intertext_sep=\dimen165
-\l_MT_above_shortintertext_sep=\dimen166
-\l_MT_below_shortintertext_sep=\dimen167
+\l_MT_shortvdotswithinadjustabove_dim=\dimen154
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
+\l_MT_above_intertext_sep=\dimen156
+\l_MT_below_intertext_sep=\dimen157
+\l_MT_above_shortintertext_sep=\dimen158
+\l_MT_below_shortintertext_sep=\dimen159
 \xmathstrut@box=\box53
-\xmathstrut@dim=\dimen168
+\xmathstrut@dim=\dimen160
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/esint\esint.sty
 Package: esint 
 \symlargesymbolsA=\mathgroup6
@@ -210,9 +190,9 @@ Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
 y
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen169
-\pgfutil@tempdimb=\dimen170
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
@@ -243,8 +223,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen171
-\Gin@req@width=\dimen172
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
 sty
@@ -254,33 +234,33 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen173
-\pgf@y=\dimen174
-\pgf@xa=\dimen175
-\pgf@ya=\dimen176
-\pgf@xb=\dimen177
-\pgf@yb=\dimen178
-\pgf@xc=\dimen179
-\pgf@yc=\dimen180
-\pgf@xd=\dimen181
-\pgf@yd=\dimen182
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count284
-\c@pgf@countb=\count285
-\c@pgf@countc=\count286
-\c@pgf@countd=\count287
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count288
+\c@pgf@counta=\count281
+\c@pgf@countb=\count282
+\c@pgf@countc=\count283
+\c@pgf@countd=\count284
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count285
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -299,8 +279,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count289
-\pgfsyssoftpath@bigbuffer@items=\count290
+\pgfsyssoftpath@smallbuffer@items=\count286
+\pgfsyssoftpath@bigbuffer@items=\count287
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -332,12 +312,12 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen183
-\pgfmath@count=\count291
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count288
 \pgfmath@box=\box55
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
@@ -361,39 +341,39 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count292
+\c@pgfmathroundto@lastzeros=\count289
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen184
-\pgf@picmaxx=\dimen185
-\pgf@picminy=\dimen186
-\pgf@picmaxy=\dimen187
-\pgf@pathminx=\dimen188
-\pgf@pathmaxx=\dimen189
-\pgf@pathminy=\dimen190
-\pgf@pathmaxy=\dimen191
-\pgf@xx=\dimen192
-\pgf@xy=\dimen193
-\pgf@yx=\dimen194
-\pgf@yy=\dimen195
-\pgf@zx=\dimen196
-\pgf@zy=\dimen197
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen198
-\pgf@path@lasty=\dimen199
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen256
-\pgf@shorten@start@additional=\dimen257
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
@@ -401,19 +381,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count293
+\pgf@picture@serial@count=\count290
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen258
+\pgflinewidth=\dimen194
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen259
-\pgf@pt@y=\dimen260
-\pgf@pt@temp=\dimen261
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -430,14 +410,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen262
+\pgfarrowsep=\dimen198
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen263
-\pgf@sys@shading@range@num=\count294
-\pgf@shadingcount=\count295
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count291
+\pgf@shadingcount=\count292
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -476,16 +456,16 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen264
-\pgf@nodesepend=\dimen265
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
+\every@verbatim=\toks41
+\verbatim@line=\toks42
 \verbatim@in@stream=\read4
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -496,17 +476,17 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
 y
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count296
+\etb@tempcnta=\count293
 )
 \tcb@titlebox=\box61
 \tcb@upperbox=\box62
 \tcb@lowerbox=\box63
 \tcb@phantombox=\box64
-\c@tcbbreakpart=\count297
-\c@tcblayer=\count298
-\c@tcolorbox@number=\count299
+\c@tcbbreakpart=\count294
+\c@tcblayer=\count295
+\c@tcolorbox@number=\count296
 \l__tcobox_tmpa_box=\box65
-\l__tcobox_tmpa_dim=\dimen266
+\l__tcobox_tmpa_dim=\dimen258
 \tcb@temp=\box66
 \tcb@temp=\box67
 \tcb@temp=\box68
@@ -515,10 +495,10 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
 e.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
-\c@tcbrastercolumn=\count300
-\c@tcbrasterrow=\count301
-\c@tcbrasternum=\count302
-\c@tcbraster=\count303
+\c@tcbrastercolumn=\count297
+\c@tcbrasterrow=\count298
+\c@tcbrasternum=\count299
+\c@tcbraster=\count300
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
 .tex
@@ -538,10 +518,10 @@ fmath.sty
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen267
-\pgffor@skip=\dimen268
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -550,34 +530,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count304
-\pgfplotmarksize=\dimen269
+\pgf@plot@mark@count=\count301
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen270
-\tikz@lasty=\dimen271
-\tikz@lastxsaved=\dimen272
-\tikz@lastysaved=\dimen273
-\tikz@lastmovetox=\dimen274
-\tikz@lastmovetoy=\dimen275
-\tikzleveldistance=\dimen276
-\tikzsiblingdistance=\dimen277
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
 \tikz@figbox=\box70
 \tikz@figbox@bg=\box71
 \tikz@tempbox=\box72
 \tikz@tempbox@bg=\box73
-\tikztreelevel=\count305
-\tikznumberofchildren=\count306
-\tikznumberofcurrentchild=\count307
-\tikz@fig@count=\count308
+\tikztreelevel=\count302
+\tikznumberofchildren=\count303
+\tikznumberofcurrentchild=\count304
+\tikz@fig@count=\count305
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count309
-\pgfmatrixcurrentcolumn=\count310
-\pgf@matrix@numberofcolumns=\count311
+\pgfmatrixcurrentrow=\count306
+\pgfmatrixcurrentcolumn=\count307
+\pgf@matrix@numberofcolumns=\count308
 )
-\tikz@expandcount=\count312
+\tikz@expandcount=\count309
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -590,8 +570,8 @@ Package: tikzfill.image 2026/04/23 v1.2.0 Image filling library for TikZ
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
 l.image.code.tex
 File: tikzlibraryfill.image.code.tex 2026/04/23 v1.2.0 Image filling library
-\l__tikzfill_tmpa_dim=\dimen278
-\l__tikzfill_tmpb_dim=\dimen279
+\l__tikzfill_tmpa_dim=\dimen270
+\l__tikzfill_tmpb_dim=\dimen271
 \l__tikzfill_img_box=\box74
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
@@ -609,6 +589,8 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box75
@@ -626,10 +608,10 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
 de.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
-\tcbfitdim=\dimen280
-\tcb@lowerfitdim=\dimen281
-\tcb@upperfitdim=\dimen282
-\tcb@cur@hbadness=\count313
+\tcbfitdim=\dimen272
+\tcb@lowerfitdim=\dimen273
+\tcb@upperfitdim=\dimen274
+\tcb@cur@hbadness=\count310
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
 f8.code.tex
@@ -639,22 +621,22 @@ Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
 ode.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count314
+\lst@mode=\count311
 \lst@gtempboxa=\box78
-\lst@token=\toks46
-\lst@length=\count315
-\lst@currlwidth=\dimen283
-\lst@column=\count316
-\lst@pos=\count317
-\lst@lostspace=\dimen284
-\lst@width=\dimen285
-\lst@newlines=\count318
-\lst@lineno=\count319
-\lst@maxwidth=\dimen286
+\lst@token=\toks45
+\lst@length=\count312
+\lst@currlwidth=\dimen275
+\lst@column=\count313
+\lst@pos=\count314
+\lst@lostspace=\dimen276
+\lst@width=\dimen277
+\lst@newlines=\count315
+\lst@lineno=\count316
+\lst@maxwidth=\dimen278
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count320
-\lst@skipnumbers=\count321
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
 \lst@framebox=\box79
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -669,7 +651,7 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
 .code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
 )
-\c@tcblisting=\count322
+\c@tcblisting=\count319
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
 f8.sty
@@ -764,11 +746,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup10
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tensor\tensor.sty
 Package: tensor 2023/07/18 v2.2 tensor indices package (PGR)
-\tnsr@Sps=\toks47
-\tnsr@Sbs=\toks48
-\tnsr@Spe=\toks49
-\tnsr@Sbe=\toks50
-\ncld@Mno=\toks51
+\tnsr@Sps=\toks46
+\tnsr@Sbs=\toks47
+\tnsr@Spe=\toks48
+\tnsr@Sbe=\toks49
+\ncld@Mno=\toks50
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
@@ -777,20 +759,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count323
-\l__siunitx_number_exponent_fixed_int=\count324
-\l__siunitx_number_min_decimal_int=\count325
-\l__siunitx_number_min_integer_int=\count326
-\l__siunitx_number_round_precision_int=\count327
-\l__siunitx_number_lower_threshold_int=\count328
-\l__siunitx_number_upper_threshold_int=\count329
-\l__siunitx_number_group_first_int=\count330
-\l__siunitx_number_group_size_int=\count331
-\l__siunitx_number_group_minimum_int=\count332
-\l__siunitx_angle_tmp_dim=\dimen287
+\l__siunitx_number_uncert_offset_int=\count320
+\l__siunitx_number_exponent_fixed_int=\count321
+\l__siunitx_number_min_decimal_int=\count322
+\l__siunitx_number_min_integer_int=\count323
+\l__siunitx_number_round_precision_int=\count324
+\l__siunitx_number_lower_threshold_int=\count325
+\l__siunitx_number_upper_threshold_int=\count326
+\l__siunitx_number_group_first_int=\count327
+\l__siunitx_number_group_size_int=\count328
+\l__siunitx_number_group_minimum_int=\count329
+\l__siunitx_angle_tmp_dim=\dimen279
 \l__siunitx_angle_marker_box=\box80
 \l__siunitx_angle_unit_box=\box81
-\l__siunitx_compound_count_int=\count333
+\l__siunitx_compound_count_int=\count330
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
 ns.sty
@@ -798,49 +780,49 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
 \l__siunitx_table_tmp_box=\box82
-\l__siunitx_table_tmp_dim=\dimen288
-\l__siunitx_table_column_width_dim=\dimen289
+\l__siunitx_table_tmp_dim=\dimen280
+\l__siunitx_table_column_width_dim=\dimen281
 \l__siunitx_table_integer_box=\box83
 \l__siunitx_table_decimal_box=\box84
 \l__siunitx_table_uncert_box=\box85
 \l__siunitx_table_before_box=\box86
 \l__siunitx_table_after_box=\box87
-\l__siunitx_table_before_dim=\dimen290
-\l__siunitx_table_carry_dim=\dimen291
-\l__siunitx_unit_tmp_int=\count334
-\l__siunitx_unit_position_int=\count335
-\l__siunitx_unit_total_int=\count336
+\l__siunitx_table_before_dim=\dimen282
+\l__siunitx_table_carry_dim=\dimen283
+\l__siunitx_unit_tmp_int=\count331
+\l__siunitx_unit_position_int=\count332
+\l__siunitx_unit_total_int=\count333
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen292
+\col@sep=\dimen284
 \ar@mcellbox=\box88
-\extrarowheight=\dimen293
-\NC@list=\toks52
+\extrarowheight=\dimen285
+\NC@list=\toks51
 \extratabsurround=\skip60
 \backup@length=\skip61
 \ar@cellbox=\box89
 )) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/silence\silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
 sages
-\sl@Save=\count337
-\sl@StateNumber=\count338
-\sl@MessageCount=\count339
-\sl@Casualties=\count340
-\sl@Filter=\toks53
-\sl@Message=\toks54
-\sl@UnexpandedMessage=\toks55
-\sl@Mess@ge=\toks56
-\sl@WarningCount=\count341
-\sl@WarningNumber=\count342
-\sl@WarningCasualties=\count343
-\sl@TempBOW=\toks57
-\sl@BankOfWarnings=\toks58
+\sl@Save=\count334
+\sl@StateNumber=\count335
+\sl@MessageCount=\count336
+\sl@Casualties=\count337
+\sl@Filter=\toks52
+\sl@Message=\toks53
+\sl@UnexpandedMessage=\toks54
+\sl@Mess@ge=\toks55
+\sl@WarningCount=\count338
+\sl@WarningNumber=\count339
+\sl@WarningCasualties=\count340
+\sl@TempBOW=\toks56
+\sl@BankOfWarnings=\toks57
 LaTeX Info: Redefining \GenericWarning on input line 433.
-\sl@ErrorCount=\count344
-\sl@ErrorNumber=\count345
-\sl@ErrorCasualties=\count346
-\sl@TempBOE=\toks59
-\sl@BankOfErrors=\toks60
+\sl@ErrorCount=\count341
+\sl@ErrorNumber=\count342
+\sl@ErrorCasualties=\count343
+\sl@TempBOE=\toks58
+\sl@BankOfErrors=\toks59
 LaTeX Info: Redefining \GenericError on input line 601.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tabulary\tabulary.sty
 Package: tabulary 2024/06/04 v0.11 tabulary package (DPC)
@@ -851,11 +833,11 @@ LaTeX Warning: You have requested, on input line 20, version
                `2023/10/16 v2.5g Tabular extension package (FMi)'
                is available.
 
-\TY@count=\count347
-\TY@linewidth=\dimen294
-\tymin=\dimen295
-\tymax=\dimen296
-\TY@tablewidth=\dimen297
+\TY@count=\count344
+\TY@linewidth=\dimen286
+\tymin=\dimen287
+\tymax=\dimen288
+\TY@tablewidth=\dimen289
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
@@ -873,7 +855,7 @@ Package: expl3 2024-01-22 L3 programming layer (loader)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count348
+\l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box90
 ))
 Package: xparse 2023-10-10 L3 Experimental document command parser
@@ -895,14 +877,14 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count349
+\c@abspage=\count346
 Package zref Info: New property: abspage on input line 67.
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip62
-\c@mdf@globalstyle@cnt=\count350
+\c@mdf@globalstyle@cnt=\count347
 \mdf@skipabove@length=\skip63
 \mdf@skipbelow@length=\skip64
 \mdf@leftmargin@length=\skip65
@@ -978,16 +960,16 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip126
 \mdfsubtitleheight=\skip127
 \mdfsubsubtitleheight=\skip128
-\c@mdfcountframes=\count351
+\c@mdfcountframes=\count348
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count352
-\c@mdf@env@i=\count353
-\c@mdf@env@ii=\count354
-\c@mdf@zref@counter=\count355
+\mdf@envdepth=\count349
+\c@mdf@env@i=\count350
+\c@mdf@env@ii=\count351
+\c@mdf@zref@counter=\count352
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.st
 y
@@ -997,17 +979,17 @@ Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip129
-\enit@outerparindent=\dimen298
-\enit@toks=\toks61
+\enit@outerparindent=\dimen290
+\enit@toks=\toks60
 \enit@inbox=\box96
-\enit@count@id=\count356
-\enitdp@description=\count357
+\enit@count@id=\count353
+\enitdp@description=\count354
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count358
-\float@exts=\toks62
+\c@float@type=\count355
+\float@exts=\toks61
 \float@box=\box97
-\@float@everytoks=\toks63
+\@float@everytoks=\toks62
 \@floatcapt=\box98
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
@@ -1021,7 +1003,7 @@ File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen299
+\arrowsize=\dimen291
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytrees.code.tex
@@ -1044,12 +1026,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 e.tex
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore
 .code.tex
-\t@pgfplots@toka=\toks64
-\t@pgfplots@tokb=\toks65
-\t@pgfplots@tokc=\toks66
-\pgfplots@tmpa=\dimen300
-\c@pgfplots@coordindex=\count359
-\c@pgfplots@scanlineindex=\count360
+\t@pgfplots@toka=\toks63
+\t@pgfplots@tokb=\toks64
+\t@pgfplots@tokc=\toks65
+\pgfplots@tmpa=\dimen292
+\c@pgfplots@coordindex=\count356
+\c@pgfplots@scanlineindex=\count357
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
 sysgeneric.code.tex))
@@ -1060,9 +1042,9 @@ ib\pgfplotsoldpgfsupp_loader.code.tex
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks67
-\t@pgf@tokb=\toks68
-\t@pgf@tokc=\toks69
+\t@pgf@toka=\toks66
+\t@pgf@tokb=\toks67
+\t@pgf@tokc=\toks68
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
 ib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -1074,14 +1056,14 @@ e\pgfplotsliststructure.code.tex)
 e\pgfplotsliststructureext.code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count361
+\c@pgfplotsarray@tmp=\count358
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsmatrix.code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
 plotstableshared.code.tex
-\c@pgfplotstable@counta=\count362
-\t@pgfplotstable@a=\toks70
+\c@pgfplotstable@counta=\count359
+\t@pgfplotstable@a=\toks69
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsdeque.code.tex)
@@ -1093,7 +1075,7 @@ sbinary.data.code.tex))
 sutil.verb.code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
 arypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count363
+\c@pgfplotslibrarysurf@no=\count360
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
 rypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -1125,14 +1107,14 @@ hs.code.tex)
 z/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen301
-\pgfdecoratedremainingdistance=\dimen302
-\pgfdecoratedinputsegmentcompleteddistance=\dimen303
-\pgfdecoratedinputsegmentremainingdistance=\dimen304
-\pgf@decorate@distancetomove=\dimen305
-\pgf@decorate@repeatstate=\count364
-\pgfdecorationsegmentamplitude=\dimen306
-\pgfdecorationsegmentlength=\dimen307
+\pgfdecoratedcompleteddistance=\dimen293
+\pgfdecoratedremainingdistance=\dimen294
+\pgfdecoratedinputsegmentcompleteddistance=\dimen295
+\pgfdecoratedinputsegmentremainingdistance=\dimen296
+\pgf@decorate@distancetomove=\dimen297
+\pgf@decorate@repeatstate=\count361
+\pgfdecorationsegmentamplitude=\dimen298
+\pgfdecorationsegmentlength=\dimen299
 )
 \tikz@lib@dec@box=\box99
 )
@@ -1146,13 +1128,13 @@ z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
 rarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count365
-\pgfplots@xmin@reg=\dimen308
-\pgfplots@xmax@reg=\dimen309
-\pgfplots@ymin@reg=\dimen310
-\pgfplots@ymax@reg=\dimen311
-\pgfplots@zmin@reg=\dimen312
-\pgfplots@zmax@reg=\dimen313
+\pgfplots@numplots=\count362
+\pgfplots@xmin@reg=\dimen300
+\pgfplots@xmax@reg=\dimen301
+\pgfplots@ymin@reg=\dimen302
+\pgfplots@ymax@reg=\dimen303
+\pgfplots@zmin@reg=\dimen304
+\pgfplots@zmax@reg=\dimen305
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryplotmarks.code.tex
@@ -1168,64 +1150,64 @@ Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen314
-\captionmargin=\dimen315
-\caption@leftmargin=\dimen316
-\caption@rightmargin=\dimen317
-\caption@width=\dimen318
-\caption@indent=\dimen319
-\caption@parindent=\dimen320
-\caption@hangindent=\dimen321
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count366
-\c@continuedfloat=\count367
+\c@caption@flags=\count363
+\c@continuedfloat=\count364
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count368
+\c@subfigure=\count365
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count369
+\c@subtable=\count366
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen322
-\lightrulewidth=\dimen323
-\cmidrulewidth=\dimen324
-\belowrulesep=\dimen325
-\belowbottomsep=\dimen326
-\aboverulesep=\dimen327
-\abovetopsep=\dimen328
-\cmidrulesep=\dimen329
-\cmidrulekern=\dimen330
-\defaultaddspace=\dimen331
-\@cmidla=\count370
-\@cmidlb=\count371
-\@aboverulesep=\dimen332
-\@belowrulesep=\dimen333
-\@thisruleclass=\count372
-\@lastruleclass=\count373
-\@thisrulewidth=\dimen334
+\heavyrulewidth=\dimen314
+\lightrulewidth=\dimen315
+\cmidrulewidth=\dimen316
+\belowrulesep=\dimen317
+\belowbottomsep=\dimen318
+\aboverulesep=\dimen319
+\abovetopsep=\dimen320
+\cmidrulesep=\dimen321
+\cmidrulekern=\dimen322
+\defaultaddspace=\dimen323
+\@cmidla=\count367
+\@cmidlb=\count368
+\@aboverulesep=\dimen324
+\@belowrulesep=\dimen325
+\@thisruleclass=\count369
+\@lastruleclass=\count370
+\@thisrulewidth=\dimen326
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count374
+\c@tracingmulticols=\count371
 \mult@box=\box100
-\multicol@leftmargin=\dimen335
-\c@unbalance=\count375
-\c@collectmore=\count376
-\doublecol@number=\count377
-\multicoltolerance=\count378
-\multicolpretolerance=\count379
-\full@width=\dimen336
-\page@free=\dimen337
-\premulticols=\dimen338
-\postmulticols=\dimen339
+\multicol@leftmargin=\dimen327
+\c@unbalance=\count372
+\c@collectmore=\count373
+\doublecol@number=\count374
+\multicoltolerance=\count375
+\multicolpretolerance=\count376
+\full@width=\dimen328
+\page@free=\dimen329
+\premulticols=\dimen330
+\postmulticols=\dimen331
 \multicolsep=\skip130
 \multicolbaselineskip=\skip131
 \partial@page=\box101
 \last@line=\box102
 \mc@boxedresult=\box103
-\maxbalancingoverflow=\dimen340
+\maxbalancingoverflow=\dimen332
 \mult@rightbox=\box104
 \mult@grightbox=\box105
 \mult@firstbox=\box106
@@ -1266,15 +1248,15 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box141
 \@tempa=\box142
 \@tempa=\box143
-\c@minrows=\count380
-\c@columnbadness=\count381
-\c@finalcolumnbadness=\count382
-\last@try=\dimen341
-\multicolovershoot=\dimen342
-\multicolundershoot=\dimen343
+\c@minrows=\count377
+\c@columnbadness=\count378
+\c@finalcolumnbadness=\count379
+\last@try=\dimen333
+\multicolovershoot=\dimen334
+\multicolundershoot=\dimen335
 \mult@nat@firstbox=\box144
 \colbreak@box=\box145
-\mc@col@check@num=\count383
+\mc@col@check@num=\count380
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/chemfig\chemfig.sty (
 C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/chemfig\chemfig.tex
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/simplekv\simplekv.tex
@@ -1283,26 +1265,26 @@ Package: simplekv 2023/10/02 v0.2c Simple keyval package (CT)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen344
-\pgfarrowlength=\dimen345
-\pgfarrowwidth=\dimen346
-\pgfarrowlinewidth=\dimen347
+\pgfarrowinset=\dimen336
+\pgfarrowlength=\dimen337
+\pgfarrowwidth=\dimen338
+\pgfarrowlinewidth=\dimen339
 )
-\CF_cnt_atomgroup=\count384
-\CF_cnt_group=\count385
-\CF_cnt_atom=\count386
-\CF_cnt_cycle=\count387
-\CF_cnt_cyclebonds=\count388
-\CF_cnt_compound=\count389
-\CF_dim=\dimen348
-\CF_turnangle=\dimen349
-\CF_arrowsize=\dimen350
-\CF_zero=\dimen351
+\CF_cnt_atomgroup=\count381
+\CF_cnt_group=\count382
+\CF_cnt_atom=\count383
+\CF_cnt_cycle=\count384
+\CF_cnt_cyclebonds=\count385
+\CF_cnt_compound=\count386
+\CF_dim=\dimen340
+\CF_turnangle=\dimen341
+\CF_arrowsize=\dimen342
+\CF_zero=\dimen343
 \CF_box=\box146
 \CF_boxstuff=\box147
 \CF_testbox=\box148
 \CF_chargebox=\box149
-\CF_substtoks=\toks71
+\CF_substtoks=\toks70
 )
 Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
@@ -1315,10 +1297,10 @@ Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
-\l__chemgreek_tmpa_int=\count390
-\g__chemgreek_tmpa_int=\count391
+\l__chemgreek_tmpa_int=\count387
+\g__chemgreek_tmpa_int=\count388
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count392
+\l__mhchem_ce_distanceFromLastComma_int=\count389
 \__mhchem_arrow_extPgfLength_skip=\skip132
 \mhchem@minispace@tmp=\skip133
 \mhchem@minibackspace@tmp=\skip134
@@ -1329,11 +1311,11 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
 \mhchem@smallbondwidth=\skip139
 \mhchem@bondtmp@minussidebearingleft=\skip140
 \mhchem@bondtmp@minussidebearingright=\skip141
-\l__mhchem_option_version_int=\count393
-\mhchem@option@minusmathsidebearingleft=\dimen352
-\mhchem@option@minusmathsidebearingright=\dimen353
-\mhchem@option@minustextsidebearingleft=\dimen354
-\mhchem@option@minustextsidebearingright=\dimen355
+\l__mhchem_option_version_int=\count390
+\mhchem@option@minusmathsidebearingleft=\dimen344
+\mhchem@option@minusmathsidebearingright=\dimen345
+\mhchem@option@minustextsidebearingleft=\dimen346
+\mhchem@option@minustextsidebearingright=\dimen347
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.s
 ty
@@ -1355,37 +1337,37 @@ File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 nonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen356
+\pgftransformnonlinearflatness=\dimen348
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 arycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen357
-\pgf@curvilinear@length@a=\dimen358
-\pgf@curvilinear@length@b=\dimen359
-\pgf@curvilinear@length@c=\dimen360
-\pgf@curvilinear@length@d=\dimen361
+\pgf@curvilinear@time@a=\dimen349
+\pgf@curvilinear@length@a=\dimen350
+\pgf@curvilinear@length@b=\dimen351
+\pgf@curvilinear@length@c=\dimen352
+\pgf@curvilinear@length@d=\dimen353
 )
-\pgf@arrows@the@rigidity=\dimen362
+\pgf@arrows@the@rigidity=\dimen354
 ))
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryfpu.code.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.de
 fines.tex
-\pgf@circ@count@a=\count394
-\pgf@circ@count@b=\count395
-\pgf@circ@count@c=\count396
-\pgf@circ@res@up=\dimen363
-\pgf@circ@res@down=\dimen364
-\pgf@circ@res@zero=\dimen365
-\pgf@circ@res@left=\dimen366
-\pgf@circ@res@right=\dimen367
-\pgf@circ@res@other=\dimen368
-\pgf@circ@res@step=\dimen369
-\pgf@circ@res@temp=\dimen370
-\pgf@circ@Rlen=\dimen371
-\pgf@circ@scaled@Rlen=\dimen372
-\pgfstartlinewidth=\dimen373
+\pgf@circ@count@a=\count391
+\pgf@circ@count@b=\count392
+\pgf@circ@count@c=\count393
+\pgf@circ@res@up=\dimen355
+\pgf@circ@res@down=\dimen356
+\pgf@circ@res@zero=\dimen357
+\pgf@circ@res@left=\dimen358
+\pgf@circ@res@right=\dimen359
+\pgf@circ@res@other=\dimen360
+\pgf@circ@res@step=\dimen361
+\pgf@circ@res@temp=\dimen362
+\pgf@circ@Rlen=\dimen363
+\pgf@circ@scaled@Rlen=\dimen364
+\pgfstartlinewidth=\dimen365
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircuti
 ls.tex
@@ -1401,7 +1383,7 @@ opoles.tex)
 oles.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctri
 poles.tex
-\pgf@circ@res@count=\count397
+\pgf@circ@res@count=\count394
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircqua
 dpoles.tex)
@@ -1411,7 +1393,7 @@ tipoles.tex)
 el.tex)
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvol
 tage.tex
-\pgfcirc@labelshift=\dimen374
+\pgfcirc@labelshift=\dimen366
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccur
 rent.tex)
@@ -1422,35 +1404,35 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count398
-\c@Blindtext=\count399
-\c@blind@countparstart=\count400
-\blind@countxx=\count401
-\blindtext@numBlindtext=\count402
-\blind@countyy=\count403
-\c@blindlist=\count404
-\c@blindlistlevel=\count405
-\c@blindlist@level=\count406
-\blind@listitem=\count407
-\c@blind@listcount=\count408
-\c@blind@levelcount=\count409
-\blind@mathformula=\count410
-\blind@Mathformula=\count411
-\c@blind@randomcount=\count412
-\c@blind@randommax=\count413
-\c@blind@pangramcount=\count414
-\c@blind@pangrammax=\count415
+\c@blindtext=\count395
+\c@Blindtext=\count396
+\c@blind@countparstart=\count397
+\blind@countxx=\count398
+\blindtext@numBlindtext=\count399
+\blind@countyy=\count400
+\c@blindlist=\count401
+\c@blindlistlevel=\count402
+\c@blindlist@level=\count403
+\blind@listitem=\count404
+\c@blind@listcount=\count405
+\c@blind@levelcount=\count406
+\blind@mathformula=\count407
+\blind@Mathformula=\count408
+\c@blind@randomcount=\count409
+\c@blind@randommax=\count410
+\c@blind@pangramcount=\count411
+\c@blind@pangrammax=\count412
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box151
 \beforetitleunit=\skip142
 \aftertitleunit=\skip143
-\ttl@plus=\dimen375
-\ttl@minus=\dimen376
-\ttl@toksa=\toks72
-\titlewidth=\dimen377
-\titlewidthlast=\dimen378
-\titlewidthfirst=\dimen379
+\ttl@plus=\dimen367
+\ttl@minus=\dimen368
+\ttl@toksa=\toks71
+\titlewidth=\dimen369
+\titlewidthlast=\dimen370
+\titlewidthfirst=\dimen371
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
@@ -1465,13 +1447,13 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip152
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count416
-\csq@gtype=\count417
-\csq@glevel=\count418
-\csq@qlevel=\count419
-\csq@maxlvl=\count420
-\csq@tshold=\count421
-\csq@ltx@everypar=\toks73
+\csq@reset=\count413
+\csq@gtype=\count414
+\csq@glevel=\count415
+\csq@qlevel=\count416
+\csq@maxlvl=\count417
+\csq@tshold=\count418
+\csq@ltx@everypar=\toks72
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -1493,11 +1475,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count422
+\c@section@level=\count419
 )
-\@linkdim=\dimen380
-\Hy@linkcounter=\count423
-\Hy@pagecounter=\count424
+\@linkdim=\dimen372
+\Hy@linkcounter=\count420
+\Hy@pagecounter=\count421
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1505,7 +1487,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count425
+\Hy@SavedSpaceFactor=\count422
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1519,13 +1501,13 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count426
+\c@Hy@tempcnt=\count423
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen381
+\XeTeXLinkMargin=\dimen373
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -1534,9 +1516,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count427
-\Field@Width=\dimen382
-\Fld@charsize=\dimen383
+\Fld@menulength=\count424
+\Field@Width=\dimen374
+\Fld@charsize=\dimen375
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -1548,9 +1530,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count428
-\c@Item=\count429
-\c@Hfootnote=\count430
+\Hy@abspage=\count425
+\c@Item=\count426
+\c@Hfootnote=\count427
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -1560,9 +1542,9 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\HyAnn@Count=\count431
-\Fld@listcount=\count432
-\c@bookmark@seq@number=\count433
+\HyAnn@Count=\count428
+\Fld@listcount=\count429
+\c@bookmark@seq@number=\count430
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -1581,15 +1563,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: physics 
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/physics2\physics2.sty
 Package: physics2 2024/01/10 v1.0.1 Tools for typesetting math for physics.
-\phy@tempcnta=\count434
-\phy@tempdima=\dimen384
-\phy@tempdimb=\dimen385
+\phy@tempcnta=\count431
+\phy@tempdima=\dimen376
+\phy@tempdimb=\dimen377
 \phy@tempskipa=\skip154
 \phy@tempmuskipa=\muskip18
 \phy@tempboxa=\box152
-\phy@toksa=\toks74
-\l__phy_tmpa_int=\count435
-\l__phy_tmpb_int=\count436
+\phy@toksa=\toks73
+\l__phy_tmpa_int=\count432
+\l__phy_tmpb_int=\count433
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/physics2\phy-ab.sty
 File: phy-ab.sty 2023/10/24 `ab' (autobraces) module of physics2
 )
@@ -1623,11 +1605,11 @@ LaTeX Info: Redefining \pv on input line 52.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/physics2\phy-diagmat.st
 y
 File: phy-diagmat.sty 2024/01/10 `diagmat' module of physics2
-\l__phy_mat_dim_int=\count437
+\l__phy_mat_dim_int=\count434
 ) (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/physics2\phy-xmat.sty
 File: phy-xmat.sty 2023/10/24 `xmat' module of physics2
-\l__phy_xmat_showtop_int=\count438
-\l__phy_xmat_showleft_int=\count439
+\l__phy_xmat_showtop_int=\count435
+\l__phy_xmat_showleft_int=\count436
 )
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/physics2\phy-braket.sty
 File: phy-braket.sty 2023/10/24 `braket' module of physics2
@@ -1640,99 +1622,31 @@ LaTeX Info: Redefining \ket on input line 48.
 LaTeX Info: Redefining \braket on input line 65.
 LaTeX Info: Redefining \ketbra on input line 90.
 )
-\c@subsubsubsection=\count440
-(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) (preamble/preamble.tex
+\c@subsubsubsection=\count437
+) (preamble/preamble.tex
 \originalparindent=\skip155
 \originalparskip=\skip156
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count438
+\Gm@cntv=\count439
+\c@Gm@tempcnt=\count440
+\Gm@bindingoffset=\dimen378
+\Gm@wd@mp=\dimen379
+\Gm@odd@mp=\dimen380
+\Gm@even@mp=\dimen381
+\Gm@layoutwidth=\dimen382
+\Gm@layoutheight=\dimen383
+\Gm@layouthoffset=\dimen384
+\Gm@layoutvoffset=\dimen385
+\Gm@dimlist=\toks74
+(C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 \c@definition=\count441
 \c@example=\count442
 \c@theorem=\count443
-
-! LaTeX Error: Command \c@definition already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 \newcounter{definition}
-                             [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@example already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 \newcounter{example}
-                          [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \definition already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \example already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@theorem already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \newcounter{theorem}
-                          [section]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \theorem already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1763,40 +1677,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a5paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(54.2025pt, 312.69579pt, 54.2025pt)
-* v-part:(T,H,B)=(54.2025pt, 489.10287pt, 54.2025pt)
-* \paperwidth=421.10078pt
-* \paperheight=597.50787pt
-* \textwidth=312.69579pt
-* \textheight=489.10287pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
-* \topmargin=-55.06749pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=49.79231pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1842,6 +1722,8 @@ Package caption Info: End \AtBeginDocument code.
 Package chemgreek Info: Activating mapping `default' on line 6.
 
 Package hyperref Info: Link coloring ON on input line 6.
+(C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out) (C:\
+Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.out)
 \@outlinefile=\write4
 \openout4 = `p131.out'.
 
@@ -1853,8 +1735,42 @@ LaTeX Info: Redefining \curl on input line 6.
 LaTeX Info: Redefining \laplacian on input line 6.
 LaTeX Info: Redefining \Re on input line 6.
 LaTeX Info: Redefining \Im on input line 6.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a5paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 312.69579pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 489.10287pt, 54.2025pt)
+* \paperwidth=421.10078pt
+* \paperheight=597.50787pt
+* \textwidth=312.69579pt
+* \textheight=489.10287pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 (preamble/title.tex
-<../images/P131.pdf, id=42, 252.945pt x 252.945pt>
+<../images/P131.pdf, id=350, 252.945pt x 252.945pt>
 File: ../images/P131.pdf Graphic file (type pdf)
 <use ../images/P131.pdf>
 Package pdftex.def Info: ../images/P131.pdf  used on input line 4.
@@ -1918,587 +1834,135 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) [2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.e
 nc}] (preamble/references.tex
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 		]
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 8.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 		]
-       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.20 			]
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.20 			]
-         
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [3] (preamble/reminders.tex
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 	\item[\square]
-                    Midterm Exam :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\llap  #1->\hb@xt@ \z@ {\hss #1}
-                                
-l.7 	\item[\square]
-                    Midterm Exam :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 	\item[\square]
-                    Midterm Exam :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.7 	\item[\square]
-                    Midterm Exam :
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\llap  #1->\hb@xt@ \z@ {\hss #1}
-                                
-l.12 	\item[\square]
-                    
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.12 	\item[\square]
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\llap  #1->\hb@xt@ \z@ {\hss #1}
-                                
-l.17 	\item[\square]
-                    
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.17 	\item[\square]
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\llap  #1->\hb@xt@ \z@ {\hss #1}
-                                
-l.18 	\item[\square]
-                    
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 	\item[\square]
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 	\item[\square]
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [4] (preamble/toc.tex
-No file p131.toc.
+) [3] (preamble/reminders.tex) [4] (preamble/preface.tex) [5] (preamble/toc.tex
+(C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc [6] [
+7])
 \tf@toc=\write5
 \openout5 = `p131.toc'.
 
-[5]
-No file p131.lof.
+[8] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof)
 \tf@lof=\write6
 \openout6 = `p131.lof'.
 
-) [6] (content/1_1.tex [7
+) [9] (content/1_1.tex [10
 
 {C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}
-] [8] [9] [10]
+] [11] [12] [13]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 127.
-[11] [12]
+[14] [15]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 226
 .
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [13]
-
-LaTeX Warning: Reference `eq:chareq' on page 14 undefined on input line 244.
-
-[14] [15] [16]
-! Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.415         \end{itemize}
-                           
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.415         \end{itemize}
-                           
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.415         \end{itemize}
-                           
-I'm forgetting what you said and using zero instead.
-
-! Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.415         \end{itemize}
-                           
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.415         \end{itemize}
-                           
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.415         \end{itemize}
-                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.415         \end{itemize}
-                           
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.415         \end{itemize}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.415         \end{itemize}
-                           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.415         \end{itemize}
-                           
-Things are pretty mixed up, but I think the worst is over.
-
-<images/scalarfield.pdf, id=227, 175.93047pt x 171.65265pt>
+) [16] [17] [18] [19]
+<images/scalarfield.pdf, id=630, 175.93047pt x 171.65265pt>
 File: images/scalarfield.pdf Graphic file (type pdf)
 <use images/scalarfield.pdf>
-Package pdftex.def Info: images/scalarfield.pdf  used on input line 421.
+Package pdftex.def Info: images/scalarfield.pdf  used on input line 419.
 (pdftex.def)             Requested size: 130.08621pt x 126.92667pt.
-<images/vectorfield.pdf, id=228, 177.70822pt x 173.43042pt>
+<images/vectorfield.pdf, id=631, 177.70822pt x 173.43042pt>
 File: images/vectorfield.pdf Graphic file (type pdf)
 <use images/vectorfield.pdf>
-Package pdftex.def Info: images/vectorfield.pdf  used on input line 426.
+Package pdftex.def Info: images/vectorfield.pdf  used on input line 424.
 (pdftex.def)             Requested size: 130.08621pt x 126.95775pt.
-[17 <./images/scalarfield.pdf> <./images/vectorfield.pdf>] [18]
-<images/gradient.pdf, id=277, 415.23215pt x 214.3791pt>
+[20 <./images/scalarfield.pdf> <./images/vectorfield.pdf>] [21]
+<images/gradient.pdf, id=674, 415.23215pt x 214.3791pt>
 File: images/gradient.pdf Graphic file (type pdf)
 <use images/gradient.pdf>
-Package pdftex.def Info: images/gradient.pdf  used on input line 475.
+Package pdftex.def Info: images/gradient.pdf  used on input line 473.
 (pdftex.def)             Requested size: 289.07999pt x 149.24982pt.
-[19 <./images/gradient.pdf>]
-<images/divergence.pdf, id=296, 416.99791pt x 213.39485pt>
+[22 <./images/gradient.pdf>]
+<images/divergence.pdf, id=692, 416.99791pt x 213.39485pt>
 File: images/divergence.pdf Graphic file (type pdf)
 <use images/divergence.pdf>
-Package pdftex.def Info: images/divergence.pdf  used on input line 502.
+Package pdftex.def Info: images/divergence.pdf  used on input line 500.
 (pdftex.def)             Requested size: 289.07999pt x 147.94266pt.
-[20 <./images/divergence.pdf>]
-<images/curl.pdf, id=315, 416.99791pt x 212.78374pt>
+[23 <./images/divergence.pdf>]
+<images/curl.pdf, id=709, 416.99791pt x 212.78374pt>
 File: images/curl.pdf Graphic file (type pdf)
 <use images/curl.pdf>
-Package pdftex.def Info: images/curl.pdf  used on input line 532.
+Package pdftex.def Info: images/curl.pdf  used on input line 530.
 (pdftex.def)             Requested size: 289.07999pt x 147.51898pt.
-[21 <./images/curl.pdf>]
+[24 <./images/curl.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-56.
+54.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/lpc.pdf, id=334, 416.99791pt x 190.82593pt>
+<images/lpc.pdf, id=727, 416.99791pt x 190.82593pt>
 File: images/lpc.pdf Graphic file (type pdf)
 <use images/lpc.pdf>
-Package pdftex.def Info: images/lpc.pdf  used on input line 566.
+Package pdftex.def Info: images/lpc.pdf  used on input line 564.
 (pdftex.def)             Requested size: 289.07999pt x 132.29605pt.
-[22{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
- <./images/lpc.pdf>] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32]
-Overfull \hbox (0.79422pt too wide) in paragraph at lines 1010--1013
+[25{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
+ <./images/lpc.pdf>] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
+Overfull \hbox (0.79422pt too wide) in paragraph at lines 1008--1011
 []\OT1/lmr/m/n/10 We in-tro-duce an or-thog-o-nal curvi-lin-ear co-or-di-nate s
 ys-tem $(\OML/lmm/m/it/10 q[]; q[]; q[]\OT1/lmr/m/n/10 )$
  []
 
-[33] [34] [35]
+[36] [37] [38] [39] [40]
+Overfull \hbox (4.66353pt too wide) in paragraph at lines 1402--1403
+[]\OT1/lmr/m/n/10 For the scalar Lapla-cian, $\OML/lmm/m/it/10 h[]h[]h[] \OT1/l
+mr/m/n/10 = \OML/lmm/m/it/10 r[] [] ^^R$\OT1/lmr/m/n/10 . Sub-sti-tut-ing into 
+[]
+ []
 
-LaTeX Warning: Reference `eq:div_general' on page 36 undefined on input line 12
-25.
-
-
-LaTeX Warning: Reference `eq:curl_general' on page 36 undefined on input line 1
-235.
-
-[36]
-
-LaTeX Warning: Reference `eq:div_general' on page 37 undefined on input line 13
-63.
-
-[37]
-
-LaTeX Warning: Reference `eq:lap_general' on page 38 undefined on input line 14
-04.
-
-[38] [39] [40] [41] [42]) (content/1_2.tex [43] [44]
+[41] [42] [43] [44] [45]) (content/1_2.tex [46] [47]
 Overfull \hbox (17.30977pt too wide) in paragraph at lines 70--72
 \OT1/lmr/m/n/10 If we have \OT1/lmr/m/it/10 sev-eral \OT1/lmr/m/n/10 point char
 ges $\OML/lmm/m/it/10 q[]; q[]; q[]; [] ; q[]$\OT1/lmr/m/n/10 , at dis-tances $
 \OML/lmm/m/it/10 r[]; r[]; r[]; [] ; r[]$
  []
 
-[45]
-
-LaTeX Warning: Reference `eq: discrete E' on page 46 undefined on input line 11
-1.
-
-
-LaTeX Warning: Reference `subfig: efield ptcharge' on page 46 undefined on inpu
-t line 112.
-
-<images/pointcharge.pdf, id=600, 144.54pt x 144.54pt>
+[48]
+<images/pointcharge.pdf, id=983, 144.54pt x 144.54pt>
 File: images/pointcharge.pdf Graphic file (type pdf)
 <use images/pointcharge.pdf>
 Package pdftex.def Info: images/pointcharge.pdf  used on input line 125.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/linecharge2.pdf, id=601, 144.54pt x 144.54pt>
+<images/linecharge2.pdf, id=984, 144.54pt x 144.54pt>
 File: images/linecharge2.pdf Graphic file (type pdf)
 <use images/linecharge2.pdf>
 Package pdftex.def Info: images/linecharge2.pdf  used on input line 129.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/surfacecharge.pdf, id=602, 144.54pt x 144.54pt>
+<images/surfacecharge.pdf, id=985, 144.54pt x 144.54pt>
 File: images/surfacecharge.pdf Graphic file (type pdf)
 <use images/surfacecharge.pdf>
 Package pdftex.def Info: images/surfacecharge.pdf  used on input line 134.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/volumecharge.pdf, id=603, 144.54pt x 144.54pt>
+<images/volumecharge.pdf, id=986, 144.54pt x 144.54pt>
 File: images/volumecharge.pdf Graphic file (type pdf)
 <use images/volumecharge.pdf>
 Package pdftex.def Info: images/volumecharge.pdf  used on input line 139.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-
-LaTeX Warning: Reference `subfig: efield linecharge' on page 46 undefined on in
-put line 143.
-
-
-LaTeX Warning: Reference `subfig: efield surfcharge' on page 46 undefined on in
-put line 145.
-
-
-LaTeX Warning: Reference `subfig: efield volcharge' on page 46 undefined on inp
-ut line 146.
-
-[46 <./images/pointcharge.pdf> <./images/linecharge2.pdf> <./images/surfacechar
-ge.pdf> <./images/volumecharge.pdf>]
-
-LaTeX Warning: Reference `eq: cont E' on page 47 undefined on input line 165.
-
-[47]
-<../code/efield.pdf, id=687, 127.91791pt x 127.91791pt>
+[49 <./images/pointcharge.pdf> <./images/linecharge2.pdf> <./images/surfacechar
+ge.pdf> <./images/volumecharge.pdf>] [50]
+<../code/efield.pdf, id=1072, 127.91791pt x 127.91791pt>
 File: ../code/efield.pdf Graphic file (type pdf)
 <use ../code/efield.pdf>
 Package pdftex.def Info: ../code/efield.pdf  used on input line 184.
 (pdftex.def)             Requested size: 126.47249pt x 126.47514pt.
-[48 <C:/Users/verci/Documents/code/Class Notes - V/Physics 131/code/efield.pdf>
+[51 <C:/Users/verci/Documents/code/Class Notes - V/Physics 131/code/efield.pdf>
 ]
-<images/oppositecharges.pdf, id=709, 114.1866pt x 114.1866pt>
+<images/oppositecharges.pdf, id=1091, 114.1866pt x 114.1866pt>
 File: images/oppositecharges.pdf Graphic file (type pdf)
 <use images/oppositecharges.pdf>
 Package pdftex.def Info: images/oppositecharges.pdf  used on input line 214.
 (pdftex.def)             Requested size: 126.47249pt x 126.47855pt.
-<images/equalcharges.pdf, id=710, 114.1866pt x 114.1866pt>
+<images/equalcharges.pdf, id=1092, 114.1866pt x 114.1866pt>
 File: images/equalcharges.pdf Graphic file (type pdf)
 <use images/equalcharges.pdf>
 Package pdftex.def Info: images/equalcharges.pdf  used on input line 219.
 (pdftex.def)             Requested size: 126.47249pt x 126.47855pt.
-
-LaTeX Warning: Reference `subfig:opposite charges' on page 49 undefined on inpu
-t line 228.
-
-
-LaTeX Warning: Reference `subfig:equal charges' on page 49 undefined on input l
-ine 230.
-
-[49 <./images/oppositecharges.pdf> <./images/equalcharges.pdf>] [50]
+[52 <./images/oppositecharges.pdf> <./images/equalcharges.pdf>] [53]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 289.
@@ -2512,13 +1976,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 289.
 
 
-LaTeX Warning: Reference `eq: cont E' on page 51 undefined on input line 290.
-
-
-LaTeX Warning: Reference `eq: divergence of inverse quadratic' on page 51 undef
-ined on input line 301.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 316.
 
@@ -2530,165 +1987,120 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 316.
 
-[51]
-
-LaTeX Warning: Reference `fig:efieldlines' on page 52 undefined on input line 3
-22.
-
-[52] [53] [54] [55]
-
-LaTeX Warning: Reference `eq:farfield potential' on page 56 undefined on input 
-line 519.
-
-[56] [57]
-<images/dipole_normal_V.pdf, id=818, 144.54pt x 144.54pt>
+[54] [55] [56] [57] [58] [59] [60]
+<images/dipole_normal_V.pdf, id=1206, 144.54pt x 144.54pt>
 File: images/dipole_normal_V.pdf Graphic file (type pdf)
 <use images/dipole_normal_V.pdf>
 Package pdftex.def Info: images/dipole_normal_V.pdf  used on input line 586.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 586.
-<images/dipole_normal_E.pdf, id=819, 144.54pt x 144.54pt>
+<images/dipole_normal_E.pdf, id=1207, 144.54pt x 144.54pt>
 File: images/dipole_normal_E.pdf Graphic file (type pdf)
 <use images/dipole_normal_E.pdf>
 Package pdftex.def Info: images/dipole_normal_E.pdf  used on input line 591.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
-<images/dipole_limit_V.pdf, id=820, 144.54pt x 144.54pt>
+<images/dipole_limit_V.pdf, id=1208, 144.54pt x 144.54pt>
 File: images/dipole_limit_V.pdf Graphic file (type pdf)
 <use images/dipole_limit_V.pdf>
 Package pdftex.def Info: images/dipole_limit_V.pdf  used on input line 596.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
-<images/dipole_limit_E.pdf, id=821, 144.54pt x 144.54pt>
+<images/dipole_limit_E.pdf, id=1209, 144.54pt x 144.54pt>
 File: images/dipole_limit_E.pdf Graphic file (type pdf)
 <use images/dipole_limit_E.pdf>
 Package pdftex.def Info: images/dipole_limit_E.pdf  used on input line 601.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
-[58 <./images/dipole_normal_V.pdf> <./images/dipole_normal_E.pdf> <./images/dip
-ole_limit_V.pdf> <./images/dipole_limit_E.pdf>]) (content/1_3.tex [59]
+[61 <./images/dipole_normal_V.pdf> <./images/dipole_normal_E.pdf> <./images/dip
+ole_limit_V.pdf> <./images/dipole_limit_E.pdf>]) (content/1_3.tex [62] [63] [64
+] [65] [66] [67] [68] [69] [70] [71] [72]) (content/1_4.tex [73]) (content/1_5.
+tex [74]) (content/1_6.tex [75]) (content/1_7.tex [76]) (content/1_8.tex [77]) 
+(content/1_9.tex [78]) (content/2_1.tex [79
 
-LaTeX Warning: Reference `eq:E_potential' on page 60 undefined on input line 56
-.
-
-
-LaTeX Warning: Reference `eq:E_linepath' on page 60 undefined on input line 56.
-
-
-
-LaTeX Warning: Reference `eq:E_potential' on page 60 undefined on input line 62
-.
-
-[60] [61] [62]
-
-LaTeX Warning: Reference `subsubsec:electricpotential intro' on page 63 undefin
-ed on input line 174.
-
-[63] [64]
-
-LaTeX Warning: Reference `eq:poisson_theorem' on page 65 undefined on input lin
-e 253.
-
-[65]
-
-LaTeX Warning: Reference `eq:charge_potential' on page 66 undefined on input li
-ne 297.
-
-[66] [67] [68] [69]) (content/1_4.tex [70]) (content/1_5.tex [71]) (content/1_6
-.tex [72]) (content/1_7.tex [73]) (content/1_8.tex [74]) (content/1_9.tex [75])
-(content/2_1.tex [76
-
-]) (content/2_2.tex [77]) (content/2_3.tex [78]) (content/2_4.tex [79]) (preamb
-le/endnote.tex [80]) [81] (C:\Users\verci\Documents\code\Class Notes - V\Physic
+]) (content/2_2.tex [80]) (content/2_3.tex [81]) (content/2_4.tex [82]) (preamb
+le/endnote.tex [83]) [84] (C:\Users\verci\Documents\code\Class Notes - V\Physic
 s 131\build\p131.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+Package rerunfilecheck Info: File `p131.out' has not changed.
+(rerunfilecheck)             Checksum: E4E396E524607AD5072043263B49EE01;12969.
+ )
+(\end occurred inside a group at level 1)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `p131.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `p131.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B5C7522742A075A9BEE7DE71A8C11CCB;12868.
- ) 
+### simple group (level 1) entered at line 16 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 69050 strings out of 474542
- 1735006 string characters out of 5744446
- 2659873 words of memory out of 5000000
- 89845 multiletter control sequences out of 15000+600000
- 664119 words of font info for 139 fonts, out of 8000000 for 9000
+ 69113 strings out of 474542
+ 1736822 string characters out of 5744446
+ 2490647 words of memory out of 5000000
+ 89886 multiletter control sequences out of 15000+600000
+ 668345 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,16n,110p,788b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi480\esi
-nt10.pk> <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600
-\bbm10.pk> <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dp
-i600\esint10.pk><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/verci/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/verci/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/verci/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ve
-rci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/
-Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/verci/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/verci/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/verci/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/verc
-i/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbsy10.pfb><C:/U
-sers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
-sers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/U
-sers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Use
-rs/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Use
-rs/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Us
-ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Use
-rs/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users
-/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/
-verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users
-/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/
-verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/v
-erci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/ve
-rci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/verc
-i/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/verci/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/verci/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/verci/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/verci/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/verci/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/verci/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/verci/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/verci/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/verci/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/verci/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/verci/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/verci/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/verci/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/ver
-ci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+ 106i,16n,110p,788b,1575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/es
+int/dpi480\esint10.pk> <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
+lic/bbm/dpi600\bbm10.pk> <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/p
+ublic/esint/dpi600\esint10.pk><C:/Users/verci/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/verci/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/verci/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/verci/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/verc
+i/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
+ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi9.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/verci/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/verci/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/verci/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/User
+s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmb
+sy10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+bx10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+bx12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+bx7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmb
+x8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx
+9.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi
+10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcs
+c10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lme
+x10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmm
+i10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmm
+i12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmm
+i5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi
+7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8
+.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.
+pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10
+.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.
+pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.p
+fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb>
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C
+:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/
+Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Us
+ers/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/User
+s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/User
+s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/User
+s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users
+/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users
+/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/
+verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/v
+erci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/ve
+rci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/ve
+rci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/ver
+ci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb
 ><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
-ols/msbm7.pfb>
+ols/msbm10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msbm7.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 131\bu
-ild\p131.pdf" (82 pages, 2459783 bytes).
+ild\p131.pdf" (85 pages, 2519588 bytes).
 PDF statistics:
- 1299 PDF objects out of 1440 (max. 8388607)
- 415 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1676 PDF objects out of 1728 (max. 8388607)
+ 431 named destinations out of 1000 (max. 500000)
+ 871 words of extra memory for PDF output out of 10000 (max. 10000000)
 

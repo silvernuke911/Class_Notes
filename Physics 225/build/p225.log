@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  27 AUG 2026 00:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  27 AUG 2026 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1770,7 +1770,7 @@ LaTeX Info: Redefining \Im on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (preamble/title.tex
-<images/cover_img.pdf, id=207, 289.08pt x 289.08pt>
+<images/cover_img.pdf, id=210, 289.08pt x 289.08pt>
 File: images/cover_img.pdf Graphic file (type pdf)
 <use images/cover_img.pdf>
 Package pdftex.def Info: images/cover_img.pdf  used on input line 4.
@@ -1827,7 +1827,7 @@ been already used, duplicate ignored
 l.9 	\newpage
               [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
 m/lm-mathit.enc}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
-m/lm-mathsy.enc}] (preamble/preface.tex [2]) [3] (preamble/course_info.tex
+m/lm-mathsy.enc}] (preamble/course_info.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 18.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
@@ -1837,62 +1837,62 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 18.
-) [4{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.en
-c}] (preamble/references.tex [5]) [6] (preamble/reminders.tex) [7] (preamble/to
-c.tex (C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.toc
-[8])
+) [2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.en
+c}] (preamble/references.tex [3]) [4] (preamble/reminders.tex) [5] (preamble/pr
+eface.tex) [6] (preamble/toc.tex (C:\Users\verci\Documents\code\Class Notes - V
+\Physics 225\build\p225.toc [7])
 \tf@toc=\write5
 \openout5 = `p225.toc'.
 
-[9] (C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof)
+[8] (C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.lof)
 \tf@lof=\write6
 \openout6 = `p225.lof'.
 
-) [10] (content/meeting1.tex [11
+) [9] (content/meeting1.tex [10
 
-] [12{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex
-.enc}] [13]
+] [11{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex
+.enc}] [12]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 146.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 146.
-[14] [15] [16] [17]
-<images/metricperspective.pdf, id=409, 289.08pt x 144.54pt>
+[13] [14] [15] [16]
+<images/metricperspective.pdf, id=408, 289.08pt x 144.54pt>
 File: images/metricperspective.pdf Graphic file (type pdf)
 <use images/metricperspective.pdf>
 Package pdftex.def Info: images/metricperspective.pdf  used on input line 270.
 (pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
-[18] [19 <./images/metricperspective.pdf>]
+[17] [18 <./images/metricperspective.pdf>]
 Overfull \hbox (0.27525pt too wide) in paragraph at lines 335--338
 \OT1/lmr/m/n/10 Since the two for-malisms at-tempt to ex-plain the same phe-nom
 enon,
  []
 
-[20]) [21] (content/meeting2.tex [22] [23] [24] [25] [26]
+[19]) [20] (content/meeting2.tex [21] [22] [23] [24] [25]
 Overfull \hbox (5.83195pt too wide) in paragraph at lines 433--434
 \OT1/lmr/m/n/10 For roughly three cen-turies, New-to-nian me-chan-ics was the j
 ewel of physics.
  []
 
-[27]
+[26] [27]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-72.
+75.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [28]
-Overfull \hbox (1.79076pt too wide) in paragraph at lines 476--477
+)
+Overfull \hbox (1.79076pt too wide) in paragraph at lines 479--480
 []\OT1/lmr/m/n/10 As such, the equa-tions gov-ern-ing Galilean rel-a-tiv-ity mu
 st be dropped
  []
 
 
-Overfull \hbox (3.24869pt too wide) in paragraph at lines 490--491
+Overfull \hbox (3.24869pt too wide) in paragraph at lines 493--494
 []\OT1/lmr/m/n/10 The Poincar^^Se-Lorentz trans-for-ma-tions pro-vide the ap-pr
 o-pri-ate trans-
  []
 
-[29{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
-] [30] [31] [32] [33]) [34] (content/meeting3.tex
+[28{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
+] [29] [30] [31] [32]) [33] (content/meeting3.tex
 
 LaTeX Warning: File `images/frames_in_motion.pdf' not found on input line 21.
 
@@ -1909,33 +1909,38 @@ l.21 ...height=1.9in]{images/frames_in_motion.pdf}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[35
+[34
 
-] [36] [37] [38] [39] [40] [41] [42]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
-
+] [35] [36] [37] [38] [39] [40] [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
+(hyperref)                removing `math shift' on input line 396.
 
-[43] [44] [45] [46] [47]
-Overfull \hbox (11.85013pt too wide) in paragraph at lines 644--646
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 396.
+
+[42] [43]
+Overfull \hbox (2.83626pt too wide) detected at line 517
+\OML/lmm/m/it/7 M[]\OT1/lmr/m/n/7 (\OML/lmm/m/it/7 w\OT1/lmr/m/n/7 ) = []
+ []
+
+[44] [45] [46]
+Overfull \hbox (11.85013pt too wide) in paragraph at lines 646--648
 \OT1/lmr/m/n/10 and these as-sump-tions led us to find the trans-for-ma-tion eq
 ua-tions. Nowhere
  []
 
-[48]
-Overfull \hbox (4.71361pt too wide) in paragraph at lines 695--696
+[47]
+Overfull \hbox (4.71361pt too wide) in paragraph at lines 697--698
 \OT1/lmr/m/n/10 The pa-ram-e-ter $\OML/lmm/m/it/10 k$ \OT1/lmr/m/n/10 there-for
 e dis-tin-guishes dif-fer-ent pos-si-ble kine-matic struc-
  []
 
-[49]
+[48]
 
 LaTeX Warning: File `images/cones_types_of_relativity.pdf' not found on input l
-ine 730.
+ine 732.
 
 
 ! Package pdftex.def Error: File `images/cones_types_of_relativity.pdf' not fou
@@ -1945,17 +1950,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.730 ...in]{images/cones_types_of_relativity.pdf}
+l.732 ...in]{images/cones_types_of_relativity.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[50]) [51]
+[49]) [50] [51
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 28.
-
-[52
+] [52
 
 ] [53
 
@@ -1965,22 +1967,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [56
 
-] [57
-
-] (C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux)
+] (preamble/authornote.tex [57]) [58] (C:\Users\verci\Documents\code\Class Note
+s - V\Physics 225\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `p225.out' has not changed.
-(rerunfilecheck)             Checksum: 3647C3C4F31FFE06ABDF058BCEE7D3C4;8015.
+(rerunfilecheck)             Checksum: C485FB69AC2B766447BD12307C8EDFDD;8133.
  ) 
 Here is how much of TeX's memory you used:
- 68643 strings out of 474542
- 1728145 string characters out of 5744446
- 2487186 words of memory out of 5000000
- 89639 multiletter control sequences out of 15000+600000
- 650816 words of font info for 120 fonts, out of 8000000 for 9000
+ 68653 strings out of 474542
+ 1728452 string characters out of 5744446
+ 2487193 words of memory out of 5000000
+ 89645 multiletter control sequences out of 15000+600000
+ 655042 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,17n,110p,788b,1154s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esi
@@ -1997,31 +1998,32 @@ Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/verci/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/verci/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/verci/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/verci/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/verci/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/verci/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/verci/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/verci/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/verci/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/verci/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/verci/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/verci/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/verci/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/verci/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/verci/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/verci/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/verci/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/verci/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/verci/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/verci/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/verci/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/verci/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/verci/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/verci/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/verci/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/verci/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/verci/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/verci/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/verci/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/verci/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/verci/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/verci/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/verci/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/verci/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/verci/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/verci/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/verci/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/verci/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/verci/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/verci/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (58 pages, 2561609 bytes).
+ild\p225.pdf" (59 pages, 2573205 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 946 PDF objects out of 1000 (max. 8388607)
+ 256 named destinations out of 1000 (max. 500000)
+ 511 words of extra memory for PDF output out of 10000 (max. 10000000)
 

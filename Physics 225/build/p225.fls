@@ -599,13 +599,6 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
-INPUT .\preamble\preface.tex
-INPUT .\preamble\preface.tex
-INPUT .\preamble\preface.tex
-INPUT .\preamble\preface.tex
-INPUT preamble\preface.tex
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
-INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT .\preamble\course_info.tex
 INPUT .\preamble\course_info.tex
 INPUT .\preamble\course_info.tex
@@ -642,11 +635,18 @@ INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT .\preamble\references.tex
 INPUT preamble\references.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT .\preamble\reminders.tex
 INPUT preamble\reminders.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT .\preamble\preface.tex
+INPUT preamble\preface.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
 INPUT .\preamble\toc.tex
@@ -709,6 +709,12 @@ INPUT .\content\meeting3.tex
 INPUT .\content\meeting3.tex
 INPUT .\content\meeting3.tex
 INPUT content\meeting3.tex
+INPUT .\preamble\authornote.tex
+INPUT .\preamble\authornote.tex
+INPUT .\preamble\authornote.tex
+INPUT .\preamble\authornote.tex
+INPUT preamble\authornote.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
@@ -738,6 +744,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi5.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi6.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi7.pfb

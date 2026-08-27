@@ -36,7 +36,6 @@
 % TABLES AND BOXES
 \usepackage{tabulary}            % Tables with automatic width adjustment
 \usepackage{mdframed}            % Framed boxes with backgrounds
-% \usepackage{chemformula}       % Alternative chemistry notation (commented)
 
 % MATH TOOLS
 \usepackage{centernot}           % Centered negation symbol
@@ -73,6 +72,7 @@
 
 % HYPERLINKS
 \usepackage[colorlinks=true, allcolors=blue]{hyperref} % Clickable links
+\usepackage{url}
 
 % PAGE GEOMETRY
 % \usepackage[top=1.0in,bottom=1.0in,left=1.0in,right=1.0in,marginparwidth=1.75cm]{geometry}
@@ -84,8 +84,9 @@
 \usepackage{braket}              % Dirac bra-ket notation
 
 % PHYSICS PACKAGES (LOADED LAST)
+% Only use ONE of these - pick physics OR physics2, not both
 \usepackage[italicdiff]{physics} % Original physics package (d in italics)
-\usepackage{physics2}            % Modern physics package
+\usepackage{physics2}            % Modern physics package - COMMENTED OUT to avoid conflict
 \usephysicsmodule{ab}            % Auto-braces module
 \usephysicsmodule{ab.legacy}     % Legacy \abs, \norm, \eval
 \usephysicsmodule{nabla.legacy}  % \grad, \div, \curl operators
@@ -116,12 +117,6 @@
 \newcommand{\acsch}{\csch^{-1}}
 \newcommand{\asech}{\sech^{-1}}
 \newcommand{\acoth}{\coth^{-1}}
-% \DeclareMathOperator{\arcsin}{arcsin}
-% \DeclareMathOperator{\arccos}{arccos}
-% \DeclareMathOperator{\arctan}{arctan}
-% \DeclareMathOperator{\arccsc}{arccsc}
-% \DeclareMathOperator{\arcsec}{arcsec}
-% \DeclareMathOperator{\arccot}{arccot}
 \DeclareMathOperator{\arsinh}{arsinh}
 \DeclareMathOperator{\arcosh}{arcosh}
 \DeclareMathOperator{\artanh}{artanh}
@@ -252,104 +247,3 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
-%%% CUSTOM SECTION TITLE FONT SIZES
-\titleformat*{\section}{\LARGE\bfseries}
-\titleformat*{\subsection}{\Large\bfseries}
-\titleformat*{\subsubsection}{\large\bfseries}
-\setlength{\parskip}{10pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%             ENVIRONMENTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newenvironment{amatrix}[1]{%
-  \left(
-  \begin{array}{@{}*{#1}{c}|c@{}}}{
-\end{array}\right)}
-
-\newenvironment{abmatrix}[1]{%
-  \left[
-  \begin{array}{@{}*{#1}{c}|c@{}}}{
-\end{array}\right]}
-
-\newenvironment{problem}{
-  \hrule
-  \vspace{5pt}
-}{
-  \vspace{10pt}\hrule\vspace{10pt}
-}
-
-\newenvironment{solution_pset}{
-  \noindent\textbf{\Large Solution}
-}{
-  \newpage
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%          THEOREM STYLES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \theoremstyle{definition}
-% \newtheorem{theorem}{Theorem}[subsection]
-% \newtheorem{corollary}{Corollary}[theorem]
-% \newtheorem{lemma}[theorem]{Lemma}
-% \newtheorem{definition}{Definition}[subsection]
-% \newtheorem{example}{Example}[subsection]
-
-% \theoremstyle{remark}
-% \newtheorem*{remark}{Remark}
-% \newtheorem*{solution}{Solution}
-% \newtheorem*{note}{Note}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%        PYTHON LISTING STYLE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\definecolor{vscodeBackground}{RGB}{255,255,255}
-\definecolor{vscodeForeground}{RGB}{10,10,10}
-\definecolor{vscodeKeyword}{RGB}{86,156,214}
-\definecolor{vscodeString}{RGB}{206,145,120}
-\definecolor{vscodeComment}{RGB}{106,153,85}
-\definecolor{vscodeFunction}{RGB}{220,220,170}
-\definecolor{vscodeOperator}{RGB}{212,212,212}
-\definecolor{vscodeNumber}{RGB}{181,206,168}
-
-\lstdefinestyle{vscodepython}{
-  backgroundcolor=\color{vscodeBackground},
-  basicstyle=\ttfamily\small\color{vscodeForeground},
-  commentstyle=\color{vscodeComment}\itshape,
-  keywordstyle=\color{vscodeKeyword}\bfseries,
-  stringstyle=\color{vscodeString},
-  numberstyle=\tiny\color{vscodeForeground},
-  identifierstyle=\color{vscodeForeground},
-  morekeywords={True, False, None},
-  frame=single,
-  rulecolor=\color{vscodeForeground},
-  breaklines=true,
-  numbers=left,
-  numbersep=5pt,
-  showstringspaces=false,
-  tabsize=4,
-  captionpos=b,
-}
-\lstset{style=vscodepython, language=Python}
-
-
-%% EMPHASIS BOX
-
-\newtcolorbox{emphasis}{
-  colback=white,        % White background
-  colframe=black,       % Black border
-  boxrule=0.5pt,        % Border thickness
-  arc=0pt,              % Sharp corners (0pt = no rounding)
-  left=6pt,             % Left padding
-  right=6pt,            % Right padding
-  top=6pt,              % Top padding
-  bottom=6pt,           % Bottom padding
-  boxsep=0pt,           % No extra separation
-  before upper={
-    \setlength{\abovedisplayskip}{0pt}
-    \setlength{\abovedisplayshortskip}{0pt}
-    \setlength{\belowdisplayskip}{0pt}
-    \setlength{\belowdisplayshortskip}{0pt}
-  }
-}

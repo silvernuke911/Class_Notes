@@ -34,26 +34,26 @@
 \contentsline {section}{Chapter 2: Special Relativity}{34}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Relativity without Light}{34}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}The Transformation Problem}{34}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Principle of relativity}{36}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Principle of Relativity}{36}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Isotropy of Space}{36}{subsubsection.2.1.3}%
 \contentsline {subsubsection}{\numberline {2.1.4}The Invariance of Straight Lines}{37}{subsubsection.2.1.4}%
 \contentsline {subsubsection}{\numberline {2.1.5}Homogeneity of Spacetime}{39}{subsubsection.2.1.5}%
 \contentsline {subsubsection}{\numberline {2.1.6}Parity Constraints}{39}{subsubsection.2.1.6}%
 \contentsline {subsubsection}{\numberline {2.1.7}Inverse transformation and composition constraints}{40}{subsubsection.2.1.7}%
-\contentsline {subsubsection}{\numberline {2.1.8}Two possibilities}{41}{subsubsection.2.1.8}%
+\contentsline {subsubsection}{\numberline {2.1.8}The Trivial and Nontrivial Branches}{41}{subsubsection.2.1.8}%
 \contentsline {paragraph}{Case 1:}{41}{section*.15}%
 \contentsline {paragraph}{Case 2:}{42}{section*.16}%
 \contentsline {subsubsection}{\numberline {2.1.9}The motion of the origin of $S'$}{42}{subsubsection.2.1.9}%
-\contentsline {subsubsection}{\numberline {2.1.10}Introduction of a third observer}{43}{subsubsection.2.1.10}%
+\contentsline {subsubsection}{\numberline {2.1.10}Introduction of a Third Observer}{43}{subsubsection.2.1.10}%
 \contentsline {subsubsection}{\numberline {2.1.11}The Emergence of an Invariant Speed}{44}{subsubsection.2.1.11}%
 \contentsline {subsubsection}{\numberline {2.1.12}The Relevance of Light}{47}{subsubsection.2.1.12}%
 \contentsline {subsubsection}{\numberline {2.1.13}The Galilean Limit}{48}{subsubsection.2.1.13}%
 \contentsline {subsubsection}{\numberline {2.1.14}Lorentzian, Galilean, and Carrollian kinematics}{48}{subsubsection.2.1.14}%
 \contentsline {subsubsection}{\numberline {2.1.15}Conclusion}{50}{subsubsection.2.1.15}%
-\contentsline {section}{Chapter 3: Aspects of Differential Geometry}{51}{section.3}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{52}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{53}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{54}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{55}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{56}{section.8}%
-\contentsline {section}{Author's Note}{57}{section.8}%
+\contentsline {section}{Chapter 3: Aspects of Differential Geometry}{53}{section.3}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{54}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{55}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{56}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{57}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{58}{section.8}%
+\contentsline {section}{Author's Note}{59}{section.8}%

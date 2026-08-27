@@ -71,7 +71,7 @@ def draw_reference_frame(center, scale, tick_spacing, tick_length, label):
         va='center'
     )
 
-plt.figure(figsize=(4,1.5),dpi=300)
+plt.figure(figsize=(4,1.3),dpi=300)
 plt.gca().set_aspect('equal')
 square = 0.5 * np.array([
     [ 1,  1],
@@ -89,7 +89,7 @@ draw_reference_frame(
     tick_length=0.1,
     label = r"$S$"
 )
-S2 = np.array([1,0.5])
+S2 = np.array([2,0.5])
 draw_reference_frame(
     center=S2,
     scale=2,
@@ -98,7 +98,7 @@ draw_reference_frame(
     label = r"$S'$"
 )
 
-v = 2 * (S2 - S1) / np.linalg.norm(S2-S1)
+v = 2.5 * (S2 - S1) / np.linalg.norm(S2-S1)
 
 plt.arrow(
     S2[0],
@@ -116,13 +116,13 @@ plt.annotate(
     ha='center',
     va='center'
 )
-plt.annotate(
-    "$v=0$",
-    xy = S1 - [0,1.2],
-    ha='center',
-    va='center'
-)
-plt.ylim(-1.3,None)
+# plt.annotate(
+#     "$v=0$",
+#     xy = S1 - [0,1.2],
+#     ha='center',
+#     va='center'
+# )
+# plt.ylim(,None)
 plt.axis("Off")
 plt.tight_layout()
 
@@ -132,11 +132,20 @@ os.startfile(img1)
 
 fig, ax = plt.subplots(1, 3, figsize=(4, 2), dpi=300)
 
+lim = 1
+
+# --------------------------------------------------
+# Galilean: kappa = infinity
+# --------------------------------------------------
+
+ax[0].plot([-lim, lim], [0, 0], color='yellow', lw=2)
+# Entire spacetime plane
+ax[0].patch.set_facecolor('yellow')
+ax[0].patch.set_alpha(0.5)
+
 # --------------------------------------------------
 # Lorentzian: kappa = (0, infinity)
 # --------------------------------------------------
-lim = 1
-
 ax[1].fill(
     [-lim, 0, lim],
     [lim, 0, lim],
@@ -154,14 +163,6 @@ ax[1].fill(
 ax[1].plot([-lim, lim], [-lim, lim], color='yellow', lw=1)
 ax[1].plot([-lim, lim], [lim, -lim], color='yellow', lw=1)
 
-# --------------------------------------------------
-# Galilean: kappa = infinity
-# --------------------------------------------------
-
-ax[0].plot([-lim, lim], [0, 0], color='yellow', lw=2)
-# Entire spacetime plane
-ax[0].patch.set_facecolor('yellow')
-ax[0].patch.set_alpha(0.5)
 
 # --------------------------------------------------
 # Carrollian: kappa = 0
@@ -187,14 +188,14 @@ for a in ax:
     a.set_yticks([])
 
 # Titles below the figures
-ax[1].set_title(
-    r'Lorentzian, $\kappa=(0,\infty)$',
+ax[0].set_title(
+    r'Galilean, $\kappa=\infty$',
     fontsize=9,
     y=-0.5
 )
 
-ax[0].set_title(
-    r'Galilean, $\kappa=\infty$',
+ax[1].set_title(
+    r'Lorentzian, $\kappa=(0,\infty)$',
     fontsize=9,
     y=-0.5
 )

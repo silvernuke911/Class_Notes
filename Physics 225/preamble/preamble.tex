@@ -43,15 +43,22 @@
     \addcontentsline{toc}{section}{Unit \thesection : #1}
 }
 
-\newcommand{\chaptersec}[1]{%
+\newcommand{\chaptersec}[2][\relax]{%
     \clearpage
     \refstepcounter{section}
     \vspace*{0.5cm}
     {\LARGE\bfseries\noindent Chapter \thesection\par}
     \vspace{0.5cm}
-    {\noindent\huge\bfseries #1\par}
+    {\noindent\huge\bfseries
+        \ifx\relax#1\relax
+            #2%
+        \else
+            #1%
+        \fi
+        \par
+    }
     \vspace{1.5cm}
-    \addcontentsline{toc}{section}{Chapter \thesection : #1}
+    \addcontentsline{toc}{section}{Chapter \thesection : #2}
 }
 
 %%% PROBLEM ENVIRONMENT (was in preset.tex, now here)

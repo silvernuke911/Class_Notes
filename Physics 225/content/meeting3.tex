@@ -14,12 +14,13 @@
 	\subsubsection{The Transformation Problem}
 		Consider two inertial reference frames $S$ and $S'$, where $S$
 		is taken as a \textit{rest} frame of reference, and $S'$ moves 
-		with a constant velocity $v$ along the $x$ axis with respect to
-		$S$. 
+		with a constant velocity $v$ with respect to
+		$S$. We can treat this as a 1+1 dimensional problem, referring to the position
+		$x$ as the direction where $v$ travels.
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in, height=1.5in]{images/frames_in_motion.pdf}
+			\includegraphics[width=4in, height=1.3in]{images/frames_in_motion.pdf}
 			\caption{Frames $S$ and $S'$}
 			\label{fig:frames-in-motion}
 		\end{figure}
@@ -85,7 +86,7 @@
 		An interesting question arises: Where does $c$ come from if we never assume light?
 		\newpage
 
-		\subsubsection{Principle of relativity}
+		\subsubsection{Principle of Relativity}
 
 		The first assumption we make is the principle of relativity.
 		\begin{quote}
@@ -336,7 +337,7 @@
 		\end{equation}
 		So far, nothing specifically relativistic has appeared, there's no magic yet.
 		We just used natural assumptions that come from geometry, and principle of relativity. 
-	\subsubsection{Two possibilities}
+	\subsubsection{The Trivial and Nontrivial Branches}
 		The conditions
 		\begin{align}
 			B(A-D)&=0\\
@@ -411,7 +412,7 @@
 		we therefore have
 		\begin{align*}
 			0 
-			&= A(vt) + Bt\\
+			&= Avt + Bt\\
 			&= (Av + B)t
 		\end{align*}
 		Since this must hold for an arbitrary $t$, then
@@ -446,7 +447,8 @@
 
 		Since the $\tensor{M}{^1_0}$ term is a fraction with $v$ in the denominator, it must vanish sufficiently fast.
 		therefore, $A^2 - 1 \approx \order{v^2}$
-	\subsubsection{Introduction of a third observer}
+	\subsubsection{Introduction of a Third Observer}
+		\label{subsubsec:3Intro3rdObserver}
 		Consider a third inertial frame $S''$.
 
 		Suppose $S''$ moves with constant velocity $u$ relative to $S'$, while $S'$ moves with
@@ -487,6 +489,7 @@
 		\end{equation}
 		The crucial requirement is that the composition of two allowed transformations must itself be an allowed transformation.
 	\subsubsection{The Emergence of an Invariant Speed}
+		\label{subsubsec:emergenceinvariantspeed}
 		We evaluate the composition by doing matrix multiplication.
 		\begin{equation*}
 			\tensor{M}{^\mu_\nu}(w) = 
@@ -595,7 +598,7 @@
 
 		This is already the Lorentz transformation in generalized form.
 
-		From this, we can derive that
+		From this, we can derive that\footnote{To be proven.}
 		\begin{equation}
 			w = \frac{u+v}{1 + kuv} 
 		\end{equation}
@@ -787,4 +790,72 @@
 				\tensor{M}{^\mu_\nu} = \pdv{\overline{X}^\mu}{x^\nu} 
 			\]
 		\end{remark}	
-		
+		\newpage
+		\subsubsection*{Addendum}
+			In \S \ref{subsubsec:emergenceinvariantspeed}, we are given the velocity addition formula
+			\[
+				w = \frac{u+v}{1+kuv}
+			\]
+			and told it is true without proof, despite being pivotal to the proof that there is
+			an invariant speed that arises in Lorentzian mechanics.
+
+		    This wasn't elaborated in the lecture for time constraint reasons, as Sir was rushing to finish the 
+			invariant speed derivation before class dismissal, and thus it was left as an exercise to the student. 
+			Finding no satisfaction in it being simply stated as true, I took the liberty of proving the relation.
+			\begin{proof}
+				From \S \ref{subsubsec:3Intro3rdObserver}, we know that the origin of the second frame
+				$S''$ has velocity
+				\begin{equation}
+					\label{eq:wterm}
+					w = \dv{x}{t} 
+				\end{equation}
+				as measured from $S$.
+
+				The same reference frame has velocity
+				\[
+					u = \dv{x'}{t'} 
+				\]
+				as messured from $S'$. 
+
+				We also know that $S'$ travels at a velocity $v$ relative to $S$.
+				We aim to determine $w$ in terms of $u$ and $v$. 
+
+				From the generalized Lorentz transformation,
+				we have the transformed coordinates in $S'$
+				\begin{align*}
+					x' = \frac{x - vt}{\sqrt{1-kv^2}} && t' = \frac{t-kvx}{\sqrt{1-kv^2}}`` 
+				\end{align*}
+				Taking the differentials of these equations give
+				\begin{align*}
+					\dd{x'} = \frac{\dd{x}-v\dd{t}}{\sqrt{1-kv^2}} && \dd{t'} = \frac{\dd{t}-kv\dd{x}}{\sqrt{1-kv^2}}  
+				\end{align*}
+				Hence, we have
+				\begin{align*}
+					u &= \dv{x'}{x'}\\ &= \frac{\dd{x}-v\dd{t}}{\dd{t}-kv\dd{x}}  
+				\end{align*}
+				We divide both the numerator and denominator by $\dd{t}$, we have
+				\begin{align*}
+					u &= \frac{\displaystyle\dv{x'}{t}}
+					{\displaystyle\dv{t'}{t}} \\[10pt]
+					  &= \frac{\displaystyle\dv{x}{t} - v\dv{t}{t}}
+					          {\displaystyle\dv{t}{t} - kv \dv{x}{t}}  
+				\end{align*}
+				Since we know that (\ref{eq:wterm}), and $\displaystyle\dv{t}{t}=1$, then we obtain.
+				\begin{equation}
+					u = \frac{w-v}{1-kvw} 
+				\end{equation}
+				Solving for $w$, we find that
+				\begin{align*}
+					u(1-kvw) &= w-v\\
+					u - kuvw &= w-v\\
+					u + v &= w + kuvw\\
+					u + v &= w(1+kuv)\\
+					w &= \frac{u+v}{1+kuv} 
+				\end{align*}
+				Therefore, the velocity of $S''$ relative to $S$ is:
+				\begin{theorem}{Relativistic velocity addition}
+					\begin{equation}
+						w = \frac{u+v}{1+kuv} 
+					\end{equation}
+				\end{theorem}
+			\end{proof}

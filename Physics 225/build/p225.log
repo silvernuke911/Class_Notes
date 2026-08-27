@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  27 AUG 2026 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  28 AUG 2026 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1893,51 +1893,47 @@ o-pri-ate trans-
 
 [28{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
 ] [29] [30] [31] [32]) [33] (content/meeting3.tex
-<images/frames_in_motion.pdf, id=562, 289.08pt x 108.405pt>
+<images/frames_in_motion.pdf, id=562, 289.08pt x 93.951pt>
 File: images/frames_in_motion.pdf Graphic file (type pdf)
 <use images/frames_in_motion.pdf>
-Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 22.
-(pdftex.def)             Requested size: 289.09251pt x 108.40968pt.
+Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 23.
+(pdftex.def)             Requested size: 289.09251pt x 93.9565pt.
 [34
 
  <./images/frames_in_motion.pdf>] [35] [36] [37] [38] [39] [40] [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 393.
+(hyperref)                removing `math shift' on input line 394.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 393.
+(hyperref)                removing `math shift' on input line 394.
 
 [42] [43]
-Overfull \hbox (2.83626pt too wide) detected at line 514
+Overfull \hbox (2.83626pt too wide) detected at line 517
 \OML/lmm/m/it/7 M[]\OT1/lmr/m/n/7 (\OML/lmm/m/it/7 w\OT1/lmr/m/n/7 ) = []
  []
 
 [44] [45] [46]
-Overfull \hbox (11.85013pt too wide) in paragraph at lines 643--645
+Overfull \hbox (11.85013pt too wide) in paragraph at lines 646--648
 \OT1/lmr/m/n/10 and these as-sump-tions led us to find the trans-for-ma-tion eq
 ua-tions. Nowhere
  []
 
 [47]
-Overfull \hbox (4.71361pt too wide) in paragraph at lines 694--695
+Overfull \hbox (4.71361pt too wide) in paragraph at lines 697--698
 \OT1/lmr/m/n/10 The pa-ram-e-ter $\OML/lmm/m/it/10 k$ \OT1/lmr/m/n/10 there-for
 e dis-tin-guishes dif-fer-ent pos-si-ble kine-matic struc-
  []
 
 [48]
-<images/cones_types_of_relativity.pdf, id=725, 281.85298pt x 114.18468pt>
+<images/cones_types_of_relativity.pdf, id=722, 281.85298pt x 114.18468pt>
 File: images/cones_types_of_relativity.pdf Graphic file (type pdf)
 <use images/cones_types_of_relativity.pdf>
 Package pdftex.def Info: images/cones_types_of_relativity.pdf  used on input li
-ne 730.
+ne 733.
 (pdftex.def)             Requested size: 289.07999pt x 117.11496pt.
-[49 <./images/cones_types_of_relativity.pdf>]) [50] [51
-
-] [52
-
-] [53
+[49 <./images/cones_types_of_relativity.pdf>] [50] [51]) [52] [53
 
 ] [54
 
@@ -1945,20 +1941,24 @@ ne 730.
 
 ] [56
 
-] (preamble/authornote.tex [57]) [58] (C:\Users\verci\Documents\code\Class Note
+] [57
+
+] [58
+
+] (preamble/authornote.tex [59]) [60] (C:\Users\verci\Documents\code\Class Note
 s - V\Physics 225\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `p225.out' has not changed.
-(rerunfilecheck)             Checksum: C485FB69AC2B766447BD12307C8EDFDD;8133.
+(rerunfilecheck)             Checksum: DC59EDC0AF0A64354B87F54408093C87;8232.
  ) 
 Here is how much of TeX's memory you used:
- 68607 strings out of 474542
- 1726533 string characters out of 5744446
- 2487245 words of memory out of 5000000
- 89598 multiletter control sequences out of 15000+600000
+ 68622 strings out of 474542
+ 1726784 string characters out of 5744446
+ 2487444 words of memory out of 5000000
+ 89606 multiletter control sequences out of 15000+600000
  655042 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,17n,110p,788b,1154s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1968,47 +1968,46 @@ ts/cm/cmbx8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmmi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/verci/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/verci/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/verci/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/verci/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
-s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy9.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/latxfont/line10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmbx10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmbx12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmbxi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmcsc10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmex10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmmi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmmi12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmmi5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmmi6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmmi7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmmi8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmr10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmr12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmr17.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmr5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmr6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmr7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmr8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-mri10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-mri12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-mri8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-sy10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-sy5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
-y6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8
-.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10
-.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-symbols/msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb>
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/verci/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/verci/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/verci/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxf
+ont/line10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmbx10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmbx12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmbxi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmcsc10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmex10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmmi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmmi12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmmi5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmmi6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmmi7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmmi8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmr10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmr12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmr17.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mr5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
+6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.
+pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
+b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb
+><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb
+><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb>
+<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><
+C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C
+:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:
+/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:
+/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
+msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (59 pages, 2773903 bytes).
+ild\p225.pdf" (61 pages, 2747366 bytes).
 PDF statistics:
- 993 PDF objects out of 1000 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
+ 1006 PDF objects out of 1200 (max. 8388607)
+ 264 named destinations out of 1000 (max. 500000)
  521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

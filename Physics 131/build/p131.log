@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 AUG 2026 06:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 AUG 2026 07:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1770,7 +1770,7 @@ LaTeX Info: Redefining \Im on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (preamble/title.tex
-<../images/P131.pdf, id=374, 252.945pt x 252.945pt>
+<../images/P131.pdf, id=408, 252.945pt x 252.945pt>
 File: ../images/P131.pdf Graphic file (type pdf)
 <use ../images/P131.pdf>
 Package pdftex.def Info: ../images/P131.pdf  used on input line 4.
@@ -1822,6 +1822,10 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )) [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy
 .enc}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
 .enc}] (preamble/course_info.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 8.
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 22.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
@@ -1834,19 +1838,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 8.
 ) [3] (preamble/reminders.tex) [4] (preamble/preface.tex) [5] (preamble/toc.tex
 (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.toc [6] [
-7])
+7] [8])
 \tf@toc=\write5
 \openout5 = `p131.toc'.
 
-[8] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof)
+[9] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof)
 \tf@lof=\write6
 \openout6 = `p131.lof'.
 
-[9] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot)
+[10] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot)
 \tf@lot=\write7
 \openout7 = `p131.lot'.
 
-) [10] (content/1_1.tex
+) [11] (content/1_1.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1866,30 +1870,30 @@ LaTeX Font Info:    Trying to load font information for U+bbm on input line 226
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [7] [8] [9] [10]
-<images/scalarfield.pdf, id=695, 175.93047pt x 171.65265pt>
+<images/scalarfield.pdf, id=741, 175.93047pt x 171.65265pt>
 File: images/scalarfield.pdf Graphic file (type pdf)
 <use images/scalarfield.pdf>
 Package pdftex.def Info: images/scalarfield.pdf  used on input line 419.
 (pdftex.def)             Requested size: 130.08621pt x 126.92667pt.
-<images/vectorfield.pdf, id=696, 177.70822pt x 173.43042pt>
+<images/vectorfield.pdf, id=742, 177.70822pt x 173.43042pt>
 File: images/vectorfield.pdf Graphic file (type pdf)
 <use images/vectorfield.pdf>
 Package pdftex.def Info: images/vectorfield.pdf  used on input line 424.
 (pdftex.def)             Requested size: 130.08621pt x 126.95775pt.
 [11 <./images/scalarfield.pdf> <./images/vectorfield.pdf>] [12]
-<images/gradient.pdf, id=739, 415.23215pt x 214.3791pt>
+<images/gradient.pdf, id=785, 415.23215pt x 214.3791pt>
 File: images/gradient.pdf Graphic file (type pdf)
 <use images/gradient.pdf>
 Package pdftex.def Info: images/gradient.pdf  used on input line 473.
 (pdftex.def)             Requested size: 289.07999pt x 149.24982pt.
 [13 <./images/gradient.pdf>]
-<images/divergence.pdf, id=757, 416.99791pt x 213.39485pt>
+<images/divergence.pdf, id=804, 416.99791pt x 213.39485pt>
 File: images/divergence.pdf Graphic file (type pdf)
 <use images/divergence.pdf>
 Package pdftex.def Info: images/divergence.pdf  used on input line 500.
 (pdftex.def)             Requested size: 289.07999pt x 147.94266pt.
 [14 <./images/divergence.pdf>]
-<images/curl.pdf, id=775, 416.99791pt x 212.78374pt>
+<images/curl.pdf, id=821, 416.99791pt x 212.78374pt>
 File: images/curl.pdf Graphic file (type pdf)
 <use images/curl.pdf>
 Package pdftex.def Info: images/curl.pdf  used on input line 530.
@@ -1900,7 +1904,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/lpc.pdf, id=792, 416.99791pt x 190.82593pt>
+<images/lpc.pdf, id=838, 416.99791pt x 190.82593pt>
 File: images/lpc.pdf Graphic file (type pdf)
 <use images/lpc.pdf>
 Package pdftex.def Info: images/lpc.pdf  used on input line 564.
@@ -1930,41 +1934,41 @@ ges $\OML/lmm/m/it/10 q[]; q[]; q[]; [] ; q[]$\OT1/lmr/m/n/10 , at dis-tances $
  []
 
 [39]
-<images/pointcharge.pdf, id=1041, 144.54pt x 144.54pt>
+<images/pointcharge.pdf, id=1087, 144.54pt x 144.54pt>
 File: images/pointcharge.pdf Graphic file (type pdf)
 <use images/pointcharge.pdf>
 Package pdftex.def Info: images/pointcharge.pdf  used on input line 125.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/linecharge2.pdf, id=1042, 144.54pt x 144.54pt>
+<images/linecharge2.pdf, id=1088, 144.54pt x 144.54pt>
 File: images/linecharge2.pdf Graphic file (type pdf)
 <use images/linecharge2.pdf>
 Package pdftex.def Info: images/linecharge2.pdf  used on input line 129.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/surfacecharge.pdf, id=1043, 144.54pt x 144.54pt>
+<images/surfacecharge.pdf, id=1089, 144.54pt x 144.54pt>
 File: images/surfacecharge.pdf Graphic file (type pdf)
 <use images/surfacecharge.pdf>
 Package pdftex.def Info: images/surfacecharge.pdf  used on input line 134.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
-<images/volumecharge.pdf, id=1044, 144.54pt x 144.54pt>
+<images/volumecharge.pdf, id=1090, 144.54pt x 144.54pt>
 File: images/volumecharge.pdf Graphic file (type pdf)
 <use images/volumecharge.pdf>
 Package pdftex.def Info: images/volumecharge.pdf  used on input line 139.
 (pdftex.def)             Requested size: 126.47249pt x 126.47217pt.
 [40 <./images/pointcharge.pdf> <./images/linecharge2.pdf> <./images/surfacechar
 ge.pdf> <./images/volumecharge.pdf>] [41]
-<../code/efield.pdf, id=1130, 127.91791pt x 127.91791pt>
+<../code/efield.pdf, id=1176, 127.91791pt x 127.91791pt>
 File: ../code/efield.pdf Graphic file (type pdf)
 <use ../code/efield.pdf>
 Package pdftex.def Info: ../code/efield.pdf  used on input line 184.
 (pdftex.def)             Requested size: 126.47249pt x 126.47514pt.
 [42 <C:/Users/verci/Documents/code/Class Notes - V/Physics 131/code/efield.pdf>
 ]
-<images/oppositecharges.pdf, id=1149, 114.1866pt x 114.1866pt>
+<images/oppositecharges.pdf, id=1195, 114.1866pt x 114.1866pt>
 File: images/oppositecharges.pdf Graphic file (type pdf)
 <use images/oppositecharges.pdf>
 Package pdftex.def Info: images/oppositecharges.pdf  used on input line 214.
 (pdftex.def)             Requested size: 126.47249pt x 126.47855pt.
-<images/equalcharges.pdf, id=1150, 114.1866pt x 114.1866pt>
+<images/equalcharges.pdf, id=1196, 114.1866pt x 114.1866pt>
 File: images/equalcharges.pdf Graphic file (type pdf)
 <use images/equalcharges.pdf>
 Package pdftex.def Info: images/equalcharges.pdf  used on input line 219.
@@ -1995,24 +1999,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 316.
 
 [45] [46] [47] [48] [49] [50] [51]
-<images/dipole_normal_V.pdf, id=1262, 144.54pt x 144.54pt>
+<images/dipole_normal_V.pdf, id=1308, 144.54pt x 144.54pt>
 File: images/dipole_normal_V.pdf Graphic file (type pdf)
 <use images/dipole_normal_V.pdf>
 Package pdftex.def Info: images/dipole_normal_V.pdf  used on input line 587.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 587.
-<images/dipole_normal_E.pdf, id=1263, 144.54pt x 144.54pt>
+<images/dipole_normal_E.pdf, id=1309, 144.54pt x 144.54pt>
 File: images/dipole_normal_E.pdf Graphic file (type pdf)
 <use images/dipole_normal_E.pdf>
 Package pdftex.def Info: images/dipole_normal_E.pdf  used on input line 592.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
-<images/dipole_limit_V.pdf, id=1264, 144.54pt x 144.54pt>
+<images/dipole_limit_V.pdf, id=1310, 144.54pt x 144.54pt>
 File: images/dipole_limit_V.pdf Graphic file (type pdf)
 <use images/dipole_limit_V.pdf>
 Package pdftex.def Info: images/dipole_limit_V.pdf  used on input line 597.
 (pdftex.def)             Requested size: 133.69994pt x 133.7062pt.
-<images/dipole_limit_E.pdf, id=1265, 144.54pt x 144.54pt>
+<images/dipole_limit_E.pdf, id=1311, 144.54pt x 144.54pt>
 File: images/dipole_limit_E.pdf Graphic file (type pdf)
 <use images/dipole_limit_E.pdf>
 Package pdftex.def Info: images/dipole_limit_E.pdf  used on input line 602.
@@ -2020,7 +2024,7 @@ Package pdftex.def Info: images/dipole_limit_E.pdf  used on input line 602.
 [52 <./images/dipole_normal_V.pdf> <./images/dipole_normal_E.pdf> <./images/dip
 ole_limit_V.pdf> <./images/dipole_limit_E.pdf>]) (content/1_3.tex [53] [54] [55
 ] [56] [57] [58] [59] [60]
-<images/waferthin.png, id=1385, 849.1725pt x 414.04688pt>
+<images/waferthin.png, id=1431, 849.1725pt x 414.04688pt>
 File: images/waferthin.png Graphic file (type png)
 <use images/waferthin.png>
 Package pdftex.def Info: images/waferthin.png  used on input line 347.
@@ -2039,24 +2043,29 @@ Overfull \hbox (6.24944pt too wide) in paragraph at lines 681--688
 (content/2_1.tex [78
 
 ]) (content/2_2.tex [79]) (content/2_3.tex [80]) (content/2_4.tex [81]) (preamb
-le/endnote.tex [82]) [83] (C:\Users\verci\Documents\code\Class Notes - V\Physic
-s 131\build\p131.aux)
+le/endnote.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 6.
+
+[82]) [83] (C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p13
+1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `p131.out' has not changed.
-(rerunfilecheck)             Checksum: DD177390B5E2535C67F4DEE82D150F36;14797.
+(rerunfilecheck)             Checksum: EC2BD75FC67AB69096CA55A95691C49C;15951.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 16 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 69190 strings out of 474542
- 1738256 string characters out of 5744446
+ 69197 strings out of 474542
+ 1738329 string characters out of 5744446
  2491402 words of memory out of 5000000
- 89921 multiletter control sequences out of 15000+600000
+ 89925 multiletter control sequences out of 15000+600000
  668345 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,16n,110p,788b,1638s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2120,9 +2129,9 @@ ci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb
 ols/msbm10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm7.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 131\bu
-ild\p131.pdf" (94 pages, 2612476 bytes).
+ild\p131.pdf" (95 pages, 2618466 bytes).
 PDF statistics:
- 1818 PDF objects out of 2073 (max. 8388607)
- 470 named destinations out of 1000 (max. 500000)
- 916 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1864 PDF objects out of 2073 (max. 8388607)
+ 473 named destinations out of 1000 (max. 500000)
+ 996 words of extra memory for PDF output out of 10000 (max. 10000000)
 

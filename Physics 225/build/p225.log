@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 AUG 2026 06:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 AUG 2026 07:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1770,7 +1770,7 @@ LaTeX Info: Redefining \Im on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (preamble/title.tex
-<images/cover_img.pdf, id=190, 289.08pt x 289.08pt>
+<images/cover_img.pdf, id=227, 289.08pt x 289.08pt>
 File: images/cover_img.pdf Graphic file (type pdf)
 <use images/cover_img.pdf>
 Package pdftex.def Info: images/cover_img.pdf  used on input line 4.
@@ -1822,6 +1822,10 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )) [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
 .enc}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy
 .enc}] (preamble/course_info.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 7.
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 18.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
@@ -1851,87 +1855,87 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 	\newpage
+l.33 	\newpage
                [1
 
 ] [2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.
 enc}] [3]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 132.
+t line 139.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 146.
+(Font)              <8> on input line 153.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 146.
+(Font)              <6> on input line 153.
 [4] [5] [6] [7]
-<images/metricperspective.pdf, id=408, 289.08pt x 144.54pt>
+<images/metricperspective.pdf, id=454, 289.08pt x 144.54pt>
 File: images/metricperspective.pdf Graphic file (type pdf)
 <use images/metricperspective.pdf>
-Package pdftex.def Info: images/metricperspective.pdf  used on input line 270.
+Package pdftex.def Info: images/metricperspective.pdf  used on input line 277.
 (pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
 [8] [9 <./images/metricperspective.pdf>]
-Overfull \hbox (0.27525pt too wide) in paragraph at lines 335--338
+Overfull \hbox (0.27525pt too wide) in paragraph at lines 342--345
 \OT1/lmr/m/n/10 Since the two for-malisms at-tempt to ex-plain the same phe-nom
 enon,
  []
 
 [10]) [11] (content/meeting2.tex [12] [13] [14] [15] [16]
-Overfull \hbox (5.83195pt too wide) in paragraph at lines 436--437
+Overfull \hbox (5.83195pt too wide) in paragraph at lines 199--200
 \OT1/lmr/m/n/10 For roughly three cen-turies, New-to-nian me-chan-ics was the j
 ewel of physics.
  []
 
 [17] [18]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-78.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+41.
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (1.79076pt too wide) in paragraph at lines 482--483
+Overfull \hbox (1.79076pt too wide) in paragraph at lines 245--246
 []\OT1/lmr/m/n/10 As such, the equa-tions gov-ern-ing Galilean rel-a-tiv-ity mu
 st be dropped
  []
 
 [19{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
 ] [20] [21] [22] [23]) [24] (content/meeting3.tex
-<images/frames_in_motion.pdf, id=558, 289.08pt x 93.951pt>
+<images/frames_in_motion.pdf, id=604, 289.08pt x 93.951pt>
 File: images/frames_in_motion.pdf Graphic file (type pdf)
 <use images/frames_in_motion.pdf>
-Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 23.
+Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 27.
 (pdftex.def)             Requested size: 289.09251pt x 93.9565pt.
 [25
 
  <./images/frames_in_motion.pdf>] [26] [27] [28] [29] [30] [31] [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
+(hyperref)                removing `math shift' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
+(hyperref)                removing `math shift' on input line 398.
 
 [33] [34]
-Overfull \hbox (2.83626pt too wide) detected at line 517
+Overfull \hbox (2.83626pt too wide) detected at line 521
 \OML/lmm/m/it/7 M[]\OT1/lmr/m/n/7 (\OML/lmm/m/it/7 w\OT1/lmr/m/n/7 ) = []
  []
 
 [35] [36] [37]
-Overfull \hbox (11.85013pt too wide) in paragraph at lines 646--648
+Overfull \hbox (11.85013pt too wide) in paragraph at lines 650--652
 \OT1/lmr/m/n/10 and these as-sump-tions led us to find the trans-for-ma-tion eq
 ua-tions. Nowhere
  []
 
 [38]
-Overfull \hbox (4.71361pt too wide) in paragraph at lines 697--698
+Overfull \hbox (4.71361pt too wide) in paragraph at lines 701--702
 \OT1/lmr/m/n/10 The pa-ram-e-ter $\OML/lmm/m/it/10 k$ \OT1/lmr/m/n/10 there-for
 e dis-tin-guishes dif-fer-ent pos-si-ble kine-matic struc-
  []
 
 [39]
-<images/cones_types_of_relativity.pdf, id=718, 281.85298pt x 114.18468pt>
+<images/cones_types_of_relativity.pdf, id=764, 281.85298pt x 114.18468pt>
 File: images/cones_types_of_relativity.pdf Graphic file (type pdf)
 <use images/cones_types_of_relativity.pdf>
 Package pdftex.def Info: images/cones_types_of_relativity.pdf  used on input li
-ne 733.
+ne 737.
 (pdftex.def)             Requested size: 289.07999pt x 117.11496pt.
 [40 <./images/cones_types_of_relativity.pdf>] [41] [42]) [43] [44
 
@@ -1945,20 +1949,25 @@ ne 733.
 
 ] [49
 
-] (preamble/authornote.tex [50] [51] [52]) [53] (C:\Users\verci\Documents\code\
-Class Notes - V\Physics 225\build\p225.aux)
+] (preamble/authornote.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 3.
+
+[50] [51] [52]) [53] (C:\Users\verci\Documents\code\Class Notes - V\Physics 225
+\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `p225.out' has not changed.
-(rerunfilecheck)             Checksum: D15C792855CC2DC81A1CB2C2B50504C0;7605.
+(rerunfilecheck)             Checksum: B86978F8502CC6153763207EA40B8C84;8868.
  ) 
 Here is how much of TeX's memory you used:
- 68642 strings out of 474542
- 1727174 string characters out of 5744446
+ 68648 strings out of 474542
+ 1727244 string characters out of 5744446
  2487593 words of memory out of 5000000
- 89618 multiletter control sequences out of 15000+600000
+ 89622 multiletter control sequences out of 15000+600000
  663486 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,17n,110p,788b,1154s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2005,9 +2014,9 @@ C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C
 msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (64 pages, 2761528 bytes).
+ild\p225.pdf" (64 pages, 2767435 bytes).
 PDF statistics:
- 1010 PDF objects out of 1200 (max. 8388607)
- 269 named destinations out of 1000 (max. 500000)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1057 PDF objects out of 1200 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
+ 561 words of extra memory for PDF output out of 10000 (max. 10000000)
 

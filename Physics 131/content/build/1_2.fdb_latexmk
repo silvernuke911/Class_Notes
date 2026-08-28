@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1787946581.07997 "1_2.tex" "1_2.pdf" "1_2" 1787946587.61218 2
+  "1_2.tex" 1787946579 27546 8caf60479a7fd83734ee96621c06af10 ""
+  "C:/Users/verci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787083256 318527 8def323dfc0d66077db486995b31d841 ""
+  "C:/Users/verci/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707738060 24210787 d51e6a8fbe27beaac69122c4270a406d ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt10.tfm" 1136765053 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "build/1_2.aux" 1787946581 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  (generated)
+  "1_2.pdf"
+  "build/1_2.aux"
+  "build/1_2.log"
+  (rewritten before read)

@@ -1,0 +1,11 @@
+PWD C:\Users\verci\Documents\code\Class Notes - V\Physics 131\content
+INPUT C:\Users\verci\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\content\1_3.tex
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\content\build\1_3.log
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\content\build\1_3.pdf
+INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-ts1.enc

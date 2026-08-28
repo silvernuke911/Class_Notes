@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  28 AUG 2026 03:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  28 AUG 2026 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1863,7 +1863,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 146.
 [14] [15] [16] [17]
-<images/metricperspective.pdf, id=433, 289.08pt x 144.54pt>
+<images/metricperspective.pdf, id=440, 289.08pt x 144.54pt>
 File: images/metricperspective.pdf Graphic file (type pdf)
 <use images/metricperspective.pdf>
 Package pdftex.def Info: images/metricperspective.pdf  used on input line 270.
@@ -1893,7 +1893,7 @@ st be dropped
 
 [29{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
 ] [30] [31] [32] [33]) [34] (content/meeting3.tex
-<images/frames_in_motion.pdf, id=583, 289.08pt x 93.951pt>
+<images/frames_in_motion.pdf, id=590, 289.08pt x 93.951pt>
 File: images/frames_in_motion.pdf Graphic file (type pdf)
 <use images/frames_in_motion.pdf>
 Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 23.
@@ -1927,7 +1927,7 @@ e dis-tin-guishes dif-fer-ent pos-si-ble kine-matic struc-
  []
 
 [49]
-<images/cones_types_of_relativity.pdf, id=743, 281.85298pt x 114.18468pt>
+<images/cones_types_of_relativity.pdf, id=750, 281.85298pt x 114.18468pt>
 File: images/cones_types_of_relativity.pdf Graphic file (type pdf)
 <use images/cones_types_of_relativity.pdf>
 Package pdftex.def Info: images/cones_types_of_relativity.pdf  used on input li
@@ -1945,8 +1945,8 @@ ne 733.
 
 ] [59
 
-] (preamble/authornote.tex [60]) [61] (C:\Users\verci\Documents\code\Class Note
-s - V\Physics 225\build\p225.aux)
+] (preamble/authornote.tex [60] [61] [62] [63]) [64] (C:\Users\verci\Documents\
+code\Class Notes - V\Physics 225\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1955,11 +1955,11 @@ Package rerunfilecheck Info: File `p225.out' has not changed.
 (rerunfilecheck)             Checksum: 5119354458E2EC03B3E4D387BE8168EE;8489.
  ) 
 Here is how much of TeX's memory you used:
- 68640 strings out of 474542
- 1727148 string characters out of 5744446
- 2487613 words of memory out of 5000000
- 89618 multiletter control sequences out of 15000+600000
- 655042 words of font info for 121 fonts, out of 8000000 for 9000
+ 68645 strings out of 474542
+ 1727203 string characters out of 5744446
+ 2487614 words of memory out of 5000000
+ 89620 multiletter control sequences out of 15000+600000
+ 663486 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,17n,110p,788b,1154s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esi
@@ -2005,9 +2005,9 @@ C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C
 msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (62 pages, 2751997 bytes).
+ild\p225.pdf" (65 pages, 2765836 bytes).
 PDF statistics:
- 1027 PDF objects out of 1200 (max. 8388607)
- 267 named destinations out of 1000 (max. 500000)
+ 1046 PDF objects out of 1200 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
  537 words of extra memory for PDF output out of 10000 (max. 10000000)
 

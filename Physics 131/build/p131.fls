@@ -660,6 +660,10 @@ INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lof
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot
+INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot
+OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 131\build\p131.lot
 INPUT .\content\1_1.tex
 INPUT .\content\1_1.tex
 INPUT content\1_1.tex
@@ -820,6 +824,13 @@ INPUT .\content\1_3.tex
 INPUT .\content\1_3.tex
 INPUT content\1_3.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri8.tfm
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
+INPUT .\images\waferthin.png
 INPUT .\content\1_4.tex
 INPUT .\content\1_4.tex
 INPUT content\1_4.tex

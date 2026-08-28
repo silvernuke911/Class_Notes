@@ -731,6 +731,8 @@ INPUT .\preamble\authornote.tex
 INPUT .\preamble\authornote.tex
 INPUT preamble\authornote.tex
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri12.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.aux
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.out

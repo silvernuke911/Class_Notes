@@ -317,7 +317,7 @@
 			We calculate the curl of $\vb E$ by studying first the simplest possible configuration: a point 
 			charge at the origin. In this case, we have
 			\[
-				\vb{ E } = \frac{1}{4\pi\epszero} \frac{q}{r^2}\vu{r} 
+				\vb{ E } = \frac{1}{4\pi\epsz} \frac{q}{r^2}\vu{r} 
 			\]
 			A single glance at Fig. \ref{fig:efieldlines} should tell one that the curl of this field 
 			has to be zero. However, we aim to be rigourous, and so, suppose we calculate the 
@@ -327,14 +327,14 @@
 			\]
 			In spherical coordinates, $\dd{\vb* \ell}=\dd{r}\vu{r}+ r\dd{\theta}\vu*{\theta}+r\sin\theta\dd{\phi}\vu*{\phi}$, therefore
 			\[
-				\vb{E}\cdot\dd{\vb* \ell} = \frac{1}{4\pi\epszero}\frac{q}{r^2}\dd{r} 
+				\vb{E}\cdot\dd{\vb* \ell} = \frac{1}{4\pi\epsz}\frac{q}{r^2}\dd{r} 
 			\]
 			Therefore:
 			\begin{align*}
 			    \int_{\vb a}^{\vb b}\vb{E}\cdot\dd{\vb* \ell}
-				&= \frac{1}{4\pi\epszero} \int_{\vb a}^{\vb b} \frac{q}{r^2}\dd{r}\\
-				&= -\frac{1}{4\pi\epszero}\eval{\frac{q}{r}}_{r_a}^{r_b}\\
-				&= \frac{1}{4\pi\epszero}\pqty{
+				&= \frac{1}{4\pi\epsz} \int_{\vb a}^{\vb b} \frac{q}{r^2}\dd{r}\\
+				&= -\frac{1}{4\pi\epsz}\eval{\frac{q}{r}}_{r_a}^{r_b}\\
+				&= \frac{1}{4\pi\epsz}\pqty{
 					\frac{q}{r_a}
 					-
 					\frac{q}{r_b} 
@@ -344,6 +344,7 @@
 			the distance of the origin from $\vb b$. The integral around a \textit{closed}
 			path is evidently zero (because $r_a=r_b$), hence:
 			\begin{equation}
+				\label{eq:ointEdl=0}	
 				\oint \vb{E}\cdot\dd{\vb* \ell} = 0
 			\end{equation}
 			from this, we apply Stokes's theorem
@@ -414,16 +415,16 @@
 				  \end{align}
 				  Therefore, by superposition
 				  \begin{align}
-					  V &= \frac{1}{4\pi\epszero}\pqty{
+					  V &= \frac{1}{4\pi\epsz}\pqty{
 						  \frac{q}{r_+} + \frac{-q}{r_-}  
 					  } \\
-						&= \frac{q}{4\pi\epszero}\pqty{
+						&= \frac{q}{4\pi\epsz}\pqty{
 						  \frac{1}{r_+} - \frac{1}{r_-}  
 					  } 
 				  \end{align}
 				  or, explicitly,
 				  \begin{equation}
-					  V = \frac{q}{4\pi\epszero}\pqty{
+					  V = \frac{q}{4\pi\epsz}\pqty{
 						  \frac{1}{\sqrt{r^2 + \frac{a^2}{4} - ar\cos\theta }}
 						  - 
 						  \frac{1}{\sqrt{r^2 + \frac{a^2}{4} + ar\cos\theta }}
@@ -444,17 +445,17 @@
 						    We start with the assumption that we have a point source at the origin. We 
 							know its electric field
 							\begin{equation}
-								\vb{E_+} = \frac{q}{4\pi\epszero}\frac{\vu{r}}{r^2}  = \frac{q}{4\pi\epszero}\frac{\vb{r}}{r^3}
+								\vb{E_+} = \frac{q}{4\pi\epsz}\frac{\vu{r}}{r^2}  = \frac{q}{4\pi\epsz}\frac{\vb{r}}{r^3}
 							\end{equation}
 							We then \textit{translate} this point source ${a}/{2}$ units on the $+z$ direction.
 							\begin{equation}
-								\vb{E_+} = \frac{q}{4\pi\epszero}\frac{(\vb{r}-\frac{a}{2}\vu{z})}{r_+^3}
+								\vb{E_+} = \frac{q}{4\pi\epsz}\frac{(\vb{r}-\frac{a}{2}\vu{z})}{r_+^3}
 							\end{equation}
 					  \item $-q$ \textbf{Electric field}
 						    We take the same logic from the previous step but translate the negative point
 							down by ${a}/{2}$, to the $-z$ direction.
 							\begin{equation}
-							    \vb{E}_- = -\frac{q}{4\pi\epszero}\frac{(\vb{r}+\frac{a}{2}\vu{z})}{r_-^3}
+							    \vb{E}_- = -\frac{q}{4\pi\epsz}\frac{(\vb{r}+\frac{a}{2}\vu{z})}{r_-^3}
 							\end{equation}
 				  \end{enumerate}
 				  Taking the vector sum of this results to the total electric field
@@ -463,7 +464,7 @@
 				  \]
 				  Explicitly, we have
 				  \begin{equation}
-					  \vb{E} = \frac{q}{4\pi\epszero}\pqty{
+					  \vb{E} = \frac{q}{4\pi\epsz}\pqty{
 						  \frac{\vb{r}-\frac{a}{2}\vu{z}}{r_+^3} 
 						  -
 						  \frac{\vb{r}+\frac{a}{2}\vu{z}}{r_-^3} 
@@ -495,24 +496,24 @@
 				
 				  The potential field is defined as
 				  \begin{equation}
-					  V = \frac{1}{4\pi\epszero}{\frac{q}{r}} 
+					  V = \frac{1}{4\pi\epsz}{\frac{q}{r}} 
 				  \end{equation}
 					  We know that $\dfrac{1}{r}\to\dfrac{a\cos\theta}{r^2}$ at the limit.
 				  Therefore:
 				  \begin{equation}
-					  V = \frac{1}{4\pi\epszero}{\frac{qa\cos\theta}{r^2}} 
+					  V = \frac{1}{4\pi\epsz}{\frac{qa\cos\theta}{r^2}} 
 				  \end{equation}
 				  Since $qa=p$,
 				  \begin{align}\label{eq:farfield potential}
-					  V = \frac{1}{4\pi\epszero}\frac{p\cos\theta}{r^2} 
+					  V = \frac{1}{4\pi\epsz}\frac{p\cos\theta}{r^2} 
 				  \end{align}
 				  At the dipole limit. In vector form this is:
 				  \begin{equation}
-					  V = \frac{1}{4\pi\epszero}\frac{\vb{p}\cdot\vu{r}}{r^2} 
+					  V = \frac{1}{4\pi\epsz}\frac{\vb{p}\cdot\vu{r}}{r^2} 
 				  \end{equation}
 				  or alternatively
 				  \begin{equation}
-					  V = \frac{1}{4\pi\epszero}\frac{\vb{p}\cdot\vb{r}}{r^3}
+					  V = \frac{1}{4\pi\epsz}\frac{\vb{p}\cdot\vb{r}}{r^3}
 				  \end{equation}
 			\item \textbf{Far field electric field}
 				  
@@ -527,13 +528,13 @@
 						  \displaystyle \frac{1}{r}  \pdv{}{\theta}\\[10pt]
 						  \displaystyle \frac{1}{r\sin\theta}  \pdv{}{\phi}
 					  }
-					  \frac{1}{4\pi\epszero}\frac{p\cos\theta}{r^2} 
+					  \frac{1}{4\pi\epsz}\frac{p\cos\theta}{r^2} 
 				  \end{equation}
 				  Evaluating this, we have
 				  \begin{align}
 					  \vb{E} 
 					  &= 
-					  \frac{1}{4\pi\epszero}
+					  \frac{1}{4\pi\epsz}
 					  \bmqty{
 						  \displaystyle \pdv{}{r}\\[10pt]
 						  \displaystyle \frac{1}{r}  \pdv{}{\theta}\\[10pt]
@@ -541,7 +542,7 @@
 					  }
 					  \frac{p\cos\theta}{r^2} \\
 					  &=
-					  \frac{1}{4\pi\epszero}
+					  \frac{1}{4\pi\epsz}
 					  \bmqty{
 						  \displaystyle \pdv{}{r}
 						  \frac{p\cos\theta}{r^2}\\[10pt] 
@@ -551,7 +552,7 @@
 						  \frac{p\cos\theta}{r^2}
 					  }\\
 					  &=
-					  \frac{1}{4\pi\epszero}
+					  \frac{1}{4\pi\epsz}
 					  \bmqty{
 						  -\dfrac{2p\cos\theta}{r^3}\\[10pt] 
 						  -\dfrac{p\sin\theta}{r^3}\\[10pt] 
@@ -562,7 +563,7 @@
 				  \begin{equation}
 				      \vb{E} 
 					  =
-					  \frac{p}{4\pi\epszero r^3}
+					  \frac{p}{4\pi\epsz r^3}
 					  \bmqty{
 						  2\cos\theta\\
 						  \sin\theta\\
@@ -571,7 +572,7 @@
 				  \end{equation}
 				  In vector form, it has the expression
 				  \begin{equation}
-					  \vb{E}(\vb r) = \frac{1}{4\pi\epszero}\frac{1}{r^3}
+					  \vb{E}(\vb r) = \frac{1}{4\pi\epsz}\frac{1}{r^3}
 					  \pqty{
 						  3(\vb{p}\cdot\vu{r})\vu{r} - \vb{p}
 					  }

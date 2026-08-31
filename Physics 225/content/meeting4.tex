@@ -1,8 +1,597 @@
 % =======================================
 % MEETING 4
 % ---------------------------------------
-% DATE   - AUGUST 29, 2026
+% DATE   - AUGUST 28, 2026
 % FORMAT - ONLINE
 % =======================================
-% TOPIC  -  
+% TOPIC  - MANIFOLDS AND TOPOLOGICAL SPACES
 % =======================================
+
+% date - August 28, 2026
+% topic - 
+
+\subsection{Manifolds and Topological Spaces}
+
+	\textit{This lecture was conducted online due to weather constraints, and so I had time to pause and rewind the lecture. Thus, most of what is written here is verbatim.}
+
+	Last meeting, we discussed that relativity
+	functions without the need of light, and derived the equations
+	of SR without any assumptionss pertaining to light and assumptions
+	that were more natural coming from established or logical 
+	principles. 
+
+	What we will learn in subsequent lectures is that SR, at least
+	in the way we understand it now, is really about physics in 
+	Minkowski spacetime. 
+
+	And so, we will discuss what spacetime is today, and one of the foundational
+	concepts in understanding spacetime is the notion of manifolds.
+	So today, we shall start talking about manifolds. This is gonna be a very
+	lightning quick introduction to manifolds.
+
+	So why manifolds? Why are they important? Before we get to manifolds, let's first understand
+	what spacetime actually is, and what are topological spaces and other preliminaries.
+
+	\subsubsection{Spacetime}
+		Spacetime, in an intuitive sense, is just a collection of all \textit{events} in physics. 
+		An event is just a \textit{here} and a \textit{now}, so you can think 
+		of spacestime as a here and a now. It's very intuitive, the way a philosopher
+		might want to describe it. Spacetime, as we understand it, is just\footnote{we say just because this was how it was conceived back in the olden times}
+		the background on which physics takes place. The stage, so to speak. 
+
+		It's hard to imagine physics without actually thinking about events. Say, for example, an electromagnetic field,
+		there's always some kind of field vector, like an electric field vector or a magnetic field vector
+		existing at some spatial point and some instant of time. We think about some sort of arrow
+		existing on some kind of background, traditionally $\R^3 + t$, and that's what we think 
+		spacetime is. There is always spacetime, there has always been space and time in physics,
+		but for most cases, we didn't give it much thought, right? It was simply a stage at which
+		physics happens, and where particles and fields effectively \textit{play}. 
+
+		However, modern physics is different. In fact, in some sense, this is a \textit{characteristic} of 
+		modern physics, we have to take into account the role played by spacetime because spacetime
+		is not just some inert object anymore, in general relativity in particular, because in fact all
+		modern relativistic theories have to contend with the empirical fact that spacetime does have
+		dynamical role serving a stage for everything else.
+
+		Modern physics requires us to be careful of this \textit{stage}, because it participates 
+		greatly in how reality behaves. In particular, we have to be careful about the structures which
+		live on this stage. 
+
+		So what am I talking about here, what \textit{structures}? These are structures that we are 
+		all familiar with, such as scalars, vectors, and there will be a spinors sometiems, one forms,
+		but in general, all of these will be subsumed by what we know to be tensors. So all these objects
+		are the objects that can naturally live on space time. We want these to be the things that represent
+		the physical objects that we're used to, such as fields and particles, and we need a mathematical
+		structure which can contain or allow the existence of these objects and this will turn out 
+		most naturally to be a manifold. 
+
+		Before relativity, as I've explained in previous lectures, the implicit assumption that
+		there was some kind of background that was just plainly Euclidean. Pre-relativity, before
+		Einstein's time, there was just the Newtonian picture. For example there was already
+		a space time in those times, a space structure and a time structure. Here, it's probably
+		not very appropriate to join space and time, because it was really space \textit{and} time,
+		to have a Euclidean structure, at least a Euclidean structure for space. In fact, it was a 
+		very specific kind of space time, it was a manifold\footnote{which is what we generally call what a spacetime is}
+		\begin{equation}
+			\label{eq:manifold}
+				\mathcal{M} = \R\cross\R^3
+		\end{equation}
+		In other words, it had the familiar Euclidean space $\R^3$ for space and time. So you can sort of 
+		visualize it as something like this
+
+		\begin{figure}[h]
+		    \centering
+		    \includegraphics[width=3in,height=3in]{images/prerelativityspacetime.pdf}
+		    \caption{Conception of space time before relativity}
+		    \label{fig:prerelativityspacetime}
+		\end{figure}
+		
+		So each point in time $t$ (which is a real line $\R$), which is absolute global universal time, there is an associated copy of $\R^3$.
+		Time is going forward, and space is \textit{coupled} to each point in time, and there would be a 
+		particle going through this space time. This was the structure of pre-Relativity physics, This was
+		before Minkowksi. Bear in mind that this is not Euclidean $\R^4$, but simply distinct $\R$ and $\R^3$ structures.
+
+		Furthermore, for this Euclidean space, there is also an assumed distance metric, which
+		measures the distances between points in $\R^3$. For Euclidean space, this is basically the distance formula.
+
+		\[
+			d(u,v) = \sqrt{\sum_i(u_i - v_i)^2},\qquad u,v\in\R^n
+		\]
+
+		But in the modern conception of spacetime, it has to be far more general, in recognition
+		of the insights of Einstein and many others. So, we'll provide a more modern definition. In fact,
+		there are several definitions of spacetime, they all roughly correspond to the same thing. Some
+		are just more careful because some are more mathematically oriented. But I shall provide two
+		definitions just for your reference. The first one is by Sasane\cite{}, he was a mathematician 
+		interested in relativity. 
+
+		\begin{definition}{Spacetime (Sasane)}
+		Spacetime, ($\mathcal{M},g$) is a connected four dimensional, oriented (time oriented)
+			Lorentzian manifold $\mathcal{M}$ with metric $g$, equipped with a Levi-Civita connection,
+			induced by $g$, together with a time orientation.
+		\end{definition}
+
+		There are a couple of things we should take note of here. Notably, there are terms like \textit{connected}, which
+		we'll explain in due course. \textit{Four dimensional}, which more or less we have a notion of, and there is a 
+		\textit{manifold}, which we're going to talk about today. There is the term \textit{Lorentzian}, which actually
+		refers to the metric $g$, and there's also a notion of the \textit{Levi-Civita connection}, and somehow
+		this Levi-Civita connection is supposed to come from $g$, presumably. What this means is that if there
+		is a metric $g$, it implies a Levi-Civita connection. And we have \textit{time orientation}. All of these terms,
+		we will have to parse in the days ahead. 
+
+		The more classic definition of spacetime comes from the great Hawking and Ellis\cite{}\footnote{If you are particularly interested in understanding relativity from a mathematical point of view, I will highly recommend Hawking and Ellis as a book, but not as a first textbook. There are still aspects of Hawking and Ellis that are a bit difficult for me to understand, but this has been  a standard reference for some time.}
+		The definition they provide is a little bit simpler than Sasane's which is more modern, they say that
+		\begin{definition}{Spacetime (Hawking and Ellis)}
+			Spacetime is the collection of all events, represented by a pair $\mathcal{M},g$, where $\mathcal{M}$ is a connected
+			four dimensional Hausdorff $C^\infty$ manifold and $g$ is a Lorentz metric
+		\end{definition}
+		There are some common elements, such as the terms \textit{connected} and \textit{four dimensional}. There is a topological
+		feature here: \textit{Hausdorffness}. This is a separability assumption, we will discuss this in a bit. And then there is a 
+		notion of a $C^\infty$ manifold, which we will discuss today as well, and then there is a Lorentz metric and $g$, both 
+		definitions pertain to the same thing, which we will make sense of in the days ahead. 
+
+		First we discuss the $C^\infty$ manifold, or manifolds in general.
+
+	\subsubsection{Manifolds}.
+		Those definitions discuss both an $\mathcal{M}$ manifold and a $g$ metric. As such, we discuss what is a manifold. 
+		First, I will write down what I consider to be a sufficient definition for what a manifold is, and then I'll give 
+		you my own take of how do you make sense of a manifold, from an intuitive point of view. 
+
+		\begin{definition}{Manifold}
+			An $n$-dimensional differentiable or smooth manifold\footnote{In this class when we talk about manifolds we always mean differentiable or smooth manifold} $\mcal M$
+			is a topological space with open cover\footnote{If you take the union of all these open sets then it gives you the whole manifold} 
+			$\qty{\mathcal{O}_\alpha}$ (i.e., $\mathcal M = \cup_\alpha \mathcal{O}_\alpha$)
+			and charts $\qty{(\psi_\alpha, \mathcal{O}_\alpha)}$ such that each $\psi_\alpha$ is a homeomorphism and if $\mathcal{O}_\alpha \cap \mathcal{O}_\beta\neq\varnothing$, the composite map $\psi_\beta \circ \psi_\alpha^{-1}$ is
+			$C^\infty$ (or smooth).
+		\end{definition}
+
+		The gist is that a differentiable manifold or a smooth manifold is something that is 
+		coordinatizable. So from a physicist's standpoint, that's a way to understand what a manifold is.  An $n$-dimensional manifold is a topological space 
+		that is locally homeomorphic to $\R^n$, together with appropriate compatibility within charts.
+
+		\newpage %remove if able
+		In short: A manifold is basically a topological space on which you can install coordinates in. It is a topological
+		space which is coordinatizable.
+
+		So, obviously there are numerous examples when you need coordinatizability and it's very  difficult to actually imagine
+		situations in fundamental physics in which there are no coordinates, and there are many examples of these manifolds in physics,
+		in fact manifold structures
+		are implicit for most branches of physics. For those branches of physics you don't need to be very careful
+		about what the manifold  is, so long as you're using coordinates to describe your physics. However, if you need to place
+		coordinates in your physics, you need the structures given by manifolds.
+
+		For example, Thermodynamics, so when you think about the state spaces there, coordinatized by, say $P_V T$, for instance, 
+		thermodynamic variables, those are examples of manifolds. When you're doing mechanics, for example, you deal with phase spaces,
+		phase spaces typically have coordinates that you can configure, such as $q_\alpha$ and $p_\alpha$, those are also manifolds.
+
+		Any application or situation, where you have coordinates, you implicitly use manifolds. The important point is that in GR, or relativity, we have to be careful
+		about the manifold and not just be so focused on the coordinates because the coordinates are just things that live on top of a 
+		manifold. 
+
+		I'm hoping that's clear, but we'll make that even clearer in a bit.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=3in]{images/manifold_ex1.pdf}
+			\caption{Manifold example}
+			\label{fig:manifoldex1}
+		\end{figure}
+		Aside from being locally coordinatizable, it is also always\footnote{i.e., every point has a neighborhood homeomorphic to an open subset of $\R^n$} locally $\R^n$. 
+
+		In other words, if a manifold exists (Fig \ref{fig:manifoldex1}), and you take a small part there, that small part of it will always have a set of $n$ coordinates. That is, a set of $n$ numbers describe the members of the set, that's
+		what it means. Locally $\R^n$ just means that you can always find $n$ numbers to completely describe the elements of any set $\mathcal{O}_\alpha$. 
+		But before we get to that, now we talk about topological spaces; this is gonna be another very lightning quick review of what
+		a topology is, because this is not a mathematical methods class, this is really a GR class but we have to say a little bit about it.
+
+	\subsubsection{Topological Space}
+		A topological space is just a set with a topology. What is a topology? A topology on a set $\mathcal M$ is a collection $\mathcal T$ of subsets of $\mathcal M$, called open sets, satisfying three axioms defined below. 
+		In other words, a topology is an abstract specification of what is called open balls or open sets, usually $\R^n$, denoted by \textit{the set of open sets}, $\qty{\mathcal{O}_\alpha}$.
+		If you have a set $\mcal M$, you can identify subsets of that set, and call it open sets.
+		But you can't just name any subset to be an open set, they have to satisfy certain
+		rules or criteria. These criteria are:
+		\begin{enumerate}[(1)]
+			\item The set $\mathcal{M}$ and the null set $\varnothing$ are both open. 
+				\[
+					\mathcal{M},\varnothing\in\qty{\mathcal{O}_\alpha}
+				\]
+				Since $\qty{\mathcal{O}_\alpha}$ is defined as the set of all open sets, we require in the specification of open set that $\mcal{M}$, the full set,
+				and the empty set $\varnothing$, are both elements of the set of open sets.
+			\item If you take an arbitrary union of open sets, it must also be open
+				\[
+					A_i \in \openset\implies \bigcup_i A_i \in \openset
+				\]
+				For example, you already specified the open sets in the set, and you take the any union of any of those things you named in the open set, their union 
+				must also be open. It holds regardless of how many unions of sets you take. It must also be an element of $\qty{\mathcal{O}_\alpha}$
+			\item Finite intersections of open sets must be open. 
+				\[
+					A_1, A_2,\ldots, A_n \in \openset\implies \bigcap_{i=1}^n A_i \in \openset
+				\]
+				for any positive integer $n$.
+
+				That is, for any open set you define, the finite intersection of how many such sets you take, must also be open. The \textit{finite} restriction in 
+				this case is crucial.
+		\end{enumerate}
+		That's it, that's all we need to define an open set. I'll give you a very easy example, it's very trivial, it's hardly useful but it's good for understanding 
+		definitions, it's what's known as the indiscrete topology. 
+		\paragraph{Indiscrete Topology}
+
+		In the indiscrete topology, we define that the only open sets are $\mathcal M$ and the null set $\varnothing$. 
+		\[
+			\qty{\mathcal{O}_\alpha} = \qty{\mathcal{M},\varnothing}
+		\]	
+
+		Is this a topology? Clearly it satisfies the first condition, by construction. The required members of the topology are already open sets by declaration.
+		Does this satisfy the second criteria of arbitrary unions? Well, the only union you can take is between $\mathcal M$ and the empty set, and itselves, and as such:
+		\begin{align*}
+			\mcal{M} \cup \varnothing = \mcal M &&
+			\mcal{M} \cup \mcal{M} = \mcal{M}&&
+			\varnothing \cup \varnothing = \varnothing
+		\end{align*}
+		But $\mathcal M$ is already an open set by definition, as is $\varnothing$. Therefore, it satisfies the second criteria. What about finite intersections? Here, it is not really relevant
+		because the open set is already a finite set with only two elements. Similarly, the only intersection we can take is 
+		\begin{align*}
+			\mcal{M} \cap \varnothing = \varnothing &&
+			\mcal{M} \cap \mcal{M} = \mcal{M}&&
+			\varnothing \cap \varnothing = \varnothing
+		\end{align*}
+		and all of these are already members of the set of open sets, so the third criteria is already satisfied. So this is an example, the simplest example, of a topology.
+		You identify subsets, not necessarily proper subsets, but subsets of your set of open sets, and you call them open. It's a declaration of what the open sets in your set are. 
+		
+		This is what's known as the coarsest topology, because it only has two open sets. It is practically useless for application, but again it's good for understanding definitions.
+		\paragraph{Discrete Topology}
+		We also have what we call a discrete topology, which is the other side of spectrum. The discrete topology is the finest topology, since it says that all the subsets of the set 
+		of all open sets are be open.
+		\[
+			\qty{\mcal{O}_\alpha} = \text{all subsets}
+		\]
+		So clearly, all three criteria are already satisfied, because all the subsets are defined to be open. So trivially, this is already
+		a topology. But the problem with this is that it's too fine grained, and it's not exactly useful anywhere else. 
+		That's a very rough sketch of what a topology is, let me tell you what topologies are used for.
+
+		A topology on a set is essential for providing a notion of continuity of maps on the set. 
+
+		This is the most important point. We normally have this naive, sort of intuitive understanding of what a continuous function is, this is already 
+		distilled by mathematicians. So if you were to talk about an arbitrary set, what notion do you need for you to 
+		define the continuity of functions on a set. 
+
+		So in other words, say we have a map $f$
+		\[
+			f:M\to N
+		\]
+		if you say for example that $f$ is continuous map from $M$ to $N$, the assumption here is that, you cannot make sense of this unless
+		$M$ and $N$ are topological spaces. This is already assuming that $M$ and $N$ to be topological spaces. In other words, they need to be sets 
+		with a topology, i.e., both $M$ and $N$ have identifiable open sets that are subject to the conditions defined above.
+
+		This is all a bit a abstract, but hopefully will induce you to try to learn more because, topology, in general, is taught over several semesters. So
+		I'm just giving you a sense here of what it means, and because we need to define what continuity is, in order to grasp a 
+		full understanding of what we need topological spaces for.
+
+	\subsubsection{Continuity}
+		The modern definition of continuity is this
+		\begin{definition}{Continuity}		    
+			In general, a map $f:M\to N$ is continuous if the preimage of $\mcal{O}$ belongs to the topology $\mcal{T}_1$, for all open sets in $\mcal{T}_2$, where $\mcal{T}_1$ is the topology on $M$ and $\mcal{T}_2$ is the topology on $N$
+			\[
+				f^{-1}[\mcal{O}]\in\mcal{T}_1,\ \forall \mcal{O}\in\mcal{T}_2
+			\]
+		\end{definition}
+		What does this all mean? If you say \textit{the topology}, you don't mean just the set. Say the set $M$, it has the accompanying topology which is just a specification
+		of open sets on $M$, then you have $N$, where you need to also specify what the open sets are (what you call $\mcal{T}_2$). The requirement then, for the map $f$ to 
+		be continuous is that for all the sets that you take in $N$, its preimage, must also be open in $\mcal{T}_1$, or in $M$. This
+		is the clearest way that it can be discussed which makes sure that you can understand that this is in fact identical to the notion of continuity in terms of open balls
+		that is being discussed in calculus.
+
+		Suffice to say, then, that the definition of continuity requires topologies to exist in both the domain and the codomain. 
+		\begin{equation*}
+			\begin{rcases}
+				(M, \mathcal{T}_1) \\
+				(M, \mathcal{T}_2)
+			\end{rcases}
+			\text{ Topological spaces}
+		\end{equation*}
+		The key point here is that without topology, there is no notion of continuity.
+
+		Now this sounds very abstract; I mean this is a fun subject, I actually like topology
+		a lot, but for physics, it is usually enough to use open sets. 
+
+		\paragraph{What is a preimage?} 
+			The preimage is kind of like the inverse of a function, so we say that $f$ is a function which maps the domain $M$ to the codomain $N$. The
+			preimage means that if you take any set in $N$, say $\mcal{O}$, then the preimage of $\mcal{O}$ is all the elements on $M$ that when $f$ is applied, will be mapped to $N$. So,
+			in essence, it's like the inverse function.
+			The inverse of $f$ need not exist, but the preimage will always exist. So there are a bunch of points in $M$ that will be mapped entirely to $\mcal O$ by $f$. Those sets of points
+			is the preimage of $\mcal O$. i.e., $f(f\inv[\mcal O]) = \mcal O$
+			\[
+				f^{-1}[\mcal O] = \qty{x\in M : f(x)\in \mcal O}
+			\]
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=3in,height=1in]{images/preimage.pdf}
+				\caption{Pre-image of $\mcal{O}$, $f^{-1}[\mcal{O}]$}
+				\label{fig:preimagedefinition}
+			\end{figure}
+		\paragraph{Usual examples of Topologies}
+			We already discussed many weird examples like indiscrete and discrete topologies. However, there
+			are more usual topologies. These are the so-called \textbf{Open ball topologies}, the standard
+			topology in $\R^n$. Some examples are
+			\begin{enumerate}[(1)]
+			    \item $\R$
+
+					  The real line is an example of an open topology. It has open intervals as its open sets; this is the standard 
+					  Euclidean topology. Such examples are the set of numbers from $x$ to $y$ in the real line:
+					  \begin{align*}
+						  (x,y),\quad x<y,\quad x,y \in \R
+					  \end{align*}
+					  These are the open sets. Therefore, the set of open sets of $\R$ is
+					  \[
+						  \openset = \qty{\cup_\alpha(x_\alpha,y_\alpha): x_\alpha<y_\alpha}
+					  \]
+					  These are the open intervals which define a topology. You can check this using the three criteria: $\R$ is open $(-\infty,\infty)$, any union
+					  of open intervals is still open, and any finite intersections of open intervals in the real line is also open. Therefore, these sets form a topology on $\R$.
+					  \begin{remark}
+						  Finite here is important, because you can imagine a construction of sets, say $\qty{\frac{1}{n},1},\ n\in\N$, these are all individually open, this is a subset 
+						  of all possible intervals from 0 to 1. If you take an infinite intersection of this interval, $1/n$ will eventually converge (limit) to zero, hence:
+						  \[
+							  \bigcap_n^\infty \pqty{\frac{1}{n},1} = [0,1)
+						  \]
+						  Then it is no longer open. For larger and larger $n$'s, the result will include $0$, so it will longer be 
+						  open, that's why you need the intersections to be finite. That's the standard topology in $\R$. In fact, 
+						  you can also define a topology using closed intervals, that's also an interesting exercise.
+					  \end{remark}
+
+				\item $\R^n$ 
+
+					  Typically, in general $\R^n$, we use open balls $B_r$ with radius $r$. 
+					  \[
+						  B_r(\vb x) \equiv \qty{\vb y : \abs{\vb{x}-\vb{y}} < r}
+					  \]
+					  That is, all the points $\vb y$ with a distance from $\vb x$ less than $r$, a \textit{ball} which has open intervals, is an open 
+					  set.
+
+					  If you declare that your open sets are open balls in $\R^n$, you recover the so-called standard topology as well. 
+					  Similar to the arguments for $\R^1$, we can also show that all of $\R^n,\ n\in\Z$ to be topologies. It has a name, called
+					  Euclidean topologies.
+			\end{enumerate}
+			There's a lot to study here, but we're not going to need all of topology, it's sufficient to know what a topology is and why it's important
+			for our understanding of a manifold. 
+
+			So again, what is a topology? It's just a set and a specification of open sets of the set. That is, $\mcal M$ and the open sets of $\mcal M$. 
+
+			Going back to the definition of a manifold, it is a topological space with an open cover $\openset$, these are just the open sets
+			I talked about, and also, we require that the union of all these open sets, it results to the full manifold set itself, $\mcal M$. 
+			\begin{equation}
+				\label{eq:union-of-opensets}
+				\mcal{M} = \bigcup_\alpha \mcal O_\alpha
+			\end{equation}
+			There should be no element of the set that does not belong to an open set. For example, you start with a set $\mcal M$, and then you 
+			declare open sets to be your topology. In that declaration, there should be no element or point in $\mcal M$ that is not part of an open set. That's
+			the requirement for you to have an open cover. These sets of open sets need to satisfy the conditions for the criteria for a topological space.
+		
+			It has charts, which maps open sets to a subset of $\R^n$, and it is a homeomorphism. Homeomorphism just means that $f$ and $f^{-1}$ are both continuous. It is
+			a rough sense of saying that they are topologically equivalent spaces. So it's saying that those open sets are topologically the same as $\R^n$.
+	\subsubsection{Homeomorphism}
+
+		Let's define a homeomorphism; Now that we have a notion of continuity, we can use that.
+		\begin{definition}{Homeomorphism}
+			A map $f$ between two sets $M$ to $N$, is said to be \textit{homeomorphic} or a homeomorphism, if 
+			\[
+				f:M\to N
+			\]
+			such that $f$ and its preimage $f^{-1}$ are both continuous. 
+		\end{definition}
+		So a homeomorphism is usually what we understand is the precise terminology for a map that continuously 
+		deforms something to something else; That's how we usually understand topology, it's like rubber sheet geometry. We demand a unique, one-to-one correspondence from points from $M$ to $N$.
+		If you can continuously deform something to something else\footnote{No cutting or removing parts, all parts of $N$ can be remapped to $M$},
+		then those two things are homeomorphic, they are deformable to each other. This is best illustrated by Fig. \ref{fig:homeomorphism}.
+
+		We take this to mean that $M$ and $N$ are topologically equivalent. In the point of view of topology, they are one and the same,
+		you cannot distinguish them with topological features, i.e., they are continuously deformable to each other.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in]{images/topologyjoke.png}
+			\caption{A common example of a homeomorphism: A topology joke}
+			\label{fig:homeomorphism}
+		\end{figure}
+			
+
+	\subsubsection{Charts}
+		% Charts are maps from open sets to $\R^n$
+		A requirement for manifolds is that for all open sets in the manifolds, there is an attached
+		chart. This chart has to be a homeomorphism from the open sets that you've declared on your set, to a subset of $\R^n$,
+		which would be some union of open balls because open balls will have a standard topology.
+
+		Suppose you have open sets $\mcal{O}_1, \mcal{O}_2$, and $\mcal{O}_3$ on a manifold $\mcal M$. If you take the union of 
+		all these things that you've declared to be open, then it should become the entire manifold, from (\ref{eq:union-of-opensets}).
+		Then it constitutes an open cover. For each of these sets $\mcal{O}_\alpha$, there should be a map $\psi_\alpha$ from $\mcal{O}_\alpha$ to $\R^n$.
+		We can only represent these as two dimensional but these are $n$ dimensional. This is illustrated by Fig. \ref{fig:charts}
+
+		For example, take $\mcal{O}_\alpha$, it has a chart $\psi_\alpha$ that maps it to $\R^n$. It therefore has an image $\psi_\alpha[\mcal{O}_\alpha]$ under $\psi_\alpha$
+		\[
+			\psi_\alpha:\mcal{O}_\alpha\to \psi_\alpha[\mcal O_\alpha]\subseteq\R^n
+		\]
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in,height=3in]{images/charts.pdf}
+			\caption{Charts $\psi$ mapping from $\mcal{O}_\alpha$ to $\R^n$}
+			\label{fig:charts}
+		\end{figure}
+
+		Now, this may sound abstract but this is something that we do in physics all the time. Because this process of providing this $\psi_1$ which
+		is a map from points from $\mcal{M}$ to $\R^n$, that's nothing but a system. $\mcal M$ is just a set, an abstract set with no coordinates, it's 
+		an independent object on its own, simply a collection of points constituting the elements of $\mcal M$. There is no innate coordinates
+		there. When you supply it with coordinates, as we do in physics all the time, that's where the notion of manifolds comes in. 
+
+		Manifolds are used here because we're giving each point in an abstract set $\mcal M$, say $x^i$, a set of coordinates $\vb{x}_i$. In other words we're giving a map from $\mcal O_1$ to 
+		have some numerical value of each point, similar to how we assign points on the Earth (an abstract oblate-spheroidal collection of atoms and points) arbitrary longitudes and latitudes ($\R^2$).
+		That is, we are \textit{charting} the manifold.
+		% \[
+		% 	(x^1,x^2,\ldots,x^n)\to \vb{x}_1,\vb{x}_2,\ldots,\vb{x}_n,\quad x^i\in\mcal{M},\ \vb{x}_i\in\R^n
+		% \]
+		\[
+			\psi:\mcal O \to \R^n,\quad p\mapsto(x^1(p),\ldots,x^n(p))
+		\]
+		Now, the requirement that $\psi_1$ needs to be a homeomorphism is a statement that $\mcal{O}_1$ and $\psi_1[\mcal{O}_1]$ are 
+		topologically the same. What you did is you continuously deformed $\mcal{O}_1$ into $\psi_1[\mcal{O}_1]$, but they are topologically equivalent. There is no difference.\footnote{Jesus fucking christ all that work just to say ``we just put coordinates in objects''}
+		That's all basically what it is.
+
+		These charts are otherwise known in physics as coordinate systems. This is what I call locally $\R^n$. The coordinates that $\psi_1$ uses, only apply to $\mcal{O}_1$. If we 
+		take a point outside $\mcal{O}_1$, say from $\mcal{O}_2$, then $\psi_1$ is no longer valid. It's only locally $\R^n$, because $\mcal O_2$ will have a different $\R^n$ appropriate
+		to it. So that the coordinates that $\psi_1$ furnish on $\mcal O_1$ will no longer apply to any point
+		that does not belong to $\mcal O_1$. The map is no longer valid.
+
+		The final condition for a manifold to be space time is that it has to be differentiable, i.e., how the different coordinate systems
+		interact with each other.
+
+	\subsubsection{Differentiable Manifolds}
+		Differentiable or smooth manifolds (both are synonymous) i.e., $C^\infty$ manifolds, are manifolds which can be differentiated
+		continuously. What do we mean by that?
+
+		Take an open set $\mcal O_1$ and $\mcal O_2$ both in $\mcal M$, and overlap each other, i.e., there is a part of $\mcal O_2$ that is a subset of $\mcal O_1$ and vice versa. 
+		$\psi_1$ maps $\mcal O_1$ to $\R^n$, say $\vb{x}=(x_1,x_2,\ldots,x_n)$, and $\psi_2$ maps $\mcal O_2$ to $\R^n$, say $\vb{y}=(y_1,y_2,\ldots,y_n)$. Note that these are different coordinate systems that each apply only to the chart which mapped it.
+		However, since $\mcal O_1$ and $\mcal O_2$ are intersectional, then the maps must also have some parts that are intersectional. 
+		That is, $\psi_1$ will map both parts of $\mcal O_1$ and $\mcal O_2$. As such, there will be a map that is $\psi_1[\mcal O_1 \cap \mcal O_2]$.
+		Similarly, $\psi_2$ will map a part of $\mcal O_1$ intersectional to $\mcal O_2$, $\psi_2[\mcal O_2 \cap \mcal O_1]$.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in,height=3in]{images/differential_manifolds.pdf}
+			\caption{Differentiability of manifolds}
+			\label{fig:differential-manifolds}
+		\end{figure}
+
+		Notice that you can actually map both these regions from $\psi_2[\mcal O_2 \cap \mcal O_1]$ to $\psi_1[\mcal O_1 \cap \mcal O_2]$
+		directly. You can do that by constructing:
+		\begin{equation}
+			\label{eq:psi1psi2compose}
+			\psi_1\circ \psi_2\inv : \R^n \to \R^n
+		\end{equation}
+		Obviously $\psi_2\inv$ only works on the region that was mapped by $\psi_2$. We can then map the preimage of $\psi_2[\mcal O_1\cap \mcal O_2]$,
+		which is defined, then composing that to the map $\psi_1$ to $\R^n$, i.e., it maps from $\R^n$ to another $\R^n$, thereby bypassing the need for explicitly describing $\mcal M$. 
+
+		Equation (\ref{eq:psi1psi2compose}) only really applies to the region $\mathcal O_1 \cap \mathcal O_2$. As such, the map $\psi_1\circ\psi_2\inv[\mcal O_1\cap\mcal O_2]$
+		only really applies to $\psi_2[\mcal O_1 \cap \mcal O_2]$, not to all of $\R^n$.
+		\[
+			\psi_1 \circ \psi_2^{-1} : 
+			\underbrace{\psi_2[\mathcal{O}_1 \cap \mathcal{O}_2]}_{\subseteq \mathbb{R}^n} 
+			\to 
+			\underbrace{\psi_1[\mathcal{O}_1 \cap \mathcal{O}_2]}_{\subseteq \mathbb{R}^n} 
+		\]
+		This can be written in the more concrete usual notation as $\vb{x}$ being a function of $\vb{y}$, i.e., taking the $\vb y$ coordinates and spitting out the $\vb x$ coordinates:
+		\[
+			\psi_1\circ \psi_2\inv \iff \vb{x}(\vb{y})
+		\]
+		These are called \textbf{transition functions} in the math literature. But for now, we'll call it, simply, coordinate transformations. 
+
+		Now, let's go back to the definition of a manifold, Def. 3.3, we see that \textit{all such transition functions} $\psi_\beta\circ\psi_\alpha\inv$ \textit{must be }$C^\infty$.
+
+		This is the last key part, and we have now explained all the terms needed to define a differentiable manifold (a.k.a., $C^\infty$ manifolds). The definition of a $C^\infty$ manifold
+		requires that all such coordinate transformations are $C^\infty$, and we understand $C^\infty$ in the usual sense, because in normal calculus, you can take as many 
+		derivatives as you want, and still be continuous. This is applicable because $\vb{x}(\vb y)$ is a usual $\R^n\to R^n$ function, it is something that everybody understands.
+		All objects like these should be infinitely differentiable. One should take as many derivatives as they want.
+
+		So again, what is a manifold? It's simply a set of open sets with coordinate systems, and every time the open sets overlap, the transition functions (coordinate transformations) must
+		always be infinitely differentiable, if it is to be a $C^\infty$ manifold.
+		
+		\paragraph{Question about the notion of $C^\infty$} If you take derivatives again and again of a function, at some point it will become zero, so it seems impossible for it to be infinitely differentiable. How come?
+
+		We can! If you can differentiate a zero function, it is still differentiable, and the result is 0 again, ad infinitum, you can still keep on going, and the result remains continuous. 
+		What we mean by differentiability is the usual criteria for differentiability which are spikes or discontinuities that will make the manifold undifferentiable at that point. We require these to be \textit{smooth}.
+		When we get to black holes, we will find that the coordinate systems will break down precisely when you encounter violations of this requirement to be infinitely differentiable,
+		which signifies we reached the end of our chart, and we need a new coordinate system. One of the things which you should sort of take from this notion of a manifold is that the coordinate 
+		systems can lead you astray. The manifolds can be very well defined and well behaved. However, at some point, the transformation will cause a divergence which is not allowed by your
+		chosen coordinate transformation, that will signify you have a problem with the chart, it has gone beyond where it can represent, by which you need to find another coordinate transformation which fits your uses.
+
+		There are other kinds of manifolds which are not $C^\infty$, mathematicians may sometimes demand only $C^2$. So sometimes you may 
+		see people say $C^2$ manifold, because for the transition functions, they only want it to be 
+		$C^2$. Sometimes they say topological manifold, this is simply a $C^0$ manifold, it is only continuous but the derivatives are not. 
+
+		For us in physics, we're always going to use infinitely differentiable manifolds. If we see a manifold, we will always demand for it to be a $C^\infty$, or a smooth, or differentiable manifold.
+		This is what we demand of spacetime.
+
+
+		The entire set of open-set/chart pairs, since it is an open cover, is called an atlas (to continue the analogy with maps)
+		\[
+			\text{Atlas} = \qty{(\psi_\alpha,\mathcal O_\alpha)}
+		\]
+		The unions of $\mcal O_\alpha$ and $\psi_\alpha$ constitute an atlas on $S^2$
+
+		That's the last bit of terminology, before we have understood all the terms that were said in the definitions for space time, and for a manifold.
+	\subsubsection{Examples}
+		\begin{enumerate}[(1)]
+			\item $\R^n$
+				
+				Obviously. $\R^n$ itself is a manifold. In fact, the nice thing about $\R^n$ is that it can be covered by a single chart. For $\R^n$, it's just the usual $\R^n$.
+				This chart is that the identity transformation:
+				\[
+					\text{Id}: \R^n \to\R^n
+				\]
+			\item $S^2$
+
+				$S^2$, the two sphere, has various ways to coordinatize. One way is by the so-called stereographic projection.
+				We want a chart $\psi$ that globally maps all of $S^2$ to $R^2$, such that $\psi:S^2\to\R^2$. One nice map is called the stereographic projection, where we coordinatize 
+				points by using the north pole $N$, and projecting a line from $N$ to any point in $S^2$, $p$ until it intersects a plane described by $\R^2$. 
+				We can place the plane to be coincident with the center of $S^2$ or on the south pole $S$. The intersection point on the plane, $(x,y)$ is then the map from the surface of $S^2$ to $\R^2$.
+				\[
+					\psi_N:p\mapsto(x,y)
+				\]
+				This is simply a way of assigning $S^2$ to $\R^2$. However, since we map $S^2$ from  the point $N$, it cannot be 
+				projected onto the plane, hence, it is not represented in $\R^2$
+				\[
+					\psi_N: S^2-\{N\} \to \R^2
+				\]
+				This is an example of a coordinate system which can have multiple charts. $\psi_N$ is insufficient to describe all of 
+				$S^2$, hence, we need another map. We will construct the same projection, where we attach the plane to be coincident with $N$, 
+				and instead take the line from $S$ to project to the plane. This is now
+				\[
+					\psi_S = S^2 - \{S\} \to \R^n 
+				\]
+				We call $S^2 - \{S\}=\mcal O_S$ and $S^2 - \{N\}=\mcal O_N$. Note that the union is the entire manifold.
+				\[
+					\mcal O_N \cup \mcal O_S = S^2
+				\]
+				So, $\qty{\psi_N,\mcal O_N}$ and $\qty{\psi_S,\mcal O_S}$ constitute an atlas for $S^2$.
+
+		\end{enumerate}
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in, height=3in]{images/sterographicprojection.pdf}
+			\caption{Stereographic projection of $S^2$ to $\R^2$, using $N$}
+			\label{fig:stereographiprojection}
+		\end{figure}
+	
+		Like we said in the beginning, literally anything in physics where we use coordinates is a manifuld. Normally in most areas of physics, we're not too careful
+		about the manifold because we mostly think about the stuff on top of the manifold. However, this is spacetime physics,
+		when we study spacetime, spacetime itself \textit{is} the manifold. So we have to consider the manifold itself. Anything you might conceive of, field theory (fields living in $\R^4$, coordinatized by $t$ and $\vb x$),
+		mechanics (which lives in phase space, coordinatized by $x$ and $p$), thermodynamics, which are also manifolds coordinatized by thermodynamic variables. Literally anything 
+		where you're using coordinates, there is an underlying manifold there. 
+
+		Very roughly, we wouldn't be too far off from the definition that basically a manifold is something that it's a set and that it's locally coordinatizable, and 
+		that locally is equivalent to $\R^n$. If you can put coordinates on a set, you essentially have a manifold.
+
+		Now, obviously the question would be: What are not manifolds? They do exist, those are the sets which does not have
+		the things we demand of them. For example, A geometric object that appears to self-intersect in an embedding may fail to be a manifold at the intersection point, 
+		for the definitiones required will fail at the interseciton.
+
+		In physics, GR especially, we respect the democracy of coordinate systems. Charts are just there as computational devices.
+		They have to interact with charts in such a way that we get coodinate transformations, infinitely continuous. If your transformation
+		is not continuously differentiable, which means you have a divergence somewhere, it means that your chart is invalid. It signals that 
+		the domain of your chart is probably smaller than you imagined.
+			
+
+				
+			
+
+		
+
+
+			
+
+
+
+		
+		
+
+		
+		
+		
+		
+

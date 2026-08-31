@@ -9,8 +9,8 @@
 \contentsline {subsection}{Reminders}{v}{section*.5}%
 \contentsline {subsection}{Preface}{vi}{section*.5}%
 \contentsline {subsection}{Contents}{vii}{section*.5}%
-\contentsline {subsection}{List of Figures}{ix}{section*.5}%
-\contentsline {subsection}{List of Theorems}{x}{section*.5}%
+\contentsline {subsection}{List of Figures}{x}{section*.5}%
+\contentsline {subsection}{List of Theorems}{xi}{section*.5}%
 \contentsline {section}{Chapter 1: Review of Newtonian Physics}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Newton's Law of Gravitation}{2}{subsubsection.1.1.1}%
@@ -54,11 +54,25 @@
 \contentsline {subsubsection}{\numberline {2.1.14}Lorentzian, Galilean, and Carrollian kinematics}{39}{subsubsection.2.1.14}%
 \contentsline {subsubsection}{\numberline {2.1.15}Conclusion}{41}{subsubsection.2.1.15}%
 \contentsline {section}{Chapter 3: Aspects of Differential Geometry}{44}{section.3}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{45}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{46}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{47}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{48}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{49}{section.8}%
-\contentsline {section}{Back Matter}{50}{section.8}%
-\contentsline {subsection}{Author's Note}{50}{section*.19}%
-\contentsline {subsection}{Colophon}{52}{section*.19}%
+\contentsline {subsection}{\numberline {3.1}Manifolds and Topological Spaces}{44}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Spacetime}{45}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Manifolds}{48}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Topological Space}{50}{subsubsection.3.1.3}%
+\contentsline {paragraph}{Indiscrete Topology}{51}{section*.21}%
+\contentsline {paragraph}{Discrete Topology}{52}{section*.22}%
+\contentsline {subsubsection}{\numberline {3.1.4}Continuity}{53}{subsubsection.3.1.4}%
+\contentsline {paragraph}{What is a preimage?}{53}{section*.23}%
+\contentsline {paragraph}{Usual examples of Topologies}{54}{section*.25}%
+\contentsline {subsubsection}{\numberline {3.1.5}Homeomorphism}{56}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Charts}{57}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}Differentiable Manifolds}{59}{subsubsection.3.1.7}%
+\contentsline {paragraph}{Question about the notion of $C^\infty $}{61}{section*.29}%
+\contentsline {subsubsection}{\numberline {3.1.8}Examples}{62}{subsubsection.3.1.8}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{65}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{66}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{67}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{68}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{69}{section.8}%
+\contentsline {section}{Back Matter}{70}{section.8}%
+\contentsline {subsection}{Author's Note}{70}{section*.31}%
+\contentsline {subsection}{Colophon}{72}{section*.31}%

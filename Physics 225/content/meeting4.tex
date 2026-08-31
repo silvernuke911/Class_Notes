@@ -416,18 +416,18 @@
 		\end{figure}
 
 		Now, this may sound abstract but this is something that we do in physics all the time. Because this process of providing this $\psi_1$ which
-		is a map from points from $\mcal{M}$ to $\R^n$, that's nothing but a system. $\mcal M$ is just a set, an abstract set with no coordinates, it's 
+		is a map from points from $\mcal{M}$ to $\R^n$, that's nothing but a coordinate system. $\mcal M$ is just a set, an abstract set with no coordinates, it's 
 		an independent object on its own, simply a collection of points constituting the elements of $\mcal M$. There is no innate coordinates
 		there. When you supply it with coordinates, as we do in physics all the time, that's where the notion of manifolds comes in. 
 
-		Manifolds are used here because we're giving each point in an abstract set $\mcal M$, say $x^i$, a set of coordinates $\vb{x}_i$. In other words we're giving a map from $\mcal O_1$ to 
+		Manifolds are used here because we're giving each point in an abstract set $\mcal M$, say $p^i$, a set of coordinates $\vb{x}_i$. In other words we're giving a map from $\mcal O_1$ to 
 		have some numerical value of each point, similar to how we assign points on the Earth (an abstract oblate-spheroidal collection of atoms and points) arbitrary longitudes and latitudes ($\R^2$).
 		That is, we are \textit{charting} the manifold.
 		% \[
 		% 	(x^1,x^2,\ldots,x^n)\to \vb{x}_1,\vb{x}_2,\ldots,\vb{x}_n,\quad x^i\in\mcal{M},\ \vb{x}_i\in\R^n
 		% \]
 		\[
-			\psi:\mcal O \to \R^n,\quad p\mapsto(x^1(p),\ldots,x^n(p))
+			\psi:\mcal O \to \R^n,\quad p\mapsto \vb{x} = (x^1(p),\ldots,x^n(p))
 		\]
 		Now, the requirement that $\psi_1$ needs to be a homeomorphism is a statement that $\mcal{O}_1$ and $\psi_1[\mcal{O}_1]$ are 
 		topologically the same. What you did is you continuously deformed $\mcal{O}_1$ into $\psi_1[\mcal{O}_1]$, but they are topologically equivalent. There is no difference.\footnote{Jesus fucking christ all that work just to say ``we just put coordinates in objects''}
@@ -478,7 +478,7 @@
 		\[
 			\psi_1\circ \psi_2\inv \iff \vb{x}(\vb{y})
 		\]
-		These are called \textbf{transition functions} in the math literature. But for now, we'll call it, simply, coordinate transformations. 
+		These are called \textbf{transition functions} in the math literature. But for now, we'll call it, simply, as coordinate transformations. 
 
 		Now, let's go back to the definition of a manifold, Def. 3.3, we see that \textit{all such transition functions} $\psi_\beta\circ\psi_\alpha\inv$ \textit{must be }$C^\infty$.
 

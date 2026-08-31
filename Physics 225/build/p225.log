@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  1 SEP 2026 04:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  1 SEP 2026 04:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2052,10 +2052,10 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59] [60] [61]
+[59] [60] [61] [62]
 
 LaTeX Warning: File `images/sterographicprojection.pdf' not found on input line
- 556.
+ 572.
 
 
 ! Package pdftex.def Error: File `images/sterographicprojection.pdf' not found:
@@ -2065,15 +2065,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.556 ...t=3in]{images/sterographicprojection.pdf}
+l.572 ...t=3in]{images/sterographicprojection.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[62] [63]) [64] [65
+[63]) [64] [65
 
 ] [66
 
@@ -2154,7 +2151,7 @@ msam10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/symbols/msbm7.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (85 pages, 4423904 bytes).
+ild\p225.pdf" (85 pages, 4425425 bytes).
 PDF statistics:
  1271 PDF objects out of 1440 (max. 8388607)
  331 named destinations out of 1000 (max. 500000)

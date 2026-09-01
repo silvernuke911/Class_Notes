@@ -132,7 +132,7 @@
 
 		First we discuss the $C^\infty$ manifold, or manifolds in general.
 
-	\subsubsection{Manifolds}.
+	\subsubsection{Manifolds}
 		Those definitions discuss both an $\mathcal{M}$ manifold and a $g$ metric. As such, we discuss what is a manifold. 
 		First, I will write down what I consider to be a sufficient definition for what a manifold is, and then I'll give 
 		you my own take of how do you make sense of a manifold, from an intuitive point of view. 
@@ -289,15 +289,14 @@
 			\text{ Topological spaces}
 		\end{equation*}
 		The key point here is that without topology, there is no notion of continuity.
-
-		Now this sounds very abstract; I mean this is a fun subject, I actually like topology
+		Now this all sounds very abstract; I mean this is a fun subject, I actually like topology
 		a lot, but for physics, it is usually enough to use open sets. 
 
 		\paragraph{What is a preimage?} 
-			The preimage is kind of like the inverse of a function, so we say that $f$ is a function which maps the domain $M$ to the codomain $N$. The
+			The preimage is kind of like the inverse of a function. For example, say that $f$ is a function which maps the domain $M$ to the codomain $N$ (Fig. \ref{fig:preimagedefinition}). The
 			preimage means that if you take any set in $N$, say $\mcal{O}$, then the preimage of $\mcal{O}$ is all the elements on $M$ that when $f$ is applied, will be mapped to $N$. So,
 			in essence, it's like the inverse function.
-			The inverse of $f$ need not exist, but the preimage will always exist. So there are a bunch of points in $M$ that will be mapped entirely to $\mcal O$ by $f$. Those sets of points
+			The inverse of $f$ need not exist, but the preimage will always exist. So there are a bunch of points in $M$, call them $\mcal W$, that will be mapped entirely to $\mcal O$ by $f$. Those sets of points
 			is the preimage of $\mcal O$. i.e., $f(f\inv[\mcal O]) = \mcal O$
 			\[
 				f^{-1}[\mcal O] = \qty{x\in M : f(x)\in \mcal O}
@@ -305,7 +304,7 @@
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=3in,height=1in]{images/preimage.pdf}
-				\caption{Pre-image of $\mcal{O}$, $f^{-1}[\mcal{O}]$}
+				\caption{Pre-image of $\mcal{O}$, $ \mcal{W}=f^{-1}[\mcal{O}]$ and $\mcal{O} = f[\mcal{W}]$}
 				\label{fig:preimagedefinition}
 			\end{figure}
 		\paragraph{Usual examples of Topologies}
@@ -387,7 +386,7 @@
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=4in]{images/topologyjoke.png}
-			\caption{A common example of a homeomorphism: A topology joke}
+			\caption{A classic example of a homeomorphism: A topology joke}
 			\label{fig:homeomorphism}
 		\end{figure}
 			
@@ -474,17 +473,19 @@
 			\to 
 			\underbrace{\psi_1[\mathcal{O}_1 \cap \mathcal{O}_2]}_{\subseteq \mathbb{R}^n} 
 		\]
+		\newpage
 		This can be written in the more concrete usual notation as $\vb{x}$ being a function of $\vb{y}$, i.e., taking the $\vb y$ coordinates and spitting out the $\vb x$ coordinates:
-		\[
+		\begin{equation}
+			\label{eq:differentialmanifolds-RntoRN}
 			\psi_1\circ \psi_2\inv \iff \vb{x}(\vb{y})
-		\]
+		\end{equation}
 		These are called \textbf{transition functions} in the math literature. But for now, we'll call it, simply, as coordinate transformations. 
 
 		Now, let's go back to the definition of a manifold, Def. 3.3, we see that \textit{all such transition functions} $\psi_\beta\circ\psi_\alpha\inv$ \textit{must be }$C^\infty$.
 
 		This is the last key part, and we have now explained all the terms needed to define a differentiable manifold (a.k.a., $C^\infty$ manifolds). The definition of a $C^\infty$ manifold
 		requires that all such coordinate transformations are $C^\infty$, and we understand $C^\infty$ in the usual sense, because in normal calculus, you can take as many 
-		derivatives as you want, and still be continuous. This is applicable because $\vb{x}(\vb y)$ is a usual $\R^n\to R^n$ function, it is something that everybody understands.
+		derivatives as you want, and still be continuous. This is applicable because $\vb{x}(\vb y)$ is a usual $\R^n\to \R^n$ function, it is something that everybody understands.
 		All objects like these should be infinitely differentiable. One should take as many derivatives as they want.
 
 		So again, what is a manifold? It's simply a set of open sets with coordinate systems, and every time the open sets overlap, the transition functions (coordinate transformations) must
@@ -509,11 +510,11 @@
 
 		The entire set of open-set/chart pairs, since it is an open cover, is called an atlas (to continue the analogy with maps)
 		\[
-			\text{Atlas} = \qty{(\psi_\alpha,\mathcal O_\alpha)}
+			\text{Atlas} \equiv \qty{(\psi_\alpha,\mathcal O_\alpha)}
 		\]
 		The unions of $\mcal O_\alpha$ and $\psi_\alpha$ constitute an atlas on $S^2$
 
-		That's the last bit of terminology, before we have understood all the terms that were said in the definitions for space time, and for a manifold.
+		% That's the last bit of terminology, before we have understood all the terms that were said in the definitions for space time, and for a manifold.
 	\subsubsection{Examples}
 		\begin{enumerate}[(1)]
 			\item $\R^n$
@@ -525,7 +526,7 @@
 				\]
 			\item $S^2$
 
-				$S^2$, the two sphere, has various ways to coordinatize. One way is by the so-called stereographic projection.
+				$S^2$, the two sphere, has various ways to coordinatize. One way is by the so-called stereographic projection (Fig. \ref{fig:stereographicprojection}).
 				We want a chart $\psi$ that globally maps all of $S^2$ to $R^2$, such that $\psi:S^2\to\R^2$. One nice map is called the stereographic projection, where we coordinatize 
 				points by using the north pole $N$, and projecting a line from $N$ to any point in $S^2$, $p$ until it intersects a plane described by $\R^2$. 
 				We can place the plane to be coincident with the center of $S^2$ or on the south pole $S$. The intersection point on the plane, $(x,y)$ is then the map from the surface of $S^2$ to $\R^2$.
@@ -554,24 +555,26 @@
 					(\theta,\phi)
 				\]
 				where $\theta$ is the colatitude, $\theta=[0,\pi]$, and $\phi$ is the longitude, ($\phi = [0, 2\pi)$). 
-				With this method, we can also embad $S^2$ to $\R^3$. This chart maps all of $S^2$ to a \textit{subset}
+				With this method, we can also embed $S^2$ to $\R^3$. This chart maps all of $S^2$ to a \textit{subset}
 				of $\R^2$. However, it has two main problems: (1) At the poles, longitude is undefined, for every longitude line
 				meetds there, therefore $\phi$ is undefined, and the system breaks down, and (2) The longitude wraps around, with $0$ and $2\pi$ representing
 				the same meridian, so the mapping repeats.
 
 				However, it is a very useful coordinate system on most of the sphere, but not a global chart. In that sense, other maps
 				are needed to complete the entire atlas. 
-				This illustrates why a manifold may require multiple coordinate charts to describe it globally. 
+				This illustrates why a manifold may require multiple coordinate charts to describe it globally. For most intents and purposes,
+				using the latitude-longitude convention is very useful. However, due to it's limitations in describing all points on $S^2$,
+				other projection mappings are preferred.
 
 				These are just two ways to
-				map $S^2$, there are other ways to do so.
+				map $S^2$, there are other ways to do so which are more contrived, but I encourage you to study them
 		\end{enumerate}
 
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in, height=3in]{images/sterographicprojection.pdf}
+			\includegraphics[width=4in, height=2.8in]{images/sterographicprojection.pdf}
 			\caption{Stereographic projection of $S^2$ to $\R^2$, using $N$}
-			\label{fig:stereographiprojection}
+			\label{fig:stereographicprojection}
 		\end{figure}
 	
 		Like we said in the beginning, literally anything in physics where we use coordinates is a manifuld. Normally in most areas of physics, we're not too careful

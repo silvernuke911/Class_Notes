@@ -1,0 +1,9 @@
+# Fdb version 4
+["pdflatex"] 0 "meeting4.tex" "meeting4.pdf" "meeting4" 0 -1
+  "build/meeting4.aux" 0 -1 0 "pdflatex"
+  "meeting4.tex" 0 -1 0 ""
+  (generated)
+  "build/meeting4.aux"
+  "build/meeting4.log"
+  "meeting4.pdf"
+  (rewritten before read)

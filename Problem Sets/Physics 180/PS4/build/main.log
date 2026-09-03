@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  28 AUG 2026 03:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  3 SEP 2026 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,30 +1816,33 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
 (C:\Users\verci\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 	\end{solution_pset}
-                          [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts
-/enc/dvips/lm/lm-mathit.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-[2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}]
+l.99 				  \end{align*}
+                        [1{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/e
+nc/dvips/lm/lm-mathsy.enc}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 113.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 113.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 113.
+[2{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
+c}] [3] [4]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 386.
+[5] [6] [7] [8] [9] [10]
 (C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
-ld\main.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [3]
+ld\main.bbl)
+<images/fig1.pdf, id=164, 426.39299pt x 209.58301pt>
+File: images/fig1.pdf Graphic file (type pdf)
+<use images/fig1.pdf>
+Package pdftex.def Info: images/fig1.pdf  used on input line 1190.
+(pdftex.def)             Requested size: 433.62pt x 213.14183pt.
+[11 <./images/fig1.pdf>]
 (C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\Physics 180\PS4\bui
 ld\main.aux)
  ***********
@@ -1850,27 +1853,42 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 67969 strings out of 474542
- 1714325 string characters out of 5744446
- 2650188 words of memory out of 5000000
- 89274 multiletter control sequences out of 15000+600000
- 616739 words of font info for 79 fonts, out of 8000000 for 9000
+ 68108 strings out of 474542
+ 1716174 string characters out of 5744446
+ 2663189 words of memory out of 5000000
+ 89362 multiletter control sequences out of 15000+600000
+ 645161 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,5n,110p,779b,993s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.
-pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.
-pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.p
-fb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pf
-b><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-<C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
-:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+ 106i,15n,110p,779b,1204s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esi
+nt10.pk><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/verci/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/verci/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/verci/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/verci/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/verci/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/verci/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/verci/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/verci/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/verci/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/verci/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/lm/lmr6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmr7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmr8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmri12.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmsy10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmsy6.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmsy8.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Problem Sets\P
-hysics 180\PS4\build\main.pdf" (4 pages, 186367 bytes).
+hysics 180\PS4\build\main.pdf" (12 pages, 496795 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

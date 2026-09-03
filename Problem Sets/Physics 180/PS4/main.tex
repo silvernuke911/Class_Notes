@@ -16,20 +16,301 @@
 		that is also radioactive. We can have a decay chain 1 to 2 to 3 and so on,
 		with the original nucleus (Type 1) being the parent. Assume that we begin
 		with $N_0$ atoms of the parent (i.e., $N_1(0) = N_0$) and no decay products are
-		originally present (i.e., $N_i(0) = 0, i = 1, 2, 3,\ldots$). Refer to the decay constants as
+		originally present (i.e., $N_i(0) = 0, i =2, 3,\ldots$). Refer to the decay constants as
 		$\lambda_1, \lambda_2, \lambda_3,\ldots$
 
-		We nowconsider the decay 1 to 2 to 3, where nuclei of type 3 are stable.
+		We now consider the decay 1 to 2 to 3, where nuclei of type 3 are stable.
 		\begin{enumerate}[(a)]
 		    \item Set up and solve the differential equation for $N_3(t)$.
-			\item Evaluate $N_1(t) + N_2(t)+ N_3(5)$ and interpret.
-			\item Examin $N_1(t),N_2(t),N_3(t)$ at small $t$ and interpret.
+			\item Evaluate $N_1(t) + N_2(t)+ N_3(t)$ and interpret.
+			\item Examine $N_1(t),N_2(t),N_3(t)$ at small $t$ and interpret.
 			\item Find the limits of $N_1(t),N_2(t),N_3(t)$ as $t$ approaches infinity
 				  and interpret.
 		\end{enumerate}
 	\end{problem}
 	\begin{solution_pset}
+		First, we set up the complete coupled differential equations for each product
+		in the decay chain, starting with the parent type 1 nucleus, which follows
+		a typical decay rate
+		\begin{equation}
+			\label{eq:type1decay}
+		    \dv{N_1}{t} = - \lambda_1 N_1 
+		\end{equation}
+		For the type 2 nucleus, it is being produced by the decay of the type 1 nucleus,
+		so it has a $+\lambda_1 N_1$ term. However, it also decays at a rate $\lambda_2 N_2$,
+		hence:
+		\begin{equation}
+			\label{eq:type2decay}
+			\dv{N_2}{t} = \lambda_1 N_1 - \lambda_2 N_2 
+		\end{equation}
+		As for the type 3 nucleus, which is stable, it is being produced completely only by
+		type two nucleus decay, and as such
+		\begin{equation}
+			\label{eq:type3decay}
+			\dv{N_3}{t} = \lambda_2 N_2 
+		\end{equation}
+		Those are the coupled rate equations. Now, we begin solving for the given problems.
+		\begin{enumerate}[\textbf{(\alph*)}]
+		    \item Set up and solve the differential equation for $N_3(t)$.
+				  
+				  First we solve for the parent equation (\ref{eq:type1decay}), it has solution
+				  \begin{equation}
+				  	\label{eq:type1sol}
+				     N_1(t) = N_0 e^{-\lambda_1 t}
+				  \end{equation}
+				  Substuting this into (\ref{eq:type2decay}), we have
+				  \[
+					  \dv{N_2}{t} = \lambda_1 N_0 e^{-\lambda_1 t} 
+				  \]
+				  Rearranging, we find
+				  \begin{equation}
+				  	\label{eq:typ2setup}
+				    \dv{N_2}{t} + \lambda_2 N_2 = \lambda_1 N_0 e^{-\lambda_1 t} 
+				  \end{equation}
+				  This is a first order linear ODE, and can be solved with an
+				  integrating factor. By inspection of the coefficient of the second term, 
+				  we find that the integrating 
+				  factor is $e^{\lambda_2 t}$, and as such
+				  \begin{equation}
+				  	\label{eq:type2setup2}
+				    \dv{}{t}\pqty{N_2 e^{\lambda_2 t}} 
+					=
+					\lambda_1 N_0 e^{(\lambda_2 - \lambda_1)t}
+				  \end{equation}
+				  Multiplying by $dt$ and integrating, we find
+				  \begin{align*}
+					d(N_2 e^{\lambda_2 t}) 
+					&= 
+					\lambda_1 N_0 e^{(\lambda_2 - \lambda_1)t} \dd{t}\\
+					\int_0^t d(N_2 e^{\lambda_2 t}) 
+					&= 
+					\int_0^t \lambda_1 N_0 e^{(\lambda_2 - \lambda_1)t} \dd{t}\\
+					N_2 e^{\lambda_2 t} - N_2(0)
+					&=
+					\frac{\lambda_1 N_0}{\lambda_2 - \lambda_1}\pqty{
+						e^{(\lambda_2 - \lambda_1)t} - 
+						e^{(\lambda_2 - \lambda_1)0} 
+					} \\
+					N_2 e^{\lambda_2 t}
+					&=
+					\frac{\lambda_1 N_0}{\lambda_2 - \lambda_1}\pqty{
+						e^{(\lambda_2 - \lambda_1)t} - 1
+					} 
+				  \end{align*}
+				  Hence, the solution for $N_2(t)$ is
+				  \begin{equation}
+				  	\label{eq:type2sol}
+					N_2(t) 
+					=
+					\frac{\lambda_1 N_0}{\lambda_2 - \lambda_1}\pqty{
+						e^{- \lambda_1 t} - e^{-\lambda_2 t}
+					} 
+				  \end{equation}
+				  Now, we use (\ref{eq:type3decay})
+				  \[
+					  \dv{N_3}{t} = \lambda_2 N_2
+				  \]
+				  This has general solution\footnote{I don't change variables of integration, it's annoying}
+				  \[
+					  N_3(t) = \lambda_2 \int_0^t N_2(t)\dd{t}
+				  \]
+				  Substituting (\ref{eq:type2sol}), we have
+				  \[
+					  N_3(t) = \frac{\lambda_1\lambda_2 N_0}{\lambda_2 - \lambda_1}
+					  \int_0^t (e^{-\lambda_1 t}-e^{-\lambda_2 t})\dd{t}
+				  \]
+				  Since
+				  \[
+					  \int_0^t e^{-\lambda t}\dd{t} 
+					  = 
+					  \frac{1-e^{-\lambda t}}{\lambda} ,
+				  \]
+				  Then
+				  \[
+					  N_3(t) = 
+					  \frac{\lambda_1\lambda_2 N_0}{\lambda_2 - \lambda_1}
+					  \pqty{
+					  \frac{1-e^{-\lambda_1 t}}{\lambda_1} -
+					  \frac{1-e^{-\lambda_2 t}}{\lambda_2} 
+					  }
+				  \]
+				  Simplifying, we have
+				  \begin{equation}
+				  	\label{eq:type3sol}
+					\boxed{
+					  N_3(t) = 
+					  \frac{\lambda_1\lambda_2 N_0}{\lambda_2 - \lambda_1}
+					  \pqty{
+						  1 - \frac{\lambda_2 e^{-\lambda_1 t} - \lambda_1 e^{-\lambda_2 t}}{\lambda_2 - \lambda_1} 
+					  }
+					} 
+				  \end{equation}
+			\item Evaluate $N_1(t) + N_2(t)+ N_3(t)$ and interpret.
+				  Adding together (\ref{eq:type1sol}), (\ref{eq:type2sol}), and (\ref{eq:type3sol}), we find
+				  {\scriptsize
+				  \begin{align*}
+					  N_1(t) + N_2(t) + N_3(t) 
+					  &=
+					  N_0 e^{-\lambda_1 t}
+					  +
+		     		  \frac{\lambda_1 N_0}{\lambda_2 - \lambda_1}\pqty{
+						e^{(- \lambda_1)t} - e^{-\lambda_2 t}
+					  } 
+					  +
+					  \frac{\lambda_1\lambda_2 N_0}{\lambda_2 - \lambda_1}
+					  \pqty{
+					  \frac{1-e^{-\lambda_1 t}}{\lambda_1} -
+					  \frac{1-e^{-\lambda_2 t}}{\lambda_2} 
+					  }\\
+					  &=
+					  N_0 
+					  \pqty{
+						  e^{-\lambda_1 t}
+						  +
+						  \frac{\lambda_1 }{\lambda_2 - \lambda_1}\pqty{
+							e^{- \lambda_1 t} - e^{-\lambda_2 t}
+						  } 
+						  +
+						  \frac{\lambda_1\lambda_2 }{\lambda_2 - \lambda_1}
+						  \pqty{
+							  \frac{1-e^{-\lambda_1 t}}{\lambda_1} -
+							  \frac{1-e^{-\lambda_2 t}}{\lambda_2} 
+						  }
+					  }\\
+					  &=
+					  N_0 \frac{1}{\lambda_2 - \lambda_1}  
+					  \pqty{
+						  (\lambda_2-\lambda_1)e^{-\lambda_1 t}
+						  +
+						  \lambda_1 \pqty{
+							  e^{-\lambda_1 t} - e^{-\lambda_2 t}
+						  }
+						  +
+						  {\lambda_1\lambda_2 }
+						  \pqty{
+							  \frac{1-e^{-\lambda_1 t}}{\lambda_1} -
+							  \frac{1-e^{-\lambda_2 t}}{\lambda_2} 
+						  }
+					  }\\
+					  &=
+					  N_0 \frac{1}{\lambda_2 - \lambda_1}  
+					  \pqty{
+						  \lambda_2 e^{-\lambda_1 t} -
+						  \lambda_1 e^{-\lambda_1 t}
+						  +
+						  \lambda_1 e^{-\lambda_1 t} -
+						  \lambda_1 e^{-\lambda_2 t}
+						  +
+						  \lambda_2 - \lambda_2 e^{-\lambda_1 t} -
+						  \lambda_1 + \lambda_1 e^{-\lambda_2 t}
+					  }\\
+					  &=
+					  N_0 \frac{1}{\lambda_2 - \lambda_1}  
+					  \pqty{
+						  \lambda_2 - 
+						  \lambda_1  
+					  }\\
+					  &=
+					  N_0 
+				  \end{align*}
+				  }
+				  Hence
+				  \begin{equation}
+				  	\label{eq:constantN}
+					\boxed{
+					  N_1(t) + N_2(t) + N_3(t) 
+					  = N_0
+					}
+				  \end{equation}
 
+				  We can interpret this as the number of nuclei present on the sample
+				  is constant over all of time, i.e., 
+				  \fbox{\textbf{the number of nuclei remains constant.}}
+			  \item Examine $N_1(t),N_2(t),\text{and }N_3(t)$ at small $t$ and interpret.
+
+				  We can taylor expand $e^{-\lambda}t$ as 
+				  \[
+					  e^{-\lambda t} = 1 -\lambda t + \frac{1}{2}\lambda^2t^2 \cdots
+				  \]
+				  Thus, to first order, and $t\ll 1$, (\ref{eq:type1sol}) reduces to
+				  \[
+					  \boxed{
+						  N_1 \approx N_0 (1 - \lambda_1 t)
+					  }
+				  \]
+				  That is, the type 1 nuclei decreases linearly.
+
+				  For (\ref{eq:type2sol}), we find that, to first order
+				  \[
+					  e^{-\lambda_1 t} - e^{-\lambda_2 t} \approx (\lambda_2 - \lambda_1)t
+				  \]
+				  Substituting this in (\ref{eq:type2sol}), we find that
+				  \[
+					  \boxed{
+					   N_2 \approx \lambda_1 N_0 t
+					  }
+				  \]
+				  So, initially, the type 2 nuclei grows linearly.
+
+				  Using the same argument for the type 3 nuclei, we find that\footnote{I find the
+				  entire derivation for this one long and cumbersome but mathematica said that's the
+				  reduction, so yeah, just trust me that (\ref{eq:type3sol}) reduces this way.}
+				  \[
+					  \lambda_2 e^{-\lambda_1 t} - \lambda_1 e^{-\lambda_2 t} 
+					  = 
+					  (\lambda_2 - \lambda_1) - \frac{1}{2}\lambda_1\lambda_2(\lambda_2 - \lambda_1)t^2 
+				  \]
+				  Hence, substituting this in (\ref{eq:type3sol}), we find that
+				  \[
+					  \boxed{
+						  N_3 \approx \frac{1}{2}\lambda_1\lambda_2 N_0 t^2 
+					  }
+				  \]
+				  So, type 3 nuclei grow quadratically.
+
+				  Hence, we find the following interpretations: At $t=0$, only type 1 exists.
+				  At short time $t$ after $t=0$, we find that type 1 decreases linearly, 
+				  and type 2 grows linearly due to that decrease. However, type 3 nuclei 
+				  need two decay events to form, so it's population initially grows as $t^2$
+				  rather than linearly.
+
+			\item Find the limits of $N_1(t),N_2(t),N_3(t)$ as $t$ approaches infinity
+				  and interpret.
+
+				  At $t\to\infty$, the following exponential terms tend to go to 0:
+				  \[
+					  e^{-\lambda_1 t} \to 0
+				  \]
+				  and
+				  \[
+					  e^{-\lambda_2 t} \to 0 
+				  \]
+				  Therefore, evaluating (\ref{eq:type1sol}), (\ref{eq:type2sol}), and (\ref{eq:type3sol}), we find that
+				  for type 1, the decay goes to:
+				  \[
+					  \boxed{
+						  \lim_{t\to\infty} N_1(t) = 0
+					  }
+				  \]
+				  For type 2, we have
+				  \[
+					  \boxed{
+						  \lim_{t\to\infty} N_2(t) = 0
+					  }
+				  \]
+				  And for type 3, 
+				  \[
+					  \boxed{
+						  \lim_{t\to\infty} N_3(t) = N_0
+					  }
+				  \]
+				  We interpret this as: Over long time scales, all parent and secondary nuclei eventually 
+				  decays to stable daughter nuclei. The intermediate nucleus does not accumulate indefinitely.
+				  It reaches some peak population and eventually disappears as it decays to the stable product.
+				  Eventually, all the present nuclei become the stable daughter nuclei. See Fig. \ref{fig:fig1} in the 
+				  appendices to see how the population of the decay chain evolves over time.
+		\end{enumerate}
+			
 	\end{solution_pset}
 	\newpage
 
@@ -46,13 +327,852 @@
 		expressions}} for $p$ and $T$, \textbf{derive the relativistic version} of the equation
 		we have seen in the lecture
 		\begin{equation}
-		    T'_\alpha 
+			\label{eq:t_alpha0}
+		    T_\alpha 
 			= \frac{M_D}{M_\alpha + M_D}Q 
 			= \frac{1}{1+ \frac{M_\alpha}{M_D}}Q  
 		\end{equation}
 		and calculate the error made by neglecting these corrections.
 	\end{problem}
 	\begin{solution_pset}
+		This solution is pretty long, so it can be 
+		broken up into several parts.
+		\subsubsection*{5.1.1 Energy Conservation}
+			Assuming a zero momentum nuclei, we find that the momenta
+			of the product nuclei is equal to zero:
+			\[
+				p_\alpha + p_D = 0 \implies p_\alpha = p_D = p
+			\]
+			This remains true relativistically. 
+
+			For a particle of rest mass $M$ and momentum $p$, we find that
+			\begin{equation}
+				\label{eq:energyrelativistic}
+				E^2 = p^2 c^2 + M^2 c^4 
+			\end{equation}
+			and the kinetic energy is the total energy minus the rest energy,
+			\[
+				T = E - Mc^2
+			\]
+			Therefore, the kinetic energy can be given as 
+			\[
+				T = \sqrt{p^2 c^2 + M^2 c^4} - Mc^2
+			\]
+			So for the two produces, the daugther nuclei and the alpha particle, we find
+			that
+			\begin{equation}
+				\label{eq:t_alpha}
+				T_\alpha = 
+				\sqrt{p^2 c^2 + M_\alpha^2 c^4} - M_\alpha c^2
+			\end{equation}
+			\begin{equation}
+				\label{eq:t_d}
+				T_D = 
+				\sqrt{p^2 c^2 + M_D^2 c^4} - M_D c^2
+			\end{equation}
+			Hence, the exact kinetic energy conservation equation is
+			\begin{equation}
+				\label{eq:Qval}
+				Q = 
+				\sqrt{p^2 c^2 + M_\alpha^2 c^4}  + 
+				\sqrt{p^2 c^2 + M_D^2 c^4} -
+				(M_\alpha + M_D) c^2
+			\end{equation}
+			We introduce the total energy available to the products
+			\begin{equation}
+				\label{eq:E_tot}
+				E_\text{tot} = E_\alpha + E_D =  (M_\alpha + M_D)c^2 + Q
+			\end{equation}
+		\subsubsection*{5.1.2 Finding $p^2c^2$}
+			The exact two-body relativistic kinematics means we can solve for $p$ exactly.
+
+			We square for both sides of $E_\text{tot} = E_\alpha + E_D$
+			\[
+				E^2_\text{tot} = E_\alpha^2 + E_D^2 + 2E_\alpha E_D
+			\]
+			We can expand this by using (\ref{eq:energyrelativistic})
+			\[
+				E^2_\text{tot} =
+				(p^2c^2 + M_\alpha^2 c^4) + 
+				(p^2c^2 + M_D^2 c^4) + 
+				2\sqrt{(p^2c^2 + M_\alpha^2c^4)(p^2c^2 M_D^2 c^4)}
+			\]
+			We can combine the $p^2c^2$ terms
+			\[
+				E^2_\text{tot} =
+				2p^2c^2 + (M_\alpha^2 + M_D^2)c^4 +
+				2\sqrt{(p^2c^2 + M_\alpha^2c^4)(p^2c^2 M_D^2 c^4)}
+			\]
+			We isolate the square root term
+			\[
+				2\sqrt{(p^2c^2 + M_\alpha^2c^4)(p^2c^2 M_D^2 c^4)}
+				=
+				E^2_\text{tot} -
+				2p^2c^2 - (M_\alpha^2 + M_D^2)c^4 
+			\]
+			We square both sides
+			\[
+				4{(p^2c^2 + M_\alpha^2c^4)(p^2c^2 M_D^2 c^4)}
+				=
+				\pqty{
+					E^2_\text{tot} -
+					2p^2c^2 - (M_\alpha^2 + M_D^2)c^4 
+				}^2
+			\]
+			Let $x=p^2c^2$ to clean up the expression. We find that
+			\[
+				4{(x + M_\alpha^2c^4)(x M_D^2 c^4)}
+				=
+				\pqty{
+					E^2_\text{tot} -
+					2x - (M_\alpha^2 + M_D^2)c^4 
+				}^2
+			\]
+			We expand the LHS
+			\[
+				4\pqty{
+					x^2 + x(M_\alpha^2 + M_D^2)c^4 + M_\alpha^2 M_D^2 c^8
+				}
+				=
+				\pqty{
+					E^2_\text{tot} -
+					2x - (M_\alpha^2 + M_D^2)c^4 
+				}^2
+			\]
+			Let $y = E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4$, then we find the RHS to be
+			\[
+				(y - 2x)^2 = y^2 - 4yx + 4x^2
+			\]
+			Expanding the LHS, we find
+			\[
+				4x^2 + 4x(M_\alpha^2 + M_D^2)c^4 + 4M_\alpha^2 M_D^2 c^8
+				=
+				y^2 - 4yx + 4x^2
+			\]
+			Cancelling the $4x^2$, we have
+			\[
+				4x(M_\alpha^2 + M_D^2)c^4 + 4M_\alpha^2 M_D^2 c^8
+				=
+				y^2 - 4yx 
+			\]
+			Moving all $x$ terms to the LHS, we have
+			\[
+				x\pqty{4(M_\alpha^2 + M_D^2)c^4 + 4y}
+				=
+				y^2 -  4M_\alpha^2 M_D^2 c^8
+			\]
+			Solving for $x$, we have
+			\[
+				x = 
+				\frac{
+					y^2 -  4M_\alpha^2 M_D^2 c^8
+				}{
+					4(M_\alpha^2 + M_D^2)c^4 + 4y
+				} 
+			\]
+			We can simplify the denominator to be
+			\begin{align*}
+				4(M_\alpha^2 + M_D^2)c^4 + 4y
+				&= 
+				4(M_\alpha^2 + M_D^2)c^4 + 4(E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4)\\
+				&= 4E_\text{tot}^2
+			\end{align*}
+			Hence, we have
+			\[
+				x = 
+				\frac{
+					y^2 -  4M_\alpha^2 M_D^2 c^8
+				}{
+					4E_\text{tot}^2
+				} 
+			\]
+			Since $y =E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4 $, then the numerator becomes
+			\[
+				\pqty{E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4}^2 - 
+				4M_\alpha^2 M_D^2 c^8
+			\]
+			We can factor this as a difference of squares and simplify:
+			\begin{align*}
+				RHS
+				&=
+				\pqty{
+					E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4 - 2M_\alpha M_D c^4
+				}
+				\pqty{
+					E_\text{tot}^2 - (M_\alpha^2 + M_D^2)c^4 + 2M_\alpha M_D c^4
+				}\\
+				&=
+				\pqty{
+					E_\text{tot}^2 - (M_\alpha + M_D)c^4 
+				}
+				\pqty{
+					E_\text{tot}^2 - (M_\alpha - M_D)c^4 
+				}
+			\end{align*}
+			Hence, we have
+			\begin{equation}
+				\label{eq:p2c2}
+				p^2c^2
+				=
+				\frac{
+					\pqty{
+						E_\text{tot}^2 - (M_\alpha + M_D)c^4 
+					}
+					\pqty{
+						E_\text{tot}^2 - (M_\alpha - M_D)c^4 
+					}
+				}{
+					4E_\text{tot}^2
+				} 
+			\end{equation}
+		\subsubsection*{5.1.3 Solving for $T_\alpha$}
+			We can substitute (\ref{eq:p2c2}) into (\ref{eq:t_alpha}), so
+			\begin{equation}
+				\label{eq:t_alpha2}
+				T_\alpha = 
+				\sqrt{
+					\frac{
+						\pqty{
+							E_\text{tot}^2 - (M_\alpha + M_D)c^4 
+						}
+						\pqty{
+							E_\text{tot}^2 - (M_\alpha - M_D)c^4 
+						}
+					}{
+						4E_\text{tot}^2
+					} 
+					+ M_\alpha^2 c^4
+				} 
+				- M_\alpha c^2
+			\end{equation}
+			We start work simplifying the expression in the square root. First, we put it
+			to a common denominator
+			\[
+				\frac{
+					\pqty{
+						E_\text{tot}^2 - (M_\alpha + M_D)c^4 
+					}
+					\pqty{
+						E_\text{tot}^2 - (M_\alpha - M_D)c^4 
+					}
+					+ 
+					4E_\text{tot}^2
+					M_\alpha^2 c^4
+				}{
+					4E_\text{tot}^2
+				} 
+			\]
+			Let $A = E_\text{tot}^2$ and $B = c^4$ to save writing, we find that the numerator is
+			\[
+				\pqty{
+					A - (M_\alpha + M_D)^2 B
+				}
+				\pqty{
+					A - (M_\alpha - M_D)^2 B
+				}
+				+
+				4E_\text{tot}^2
+				M_\alpha^2 BA
+			\]
+			We expand the product
+			\[
+				= 
+				A^2 
+				- AB
+				\pqty{
+					(M_\alpha + M_D)^2 +
+					(M_\alpha - M_D)^2 
+				}
+				+
+				B^2
+				(M_\alpha + M_D)^2 
+				(M_\alpha - M_D)^2 
+				+
+				4M_\alpha^2 BA
+			\]
+			We simplify the coefficents
+			\[
+				(M_\alpha + M_D)^2 +
+				(M_\alpha - M_D)^2
+				=
+				2(M_\alpha^2 + M_D^2)
+			\]
+			So, the $AB$ term becomes
+			\begin{align*}
+				- AB
+				\pqty{
+					(M_\alpha + M_D)^2 +
+					(M_\alpha - M_D)^2 
+				} + 4AB M_\alpha^2
+				&=
+				- 2AB
+				(M_\alpha^2 + M_D^2) + 4AB M_\alpha^2
+				\\
+				&= 
+				2AB
+				\pqty{
+					-(M_\alpha^2 + M_D^2)
+					+ 2M_\alpha^2
+				}\\
+				&=
+				2AB(M_\alpha^2 - M_D^2)
+			\end{align*}
+			And the $B^2$ term simplifies to 
+			\begin{align*}
+				(M_\alpha + M_D)^2 
+				(M_\alpha - M_D)^2 
+				&=
+				\pqty{
+					(M_\alpha + M_D)
+					(M_\alpha - M_D) 
+				}^2\\
+				&=
+				\pqty{
+					M_\alpha^2 - M_D^2
+				}^2
+			\end{align*}
+			So the entire numerator becomes
+			\[
+				A^2 
+				+
+				2AB
+				(M_\alpha^2 - M_D^2)
+				+
+				B^2
+				\pqty{
+					M_\alpha^2 - M_D^2
+				}^2
+			\]
+			Recognize that this is a perfect square
+			\[
+				A^2 
+				+
+				2AB
+				(M_\alpha^2 - M_D^2)
+				+
+				B^2
+				\pqty{
+					M_\alpha^2 - M_D^2
+				}^2
+				=
+				\pqty{
+					A 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					B
+				}^2
+			\]
+			That is,
+			\[
+				\pqty{
+					E_\text{tot}^2 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					c^4
+				}^2
+			\]
+			So the entire square root term becomes
+			\begin{align*}
+				\sqrt{
+					\frac{
+						\pqty{
+							E_\text{tot}^2 - (M_\alpha + M_D)c^4 
+						}
+						\pqty{
+							E_\text{tot}^2 - (M_\alpha - M_D)c^4 
+						}
+					}{
+						4E_\text{tot}^2
+					} 
+					+ M_\alpha^2 c^4
+				} 
+				&=
+				\sqrt{
+					\frac{
+						\pqty{
+							E_\text{tot}^2 
+							+ 
+							(
+								M_\alpha^2 - M_D^2
+							)
+							c^4
+						}^2
+					}{
+						4E_\text{tot}^2 
+					} 
+				}
+				\\
+				&=
+				\frac{
+					E_\text{tot}^2 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					c^4
+				}{
+					2E_\text{tot} 
+				} 
+			\end{align*}
+			Therefore, (\ref{eq:t_alpha2}) reduces to 
+			\[
+				T_\alpha
+				=
+				\frac{
+					E_\text{tot}^2 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					c^4
+				}{
+					2E_\text{tot} 
+				} 
+				- 
+				M_\alpha c^2 
+			\]
+			Putting the last term over the denominator, we have
+			\begin{equation}
+				\label{eq:t_alpha3}
+				T_\alpha
+				=
+				\frac{
+					E_\text{tot}^2 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					c^4
+					- 
+					2E_\text{tot} 
+					M_\alpha c^2 
+				}{
+					2E_\text{tot} 
+				} 
+			\end{equation}
+			From this result, we can then simplify it to a similar form as (\ref{eq:t_alpha0}).
+
+			Since
+			\[
+				E_\text{tot} = (M_\alpha + M_D)c^2 +Q,
+			\]
+			then
+			\[
+				T_\alpha
+				=
+				\frac{
+					\pqty{
+						(M_\alpha + M_D)c^2 +Q
+					}^2 
+					+ 
+					(
+						M_\alpha^2 - M_D^2
+					)
+					c^4
+					- 
+					2
+					\pqty{
+						(M_\alpha + M_D)c^2 +Q
+					} 
+					M_\alpha c^2 
+				}{
+					2
+					\pqty{
+						(M_\alpha + M_D)c^2 +Q
+					} 
+				} 
+			\]
+			We expand the numerator term by term. For the first term, we have
+			\[
+				\pqty{
+					(M_\alpha + M_D)c^2 +Q
+				}^2 
+				=
+				\pqty{
+					M_\alpha + M_D
+				}^2
+				c^4
+				+ 2
+				\pqty{
+					M_\alpha + M_D
+				}
+				c^2 
+				Q
+				+
+				Q^2
+			\]
+			The second term is already simplified. 
+			For the second term, we have
+			\[
+				\pqty{
+					(M_\alpha + M_D)c^2 +Q
+				} 
+				M_\alpha c^2 
+				=
+				2M_\alpha c^4 
+				(M_\alpha + M_D)
+				+
+				2M_\alpha c^2 
+				Q
+			\]
+			We sum them all together
+			\[
+				\pqty{
+					M_\alpha + M_D
+				}^2
+				c^4
+				+ 2
+				\pqty{
+					M_\alpha + M_D
+				}
+				c^2 
+				Q
+				+
+				Q^2
+				+ 
+				(
+					M_\alpha^2 - M_D^2
+				)
+				c^4
+				-
+				2M_\alpha c^4 
+				(M_\alpha + M_D)
+				-
+				2M_\alpha c^2 
+				Q
+			\]
+			We group all the terms by $c^4$ and $c^2$. First, the $c^4$ terms
+			\[
+				\pqty{
+					M_\alpha + M_D
+				}^2
+				+ 
+				(
+					M_\alpha^2 - M_D^2
+				)
+				-
+				2M_\alpha 
+				(M_\alpha + M_D)
+			\]
+			Expand all terms
+			\[
+				M_\alpha^2
+				+ 2 M_\alpha M_D
+				+ M_D^2
+				+
+				M_\alpha^2 - M_D^2
+				-
+				2M_\alpha^2
+				-
+				2M_\alpha M_D
+			\]
+			Notice that this all cancel completely
+			\[
+				M_\alpha^2
+				+ 2 M_\alpha M_D
+				+ M_D^2
+				+
+				M_\alpha^2 - M_D^2
+				-
+				2M_\alpha^2
+				-
+				2M_\alpha M_D
+				=
+				0
+			\]
+			Combining all the $c^2$ terms, we have
+			\[
+				2(M_\alpha + M_D) c^2 Q - 2 M_\alpha c^2 Q
+				= 2M_Dc^2 Q
+			\]
+			Now, we have only the $Q^2$ term. Therefore, the numerator is
+			\[
+				2M_D c^2 Q + Q^2 
+				=
+				Q(2M_D c^2+  Q)
+			\]
+			Therefore, (\ref{eq:t_alpha3}) becomes
+			\[
+				T_\alpha
+				=
+				\frac{
+					Q(2M_D c^2+  Q)
+				}{
+					2
+					\pqty{
+						(M_\alpha + M_D)c^2 +Q
+					} 
+				} 
+			\]
+			This can then be factored to become
+			\begin{equation}
+				\label{eq:t_alpha4}
+				\boxed{
+					T_\alpha
+					=
+					Q
+					\frac{
+						(M_D c^2+\frac{Q}{2})
+					}{
+						\pqty{
+							(M_\alpha + M_D)c^2 +Q
+						} 
+					} 
+				}
+			\end{equation}
+		\subsubsection*{5.1.4 Does it reduce to the nonrelativistic limit?}
+			As a sanity check, we can check if (\ref{eq:t_alpha4}) reduces to
+			(\ref{eq:t_alpha0}) at the nonrelativistic limit.
+			For the nonrelativistic limit, we assume that
+			\[
+				Q\ll M_\alpha c^2\qquad \text{}\qquad Q\ll M_D c^2
+			\]
+			So the denominator is approximately
+			\[
+				(M_\alpha + M_D)c^2 + Q \approx (M_\alpha + M_D)c^2
+			\]
+			And the numerator is approximately
+			\[
+				M_D c^2 + Q \approx M_D c^2 
+			\]
+			Therefore, we see that it does in fact reduce to (\ref{eq:t_alpha0})!
+			\[
+				T_\alpha
+				\approx
+				Q
+				\frac{
+					 M_D c^2
+				}{
+					(M_\alpha + M_D) c^2
+				}		
+				=
+				Q
+				\frac{
+					M_D
+				}{
+					M_\alpha + M_D
+				} 
+			\]
+			\newpage
+		\subsubsection*{5.1.5 Error made by neglecting relativistic corrections}
+			\nocite{flores2026}
+			The absolute error for the relativistic and nonrelativistic energies are
+			\[
+				\Delta T_\alpha = T_\alpha^R - T_\alpha^N
+			\]
+			Where $T_\alpha^R$ denotes the relativistic kinetic energy and $T_\alpha^N$
+			denotes the nonrelativistic (Newtonian) kinetic energy. We have
+			\[
+				\Delta T = 
+				Q
+				\frac{
+					(M_D c^2+\frac{Q}{2})
+				}{
+					\pqty{
+						(M_\alpha + M_D)c^2 +Q
+					} 
+				} 
+				-
+				Q
+				\frac{
+					M_D
+				}{
+					M_\alpha + M_D
+				} 
+			\]
+			We simplify. We factor out the $Q$ on both
+			\[
+				\Delta T =
+				Q
+				\pqty{
+					\frac{
+						(M_D c^2+Q)
+					}{
+						\pqty{
+							2(M_\alpha + M_D)c^2 +Q
+						} 
+					} 
+					-
+					\frac{
+						M_D
+					}{
+						M_\alpha + M_D
+					} 
+				}
+			\]
+			We place it all under a common denominator 
+			$2(M_\alpha + M_D)\pqty{(M_\alpha + M_D) c^2 +Q}$.
+			\[
+				\Delta T =
+				Q
+				\frac{
+						(M_\alpha + M_D)(2M_D c^2 +Q) - 2M_D
+						\pqty{
+							(M_\alpha + M_D) 
+							c^2
+							+
+							Q
+						}
+					}{
+						2(M_\alpha + M_D)\pqty{(M_\alpha + M_D) c^2 +Q}
+				} 
+			\]
+			We expand the first term of the numerator, we have
+			\[
+				\pqty{
+					M_\alpha 
+					+
+					M_D
+				}
+				2 M_D c^2
+				+
+				\pqty{
+					M_\alpha 
+					+
+					M_D
+				}
+				Q
+				-
+				2M_D
+				\pqty{
+					M_\alpha 
+					+
+					M_D
+				}
+				c^2
+				-
+				2M_D Q
+			\]
+			The $2 M_D(M_\alpha + M_D)c^2$ terms cancel. We are left with
+			\[
+				\pqty{
+					M_\alpha 
+					+
+					M_D
+				}
+				Q
+				-
+				2M_D Q
+				=
+				\pqty{
+					M_\alpha 
+					-
+					M_D
+				}
+				Q
+			\]
+			Therefore, we have the absolute error
+			\[
+				\boxed{
+					\Delta T 
+					=
+					\frac{
+						Q^2
+						\pqty{
+							M_\alpha 
+							-
+							M_D
+						}
+					}{
+						2(M_\alpha + M_D)\pqty{(M_\alpha + M_D) c^2 +Q}
+					} 
+				}
+			\]
+			For the relative error, we have
+			\begin{align*}
+				\frac{\Delta T}{T_\alpha^N} 
+				&=
+				\frac{
+					\frac{
+						Q^2
+						\pqty{
+							M_\alpha 
+							-
+							M_D
+						}
+					}{
+						2(M_\alpha + M_D)\pqty{(M_\alpha + M_D) c^2 +Q}
+					} 
+				}{
+					Q
+					\frac{
+						M_D
+					}{
+						M_\alpha + M_D
+					} 
+				} 
+				\\
+				&=
+				\frac{
+					Q 
+					\pqty{
+						M_\alpha 
+						-
+						M_D
+					}
+				}{
+					2\pqty{(M_\alpha + M_D) c^2 +Q}
+				} 
+			\end{align*}
+			For $Q\ll (M_\alpha + M_D)c^2$, this can be simplified as 
+			\[
+				\frac{\Delta T}{T_\alpha^N} 
+				\approx
+				\frac{
+					Q 
+					\pqty{
+						M_\alpha 
+						-
+						M_D
+					}
+				}{
+					2(M_\alpha + M_D) c^2
+				} 
+			\]
+			An alternative form of this (since $M_\alpha - M_D$ is negative) is
+			\[
+				\frac{\Delta T}{T_\alpha^N} 
+				\approx
+				\frac{Q}{2c^2} 
+				\pqty{
+					\frac{
+						1
+					}{
+						M_D
+					} 
+					-
+					\frac{
+						1
+					}{
+						M_\alpha 
+						+
+						M_D
+					} 
+				}
+			\]
+			or
+			\[
+				\boxed{
+					\frac{\Delta T}{T_\alpha^N} 
+					\approx
+					\frac{Q}{2M_D c^2} 
+					\pqty{
+						1
+						-
+						\frac{
+							M_D
+						}{
+							M_\alpha 
+							+
+							M_D
+						} 
+					}
+				}
+			\]
 
 	\end{solution_pset}
 	\newpage
@@ -65,6 +1185,17 @@
 	% ===========================
 	\section*{Appendices}
 		\label{appendix}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=6in]{images/fig1.pdf}
+		\caption{Evolution of the populations in the decay chain
+		$1\rightarrow2\rightarrow3$, with initial population $N_0$. 
+		The decay constants are $\lambda_1=0.5$ and $\lambda_2=0.3$.
+		Type 1 decays into Type 2, which subsequently decays into the
+		stable Type 3 product.}
+		\label{fig:fig1}
+	\end{figure}
+	
 		\subsection*{Code} 
 		No code was used for this problem set
 	\vfill

@@ -31,9 +31,8 @@
 \contentsline {paragraph}{How About Gravity?}{21}{section*.10}%
 \contentsline {paragraph}{Minkowski Spacetime}{21}{section*.11}%
 \contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{22}{subsubsection.1.3.4}%
-\contentsline {paragraph}{Machian and Relational Ideas}{22}{section*.12}%
-\contentsline {paragraph}{Relativity is more general than Light}{23}{section*.13}%
-\contentsline {paragraph}{The Role of $c$}{23}{section*.14}%
+\contentsline {paragraph}{Relativity is more general than Light}{23}{section*.12}%
+\contentsline {paragraph}{The Role of $c$}{23}{section*.13}%
 \contentsline {section}{Chapter 2: Special Relativity}{25}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Relativity without Light}{25}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}The Transformation Problem}{25}{subsubsection.2.1.1}%
@@ -44,8 +43,8 @@
 \contentsline {subsubsection}{\numberline {2.1.6}Parity Constraints}{30}{subsubsection.2.1.6}%
 \contentsline {subsubsection}{\numberline {2.1.7}Inverse transformation and composition constraints}{31}{subsubsection.2.1.7}%
 \contentsline {subsubsection}{\numberline {2.1.8}The Trivial and Nontrivial Branches}{32}{subsubsection.2.1.8}%
-\contentsline {paragraph}{Case 1:}{32}{section*.16}%
-\contentsline {paragraph}{Case 2:}{33}{section*.17}%
+\contentsline {paragraph}{Case 1:}{32}{section*.15}%
+\contentsline {paragraph}{Case 2:}{33}{section*.16}%
 \contentsline {subsubsection}{\numberline {2.1.9}The motion of the origin of $S'$}{33}{subsubsection.2.1.9}%
 \contentsline {subsubsection}{\numberline {2.1.10}Introduction of a Third Observer}{34}{subsubsection.2.1.10}%
 \contentsline {subsubsection}{\numberline {2.1.11}The Emergence of an Invariant Speed}{35}{subsubsection.2.1.11}%
@@ -58,21 +57,42 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Spacetime}{45}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Manifolds}{48}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Topological Space}{50}{subsubsection.3.1.3}%
-\contentsline {paragraph}{Indiscrete Topology}{51}{section*.21}%
-\contentsline {paragraph}{Discrete Topology}{52}{section*.22}%
+\contentsline {paragraph}{Indiscrete Topology}{51}{section*.20}%
+\contentsline {paragraph}{Discrete Topology}{52}{section*.21}%
 \contentsline {subsubsection}{\numberline {3.1.4}Continuity}{53}{subsubsection.3.1.4}%
-\contentsline {paragraph}{What is a preimage?}{53}{section*.23}%
-\contentsline {paragraph}{Usual examples of Topologies}{54}{section*.25}%
+\contentsline {paragraph}{What is a preimage?}{53}{section*.22}%
+\contentsline {paragraph}{Usual examples of Topologies}{54}{section*.24}%
 \contentsline {subsubsection}{\numberline {3.1.5}Homeomorphism}{56}{subsubsection.3.1.5}%
 \contentsline {subsubsection}{\numberline {3.1.6}Charts}{57}{subsubsection.3.1.6}%
 \contentsline {subsubsection}{\numberline {3.1.7}Differentiable Manifolds}{59}{subsubsection.3.1.7}%
-\contentsline {paragraph}{Question about the notion of $C^\infty $}{61}{section*.29}%
 \contentsline {subsubsection}{\numberline {3.1.8}Examples}{62}{subsubsection.3.1.8}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{65}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{66}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{67}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{68}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{69}{section.8}%
-\contentsline {section}{Back Matter}{70}{section.8}%
-\contentsline {subsection}{Author's Note}{70}{section*.31}%
-\contentsline {subsection}{Colophon}{72}{section*.31}%
+\contentsline {subsection}{\numberline {3.2}Structures on Manifolds}{65}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Spacetime as a Manifold}{65}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}General Covariance}{67}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Scalar Functions}{68}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Vectors}{70}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Directional Derivatives}{72}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}The Tangent Space}{74}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}The Coordinate Basis}{75}{subsubsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.8}Abstract Index Notation}{78}{subsubsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.3}Vectors on Manifolds}{80}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Review of Structures on Manifolds}{80}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Coordinate Bases}{81}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Change of Coordinates}{83}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Vector Transformation Laws}{87}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Contravariant and Covariant Vectors}{89}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}Non-Coordinate Bases}{91}{subsubsection.3.3.6}%
+\contentsline {paragraph}{Recovering the Geometric Arrow}{92}{section*.35}%
+\contentsline {subsection}{\numberline {3.4}Curves and Tangent Vectors}{92}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Curves}{92}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Coordinate Curves}{94}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Tangent Vectors}{95}{subsubsection.3.4.3}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{97}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{98}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{99}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{100}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{101}{section.8}%
+\contentsline {section}{Back Matter}{102}{section.8}%
+\contentsline {subsection}{Additional References}{102}{section*.40}%
+\contentsline {subsection}{Author's Note}{103}{section*.40}%
+\contentsline {subsection}{Colophon}{105}{section*.40}%

@@ -247,6 +247,7 @@ x, y = blob(theta, 1.0, 0)
 plt.fill(
     x - sep, y,
     facecolor='white',
+    linestyle = '-',
     edgecolor='k',
     linewidth=1
 )
@@ -257,6 +258,7 @@ plt.fill(
     x + sep, y,
     facecolor='white',
     edgecolor='k',
+    linestyle = '-',
     linewidth=1
 )
 
@@ -267,27 +269,27 @@ plt.fill(
 
 # W
 x, y = blob(theta, 0.5, 2)
+
 plt.fill(
     x - sep, y,
     facecolor='red',
     alpha=0.5,
-    edgecolor=(0, 0, 0, 0.95),
-    linewidth=1
+    edgecolor='none'
 )
-plt.plot(x-sep, y, 'k-', lw = 1)
+plt.plot(x - sep, y, 'k--', lw=1)
+
 
 # O
-x, y = blob(theta, 0.5, 3, a= 0.2, b = 0.07, c =0.1)
+x, y = blob(theta, 0.5, 3, a=0.2, b=0.07, c=0.1)
 plt.fill(
     0.5*x + sep + 0.1,
     y,
     facecolor='blue',
     alpha=0.5,
-    edgecolor=(0, 0, 0, 0.95),
-    linewidth=1
+    edgecolor='none'
 )
-plt.plot(0.5*x+sep + 0.1, y, 'k-', lw = 1)
 
+plt.plot(0.5*x + sep + 0.1, y, 'k--', lw=1)
 
 # ---------------------------------------------------------
 # Labels

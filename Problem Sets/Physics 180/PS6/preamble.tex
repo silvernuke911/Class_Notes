@@ -10,9 +10,7 @@
     \setlength{\originalparindent}{\parindent}%
     \setlength{\originalparskip}{\parskip}%
 }
-% \tcbuselibrary{breakable}
-% A5 PAPER
-\usepackage[a5paper,top=0.75in,bottom=0.75in,left=0.75in,right=0.75in,marginparwidth=1.75cm]{geometry}
+\numberwithin{equation}{section}
 
 % SECTION TITLE FONT SIZES (move here from preset)
 \titleformat*{\section}{\LARGE\bfseries}
@@ -70,12 +68,11 @@
 }
 
 \newenvironment{solution_pset}{%
-    \noindent\textbf{\Large Solution}
+    \noindent\textbf{\Large Solution}\\[0.5cm]
 }{%
     \newpage
 }
 
-\numberwithin{equation}{subsection}
 
 %%% DEFINITION ENVIRONMENT
 % Definition counter linked to section
@@ -127,30 +124,14 @@
     },
     #1
 }
-%%% LIST OF THEOREMS
-\makeatletter
-
-\newcommand{\listtheoremname}{List of Theorems}
-
-\newcommand{\listoftheorems}{%
-    \section*{\listtheoremname}%
-    \@starttoc{lot}%
-}
-
-\newcommand{\l@theorem}{\@dottedtocline{1}{1.5em}{3.0em}}
-
-\makeatother
 
 %%% THEOREM ENVIRONMENT
 % Theorem counter linked to section
 \newcounter{theorem}[section]
 \renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
-
 \definecolor{darkred}{RGB}{139, 0, 0} 
-
 \newenvironment{theorem}[2][]{%
     \refstepcounter{theorem}%
-    \addcontentsline{lot}{theorem}{\protect\numberline{\thetheorem}#2}%
     \begin{tcolorbox}[
         colback=white,
         colframe=darkred,
@@ -170,30 +151,6 @@
     \end{tcolorbox}%
 }
 
-%%% QUESTION ENVIRONMENT
-
-\definecolor{questionblue}{RGB}{0, 0, 75}  % Dark blue
-
-\newenvironment{question}[2][]{%
-    \begin{tcolorbox}[
-        colback=white,
-        colframe=questionblue,
-        coltitle=white,
-        colbacktitle=questionblue,
-        boxrule=0.5pt,
-        arc=0pt,
-        left=6pt,
-        right=6pt,
-        top=6pt,
-        bottom=6pt,
-        fonttitle=\bfseries,
-        title={Question: #2},
-        breakable,   % Allows page breaks
-        #1
-    ]
-}{%
-    \end{tcolorbox}%
-}
 %%% NOTE ENVIRONMENT
 \definecolor{darkgray}{RGB}{100, 100, 100}
 
@@ -225,7 +182,3 @@
         \noindent\textbf{\textit{Remark : }}\par\vspace{1em}%
     }
 }
-
-\newcommand{\mcal}{\mathcal}
-\newcommand{\openset}{\qty{\mcal{O}_\alpha}}
-\newcommand{\TpM}{T_p \mathcal{M}}

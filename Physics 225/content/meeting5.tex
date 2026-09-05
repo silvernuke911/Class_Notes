@@ -1,10 +1,883 @@
-% =======================================
+% =============================================
 % MEETING 5
-% ---------------------------------------
-% DATE   - SEPTEMBER 2, 2026 
+% ---------------------------------------------
+% DATE   - SEPTEMBER 2, 2026
 % FORMAT - FACE TO FACE
-% =======================================
-% TOPIC  - VECTORS, TENSORS
-% =======================================
+% =============================================
+% TOPIC  - STRUCTURES ON MANIFOLDS
+% =============================================
 
+\subsection{Structures on Manifolds}
+
+	We begin this meeting by recapping what we learned from the previous
+	lecture, namely differentiable manifolds, charts, and topology. We then
+	develop the notion of spacetime as a differentiable manifold and discuss
+	the importance of describing the laws of physics in terms of geometric 
+	objects rather than particular coordinate systems. From there, we introduce
+	scalar fields and, more importantly, develop the definition of vectors on a
+	general manifold through the idea of directional derivatives. 
+
+	\subsubsection{Spacetime as a Manifold}
+		We consider spacetime to be a differentiable, or smooth, manifold.
+		That is, spacetime is a topological space which is \textit{locally}
+		homeomorphic to $\R^n$, together with additional structure that allows
+		us to perform calculus.
+
+		The important point is that a manifold does not, in general, possess
+		a single global coordinate system. Instead, we describe it using
+		coordinate patches, or \textit{charts}, each of which maps a portion
+		of the manifold into $\R^n$.
+
+		For example, consider a three-dimensional manifold $\mcal{M}$.
+		Suppose that $Q_1,Q_2\subset\mcal{M}$ are two overlapping coordinate
+		patches. On $Q_1$, we may introduce spherical coordinates
+		\[
+			\vb{r}=(r,\theta,\phi),
+		\]
+		while on $Q_2$ we may introduce Cartesian coordinates
+		\[
+			\vb{x}=(x,y,z).
+		\]
+		A chart is a pair
+		\[
+			\qty{Q_\alpha,\psi_\alpha},
+		\]
+		where $\psi_\alpha$ is a map from the manifold to $\R^n$. It is a coodinate system, so to speak.
+		\[
+			\psi_\alpha:Q_\alpha\to\R^n
+		\]
+		maps points on the manifold to their coordinate representations.
+
+		Thus, if $p\in Q_1\cap Q_2$, we can describe the same point using
+		either coordinate system:
+		\[
+			\psi_1(p)=\vb{r},
+			\qquad
+			\psi_2(p)=\vb{x}.
+		\]
+
+		Since the two charts overlap, we can move from one coordinate
+		representation to the other by composing one chart with the inverse
+		of the other:
+		\begin{equation}
+			\vb{x}
+			=
+			\psi_2\circ\psi_1^{-1}(\vb{r}).
+		\label{eq:coordinate-transition-x-from-r}
+		\end{equation}
+		Likewise,
+		\begin{equation}
+			\vb{r}
+			=
+			\psi_1\circ\psi_2^{-1}(\vb{x}).
+		\label{eq:coordinate-transition-r-from-x}
+		\end{equation}
+		More directly, we can represent $\vb{x}$ as a function of $\vb{r}$, and 
+		vice versa.
+		\[
+			\vb{x}(\vb r)
+			\quad
+			\longleftrightarrow
+			\quad
+			\vb{r}(\vb x)
+		\]
+
+		The maps
+		\[
+			\psi_\beta\circ\psi_\alpha^{-1}
+		\]
+		are called \textit{transition maps}. The requirement that these
+		transition maps be sufficiently differentiable is what allows the
+		manifold to be given a differentiable structure.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in, height=3in]{images/manifold_example.pdf}
+			\caption{An example of a manifold being represented in different
+			coordinate systems, cartesian and polar in this case, and how to interchange between them using transition functions.}
+			\label{fig:manifold-coordinate-systems}
+		\end{figure}
+
+		A collection of charts whose domains cover the manifold,
+		\[
+			\mcal{M}=\bigcup_\alpha Q_\alpha,
+		\]
+		is called an \textit{atlas}. The charts are required to be compatible
+		on their overlaps:
+		\begin{equation}
+			\psi_\beta\circ\psi_\alpha^{-1}
+			:
+			\psi_\alpha(Q_\alpha\cap Q_\beta)
+			\to
+			\psi_\beta(Q_\alpha\cap Q_\beta)
+			\label{eq:transition-map}
+		\end{equation}
+		must be smooth wherever the two coordinate patches overlap.
+
+		This is the essential idea behind a differentiable manifold. We do
+		not require the manifold itself to resemble $\R^n$ globally. We only
+		require that, in sufficiently small neighborhoods, it can be
+		described using ordinary Euclidean coordinates.
+
+		The existence of multiple charts is particularly useful when a
+		coordinate system develops a \textit{coordinate singularity}. If one
+		coordinate system becomes inconvenient or singular in some region,
+		we may simply use another chart which covers that region and the singularity
+		does not exist.
+
+		For example, spherical coordinates are singular at $r=0$ and at the
+		poles where $\theta=0,\pi$. These singularities need not represent
+		anything physically pathological; they may simply indicate that the
+		chosen coordinates have broken down.
+
+		In general relativity, this distinction is crucial. A coordinate
+		singularity is not necessarily a physical singularity, it may only be 
+		a mathematical artifact. For example,
+		the Schwarzschild coordinates possess a coordinate singularity at
+		$r=2GM$ (in units where $c=1$), which can be removed by changing
+		coordinates. By contrast, the Schwarzschild curvature singularity
+		at $r=0$ is a genuine physical singularity and is not removed by a
+		mere change of coordinates.
+
+	\subsubsection{General Covariance}
+
+		The central lesson of the manifold formulation is that the laws of
+		physics should not depend on the particular coordinate system used
+		to describe them. As long as the coordinate system is appropriate, one
+		may use any system he or she desires that makes the physics being
+		performed more conveniet, as long as the limits of such formulation is known.
+
+		In general relativity, physical quantities should therefore be
+		expressed in terms of geometric objects which possess well-defined
+		transformation properties under changes of coordinates.
+
+		Among the objects we will encounter are:
+		\begin{enumerate}[(a)]
+		\item scalars,
+		\item vectors,
+		\item one-forms, or dual vectors,
+		\item tensors,
+		\item spinors.
+		\end{enumerate}
+
+		Spinors require some additional structure beyond the ordinary tensor
+		bundle and therefore do not fit directly into the elementary tensor
+		description of general relativity. Nevertheless, spinor fields can
+		be defined on suitable spacetime manifolds and are important when
+		describing fermionic matter.
+
+		The purpose of this meeting is to construct these geometric objects
+		starting from the manifold itself.
+
+	\subsubsection{Scalar Functions}
+
+		A scalar field is the simplest geometric object that we can define
+		on a manifold. It is simply a function which assigns one real number
+		to every point of the manifold:
+		\begin{equation}
+			f:\mcal{M}\to\R.
+			\label{eq:scalar-function}
+		\end{equation}
+		There is no coordinate system involved in the definition itself.
+
+		Given a point $p$ in the manifold.
+		\[
+			p\in\mcal{M},
+		\]
+		the scalar field simply assigns $p$ to a real number
+		\[
+			f: p\mapsto f(p)\in\R.
+		\]
+
+		Coordinates only enter when we wish to represent the scalar field
+		explicitly. Given a chart
+		\[
+			\psi:Q\subset\mcal{M}\to\R^n,
+		\]
+		we can construct the coordinate representation of $f$ by composing
+		it with the inverse chart:
+		\begin{equation}
+			f\circ\psi^{-1}:\R^n\to\R.
+			\label{eq:scalar-coordinate-representation}
+		\end{equation}
+
+		Writing
+		\[
+			\vb{x}  = \psi(p)
+			=
+			\qty(x^1,x^2,\ldots,x^n),
+		\]
+		we therefore obtain the familiar expression of a scalar field.
+		\begin{equation}
+			f:\vb{x}
+			\mapsto
+			f\circ\psi^{-1}(\vb{x})
+			\equiv
+			f(\vb{x}).
+			\label{eq:scalar-chart-representation}
+		\end{equation}
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in, height=2in]{images/manifoldtoscalar.pdf}
+			\caption{A scalar function as a map from a manifold to the real
+			numbers.}
+			\label{fig:manifold-to-scalar}
+		\end{figure}
+
+		The coordinate representation of the function arises
+		only after choosing a chart.
+		Thus, the coordinates
+		\[
+			\vb{x}\equiv(x^1,x^2,\ldots,x^n)
+		\]
+		should not be confused with points of the manifold themselves.
+		They are merely the coordinate representation of points in a
+		particular chart.
+		The manifold itself is coordinate-independent.
+
+		To perform differential geometry, we require our functions to possess
+		the appropriate degree of differentiability. A function is called
+		\textit{smooth} if its coordinate representation is infinitely
+		differentiable:
+		\begin{equation}
+			f\in C^\infty(\mcal{M}).
+			\label{eq:smooth-function}
+		\end{equation}
+
+		We may denote the set of all smooth real-valued functions on
+		$\mcal{M}$ by
+		\begin{equation}
+			\mcal{F}(\mcal{M})
+			\equiv
+			C^\infty(\mcal{M}).
+			\label{eq:smooth-function-space}
+		\end{equation}
+
+		An important example of scalar functions are the coordinate
+		functions themselves. Given a chart $\psi$, we may write
+		\begin{equation}
+			x^\alpha(p)
+			\equiv
+			\psi^\alpha(p),
+			\label{eq:coordinate-function}
+		\end{equation}
+		where $\psi^\alpha$ denotes the $\alpha$th component of the chart.
+
+		Thus, each coordinate $x^\alpha$
+		is itself a scalar function on the region covered by the chart.
+		This point will become important when we construct vectors.
+
+	\subsubsection{Vectors}
+		The concept of a vector space is undoubtedly familiar to most readers. 
+		In prerelativity physics it is assumed that space has the natural structure of a three
+		dimensional vector space once one has designated a point to serve as the origin; the
+		natural rules for adding and scalar multiplying spatial displacements satisfy the
+		vector space axioms. In special relativity, spacetime similarly has the natural structure 
+		of a four-dimensional vector space. 
+
+		However, when one considers curved
+		geometries (as we do in general relativity), this vector space structure is lost. For
+		example, there is no natural notion of how to \textit{add} two points on a sphere and end
+		up with a third point on the sphere. Nevertheless, vector space structure can be
+		recovered in the limit of "infinitesimal displacements" about a point. It is this notion
+		of "infinitesimal displacements" or tangent vectors which lies at the foundation of
+		calculus on manifolds. Therefore, we will devote considerable attention below to
+		giving a precise mathematical definition of this concept.
+
+		The ordinary notion of a vector comes from linear algebra.
+
+		A vector is an algebraic object that belongs to a vector space $\bb{V}$, which is an algebraic
+		structure equipped with operations of vector addition and scalar
+		multiplication satisfying the usual vector-space axioms, which defines what multiplication and 
+		addition is, and what is a unit and a zero vector, among other things. However, in this case, we 
+		are concerned about closure and linearity.
+
+		In particular, if
+		\[
+		    \vb{v}_1,\vb{v}_2\in\bb{V},
+		    \qquad
+		    \alpha,\beta\in\R,
+		\]
+		then closure requires
+		\begin{equation}
+			\alpha\vb{v}_1+\beta\vb{v}_2\in\bb{V}.
+			\label{eq:vector-space-closure}
+		\end{equation}
+
+		Anything can be called a vector provided that it satisfies all the
+		axioms defining a vector space. There is therefore no requirement
+		that a vector must necessarily be represented as an arrow in
+		Euclidean space.
+
+		The familiar arrow picture is a useful visualization, but it is not
+		the fundamental definition of a vector.
+
+		In $\R^3$, we normally introduce vectors as directed line segments.
+		Given points $p$ and $q$, for example, one can draw an arrow pointing
+		from $p$ to $q$.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in,height=2in]{images/R3vectors.pdf}
+			\caption{The familiar representation of vectors as directed
+			arrows in Euclidean space. This picture relies on the affine
+			structure of $\R^3$.}
+			\label{fig:R3-vectors}
+		\end{figure}
+
+		There is, however, a subtlety here.
+
+		In Euclidean space, we possess an \textit{affine structure}: points
+		can be subtracted to obtain vectors, and vectors can be added to
+		points. Thus, if $p$ and $q$ are points in $\R^3$, the displacement
+		\[
+			q-p \equiv \overline{qp}
+		\]
+		is naturally interpreted as a vector.  
+
+		A general manifold does not possess this structure. It is not applicable or intrinsic to the manifold itself. In particular,
+		there is no natural operation $q-p$
+		for two arbitrary points $p,q\in\mcal{M}$.
+
+		Therefore, if we want to define vectors on a general manifold, we
+		need a definition which does not depend upon arrows, position
+		vectors, or the ability to subtract points.
+
+		The solution is to define vectors in terms of \textit{directional
+		derivatives}.
+
+	\subsubsection{Directional Derivatives}
+
+		In $\R^n$, suppose that $\vb{v}_p$ is a vector based at the point
+		$p$. Given a smooth function $f$, its directional derivative in the
+		direction $\vb{v}_p$ is
+		\begin{equation}
+			\vb{v}_p(f)
+			\equiv
+			\lim_{t\to0}
+			\frac{
+			f(\vb{x}_p+t\vb{v}_p)-f(\vb{x}_p)
+			}{t}.
+			\label{eq:directional-derivative}
+		\end{equation}
+
+		In ordinary vector calculus, this is equivalent to
+		\begin{equation}
+			\vb{v}_p(f)
+			=
+			\vb{v}_p\cdot\grad f(p)
+			\label{eq:directional-derivative-gradient}
+		\end{equation}
+
+		However, Eq. (\ref{eq:directional-derivative}) makes use of the
+		affine structure of $\R^n$, since it explicitly contains
+		\[
+			\vb{x}_p+t\vb{v}_p.
+		\]
+		We therefore seek a definition which retains the algebraic properties
+		of a directional derivative without requiring us to add vectors to
+		points.
+
+		The key observation is that the directional derivative is an
+		\textit{operator acting on functions}.
+
+		Consider a vector $\vb{v}_p$ acting on two smooth functions $f$ and
+		$g$. Directional differentiation satisfies two fundamental
+		properties.
+		\begin{enumerate}[(1)]
+			\item It is linear:
+				\begin{equation}
+					\vb{v}_p(\alpha f+\beta g)
+					=
+					\alpha\vb{v}_p(f)
+					+
+					\beta\vb{v}_p(g),
+					\label{eq:vector-linearity}
+				\end{equation}
+				for
+				\[
+					\alpha,\beta\in\R,\qquad f,g\in\mcal{F}(\R^n)
+				\]
+			\item It satisfies the Leibniz rule:
+				\begin{equation}
+					\vb{v}_p(fg)
+					=
+					f(p)\vb{v}_p(g)
+					+
+					g(p)\vb{v}_p(f).
+					\label{eq:vector-leibniz}
+				\end{equation}
+		\end{enumerate}
+		These two properties do not require an affine structure.
+
+		We therefore take them as the fundamental definition of a tangent
+		vector.
+
+		\begin{definition}{Tangent Vector}
+			A tangent vector at $p\in\mcal{M}$ is a linear map of manifolds to real functions 
+			\begin{equation}
+				\vb{v}_p:
+				\mcal{F}(\mcal{M})\to\R^n
+				\label{eq:tangent-vector-definition}
+				\end{equation}
+				which satisfies the Leibniz rule
+				\begin{equation}
+				\vb{v}_p(fg)
+				=
+				f(p)\vb{v}_p(g)
+				+
+				g(p)\vb{v}_p(f).
+				\label{eq:tangent-vector-leibniz}
+			\end{equation}
+		\end{definition}
+
+		Thus, we define vector is nothing but a derivative operator on a manifold satisfying the
+		appropriate algebraic properties.
+
+
+		This also explains why the usual arrow does not appear in the
+		definition.
+		The arrow is only our preconceived geometric picture of a vector.
+		The fundamental object is the action of the vector on functions.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in, height = 2.5in]{images/vectordef.pdf}
+			\caption{A tangent vector $\vb{v}$, represented as a directional derivative
+			lying in the tangent plane at a point $p$ of the manifold, in this case, a surface embedded on a sphere in $\R^3$. The tangent plane in this
+			case represents the tangent space $T_p \mcal{M}$}.
+			\label{fig:vector-definition}
+		\end{figure}
+
+
+	\subsubsection{The Tangent Space}
+
+		The collection of all tangent vectors at a point $p$ forms a vector
+		space.
+
+		\begin{theorem}{Tangent Space}
+			The set of all tangent vectors at $p\in\mcal{M}$ forms a vector
+			space, called the \textit{tangent space at $p$}, denoted
+			\begin{equation}
+				T_p\mcal{M}.
+				\label{eq:tangent-space}
+			\end{equation}
+		\end{theorem}
+
+		\begin{proof}
+			Let $\vb{v}_p,\vb{w}_p\in T_p\mcal{M}$.
+
+			We define vector addition by
+			\begin{equation}
+				(\vb{v}_p+\vb{w}_p)(f)
+				\equiv
+				\vb{v}_p(f)+\vb{w}_p(f),
+				\label{eq:tangent-vector-addition}
+			\end{equation}
+			and scalar multiplication by
+			\begin{equation}
+				(\alpha\vb{v}_p)(f)
+				\equiv
+				\alpha\vb{v}_p(f).
+				\label{eq:tangent-vector-scalar-multiplication}
+			\end{equation}
+
+			The zero vector is defined by
+			\begin{equation}
+				\vb{0}_p(f)=0.
+				\label{eq:tangent-zero-vector}
+			\end{equation}
+
+			We must verify closure. For the sum,
+			\begin{align}
+				(\vb{v}_p+\vb{w}_p)(fg)
+				&=
+				\vb{v}_p(fg)+\vb{w}_p(fg)
+				\nonumber\\
+				&=
+				f(p)\vb{v}_p(g)
+				+g(p)\vb{v}_p(f)
+				\nonumber\\
+				&\quad
+				+f(p)\vb{w}_p(g)
+				+g(p)\vb{w}_p(f)
+				\nonumber\\
+				&=
+				f(p)(\vb{v}_p+\vb{w}_p)(g)
+				+
+				g(p)(\vb{v}_p+\vb{w}_p)(f).
+				\label{eq:tangent-space-closure}
+			\end{align}
+
+			Hence $\vb{v}_p+\vb{w}_p$ also satisfies the Leibniz rule and is
+			therefore a tangent vector.
+
+			Similarly, for $\alpha\in\R$,
+			\begin{align}
+				(\alpha\vb{v}_p)(fg)
+				&=
+				\alpha\vb{v}_p(fg)
+				\nonumber\\
+				&=
+				\alpha f(p)\vb{v}_p(g)
+				+
+				\alpha g(p)\vb{v}_p(f)
+				\nonumber\\
+				&=
+				f(p)(\alpha\vb{v}_p)(g)
+				+
+				g(p)(\alpha\vb{v}_p)(f).
+				\label{eq:tangent-space-scalar-closure}
+			\end{align}
+
+			Therefore the set of tangent vectors satisfies closure under
+			addition and scalar multiplication, and the remaining vector
+			space axioms follow from the corresponding properties of the
+			real numbers.
+		\end{proof}
+
+		From these, we also prove that the corollary expressions are also linear.
+		\[
+			(\alpha \vb{v}_p + \beta \vb{w}_p) (f)
+		\]
+		and
+		\[
+			(\alpha \vb{v}_p + \beta \vb{w}_p)\cdot\grad f
+		\]
+		Every vector in $T_p\mcal{M}$ is therefore associated with the same
+		point $p$. This is different from the elementary picture of vectors
+		in $\R^n$, where vectors are often drawn with their tails at the
+		origin.
+
+		A tangent vector does not have to be thought of as an arrow extending
+		from one point of the manifold to another. It belongs to the tangent
+		space \textit{at a particular point}.
+
+	\subsubsection{The Coordinate Basis}
+		We now construct an explicit basis for $T_p\mcal{M}$.
+
+		Suppose that
+		\[
+		    \qty{Q,\psi}
+		\]
+		is a chart around $p$, with coordinates
+		\[
+		    \qty{x^1,x^2,\ldots,x^n}.
+		\]
+		We define the coordinate basis vectors by their action on a smooth
+		function $f$:
+		\begin{equation}
+			(\partial_\mu)_p(f)
+			\equiv
+			\eval{
+			\pdv{(f\circ\psi^{-1})}{x^\mu}
+			}_{\psi(p)}.
+			\label{eq:coordinate-basis-definition}
+		\end{equation}
+
+		The notation
+		\[
+		    (\partial_\mu)_p
+		\]
+		should therefore be interpreted as a map acting on functions.
+
+		In other words,
+		\[
+		    (\partial_\mu)_p
+		    :
+		    \mcal{F}(\mcal{M})\to\R.
+		\]
+		The derivative is taken not directly on the abstract manifold, but
+		on the coordinate representation
+		$f\circ\psi\inv$ in $\R^n$.
+
+		The remarkable fact is that these coordinate derivative operators
+		form a basis for the entire tangent space.
+
+		\begin{theorem}{Coordinate Basis of the Tangent Space}
+			Given a chart $\qty{Q,\psi}$ with coordinates
+			$\qty{x^1,\ldots,x^n}$, the set
+			\begin{equation}
+			\qty{
+			(\partial_1)_p,
+			(\partial_2)_p,
+			\ldots,
+			(\partial_n)_p
+			}
+			\label{eq:coordinate-basis-set}
+		\end{equation}
+		constitutes a basis for $T_p\mcal{M}$.
+		\end{theorem}
+
+		\begin{proof}
+			We prove linear independence and spanning separately.
+			\begin{enumerate}[(1)]
+				\item Linear Independence
+					
+					Recall that vectors $\vb{v}_1, \vb{v}_2,\ldots,\vb{v}_n$ are linearly 
+					independent if 
+					\[
+						\alpha^1 \vb{v}_1 + \alpha^2 \vb{v}_2 + \cdots + \alpha^n \vb{v}_n = \vb{0} \qquad\equiv a^\mu(\p_\mu) = \vb{0}
+					\]
+					implies that
+					\[
+						\alpha^1=\alpha^2=\cdots=\alpha^n = 0 \qquad \equiv a^\mu = 0
+					\]
+					In this case, we shall prove that is indeed the case. 
+
+					Suppose that some coefficients $\alpha^\mu$ and the basis sums to zero.
+					\begin{equation}
+						\alpha^\mu(\partial_\mu)_p
+						=
+						\vb{0}_p
+						\label{eq:basis-linear-independence-assumption}
+					\end{equation}
+
+					Acting on an arbitrary function $f$ gives
+					\begin{equation}
+						\alpha^\mu(\partial_\mu)_p(f)
+						=
+						0.
+						\label{eq:basis-linear-independence-action}
+					\end{equation}
+
+					In particular, since it is convenient, we choose $f=x^\nu$. Then
+					\begin{equation}
+						\alpha^\mu(\partial_\mu)_p(x^\nu)=0.
+						\label{eq:basis-linear-independence-coordinate}
+					\end{equation}
+
+					By definition,
+					\begin{align}
+						(\partial_\mu)_p(x^\nu)
+						&=
+						\eval{
+							\pdv{
+								(x^\nu\circ\psi^{-1})
+							}{x^\mu}
+						}_{\psi(p)}
+						\nonumber\\
+						&=
+						\eval{
+							\pdv{x^\nu}{x^\mu}
+						}_{p}
+						\nonumber\\
+						&=
+						\tensor{\delta}{^\nu_\mu}
+						\label{eq:coordinate-basis-delta}
+					\end{align}
+
+					Hence,
+					\begin{align}
+						\alpha^\mu\tensor{\delta}{^\nu_\mu}
+						&=
+						\alpha^\nu\\
+						\nonumber
+						&=
+						0
+						\label{eq:basis-alpha-zero}
+					\end{align}
+
+					Therefore the coordinate basis vectors are linearly independent.
+
+				\item Spanning\footnote{Wald, p.16}
+
+					Let
+					\[
+						\vb{v}_p\in T_p\mcal{M}.
+					\]
+
+					Define the components of $\vb{v}_p$ with respect to the
+					coordinate basis as the action of the operator on that basis.
+					\begin{equation}
+						v^\nu
+						\equiv
+						\vb{v}_p(x^\nu).
+						\label{eq:vector-components}
+					\end{equation}
+
+					We claim that
+					\begin{equation}
+						\vb{v}_p
+						=
+						v^\mu(\partial_\mu)_p.
+						\label{eq:vector-basis-expansion}
+					\end{equation}
+
+					To see this, let $f$ be an arbitrary smooth function. The
+					coordinate representation of $f$ is a smooth function of
+					$x^1,\ldots,x^n$, so its ordinary multivariable differential
+					gives
+					\begin{equation}
+						\vb{v}_p(f)
+						=
+						v^\mu(\partial_\mu)_p(f).
+						\label{eq:vector-acting-on-function}
+					\end{equation}
+
+					Since the two tangent vectors have the same action on every
+					smooth function, they are the same vector. Hence
+					\[
+						\vb{v}_p
+						=
+						v^\mu(\partial_\mu)_p.
+					\]
+					Therefore the coordinate vectors span $T_p\mcal{M}$.
+			\end{enumerate}
+			That completes the proof.
+		\end{proof}
+
+		Thus every tangent vector can be written in the form
+		\begin{equation}
+			\vb{v}_p
+			=
+			v^\mu(\partial_\mu)_p.
+			\label{eq:vector-coordinate-expansion}
+		\end{equation}
+
+		Suppressing the explicit point label when there is no ambiguity,
+		we conventionally write
+		\begin{equation}
+			\vb{v}
+			=
+			v^\mu\partial_\mu.
+			\label{eq:abstract-vector-expansion}
+		\end{equation}
+
+		This is the origin of the familiar ``arrow'' notation in a traditional coordinate
+		basis, $\vb{v} = v^\mu \vb{e}_\mu$. In this case, we prove that the coordinate
+		basis is therefore similar, but equivalent to the elementary basis vectors. 
+		We shall expound more on this next meeting.
+		\[
+			\vb{e}_\mu \equiv \partial_\mu = \eval{\pdv{}{x^\mu}}_{p}
+		\]
+
+		For example, in Cartesian coordinates on $\R^3$,
+		\begin{equation}
+			\vb{v}
+			=
+			v^x\pdv{}{x}
+			+
+			v^y\pdv{}{y}
+			+
+			v^z\pdv{}{z}.
+			\label{eq:cartesian-vector}
+		\end{equation}
+
+		In spherical coordinates, the very same tangent vector can instead
+		be represented as
+		\begin{equation}
+			\vb{v}
+			=
+			v^r\pdv{}{r}
+			+
+			v^\theta\pdv{}{\theta}
+			+
+			v^\phi\pdv{}{\phi}.
+			\label{eq:spherical-vector}
+		\end{equation}
+
+		The components
+		$
+		    v^\mu
+		$
+		change when we change coordinates, while the geometric vector
+		$\vb{v}$ itself does not.
+
+		This is one of the central ideas of differential geometry:
+
+		\begin{quote}
+			The vector is the geometric object; its components are merely its
+			representation in a chosen basis.
+		\end{quote}
+
+	\subsubsection{Abstract Index Notation}
+
+		In general relativity, it is useful to distinguish between a vector
+		as an abstract geometric object and its components in a particular
+		coordinate system.
+
+		We may therefore write
+		\[
+			\vb{v}
+		\]
+		for the vector itself, while
+		\[
+			v^\mu
+		\]
+		denotes its components with respect to the coordinate basis
+		$\partial_\mu$.
+
+		Thus,
+		\begin{equation}
+			\vb{v}
+			=
+			v^\mu\partial_\mu
+			\label{eq:abstract-index-vector}
+		\end{equation}
+
+		The index $\mu$ is not itself a coordinate label such as $x$ or $y$.
+		It is an abstract index indicating which component of the vector is
+		being referred to.
+
+		In a coordinate system,
+		\[
+			\mu=0,1,\ldots,n-1,
+		\]
+		and Einstein summation convention is understood whenever an index
+		appears once upstairs and once downstairs, it is summed.
+
+		For example, in four-dimensional spacetime,
+		\begin{equation}
+			\vb{v}
+			=
+			v^\mu\partial_\mu
+			=
+			\sum_{\mu=0}^{3} 
+			v^\mu\partial_\mu
+			=
+			v^0\partial_0
+			+
+			v^1\partial_1
+			+
+			v^2\partial_2
+			+
+			v^3\partial_3.
+			\label{eq:four-vector-expansion}
+		\end{equation}
+
+		In a coordinate system
+		\[
+			x^\mu=(t,x,y,z),
+		\]
+		this becomes
+		\begin{equation}
+			\vb{v}
+			=
+			v^t\pdv{}{t}
+			+
+			v^x\pdv{}{x}
+			+
+			v^y\pdv{}{y}
+			+
+			v^z\pdv{}{z}.
+			\label{eq:spacetime-vector-expansion}
+		\end{equation}
+
+		The crucial conceptual transition is therefore
+		\begin{equation}
+			\boxed{
+				\text{vector}
+				\quad\longrightarrow\quad
+				\text{derivative operator}
+			}
+			\label{eq:vector-as-derivative}
+		\end{equation}
+		rather than
+		\[
+			\text{vector}
+			\quad\longrightarrow\quad
+			\text{arrow in space}.
+		\]
+		The arrow remains a useful visualization, but the derivative-operator
+		definition is what survives on an arbitrary differentiable manifold.
 

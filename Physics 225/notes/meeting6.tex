@@ -1,0 +1,582 @@
+% =======================================
+% MEETING 6
+% ---------------------------------------
+% DATE   - SEPTEMBER 4, 2026
+% FORMAT - ONLINE
+% =======================================
+% TOPIC  - Vector transformations, Curves and Tangent Vectors 
+% =======================================
+
+\subsection{TBA}
+\subsubsection{Structures in Manifolds}
+
+Last meeting, we talked about structures in manifolds.
+These are the mathematical objects that will be important
+in general relativity. We discussed scalars, which was 
+fairly easy, and we also started looking at vectors. 
+
+The key thing here is that a vector on a manifold is really
+a map, it's a derivative operator, or a derivation, at least
+this is how we tried generalizing it. 
+
+So by that, we mean it's a map that can act on functions. So
+if you have a vector $\vb{v}_p$ on a point $p\in\mcal M$, which belongs to $T_p \mcal M$,
+\[
+	\vb{v}_p \in \TpM 
+\]
+that means it can act on functions, and these actions on functions, will
+be a real number.
+\[
+	\vb{v}_p: f(\mcal M) \to \R
+\]
+So it's kind of like a directional derivative. The 
+intuition is that if you provide a function to $\vb{v}_p$,
+it will return a rate of change on that function along some kind 
+of direction. 
+
+We haven't really completely filled up the details of that 
+story. As we discussed before, we have to recover the arrow again. We 
+ask how do we explicitly make a vector look like a directional 
+dirivative in $\R^n$, so that's in part what we are going to
+achieve today. 
+
+The other thing we discussed last time is that $\TpM$, otherwise called 
+a tangent space (we will justify why that name is appropriate), is basically
+the set of all vectors, or directional derivatives, at $p$. It's a vector space or a 
+linear space, but for it to become a vector space we had to define what the 
+operation of plus, $+$, means, what scalar multiplication means, and this is 
+what we introduced also in the last lecture. 
+
+Now, being a vector space, one of the most important things one can do when
+one has a vector space is establish a basis on that vector space. We know already
+from our many experiences with vectors spaces in physics. One nice basis is the so-called
+coordinate basis on $\TpM$. The coordinate basis is one that we get from having a 
+chart on $p$.
+
+So if we have a manifold and a point $p$, remember that it's going to be an open
+set that contains $p$ and then there's going to be a chart $\psi$ that maps $p$ to a coordinate system.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=3in, height=2in]{psimapping.pdf}
+    \caption{}
+    \label{fig:psimapping}
+\end{figure}
+
+
+This, we often just write as $\{x^\alpha\}$, instead of saying $\psi$, which is kind of fairly 
+abstract, we just say $\qty{x^\alpha}$, we express it in terms of the coordinate functions.
+$\qty{x^\alpha}$ are the coordinate functions that manifest on psi.
+\[
+	\psi \iff \qty{x^\alpha}
+\]
+and once we have that we have our basis, which is expressed as a directional derivative
+in terms of the coordinate functions.
+\[
+	\qty{\pdv{}{x^\alpha}}
+\]
+Often times, we will write this simply as 
+\[
+	\qty{\p_\alpha}
+\]
+When it's confusing, for example you have two different baes, we will write this differently.
+For example you have a different basis from a different chart $\qty{y^\alpha}$, we instead
+explicitly define each basis vectors
+\[
+	\psi_x \implies\qty{\pdv{}{x^\alpha}},\qquad \psi_y \implies \qty{\pdv{}{y^\alpha}}
+\]
+An example would be different representatiosn of a vector in cartesiaon coordinates in $\R^3$
+or spherical coordinates in $\R^3$. As a shorthand, we can also write
+\[
+	\qty{\pdv{}{x^\alpha}}=\qty{\partial_\alpha},\qquad \qty{\pdv{}{y^\alpha}}=\qty{\partial'_\alpha}
+\]
+If there is confusion, like when there's a possibility that we're working on different charts, with 
+two different sets of coordinate vectors, we can use this convention of having a primed operator.
+
+We also discussed last time that since it's a basis, I can now express any vector $\vb{v}_p$ in terms
+of any coodinate basis, so we can write, in terms of the $x$ chart,
+\[
+	\vb{p} = 
+	v_p^\alpha \partial_\alpha = 
+	v_p^\alpha \pdv{}{x^\alpha}  
+\]
+Here , we said that $v_p\alpha$ is really nothing but the actions of $\vb{v}_p$ on the 
+coordinate basis function $x^\alpha$. This is what we established last time. 
+\[
+	v_p^\alpha = \vb{v}_p(x^\alpha)  
+\]
+\begin{question}{So is $\partial^\alpha$ equivalent to the elementary basis vectors $\vb{e}^i$?}
+	No, not all the time. They are kind of similar but they are not quite. The elementary basis vectors
+	in traditional physics, are equivalent to it in cartesian $\R^3$, simply
+	a different way of writing
+	\[
+		\ihat, \jhat, \khat \equiv \pdv{}{x},\pdv{}{y},\pdv{}{z} 
+	\]
+	However, in other systems of coordinates, not necessary, because when we say
+	something like $\vb{e}^\alpha$, then we are already saying something about the magnitude
+	of these vectors, since these are unit and orthogonal vectors, whereas $\partial^\alpha$ 
+	are not necessarily unit nor orthogonal because we do not have a notion of length here yet, 
+	and we do not have a notion of orthogonality as well. Those statements precedes those notions,
+	We can have coordinate basis vectors even without the notion of lengths or orthogonalities or 
+	inner products. In cartesian, these will turn out indeed to be equivalent once we introduce 
+	the so called Euclidean metric. The Euclidean metric is what's going to provide us a sense of 
+	length and orthogonality which is an inner product. Prior to that, without the metric, we already
+	have coordinate basis vectors, but not the usuak sense of lengths or orthoginality, which $\ihat,\jhat$, and $\khat$
+	already containts.  
+
+	\hspace{1em}For example, the spherical basis vectors, they point in the same direction as $\partial_\alpha$, but they
+	are not equivalent to the coordinate basis vectors you get from the manifold.
+	\[
+		\vu*{r}, \vu*{\theta}, \vu*{\phi}\not\equiv \pdv{}{r},\pdv{}{\theta}, \pdv{}{\phi}  
+	\]
+	These are the still coordinate basis vectors, it's very easy you just take the coordinate and put it on the denominator,
+	but they have (you will see this when we introduce the meaning of length) different
+	magnitudes. Later on, when we introduce the notion of normalization and define a unit vector, then we recover the same vectors. 
+\end{question}
+
+Now, we proceed to the question that we left hanging in the last lecture. 
+
+Suppose $p\in\mcal M$ belongs to two different charts, $\psi_1$ and $\psi_2$, and as such
+we have two different sets of coordinate functions that apply and describe $p$.
+
+If we that is the case, then we also have different sets of coordinate basis vectors on $\TpM$. It's 
+the same $\TpM$, but for each chart, it can be described by two different sets of basis vectors, $\qty{x^\alpha}$ and $\qty{y^\alpha}$. 
+So the question becomes, how do the different sets of components of $p$ relate from one chart to another? Note that
+the components $v^\alpha$ is not the same as the vector $\vb{v}$. The components can change
+but the vector remains the same. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4in,height=3in]{twocharts.pdf}
+    \caption{}
+    \label{fig:}
+\end{figure}
+
+Notice that $x^\alpha$ is the $\alpha$th coordinate basis on the chart $\psi_1$, since $\psi_1:p\mapsto x^\alpha$ 
+\[
+	x^\alpha = \psi_1^\alpha(p)
+\]
+Similarly for $\psi_2$, we have
+\[
+	y^\alpha = \psi_2^\alpha(p)
+\]
+We asked last lecture, how do we express a coordinate transformation from $y$ to $x$ in terms of $\psi_1$ and $\psi_2$. We find that
+\[
+	y^\alpha (x^\beta) = (\psi_2 \circ \psi_1\inv)^\alpha(x^\beta)
+\]
+Now we want to understand how do we define a vector present in both charts, and how does its component relate to each other. 
+
+To specify a vector, the way we have defined them last lecture, is that it's a map from functions to real numbers. We first need to define the map.
+Every vector is a derivative operator. If you tell me how it operates on the function, then you will have specified the vector. 
+
+Suppose a vector on the $y$ basis at point $p$ acting on a function. Recall how we defined this last lecture
+\[
+	\qty( \pdv{}{y^\alpha})_p f = \eval{\pdv{f\circ\psi_2\inv}{y^\alpha}}_{\vb{y}_p}
+	\label{eq:y-vecotr}
+\]
+Similarly, the $x$ coordinate vectors have exactly the same form.
+\[
+	\qty( \pdv{}{x^\alpha})_p f = \eval{\pdv{f\circ\psi_1\inv}{x^\alpha}}_{\vb{x}_p}
+\]
+Notice that the definitions are exactly the same, the only difference is that we the corresponding chart for each coordinate system.
+So, how do these things relate to each other? That's what we're trying to address.
+
+We can insert, in essence, an identity map $\psi\inv\circ\psi$
+\[
+	\qty( \pdv{}{x^\alpha})_p f 
+	= \eval{\pdv{f\circ\psi_2\inv \circ \psi_2 \circ\psi_1\inv}{x^\alpha}}_{\vb{x}_p}
+\]
+And then, we can just expand this out with standard multivariable calculus techniques, in particular 
+we use the chain rule.
+\begin{question}{Is $\psi\circ\psi\inv$ also an identity?}
+    Yes, it is also an identity map. However, we had to do it in this particular order for this derivation
+	because we will not get the result we desire due to the non-commutative nature of 
+	these operators. 
+\end{question}
+
+Proceeding with the operation, we find that
+\[
+	\pqty{ \pdv{}{x^\alpha}}_p f 
+	=
+	\eval{\pdv{(f\circ\psi_2\inv)}{y^\beta}}_{\vb{y}_p} \eval{\pdv{(\psi_2\circ\psi_1\inv)^\beta}{x^\alpha}}_{\vb{x}_p} 
+	\label{eq:id-operator}
+\]
+Notice the change to $\vb{y}_p$. Since $f\circ \psi_2\inv$, as defined, is simply $f(\vb{y}_p)$, we evaluate from there.
+Now, wat is $\psi_2\circ\psi_1\inv$? From the last lectures, where you can verify, this is just $\vb{y}(\vb{x})$, i.e., it
+can be represented as $y^\beta$.
+
+Also notice that we used another dummy index $\beta$. Since we used the chain rule, which sums over intermediate coordinates,
+we need to represent the intermediate coordinate index separately from the fixed 
+$\alpha$, which labels the $x$-coordinate we are differentiating with respect to.
+
+Now we can represent (\ref{eq:id-operator}) as 
+\[
+	\qty( \pdv{}{x^\alpha})_p f 
+	=
+	\eval{\pdv{(f\circ\psi_2\inv)}{y^\beta}}_{\vb{y}_p} 
+	\eval{\pdv{y^\beta}{x^\alpha}}_{\vb{x}_p} 
+\]
+But now look at it, we see that the first term is just (\ref{eq:yvector}). This is nothing but
+\[
+	\pqty{ \pdv{}{x^\alpha}}_p f 
+	=
+	\pqty{\pdv{}{y^\beta}}f \cdot 
+	\eval{\pdv{y^\beta}{x^\alpha}}_{\vb{x}_p} 
+\]
+We can rearrange this, because this is just multiplication, and $\displaystyle\eval{\pdv{y^\beta}{x^\alpha}}_{\vb{x}_p}$ are just numbers, then
+\[
+	\pqty{ \pdv{}{x^\alpha}}_p f 
+	=
+	\eval{\pdv{y^\beta}{x^\alpha}}_{\vb{x}_p} 
+	\pqty{\pdv{}{y^\beta}}f  
+\]
+Notice that this is for an arbitrary function $f$, and as such, in an operational sense, we can write
+\[
+	\pqty{ \pdv{}{x^\alpha}}_p 
+	=
+	\eval{\pdv{y^\beta}{x^\alpha}}_{\vb{x}_p} 
+	\pqty{{\pdv{}{y^\beta}}}_p
+	\label{eq:chain-rule-result}
+\]
+
+One of the things that you will obviously see here is that this is nothing but the expression 
+of the chain rule in multivariable calculus. It's as if we just wrote down the chain rule. It's very 
+easy to remember. However, note that this has a different function, we are sort of giving a new interpretation
+to the chain rule. Becayse what this statement actually telling you? 
+What we're doing here is expressing the left hand side, which is a vector, as a superposition or a sum over other 
+basis vectors. So we are expressing a vector on the left hand side as a linear combination of vecotrs on the right hand side. 
+
+So something like the chain rule, which is taken for granted in multivariable calculus because it is used so 
+often, now gets a different interpretation in terms of vectors. The values on (\ref{eq:chain-rule-result})  are 
+just numbers, so it's as if we are doing
+\[
+	\ket{\psi} = \psi^i \ket{e_i}
+\]
+or a matrix multiplcation 
+\[
+	\vb{x} = \vb{M}\vb{y}
+\]
+
+We interpret (\ref{eq:chain-rule-result}) as the following: The $\alpha$th basis vector in the $x$-coordinate system
+is a linear combination of the basis vectors in the $y$-coordinate system. Similarly, you can express
+\[
+	\eval{\pdv{}{y^\alpha}}_p =  
+	\eval{\pqty{
+		\pdv{x^\beta}{y^\alpha} 
+	}}_{\vb{y}_p} 
+	\pqty{{\pdv{}{x^\beta}}}_p
+\]
+So it means, that we can represent one basis in terms of the other. So how then do 
+we relate the different components comming from these basis vectors? 
+
+What we did earlier is that given two sets of basis vectors, how do we relate one in terms 
+of the other?
+
+By the way, the expression $\pdv{y^\beta}{x^\alpha}$ are Jacobians, this is often called the tangent map,
+we will explain later on. This is actually the partial derivatives of the transition functions that are defined 
+to be smooth in smooth manifolds. 
+
+If I have a vector$ \vb{v}_p \in \TpM$, and I have two different charts, then I get 
+to represent this vector using two different sets of basis vectors. I can say that
+\[
+	\vb{v}_p = v_p^\mu \pdv{}{x^\mu}
+	\label{eq:vpx}
+\]
+or we can write the same vector as 
+\[
+	\vb{v}_p = {v'_p}^\nu \pdv{}{y^\nu}
+	\label{eq:vpy}
+\]
+The important thing here is that we are talking about the same vector. Just like we can represent the vectors
+in different ways in different coordinate systems
+\begin{align*}
+	\vb{v} &= v_x \ihat + v_y \jhat + v_z \khat\\
+	\vb{v} &= v_r \vu*{r} + v_\theta \vu*{\theta} + v_\phi \vu*{\phi}
+\end{align*}
+
+Since they'are the same vector, then we can equate (\ref{eq:vpx}) and (\ref{eq:vpy})
+\[
+	{v'_p}^\nu \pdv{}{y^\nu}
+	=	
+	{v_p}^\mu \pdv{}{x^\mu}
+\]
+But, we can express $\pdv{}{y^\nu}$ in terms of the coordinate basis vectors in $x$, as we have shown
+\[
+	{v'_p}^\nu
+	\pqty{
+		\pdv{x^\mu}{y^\nu}
+		\pdv{}{x^\mu} 
+	}
+	=	
+	{v_p}^\mu \pdv{}{x^\mu}
+\]
+Though remember, the mnemonic is that of the chain rule, it's functionally different, it's a linear combination of the basis bectors.
+Proceeding, we can move the LHS to the RHS, and we find
+\[
+	\pqty{
+		v'_p \pdv{x^\mu}{y^\nu} - v_p^\mu
+	}
+	\pdv{}{x^\mu}
+	=
+	\vb{0}
+\]
+Now we invoke the fact that we proved last lecture that $\pdv{}{x^\mu}$ is 
+a linear basis, so they are linearly independent. So if the sum of the 
+coefficients and the vectors are the zero vector, then the components inside the 
+parenthesis are equal to zero. Hence
+\[
+	{v'}_p^\nu \pdv{x^\mu}{y^\nu} - v_p^\mu
+	=
+	0
+\]
+As such we can write
+\[
+	{v_p}^\mu = 
+	{v'}_p^\nu \pdv{x^\mu}{y^\nu}  
+	= 
+	\pdv{x^\mu}{y^\nu}  {v'_p}^\nu
+	\label{eq:vpp-to-vp} 
+\]
+Similarly, we can express (\ref{eq:vpp-to-vp}), by inverting the 
+argument and taking the reciprocal of the derivative as
+\[
+	{v'_p}^\nu = 
+	\pdv{y^\nu}{x^\mu} v_p^\mu 
+	\label{eq:vp-to-vpp}
+\]
+
+So these are how the comonents of the vector $\vb{v}_p$ relate to one another under
+a change of basis; this is a component transform.
+
+Some of you will recognize that this is the Arfken\cite{Arfken1970} standard definition of a vector. In fact, it is a contravariant vector.
+This is the old fashioned definition of a contravarient vector. This is what's being taught by Arfken and a lot 
+of other elementary or introductory physics books. We say old fashioned because this is how it is traditionally done 
+before,  but for us it is insufficient. For most physicists and most physics work, it is probably sufficient, but it doesn't 
+really answer what a vector is, in a rigorous sense.
+
+If you ask ``what is a vector", a physicist would say, ``Well, if its components transform this way, it's a vector" or ``It's an element of a vector space'', without
+really saying or actually answering what a vector is. So now, we know what a vector is, it's a derivative
+operator, and as a consequence of that, its components transform in a manner described by (\ref{eq:vp-to-vpp}).
+
+So this is no longer the definition of a contravariant vector, it is the transformation rule arising from the fact that
+vectors are derivative operators. For classical physics, it is generally sufficient to say how it transforms, but the problem is 
+in GR and in fact for most of physics we are emphasizing the geometric object itself, defining
+what is the object ranther than how its components transform under different coordinate systems. 
+
+We are trying to divorce ourselves from coordinates as much as possible. We are trying to work with the geometric objects themselves.
+Now we say it is a contravariant vector because there is a different kind of vector which is a covariant vector.
+
+If you have a covariant vector $\omega_p$, the transformation rules are expressed as 
+\begin{equation}
+	\label{eq:covariantvectordef}
+	(\omega_p)'_\nu = 
+	\pdv{x^\mu}{y^\nu} \pqty{\omega_p}_\mu 
+\end{equation}
+This is the definition of a covariany vector. But later on, in a couple lectures from now,
+we will see that we will no longer call these vectors. These are actually going to be one forms.
+Something which transforms like (\ref{eq:covariantvectordef}) is called a one form, or alternatively, a 
+dual vector. 
+
+So that we aren't so confused, we have encountered these in physics before, a contravariant vector is equivalent to a \textit{ket},
+\[
+	\ket{\psi}
+\]
+and a covariant vector is equivalent to a \textit{bra}
+\[
+	\bra{\phi}
+\]
+We do not say that bra's and ket's are the same. Of course, they are isomorphic, but they
+are quite different. They serve different purposes. 
+Covariant and contravariant vectors are usually defined in terms of how they
+transform in physics, but we will define these other vectors later on, when we discuss one forms.
+
+Now it's importnat to emphasize that $\TpM$ is a vector space. You don't always need coordinate basis vectors for vector spaces.
+In fact, later on we will have find that it is quite practical and useful to adopt non-coordinate basis vectors. 
+
+So the vector basis need not be coordinate basis vectors, in other words, they don't need to come from a coordinate system or a chart 
+because it's a space, you can put in a plethora, an infinite number of basis vectors on it. 
+
+For example, you have a set of basis vectors, you will need $n$ of them if you have an $n$-dimensional manifld, and
+they will have some components with respect to some basis, and these basis need not come from 
+a coordinate system, it can be a lienar combination of coordinate basis vectors.
+\[
+	e_{(\beta)} = e_{(\beta)}^\alpha \pdv{}{x^\alpha} 
+\]
+The only constraint is 
+that it must have a nonzero determinant. You don't get a basis unelss the matrix formed by the basis vectors if 
+the matrix isn't a singular matrix. It has to be singular, otherwise you don't get a one-to-one map from the manifold to $\R^n$.
+
+Later on when we go to Lie derivatives, we will investigate under what conditions $e_{(\beta)}$ will actially have a coordinate representation.
+The short answer is that the Lie derivative should be zero
+\[
+	\mathscr{L}_{(\beta)} e_{(\alpha)} = 0
+\]
+If this is true for any $\alpha$ and $\beta$ for this new set of basis vectors that we've introduced, then 
+there is a set of coordinates for which these are coordinate basis vectors. I can find a coordinate system to write
+for example
+\[
+	e_{\beta} = \pdv{}{z^\beta} 
+\]
+If the Lie derivative condition is satisfied. But we'll get to that much later on. 
+
+So now, we want to be able to recover the notion of an arrow in $\R^n$. So far, we've had a lot of properties 
+sort of found and recovered in what we understand to be traditional vectors in physics. But to really get 
+a sense of an arrow, we need to talk about curves and tangent vectors.
+
+\subsubsection{Curves and Tangent Vectors}
+
+We feel like we have a notion or sense of what a curve is, since we encounter it in physics 
+a lot. However, for our purposes, we need to precisely define what a curve is.
+\begin{definition}{Curves}
+	A curve $C$ in a manifold $\mcal M$ is a map from an open interval $I\subset\R$ 
+	onto $\mcal M$
+	\begin{equation}
+		\label{eq:curvedef}
+		C:I \to\mcal{M}
+	\end{equation}
+\end{definition}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4in,height=2in]{curve_in_a_manifold.pdf}
+    \caption{A curve in a manifold}
+    \label{fig:curve-in-a-manifold}
+\end{figure}
+
+$C(I)$, is a function, which is different from how we usually imagine a curve, which is 
+some line with a curvature on $R^n$. $C(I)$ is not actually the curve itself, but 
+the image of the curve. So what we tend to think of the curve is really the image 
+of the curve $C$, because $C$ itself is the map, $C$ is the function. It's the instruction manual that tells
+us how to relate a real number to a point in $\mcal M$. $C(I)$ is a set of points in $\mcal M$. 
+And $I\subset \R$ is called a parameterization. $I$ need not be a propersubset, it can be the entire real line. It's how we parameterize a curve. Say for example, you want to think of a parameter
+$I$ is time, $t$, which is a very typical parameter in physics, the parameter need not be uniform. People can have different parameterizations,
+different clocks running at different rates for instance. 
+
+Imagine a different curve, say $C':I'\to \mcal{M}$, with different parameters $I'$, such that
+\[
+	C(I)= C'(I')
+\]
+then we call these curves have the same image, but different parameterizations. So we often say
+that $C$ and $C'$ are reparameterizations of each other. It has the same image, the same set of points,
+but the parameter $I$ that maps it is different, i.e., $C'(t')\neq C(t)$.
+
+If they are reparameterizations of each other, the it is not so stramge that there will exist an onto map,
+a subjective map $\alpha: I \to I'$, such that
+\[
+	\alpha(t)=t'
+\]
+and 
+\[
+	C = C'\circ \alpha
+\]
+An important thing to emphasize here is that a curve on its own does not need coordinates.
+It's a map from the subset of the real line to the manifold. However, in physics, it's very common
+to express curves in terms of coordinates, which we can do if we are on manifolds, mapping the points
+$C(I)$ to $\R^n$. Pictorially, we 
+can represent this as 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4in,height=2in]{curves-chart.pdf}
+    \caption{$\psi:C(I)\to \R^3$}
+    \label{fig:cuves=chart}
+\end{figure}
+As such, we can recover the normal parametrization of a real number as a coordinate in $\R^n$.
+\[
+	\psi\circ C: I \to \R^n
+\]
+in other words
+\[
+	\psi\circ C: t \mapsto x^\alpha(t)
+\]
+So for example, $[x(t),y(t),z(t)]$, which is how we normally describe curves in physics. 
+You can provide a coordinate representation of curves but the curve itself actually did not rquire 
+the coordinates. So what we do is coordinatize a curve. 
+
+There are goign to be these special curves which we need to define. Given some chart, which we represent with $\qty{\alpha}$,
+consider the following subsets of open sets in $\mcal M$ for which the coordinates are valid, with chart $\psi$, $\qty{\mcal{O},\psi}$. Consider the following
+subset of all points in $\mcal{O}$ such that 
+\[
+	\qty{
+		p\in\mcal{O} : 
+		x^2(p) = \text{constant ,}
+		x^3(p) = \text{constant ,}
+		\ldots
+		x^n(p) = \text{constant }
+	}
+\]
+What do you imagine these sets of points to be? The image of this map is a straight line at $x^1(p)$, because we are keeping all the $x^\alpha$'s constant, except
+for $x^1$. However, the set that we're looking at, since it's a set of all $p$'s in $\mcal O$, is the pre-image of the 
+points that will get mapped into a line. So this set is asking you to imagine what points in $\mcal O$ will get mapped into a 
+straight line by $\psi$
+
+\begin{figure}[h]
+    \centering
+	\includegraphics[width=4in,height=2in]{specialcurves.pdf}
+    \caption{}
+    \label{fig:specialcurve}
+\end{figure}
+
+So with these set, consider the inverse map $\psi\inv$, it defines a set of points that will get mapped to a straight line. Since we konw it is contunous,
+then that necessarily means that the pre-image is a continuum of arbitrary points, i.e., the preimage is a curve on the manifold, because it's mapping an 
+open interval of $\R$ onto a set of points in $\ncal M$. This is a special type of curve, it's called the $x^1$ coordinate line or $x^1$ coordinate curve. 
+Notice here that the parameter is $x^1$. This is an important notion.
+
+The $x^1$ coordinate curve is the image of a curve on the manifold that maps the parameter we call $x^1$ coordinate.
+
+Related to curves are things called tangent vectors. 
+\subsubsection{Tangent vectors}
+
+You have an intuitive sense of what is a tangent vector, it's the arrow that points in the direction
+instantantously of the curve. IN a sense, a tangent vector is our traditional notion of what a tangent vector is.
+But because it's a vector, we now know that it's supposed to be a directional derivative. 
+We have to apppropriately define then, a tangent vector, asa derivative operator. 
+
+\begin{figure}[h]
+    \centering
+	\includegraphics[width=4in,height=2in]{tangentvectors.pdf}
+    \caption{}
+    \label{fig:tangentvectors}
+\end{figure}
+
+It's always associated with curve, i.e., if there's a curve, there must be a tanget vector. We define it then as usch.
+
+\begin{definition}{Tangent Vector}
+	If $C(t)$ is a curve, then the tangent vector $\tau$ at $C(t_0)$ is the derivative operator
+	such that $\tau_{C(t)}$ acting on an arbitrary function $f$, is defined to be
+	\begin{equation}
+		\label{eq:tangent_vector}
+		\tau_{C(t_0)} (f) = 
+		\eval{\dv{(f\circ C)}{t}}_{t_0}
+	\end{equation}
+\end{definition}
+
+What is the map $f\circ C$. Remember that $f$ is a map from the manifold to real numbers, and $C$ is a map 
+from real numbers to the manifold. SO $f\circ C$ is a map from real numbers to real numbers. 
+\[
+	f\circ C : \R \to \R
+\]
+So it's 
+simply a normal function, a perfectly sensible function, which is a derivative
+with respect to a parameter. 
+
+Notice that the definition of a tangent vector requires a curve. If you have the same curve $C$,
+but evaluating another parameter $t_1$, then it makes a different tangent vector acting on
+the same function, but evaluated at a different point
+\[
+	\tau_{C(t_1)} (f) = 
+	\eval{\dv{(f\circ C)}{t}}_{t_1}
+\]
+This is a different tangent vector. We can show that this is in fact a vector as we previously defined it, i.e., 
+it must satisfy linearity, and the Leibniz propety, but by the nature of the function, since it's a derivative operator, it obviously 
+satisfies both. This definition will satisfy the properties of being a vector, or being a derivation. We will recover the notion
+of an arrow from this, this is where the traditional arrow definition of a vector comes from. 
+
+
+
+
+
+
+
+
+
+
+
+
+

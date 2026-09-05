@@ -7,8 +7,6 @@
 % TOPIC  - MANIFOLDS AND TOPOLOGICAL SPACES
 % =======================================
 
-% date - August 28, 2026
-% topic - 
 
 \subsection{Manifolds and Topological Spaces}
 
@@ -102,7 +100,7 @@
 		of the insights of Einstein and many others. So, we'll provide a more modern definition. In fact,
 		there are several definitions of spacetime, they all roughly correspond to the same thing. Some
 		are just more careful because some are more mathematically oriented. But I shall provide two
-		definitions just for your reference. The first one is by Sasane\cite{}, he was a mathematician 
+		definitions just for your reference. The first one is by Sasane\cite{Sasane2021}, he was a mathematician 
 		interested in relativity. 
 
 		\begin{definition}{Spacetime (Sasane)}
@@ -119,7 +117,7 @@
 		is a metric $g$, it implies a Levi-Civita connection. And we have \textit{time orientation}. All of these terms,
 		we will have to parse in the days ahead. 
 
-		The more classic definition of spacetime comes from the great Hawking and Ellis\cite{}\footnote{If you are particularly interested in understanding relativity from a mathematical point of view, I will highly recommend Hawking and Ellis as a book, but not as a first textbook. There are still aspects of Hawking and Ellis that are a bit difficult for me to understand, but this has been  a standard reference for some time.}
+		The more classic definition of spacetime comes from the great Hawking and Ellis\cite{HawkingEllis1973},\footnote{If you are particularly interested in understanding relativity from a mathematical point of view, I will highly recommend Hawking and Ellis as a book, but not as a first textbook. There are still aspects of Hawking and Ellis that are a bit difficult for me to understand, but this has been  a standard reference for some time.}
 		The definition they provide is a little bit simpler than Sasane's which is more modern, they say that
 		\begin{definition}{Spacetime (Hawking and Ellis)}
 			Spacetime is the collection of all events, represented by a pair $\mathcal{M},g$, where $\mathcal{M}$ is a connected
@@ -147,7 +145,7 @@
 
 		The gist is that a differentiable manifold or a smooth manifold is something that is 
 		coordinatizable. So from a physicist's standpoint, that's a way to understand what a manifold is.  An $n$-dimensional manifold is a topological space 
-		that is locally homeomorphic to $\R^n$, together with appropriate compatibility within charts.
+		that is locally homeomorphic to $\R^n$, together with appropriate compatibility within charts. It has the local differential structure of $\R^n$ but not necessarily its global properties.
 
 		\newpage %remove if able
 		In short: A manifold is basically a topological space on which you can install coordinates in. It is a topological
@@ -444,7 +442,7 @@
 		Differentiable or smooth manifolds (both are synonymous) i.e., $C^\infty$ manifolds, are manifolds which can be differentiated
 		continuously. What do we mean by that?
 
-		Take an open set $\mcal O_1$ and $\mcal O_2$ both in $\mcal M$, and overlap each other, i.e., there is a part of $\mcal O_2$ that is a subset of $\mcal O_1$ and vice versa. 
+		Take an open set $\mcal O_1$ and $\mcal O_2$ both subsets of $\mcal M$, and overlap each other, i.e., there is a part of $\mcal O_2$ that is a subset of $\mcal O_1$ and vice versa. 
 		$\psi_1$ maps $\mcal O_1$ to $\R^n$, say $\vb{x}=(x_1,x_2,\ldots,x_n)$, and $\psi_2$ maps $\mcal O_2$ to $\R^n$, say $\vb{y}=(y_1,y_2,\ldots,y_n)$. Note that these are different coordinate systems that each apply only to the chart which mapped it.
 		However, since $\mcal O_1$ and $\mcal O_2$ are intersectional, then the maps must also have some parts that are intersectional. 
 		That is, $\psi_1$ will map both parts of $\mcal O_1$ and $\mcal O_2$. As such, there will be a map that is $\psi_1[\mcal O_1 \cap \mcal O_2]$.
@@ -490,20 +488,18 @@
 
 		So again, what is a manifold? It's simply a set of open sets with coordinate systems, and every time the open sets overlap, the transition functions (coordinate transformations) must
 		always be infinitely differentiable, if it is to be a $C^\infty$ manifold.
-		
-		\paragraph{Question about the notion of $C^\infty$} If you take derivatives again and again of a function, at some point it will become zero, so it seems impossible for it to be infinitely differentiable. How come?
-
-		We can! If you can differentiate a zero function, it is still differentiable, and the result is 0 again, ad infinitum, you can still keep on going, and the result remains continuous. 
-		What we mean by differentiability is the usual criteria for differentiability which are spikes or discontinuities that will make the manifold undifferentiable at that point. We require these to be \textit{smooth}.
-		When we get to black holes, we will find that the coordinate systems will break down precisely when you encounter violations of this requirement to be infinitely differentiable,
-		which signifies we reached the end of our chart, and we need a new coordinate system. One of the things which you should sort of take from this notion of a manifold is that the coordinate 
+		\begin{question}{About the notion of $C^\infty$, if you take derivatives again and again of a function, wouldn't it at some point become zero? And so, it seems impossible for it to be infinitely differentiable.}
+			It is still differentiable! If you can differentiate a zero function, it is still differentiable, and the result is 0 again, \textit{ad infinitum}, you can still keep on going, and the result remains continuous. 
+			What we mean by differentiability here is the usual criteria for differentiability which are the lack of spikes or discontinuities that will make the manifold undifferentiable at that point. We require these to be \textit{smooth}.
+			When we get to black holes, we will find that the coordinate systems will break down precisely when you encounter violations of this requirement to be infinitely differentiable,
+			which signifies we reached the end of our chart, and we need a new coordinate system. 
+		\end{question}	
+		One of the things which you should sort of take from this notion of a manifold is that the coordinate 
 		systems can lead you astray. The manifolds can be very well defined and well behaved. However, at some point, the transformation will cause a divergence which is not allowed by your
 		chosen coordinate transformation, that will signify you have a problem with the chart, it has gone beyond where it can represent, by which you need to find another coordinate transformation which fits your uses.
-
 		There are other kinds of manifolds which are not $C^\infty$, mathematicians may sometimes demand only $C^2$. So sometimes you may 
 		see people say $C^2$ manifold, because for the transition functions, they only want it to be 
 		$C^2$. Sometimes they say topological manifold, this is simply a $C^0$ manifold, it is only continuous but the derivatives are not. 
-
 		For us in physics, we're always going to use infinitely differentiable manifolds. If we see a manifold, we will always demand for it to be a $C^\infty$, or a smooth, or differentiable manifold.
 		This is what we demand of spacetime.
 

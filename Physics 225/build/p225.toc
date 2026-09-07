@@ -86,13 +86,13 @@
 \contentsline {subsection}{\numberline {3.4}Curves and Tangent Vectors}{92}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Curves}{92}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Coordinate Curves}{94}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Tangent Vectors}{95}{subsubsection.3.4.3}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{97}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{98}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{99}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{100}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{101}{section.8}%
-\contentsline {section}{Back Matter}{102}{section.8}%
-\contentsline {subsection}{Additional References}{102}{section*.40}%
-\contentsline {subsection}{Author's Note}{103}{section*.40}%
-\contentsline {subsection}{Colophon}{105}{section*.40}%
+\contentsline {subsubsection}{\numberline {3.4.3}Tangent Vectors at Curves}{96}{subsubsection.3.4.3}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{98}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{99}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{100}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{101}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{102}{section.8}%
+\contentsline {section}{Back Matter}{103}{section.8}%
+\contentsline {subsection}{Additional References}{103}{section*.40}%
+\contentsline {subsection}{Author's Note}{104}{section*.40}%
+\contentsline {subsection}{Colophon}{106}{section*.40}%

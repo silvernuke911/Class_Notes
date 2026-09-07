@@ -63,8 +63,8 @@
 		set that contains $p$, and then there is going to be a chart $\psi$ that maps $p$ to a coordinate system.
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=3in, height=2in]{psimapping.pdf}
-			\caption{}
+			\includegraphics[width=4in, height=2in]{images/psimapping.pdf}
+			\caption{Mapping of $p$ from a manifold $\mcal M$ to $\R^n$ via $\psi$}
 			\label{fig:psimapping}
 		\end{figure}
 
@@ -116,7 +116,7 @@
 			v_p^\alpha = \vb{v}_p(x^\alpha)  
 		\]
 
-		\begin{question}{So is $\partial^\alpha$ equivalent to the elementary basis vectors $\vb{e}^i$?}
+		\begin{question}{So is $\partial_\alpha$ equivalent to the elementary basis vectors $\vb{e}_i$?}
 			No, not all the time. They are kind of similar, but they are not quite the same. The elementary basis vectors
 			in traditional physics are equivalent to them in Cartesian $\R^3$, simply
 			a different way of writing
@@ -125,8 +125,8 @@
 			\]
 
 			However, in other coordinate systems, this is not necessarily the case, because when we say
-			something like $\vb{e}^\alpha$, then we are already saying something about the magnitude
-			of these vectors, since these are unit and orthogonal vectors, whereas $\partial^\alpha$
+			something like $\vb{e}_\alpha$, then we are already saying something about the magnitude
+			of these vectors, since these are unit and orthogonal vectors, whereas $\partial_\alpha$
 			are not necessarily unit nor orthogonal because we do not have a notion of length here yet,
 			and we do not have a notion of orthogonality as well. Those statements precede those notions.
 			We can have coordinate basis vectors even without the notion of lengths, orthogonalities, or
@@ -162,8 +162,8 @@
 \newpage
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in,height=3in]{twocharts.pdf}
-			\caption{}
+			\includegraphics[width=4in,height=2.5in]{images/twocharts.pdf}
+			\caption{Representation of a point $p\in\mcal M$ in coordinate basis charts $\qty{x^\alpha}$, $\qty{y^\alpha}$, and a scalar function $f$}
 			\label{fig:}
 		\end{figure}
 
@@ -509,8 +509,8 @@
 		\end{definition}
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in,height=2in]{curve_in_a_manifold.pdf}
-			\caption{A curve in a manifold}
+			\includegraphics[width=4in,height=2in]{images/curve_in_a_manifold.pdf}
+			\caption{A curve mapping a real line interval to a manifold}
 			\label{fig:curve-in-a-manifold}
 		\end{figure}
 
@@ -548,7 +548,7 @@
 		can represent this as
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in,height=2in]{curves-chart.pdf}
+			\includegraphics[width=4in,height=2in]{images/curves-chart.pdf}
 			\caption{$\psi:C(I)\to \R^3$}
 			\label{fig:cuves=chart}
 		\end{figure}
@@ -557,7 +557,7 @@
 		\[
 			\psi\circ C: I \to \R^n
 		\]
-		in other words
+		Recall that $I\subset\R$, therefore $\psi\circ C:\R\to\R^n$. In other words
 		\[
 			\psi\circ C: t \mapsto x^\alpha(t)
 		\]
@@ -566,7 +566,7 @@
 		You can provide a coordinate representation of curves, but the curve itself actually did not require
 		the coordinates. So what we do is coordinatize a curve.
 
-		\subsubsection{Coordinate Curves}
+	\subsubsection{Coordinate Curves}
 
 		There are going to be these special curves which we need to define. Given some chart, which we represent with $\qty{x^\alpha}$,
 		consider the following subsets of open sets in $\mcal M$ for which the coordinates are valid, with chart $\psi$, and atlas $\qty{\mcal{O},\psi}$. Consider the following
@@ -588,8 +588,8 @@
 
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in,height=2in]{specialcurves.pdf}
-			\caption{}
+			\includegraphics[width=4in,height=2in]{images/specialcurves.pdf}
+			\caption{Curve on $\mcal M$ mapped to $\R^n$, resulting on a curve with only $x^1$ varied, and the rest of $x^\alpha$ constant}
 			\label{fig:specialcurve}
 		\end{figure}
 
@@ -600,7 +600,22 @@
 
 		The $x^1$ coordinate curve is the image of a curve on the manifold whose parameter is the $x^1$ coordinate.
 
-	\subsubsection{Tangent Vectors}
+		We can then imagine, instead, doing the same for a line where $x^2$ is a parameter, then $x^3$, and so on, until $x^n$. What you then form then
+		is a map of the correspondences of each axes or coordinate basis in the chart to a curve on the manifold itself, a set of curves on the manifold
+		that correspond to each coordinate axes of the chart. You are therefore,
+		placing a reference grid on how points on the manifold will map to $\R^n$ when $\psi$ is applied.
+		Each point $p$ on the chart lies at the intersection of exactly $n$ coordinate curves, one for each coordinate direction.
+		The coordinate curves depend entirely on the choice of chart. A different chart will generally produce a different set of curves on the manifold
+
+		A second property is that the tangent vector, which is a vector that we will define later for curves, of the coordinate curves
+		form a coordinate basis. The tangent vector to the $x^\alpha$ coordinate curve at $p$ is precisely the coordinate
+		basis vector $\p_\alpha$. 
+
+		If you imagine a manifold as a curved surface embedded in higher-dimensional space, then coordinate curves are
+		the grid lines drawn on the surface. The tangent vectors to these curves are the arrows that point along the grid lines. 
+		Any tangent vector can then be thought of as a linear combination of these grid-line arrows.
+
+	\subsubsection{Tangent Vectors at Curves}
 
 		You have an intuitive sense of what a tangent vector is: it's the arrow that points in the direction
 		instantaneously of the curve. In a sense, a tangent vector is our traditional notion of what a tangent vector is.
@@ -609,14 +624,14 @@
 
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=4in,height=2.5in]{tangentvectors.pdf}
-			\caption{}
+			\includegraphics[width=4in,height=2in]{images/tangentvectors.pdf}
+			\caption{Tangent vector $\tau$ on a curve $C(t)$}
 			\label{fig:tangentvectors}
 		\end{figure}
 
 		It's always associated with a curve; i.e., if there's a curve, there must be a tangent vector. We define it then as such.
 
-		\begin{definition}{Tangent Vector}
+		\begin{definition}{Tangent Vector at Curves}
 			If $C(t)$ is a curve, then the tangent vector $\tau$ at $C(t_0)$ is the derivative operator
 			such that $\tau_{C(t)}$ acting on an arbitrary function $f$, is defined to be
 			\begin{equation}
@@ -625,7 +640,8 @@
 				\eval{\dv{(f\circ C)}{t}}_{t_0}
 			\end{equation}
 		\end{definition}
-
+	
+		Now we ask, what is the nature of the object that results from this definition? What are its properties?
 		What is the map $f\circ C$? Remember that $f$ is a map from the manifold to real numbers, and $C$ is a map
 		from real numbers to the manifold. So $f\circ C$ is a map from real numbers to real numbers.
 		\[
@@ -633,7 +649,7 @@
 		\]
 
 		So it's
-		simply a normal function, a perfectly sensible function, which is a derivative
+		simply a normal function, a perfectly sensible real function, which is a derivative
 		with respect to a parameter.
 
 		Notice that the definition of a tangent vector requires a curve. If you have the same curve $C$,
@@ -648,3 +664,5 @@
 		it must satisfy linearity and the Leibniz property, but by the nature of the function, since it's a derivative operator, it obviously
 		satisfies both. This definition satisfies the properties of being a vector, or being a derivation. We will recover the notion
 		of an arrow from this; this is where the traditional arrow definition of a vector comes from.
+
+		Here, we only define it. We shall discuss it in detail in the next meetings.

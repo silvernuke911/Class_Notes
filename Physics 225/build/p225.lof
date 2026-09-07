@@ -12,9 +12,9 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces A scalar function as a map from a manifold to the real numbers.}}{69}{figure.caption.30}%
 \contentsline {figure}{\numberline {12}{\ignorespaces The familiar representation of vectors as directed arrows in Euclidean space. This picture relies on the affine structure of $\mathbb {R}^3$.}}{71}{figure.caption.31}%
 \contentsline {figure}{\numberline {13}{\ignorespaces A tangent vector $\vb {v}$, represented as a directional derivative lying in the tangent plane at a point $p$ of the manifold, in this case, a surface embedded on a sphere in $\mathbb {R}^3$. The tangent plane in this case represents the tangent space $T_p \mathcal {M}$}}{73}{figure.caption.32}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \relax }}{81}{figure.caption.33}%
-\contentsline {figure}{\numberline {15}{\ignorespaces \relax }}{84}{figure.caption.34}%
-\contentsline {figure}{\numberline {16}{\ignorespaces A curve in a manifold}}{92}{figure.caption.36}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Mapping of $p$ from a manifold $\mathcal M$ to $\mathbb {R}^n$ via $\psi $}}{81}{figure.caption.33}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Representation of a point $p\in \mathcal M$ in coordinate basis charts $\qty {x^\alpha }$, $\qty {y^\alpha }$, and a scalar function $f$}}{84}{figure.caption.34}%
+\contentsline {figure}{\numberline {16}{\ignorespaces A curve mapping a real line interval to a manifold}}{92}{figure.caption.36}%
 \contentsline {figure}{\numberline {17}{\ignorespaces $\psi :C(I)\to \mathbb {R}^3$}}{94}{figure.caption.37}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \relax }}{95}{figure.caption.38}%
-\contentsline {figure}{\numberline {19}{\ignorespaces \relax }}{96}{figure.caption.39}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Curve on $\mathcal M$ mapped to $\mathbb {R}^n$, resulting on a curve with only $x^1$ varied, and the rest of $x^\alpha $ constant}}{95}{figure.caption.38}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Tangent vector $\tau $ on a curve $C(t)$}}{96}{figure.caption.39}%

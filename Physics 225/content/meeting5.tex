@@ -466,14 +466,14 @@
 		\begin{proof}
 			Let $\vb{v}_p,\vb{w}_p\in T_p\mcal{M}$.
 
-			We define vector addition by
+			We define vector addition by the plus operator, $+$. It acts likeso
 			\begin{equation}
 				(\vb{v}_p+\vb{w}_p)(f)
 				\equiv
 				\vb{v}_p(f)+\vb{w}_p(f),
 				\label{eq:tangent-vector-addition}
 			\end{equation}
-			and scalar multiplication by
+			and scalar multiplication by the following operation:
 			\begin{equation}
 				(\alpha\vb{v}_p)(f)
 				\equiv
@@ -537,11 +537,13 @@
 
 		From these, we also prove that the corollary expressions are also linear.
 		\[
-			(\alpha \vb{v}_p + \beta \vb{w}_p) (f)
+			(\alpha \vb{v}_p + \beta \vb{w}_p) (f) = \alpha \vb{v}_p (f) + \beta \vb{w}_p (f)
 		\]
 		and
 		\[
 			(\alpha \vb{v}_p + \beta \vb{w}_p)\cdot\grad f
+			=
+			\alpha \vb{v}_p \cdot \grad f + \beta \vb{w}_p \cdot \grad f
 		\]
 		Every vector in $T_p\mcal{M}$ is therefore associated with the same
 		point $p$. This is different from the elementary picture of vectors
@@ -878,6 +880,14 @@
 			\quad\longrightarrow\quad
 			\text{arrow in space}.
 		\]
-		The arrow remains a useful visualization, but the derivative-operator
-		definition is what survives on an arbitrary differentiable manifold.
-
+		The arrow remains a useful visualization, but the derivative-operator definition 
+		is what genuinely survives on an arbitrary differentiable manifold. However, for 
+		a greater understanding of the geometries involved in general relativity, where 
+		spacetime is curved, where there is no global notion of parallelism, and where 
+		vectors at different points cannot be directly compared, we need to recover the
+		\textit{sense} or notion of being an arrow of a vector from first principles. 
+		This recovery comes through curves: a vector is realized as the tangent to a curve,
+		giving us an arrow with both a direction and, once a metric is introduced, a magnitude. 
+		This will be discussed at length in the coming lectures. 
+		Without this recovery, the formalism remains abstract and disconnected from the physical
+		intuition that drives relativity.

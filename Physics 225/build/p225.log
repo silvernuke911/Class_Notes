@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  6 SEP 2026 07:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  7 SEP 2026 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1824,7 +1824,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 153.
 [4] [5] [6] [7]
-<images/metricperspective.pdf, id=654, 289.08pt x 144.54pt>
+<images/metricperspective.pdf, id=656, 289.08pt x 144.54pt>
 File: images/metricperspective.pdf Graphic file (type pdf)
 <use images/metricperspective.pdf>
 Package pdftex.def Info: images/metricperspective.pdf  used on input line 277.
@@ -1854,7 +1854,7 @@ st be dropped
 
 [19{C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
 ] [20] [21] [22] [23]) [24] (content/meeting3.tex
-<images/frames_in_motion.pdf, id=803, 289.08pt x 93.951pt>
+<images/frames_in_motion.pdf, id=805, 289.08pt x 93.951pt>
 File: images/frames_in_motion.pdf Graphic file (type pdf)
 <use images/frames_in_motion.pdf>
 Package pdftex.def Info: images/frames_in_motion.pdf  used on input line 27.
@@ -1888,7 +1888,7 @@ e dis-tin-guishes dif-fer-ent pos-si-ble kine-matic struc-
  []
 
 [39]
-<images/cones_types_of_relativity.pdf, id=964, 281.85298pt x 114.18468pt>
+<images/cones_types_of_relativity.pdf, id=966, 281.85298pt x 114.18468pt>
 File: images/cones_types_of_relativity.pdf Graphic file (type pdf)
 <use images/cones_types_of_relativity.pdf>
 Package pdftex.def Info: images/cones_types_of_relativity.pdf  used on input li
@@ -1898,14 +1898,14 @@ ne 737.
 .tex [44
 
 ] [45]
-<images/prerelativityspacetime.pdf, id=1022, 216.81pt x 216.81pt>
+<images/prerelativityspacetime.pdf, id=1024, 216.81pt x 216.81pt>
 File: images/prerelativityspacetime.pdf Graphic file (type pdf)
 <use images/prerelativityspacetime.pdf>
 Package pdftex.def Info: images/prerelativityspacetime.pdf  used on input line 
 82.
 (pdftex.def)             Requested size: 216.81938pt x 216.81938pt.
 [46 <./images/prerelativityspacetime.pdf>] [47] [48]
-<images/manifold_ex1.pdf, id=1066, 216.81pt x 216.81pt>
+<images/manifold_ex1.pdf, id=1068, 216.81pt x 216.81pt>
 File: images/manifold_ex1.pdf Graphic file (type pdf)
 <use images/manifold_ex1.pdf>
 Package pdftex.def Info: images/manifold_ex1.pdf  used on input line 173.
@@ -1914,13 +1914,13 @@ Package pdftex.def Info: images/manifold_ex1.pdf  used on input line 173.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [49] [50 <./images/manifold_ex1.pdf>] [51] [52] [53]
-<images/preimage.pdf, id=1116, 216.81pt x 72.27pt>
+<images/preimage.pdf, id=1118, 216.81pt x 72.27pt>
 File: images/preimage.pdf Graphic file (type pdf)
 <use images/preimage.pdf>
 Package pdftex.def Info: images/preimage.pdf  used on input line 304.
 (pdftex.def)             Requested size: 216.81938pt x 72.2731pt.
 [54 <./images/preimage.pdf>] [55]
-<images/topologyjoke.png, id=1147, 963.6pt x 542.025pt>
+<images/topologyjoke.png, id=1149, 963.6pt x 542.025pt>
 File: images/topologyjoke.png Graphic file (type png)
 <use images/topologyjoke.png>
 Package pdftex.def Info: images/topologyjoke.png  used on input line 386.
@@ -1929,7 +1929,7 @@ Package pdftex.def Info: images/topologyjoke.png  used on input line 386.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [56]
-<images/charts.pdf, id=1156, 289.08pt x 216.81pt>
+<images/charts.pdf, id=1158, 289.08pt x 216.81pt>
 File: images/charts.pdf Graphic file (type pdf)
 <use images/charts.pdf>
 Package pdftex.def Info: images/charts.pdf  used on input line 410.
@@ -1938,7 +1938,7 @@ Package pdftex.def Info: images/charts.pdf  used on input line 410.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [57 <./images/topologyjoke.png>] [58 <./images/charts.pdf>]
-<images/differential_manifolds.pdf, id=1189, 289.08pt x 216.81pt>
+<images/differential_manifolds.pdf, id=1191, 289.08pt x 216.81pt>
 File: images/differential_manifolds.pdf Graphic file (type pdf)
 <use images/differential_manifolds.pdf>
 Package pdftex.def Info: images/differential_manifolds.pdf  used on input line 
@@ -1948,20 +1948,20 @@ Package pdftex.def Info: images/differential_manifolds.pdf  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [59] [60 <./images/differential_manifolds.pdf>] [61] [62]
-<images/sterographicprojection.pdf, id=1249, 289.08pt x 202.356pt>
+<images/sterographicprojection.pdf, id=1251, 289.08pt x 202.356pt>
 File: images/sterographicprojection.pdf Graphic file (type pdf)
 <use images/sterographicprojection.pdf>
 Package pdftex.def Info: images/sterographicprojection.pdf  used on input line 
 571.
 (pdftex.def)             Requested size: 289.09251pt x 202.36784pt.
 [63 <./images/sterographicprojection.pdf>]) [64] (content/meeting5.tex [65]
-<images/manifold_example.pdf, id=1275, 289.08pt x 216.81pt>
+<images/manifold_example.pdf, id=1277, 289.08pt x 216.81pt>
 File: images/manifold_example.pdf Graphic file (type pdf)
 <use images/manifold_example.pdf>
 Package pdftex.def Info: images/manifold_example.pdf  used on input line 94.
 (pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
 [66 <./images/manifold_example.pdf>] [67] [68]
-<images/manifoldtoscalar.pdf, id=1320, 289.08pt x 144.54pt>
+<images/manifoldtoscalar.pdf, id=1322, 289.08pt x 144.54pt>
 File: images/manifoldtoscalar.pdf Graphic file (type pdf)
 <use images/manifoldtoscalar.pdf>
 Package pdftex.def Info: images/manifoldtoscalar.pdf  used on input line 221.
@@ -1973,149 +1973,81 @@ only af-ter choos-
  []
 
 [69 <./images/manifoldtoscalar.pdf>] [70]
-<images/R3vectors.pdf, id=1359, 289.08pt x 144.54pt>
+<images/R3vectors.pdf, id=1361, 289.08pt x 144.54pt>
 File: images/R3vectors.pdf Graphic file (type pdf)
 <use images/R3vectors.pdf>
 Package pdftex.def Info: images/R3vectors.pdf  used on input line 321.
 (pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
 [71 <./images/R3vectors.pdf>] [72]
-<images/vectordef.pdf, id=1380, 289.08pt x 180.675pt>
+<images/vectordef.pdf, id=1382, 289.08pt x 180.675pt>
 File: images/vectordef.pdf Graphic file (type pdf)
 <use images/vectordef.pdf>
 Package pdftex.def Info: images/vectordef.pdf  used on input line 444.
 (pdftex.def)             Requested size: 289.09251pt x 180.67729pt.
 [73 <./images/vectordef.pdf>] [74] [75] [76]
-Overfull \hbox (0.30519pt too wide) in paragraph at lines 717--719
+Overfull \hbox (0.30519pt too wide) in paragraph at lines 719--721
 []\OT1/lmr/m/n/10 Since the two tan-gent vec-tors have the same ac-tion on ev-e
 ry smooth
  []
 
 [77] [78]) [79] (content/meeting6.tex [80]
-
-LaTeX Warning: File `psimapping.pdf' not found on input line 66.
-
-
-! Package pdftex.def Error: File `psimapping.pdf' not found: using draft settin
-g.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 ...ics[width=3in, height=2in]{psimapping.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[81] [82] [83]
-
-LaTeX Warning: File `twocharts.pdf' not found on input line 165.
-
-
-! Package pdftex.def Error: File `twocharts.pdf' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ...hics[width=4in,height=3in]{twocharts.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[84] [85]
+<images/psimapping.pdf, id=1461, 289.08pt x 144.54pt>
+File: images/psimapping.pdf Graphic file (type pdf)
+<use images/psimapping.pdf>
+Package pdftex.def Info: images/psimapping.pdf  used on input line 66.
+(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
+[81 <./images/psimapping.pdf>] [82] [83]
+<images/twocharts.pdf, id=1491, 289.08pt x 180.675pt>
+File: images/twocharts.pdf Graphic file (type pdf)
+<use images/twocharts.pdf>
+Package pdftex.def Info: images/twocharts.pdf  used on input line 165.
+(pdftex.def)             Requested size: 289.09251pt x 180.67729pt.
+[84 <./images/twocharts.pdf>] [85]
 Overfull \hbox (2.4105pt too wide) in paragraph at lines 249--250
 []\OT1/lmr/m/n/10 We can re-ar-range this be-cause this is just mul-ti-pli-ca-t
 ion, and $[][]$
  []
 
 [86] [87] [88] [89] [90] [91]
-
-LaTeX Warning: File `curve_in_a_manifold.pdf' not found on input line 512.
-
-
-! Package pdftex.def Error: File `curve_in_a_manifold.pdf' not found: using dra
-ft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.512 ...=4in,height=2in]{curve_in_a_manifold.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[92]
-
-LaTeX Warning: File `curves-chart.pdf' not found on input line 551.
-
-
-! Package pdftex.def Error: File `curves-chart.pdf' not found: using draft sett
-ing.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.551 ...s[width=4in,height=2in]{curves-chart.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/curve_in_a_manifold.pdf, id=1567, 289.08pt x 144.54pt>
+File: images/curve_in_a_manifold.pdf Graphic file (type pdf)
+<use images/curve_in_a_manifold.pdf>
+Package pdftex.def Info: images/curve_in_a_manifold.pdf  used on input line 512
+.
+(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
+[92 <./images/curve_in_a_manifold.pdf>]
+<images/curves-chart.pdf, id=1587, 289.08pt x 144.54pt>
+File: images/curves-chart.pdf Graphic file (type pdf)
+<use images/curves-chart.pdf>
+Package pdftex.def Info: images/curves-chart.pdf  used on input line 551.
+(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [93]
-
-LaTeX Warning: File `specialcurves.pdf' not found on input line 591.
-
-
-! Package pdftex.def Error: File `specialcurves.pdf' not found: using draft set
-ting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.591 ...[width=4in,height=2in]{specialcurves.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/specialcurves.pdf, id=1592, 289.08pt x 144.54pt>
+File: images/specialcurves.pdf Graphic file (type pdf)
+<use images/specialcurves.pdf>
+Package pdftex.def Info: images/specialcurves.pdf  used on input line 591.
+(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[94]
-
-LaTeX Warning: File `tangentvectors.pdf' not found on input line 612.
-
-
-! Package pdftex.def Error: File `tangentvectors.pdf' not found: using draft se
-tting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.612 ...dth=4in,height=2.5in]{tangentvectors.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[95]) [96] [97
-
-] [98
+[94 <./images/curves-chart.pdf>] [95 <./images/specialcurves.pdf>]
+<images/tangentvectors.pdf, id=1639, 289.08pt x 144.54pt>
+File: images/tangentvectors.pdf Graphic file (type pdf)
+<use images/tangentvectors.pdf>
+Package pdftex.def Info: images/tangentvectors.pdf  used on input line 627.
+(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
+[96 <./images/tangentvectors.pdf>]) [97] [98
 
 ] [99
 
 ] [100
 
 ] [101
+
+] [102
 
 ] (preamble/backmatter.tex
 
@@ -2128,26 +2060,26 @@ Underfull \hbox (badness 3323) in paragraph at lines 4--9
 ift\OT1/lmr/m/n/10 , 11:972--975, 1910.
  []
 
-) [102] [103] [104] [105]
-<images/sphere.pdf, id=1589, 216.81pt x 216.81pt>
+) [103] [104] [105] [106]
+<images/sphere.pdf, id=1703, 216.81pt x 216.81pt>
 File: images/sphere.pdf Graphic file (type pdf)
 <use images/sphere.pdf>
 Package pdftex.def Info: images/sphere.pdf  used on input line 110.
 (pdftex.def)             Requested size: 289.07999pt x 289.11456pt.
-[106 <./images/sphere.pdf>]) [107] (C:\Users\verci\Documents\code\Class Notes -
+[107 <./images/sphere.pdf>]) [108] (C:\Users\verci\Documents\code\Class Notes -
  V\Physics 225\build\p225.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `p225.out' has not changed.
-(rerunfilecheck)             Checksum: FE73023B18BBCDB0D7C7D3BC966D6DBA;13745.
+(rerunfilecheck)             Checksum: 16396826B5DB5FC637F3590787717670;13801.
  ) 
 Here is how much of TeX's memory you used:
- 69086 strings out of 474542
- 1736897 string characters out of 5744446
- 2489980 words of memory out of 5000000
- 89873 multiletter control sequences out of 15000+600000
+ 68947 strings out of 474542
+ 1733439 string characters out of 5744446
+ 2490315 words of memory out of 5000000
+ 89733 multiletter control sequences out of 15000+600000
  680374 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,17n,110p,788b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2207,9 +2139,9 @@ s/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7
 .pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs
 10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (119 pages, 5067069 bytes).
+ild\p225.pdf" (120 pages, 5168860 bytes).
 PDF statistics:
- 1873 PDF objects out of 2073 (max. 8388607)
- 463 named destinations out of 1000 (max. 500000)
- 861 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1987 PDF objects out of 2073 (max. 8388607)
+ 464 named destinations out of 1000 (max. 500000)
+ 891 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,480 @@
+\documentclass[12pt,a4paper]{article}
+\input{preset}
+\input{preamble}
+\usepackage{bbm}
+\begin{document}
+	\input{title}
+	% ===========================
+	% PROBLEM SET 8
+	% ===========================
+	\stepcounter{section}
+	\section*{
+		Problem 8.1
+	}
+	\begin{problem}
+		Particle $A$, at rest decays into particles $B$ and $C$:
+		\begin{equation}
+			\label{eq:decay}
+			A \to B+C
+		\end{equation}
+		What are the energies $E_B$ and $E_C$ of the outgoing particles $B$ and $C$ in 
+		terms of the various masses? What are the magnitudes of the outgoing 
+		momenta $\abs{p_B}$ and $\abs{p_C}$ (also in terms of the masses)? As a test to see if 
+		your answer is correct, $\abs{p_B}$
+		should go to zero when $m_A = m_B + m_C$, 
+		and becomes imaginary when $m_A < (m_B + m_C)$. Explain why these 
+		behaviors happen.
+	\end{problem}
+	\begin{solution_pset}
+		\nocite{flores2026}
+		In the rest frame of $A$, four-momentum conservation gives
+		\[
+			p^\mu_A = p^\mu_B + p_C^\mu
+		\]
+		with
+		\[
+			p^\mu_A = (m_A,\vb{0})
+		\]
+		in natural units $c=1$. Since the outgoing momenta must be equal and opposite,
+		\[
+			p_B = -p_C, \qquad \abs{p_B}=\abs{p_C}\equiv p
+		\]
+		The energies are therefore
+		\[
+			E_B = \sqrt{p^2 + m_B^2},\qquad E_C = \sqrt{p^2 + m_C^2}
+		\]
+		and energy conservation requires
+		\[
+			E_B + E_C = m_A
+		\]
+		Solving for this gives
+		\[
+			\boxed{
+				E_B = \frac{m_A^2 + m_B^2 - m^2_C}{2m_A} 
+			}
+		\]
+		and
+		\[
+			\boxed{
+				E_C = \frac{m_A^2 + m_C^2 -m_B^2}{2m_A} 
+			}
+		\]
+		The common magnitude of the outgoing momentum is
+		\[
+			p = \sqrt{E_B^2 - m_B^2}
+		\]
+		Substituting the expression for $E_B$, we have
+		\[
+			p = \frac{1}{2m_A}\sqrt{
+				\pqty{
+					m_A^2 - (m_B + m_C)^2
+				}
+				\pqty{
+					m_A^2 - (m_B - m_C)^2
+				}
+			} 
+		\]
+		Thus
+		\[
+			\boxed{
+				\abs{p_B} = \abs{p_C} = 
+				\frac{
+					\sqrt{
+						\pqty{
+							m_A^2 - (m_B + m_C)^2
+						}
+						\pqty{
+							m_A^2 - (m_B - m_C)^2
+						}
+					}
+				}{
+					2M_A
+				} 
+			}
+		\]
+		The threshold behaviour, i.e., if $m_A = m_B + m_C$, then
+		\[
+			m_A^2 - (m_B^2 + m_C^2)^2 = 0
+		\]
+		so
+		\[
+			p = 0
+		\]
+		Physically, this is the threshold for decay.
+		The entire rest energy of $A$ is just enough
+		to provide the rest masses of $B$ and $C$. There is 
+		no energy left for kinetic energy. 
+
+		If $m_A < m_B + m_C$, then
+		\[
+			m_A^2 - (m_B^2 + m_C)^2 < 0
+		\]
+		while the other factor remains positive for positive masses
+		in the relevant region. Consequently
+		\[
+			p^2 < 0
+		\]
+		and $p$ becomes imaginariy. This means there is no physical kinematic solution.
+		A does not have enough invariant mass to produce $B+C$, therefore the decay 
+		is forbidden.
+	\end{solution_pset}
+	\newpage
+
+	% ===========================
+	% PROBLEM SET 9
+	% ===========================
+	\stepcounter{section}
+	\section*{
+		Problem 9.1
+	}
+	\begin{problem}
+		Construct another explicit representation of the $\alpha$ and $\beta$ matrices
+		different from the Dirac-Pauli representation and show that they satisfy the anti-commutation
+		relations 
+		\begin{align}
+			\alpha_x^2 =
+			\alpha_y^2 =
+			\alpha_z^2 =
+			\beta^2 
+			&= \mathbbm{1}\\
+			\alpha_j \beta + \beta \alpha_j 
+			&= 0\\
+			\alpha_j \alpha_k 
+			+
+			\alpha_k \alpha_j 
+			&= 0\qquad (j\neq k) 
+		\end{align}
+		How are your new representations related to the Dirac-Pauli
+		representation? Does the specific form of the Dirac-Pauli representation
+		offer any advantages (if any) to the one you've constructed and versus
+		any other representations in general?
+	\end{problem}
+	\begin{solution_pset}
+		The relations require the matrices to have even dimension. Since
+		\[
+			\beta^2=\mathbbm{1},
+		\]
+		the eigenvalues of $\beta$ can only be $+1$ and $-1$. Let $V_+$ and $V_-$ denote the corresponding eigenspaces. If $\psi_+\in V_+$, then
+		\[
+			\beta\psi_+=\psi_+.
+		\]
+		Using
+		\[
+			\alpha_j\beta+\beta\alpha_j=0,
+		\]
+		we obtain
+		\[
+			\beta(\alpha_j\psi_+)
+			=-\alpha_j\beta\psi_+
+			=-\alpha_j\psi_+.
+		\]
+		Thus, $\alpha_j$ maps $V_+$ into $V_-$. Similarly, it maps $V_-$ into $V_+$. Since
+		\[
+			\alpha_j^2=\mathbbm{1},
+		\]
+		each $\alpha_j$ is invertible, so these mappings must be one-to-one in both directions. Therefore,
+		\[
+			\dim V_+=\dim V_-.
+		\]
+		If each eigenspace has dimension $n$, then the total dimension is
+		\[
+			N=\dim V_++\dim V_-=2n.
+		\]
+		Hence the matrices can only have even dimension:
+		\[
+			N=2,4,6,\ldots.
+		\]
+		In particular, a $3\times3$ representation is impossible.
+
+		Although $2\times2$ is allowed by this argument, it is not large enough to represent all four matrices $\alpha_x,\alpha_y,\alpha_z,\beta$. The three Pauli matrices already provide three mutually anticommuting $2\times2$ matrices,
+		\[
+			\sigma_x=
+			\begin{pmatrix}
+				0&1\\
+				1&0
+			\end{pmatrix},
+			\qquad
+			\sigma_y=
+			\begin{pmatrix}
+				0&-i\\
+				i&0
+			\end{pmatrix},
+			\qquad
+			\sigma_z=
+			\begin{pmatrix}
+				1&0\\
+				0&-1
+			\end{pmatrix},
+		\]
+		which satisfy
+		\[
+			\sigma_j^2=\mathbbm{1},
+			\qquad
+			\sigma_j\sigma_k+\sigma_k\sigma_j=0
+			\qquad (j\neq k).
+		\]
+		However, there is no fourth nonzero $2\times2$ matrix that anticommutes with all three Pauli matrices while also satisfying $M^2=\mathbbm{1}$. Thus $2\times2$ is insufficient for the full set of four matrices. The next possible dimension is therefore $4\times4$, which is the smallest nontrivial representation of the Dirac algebra.
+
+		One representation different from the Dirac--Pauli representation is the Weyl, or chiral, representation\cite{Weyl1929}. Define
+		\[
+			\alpha_j=
+			\begin{pmatrix}
+				\sigma_j&0\\
+				0&-\sigma_j
+			\end{pmatrix},
+			\qquad
+			\beta=
+			\begin{pmatrix}
+				0&\mathbbm{1}\\
+				\mathbbm{1}&0
+			\end{pmatrix}.
+		\]
+		Explicitly,
+		\[
+			\alpha_x=
+			\begin{pmatrix}
+				0&1&0&0\\
+				1&0&0&0\\
+				0&0&0&-1\\
+				0&0&-1&0
+			\end{pmatrix},
+			\qquad
+			\alpha_y=
+			\begin{pmatrix}
+				0&-i&0&0\\
+				i&0&0&0\\
+				0&0&0&i\\
+				0&0&-i&0
+			\end{pmatrix},
+		\]
+		\[
+			\alpha_z=
+			\begin{pmatrix}
+				1&0&0&0\\
+				0&-1&0&0\\
+				0&0&-1&0\\
+				0&0&0&1
+			\end{pmatrix},
+			\qquad
+			\beta=
+			\begin{pmatrix}
+				0&0&1&0\\
+				0&0&0&1\\
+				1&0&0&0\\
+				0&1&0&0
+			\end{pmatrix}.
+		\]
+
+		Since the Pauli matrices satisfy $\sigma_j^2=\mathbbm{1}$,
+		\[
+			\alpha_j^2
+			=
+			\begin{pmatrix}
+				\sigma_j^2&0\\
+				0&\sigma_j^2
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				\mathbbm{1}&0\\
+				0&\mathbbm{1}
+			\end{pmatrix}
+			=\mathbbm{1}_4.
+		\]
+		Furthermore,
+		\[
+			\beta^2
+			=
+			\begin{pmatrix}
+				0&\mathbbm{1}\\
+				\mathbbm{1}&0
+			\end{pmatrix}
+			\begin{pmatrix}
+				0&\mathbbm{1}\\
+				\mathbbm{1}&0
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				\mathbbm{1}&0\\
+				0&\mathbbm{1}
+			\end{pmatrix}
+			=\mathbbm{1}_4.
+		\]
+		Therefore,
+		\[
+			\alpha_x^2=\alpha_y^2=\alpha_z^2=\beta^2=\mathbbm{1}_4.
+		\]
+
+		For the anticommutation relation between $\alpha_j$ and $\beta$,
+		\[
+			\alpha_j\beta
+			=
+			\begin{pmatrix}
+				\sigma_j&0\\
+				0&-\sigma_j
+			\end{pmatrix}
+			\begin{pmatrix}
+				0&\mathbbm{1}\\
+				\mathbbm{1}&0
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				0&\sigma_j\\
+				-\sigma_j&0
+			\end{pmatrix},
+		\]
+		while
+		\[
+			\beta\alpha_j
+			=
+			\begin{pmatrix}
+				0&\mathbbm{1}\\
+				\mathbbm{1}&0
+			\end{pmatrix}
+			\begin{pmatrix}
+				\sigma_j&0\\
+				0&-\sigma_j
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				0&-\sigma_j\\
+				\sigma_j&0
+			\end{pmatrix}.
+		\]
+		Hence,
+		\[
+			\alpha_j\beta+\beta\alpha_j
+			=
+			\begin{pmatrix}
+				0&0\\
+				0&0
+			\end{pmatrix}
+			=0.
+		\]
+
+		For $j\neq k$,
+		\[
+			\alpha_j\alpha_k
+			=
+			\begin{pmatrix}
+				\sigma_j&0\\
+				0&-\sigma_j
+			\end{pmatrix}
+			\begin{pmatrix}
+				\sigma_k&0\\
+				0&-\sigma_k
+			\end{pmatrix}
+			=
+			\begin{pmatrix}
+				\sigma_j\sigma_k&0\\
+				0&\sigma_j\sigma_k
+			\end{pmatrix},
+		\]
+		and
+		\[
+			\alpha_k\alpha_j
+			=
+			\begin{pmatrix}
+				\sigma_k\sigma_j&0\\
+				0&\sigma_k\sigma_j
+			\end{pmatrix}.
+		\]
+		Since
+		\[
+			\sigma_j\sigma_k+\sigma_k\sigma_j=0
+			\qquad (j\neq k),
+		\]
+		we have
+		\[
+			\alpha_j\alpha_k+\alpha_k\alpha_j
+			=
+			\begin{pmatrix}
+				\sigma_j\sigma_k+\sigma_k\sigma_j&0\\
+				0&\sigma_j\sigma_k+\sigma_k\sigma_j
+			\end{pmatrix}
+			=0.
+		\]
+		Thus the Weyl representation satisfies all of the required relations.
+
+		The Dirac--Pauli representation is
+		\[
+			\alpha_j^{(D)}
+			=
+			\begin{pmatrix}
+				0&\sigma_j\\
+				\sigma_j&0
+			\end{pmatrix},
+			\qquad
+			\beta^{(D)}
+			=
+			\begin{pmatrix}
+				\mathbbm{1}&0\\
+				0&-\mathbbm{1}
+			\end{pmatrix}.
+		\]
+		The Weyl and Dirac--Pauli representations are related by a unitary change of basis. In particular, with
+		\[
+			U=
+			\frac{1}{\sqrt{2}}
+			\begin{pmatrix}
+				\mathbbm{1}&\mathbbm{1}\\
+				-\mathbbm{1}&\mathbbm{1}
+			\end{pmatrix},
+		\]
+		the Weyl matrices are obtained from the Dirac--Pauli matrices through
+		\[
+			\alpha_j^{(W)}
+			=
+			U\alpha_j^{(D)}U^\dagger,
+			\qquad
+			\beta^{(W)}
+			=
+			U\beta^{(D)}U^\dagger.
+		\]
+		Thus, the two representations contain the same physical information and differ only in the choice of basis used to represent the Dirac spinors.
+
+		The particular form of the Dirac--Pauli representation can nevertheless be advantageous for certain calculations. In the Dirac--Pauli representation,
+		\[
+			\beta^{(D)}
+			=
+			\begin{pmatrix}
+				\mathbbm{1}&0\\
+				0&-\mathbbm{1}
+			\end{pmatrix},
+		\]
+		so the upper and lower two-component parts of a Dirac spinor are separated naturally. This makes the nonrelativistic limit particularly convenient, since the upper components of a positive-energy solution are the dominant components.
+
+		In contrast, the Weyl representation has
+		\[
+			\alpha_j^{(W)}
+			=
+			\begin{pmatrix}
+				\sigma_j&0\\
+				0&-\sigma_j
+			\end{pmatrix},
+		\]
+		which makes the two chiral components explicit. It is consequently particularly convenient for calculations involving chirality and massless fermions.
+
+		Therefore, no representation is physically preferred over the others. The different representations are related by changes of basis and give the same physical predictions. Their advantages are instead computational: the Dirac--Pauli representation is convenient for the nonrelativistic limit, while the Weyl representation is convenient for chirality and massless particles.
+	\end{solution_pset}
+	\newpage
+
+	% ===========================
+	\stepcounter{section}
+	\bibliographystyle{unsrturl} 
+	\bibliography{references} 
+	\stepcounter{section}
+	% ===========================
+	\section*{Appendices}
+		\label{appendix}
+	
+		\subsection*{Code} 
+		No code was used for this problem set
+	\vfill
+	\begin{center}
+		\textit{Thank you Mr. Kong}\\
+		\vspace{1cm}
+		{\large
+		\textsc{Physica Vincit Omnia}
+		}
+	\end{center}
+\end{document}

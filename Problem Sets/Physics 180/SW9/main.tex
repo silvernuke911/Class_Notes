@@ -1,0 +1,46 @@
+\documentclass[8pt, a6paper]{article}
+\usepackage[a6paper, margin=1cm]{geometry}
+\input{preset}
+\thispagestyle{empty}
+\begin{document}
+{
+	\noindent Vercil Juan \hfill September 10, 2026
+
+	\noindent \textsc{Physics 180}\hfill \textbf{Seatwork 9}
+	\vspace{1em}
+	\hrule\vspace{5pt}
+		Show that 
+		\begin{equation}
+			\label{eq:gamma}
+			(\gamma^2)^2 = -I
+		\end{equation}
+		without explicitly choosing a specific representation. Recall
+		$\gamma^0\equiv\beta, \gamma^1\equiv\beta\alpha_x, \gamma^2\equiv \beta \alpha_y$, and $\gamma^3 \equiv \beta \alpha_z$, and that
+		\begin{align*}
+		    \alpha_x^2 = 
+		    \alpha_y^2 = 
+		    \alpha_z^2 = 
+			\beta^2 &= I\\
+			\alpha_j \beta + \beta \alpha_j &= 0\\
+			\alpha_i \alpha_k + \alpha_k \alpha_j &= 0\quad(j\neq k)
+		\end{align*}
+		\vspace{-5pt}
+	\hrule
+\begin{proof}
+	From the definition $\gamma^2=\beta\alpha_y$, we have
+	\begin{align*}
+		(\gamma^2)^2
+		&=(\beta\alpha_y)(\beta\alpha_y)\\
+		&=\beta\alpha_y\beta\alpha_y.
+	\end{align*}
+	Since $\alpha_y\beta+\beta\alpha_y=0$, we have
+	$\alpha_y\beta=-\beta\alpha_y$. Thus,
+	\begin{align*}
+		(\gamma^2)^2
+		&=-\beta^2\alpha_y^2\\
+		&=-I I\\
+		&=-I.
+	\end{align*}
+\end{proof}
+}
+\end{document}

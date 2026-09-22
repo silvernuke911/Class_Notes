@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{flores2026}
+M.~Flores.
+\newblock {Lecture Slides \textit{Physics 180: Nuclear and Particle Physics}}.
+\newblock Digital lecture slides, 2026.
+\newblock Available from course website,
+  \href{https://uvle.upd.edu.ph/pluginfile.php/182451/mod_resource/content/1/Physics%20180%20Lecture%201%20-%20Orientation.pdf}{UVL\'e}.
+
+\bibitem{Weyl1929}
+Hermann Weyl.
+\newblock Elektron und gravitation. i.
+\newblock {\em Zeitschrift f{\"u}r Physik}, 56:330--352, 1929.
+\newblock \href {https://doi.org/10.1007/BF01339504}
+  {\path{doi:10.1007/BF01339504}}.
+
+\end{thebibliography}

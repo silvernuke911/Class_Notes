@@ -562,7 +562,7 @@
 			\psi\circ C: t \mapsto x^\alpha(t)
 		\]
 
-		So for example, $[x(t),y(t),z(t)]$, which is how we normally describe curves in physics.
+		This is simply the usual sense of parameterization of a curve. For example, $[x(t),y(t),z(t)]$, which is how we normally describe curves in physics.
 		You can provide a coordinate representation of curves, but the curve itself actually did not require
 		the coordinates. So what we do is coordinatize a curve.
 
@@ -649,7 +649,7 @@
 		\]
 
 		So it's
-		simply a normal function, a perfectly sensible real function, which is a derivative
+		simply a normal function, a perfectly sensible real function, which hass a derivative
 		with respect to a parameter.
 
 		Notice that the definition of a tangent vector requires a curve. If you have the same curve $C$,
@@ -664,5 +664,39 @@
 		it must satisfy linearity and the Leibniz property, but by the nature of the function, since it's a derivative operator, it obviously
 		satisfies both. This definition satisfies the properties of being a vector, or being a derivation. We will recover the notion
 		of an arrow from this; this is where the traditional arrow definition of a vector comes from.
-
 		Here, we only define it. We shall discuss it in detail in the next meetings.
+		\begin{proof}
+			For $a,b\in\mathbb{R}$ and $f,g\in C^\infty(M)$,
+			\begin{align}
+				\tau_{C(t_0)}(af+bg)
+				&=
+				\eval{\dv{}{t}\bigl((af+bg)\circ C\bigr)}_{t_0} \notag\\
+				&=
+				a\eval{\dv{(f\circ C)}{t}}_{t_0}
+				+b\eval{\dv{(g\circ C)}{t}}_{t_0} \notag\\
+				&=
+				a\tau_{C(t_0)}(f)+b\tau_{C(t_0)}(g),
+			\end{align}
+			so it is linear.
+
+			For $f,g\in C^\infty(M)$,
+			\begin{align}
+				\tau_{C(t_0)}(fg)
+				&=
+				\eval{\dv{((fg)\circ C)}{t}}_{t_0} \notag\\
+				&=
+				\eval{\dv{}{t}\bigl((f\circ C)(g\circ C)\bigr)}_{t_0} \notag\\
+				&=
+				\eval{\qty[
+					(g\circ C)
+					\dv{(f\circ C)}{t}
+					+
+					(f\circ C)\dv{(g\circ C)}{t}
+				]}_{t_0} \notag\\
+				&=
+				\tau_{C(t_0)}(f)g(C(t_0))
+				+
+				f(C(t_0))\tau_{C(t_0)}(g).
+			\end{align}
+			Thus $\tau_{C(t_0)}$ is a derivation at $C(t_0)$, and hence, a vector.
+		\end{proof}

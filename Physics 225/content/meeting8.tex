@@ -1,0 +1,1984 @@
+% =======================================
+% MEETING 8
+% ---------------------------------------
+% DATE   - September 16, 2026
+% FORMAT - F2F 
+% =======================================
+% TOPIC  - Dual Vectors
+% =======================================
+
+\subsection{Dual Vectors}
+
+	From the last lecture, we learned that a vector field is a selection
+	of a vector for each tangent space $T_p \mcal M$, i.e., we select one
+	vector $v$ for each vector space, which is present for each point in the 
+	manifold. We call the union of these tangent spaces for all of $p$ to be
+	a tangent bundle $T\mcal M$.
+	\[
+		T\mcal M = \bigcup_p T_p \mcal M
+	\]
+	and a vector field $v$ is a section of that tangent bundle.
+	\[
+		v \in T\mcal M
+	\]
+	Now, recall what the action of a vector at a point is; It is a derivation that can
+	act on functions, which returns back a real number $v_p: \mcal F \to \R$. i.e., $v_p[f]\in\R$. It 
+	is a map which gets fed a function, or rather a set of functions for each 
+	coordinate, and it returns the rate of change for that particular direction, which is 
+	\[
+		v_p:\mcal{F} \to \R
+	\]
+
+	Similarly, a vector field is another operation or derivation, which gets fed a set
+	of functions, and returns another set of functions. Instead of getting a set of numbers, we 
+	receive another set of functions.
+	\[
+		v:\mcal{F}\to\mcal{F}
+	\]
+
+	Recall a scalar field. A scalar field is a simply a smooth function from the manifold to the real numbers.
+	\[
+		f:\mcal M \to \R,\qquad f\in\mcal{F}
+	\]
+	At each point $p\in\mcal M$, a scalar field assigns a number:
+	\[
+		f(p)\in\R
+	\]
+
+	A tangent vector $v_p\in T_p\mcal M$ acts on a scalar field by taking its directional
+	derivative at $p$, i.e.,
+	\[
+		v_p[f]\in\R
+	\]
+
+	A vector field $v$ then assigns a tangent vector $v_p$ to every point $p$ on a manifold, so its action
+	on a scalar field produces another scalar field, $v:\mcal{F}\to\mcal{F}$, that is:
+	\[
+		(v[f])(p) = v_p[f]
+	\]
+
+	As an example consider the real line $\R$. This is a manifold. For each point $p\in\R$, there 
+	exists a tangent space $T_p\R$. Vectors exist on this tangent space. However, it is usually 
+	conventional to represent vectors themselves as existing on the real line (refer to Fig. \ref{fig:vectorfieldRtrad}), while on reality,
+	they exist on the tangent space. This is coincidental, because $\R$ and $T_p\R$ are isomorphic, i.e., $\R\simeq T_p\R$. However,
+	if we are to be general, this is confusing, and we lose sight of the distinction between the tangent space
+	and the manifold. We can instead represent $v$ as a function on the real line, and represent a vector as the values of these functions.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=4in, height=2in]{images/vectorsasfunctions.pdf}
+		\caption{defaultcaption} % to be filled
+		\label{fig:defaultlabel}
+	\end{figure}
+
+	In this illustration, then, we can imagine that $\cup_p T_p\R$ is a plane. 
+	Most of this, we discussed last meeting. 
+	Recall that a tangent vector acts only on a point. It get's fed a function, and evaluates
+	the \textit{rate of change} of that function at that point only, and returns a number. 
+	A vector field \textit{acts} on all the points defined on the manifold, and assigns a vector there. 
+
+	We can write it like so: For a chart $\psi$ with coordinate functions
+	$\{x^\nu\}$, we can represent a vector field as
+	\begin{equation}
+		\label{eq:vecfield}
+		v = v^\mu(x^\nu)\pdv{}{x^\mu}.
+	\end{equation}
+	We write $v^\mu(x^\nu)$ because the components of the vector field depend
+	on the choice of coordinates. Each $v^\mu$ is itself a scalar field.
+
+	Recall that a coordinate function takes a point $p$ and assigns it a
+	real number. Thus, $x^\sigma$ takes the point $p$ and returns its
+	$\sigma$-th coordinate:
+	\[
+		x^\sigma:p\mapsto x^\sigma(p).
+	\]
+
+	A vector field can act on these coordinate functions. In particular,
+	\begin{align*}
+		v[x^\sigma]
+		&= v^\mu(x^\nu)\pdv{x^\sigma}{x^\mu} \\
+		&= v^\mu(x^\nu)\tensor{\delta}{^\sigma_\mu} \\
+		&= v^\sigma(x^\nu).
+	\end{align*}
+	Therefore, when a vector field acts on the $\sigma$-th coordinate
+	function, it returns the $\sigma$-th component of the vector field:
+	\[
+		v[x^\sigma]=v^\sigma.
+	\]
+
+	For example, in three dimensions,
+	\[
+		v =
+		v^1(x^1,x^2,x^3)\pdv{}{x^1}
+		+
+		v^2(x^1,x^2,x^3)\pdv{}{x^2}
+		+
+		v^3(x^1,x^2,x^3)\pdv{}{x^3}.
+	\]
+	Each $v^\mu$ is a scalar field in its own right. Acting on the
+	coordinate functions extracts these scalar fields:
+	\[
+		v[x^1]=v^1,\qquad
+		v[x^2]=v^2,\qquad
+		v[x^3]=v^3.
+	\]
+	Each $v^\mu$ is a scalar field in of itself. 
+
+	\subsubsection{Dual Space}
+
+		Here, we further discuss what we introduced in the previous chapters. The dual space, 
+		also known as the covector space, or covariant space, or cotangent space. It has a lot of names, we will refer to covectors, duals, covariant vectors interchangably.
+
+		Recall that a vector is a derivation, which acts on functions and returns real numbers.
+		Duals, then, are algebraic structures which act on a vector and returns a real number.
+		From this, we can define the dual space as the following:
+
+		\begin{definition}{Dual Space}
+			For a vector space $V$ with an element $v\in V$, a dual space
+			$V^*$ is a space of linear functionals on $V$, such that a \textit{dual} $\omega\in V^*$
+			acts on $v$ with the following property:
+			\[
+				\omega:V \to \R,\qquad v\mapsto \omega(v)
+			\]
+		\end{definition}
+		We can then distinguish a tangent vector, whose input is a scalar field or function
+		\[
+			v_p:\mcal F \to \R
+		\]
+		whereas, for a  dual vector, the input is a tangent vector.
+		\[
+			\omega_p : \TpM \to \R
+		\]
+
+		In Physics, particularly in Quantum Theory, we have the \textit{bra} operator, $\bra{\cdot}$. This 
+		is a covector. In particular, for functions $\alpha$ and $\beta$, we have
+		\[
+			\braket{\alpha}{\beta}\in\mathbb{C}
+		\]
+		This already has the property of linearity we know
+		\[
+			\bra{\alpha}\pqty{
+				A\ket{\xi} + B\ket{\sigma}
+			} = 
+			A\braket{\alpha}{\xi} + B \braket{\alpha}{\sigma}
+		\]
+		Before QM, this is also already encountered in linear Algebra. If you consider
+		a column matrix to be a vector, then a row matrix is a covector. They are homeomorphic
+		to vectors and covectors in differential geometry.
+
+		If $\displaystyle \bmqty{a\\b\\c}\in V$, then $\displaystyle \bmqty{
+		d & e & f}\in V^*$. Notice, then, that when you take their product, the result
+		is a real number:
+		\[
+			\bmqty{
+				d&e&f
+			} 
+			\bmqty{
+				a\\b\\c
+			} 
+			=
+			ad + be + cf \in \R
+		\]
+		The only restriction we find ourselves in GR is that we are limited
+		to the study of real numbers for this course, for majority of our encounters
+		with physical backing all take place in the real axis. There exists a branch of mathematics 
+		called complex differential geometry, it is an interesting field, but for most of our purposes, we shall
+		not need it.
+
+		The set of all dual vectors happen to be a vector space as well. To define 
+		a dual vector you need to provide specific instructions on how it acts
+		on all vectors. Once you have done that, you have defined a covector completely.
+
+		\paragraph{Notation.} From here on out, we shall sporadically denote a vector to have an overline, $\overline{v}$, and 
+		a dual to have an underline, $\underline{\omega}$. This is purely for teaching purposes, as it allows us to 
+		identify which is which immediately. However, after some time, when you are already 
+		able to identify duals and vectors within proper context, we will eventually rid ourselves of this pedagogical tool.
+
+	\subsubsection{Properties and Operations}
+
+		For the dual space to be a vector space, it must satisfy the 
+		conditions we set to define a vector space, and that is linearity,
+		multiplicative scaling, and the existence of a zero vector.
+
+		As an operator, we require the following properties for a dual vector.
+		\begin{enumerate}
+			\item Linearity
+
+				For $\underline{\omega}_1,\underline{\omega}_2\in V^*$ and $\overline{x}\in V$,
+				\[
+					\pqty{
+						\underline{\omega}_1
+						+
+						\underline{\omega}_2
+					}
+					[\overline{x}]
+					:=
+					\underline{\omega}_1[\overline{x}]
+					+
+					\underline{\omega}_2[\overline{x}]
+				\]
+				
+			\item Scalar multiplication
+
+				For all $\alpha\in\R$, $\overline x \in V$ and $\underline{\omega}\in V^*$,
+				\[
+					\pqty{
+						\alpha
+						\underline{\omega}
+					}
+					[\overline{x}]
+					:=
+					\alpha\underline{\omega}[\overline{x}]
+				\]
+
+			\item Zero covector
+
+				There exists a unique covector $\underline{0}\in V^*$ such that, for all $\overline{x}\in V$,
+				\[
+					\underline{0}[\overline{x}] = 0
+				\]
+		\end{enumerate}
+
+		An operator on $v\in V$ must satisfy these conditions before they 
+		can be considered to belong in $V^*$.
+
+	\subsubsection{Dual Basis}
+
+		Recall that the dual space $V^*$ of a vector space $V$ is the space of all
+		linear maps from $V$ to $\R$:
+		\[
+			V^*
+			=
+			\left\{
+				\underline{\omega}:V\to\R
+				\;\middle|\;
+				\underline{\omega}\text{ is linear}
+			\right\}.
+		\]
+		Thus, a covector does not require a manifold to be defined. On a manifold,
+		the corresponding construction is applied to the tangent space at a point.
+		A covector is instead a map that defines an operation to vectors. It is an 
+		abstract dual vector space. However, a dual vector space needs a basis, and as such,
+		we define the following:
+
+		\begin{definition}{Dual basis}
+			Let $\{\overline{e}_\mu\}$ be a basis for $V$. We define the corresponding
+			dual basis $\{\underline{e}^\mu\}$ of $V^*$ that acts on the basis of $V$
+			such that
+			\begin{equation}
+				\label{eq:dual-basis-definition}
+				\underline{e}^\mu[\overline{e}_\nu]
+				=
+				\tensor{\delta}{^\mu_\nu}.
+			\end{equation}
+		\end{definition}
+
+		That is, the $\mu$-th covector returns $1$ when acting on the $\mu$-th
+		basis vector and $0$ when acting on every other basis vector.
+
+		Since $\{\overline{e}_\mu\}$ is a basis for $V$, an arbitrary vector
+		$\overline{v}\in V$ can be written as
+		\[
+			\overline{v}
+			=
+			v^\nu\overline{e}_\nu.
+		\]
+		\begin{proof}
+			Using the linearity of $\underline{e}^\mu$, its action on $\overline{v}$
+			is therefore
+			\begin{align}
+				\underline{e}^\mu[\overline{v}]
+				&=
+				\underline{e}^\mu
+				\left[
+					v^\nu\overline{e}_\nu
+				\right]
+				\nonumber\\
+				&=
+				v^\nu
+				\underline{e}^\mu[\overline{e}_\nu]
+				\nonumber\\
+				&=
+				v^\nu
+				\tensor{\delta}{^\mu_\nu}
+				\nonumber\\
+				&=
+				v^\mu.
+				\label{eq:dual-action}
+			\end{align}
+			Hence, the action of the $\mu$-th dual basis vector extracts the $\mu$-th
+			component of $\overline{v}$.
+		\end{proof}
+
+		We now show that $\{\underline{e}^\mu\}$ is a basis for $V^*$ by proving
+		linear independence and spanning.
+
+		\paragraph{Linear independence}
+
+		\begin{proof}
+			Suppose that a linear combination of the dual basis vectors vanishes:
+			\[
+				a_\mu\underline{e}^\mu
+				=
+				\underline{0},
+			\]
+			where $a_\mu\in\R$. Acting on an arbitrary basis vector
+			$\overline{e}_\nu$ gives
+			\begin{align}
+				0
+				&=
+				\underline{0}[\overline{e}_\nu]
+				\nonumber\\
+				&=
+				\left(
+					a_\mu\underline{e}^\mu
+				\right)
+				[\overline{e}_\nu]
+				\nonumber\\
+				&=
+				a_\mu
+				\underline{e}^\mu[\overline{e}_\nu]
+				\nonumber\\
+				&=
+				a_\mu
+				\tensor{\delta}{^\mu_\nu}
+				\nonumber\\
+				&=
+				a_\nu.
+			\end{align}
+			Since this holds for every $\nu$, we have
+			\[
+				a_\nu=0
+			\]
+			for every $\nu$. Therefore,
+			\[
+				\left\{
+					\underline{e}^\mu
+				\right\}
+			\]
+			is linearly independent.
+		\end{proof}
+
+		\paragraph{Spanning}
+
+		\begin{proof}
+			Let $\underline{\omega}\in V^*$ be an arbitrary covector. We want to
+			show that $\underline{\omega}$ can be written as a linear combination of
+			the dual basis vectors.
+
+			Suppose we write the components of a covector as $\omega_\mu$. Consider the arbitrary 
+			covector
+			\[
+				\underline{\omega}'
+				=
+				\omega_\mu\underline{e}^\mu.
+			\]
+			Acting on an arbitrary vector $\overline{v}=v^\nu\overline{e}_\nu$ gives
+			\begin{align}
+				\underline{\omega}'[\overline{v}]
+				&=
+				\left(
+					\omega_\mu\underline{e}^\mu
+				\right)
+				[\overline{v}]
+				\nonumber\\
+				&=
+				\omega_\mu
+				\underline{e}^\mu[\overline{v}]
+				\nonumber\\
+				&=
+				\omega_\mu v^\mu.
+			\end{align}
+			On the other hand, by the linearity of $\underline{\omega}$,\footnote{We shall prove this relation in a bit}
+			\begin{align}
+				\underline{\omega}[\overline{v}]
+				&=
+				\underline{\omega}
+				\left[
+					v^\mu\overline{e}_\mu
+				\right]
+				\nonumber\\
+				&=
+				v^\mu
+				\underline{\omega}[\overline{e}_\mu]
+				\nonumber\\
+				&=
+				v^\mu\omega_\mu.
+			\end{align}
+			Therefore,
+			\[
+				\underline{\omega}'[\overline{v}]
+				=
+				\underline{\omega}[\overline{v}]
+			\]
+			for every $\overline{v}\in V$. Hence,
+			\[
+				\underline{\omega}'
+				=
+				\underline{\omega},
+			\]
+			and consequently
+			\begin{equation}
+				\label{eq:covector-expansion}
+				\underline{\omega}
+				=
+				\omega_\mu\underline{e}^\mu,
+				\qquad
+				\omega_\mu
+				=
+				\underline{\omega}[\overline{e}_\mu].
+			\end{equation}
+			Thus, the dual basis spans $V^*$.
+		\end{proof}
+
+		Since $\{\underline{e}^\mu\}$ is both linearly independent and spanning,
+		it is indeed a basis for $V^*$. 
+
+		Note the following: We can extract the components of a covector by feeding it 
+		a basis vector. Consider
+		\begin{align*}
+			\underline{\omega}
+			[\overline{e}_\nu]
+			&=
+			\omega_\mu \underline{e}^\mu
+			[\overline{e}_\nu] \\
+			&= \omega_\mu \tensor{\delta}{^\mu_\nu}\\
+			&= \omega_\nu
+		\end{align*}
+		That is, feeding the $\nu$-th basis vector on a dual vector will get us the 
+		$\nu$-th component of the covector.
+
+		We can therefore write vectors and covectors as the following
+		\begin{align*}
+			\underline{\omega} = \omega_\mu \underline{e}^\mu &&
+			\overline{v} = v^\mu \overline{e}_\mu
+		\end{align*}
+		These are fundamentally different abstract geometric objects. They just happen to be isomorphic.
+		One acts on functions, the other acts on vectors. 
+
+	\subsubsection{Double-dual space}
+		Consider: Since $V^*$ is a vector space, and a dual vector space acts on a vector space, shouldn't there be a dual space for a dual vector space? 
+		There should be, and in fact this chain can be continued ad infinitum:
+		\[
+			V \to V^* \to V^{**} \to \cdots \to V^{**\cdots**}.
+		\]
+
+		However, there is a natural relationship between $V$ and its double dual $V^{**}$. For any $v\in V$, we can 
+		define an element of $V^{**}$ by
+		\[
+			\uuline{\Omega} [\underline \omega] := \underline\omega[\overline v],
+			\qquad \underline\omega\in V^*.
+		\]
+		Thus, there is a natural map
+		\[
+			V \to V^{**},
+			\qquad
+			\overline v \mapsto \uuline{\Omega}
+		\]
+		This map is always injective. If $V$ is finite-dimensional, 
+		it is also surjective, and hence
+		\[
+			V^{**}\cong V.
+		\]
+		Thus, for finite-dimensional vector spaces, taking the 
+		dual twice brings us back to a space naturally isomorphic 
+		to the original vector space.
+
+		That is, if $\uuline{\Omega}\in V^{**}$, then
+		\[
+			\uuline{\Omega}[\underline\omega]\in\mathbb R,
+			\qquad \underline\omega \in V^*.
+		\]
+		When $V$ is finite-dimensional, every such $\uuline\Omega$ can be 
+		identified with some $v\in V$, such that
+		\begin{equation}
+			\label{eq:double-dual-vector-congruency}
+			\uuline{\Omega}[\underline\omega]=\underline\omega[\overline v].
+		\end{equation}
+		In this sense, $V$ and $V^{**}$ are naturally identified and correspond with one another.
+
+		\paragraph{Going back to manifolds}
+
+		On a manifold, vector spaces are replaced by tangent spaces
+		$T_p\mathcal M$. Their dual spaces are the cotangent spaces
+		\[
+			T_p^*\mathcal M := (T_p\mathcal M)^*.
+		\]
+		This is where covectors, or cotangent vectors, live.
+
+	\subsubsection{The Differential of a Function}
+
+		Now that we have characterized duals abstractly, we can define a particularly important covector: the differential of a function.
+
+		\begin{definition}{Differential of a function}
+			Given $f\in\mathcal F(\mathcal M)$, its differential at $p\in\mathcal M$ is the covector
+			\[
+				(\underline{df})_p\in T_p^*\mathcal M
+			\]
+			defined by
+			\[
+				(\underline{df})_p:T_p\mathcal M\to\mathbb R,
+				\qquad
+				\overline{v}_p\mapsto (\underline{df})_p[\overline{v}_p]:=\overline{v}_p[f].
+			\]
+		\end{definition}
+
+		That is, the differential of a function takes a tangent vector and returns the directional derivative of the function in that direction. In other words,
+		\[
+			(\underline{df})_p[\overline{v}_p]=\overline{v}_p[f].
+		\]
+		Since $\overline{v}_p[f]$ is linear in $\overline v_p$, $(\underline{df})_p$ is a linear map and therefore a covector.
+
+		If we define the differential at every point $p\in\mathcal M$, we obtain a covector field:
+		\[
+			\underline{df}\in T^*\mathcal M.
+		\]
+		Thus,
+		\[
+			\underline{df}\iff\text{a covector field}.
+		\]
+
+		Covector fields are called \textit{one-forms}. They are sections of the cotangent bundle $T^*\mathcal M$, where
+		\[
+			T^*\mathcal M
+			=
+			\bigcup_{p\in\mathcal M}T_p^*\mathcal M.
+		\]
+
+		To put it more physically, Lagrangian mechanics naturally lives on the tangent bundle $T\mathcal M$, whose points specify positions and velocities. Hamiltonian mechanics naturally lives on the cotangent bundle $T^*\mathcal M$, whose points specify positions and momenta. The latter is the phase space of Hamiltonian mechanics.
+
+		\subsubsection{$n$-forms}
+
+		An $n$-form is defined as a wedge product of $1$-forms. 
+
+		A wedge product (or \textit{exterior product}) is an operation which
+		combines vectors, or more commonly, covectors/forms, to produce an antisymmetric 
+		higher-rank objects.
+
+		For two 1-forms $\alpha, \beta \in V^*$, their wedge-product is a $2$-form:
+		\[
+			\alpha \wedge \beta
+		\]
+		It is defined by antisymmetrizing the tensor product (we will discuss what it is in \S \ref{subsec:tensor product}). That is,
+		\[
+			\alpha\wedge\beta = \alpha\otimes\beta - \beta\otimes\alpha
+		\]
+		so that, acting on two vectors $u, v$,
+		\[
+			(\alpha \wedge \beta)[u,v] = \alpha[u]\beta[v]-\alpha[v]\beta[u]
+		\]
+		It is antisymmetric because if we exchange the two arguments,
+		\[
+			(\alpha \wedge \beta)[v,u] = \alpha[v]\beta[u]-\alpha[u]\beta[v]
+		\]
+		so
+		\[
+			(\alpha \wedge \beta)[v,u] = - (\alpha\wedge\beta)[u,v]
+		\]
+
+		In particular, 
+		\begin{equation}
+			\label{eq:self-wedge}
+			\alpha\wedge\alpha = 0
+		\end{equation}
+
+		An $n$-form is a basis for geometric integration, and wedge products gives us a natural
+		langauge for integration on manifolds. Say for example the coordinate 1-forms, $\dd{x}^1$ and $\dd{x}^2$.
+		Let $x^1 =x$ and $x^2 = y$. When we integrate an area element, we have
+		\[
+			\int f \dd{A} = \iint f \dd{x}\dd{y}
+		\]
+		Properly speaking, $\dd{x}\dd{y}$ should be a two-form, $\dd{x}\wedge\dd{y}$. It is an oriented area element. Therefore, what we really
+		ought to write is
+		\[
+			\int f \dd{x}\wedge \dd{y}
+		\]
+
+		Similarly, $\dd{V} = \dd{x}\dd{y}\dd{z}$ is properly $\dd{x}\wedge\dd{y}\wedge\dd{z}$, a three-form. It is an oriented volume element. 
+
+		Therefore, when we see expressions such as 
+		\[
+			\int\omega
+		\]
+		This means we are integrating $n$-forms. A differential, and the wedge product of 
+		differentials, are the basis for integration.
+
+		More generally, if $\omega$ is a $k$-form and $\eta$ is an $\ell$-form,
+		then their wedge product is a $(k+\ell)$-form:
+		\[
+			\omega\wedge\eta\in\Lambda^{k+\ell}(V^*).
+		\]
+		Thus, we can construct $n$-forms by taking wedge products of $1$-forms,
+		such as
+		\[
+			\dd{x}^1\wedge\dd{x}^2\wedge\cdots\wedge\dd{x}^n
+		\]
+
+		On an $n$-dimensional manifold, an $n$-form can be integrated over an
+		$n$-dimensional oriented region:
+		\[
+			\int_{\mathcal M}\omega
+		\]
+		More generally, a $k$-form is integrated over a $k$-dimensional oriented
+		manifold or submanifold.
+
+		Therefore, differential forms provide the mathematical objects that
+		underlie the familiar notation of integration. The symbols $\dd{x}$,
+		$\dd{x}\wedge\dd{y}$, and
+		$\dd{x}\wedge\dd{y}\wedge\dd{z}$ should not merely be thought of as
+		infinitesimal quantities; they are, respectively, $1$-, $2$-, and
+		$3$-forms.
+
+		This is not very important for the beginning of GR, but it will become
+		very useful in the latter parts, when deriving GR using the variational principle.
+
+		In elemetary calculus and real anaylsis, we naturally think of this \textit{differential} as a small change, an \textit{infintesimal}. 
+		\[
+			x + \dd{x} = \text{a small change in }x
+		\]
+		If mathematicians saw you using that literally, they might throw a book at you. This is not at all what 
+		we mean by a differential, this is a heuristic. A very useful heuristic, sure, but it's wrong.
+		It's only a shorthand for thinking about a quantity that is arbitrarily small. What we mean when we say $dx$ is that it's a limit as $\Delta x$ vanishes,
+		but it's not equal to $0$ itself.
+		\[
+			x + dx = \lim_{\Delta x \to 0} x + \Delta x \quad \neq x
+		\]
+		We don't actually need this to perform integration, we can integrate with $n$ forms entirely, but it's a heuristic, and
+		it's a pedagological tool, which allows us to think of things in an intuitive manner.
+		Learning elementary calculus using the complexities of one-forms is a
+		difficult endeavor. It is doable, yes, but you need to have learned differential calculus prior,
+		which is pointless when you're trying to learn introductory calculus in the first place.
+
+		Heuristics such as these make teaching and understanding things simpler.
+		Heuristics are tools, and they are very useful tools. Do not throw your tools away for
+		the sake of rigor. However, you must remember how these tools are justified, and what they
+		really are under the hood, mathematically, lest you may lose sight of the operations you do when you extend 
+		your calculations beyond which those heuristics apply.
+
+	\subsubsection{Differential Basis}
+
+		Moving forward, consider a chart with basis functions $\{x^\mu\}$. Recall that each $x^\mu$ is a
+		scalar function. The differential of each of these functions is then
+		\[
+			dx^\mu
+		\]
+		Let's consider the following set of $n$ one-forms of the coordinate basis functions, 
+		$\{\underline{\dd{x}}^\mu\}$.
+		Let this act on a basis vector. We know that if you have a chart, the most natural
+		basis vectors is the coordinate basis vector, hence:
+		\begin{align*}
+			\dd{x^\mu}\qty[
+				\pdv{}{x^\nu}  
+				] 
+			&= \pdv{}{x^\nu}[x^\mu]\\
+			&= \pdv{x^\mu}{x^\nu}\\
+			&= \tensor{\delta}{^\mu_\nu}
+		\end{align*}
+
+		This is precisely the property of a dual basis, (\ref{eq:dual-basis-definition}). Hence
+		$\dd{x^\mu}$ is a basis for $T^* \mcal M$. 
+
+		Since $\underline{dx}^\mu$ is a basis, we get to write an arbitrary one-form as a linear 
+		combination of components $\omega_\mu$ and the basis:
+		\[
+			\underline\omega = \omega_\mu \dd{x^\mu}
+		\]
+		and we also find that $\overline{v}[x^\mu]= \underline{dx}^\mu [v]$, as per the previously 
+		defined properties. Since $\overline{v}[x^\mu] = v^\mu$, then $\underline{dx}^\mu [v] = v^\mu$ as previously shown. We can prove
+		it explicitly, however.
+		\begin{proof}
+			\begin{align*}
+				dx^\mu[v] 
+				&= v[x^\mu]\\
+				&= v^\nu \pdv{}{x^\nu} [x^\mu] \\
+				&= v^\nu \pdv{x^\mu}{x^\nu}\\
+				&= v^\nu \tensor{\delta}{^\mu_\nu}\\
+				&= v^\mu
+			\end{align*}
+		\end{proof}
+
+		Consider, that since we can write a one-form as 
+		\[
+			\underline{df} = \omega_\mu\dd{x^\mu}
+		\]
+		We must find an expression of the components $\omega_\mu$. We can do that
+		by the following:
+
+		Consider the differential at point $p$. 
+		We can get the differential dual of a function $df$ for each point 
+		on the manifold:
+		\[
+			(\underline{df})_p [v] = \overline{v}_p[f]
+		\]
+		We can then do a point by point substitution, and we have the covector field.\footnote{This 
+		is also what we do to find the vector field, define it for all points in $\mcal M$}
+		\[
+			\underline{df}[v] = \overline{v}[f]
+		\]
+		We can expand $\overline v$ and calculate it over
+		\begin{align*}
+			\underline{df}[v] &= \overline{v}[f]\\
+							  &= v^\mu \pdv{}{x^\mu}[f]\\
+							  &= v^\mu \pdv{f}{x^\mu} \\
+							  &= \dd{x^\mu}[v] \pdv{f}{x^\mu}
+		\end{align*}
+		However, $v$ is an arbitrary vector. In an operational sense, it is not needed. Hence, we have
+		\[
+			\underline{df} = dx^\mu \pdv{f}{x^\mu} 
+		\]
+		Since these are all just numbers, we can rearrange this, and we find the result is:
+		\begin{equation}
+			\label{eq:df-basis}
+			\underline{\dd{f}} = \pdv{f}{x^\mu} \dd{x^\mu} 
+		\end{equation}
+		That is the components of a differential of a function $f$. However, recall that we 
+		have seen this before. In classical real analysis, when we are asked to find the differential
+		of $f(x,y,z)$, we write:
+		\[
+			df = \pdv{f}{x}dx + \pdv{f}{y}\dd{y} + \pdv{f}{z}\dd{z}  
+		\]
+		This is the same thing! Just reconceptualized. Since $\dd{x^\mu}$ are one forms, then,
+		an arbitrary one form is simply a linear combination of other one-forms. 
+		Given a chart, the differential of 
+		a function is a one form whose components are the gradient and the basis are the differential
+		of the coordinate basis functions. 
+
+		That is, $\omega_\mu = \partial_\mu f$ and $e^\mu = dx^\mu$. Therefore
+		\[
+			df = \p_\mu f \dd{x^\mu}
+		\]
+		From this property, we can also define a change of basis, from $x^\mu$ to $x^\nu$. This is a dual transformation rule.
+		\begin{equation}
+			\label{eq:dual-change-basis}
+		    dx^\nu = \pdv{x^\nu}{x^\mu} dx^\mu 
+		\end{equation}
+		
+		We need a useful expression for a component of a covector given a basis. 
+		We express an arbitrary covector as 
+		\[
+			\underline\omega = \omega_\mu dx^\mu
+		\]
+		Let's have it act on a coordinate basis vector $\p_\nu$. We have
+		\begin{align*}
+			\underline\omega[\p_\nu] 
+			&= \omega_\mu \dd{x}^\mu[\p_\nu]\\
+			&= \omega_\mu \tensor{\delta}{^\mu_\nu}\\
+			&= \omega_\nu
+		\end{align*}
+
+		That is, if you want the $\nu$-th component of a one-form, you need to 
+		feed it the $\nu$-th basis vector
+
+	\subsubsection{The Interior Product}
+		We can write a vector as
+		\[
+			\overline v = v^\mu \partial_\mu.
+		\]
+		We can write the component of the vector as an extraction of the dual basis
+		\[
+			v^\mu = \underline{dx}^\mu[v].
+		\]
+		However, from (\ref{eq:double-dual-vector-congruency}), recall that the double dual $V^{**}$ is canonically isomorphic to
+		$V$, i.e., $V^{**}\cong V$, so that
+		\[
+			\uuline{v}[\underline{\omega}] = \underline{\omega}[\overline{v}].
+		\]
+		Therefore, since the two are isomorphic, we \emph{define} the following
+		operation as equivalent:
+		\[
+			v^\mu = \overline{v}[\underline{dx}^\mu].
+		\]
+		This is called the \textit{interior product} (or \emph{contraction}).
+		That is, we define
+		\begin{align*}
+			dx^\mu[v] &= v[dx^\mu] \\
+					  &= i_\nu\, dx^\nu.
+		\end{align*}
+		This is an identity between the two ways of evaluating the pairing.
+
+		We see that we have this universal feature: if we need the $\mu$-th
+		component of an object, we feed it the $\mu$-th basis object. The
+		expression $v[dx^\mu]$ is understood to mean ``evaluate the
+		double-dual image of $v$ on the covector $dx^\mu$'' — and the result
+		is the same number $v^\mu$ as $dx^\mu[v]$.
+
+		\begin{theorem}{Component extraction}
+			For a covector $u = u_i e^i$ and the dual basis $\{e^i\}$
+			satisfying $e^i[e_j] = \tensor{\delta}{^i_j}$, the components are given
+			by the standard pairing
+			\[
+				u_i = u[e_i].
+			\]
+			For a vector $v = v^i e_i$, the same components are recovered
+			by evaluating the double-dual image of $v$ on the covectors
+			$e^i$:
+			\[
+				v^i \equiv v[e^i] = e^i[v],
+			\]
+			where $v$ on the right is understood as an element of $V^{**}$
+			via the canonical embedding.
+		\end{theorem}
+
+		Bases need not come from a chart, it is not necessary. A chart produces a
+		\emph{coordinate basis}, but any set of linearly independent vectors
+		spanning the tangent space is a legitimate basis. Given a chart, we
+		can always write a general basis in terms of the coordinate basis,
+		\[
+			e_i = e_i{}^\mu \pdv{}{x^\mu},
+		\]
+		where $e_i{}^\mu$ are the components of the $i$-th basis vector.
+		As long as the matrix $\pqty{e_i{}^\mu}$ has nonzero determinant,
+		the vectors $\{e_i\}$ are linearly independent and hence form a basis:
+		\[
+			\det\pqty{e_i{}^\mu} \neq 0.
+		\]
+		A nonzero determinant is a requirement. 
+		If the determinant were zero, the vectors would be
+		linearly dependent and could not span the tangent space, so the whole framework
+		collapses.
+
+		There's a lot more to differential geometry 
+		than what we currently show, a lot more fields than
+		the Riemmannian that we study. Differential geometry is something that has been studied for over
+		300 years, long before relativity. However, we can only teach you 
+		the elements of differential geometry that is necessary to learn General Relativity.
+
+		For theorists, it is natural to formulate physics in the language of
+		differential geometry. In practice, however, computations are almost
+		always carried out in coordinates: for example, the Schwarzschild
+		solution is most conveniently written in the chart $(t, r, \theta, \phi)$.
+		The basis vectors used in such computations are not necessarily tied to
+		those coordinates — a point we will return to — but a coordinate basis
+		is usually the simplest to work with, and from it one can, in principle,
+		free oneself from coordinates entirely.
+
+		Observers, i.e., experimental physicists, however, do not have access to this abstract description.
+		An experimentalist measures \emph{components}, and only components. A
+		clock measures a proper time interval; a rod measures a proper length;
+		a detector measures an energy or a momentum. These are all scalars
+		obtained by contracting tensorial objects with the observer's own
+		local frame — never the abstract tensors themselves.
+		This raises a practical problem. Tensors in a general curved spacetime
+		are defined at each point, but they live in the tangent space, and there
+		is no canonical way to compare or evaluate them without introducing
+		extra structure. What the observer actually carries with them is a
+		\emph{local inertial frame}: a set of four orthonormal basis vectors
+		attached to their worldline, one timelike (their 4-velocity) and three
+		spacelike (their local spatial axes). This frame is what a physical
+		observer uses to decompose any tensor into measurable components.
+
+		The mathematical object that captures this is the \textit{orthonormal tetrad}
+		(or \emph{vierbein}): a set of four orthonormal basis vectors defined at each
+		point, consisting of one timelike vector corresponding to the observer's 4-velocity
+		and three spacelike vectors corresponding to their local spatial axes. By projecting
+		tensors onto this local frame, one obtains the components that the observer measures.
+		The tetrad therefore bridges the abstract geometric description of spacetime and
+		concrete measurements: it is defined geometrically independently of any particular
+		coordinate system, while its components in a coordinate basis provide the quantities
+		used in practical calculations.
+
+		For us to understand what that all means, we shall begin to discuss tensors.
+\newpage
+\subsection{Tensors}
+	Tensors are algebraic objects, similar to what we already defined before 
+	for vectors and duals. However, it is more general than that.
+	\subsubsection{Definition}
+		\begin{definition}{Tensor}
+			A tensor of $(k,l)$ type is a multilinear map 
+			from the product of dual and vector spaces to real numbers,
+			such that
+			\begin{equation}
+				\label{eq:tensor-defn}
+				T:
+				V^*_1 \times 
+				V^*_2 \times 
+				\cdots
+				V^*_k \times
+				V_1 \times
+				V_2 \times
+				\cdots
+				V_l
+				\to \R
+			\end{equation}
+		\end{definition}
+
+		That is, you need to supply a tensor $k$ covectors and $l$ vectors 
+		for it to map to a real number. A tensor is therefore a function, that accepts 
+		covectors and vectors,
+		with several \textit{slots} for each. It has $k$ slots for covectors, and $l$ slots
+		for vectors.
+		\[
+			T(
+			\underbrace{
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\ldots,
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\underline{\phantom{x}}
+			}_{k\text{ slots for covectors}},
+			\underbrace{
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\ldots,
+				\underline{\phantom{x}},
+				\underline{\phantom{x}},
+				\underline{\phantom{x}}
+			}_{l\text{ slots for vectors}},
+			)
+		\]
+		Think of it as a machine, that takes in $k$ covectors, and $l$
+		vectors, and spits out a real number. 
+
+		\paragraph{Multilinearity} A tensor has to be multilinear, meaning that the tensor is linear in
+		each slot separately. For example, if the first covector is varied,
+		\begin{align*}
+			T(\alpha\underline{\omega}+\beta\underline{\xi},
+			\underline{\omega}_2,\ldots,\underline{\omega}_k,
+			\overline x_1,\ldots,\overline x_l)
+			&=
+			\alpha
+			T(\underline{\omega},\underline{\omega}_2,\ldots,
+			\underline{\omega}_k,\overline x_1,\ldots,\overline x_l)
+			\\
+			&\quad+
+			\beta
+			T(\underline{\xi},\underline{\omega}_2,\ldots,
+			\underline{\omega}_k,\overline x_1,\ldots,\overline x_l).
+		\end{align*}
+		
+		In general, for $\omega^{(\mu)}\in V^*$ and $v^{(\mu)} \in V$, we can express it as (explicitly putting sums here)
+		\begin{align*}
+			&T\left(
+			\sum_a \alpha_a \omega_a^{(1)},
+			\ldots,
+			\sum_a \alpha_a \omega_a^{(k)},
+			\sum_b \beta_b v_b^{(1)},
+			\ldots,
+			\sum_b \beta_b v_b^{(l)}
+			\right)
+			=\\
+			&\sum_{a_1,\ldots,a_k}
+			\sum_{b_1,\ldots,b_l}
+			\alpha_{a_1}\cdots\alpha_{a_k}
+			\beta_{b_1}\cdots\beta_{b_l}
+			T\left(
+			\omega_{a_1}^{(1)},\ldots,\omega_{a_k}^{(k)},
+			v_{b_1}^{(1)},\ldots,v_{b_l}^{(l)}
+			\right).
+		\end{align*}
+
+	\subsubsection{Vectors and covectors as tensors}
+		From the definition, immediately we can see that a covector
+		is a tensor.
+		\[
+			\underline{\omega} \in V^*,\qquad \underline{\omega}:V\to\R
+		\]
+		Specifically, it is a type $\binom{0}{1}$ tensor\footnote{$(k,l)$ and $\binom{k}{l}$ are interchangeable}. It takes one vector, 
+		and spits out a real number. We refer to it as belonging to the type (0,1) tensor. 
+		\[
+			\underline\omega \in \binom{0}{1}
+		\]
+
+		Using isomorphism, and the properties and identities shown before, the vector space can
+		be thought of as \textit{accepting} dual vectors, because the dual space of the dual space
+		is a vector space. So it has one slot for a covector. 
+		\[
+			\overline{\lambda}\in V,\qquad \overline{\lambda}: V^* \to \R
+		\]
+		That is, a vector is an element of type $\binom{1}{0}$ tensors.
+		\[
+			\overline{\lambda}\in\binom{1}{0}
+		\]
+		
+		From that logic, a scalar has no slots for a vector or covector, and simply returns a real number.
+		Therefore, a scalar is a $\binom{0}{0}$ tensor.
+		\[
+			a\in\R, \qquad a:\R\to\R \implies \quad a\in \binom{0}{0}
+		\]
+
+	\subsubsection{Tensors as vector/covector operators}
+		Suppose a tensor $T\in\binom{1}{1}$, such that
+		\[
+			T: V^*\times V\to \R
+		\]
+		Note that because it is multilinear, we can sort of 
+		leave a slot \textit{blank} to be filled in. We can
+		fill the first slot with a covector, and leave the vector 
+		slot as blank.
+		\[
+			T(\underline\omega,\underline{\phantom{x}})
+		\]
+		It should be immediately obvious then, that this tensor, left with a vacant slot, becomes
+		an independent operator. It becomes a dual vector, since it accepts only one vector.
+		\[
+			T(\underline\omega,\underline{\phantom{x}})
+			\in V^*
+		\]
+		That is, it is a map, from covectors to covectors, when the vector slot is left vacant.
+		It accepts a covector, and turns it into another covector.
+		\[
+			T:V^* \to V^*,\qquad 
+			T(\underline\omega,\underline{\phantom{x}})
+			\in\binom{0}{1}
+		\]
+		Similarly, if the same tensor were supplied with only a vector, it has one remaining slot
+		for a covector, and hence, it becomes a vector. It takes a vector, and returns another vector.
+		\[
+			T(
+				\underline{\phantom{\omega}},
+				\overline{v}
+			)
+			\in V,\quad T:V \to V ,\qquad 
+			T(
+				\underline{\phantom{\omega}},
+				\overline{v}
+			)
+			\in\binom{1}{0}
+		\]
+		In general, for a $\binom{k}{l}$ tensor, when supplied with $m$ covectors and $n$ vectors,
+		becomes an type $(k-m, l-n)$ tensor, with condition $m\leq k$ and $n\leq l$. 
+		\[
+			T\in\binom{k-m}{l-n}
+		\]
+
+		The point here is filling slots of tensors 
+		produces a tensor of lower type.
+
+		\paragraph{Tensor Rank} The rank or order of a tensor is the total number of slots it has
+		for accepting other tensors. For a $(k,l)$ tensor, the rank is
+		\[
+			T\in\binom{k}{l},\qquad \rank T = k+l
+		\]
+		For example, the Riemman tensor $\tensor{R}{^\rho_{\sigma\mu\nu}}$, of type (1,3), is a rank 4 tensor. The Levi-Civita symbol $\tensor{\varepsilon}{_{ij}^k}$ is a rank 3 tensor, since it has 3 total slots.
+		The Kronecker-delta $\tensor{\delta}{^i_j}$, metric tensor $g_{\mu\nu}$, and matrices $a_{ij}$ in general are rank 2 tensors, because
+		each has two tensor slots. Vectors, $v = v^\mu \p_\mu$ and duals, $\omega = \omega_\mu dx^\mu$, are rank 1 tensors, because
+		it can only accept one tensor, and finally, a scalar is a
+		rank 0 tensor, because it accepts no tensors. 
+
+		\paragraph{Examples}
+		\begin{enumerate}[(1)]
+			\item An $n\times n$ matrix.
+				
+				All square matrices are isomorphic to type $(1,1)$ tensors. They
+				represent a tensor of type (1,1), once bases for $V$ and $V^*$ are chosen. Note 
+				that they themselves are not tensors in the geometric sense, just as row and column matrices
+				are not covectors and vectors, but they are isomorphic to each other, and
+				thus we can perform the same operations on them.
+
+				From the previous chapter, we discussed how column matrices 
+				are isomorphic to vectors.
+				\[
+					\bmqty{
+						v^1\\v^2\\\vdots\\v^n
+					}\in V
+				\]
+				and row matrices are isomorphic to covectors.
+				\[
+					\bmqty{
+						\omega_1 &
+						\omega_2 &
+						\cdots &
+						\omega_n
+					}
+					\in V^*
+				\]
+				Now consider how do we make a matrix output a real number? Let's do a 
+				$2\times 2$ matrix to keep the math simple.
+
+				If you feed a $2\times 2$ matrix a column vector, it becomes a column
+				vector
+				\[
+					\bmqty{
+						a_{11} & a_{12}\\
+						a_{21} & a_{22}\\
+					} 
+					\bmqty{
+						v_1\\ v_2	
+					} 
+					=
+					\bmqty{
+						v_1 a_{11} + v_2 a_{12}\\
+						v_1 a_{21} + v_2 a_{22}\\
+					} 
+				\]
+				This is exactly analogous to what we have shown earlier. A (1,1) tensor,
+				fed a vector, becomes a vector. This tensor is then a map from a vector, to
+				another vector. If you then operate it to a covector, it returns a real number.
+
+				For a second example, consider multiplying a row matrix instead. Doing 
+				so returns another row matrix.
+				\[
+					\bmqty{
+						\omega_1& \omega_2	
+					} 
+					\bmqty{
+						a_{11} & a_{12}\\
+						a_{21} & a_{22}\\
+					} 
+					=
+					\bmqty{
+						\omega_1 a_{11} +\omega_2 a_{21}&
+						\omega_1 a_{12} +\omega_2 a_{22}
+					} 
+				\]
+				Again, this is analogous to what we have shown. A tensor, when fed 
+				a covector, returns another covector. It maps a covector to another 
+				covector. If you operate this covector to a vector, it returns a real number. 
+
+				Now consider feeding the matrix both a vector and a covector. You will find that
+				\[
+					\bmqty{
+						\omega_1& \omega_2	
+					} 
+					\bmqty{
+						a_{11} & a_{12}\\
+						a_{21} & a_{22}\\
+					} 
+					\bmqty{
+						v_1\\ v_2	
+					} 
+					=
+						v_1 \omega_1 a_{11} + v_1 \omega_2 a_{21} +
+						v_2 \omega_1 a_{12} + v_2 \omega_2 a_{22}
+				\]
+
+				Therefore, it returned a scalar, which is precisely what a tensor is defined to do.
+				It accepted one covector, and one vector, and returned a real number.
+			\item A cross product
+
+				Consider the introductory Mathematical Physics definition of a cross product.
+				\[
+					\vb{u}\times \vb{v} = \varepsilon_{ijk} u_i v_j \vu{e}_k
+				\]
+				Now we use the established tensor notation, of raised and lowered indices
+				indicating vector and covector components. We have vectors $u = u^i\p_i$, $v = v^j\p_j$,
+				and the resulting cross product to be $(u\times v)^k \p_k$. Thus, calculating the cross
+				product components\footnote{Shown on the next page}, we have
+				\[
+					(u\times v)^k = 
+					\tensor{\varepsilon}{_{ij}^k} u^i v^j
+				\]
+				
+				We have shown then, that the cross product of two vectors
+				returns a vector. But that all hinges on the fact that the 
+				Levi-Civita symbol is a tensor\footnote{Technically it's a 
+				pseudotensor which is only really a tensor under orthogonal
+				transformations and the Euclidean isometry group, i.e.,
+				in flat, Euclidean metric and cartesian coordinates. It is a
+				tensor \textit{density} of weight $+1$, and under general coordinate
+				transformation, it changes, but since this is an example, we'll 
+				call it a tensor for now}. The 
+				Levi-Civita tensor is a rank 3 tensor, of type (1,2).
+				It accepts 
+				two vectors and one covector. Once it gets fed
+				two vectors, its vector slots are filled, and thus it can only accept 
+				a covector. The two lower slots are contracted with the vectors $u$ and $v$, leaving the upper $k$ index free.
+				The resulting object is therefore a linear map from covectors to real numbers, which is naturally
+				an element of $V^{**}\cong V$, i.e., a vector. 
+
+				Therefore, it then acts as a map from two vectors to another vector,
+				when the two vectors are supplied, and returns a vector itself. This is
+				precisely the cross product.
+
+				Note that since it is a rank 3 tensor, and it ate two rank 1 tensors, its rank
+				also went to 1. When a rank $n$ tensor accepts $m$ vectors/covectors, its rank
+				decreases by $n-m$.
+		\end{enumerate}
+
+		\begin{remark}
+			An explicit cross product is expressed as follows. Note that this
+			only applies in the Euclidean metric. For two vectors
+			$u = u^i \p_i$ and $v = v^j \p_j$, we aim to find the components
+			of $u \times v$. Recall that the cross product of the basis
+			vectors is
+			\[
+				\p_i \times \p_j = \tensor{\varepsilon}{_{ij}^k} \p_k
+			\]
+			Then
+			\begin{align*}
+				u \times v
+				&= (u^i \p_i) \times (v^j \p_j) \\
+				&= u^i v^j (\p_i \times \p_j) \\
+				&= u^i v^j \tensor{\varepsilon}{_{ij}^k} \p_k \\
+				&= \tensor{\varepsilon}{_{ij}^k} u^i v^j \p_k \\
+				&= (u \times v)^k \p_k
+			\end{align*}
+			Therefore the components are
+			\[
+				(u \times v)^k = \tensor{\varepsilon}{_{ij}^k} u^i v^j
+			\]
+		\end{remark}
+
+		\paragraph{Ordering of Covectors and Vectors}
+		An important property is the following: the \emph{order} of the covector
+		and vector slots matters. One may reorder the slots as long as the
+		relative order among the covectors and among the vectors is preserved,
+		but changing the intrinsic order \emph{within} either group is not allowed.
+
+		For example, consider a $(3,3)$ tensor
+		\[
+			T(\omega_1, \omega_2, \omega_3, v^1, v^2, v^3).
+		\]
+		One may interleave the vectors and covectors, since the two groups
+		occupy independent sets of slots, e.g.,
+		\[
+			T(\omega_1, \omega_2, \omega_3, v^1, v^2, v^3)
+			=
+			T(\omega_1, \omega_2, v^1, \omega_3, v^2, v^3)
+			=
+			T(\omega_1, \omega_2, v^1,v^2,v^3, \omega_3)
+		\]
+		However, permuting the covectors among themselves, or the vectors among
+		themselves, changes the tensor's action:
+		\[
+			T(\omega_1, \omega_2, \omega_3, v^1, v^2, v^3)
+			\neq
+			T(\omega_1, \omega_2, \omega_3, v^2, v^1, v^3)
+			\;\neq\;
+			T(\omega_1, \omega_2, v^3, \omega_3, v^1, v^2).
+		\]
+
+% =======================================
+% MEETING 9
+% ---------------------------------------
+% DATE   - September 18, 2026
+% FORMAT - F2F
+% =======================================
+% TOPIC  - Tensor product
+% =======================================
+\subsubsection{Tensor Product}
+	\label{subsec:tensor product}
+	The point of a tensor is this: A tensor is a function (or a \textit{machine}, if you will),
+	that accepts covectors and vectors with $k$ and $l$ slots. After all the slots are filled,
+	then the tensor spits out a real number. However, as long as those slots aren't filled yet,
+	it becomes a tensor of lower rank, or lower type.
+
+	Ordering matters between the sets of vectors and covectors. You
+	can permute between them, but permuting within the group is not allowed. 
+
+	Recall the identity we set out earlier. We have the following 
+	coordinate basis for covectors and vectors:
+	\begin{align*}
+		\overline{e}_\mu = \p_\mu && \underline{e}^\mu = dx^\mu
+	\end{align*}
+
+	We can find the components of an arbitrary vector or covector likeso:
+	\[
+		v^\mu = dx^\mu[v] \equiv v[dx^\mu]
+	\]
+	and
+	\[
+		\omega_\mu = \omega[\p_\mu]\equiv \p_\mu[\omega]
+	\]
+	This is a sort of product of operation which is symmetric, hence it is called the 
+	interior product.
+	Coacting, or \textit{multiplying} rank 1 tensors together
+	results on another tensor (recall: $a\in\R$ is just a rank 0 tensor).
+
+	We need to define the notion of a tensor product, which
+	allows us to combine tensors of different rank to produce a 
+	new tensor. 
+
+	\begin{definition}{Tensor Product}
+	    If $\varphi$ and $\vartheta$ are covectors, or $(0,1)$ tensors, then
+		their tensor product $\varphi\otimes\vartheta$ is a $(0,2)$ tensor, such that, for $x,y\in(1,0)$:
+		\begin{equation}
+			\label{eq:tensor-product-defn}
+			(\varphi\otimes\vartheta)[x,y] = \varphi[x]\vartheta[y]
+		\end{equation}
+
+		More generally, if $T$ has type $(k, l)$ and $S$ has type $(m, n)$,
+		then $T \otimes S$ has type $(k + m, l + n)$, defined by
+		\begin{align*}
+			&(T \otimes S)(\omega_1, \ldots, \omega_k, \omega'_1, \ldots, \omega'_m,
+			v_1, \ldots, v_l, v'_1, \ldots, v'_n)
+			=\\ &T(\omega_1, \ldots, \omega_k, v_1, \ldots, v_l)
+			  \,S(\omega'_1, \ldots, \omega'_m, v'_1, \ldots, v'_n).
+		\end{align*}
+		This is also known as an outer product.
+	\end{definition}
+
+	\paragraph{Example}
+
+	Say we have one-forms $dx^1$ and $dx^2$. If we let them act on a pair 
+	of vetors $x$ and $y$, we have
+	\begin{align*}
+		(dx^1\otimes dx^2) [x,y] &= \dd{x}^1[x]\dd{x^2}[y] \\
+		&=x^1 y^2
+	\end{align*}
+	Those are individual components.
+	
+	It should be clear from the definition that the outer product is
+	not commutative.
+	\[
+		\varphi\otimes\vartheta 
+		\neq 
+		\vartheta\otimes\varphi
+	\]
+	For example, if we let it act on the vectors $x,y$, then
+	\begin{align*}
+		\varphi\otimes\vartheta[x,y] &=
+		\varphi[x]\vartheta[y]\\
+		\vartheta\otimes\varphi[x,y]&=
+		\vartheta[x]\varphi[y]\\
+		\varphi[x]\vartheta[y]&\neq
+		\vartheta[x]\varphi[y]
+	\end{align*}
+	\paragraph{Properties} The tensor product must satisfy the following 
+	properties
+	\begin{enumerate}[(1)]
+		\item \text{Bilinearity}
+
+			For scalars $a, b$ and tensors
+			  $\varphi, \theta, \omega$ of compatible type,
+			  \[
+				  \varphi \otimes (a\theta + b\omega)
+				  = a\,(\varphi \otimes \theta) + b\,(\varphi \otimes \omega),
+			  \]
+			  \[
+				  (a\varphi + b\theta) \otimes \omega
+				  = a\,(\varphi \otimes \omega) + b\,(\theta \otimes \omega).
+			  \]
+		\item \text{Associativity}
+
+			\[(\varphi \otimes \theta) \otimes \omega
+			= \varphi \otimes (\theta \otimes \omega)\]
+		\item \text{Multiplicative scaling}
+
+			\[(a\varphi) \otimes \theta
+			   = a\,(\varphi \otimes \theta)
+		   = \varphi \otimes (a\theta)\]
+		\item \text{Noncommutativity}
+			
+			In general, for tensors $\phi$ and $\theta$ acting on arbitary tensors,
+			\[\varphi \otimes \theta \neq \theta \otimes \varphi\]
+	\end{enumerate}
+	\begin{proof}
+	   Exercise to the student. 
+	\end{proof}
+
+\subsubsection{Basis Tensors}
+	Like vectors and covectors, tensors which are defined as a linear combination of 
+	scalars by basis vectors or basis covectors, we must find a way
+	to generalize what a basis is for higher order tensors.
+
+	Consider a tensor $g \in \binom{0}{2}$, acting on two vectors
+	$x, y \in \binom{1}{0}$, such that
+	\[
+		g[x, y] \mapsto \alpha \in \R.
+	\]
+	We can express $x$ and $y$ in terms of a basis:
+	\[
+		x = x^\mu \p_\mu,
+		\qquad
+		y = y^\nu \p_\nu.
+	\]
+	Thus, we can express $g$ as
+	\[
+		g[x, y]
+		= g\bqty{x^\mu \p_\mu,\; y^\nu \p_\nu}.
+	\]
+	Since $x^\mu$ and $y^\nu$ are just numbers, i.e., constants, we
+	can pull them out:
+	\[
+		g[x, y]
+		= x^\mu y^\nu\, g[\p_\mu, \p_\nu].
+	\]
+	Notice that $g$ is accepting two vectors. Hence, the entire
+	expression is just a product of real numbers. Let us define
+	\[
+		g[\p_\mu, \p_\nu] = g_{\mu\nu}.
+	\]
+	Thus we can rearrange it to
+	\[
+		g[x, y]
+		= \tensor{g}{_{\mu\nu}}\, x^\mu y^\nu.
+	\]
+	Recall that $x^\mu = dx^\mu[x]$ and $y^\nu = dx^\nu[y]$. Then
+	\[
+		g[x, y]
+		= \tensor{g}{_{\mu\nu}}\,
+		  dx^\mu[x]\, dx^\nu[y].
+	\]
+	From the definition of the tensor product,
+	\[
+		dx^\mu[x]\, dx^\nu[y]
+		= (dx^\mu \otimes dx^\nu)[x, y].
+	\]
+	We can then represent the entire expression as
+	\[
+		g[x, y]
+		= \tensor{g}{_{\mu\nu}}\,
+		  (dx^\mu \otimes dx^\nu)[x, y].
+	\]
+	However, the vectors $x$ and $y$ are arbitrary. We can remove
+	them, hence
+	\[
+		g = g_{\mu\nu}\, dx^\mu \otimes dx^\nu.
+	\]
+	Notice here that we have represented a tensor
+	$g \in \binom{0}{2}$ as a linear combination of
+	$\binom{0}{2}$ tensors $dx^\mu \otimes dx^\nu$, with
+	components $g_{\mu\nu}$.
+
+	Recall what we have done in the previous sections. A vector, for
+	instance, can be represented by a product of components and a
+	basis, and similarly for covectors:
+	\[
+		v = v^\mu \p_\mu,
+		\qquad
+		u = u_\nu\, dx^\nu.
+	\]
+	We have arrived at a similar expression. Therefore, we can
+	conclude that $dx^\mu \otimes dx^\nu$ must be a basis. This is
+	what we call a \textit{basis tensor}.
+
+	In the same logic, if you have a tensor $m \in \binom{2}{0}$
+	acting on two covectors in $\binom{0}{1}$, then we arrive at the
+	same conclusion:
+	\[
+		m = m^{\mu\nu}\, \p_\mu \otimes \p_\nu,
+	\]
+	where $m^{\mu\nu} = m[dx^\mu, dx^\nu]$. Therefore
+	$\p_\mu \otimes \p_\nu$ is also a basis tensor.
+
+	\begin{definition}{Basis Tensor Representation}
+		In general, we can represent an arbitrary $(k, l)$ tensor
+		$T$ as
+		\[
+			T
+			=
+			\tensor{T}{^{a_1 a_2 \cdots a_k}_{b_1 b_2 \cdots b_l}}
+			\p_{a_1} \otimes \p_{a_2} \otimes \cdots \otimes \p_{a_k}
+			\otimes
+			dx^{b_1} \otimes dx^{b_2} \otimes \cdots \otimes dx^{b_l}.
+		\]
+		where
+		\[
+			\p_{a_1} \otimes \cdots \otimes \p_{a_k}
+			\otimes
+			dx^{b_1} \otimes \cdots \otimes dx^{b_l}.
+		\]
+		is a $(k, l)$ basis tensor, and
+		\[
+			\tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}
+		\]
+		are the $(k, l)$ tensor components.
+	\end{definition}
+
+	As with vectors and covectors, basis tensors must follow the
+	property
+	\[
+		e^\mu[e_\nu] = e_\nu[e^\mu] = \tensor{\delta}{^\mu_\nu}.
+	\]
+	An equivalent statement for a general basis tensor is that the
+	$(k, l)$ basis tensor acts on the corresponding basis vectors and
+	covectors to give products of Kronecker deltas:
+	\begin{align*}
+		&\pqty{
+			\p_{a_1} \otimes \cdots \otimes \p_{a_l}
+		      \otimes 
+			dx^{b_1} \otimes \cdots \otimes dx^{b_k}
+		}
+		\bqty{
+			dx^{c_1}, \ldots, dx^{c_l}
+			,\;
+			p_{d_1}, \ldots, \p_{d_k}
+		}\\
+		&=
+		\tensor{\delta}{^{c_1}_{a_1}} \cdots \tensor{\delta}{^{c_k}_{a_k}}\,
+		\tensor{\delta}{^{b_1}_{d_1}} \cdots \tensor{\delta}{^{b_l}_{d_l}}.
+	\end{align*}
+	This is the natural generalization of $e^\mu[e_\nu] =
+	\delta^\mu{}_\nu$ to higher-rank basis tensors: the covector
+	slots and vector slots each pick off one Kronecker delta, and
+	the full result is the product. It is this property that makes
+	the representation
+	\[
+		T
+		=
+		\tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}
+		\,
+		\p_{a_1} \otimes \cdots \otimes \p_{a_k}
+		\otimes
+		dx^{b_1} \otimes \cdots \otimes dx^{b_l}
+	\]
+	unique, and it is what allows the components to be extracted by
+	the rule
+	\[
+		\tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}
+		=
+		T\bqty{dx^{a_1}, \ldots, dx^{a_k},\;
+		       \p_{b_1}, \ldots, \p_{b_l}}.
+	\]
+	In other words, the $(a_1, \ldots, a_k;\, b_1, \ldots, b_l)$ component
+	of $T$ is obtained by feeding $T$ the corresponding basis
+	covectors and basis vectors.
+	
+	This sort of notation is relatively uncommon in mathematics, but has been 
+	universally accepted in physics.
+
+	\paragraph{Example} Consider a $(2,1)$ tensor represented in tensor basis form
+	\[
+		\kappa = \tensor{\kappa}{^{\mu\nu}_{\sigma}} \p_\mu \otimes \p_\nu \otimes dx^\sigma
+	\]
+	If we want to find the $\tensor{T}{^{\alpha\beta}_\gamma}$-th component, we feed it the 
+	basis tensors $dx^\alpha, dx^\beta,\text{ and }\p_\gamma$. 
+	\begin{align*}
+		\kappa
+		[dx^\alpha,dx^\beta, \p_\gamma] 
+		&= 
+		\tensor{\kappa}{^{\mu\nu}_{\sigma}} 
+		\p_\mu \otimes \p_\nu \otimes dx^\sigma
+		[dx^\alpha,dx^\beta, \p_\gamma] \\
+		&=
+		\tensor{\kappa}{^{\mu\nu}_{\sigma}} 
+		\p_\mu[dx^\alpha]
+		\p_\nu[dx^\beta]
+		dx^\sigma[\p_\gamma]\\
+		&=
+		\tensor{\kappa}{^{\mu\nu}_{\sigma}} 
+		\tensor{\delta}{^\alpha_\mu}
+		\tensor{\delta}{^\beta_\nu}
+		\tensor{\delta}{^\sigma_\gamma}\\
+		&=
+		\tensor{\kappa}{^{\alpha\nu}_{\sigma}} 
+		\tensor{\delta}{^\beta_\nu}
+		\tensor{\delta}{^\sigma_\gamma}\\
+		&=
+		\tensor{\kappa}{^{\alpha\beta}_{\sigma}} 
+		\tensor{\delta}{^\sigma_\gamma}
+		\\
+		&=
+		\tensor{\kappa}{^{\alpha\beta}_{\gamma}} 
+	\end{align*}
+	
+	Thus, we can see that the same contraction operation applies here as it 
+	does for vectors and covectors.
+\subsubsection{Symmetric Tensor Product and Transformation Law}
+	% We mentioned several lectures ago that 
+	% to get the notion of lengths and orthogonality 
+	% between vectors, we need an operation that will
+	% allow us to measure lengths and angles. An operation,
+	% which takes two vectors, and spits out a scalar. 
+	% We shall discuss that operation now.
+
+	A tensor product, in general, is noncommutative.
+	\[
+		\p_\mu \otimes \p_\nu \neq \p_\nu \otimes \p_\mu
+	\]
+	However, there are important tensors for which interchanging the
+	two tensor factors leaves the tensor unchanged. Such tensors are
+	called \textit{symmetric tensors}. These tensors have a notion of commutativity.	
+
+	Consider a tensor $g\in(2,0)$. 
+	\[
+		g = 
+		g_{\mu\nu} dx^\mu \otimes dx^\nu
+	\]
+	In a 2D manifold (to keep the math simple), its explicit decomposition
+	would be
+	\begin{align*}
+		g = 
+		g_{11} \dd{x}^1 \otimes dx^1 +
+		g_{12} \dd{x}^1 \otimes dx^2 +
+		g_{21} \dd{x}^2 \otimes dx^1 +
+		g_{22} \dd{x}^2 \otimes dx^2
+	\end{align*}
+	Now, suppose the tensor is symmetric, i.e.,
+	\[
+		g_{\alpha\beta} = g_{\beta\alpha} 
+	\]
+	This is the same sense of a matrix being symmetric. There
+	are many cases where the tensor you are working with are symmetric,
+	for example, in GR, the general metric tensor is symmetric. The 
+	stress tensor $\sigma_{ij}$ and strain tensor $\varepsilon_{ij}$ is symmetric, the inertia tensor $I$, 
+	and so on.
+
+	In that case, we can write the explicit decomposition as
+	\[
+		g = 
+		g_{11} \dd{x}^1 \otimes dx^1 +
+		g_{12} (dd{x}^1 \otimes dx^2 +
+		\dd{x}^2 \otimes dx^1) +
+		g_{22} \dd{x}^2 \otimes dx^2
+	\]
+	Notice, however, that all the tensor elements are now symmetric ($g_{11}=g_{11}, g_{22}=g_{22}$, and $g_{12}=g_{21}$, by construction).
+
+	We have a sense of a symmetric product here, which we can use. It suggests that,
+	for symmetric tensors, it is convenient to suppress the explicit tensor product
+	and introduce an implicit symmetric product. Let us define the following
+
+	\begin{definition}{Symmetric Tensor Product}
+		For a symmetric tensor, i.e.,
+		\[
+			dx^{\mu}\otimes dx^\nu = dx^\nu \otimes dx^\mu
+		\]
+		We define a symmetric tensor product $dx^\mu dx^\nu$ such that
+		\begin{align*}
+			dx^{\mu}dx^{\nu} &= 
+			\frac{1}{2}\pqty{
+				dx^{\mu}\otimes dx^\nu + dx^\nu \otimes dx^\mu
+			}\\
+							 &= dx^\nu dx^\mu
+		\end{align*} 
+		This is also known as the symmetrized tensor product.
+	\end{definition}
+
+	Now that we can do that, we can rewrite $g$ as 
+	\[
+		g = g_{11}(dx^1)^2 + 2g_{12} dx^1 dx^2 + g_{22} (dx^2)^2
+	\]
+	Notice, if you interpret this physically, that 
+	this is just an infinitesimal square of arclength.
+
+	Now that we can write it in an easier geometric way, we just collapse the expression back to
+	the general tensor product, with the understanding that the product of the differentials
+	represents an appropriate symmetric tensor product.
+	\[
+		g = g_{\mu\nu} dx^\mu dx^\nu
+	\]
+	Notice that this is just a normal covector operation. We can examine
+	how the tensor components $g_{\mu\nu}$ transform by performing a change 
+	of basis, from $x^\mu$ to $y^\sigma$. 
+
+	Let $x^\mu = x^\mu(y^\sigma)$. Recall the change of basis formulation defined in the last chapter. That is,
+	\[
+		dx^\mu = \pdv{x^\mu}{y^\sigma} dy^\sigma
+	\]
+	We can then write the expression as
+	\begin{align*}
+		g 
+		&= g_{\mu\nu} dx^\mu dx^\nu\\
+		&= g_{\mu\nu} 
+		\pqty{
+			\pdv{x^\mu}{y^\sigma} 
+			dy^\sigma 
+		}
+		\pqty{
+			\pdv{x^\nu}{y^\rho} 
+			dy^\rho 
+		}
+	\end{align*}
+	The Jacobians are just constants, we can pull them out
+	\[
+		g = 
+			\pdv{x^\mu}{y^\sigma} 
+			\pdv{x^\nu}{y^\rho} 
+			\,
+		g_{\mu\nu} 
+			dy^\sigma
+			dy^\rho 
+	\]
+	On the other hand, since $g$ is the same tensor regardless of the 
+	coordinate system, we may express it directly in terms of the new coordinates
+	as
+	\[
+		g = g'_{\sigma\rho} dy^\sigma dy^\rho
+	\]
+	Comparing the two expressions, we now have a tensor transformation rule. This
+	is how the components of a $(0,2)$ tensor transforms under a change of basis.
+	\[
+		g'_{\sigma\rho} 
+		=
+		\pdv{x^\mu}{y^\sigma} 
+		\pdv{x^\nu}{y^\rho} 
+		\,
+		g_{\mu\nu} 
+	\]
+	This is the transformation law for a $(0,2)$ symmetric tensor. In particular,
+	the metric components transform covariantly because each lower index
+	contributes one factor of the Jacobian.
+
+	This all hinges on the assumption that the tensor product is symmetric, and the tensor components are symmetric.
+	The tensor product is hence, implicit.
+
+\subsubsection{Contraction Operation}
+	We need to define what a contraction is.
+	
+	\begin{definition}{Contraction}
+		If a tensor $T$ has a contravariant index and a covariant index
+		which are contracted, then the contraction operation $C$ acts on
+		the tensor by summing over the repeated index. If
+		$T\in{(k,l)}$, then
+		\[
+			C(T)\in{(k-1,l-1)}.
+		\]
+		Thus, $CT$ is a new tensor with both its contravariant and
+		covariant rank reduced by $1$.
+	\end{definition}
+	For example, suppose $T$ has components
+	\[
+		T
+		=
+		T^{a_1\cdots \mu\cdots a_k}{}_{b_1\cdots \mu\cdots b_l}
+		\,
+		\p_{a_1}\otimes\cdots\otimes \p_\mu\otimes \cdots \otimes\p_{a_k}
+		\otimes
+		dx^{b_1}\otimes\cdots\otimes dx^\mu\otimes\cdots\otimes dx^{b_l},
+	\]
+	where the repeated index $\mu$ appears once upstairs and once
+	downstairs. The contraction sums over all possible values of
+	$\mu$:
+	\[
+		CT
+		=
+		\sum_{\mu}
+		T^{a_1\cdots \mu\cdots a_k}{}_{b_1\cdots \mu\cdots b_l}
+		\,
+		\p_{a_1}\otimes\cdots
+		\otimes
+		dx^{b_1}\otimes\cdots.
+	\]
+	The contracted index $\mu$ then disappears, leaving a tensor of
+	type $(k-1,l-1)$.
+
+	Another example, consider a tensor $T\in(1,1)$ with basis
+	$dx^\mu$ and $\p_\mu$:
+	\[
+		T = T^\mu{}_\nu\,\p_\mu\otimes dx^\nu.
+	\]
+	When we perform a contraction, the vector and covector basis
+	are evaluated against one another:
+	\[
+		dx^\nu[\p_\mu]=\delta^\nu_\mu.
+	\]
+	Thus,
+	\[
+		CT
+		=
+		T^\mu{}_\nu\,\delta^\nu_\mu
+		=
+		T^\mu{}_\mu,
+	\]
+	which is a scalar, of type $(0,0)$. This is the trace of the $(1,1)$ tensor.
+	
+\subsubsection{Abstract Index Notation}
+	When it comes to tensor notation, there are several competing schools of thought
+	regarding how it would be represented. We can show these 
+	different notation with the following
+	\begin{enumerate}[(1)]
+		\item Index--free notation
+
+			To illustrate this, let's show the following. Consider a tensor $S\in\binom{p}{q}$, and 
+			another tensor $T\in\binom{r}{s}$. 
+
+			Individually, the tensors act like so
+			\[
+				S[\theta_1,\cdots,\theta_p,\phi_1,\cdots,\phi_q]
+			\]
+			and
+			\[
+				T[\theta_1,\cdots,\theta_r,\phi_1,\cdots,\phi_s]
+			\]
+			The tensor product
+			between them is
+			\[
+				S\otimes T \in \binom{p+r}{q+s}
+			\]
+			That is, it accepts $p+r$ covectors, and $q+s$ vectors. Let $\theta_i$ be covectors and 
+			$\phi_j$ be vectors. 
+			Then, the tensor product acts like
+			\[
+				(S\otimes T)[\theta_1,\cdots, \theta_{p},\phi_1,\cdots,\phi_q,\theta_{p+1},\cdots,\theta_{p+r},\phi_{q+1},\cdots,\phi_{q+s}]
+			\]
+			This can all be confusing, no? It is easy to make mistakes in this notation. As such, 
+			you need to respect the order of the covectors and vectors. 
+			We can rearrange the order by which the tensor accepts arguments. This is simply equivalent to
+			\[
+				(S\otimes T)[\theta_1,\cdots, \theta_{p+r}, \phi_1, \cdots, \phi_{q+s}]
+			\]
+			Because the order of the duals and vectors themselves do not matter, what matters is 
+			the order of the vectors among the group of vectors, and the order of the covectors among the 
+			group of covectors. That order is respected, but to simplify things, the new tensor acts the same way
+			if we feed it the $S$ covectors first, then the $S$ vectors, followed by the $T$ covectors and vectors. 
+
+			Writing it down in component form, we have
+			\begin{align*}
+				&S\otimes T =
+				\tensor{S}{^{i_1,\cdots,i_p}_{j_1,\dots,j_q}}
+				\tensor{T}{^{k_1,\cdots,k_q}_{l_1,\dots,l_s}}\\
+						   &\p_{i_1}\otimes\cdots\otimes\p_{i_p}\otimes dx^{j_1}\otimes\cdots\otimes dx^{j_q}
+				\p_{k_1}\otimes\cdots\otimes\p_{k_q}\otimes dx^{l_1}\otimes\cdots\otimes dx^{l_s}
+			\end{align*}
+			Equivalently,
+			\begin{align*}
+				&S\otimes T =
+				\tensor{S}{^{i_1,\cdots,i_p}_{j_1,\dots,j_q}}
+				\tensor{T}{^{k_1,\cdots,k_q}_{l_1,\dots,l_s}}\\
+						   &\p_{i_1}\otimes\cdots\p_{i_p}\otimes
+				\p_{k_1}\otimes\cdots\p_{k_q}\otimes
+				dx^{j_1}\otimes\cdots\otimes dx^{j_q}\otimes
+				dx^{l_1}\otimes\cdots\otimes dx^{l_s}
+			\end{align*}
+			We do this because the tensor product commutes for vectors and covectors.
+			The slots for covectors and the slots for vectors should not be confused with 
+			one another. Covector order and vector order matters, but the order of the covectors and vectors themselves don't really matter.
+
+			Under this notation, there is no ambiguity. As long as the order of the covectors and vectors 
+			are respected, we can swap them and indicate which slots belong to which.
+
+			However, as you might have noticed, this notation is very cumbersome. I am intentionally
+			showing you how inconvenient it is to use this notation. All those shit regarding 
+			bases that you need to follow. However, mathematicians love this notation.
+			They prefer it precisely because it is rigourous, and no confusion can happen.
+			
+			This notation is called the \textit{index-free} notation. It is index free because the 
+			tensor itself has no index, only the component has. It is what we have been
+			using so far to understand tensors. However, it has a few drawbacks.
+
+			First, is that the expression of a tensor is very long and very cumbersome to write. It is
+			easy to make mistakes. Second, is that you do not know the type of the tensor immediately just
+			by looking at it. We need to specify that a tensor is of type $(k,l)$, which is separate
+			from how we define the tensor itself. It is difficult to perform calculus on it, and 
+			it's just inconvenient. Contraction operations on tensors using this notation is hard.
+			Manipulating things is diffilcult. For example, showing that
+			\[
+				S\otimes T \neq T\otimes S
+			\]
+			explicity is cumbersome, since we need to define everything.
+
+			However, this is very common in pure mathematics. It is inconvenient, but rigourous. It is unambigous,
+			and it is exact.
+		\item Index notation
+
+			This notation is quite old fashioned. It is used by 
+			Physicists to express and  manipulate tensors, specially from those
+			under the old universities such as Princeton or MIT. It was widely
+			accepted in physics in the last century. Here, we denote the tensor with indices.
+
+			For example, a $(2,1)$ tensor is just 
+			\[
+				\tensor{T}{^{\mu\nu}_{\sigma}}
+			\]
+
+			That's the tensor itself. All the basis that accompany it, and its components, are implied. 
+
+			A tensor product between, say $\tensor{S}{^\mu_\nu}$ and $\tensor{T}{^{\alpha\beta^\gamma}_{\epsilon\xi}}$
+			is just
+			\[
+				\tensor{S}{^\mu_\nu}
+				\otimes
+				\tensor{T}{^{\alpha\beta\gamma}_{\epsilon\xi}}
+				=
+				\tensor{(S\otimes T)}{^{\mu\alpha\beta\gamma}_{\nu\epsilon\xi}}
+			\]
+
+			It has a few advantages. First, you already know the type of the tensor without being explicitly
+			told. From the symbol itself, for example, we can already tell that the tensor above is a $(4,3)$ tensor.
+			Second, manipulating it for calculus, contraction, and other operations are easy. There is no need
+			to fuss about with the basis vectors or covectors. It is convenient.
+
+			However, it also has some drawbacks. You can't easily tell if what you are manipulating 
+			is the tensor itself, or just its components. It's hard to check the validity of the mathematics
+			you do if it is difficult to identify what is it you are working with. Also, if you 
+			manipulate larger tensors, the amount of indices become too many, and it might be 
+			more difficult to work with. Lastly,
+			mathematicians will not understand what you are referring to. If you give a mathametician, say
+			\[
+				\tensor{T}{^\mu_\beta}
+			\]
+			They will not call that a tensor. They will call that a scalar. It's the operation of a tensor
+			on the bases. It is a collection of components.
+			\[
+				T[dx^\beta,\p_\mu]
+			\]
+			So for them, what physicists refer to as a tensor is not necesarilly a tensor itself. 
+			So there is some difficulty collaborating between the two.
+
+		\item Abstract Index notation
+
+			Penrose and others, specially from those that came from the Chicago school of thought,
+			went halfway between the two. They used both elements of the notation.
+
+			They \textit{defined} the following: If a tensor symbol uses \textit{Latin} indices,
+			it is a tensor, the geometric object.
+			
+			For example,
+			\[
+				\tensor{T}{^{a}_{bc}}
+			\]
+			From this, it is immediately clear that the tensor is a $(1,2)$ tensor. There is no
+			explicit reference to its type, because it is obvious from the indices alone.
+
+			A tensor product is simply
+			\[
+				\tensor{T}{^{ab}_{c}}
+				\tensor{S}{^d_e} 
+				=
+				\tensor{S}{^d_e}\tensor{T}{^{ab}_c}
+				=
+				\tensor{(S\otimes T)}{^{abc}_{de}}
+			\]
+			Since a tensor product makes a new tensor, it's also very easy to show.
+			\[
+				\tensor{T}{^{ab}_{c}}
+				\tensor{S}{^d_e} 
+				=
+				\tensor{S}{^d_e}\tensor{T}{^{ab}_c}
+				=
+				\tensor{U}{^{abc}_{de}}
+			\]
+			From this, it is immediately clear that $U$ is a $(3,2)$ tensor. 
+
+			It does not show the components, but it presents tensors in a more convenient way, similar 
+			to the index notation that old physicists used.
+
+			They then \textit{defined} that if a tensor symbol uses \textit{Greek} indices, then
+			it is the components of a tensor, not the tensor itself. For example
+			\[
+				\tensor{T}{^\mu_{\nu\sigma}}
+			\]
+			are the tensor components. You can then combine it with the basis $p_\mu$, $dx^\nu$, and 
+			others, so that it qualifies as a bona fide tensor.
+			\[
+				\tensor{T}{^\mu_{\nu\sigma}}\p_\mu \otimes dx^\nu \otimes dx^\sigma
+			\]
+			Therefore, a tensor can be represented as 
+			\[
+				\tensor{T}{^{a}_{bc}}
+				=
+				\tensor{T}{^\mu_{\nu\sigma}}\p_\mu\otimes dx^\nu\otimes dx^\sigma
+			\]
+			And a tensor acting on covectors and vectors can be easily represented as 
+			\[
+				T[\omega,\xi]=
+				\tensor{T}{^{ab}_c}\omega_a \xi_b
+			\]
+			It is then immediately clear that $\omega$ and $\xi$ are covectors, and $T$ is
+			lacking a vector input, since it is a $(2,1)$ tensor. You do not immediately
+			get that information in index-free notation, most have to be explicitly stated, and you
+			have to rely on context to understand things. It is also clear that it is a tensor \textit{acting} on other tensors,
+			and not just components, and the indices indicate the slots being filled. There is no ambiguity, but it's easy to use. You therefore get both the convenience
+			of index notation, and the rigour (should you desire) of the index-free notation.
+			But tensor manipulation and operations itself are easier than the latter, but clearer than the former.
+			I\footnote{Sir Vega} myself trained 
+			as a relativist and took my PhD and Post Doc under those schools, my adviser studied
+			under Penrose, so I also adapt this notation.
+
+			One major drawback of this is again, if you work with higher dimensional tensors,
+			you will run out of letters very quickly.
+	\end{enumerate}
+
+	Moving forward, we will use this abstract index notation to do our calculations.
+	You may ask, ``Why teach index free notation at all''? It's that you can understand
+	all the rigour of the mathematics before you can be free to break it and make heuristics 
+	of your own. Index free notation is cumbersome, but it is exact, which is useful.
+	Furthermore, if I did not teach you index-free notation, you would have a hard time understanding
+	mathematical papers and books teaching differential geometry from a pure math perspective. 
+	It would take some time and difficulty before you fully grasp what they mean, and there are very good, 
+	comprehensive pure math differential geometry text books that are written purely under index-free
+	notation. 
+	You would not gain anything from those resources if you do not understand the notation they use.
+	We learned it first, so that we know the foundations of what really it is we are doing.
+	When we have truly leard all the rules, then we can start being lazy and do things
+	in the abstract way we desire. However, never forget that the root of the notation you are using,
+	which is the index-free rigourous definition. If you take your notation and run with it, 
+	without appreciating the true meaning underneath it all, you will have a hard time extending
+	your mathematics beyond where those assumptions your notation makes.
+	
+
+\subsubsection{Metric Tensor}
+\subsubsection{Inner Product}

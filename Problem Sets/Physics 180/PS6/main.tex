@@ -16,7 +16,270 @@
 		transition matrix element $T_{fi}$ of Fermi's golden rule.
 	\end{problem}
 	\begin{solution_pset}
+		\nocite{flores2026}
+		We start from the expansion of the state in terms of the eigenstates
+		$\ket{\phi_k}$ of the unperturbed Hamiltonian,
+		\begin{equation}
+			\ket{\psi(t)}
+			=
+			\sum_k c_k(t)\ket{\phi_k}e^{-iE_k t}.
+			\label{eq:state-expansion}
+		\end{equation}
 
+		Substituting (\ref{eq:state-expansion}) into the time-dependent Schr\"odinger
+		equation with interaction Hamiltonian $\hat H'$ gives
+		\begin{equation}
+			i\sum_k \dv{c_k}{t}\ket{\phi_k}e^{-iE_k t}
+			=
+			\sum_k \hat H' c_k(t)\ket{\phi_k}e^{-iE_k t}.
+			\label{eq:coefficient-equation}
+		\end{equation}
+
+		Taking the inner product with $\bra{\phi_f}$ gives the differential equation
+		for the coefficient $c_f(t)$ corresponding to transitions to the particular
+		final state $\ket{f}=\ket{\phi_f}$. Under the first-order approximation used
+		in the lecture, $c_i(t)\approx 1$ and $c_{k\neq i}(t)\approx 0$, giving
+		\begin{equation}
+			\dv{c_f}{t}
+			=
+			-i\matrixel{f}{\hat H'}{i}
+			e^{i(E_f-E_i)t}.
+			\label{eq:first-order-cf}
+		\end{equation}
+
+		The lecture defines the transition matrix element by
+		\begin{equation}
+			T_{fi}
+			=
+			\matrixel{f}{\hat H'}{i}.
+			\label{eq:Tfi}
+		\end{equation}
+
+		To obtain the higher-order terms, we no longer restrict the sum in
+		(\ref{eq:coefficient-equation}) to the initial state. We write the coefficients
+		as an expansion in orders of the perturbing Hamiltonian,
+		\begin{equation}
+			c_f(t)
+			=
+			c_f^{(0)}(t)
+			+
+			c_f^{(1)}(t)
+			+
+			c_f^{(2)}(t)
+			+
+			c_f^{(3)}(t)
+			+\cdots.
+			\label{eq:coefficient-expansion}
+		\end{equation}
+
+		The zeroth-order coefficients satisfy
+		\begin{equation}
+			c_i^{(0)}(t)=1,
+			\qquad
+			c_{k\neq i}^{(0)}(t)=0.
+			\label{eq:zeroth-order}
+		\end{equation}
+
+		For an intermediate state $\ket{n}$, the first-order coefficient follows
+		from the same differential equation as (\ref{eq:first-order-cf}),
+		\begin{equation}
+			\dv{c_n^{(1)}}{t}
+			=
+			-i\matrixel{n}{\hat H'}{i}
+			e^{i(E_n-E_i)t}.
+			\label{eq:first-order-cn}
+		\end{equation}
+
+		Integrating (\ref{eq:first-order-cn}) from $0$ to $t$ gives
+		\begin{equation}
+			\begin{aligned}
+			c_n^{(1)}(t)
+			&=
+			-i\matrixel{n}{\hat H'}{i}
+			\int_0^t
+			\dd{t'}\,e^{i(E_n-E_i)t'}
+			\\
+			&=
+			-\matrixel{n}{\hat H'}{i}
+			\frac{e^{i(E_n-E_i)t}-1}{E_n-E_i}.
+			\end{aligned}
+			\label{eq:first-order-cn-integrated}
+		\end{equation}
+
+		We now substitute (\ref{eq:first-order-cn-integrated}) into the equation for
+		$c_f(t)$. The second-order contribution is now therefore
+		\begin{equation}
+			\dv{c_f^{(2)}}{t}
+			=
+			-i\sum_n
+			\matrixel{f}{\hat H'}{n}
+			e^{i(E_f-E_n)t}
+			c_n^{(1)}(t).
+			\label{eq:second-order-cf}
+		\end{equation}
+
+		Using (\ref{eq:first-order-cn-integrated}), we have
+		\begin{equation}
+			\begin{aligned}
+			\dv{c_f^{(2)}}{t}
+			&=
+			i\sum_n
+			\frac{
+				\matrixel{f}{\hat H'}{n}
+				\matrixel{n}{\hat H'}{i}
+			}{
+				E_n-E_i
+			}
+			\left[
+				e^{i(E_f-E_i)t}
+				-
+				e^{i(E_f-E_n)t}
+			\right].
+			\end{aligned}
+			\label{eq:second-order-cf-expanded}
+		\end{equation}
+
+		The first term in (\ref{eq:second-order-cf-expanded}) has the same time
+		dependence as the first-order result in (\ref{eq:first-order-cf}). This is the
+		term that contributes to the transition matrix element for the transition
+		from $\ket{i}$ to $\ket{f}$. Thus, comparing with (\ref{eq:first-order-cf}),
+		the second-order transition matrix element is
+		\begin{equation}
+			\boxed{
+				T_{fi}^{(2)}
+				=
+				\sum_n
+				\frac{
+					\matrixel{f}{\hat H'}{n}
+					\matrixel{n}{\hat H'}{i}
+				}{
+					E_i-E_n
+				}
+			}
+			\label{eq:Tfi-second}
+		\end{equation}
+
+		Hence, to second order, the transition proceeds through an intermediate
+		state $\ket{n}$,
+
+		\begin{equation}
+			\ket{i}
+			\rightarrow
+			\ket{n}
+			\rightarrow
+			\ket{f}.
+			\label{eq:second-order-transition}
+		\end{equation}
+
+		For the third-order term, we repeat the same procedure. The second-order
+		coefficient for an intermediate state $\ket{m}$ contains a contribution
+		through another intermediate state $\ket{n}$,
+
+		\begin{equation}
+			c_m^{(2)}(t)
+			\supset
+			\sum_n
+			\frac{
+				\matrixel{m}{\hat H'}{n}
+				\matrixel{n}{\hat H'}{i}
+			}{
+				(E_i-E_m)(E_i-E_n)
+			}
+			e^{i(E_m-E_i)t}.
+		\label{eq:second-order-cm}
+		\end{equation}
+
+		Substituting (\ref{eq:second-order-cm}) into the coefficient equation gives
+		the contribution to $c_f^{(3)}$ with the same time dependence as the
+		first-order transition,
+
+		\begin{equation}
+			\begin{aligned}
+			\dv{c_f^{(3)}}{t}
+			&\supset
+			-i
+			\sum_{m,n}
+			\frac{
+				\matrixel{f}{\hat H'}{m}
+				\matrixel{m}{\hat H'}{n}
+				\matrixel{n}{\hat H'}{i}
+			}{
+				(E_i-E_m)(E_i-E_n)
+			}
+			e^{i(E_f-E_i)t}.
+			\end{aligned}
+			\label{eq:third-order-cf}
+		\end{equation}
+
+		Comparing (\ref{eq:third-order-cf}) with the form of the first-order
+		differential equation in (\ref{eq:first-order-cf}), the third-order transition
+		matrix element is therefore
+
+		\begin{equation}
+			\boxed{
+				T_{fi}^{(3)}
+				=
+				\sum_{m,n}
+				\frac{
+					\matrixel{f}{\hat H'}{m}
+					\matrixel{m}{\hat H'}{n}
+					\matrixel{n}{\hat H'}{i}
+				}{
+				(E_i-E_m)(E_i-E_n)
+				}
+			}
+			\label{eq:Tfi-third}
+		\end{equation}
+
+		% The corresponding sequence of transitions is
+
+		% \begin{equation}
+		% 	\ket{i}
+		% 	\rightarrow
+		% 	\ket{n}
+		% 	\rightarrow
+		% 	\ket{m}
+		% 	\rightarrow
+		% 	\ket{f}.
+		% 	\label{eq:third-order-transition}
+		% \end{equation}
+
+		Therefore, extending the transition matrix element defined in
+		(\ref{eq:Tfi}) to higher orders,
+		\begin{equation}
+			\begin{aligned}
+			T_{fi}
+			&=
+			T_{fi}^{(1)}
+			+
+			T_{fi}^{(2)}
+			+
+			T_{fi}^{(3)}
+			+\cdots
+			\\
+			&=
+			\matrixel{f}{\hat H'}{i}
+			+
+			\sum_n
+			\frac{
+				\matrixel{f}{\hat H'}{n}
+				\matrixel{n}{\hat H'}{i}
+			}{
+				E_i-E_n
+			}
+			+
+			\sum_{m,n}
+			\frac{
+				\matrixel{f}{\hat H'}{m}
+				\matrixel{m}{\hat H'}{n}
+				\matrixel{n}{\hat H'}{i}
+			}{
+				(E_i-E_m)(E_i-E_n)
+			}
+			+\cdots.
+			\end{aligned}
+			\label{eq:Tfi-expansion}
+		\end{equation}
 	\end{solution_pset}
 	\newpage
 
@@ -62,16 +325,255 @@
 		\begin{equation}
 			\label{eq:a3-term}
 			a_3 \frac{Z^2}{A^\frac{1}{3}} 
-			=
+			\to
 			a_3 \frac{Z^2}{A^\frac{1}{3}} 
 			\pqty{
 				1 - \frac{1}{5}
-				\varepsilon{2}
+				\varepsilon^{2}
 			}
 		\end{equation}
 	\end{problem}
 	\begin{solution_pset}
+		We tackle the surface and coulomb term separately. A key 
+		observation here is that $a$ and $b$ must be adjusted so that the 
+		volume of a corresponding sphere remains constaint. The SEMF equations are fundamentally 
+		based on the assumption of a spherical nucleus, and as such changes on that assumption
+		means the terms scale respectively. 
+
+		Let $R$ be the radius of the sphere
+		having the same volume as the spheroid. From (\ref{eq:v-prolate}), we have
+		\[
+			\frac{4}{3}\pi ab^2 = \frac{4}{3}\pi R^3  
+		\]
 		
+		Using (\ref{eq:prolate-relation}), $b = a\sqrt{1- x^2}$, we have
+		\[
+			a^3(1-x^2) = R^3
+		\]
+		and hence,
+		\begin{equation}
+			\label{eq:a}
+			a = 
+			R(1-x^2)^{-1/3}
+		\end{equation}
+		and
+		\begin{equation}
+			\label{eq:b}
+			b = R(1-x^2)^{1/6}
+		\end{equation}
+		From this, we begin the proof.
+		\paragraph{Surface term}
+		\begin{proof}
+		   For a spherical nucleus, the surface area $S_0$ is
+		   \[
+				S_0 = 4\pi R^2
+		   \]	
+		   Substituting (\ref{eq:a}) and (\ref{eq:b}) into (\ref{eq:s-prolate}), we have
+		   \begin{align*}
+			    S_\text{prolate} 
+				&= 
+				2\pi 
+				R(1-x^2)^{1/6}
+				\pqty{
+					R(1-x^2)^{1/6}
+					+ \frac{
+						R(1-x^2)^{-1/3}
+						\sin\inv(x)
+					}{x} 
+				}\\
+				&=
+				2\pi 
+				R^2(1-x^2)^{1/6}
+				\pqty{
+					(1-x^2)^{1/6}
+					+ \frac{
+						(1-x^2)^{-1/3}
+						\sin\inv(x)
+					}{x} 
+				}
+		   \end{align*}
+
+		   Dividing by $S_0$, we find
+		   \begin{equation}
+		   	\label{eq:SprolateS0}
+			   \frac{
+					S_\text{prolate} 
+				}{
+					S_0
+				} 
+				=
+				\frac{1}{2} 
+				(1-x^2)^{1/6}
+				\pqty{
+					(1-x^2)^{1/6}
+					+ \frac{
+						(1-x^2)^{-1/3}
+						\sin\inv(x)
+					}{x} 
+				}
+		   \end{equation}
+
+		   For small $x$, i.e., $x\ll 1$, the following terms can be expanded as\footnote{Trivial to show, taylor series.}
+		   \begin{align*}
+			   \frac{
+				   \sin\inv(x)
+			   }{
+				   x
+			   } 
+			   &= 
+			   1 + \frac{x^2}{6} + \frac{3x^4}{40} + \order{x^6}\\
+			   (1-x^2)^{1/6} 
+			   &= 
+			   1 - \frac{x^2}{6} - \frac{5x^4}{72} + \order{x^6} \\
+			   (1-x^2)^{-1/3} 
+			   &=
+			   (1-x^2)^{-1/3} = 1 + \frac{x^2}{3} + \frac{2x^4}{9} + \order{x^6}
+		   \end{align*}
+
+		   Therefore\footnote{simplified with mathematica}, (\ref{eq:SprolateS0}) simplifies to
+		   \begin{equation}
+				\label{eq:SpS0}
+				\frac{
+					S_\text{prolate} 
+				}{
+					S_0
+				} 
+				=
+				1 + \frac{2}{45}x^4 + \order{x^6} 
+		   \end{equation}
+
+		   Since $\varepsilon = \dfrac{1}{3}x^3 $, then
+		   \[
+			   x^4 = 9\varepsilon^2
+		   \]
+
+		   From this, we obtain
+		   \[
+				\frac{
+					S_\text{prolate} 
+				}{
+					S_0
+				} 
+				=
+				1 + \frac{2}{5}\varepsilon^2 + \order{\varepsilon^3} 
+		   \]
+		   
+		   Therefore, the surface term in the SEMF becomes
+		   \begin{equation}
+				\label{eq:SEMF-surface_term}
+				\boxed{
+					a_2 A^{2/3} \to a_2 A^{2/3} \pqty{1 + \frac{2}{5}\varepsilon^2 }
+				}
+		   \end{equation}
+		   to the required order, giving us (\ref{eq:a2-term}).
+		\end{proof}
+		\newpage
+		\paragraph{Coulomb term}
+		\begin{proof}
+			For a uniformly charged prolate spheroid, the Coulomb energy is 
+			\cite{Jadhao2015}
+			\begin{equation}
+				\label{eq:charged prolate spheroid}
+			    E_C = 
+				\frac{3}{5} 
+				\frac{Q^2}{4\pi \varepsilon_0 a} 
+				\frac{\tanh\inv x}{x} 
+			\end{equation}
+			For a sphere of equal volume, the corresponding Coulomb energy is
+			\[
+				E_{C,0} =
+				\frac{3}{5} 
+				\frac{Q^2}{4\pi\varepsilon_0 R} 
+			\]
+			So, 
+			the ratio of the Coulomb energy of a prolate spheroid
+			to that of the equal volume sphere is 
+			\[
+				\frac{
+					E_{C,\text{prolate}}
+				}{
+					E_{C,0}
+				} 
+				= 
+				\frac{R}{a}
+				\frac{\tanh\inv x}{x} 
+			\]
+			Since
+			\[
+				\frac{R}{a} = (1-x^2)^{1/3},
+			\]
+			then
+			\begin{equation}
+				\label{eq:EC0}
+				\frac{
+					E_{C,\text{prolate}}
+				}{
+					E_{C,0}
+				} 
+				= 
+				(1-x^2)^{1/3}
+				\frac{\tanh\inv x}{x}.
+			\end{equation}
+			For small values of $x$, the corresponding terms expand to the following
+			\begin{align*}
+				(1-x^2)^{1/3} 
+				&= 
+				1 - \frac{x^2}{3} - \frac{x^4}{9} + \order{x^6}  \\
+				\frac{\tanh\inv x}{x}
+				&=
+				1 + \frac{x^2}{3} + \frac{x^4}{5} + \order{x^6}
+			\end{align*}
+			Expanding the terms in (\ref{eq:EC0}) using the expansions above, we have
+			\[
+				\frac{
+					E_{C,\text{prolate}}
+				}{
+					E_{C,0}
+				} 
+				=
+				\pqty{
+					1 - \frac{x^2}{3} - \frac{x^4}{9}
+				}
+				\pqty{
+					1 + \frac{x^2}{3} + \frac{x^4}{5}  
+				}
+				+ \order{x^6}
+			\]
+			The $x^2$ terms cancel, leaving
+			\[
+				\frac{
+					E_{C,\text{prolate}}
+				}{
+					E_{C,0}
+				} 
+				=
+				1 - \frac{x^4}{45} + \order{x^6} 
+			\]
+			Again, using $x^4 = 9\varepsilon^2$, we have
+			\[
+				\frac{
+					E_{C,\text{prolate}}
+				}{
+					E_{C,0}
+				} 
+				=
+				1 - \frac{\varepsilon^2}{5} + \order{\varepsilon^3} 
+			\]
+			Hence, for the appropriate order,
+			\begin{equation}
+				\label{eq:SMEF-col-term}
+				\boxed{
+					a_3 \frac{Z^2}{A^\frac{1}{3}} 
+					\to
+					a_3 \frac{Z^2}{A^\frac{1}{3}} 
+					\pqty{
+						1 - \frac{1}{5}
+						\varepsilon^{2}
+					}
+				}    
+			\end{equation}
+			which is (\ref{eq:a3-term}).
+		\end{proof}
 	\end{solution_pset}
 	\newpage
 
@@ -86,6 +588,17 @@
 	
 		\subsection*{Code} 
 		No code was used for this problem set
+	\vspace{2em}
+	\begin{figure}[h]
+	    \centering
+	    \includegraphics[width=0.8\textwidth]{images/67.jpg}
+	    \caption{Problem Set 6-7... hehehe}
+	    \label{fig:67}
+	\end{figure}
+	\vspace{1.25in}
+	\begin{center}
+	    \textit{Thank you, Mr. Kong}
+	\end{center}
 	\vfill
 	\begin{center}
 		{\large

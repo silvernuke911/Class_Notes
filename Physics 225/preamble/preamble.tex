@@ -13,7 +13,7 @@
 % \tcbuselibrary{breakable}
 % A5 PAPER
 \usepackage[a5paper,top=0.75in,bottom=0.75in,left=0.75in,right=0.75in,marginparwidth=1.75cm]{geometry}
-
+\usepackage[normalem]{ulem}
 % SECTION TITLE FONT SIZES (move here from preset)
 \titleformat*{\section}{\LARGE\bfseries}
 \titleformat*{\subsection}{\Large\bfseries}
@@ -77,27 +77,6 @@
 
 \numberwithin{equation}{subsection}
 
-%%% DEFINITION ENVIRONMENT
-% Definition counter linked to section
-\newcounter{definition}[section]
-\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
-
-\newtcolorbox{definition}[2][]{%
-    colback=white,
-    colframe=black,
-    boxrule=0.5pt,
-    arc=0pt,
-    left=6pt,
-    right=6pt,
-    top=6pt,
-    bottom=6pt,
-    fonttitle=\bfseries,
-    title={%
-        \stepcounter{definition}% Increment counter
-        Definition \thedefinition{} : #2% Then display
-    },
-    #1
-}
 
 %%% EXAMPLE ENVIRONMENT
 % Example counter linked to section
@@ -141,6 +120,19 @@
 
 \makeatother
 
+%%% LIST OF DEFINITION
+\makeatletter
+
+\newcommand{\listdefinitionname}{List of Definitions}
+
+\newcommand{\listofdefinitions}{%
+    \section*{\listdefinitionname}%
+    \@starttoc{lod}%
+}
+\newcommand{\l@definition}{\@dottedtocline{1}{1.5em}{3.0em}}
+
+\makeatother
+
 %%% THEOREM ENVIRONMENT
 % Theorem counter linked to section
 \newcounter{theorem}[section]
@@ -170,6 +162,32 @@
     \end{tcolorbox}%
 }
 
+%%% DEFINITION ENVIRONMENT
+% Definition counter linked to section
+\newcounter{definition}[section]
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+
+\newenvironment{definition}[2][]{%
+    \refstepcounter{definition}%
+    \addcontentsline{lod}{definition}{\protect\numberline{\thedefinition}#2}%
+    \begin{tcolorbox}[
+        colback=white,
+        colframe=black,
+        coltitle=white,
+        colbacktitle=black,
+        boxrule=0.5pt,
+        arc=0pt,
+        left=6pt,
+        right=6pt,
+        top=6pt,
+        bottom=6pt,
+        fonttitle=\bfseries,
+        title={Definition \thedefinition{} : #2},
+        #1
+    ]
+}{%
+    \end{tcolorbox}%
+}
 %%% QUESTION ENVIRONMENT
 
 \definecolor{questionblue}{RGB}{0, 0, 75}  % Dark blue

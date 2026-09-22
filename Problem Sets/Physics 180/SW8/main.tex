@@ -1,0 +1,54 @@
+\documentclass[8pt, a6paper]{article}
+\usepackage[a6paper, margin=1cm]{geometry}
+\input{preset}
+\thispagestyle{empty}
+\begin{document}
+{\footnotesize
+	\noindent Vercil Juan \hfill September 8, 2026
+
+	\noindent \textsc{Physics 180}\hfill \textbf{Seatwork 8}
+	\vspace{1em}
+	\hrule\vspace{5pt}
+		Your non-physics major friend saw on YouTube that matter and 
+		antimatter could annihilate to produce photons. This friend then comes 
+		to you claiming to have discovered something profound: “The inverse 
+		process of creating matter plus antimatter from a single photon such as
+		\begin{equation}
+			\label{eq:gammatoe}
+		    \gamma \to e^+ + e^-
+		\end{equation}
+		must occur!” Convince your friend who only learns physics from 
+		YouTube (instead of learning from yourself\textsuperscript{\texttrademark}) that this process can not 
+		occur
+		\vspace{5pt}
+	\hrule
+	\begin{proof}
+		For a photon, it has four momentum
+		\begin{equation}
+			\label{eq:photon}
+			p_\gamma^\mu p_{\gamma \mu} = p_\gamma^2 = 0
+		\end{equation}
+		Four momentum conservation requires the positron and electron momenta to equal the photon
+		\[
+			p_\gamma = p_- + p_+
+		\]
+		Hence
+		\[
+			0 = p_\gamma^2 = (p_- + p_+)^2
+		\]
+		But, since $p_-^2 = p_+^2 = m_e^2 c^2 > 0$, then
+		\begin{align*}
+			(p_- +p_+)^2 &= p_-^2 + p_+^2 + 2p_-\cdot p_+ \\
+			             &= 2m_e^2 c^2 + 2p_- \cdot p_+\\
+						 &>0
+		\end{align*}
+		A contradiction. Therefore
+		\begin{equation}
+			\label{eq:result}
+		    \gamma \not\to e^- + e^+
+		\end{equation}
+		Pair production requires another particle such as a second photon,
+		a proton, or a nucleus to conserve four-momentum
+	\end{proof}
+}
+\end{document}

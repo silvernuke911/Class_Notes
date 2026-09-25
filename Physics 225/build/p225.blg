@@ -1,40 +1,45 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: p225.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: unsrturl.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 You've used 4 entries,
-            1791 wiz_defined-function locations,
-            481 strings with 4335 characters,
-and the built_in function-call counts, 752 in all, are:
-= -- 75
-> -- 20
+            2616 wiz_defined-function locations,
+            617 strings with 5418 characters,
+and the built_in function-call counts, 1261 in all, are:
+= -- 137
+> -- 25
 < -- 0
 + -- 9
 - -- 5
 * -- 33
-:= -- 128
+:= -- 188
 add.period$ -- 16
 call.type$ -- 4
 change.case$ -- 2
 chr.to.int$ -- 0
 cite$ -- 4
 duplicate$ -- 39
-empty$ -- 81
+empty$ -- 150
 format.name$ -- 5
-if$ -- 172
+if$ -- 369
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 7
 newline$ -- 26
 num.names$ -- 4
-pop$ -- 13
+pop$ -- 33
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 10
+skip$ -- 106
 stack$ -- 0
 substring$ -- 25
 swap$ -- 4

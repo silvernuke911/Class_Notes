@@ -1,6 +1,12 @@
 \documentclass[10pt,a5paper]{article}
 \input{preamble/preset}
 \input{preamble/preamble}
+% \usepackage[outer]{showlabels} 
+% \renewcommand{\showlabelfont}{\ttfamily\tiny}
+% \renewcommand{\showlabelsetlabel}[1]{%
+%   \rotatebox{-90}{\parbox{\marginparwidth}{\showlabelfont\raggedright #1}}%
+% }
+
 \begin{document}
 	\input{preamble/title} 
 	\addcontentsline{toc}{section}{Front Matter}
@@ -24,7 +30,6 @@
 		\newpage
 		\input{content/meeting2}
 		\newpage
-	\chaptersec{Special Relativity}
 		\input{content/meeting3}
 		\newpage
 	\chaptersec[Aspects of Differential\\Geometry]
@@ -38,6 +43,13 @@
 		\input{content/meeting7}
 		\newpage
 		\input{content/meeting8}
+		\newpage
+		\input{content/meeting9}
+		\input{content/meeting10}
+		\newpage
+		a
+	\chaptersec{Special Relativity}
+		\input{content/meeting11}
 		\newpage
 	\chaptersec{Einstein Field Equations}
 		\newpage

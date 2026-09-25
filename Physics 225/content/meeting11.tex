@@ -1,0 +1,886 @@
+% =======================================
+% MEETING 10
+% ---------------------------------------
+% DATE   - September 23, 2026
+% FORMAT - F2F
+% =======================================
+% TOPIC  - Aspects of Special Relativity
+% =======================================
+
+
+\subsection{Elements of Special Relativity}
+	A lot of the mathematics done in General Relativity take 
+	inspiration from Special Relativity.
+	In fact, Special Relativity is a special case of GR.
+
+	Everything we did in \S \ref{sec:Aspects-of-Differential-Geometry}
+	is to describe the mathematical foundations of GR, so we can 
+	also discuss SR using the tools we learned. We could have learned
+	SR first, just as we do in Introductory Physics II, using the 
+	elementary assumptions and definitions, and arrive with the 
+	concepts that arise from there, then use those tools to understand
+	GR\footnote{In fact, that's what they did originally, Einstein and the others.}
+	However, we can more aptly describe SR using the tools of differential geometry,
+	which is why we spent so much time motivating ourselves to learn it.
+
+	\subsubsection{$n$-Dimensional Euclidean Space}
+		We start, as we always do, with the familiar notions and preconceptions
+		we have about the mathematical nature of things, but with a little more specificity.
+
+		We describe space intuitively as a three-dimensional Euclidean manifold
+		$\R^3$, since we are creatures of three spatial dimensions. We can
+		generalize this notion of Euclidean space to $n$ dimensions.
+
+		For a manifold $\mcal M = \R^n$, we equip it with the metric pairing
+		\[
+			(\R^n,\delta),
+		\]
+		where $\delta$ is the Euclidean metric. In terms of the coordinate basis,
+		the metric is
+		\begin{equation}
+			\label{eq:euclidean-metric}
+			\delta
+			=
+			\delta_{\mu\nu}
+			\dd{x^\mu}
+			\otimes
+			\dd{x^\nu}.
+		\end{equation}
+		The components of the Euclidean metric are
+		\[
+			\delta_{\mu\nu}
+			=
+			\diag(1,\cdots,1),
+		\]
+		where $1$ is repeated $n$ times.
+
+		We are not restricted to any bizarre coordinate system. In fact,
+		the Euclidean metric is the natural metric on $\R^n$, since it
+		corresponds to how we intuitively conceive of ordinary flat space.
+
+		We can naturally use the Cartesian coordinates
+		$(x,y,z,\cdots,x^n)$ to parameterize the manifold,
+		\[
+			\psi
+			=
+			(x,y,z,\ldots,x^n),
+			\qquad
+			x,y,z,\ldots,x^n\in\R.
+		\]
+		Installing the Euclidean metric on the manifold gives rise to many
+		of the familiar concepts from elementary vector analysis and real
+		analysis, such as the vector
+		\[
+			\vb{v}
+			=
+			\bmqty{
+				v^1\\
+				v^2\\
+				\vdots\\
+				v^n
+			},
+		\]
+		the dot product,
+		\[
+			\vb{u}\cdot\vb{v}
+			=
+			\delta_{\mu\nu}u^\mu v^\nu,
+		\]
+		the cross product in three dimensions,
+		\[
+			(\vb{u}\times\vb{v})^\sigma
+			=
+			\varepsilon\indices{_{\mu\nu}^\sigma}
+			u^\mu v^\nu,
+		\]
+		and the other concepts which stem from this structure.
+
+		For all of this, however, time is considered a separate entity,
+		assumed to be absolute, with the measurement of time being the same
+		for all observers.
+
+		However, as we learned more about the nature of space and time,
+		we realized that this is not the fundamental description of reality.
+		There is a more natural way to describe reality which unifies both
+		space and time. This is the Minkowski metric.
+
+	\subsubsection{Minkowski Spacetime}
+
+		The Minkoswki metric is a Semi-Riemannian metric, specifically a 
+		Lorentzian metric, i.e., only one diagonal component is negative.
+
+		The Minkowski metric is defined for $n$-dimensional manifold.
+		For describing the manifold $\mcal M= \R^n$, we equip it with tne 
+		metric pairing
+		\[
+			(\R^n,\eta)
+		\]
+		Where $\eta$ is defined to be
+		\[
+			\eta \equiv \eta_{\mu\nu}\dd{x^\mu}\otimes \dd{x^\nu}
+		\]
+		and the components are
+		\[
+			\eta_{\mu\nu} = \diag(-1,1,\cdots,1)
+		\]
+		where the $+1$ components are repeated $n-1$ times.
+
+		For GR, we normally restrict ourselves to the 4D Minkowski metric.
+		Hence, we define:
+		\begin{definition}{Minkowski Metric}
+			The Minkowski metric $\eta$ is the metric tensor of flat spacetime
+			whose components in an inertial coordinate system are
+			\[
+				\eta_{\mu\nu}
+				=
+				\diag(-1,1,1,1),
+			\]
+		\end{definition}
+		
+		Where we can naturally install the Lorentzian coordinates
+		\[
+			\qty{
+				x^\mu
+			}
+			=
+			(t,x,y,z)
+		\]
+		This is the Minkowski spacetime, it is defined with the Minkowski metric.
+
+		The entirety of special relativity can be described as nothing 
+		more than physics on Minkowski spacetime.
+
+		For general relativity, we are no longer restricted on the Minkowski metric.
+		However, with the principle of equivalence, just like how any Riemannian manifold is locally flat, or locally Euclidean, any Lorentzian manifold, if you zoom in enough,
+		is also locally flat, i.e., it locally approximates the Minkowski metric.
+		
+		So physics in general relativity is locally special relativity, which
+		is why a lot of the concepts and aspects learned from SR generalizes naturally to GR.
+		\newpage
+
+	\subsubsection{Concepts and Notions}
+		
+		Special Relativity is built upon several fundamental concepts that
+		we must first define before we can discuss how space and time are
+		measured. In particular, we need to specify what we mean by an
+		observer, a particle, a world line, and a reference frame. These
+		concepts describe how physical systems move through spacetime and
+		how they assign coordinates and measurements to physical events.
+
+		\begin{definition}{Observer}
+			An observer is an idealized physical system which carries an
+			instrument to measure its local passing of time, i.e, clock
+			and measuring apparatus, and which makes observations and
+			measurements along its world line.
+		\end{definition}
+
+		An observer can only make measurements at its own location in
+		spacetime. In other words, all measurements made by an observer are
+		local; the observer can directly measure only quantities associated
+		with the event at which it is located at that particular moment.
+		It cannot measure events on other locations instantaneously.
+
+		An observer can nevertheless obtain information about events that
+		occur elsewhere. This is possible only when some physical
+		interaction carrying information from that event reaches the
+		observer. For example, an observer may receive a photon emitted by
+		a distant star, or a gravitational wave produced by a distant
+		astrophysical event. The observer does not directly observe the
+		distant event itself; rather, it observes the information carried to
+		it by the physical interaction long after the event actually happened.
+
+		As we have shown in \S\ref{subsec:relativity-without-light}, there is an invariant speed $c$ in spacetime,
+		which represents the maximum speed at which causal influences and
+		information can propagate through spacetime. Light travels at this
+		speed in vacuum, and any physical signal carrying information must
+		propagate at a speed no greater than $c$.
+
+		Consequently, the events which can have a causal relationship with
+		a given observer are restricted by the finite speed of propagation.
+		This restriction is represented geometrically by the observer's
+		light cone.
+
+		\begin{definition}{Light cone}
+			The light cone of an event is the set of spacetime events that
+			can be connected to that event by a light signal traveling at
+			the invariant speed $c$. (See fig. \ref{fig:lightcone})
+
+			\hspace{1em}The future light cone consists of events that can be causally
+			influenced by a signal emitted from the event, while the past
+			light cone consists of events from which a light signal could
+			have reached the event.
+		\end{definition}
+
+		For example, consider an observer located at the spatial origin
+		at $t=0$. A light signal emitted by the observer can travel a
+		distance $r=ct$ after a time $t$. Therefore, in a spacetime diagram,
+		the boundary of the future light cone is described by%
+		\[
+			r=ct.
+		\]
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=3in, height=3in]{images/lightcone.pdf}
+			\caption{A light cone showing the causal structure of spacetime.
+			The $z$ axis is contracted. Events on $-t$ represent the past,
+			and events on $+t$ represent the future. It is the causal boundary
+			of an observer.}
+			\label{fig:lightcone}
+		\end{figure}
+
+		Similarly, a light signal arriving at the observer at $t=0$ must
+		have been emitted at a spatial distance $r=-ct$ at the corresponding
+		past time. These boundaries separate spacetime into regions with
+		different causal relationships to the event.%
+		\footnote{A light-cone is really a 4D structure. However, in its 
+		3D projection, we visualize it as a cone, hence the name.}
+
+
+		An observer can receive information only from events lying within
+		or on its past light cone. Conversely, an observer can causally
+		influence only events lying within or on its future light cone.
+		Events outside these light cones are said to be spacelike separated
+		from the observer's event. No signal traveling at or below $c$ can
+		carry information between such events.
+
+		Thus, the light cone expresses a fundamental causal structure of
+		Special Relativity. It determines which events can influence one
+		another and which events cannot have a causal connection.
+		We can then reframe $c$ as the \textit{speed of causality}.
+
+
+		\begin{definition}{Particle}
+			A particle is an idealized physical object whose spatial extent
+			is neglected, so that it may be represented as a point in space
+			at each instant of time. Its motion through spacetime is therefore
+			represented by a world line.
+		\end{definition}
+
+		Particles may be classified according to their invariant mass.
+		They can be either massive or massless:
+		\begin{itemize}
+			\item \text{Massive particles}
+
+				A massive particle possesses a nonzero invariant mass.
+				Examples include electrons, atoms, spacecraft, planets,
+				stars, and you. In the idealized point-particle approximation,
+				the spatial extent of the object is neglected and its
+				motion is represented by a single world line.
+
+			\item \text{Massless particles}
+
+				A massless particle has zero invariant mass. The photon
+				is the familiar example. In Special Relativity, a
+				massless particle propagates at the invariant speed $c$
+				in vacuum and follows a null trajectory through
+				spacetime.
+		\end{itemize}
+
+		An observer need not be identified with a fundamental particle.
+		An observer can be any physical system capable of carrying a clock
+		and performing measurements. For example, a spacecraft, laboratory,
+		or person can be treated as an observer. When an observer is
+		idealized as a pointlike object, its motion through spacetime can
+		be represented by a timelike world line.
+
+		\begin{definition}{World line}
+			The world line of a particle or observer is the curve in
+			spacetime that represents its entire history.
+
+			\hspace{1em}At each instant of its proper time, the particle occupies a
+			particular event in spacetime. As the particle moves through
+			spacetime, these events form a continuous curve, called its
+			world line.
+		\end{definition}
+
+		The world line is therefore the spacetime analogue of the
+		trajectory of a particle through ordinary space. In three-dimensional
+		space, we may describe a particle's trajectory by
+		$\vb{r}(t)$. In spacetime, however, we describe its history by a
+		curve
+		\[
+			x^\mu(\tau),
+		\]
+		where $\tau$ is the particle's proper time for a massive particle.
+		The parameter $\tau$ measures the time recorded by a clock moving
+		along the particle's world line. We will discuss more about proper time
+		in \S\ref{subsubsec:proper-time}
+
+		For an inertial observer, the world line is a straight timelike
+		line in Minkowski spacetime. Equivalently, it is a geodesic of
+		Minkowski spacetime. An observer that accelerates, on the other
+		hand, follows a non-geodesic world line.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=4in,height=3in]{images/wordline.pdf}
+			\caption{The trajectory of a particle in $\R^3$ and its
+			corresponding world line in spacetime. The spatial coordinate
+			$z$ has been contracted for visualization.}
+			\label{fig:worldline}
+		\end{figure}
+
+		\begin{definition}{Reference frame}
+			A reference frame is a system of coordinates and clocks used by
+			an observer to assign spatial and temporal coordinates to events.
+			It provides a particular viewpoint from which measurements of
+			spacetime events can be described.
+		\end{definition}
+
+		A reference frame allows an observer to assign coordinates
+		$(t,x,y,z)$ to events. Different observers may use different
+		reference frames and therefore assign different spatial and
+		temporal coordinates to the same event. Special Relativity
+		describes precisely how these coordinates are related when
+		observers move relative to one another.
+
+		An inertial reference frame is a reference frame associated with
+		an inertial observer, or more generally with a family of observers
+		who are all in uniform relative motion and whose coordinate
+		system is non-accelerating. In Minkowski spacetime, the spatial
+		coordinate axes of such a frame may be regarded as being carried
+		by an idealized congruence of observers whose world lines are
+		straight and parallel.
+
+		Thus, we may think of a reference frame as an extended network
+		of idealized observers, each carrying a clock and occupying a
+		different spatial position. Together, these observers provide a
+		way of assigning coordinates to events throughout spacetime.
+		The observer at a particular spatial position measures its own
+		local proper time, while the collection of synchronized clocks
+		allows the reference frame to assign a common coordinate time to
+		events occurring at different locations.
+
+		\newpage
+
+	\subsubsection{Lorentz Transformations}
+		\label{subsubsec:lorentz-transformations}
+
+		Suppose two observers in spacetime, with curves (or worldlines)
+		\[
+			\qty{x'^\mu}\qquad \qty{x^\nu}
+		\]
+
+		Transformations between the two frames of reference are:
+		\begin{equation}
+			\label{eq:lorentz-transformation-idx}
+			x'^\mu = \Lambda\indices{^\mu_\nu}x^\nu
+		\end{equation}
+		and
+		\begin{equation}
+			\label{eq:lorentz-inverse-transform}
+			x^\nu  = (\Lambda\inv)\indices{^\nu_\mu} x'^\mu
+		\end{equation}
+		It is conventional to denote the inverse as a lower indix prior to
+		the one upstairs.
+		\[
+			\Lambda\indices{_\mu^\nu}
+			=
+			(\Lambda\inv)\indices{^\mu_\nu}
+		\]
+		\[
+			x^\nu  = \Lambda\indices{_\mu^\nu} x^\mu
+		\]
+		These are just numbers, remember. So, we can just think of these 
+		operations as matrix multiplications.
+
+		It is evident that the Lorentz transformations combined
+		with its inverse is an identity map
+		\begin{align*}
+			\Lambda\indices{_\alpha^\beta}
+			\Lambda\indices{^\alpha_\gamma}
+			&=
+			(\Lambda\inv)\indices{^\beta_\alpha}
+			\Lambda\indices{^\alpha_\gamma}\\
+			&=
+			\delta\indices{^\beta_\gamma}
+		\end{align*}
+
+		Since $x'\mu$ is a curve, we can get the basis vector of the 
+		curve, and the $x^\nu$ curve. 
+		\[
+			\pdv{}{{x'}^\mu} \equiv \p'_\mu
+		\]
+		and the $x^\mu$ curve.
+		\[
+			\pdv{}{x^\mu} \equiv \p_\mu 
+		\]
+
+		We can feed this basis to the Minkowski tensor to get the components
+		\[
+			\eta(\p'_\mu,\p'_\nu) = \eta'_{\mu\nu}
+		\]
+		and 
+		\[
+			\eta(\p_\mu,\p_\nu) = \eta_{\mu\nu}
+		\]
+		However, by the definition of the Minkowski metric, the primed coordinate
+		Minkowski metric and unprimed coordinate metric must both be 
+		equal to the canonical definition of the Minkowski metric, hence, 
+		must be equal to
+		\begin{align*}
+			\eta'_{\mu\nu} 
+			&= \eta_{\mu\nu}\\
+			&= \diag(-1,1,1,1)
+		\end{align*}
+		We can relate togehter to see 
+		how the basis vectors transform under the change of coordinates,
+		recall how a vector transforms:
+		\[
+			\p'_\mu = \pdv{x^\nu}{x'^\mu}\p_\nu
+		\]
+		However, this is really nothing but (\ref{eq:lorentz-transformation}), so
+		\begin{align*}
+			\p'_\mu 
+			&= \Lambda\indices{^\nu_\mu}\p_\nu  \\
+			&= (\Lambda\inv)\indices{^\mu_\nu}\p_\nu  \\
+			&= 
+			\Lambda\indices{_\nu^\mu}\p_\nu
+		\end{align*}
+		We can again feed this basis vector to the tensor $\eta$. Recall that $\eta'_{\mu\nu} = \eta_{\mu\nu}$
+		\begin{align*}
+		    \eta
+			\pqty{
+				\p'_\mu,
+				\p'_\nu
+			}
+			&=
+			\eta
+			\qty(
+				\Lambda\indices{_\mu^\alpha}
+				\p_\alpha,
+				\Lambda\indices{_\nu^\beta}
+				\p_\beta,
+			)\\
+			\eta'_{\mu\nu}
+			&=
+			\Lambda\indices{_\mu^\alpha}
+			\Lambda\indices{_\nu^\beta}
+			\eta_{\alpha\beta}\\
+			\eta_{\mu\nu}
+			&=
+			\Lambda\indices{_\mu^\alpha}
+			\Lambda\indices{_\nu^\beta}
+			\eta_{\alpha\beta}
+		\end{align*}
+
+		We have now arrived at a defining property of
+		the Lorentz transformation. A Lorentz transformation is
+		a linear transformation between inertial coordinate systems
+		which preserves the Minkowski metric.
+
+		\begin{definition}{Lorentz Transformation}
+			A Lorentz transformation is a linear transformation
+			$\Lambda$ which preserves the Minkowski metric, such that
+			\begin{equation}
+				\label{eq:lorentz-transformation}
+				\eta_{\mu\nu}
+				=
+				\Lambda\indices{_\mu^\alpha}
+				\Lambda\indices{_\nu^\beta}
+				\eta_{\alpha\beta}.
+			\end{equation}
+		\end{definition}
+		We can write this in a neater way. We represent the equation
+		explicitly
+		\[
+			(\Lambda\inv)\indices{^\alpha_\mu}
+			(\Lambda\inv)\indices{^\beta_\nu}
+			\eta_{\alpha\beta}
+			=
+			\eta_{\mu\nu}
+		\]
+		These are just numbers, so we can treat them just as matrices.
+		We can move the $\eta$ term around, and find
+		\[
+			(\Lambda\inv)\indices{^\alpha_\mu}
+			\eta_{\alpha\beta}
+			(\Lambda\inv)\indices{^\beta_\nu}
+			=
+			\eta_{\mu\nu}
+		\]
+		We can transpose the first matrix to make it match
+		the index of $\eta$ (recall the requirement of matrix multiplication)
+		\[
+			(\Lambda\inv)\indices{^\mu_\alpha}
+			\eta_{\alpha\beta}
+			(\Lambda\inv)\indices{^\beta_\nu}
+			=
+			\eta_{\mu\nu}
+		\]
+		Put symbolically, treating $\Lambda\indices{^\alpha_\mu}$ as 
+		simply a matrix, $\Lambda$, and $\eta$ as just another matrix.
+		Since the inveres of a Lorentz transformation is itself a
+		Lorentz transformation (\ref{eq:lorentz-inverse-transform}),
+		we can just replace $\Lambda\inv$ with $\Lambda$.
+		Thus, we have the canonical definition of a Lorentz transformation
+		\begin{equation}
+			\label{eq:lorentz-transformation-symbol}
+		\Lambda^\top\eta\Lambda=\eta
+		\end{equation}
+		or equivalently,
+		\[
+			\Lambda\eta\Lambda^\top = \eta
+		\]
+		All Lorentz transformations satisfy this property. The Minkowski
+		metric must remain invariant
+
+		What else can we find from this condition?
+		We can try to find the determinant of the matrix $\Lambda$.
+
+		Starting from the Lorentz condition, we have
+		\[
+			\det(\Lambda^\top \eta \Lambda) = \det(\eta)
+		\]
+		Since we know $\eta = \diag(-1,1,1,1)$, and we know that
+		\[
+			\det(ABC) = \det A \det B \det C
+		\]
+		and the determinant of a transpose is invariant
+		\[
+			\det(A^\top) = \det(A)
+		\]
+		we get that
+		\[
+			\det(\Lambda)^2 \det(\eta) = \det(\eta)
+		\]
+		Since 
+		\[
+			\det(\eta) = (-1)(1)(1)(1) = -1\neq 0
+		\]
+		we can cancel it, and hence we find
+		\[
+			\det(\Lambda)^2 = 1
+		\]
+		Which gives us the result
+		\begin{equation}
+			\label{eq:det-lorentz}
+			\det(\Lambda) = \pm 1
+		\end{equation}
+		This gives us two branches for solutions of Lorentz transformation
+		matrices. We call them the following
+		\[
+			\det(\Lambda) = 
+			\begin{cases}
+				+1&\quad \to \quad \text{Proper Lorentz transformations}\\
+				-1&\quad \to \quad \text{Improper Lorentz transformations}\\
+			\end{cases}
+		\]
+
+		The former is called a proper Lorentz transformation, because 
+		applying two Lorentz proper Lorentz transformations still
+		results to a proper transformation. 
+
+		We call the latter an improper transformation because it does 
+		not preserve the determinant of the total transformation, since $-1\cdot -1 = 1$,
+		an improper transformation applied to another may result to a proper transformation.
+		Additionally, if you try to analyze this physically, the improper 
+		transformations flip the direction of time. It implies a particle
+		moving backwards in time\footnote{Antiparticles? Could be}, which
+		is not physical, because we can, from the principles of causality, 
+		only allow of particles that move forward through time. So improper
+		transformations are not physical.
+
+		Hence, we will only use proper Lorentz transformations
+		for physics applications.
+	
+	\subsubsection{Invariance of $c$ from the metric}
+		
+		In the last sections, we discussed how the norm of 
+		a vector defines its length. A norm is just 
+		the square root of the inner product of a vector with itself.
+		We will now learn that the norm is in fact invariant, it does
+		not depend on the manifold or the coordinates.
+		\begin{theorem}{Norm Invariance}
+		    For a vector $p$ in a manifold $\mcal M$ equipped
+			with a metric $g$, the inner product is invariant 
+			under coodinate transformations.
+			\begin{equation}
+				\label{eq:norm-invariance}
+			    g'(p',p') = g(p,p)
+			\end{equation}
+		\end{theorem}
+		
+
+		\begin{proof}
+			Consider a manifold equipped with a metric 
+			$g$. We have a tangent vector $p$, and its norm
+			\[
+				\abs{p} = \sqrt{g(p,p)}
+			\]
+			We can represent $p$ in terms of the coordinate basis
+			\[
+				p = p^\mu \p_\mu
+			\]
+			Then, we have
+			\[
+				g(p,p) = g_{\mu\nu}p^\mu p^nu
+			\]
+			Under a coordinate transformation,
+			\[
+				x^\mu\to x'^\mu
+			\]
+			The components $p^\mu$ and $g_{\mu\nu}$ change such that
+			\[
+				p'^\mu = 
+				\pdv{x'^\mu}{x^\nu} p^\nu 
+			\]
+			and
+			\[
+				g'_{\mu\nu} = 
+				\pdv{x^\alpha}{x'^\mu} 
+				\pdv{x^\beta}{x^\nu} 
+				g_{\alpha\beta}
+			\]
+			When we substitute it into the inner product, we 
+			find that 
+			\begin{align*}
+				g'_{\mu\nu}
+				p'^\mu
+				p'^\nu
+				&=
+				\pdv{x^\alpha}{x'^\mu} 
+				\pdv{x^\beta}{x^\nu} 
+				g_{\alpha\beta}
+				\pdv{x'^\mu}{x^\alpha} p^\alpha 
+				\pdv{x'^\mu}{x^\beta} p^\beta\\
+				&=
+				\pdv{x^\alpha}{x'^\mu} 
+				\pdv{x'^\mu}{x^\alpha} 
+				\pdv{x^\beta}{x^\nu} 
+				\pdv{x'^\mu}{x^\beta}
+				g_{\alpha\beta}
+				p^\alpha 
+				p^\beta\\
+				&= 
+				g_{\alpha\beta}
+				p^\alpha
+				p^\beta
+			\end{align*}
+			Therefore, the coordinate transformation did not change 
+			the resulting number;
+			\[
+				g'(p',p') = g(p,p)
+			\]
+			Hence, the norm of a vector is invariant.
+		\end{proof}
+		
+		In relativity, we refer to the norm, or the distance 
+		between to points in spacetime, as the space time interval.
+		\[
+			ds^2 = \eta_{\mu\nu}\dd{x^\mu}\dd{x^\nu}
+		\]
+		Since we have just shown that the norm is invariant, it then
+		folows that the spacetime interval is also invariant. 
+
+		Light is a photon; its wordline is known as a null geodesic, or
+		a null curve,
+		which means that the spacetime interval of the curve
+		along its worldline vanishes.
+
+		For a photon $\gamma$,
+		\[
+			0 = \eta_{\mu\nu}\dd{x^\mu}\dd{x^\nu}
+		\]
+		
+		In Lorentz coordinates $(ct,x,y,z)$, we will find that this defines 
+		the norm of a light curve to be
+		\[
+			0 = -c^2 \dd{t}^2 + \dd{x}^2 + \dd{y}^2 + \dd{z}^2
+		\]
+		Invariance implies that
+		\[
+			c^2 \dd{t}^2 = \dd{x}^2 + \dd{y}^2 + \dd{z}^2
+		\]
+		If we divide by $\dd{t}^2$, we find
+		\[
+			c^2 = 
+			\pqty{
+				\dv{x}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{y}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{z}{t} 
+			}^2
+		\]
+
+		If we transform coordinates from $x\to x'$ and $y\to y'$ and so on,
+		noting that a transformation in Euclidean coordinates is trivial,
+		we find that
+		\[
+			c^2 = 
+			\pqty{
+				\dv{x'}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{y'}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{z'}{t} 
+			}^2
+		\]
+		That is, different coordinate systems give the same value.
+		What is this value?
+		This is basically just the dot product (normal Euclidean space) of the velocity
+		\[
+			c^2 = \vb{v}\cdot \vb{v} = v^2
+		\]
+		Which means that we get the speed of a particle travelling 
+		at a null curve, which is
+		\[
+			c = v
+		\]
+		That is, all inertial observers would measure the speed of a particle
+		travelling along a null geodesic, such as a photon, to be the same.
+		Thus, the speed of light $c$ is invariant.
+
+		We have already established this result in \S\ref{subsec:relativity-without-light},
+		but now we see that the invariance of $c$ is embodied in the invariance
+		of the metric.
+
+		While this result emerges naturally from the elementary assumptions
+		of relativity, we now see that the invariance of $c$ also follows
+		directly from the Minkowski metric.
+		
+	\subsubsection{Proper Time}	
+		\label{subsubsec:proper-time}
+
+		We will now discuss what is arguably one of the 
+		most important invariant in general relativity.
+
+		Consider a timelike curve $\gamma$, with tangent vector $u$.
+		Let $u$ be parameterized by $t$, or $x^0$, so that its tangent 
+		vector is 
+		\[
+			u = \dv{x^\mu}{t}\p_\mu 
+		\]
+		The metric then gives
+		\[
+			g(u,u) =
+			-c^2 
+			+
+			\pqty{
+				\dv{x}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{y}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{z}{t} 
+			}^2
+		\]
+
+		A timelike curve, which was discussed earlier, has a spacetime interval
+		that is negative, i.e.,
+		\[
+			g(u,u) < 0
+		\]
+		Therefore 
+		\[
+			-c^2 + 
+			\pqty{
+				\dv{x}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{y}{t} 
+			}^2
+			+
+			\pqty{
+				\dv{z}{t} 
+			}^2
+			< 0
+		\]
+		Once again, the spatial terms is just the normal velocity $v$, so we have
+		\[
+			- c^2 + v^2 < 0
+		\]
+		Rearranging and taking the square root, we have
+		\[
+			v < c
+		\]
+		That is, for a timelike curve, a particle must always have a speed $v<c$.
+
+		Using a similar argument for spacelike curves, we obtain that they must have
+		a speed $v > c$. 
+		
+		We can further prove the following (See \S\ref{}), that 
+		for massive particles, i.e, particles which have an invariant
+		mass, the curves they travel are always timelike. Similarly,
+		massless particles always travel null geodesics. Finally,
+		superluminal particles, which are hypothesized but not detected,
+		always spacelike.
+		Hence, we have the following relationship
+
+		\begin{align*}
+			\text{massive particles}\quad &\implies \quad 
+			\text{timelike}\quad&\implies v< c\\
+			\text{massless particles}\quad &\implies \quad 
+			\text{null}\quad&\implies v= c\\
+			\text{superluminal particles}\quad &\implies \quad 
+			\text{spacelike}\quad&\implies v> c
+		\end{align*}
+	
+		For an observer, timelike curves are worldlines that lie
+		\textit{within} the light cone, while null curves are worldlines
+		that lie along the light cone. Finally, hypothetical superluminal
+		particles, or spacelike curves, have worldlines that lie
+		outside the light cone.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=3in]{images/wordline-lightcone.pdf}
+			\caption{Worldlines of timelike, null, and spacelike curves on the light cone}
+			\label{fig:wordline-lightcone}
+		\end{figure}
+
+		One might think that spacelike curves cannot represent physical
+		motion, but they are mathematically allowed within the geometry
+		of Minkowski spacetime. The speed of light is not a hard limit
+		on all possible curves; rather, it separates the causal
+		structures of spacetime. Massive particles must always travel at
+		speeds less than $c$, while massless particles travel at exactly
+		$c$. A hypothetical superluminal particle, however, would always have
+		to travel at speeds greater than $c$.
+
+		For spacelike curves, it becomes difficult to assign
+		an absolute distinction between past and future. Since spacelike
+		separated events cannot be causally connected, different inertial
+		observers can disagree about their temporal ordering. In this
+		sense, there is no invariant notion of which event occurs first.
+		Thus, we mostly think it's not physical. 
+
+		\begin{remark}
+			On Lorentz coordinates, we often see a factor of $c$
+			in front of the time coordinate,
+			\[
+				(ct,x,y,z).
+			\]
+			This is so that the $t$-coordinate has units of length,
+			making all four coordinates dimensionally consistent.
+
+			\hspace{1em}It is a common notion in popular science that time is
+			the fourth dimension. More precisely, what we see here is
+			that spacetime is a 4D manifold equipped with the Minkiwski
+			metric, embedded in $\R^4$. It is all spatial.
+
+			\hspace{1em}There is also a convention in which we set $c=1$, so that 
+			the metric simply becomes.
+			\[
+				ds^2 = - dt^2 + dx^2 + dy^2 + dz^2
+			\]
+			This is known as using natural units, it simplifies
+			calculations, and we will adopt
+			this convention from time to time.
+		\end{remark}
+	\subsubsection{Four-velocity, Four-momentum}
+	\subsubsection{Energy}
+		

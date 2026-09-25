@@ -18,8 +18,11 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces $\psi :C(I)\to \mathbb {R}^3$}}{94}{figure.caption.38}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Curve on $\mathcal M$ mapped to $\mathbb {R}^n$, resulting on a curve with only $x^1$ varied, and the rest of $x^\alpha $ constant}}{95}{figure.caption.39}%
 \contentsline {figure}{\numberline {19}{\ignorespaces Tangent vector $\tau $ on a curve $C(t)$}}{96}{figure.caption.40}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Tangent spaces at points $p$, $q$, and $r$ in an arbitrary manifold $\mathcal M$. The arrows are the respective basis vectors on the embedding axes.}}{98}{figure.caption.41}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Tangent spaces at points $p$, $q$, and $r$ in an arbitrary graph manifold $\mathcal M$. The arrows are the respective basis vectors on the embedding axes.}}{98}{figure.caption.41}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Coordinate curves of the polar coordinate basis}}{102}{figure.caption.42}%
 \contentsline {figure}{\numberline {22}{\ignorespaces A vector field on the $\mathbb {R}$ line}}{108}{figure.caption.43}%
 \contentsline {figure}{\numberline {23}{\ignorespaces Representing a vector field in $T_p\mathbb {R}$ as a different axis}}{109}{figure.caption.44}%
-\contentsline {figure}{\numberline {24}{\ignorespaces defaultcaption}}{125}{figure.caption.45}%
+\contentsline {figure}{\numberline {24}{\ignorespaces A 1D vector as a function in $\mathbb {R}$}}{126}{figure.caption.45}%
+\contentsline {figure}{\numberline {25}{\ignorespaces A light cone showing the causal structure of spacetime. The $z$ axis is contracted. Events on $-t$ represent the past, and events on $+t$ represent the future. It is the causal boundary of an observer.}}{191}{figure.caption.63}%
+\contentsline {figure}{\numberline {26}{\ignorespaces The trajectory of a particle in $\mathbb {R}^3$ and its corresponding world line in spacetime. The spatial coordinate $z$ has been contracted for visualization.}}{194}{figure.caption.64}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Worldlines of timelike, null, and spacelike curves on the light cone}}{202}{figure.caption.65}%

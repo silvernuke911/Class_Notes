@@ -1,0 +1,1433 @@
+% =======================================
+% MEETING 10
+% ---------------------------------------
+% DATE   - September 23, 2026
+% FORMAT - F2F
+% =======================================
+% TOPIC  - Metric Tensor
+% =======================================
+\subsection{The Metric Tensor}
+
+	The metric tensor is the most important algebraic object in General relativity.
+	It allows is to intrinsically define the curvature, lengths, and angles, inside a 
+	general manifold. 
+
+\subsubsection{Definition}
+	We define the metric as such
+	\begin{definition}{Metric Tensor}
+		A metric tensor, $g\in V^*\times V^*$, is a symmetric, nondegenerate $(0,2)$ tensor acting on 
+		$V$.
+	\end{definition}
+	
+
+	First, some qualifiers. Symmetric means, as we have previously discussed, is that, for all vectors 
+	$u,v\in V$,\footnote{this is now a tensor acting on two vectors, despite the $(\cdot)$}
+	\[
+		g(u,v) = g(v,u)
+	\]
+	Which implies
+	\[
+		g_{\mu\nu} = g_{\nu\mu}
+	\]
+	which is also equivalent to
+	\[
+		 g(\p_\mu,\p_\nu) = g(\p_\nu, \p_\mu)
+	\]
+
+	Nondegenerate means that if there exists a vector $v\in V$, such that
+	\[
+		g(u,v) = 0
+	\]
+	for all $u$. Then this can only happen if $v = 0$. Otherwise, this is a degenerate tensor.
+
+	Tersely, we have
+	\[
+		g(v,u) = 0\forall u \in V\implies v=0\in V
+	\]
+
+	This is in the same sense as a matrix degeneracy. In the matrix isomorphism
+	of $g$, $g_{\mu\nu}$, we require that the metric has a nonzero determinant
+	\[
+		\det(g_{\mu\nu})\neq 0
+	\]
+	If that happens at any point, then the coordinates are wrong for that point.
+	That's why in spherical coordinates, $r=0$ and the poles $\phi = 0$ and $\phi = \pi$,
+	are not valid.
+
+	We have what we call a volume element, $\text{vol}$, which is a 3-form. In the Euclidean metric,
+	which is an identity metric (also symmetric)
+	\[
+		\tensor{e}{_{ij}} = \bmqty{
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & 1 \\
+	} 
+	\]
+	The volume element is just 
+	\[
+		\text{vol} = dx^x dx^y dx^z
+	\]
+	However, for a general metric, the volume element is
+	\[
+		\text{vol} = \sqrt{\det(g_{\mu\nu}) dx^\mu}
+	\]
+	The nondegenerate requirement prevents the volume element from vanishing.
+	The volume element must not be zero for any vector.
+
+	Second, as we have noted before, the metric tensor is an $(0,2)$ tensor. That means it acts 
+	on two vectors in the vector space $V$. 
+	
+	Naturally, since it is a tensor, it is represented in basis form as 
+	\[
+		g = g_{\mu\nu} dx^\mu dx^\nu
+	\]
+	Where $dx^\mu dx^\nu$ is implied to be a symmetric tensor product. To find the metric tensor
+	components, we simply feed it the coordinate basis vectors on the manifold $\mcal M$, just like
+	how we find the components of a general tensor.
+	\[
+		g_{\mu\nu}  = g(\p_\mu, \p_\nu)
+	\]
+	Later on, we will define those components more concretely. 
+
+	The metric tensor allows us to take two vector and relate them to one another via a number.
+	We shall see how the metric is useful on the next few chapters.
+
+\subsubsection{Inner Product}
+	\label{subsubsec:inner-product}
+	We mentioned several lectures ago that
+	to get the notion of lengths and orthogonality
+	between vectors, we need an operation that will
+	allow us to measure lengths and angles. An operation
+	which takes two vectors and spits out a scalar.
+	We shall discuss that operation now.
+
+	The inner product is an operation that takes two vectors, operates on them,
+	and returns a real number. How do we make sense of that number?
+
+	We can define an inner product as the following.
+	\begin{definition}{Inner Product}
+		For two vectors $u,v\in T\mcal{M}$ with respect to the metric $g$,
+		the inner product is defined as
+		\begin{equation}
+			\label{eq:inner-product}
+			u\cdot v = g(u,v).
+		\end{equation}
+
+		The inner product is a map such that
+		\[
+			g:T_p\mcal{M}\times T\mcal{M}\to\R.
+		\]
+	\end{definition}
+
+	The inner product then describes the \textit{relationship} of one vector
+	to another. Thus, it is a natural way to also describe lengths. But what is a length?
+	It is most natural to think of the length of a vector as the magnitude of the vector.
+	In classical vector physics, the magnitude is the square root of the dot product
+	of a vector with itself, since we define that $v^2 = v\cdot v$. There is a
+	similar notion in differential geometry.
+
+	A metric is similar to a familiar inner product in matrices, that is, the dot product.
+	However, the difference between them is that $g(u,v)$ can be negative, and $g(u,v)=0$
+	does not mean $v=0$. Once a matric is defined for a vector space $V$, we can define the 
+	lengths and orthogonality between its elements. 
+
+	We then define the following:
+	\begin{definition}{Vector Magnitude}
+		The length, magnitude, or \textit{norm}, $\norm{v}$ of a vector $v\in V$, given a metric
+		$g$, is defined as
+		\begin{equation}
+			\label{eq:magnitude}
+			\norm{v} = \sqrt{\abs{g(v,v)}}
+		\end{equation}
+	\end{definition}
+	We say $\abs{g(v,v)}$ because, for a general metric $g$, the dot product 
+	may be negative. This can also be represented as $\sqrt{\pm g(v,v)}$.
+
+	Why does this give us a notion of length? In Euclidean space, the
+	Pythagorean theorem tells us that the square of the length of a vector
+	is the sum of the squares of its components. The metric generalizes
+	this notion to an arbitrary manifold. In a coordinate basis,
+	\[
+		g(v,v)
+		=
+		g_{\mu\nu}v^\mu v^\nu.
+	\]
+	Thus, $g(v,v)$ plays the role of the squared length of the vector,
+	while $\sqrt{g(v,v)}$ gives its length.
+
+	What other notions does the usual dot product give us? It allows us to find
+	the angles between vectors. If $v\cdot u=0$, then $v$ and $u$ are orthogonal.
+	We say that vectors are orthogonal if their inner product is zero. If it 
+	is not, they have components that align to each other. If the dot product 
+	between them is maximal, then that means the vectors are aligned, or coincidental.
+	For unit normal vectors, the maximal dot product is simply $v\cdot v = 1$.
+	We say that a set of basis vectors is orthonormal if the basis vectors
+	are unit vectors and orthogonal to one another.
+
+	If the basis vectors are not orthonormal, then the inner products
+	between them need not be zero or one. If the basis vectors are
+	orthonormal, their inner products satisfy
+	\[
+		e_\mu\cdot e_\nu = \delta_{\mu\nu}.
+	\]
+
+	We can define this orthonormality more generally for any 
+	manifold, not just flat space.
+
+	\begin{definition}{Orthonormality}
+		We say that a set of basis vectors
+		$\{e_\mu\}$ is orthonormal if, for all $e^\mu \in\{e_\mu\}$, 
+		\begin{equation}
+			\label{eq:orthonormality}
+			g(e_\mu,e_\nu)=\pm \delta_{\mu\nu}.
+		\end{equation}
+		That is,
+		\[
+			g(e_\mu,e_\mu) = \pm 1
+		\]
+	\end{definition}
+	
+	Once again, we say $\pm$ because, in general, the inner product may 
+	not be positive.
+
+	In the Euclidean manifold, the inner product is simply the familiar dot product.
+	Here, we recognize that the dot product, in tensor notation, is just a
+	tensor application. Specifically it is called the Euclidean metric.
+	\begin{align*}
+		e_{ij}
+		&=
+		e_{\mu\nu}dx^\mu\otimes dx^\nu\\
+		&=\delta_{\mu\nu}dx^\mu\otimes dx^\nu
+	\end{align*}
+	acting on the vectors $\vb{u}$ and $\vb{v}$.
+	\begin{align*}
+		\vb{u}\cdot\vb{v}
+		&= e(u,v)\\
+		&= e(u^\mu\p_\mu,v^\mu\p_\nu)\\
+		&= u^\mu v^\nu e(\p_\mu,\p_\mu)\\
+		&= u^\mu v^\nu \delta_{\mu\nu} \\
+		&= u^\mu v_\mu 
+	\end{align*}
+	Which is just the sum of the product of the components. It's a regular, garden variety
+	dot product.
+
+	We can also see this directly from the tensor expression for the metric:
+	\[
+		e
+		=
+		\delta_{\mu\nu}dx^\mu\otimes dx^\nu.
+	\]
+	Since
+	\[
+		dx^\mu(\p_\nu)=\delta^\mu_\nu,
+	\]
+	we have
+	\begin{align*}
+		e(\p_\mu,\p_\nu)
+		&=
+		\delta_{\alpha\beta}
+		dx^\alpha(\p_\mu)
+		dx^\beta(\p_\nu)\\
+		&=
+		\delta_{\alpha\beta}
+		\delta^\alpha_\mu
+		\delta^\beta_\nu\\
+		&=
+		\delta_{\mu\nu}.
+	\end{align*}
+
+	We also recognize that the dot product in the Euclidean metric provides
+	the notion of angles between vectors. In particular,
+	\[
+		\vb{u}\cdot\vb{v}
+		=
+		\abs{\vb{v}}\abs{\vb{u}}\cos\theta.
+	\]
+	Therefore, for a general metric tensor,
+	\[
+		\cos\theta
+		=
+		\frac{g(u,v)}
+		{\sqrt{g(u,u)}\sqrt{g(v,v)}}.
+	\]
+	We say then that the vectors are orthogonal, if 
+	\[
+		g(u,v) = 0
+	\]
+	\paragraph{Metric Types}
+		By the definition of an orthonormal basis, i.e.,
+		\[
+			g_{\mu\nu} = \tensor{\delta}{_{ij}}
+			\begin{cases}
+				0, &\mu\neq\nu\\
+				\pm 1,&\mu=\nu
+			\end{cases}
+		\]
+		then an orthonormal basis's matrix representation is a diagonal matrix.
+		\[
+			g_{\mu\nu}
+			=
+			\bmqty{
+				\pm 1      & 0          & \cdots & 0 \\
+				0          & \pm 1      & \cdots & 0 \\
+				\vdots     & \vdots     & \ddots & \vdots \\
+				0          & 0          & \cdots & \pm 1
+			}
+		\]
+
+		Beyond having a diagonal matrix in an orthonormal basis, metrics 
+		whose diagonal elements are all $+1$ are said to be \textbf{positive definite}
+		or \textbf{Riemannian}. An example is the Euclidean metric. 
+
+		Metrics whose 
+		diagonal elements are all $-1$ are said to be \textbf{negative definite},
+		and others are said to be \textbf{indefinite} or \textbf{semi-Riemannian}. 
+		The indefinite metrics whose diagonal elements only have one $-1$, i.e., $g(\p_\mu,\p_\mu)=-1$
+		for one specific $\mu$, then it is called a \textbf{Lorentzian} metric. 
+
+		The one most used in relativity are Lorentzian metrics and positive definite metrics.
+		\textbf{The existence of a Lorentzian metric on a manifold defines a spacetime}. The very definition
+		of a spacetime (Def. \ref{def:spacetime-sasane}, Def. \ref{def:spacetime-hawking}) require 
+		spacetime to be Lorentzian.
+		As such, we will find ourselves frequently using (actually, exclusively using in practice)
+		the Lorentzian metrics. We will use the Minkowski metric in special relativity, which 
+		is a special subset of the Lorentzian metric, and a general Lorentzian metric for general 
+		relativity.
+
+		There are three types of vector in a vector space $V$ with a Lorentzian metric. Now
+		that we have the notion of the inner product, we can use it as such:
+
+		For any $v$ that satisfies
+		\[
+			g(v,v) > 0,
+		\]
+		then $v$ is called a \textbf{spacelike} vector. 
+
+		Any $v$ that satisfies
+		\[
+			g(v,v) < 0
+		\]
+		is called a \textbf{timelike} vector. 
+
+		Finally, any vector $v$ that satisfies 
+		\[
+			g(v,v) = 0
+		\]
+		is called a \textbf{lightlike} vector, or a \textbf{null vector}.
+
+	\paragraph{Signature of the Metric}
+		The summation of all the diagonal elements (the \textit{trace}, if you will),
+		is called the signature of the metric. For example, for a metric
+		with diagonal elements $(-1,+1,+1,+1)$, the signature is
+		\[
+			\sum_\mu g_{\mu\mu} = +2
+		\]
+		Since all the elements are $1$, we just refer to the diagonal 
+		elements as their sign. Other examples of signatures are
+		\[
+			\sum (+,+,+,+)=4, \qquad \sum (+,-,-,-)=-2
+		\]
+		The signature is invariant for any basis.\footnote{This is a theorem, seach for it.}
+		Sometimes in literature, the diagonals themselves are what is referred to as the signature.
+		For example, many call the Lorentzian signature as $(-,+,+,+)$.
+
+		For Lorentzian metrics, there are two conventions in the literature.
+		It is presented usually (up to a trivial reording) as $(-,+,+,+)$, with signature 2. However,
+		in the other convention, the Lorentzian metric is defined as a metric whose diagonal
+		elements only has one $+1$, and thus its elements are $(+,-,-,-)$, and the signature is -2.
+		The course adopts the convention with signature +2. 
+
+		In the convention where they call the Lorentzian signature $(+,-,-,-)$, the definitions
+		of a spacelike vector and timelike vectors are exact opposites. That is, spacelike vectors
+		have $g(v,v)<0$, and timelike vectors have $g(v,v)>0$. However, there is no essential
+		difference: A vector that is timelike in the $-2$ signature is also timelike in the $+2$ signature.
+		This is just a difference in convention, the math remains the same. 
+
+		The zero vector is certainly a null vector, but
+		not vice versa. Many readers may only be familiar with positive definite metrics, and
+		may think $v = \vb{0}$ (the zero element) whenever $g(v, v) = 0$. However, if a metric is
+		Lorentzian, then $g(v, v) = 0$ does not necessarily lead to $v = 0$ (the zero element
+		is unique, while there are infinitely many null vectors). Nonzero 4-dimensional null
+		vectors play a significant role in relativity. For instance, it is convenient to use them
+		to describe the propagation of electromagnetic waves and gravitational waves.
+
+	\paragraph{Metric as a vector/covector map}
+		Tensors are essentially multifaceted linear maps. Similar to what we discussed before,
+		if you feed a tensor all its required vectors and covectors, it spits out a real number.
+
+		A metric is a tensor of type $(0,2)$, which is a bilinear map from $V\times V\to\R$, so
+		for all $u,v\in V$, we have $g(u,v)\in\R$. However, if you only give one vector, then
+		the metric becomes a one-form instead
+		\[
+			g(v,*)\in V^*.
+		\]
+		
+		The symbol $*$ here indicates a blank slot. This is the same if you feed the second slot, for $g(*,v)$ is also an
+		element of $V^*$. In fact, we can see that they are equal for a symmetric metric.
+		\[
+			g(v,*) = g(v,*)
+		\]
+		
+		That is, if you feed a metric tensor only one vector, it becomes a dual vector. When we say
+		$g(v,*)$, we refer to dual.
+
+		Given $g$, we can create $g(v,*) = g(*,v)\in V^*$ for any $v\in V$, and hence $g$ can be
+		viewed as a linear map from vectors to covectors, i.e.,
+		\[
+			g:V\to V^*,\qquad g:\overline{v}\mapsto \underline{v}
+		\]
+		That is, the metric supplies the natural isomorphism between $V$ and $V^*$. A vector, $\overline{v}$, when fed 
+		to a metric, becomes a dual $\underline{v}$.
+		\begin{proof}
+		    Exercise to the reader.
+		\end{proof}
+		V is naturally identified with $V^{**}$ whether or not there is a metric; if there is a metric,
+		then $V$ can also be identified with $V^*$. 
+
+		Thus, we have naturally found a way to transform a vector 
+		into a covector. We can define in the notation that
+		\[
+			\underline{v} = g(\overline{v},*)
+		\]
+		This makes it clear that applying a metric on a vector alone transforms it into a covector,
+	
+		Returning to the manifold, we can define what is a metric tensor field is
+		\begin{definition}{Metric Tensor Field}
+		    A symmetric, everywhere non-degenetrate tensor field of type $(0,2)$ 
+			is called a metric tensor field.
+		\end{definition}		
+
+	\paragraph{Some pointers on Abstract Index Notation}
+		As we discussed last meeting, we have seen the utility of 
+		abstract index notation (AIN), which we will begin to adapt for our discussions.
+		For example, we can represent a tensor without specifying its type, i.e.,
+		\[
+			S\indices{^{ab}_c}
+		\]
+		Immediately shows that $S\in(2,1)$, without the specification of what the properties 
+		of the tensor properties. Similarly
+		\[
+			v^a
+		\]
+		can be immediately identified as a vector (formerly we needed to specify that $v\in V$),
+		and a covector can immediately also be immediately identified just with the notation.
+		\[
+			\omega_b
+		\]
+
+		Additionally, a tensor product is immediately identified instead of specified. In AIN, 
+		a tensor product is just a juxtaposition of tensors, i.e., for a tensor $S\indices{^{ab}_c}$ and
+		$T\indices{^d_e}$, the tensor product is just represented as
+		\[
+			S\otimes T = 
+			S\indices{^{ab}_c} T\indices{^d_e} 
+		\]
+		If you commit to the indices which you use, i.e., the indices 
+		tell you the order of where to place the place the tensors, the first rank 1 tensor
+		goes to index $a$, the second to $b$, and so on, we can immediately just 
+		show that:
+		\[
+			S\indices{^{ab}_c} 
+			T\indices{^d_e} 
+			=
+			T\indices{^d_e} 
+			S\indices{^{ab}_c} 
+		\]
+		It can then immediately shown, just by notation alone, the fact that the tensor product
+		is noncommutative, just by showing that the order the tensors take the covectors/vectors
+		are different for each tensor
+		\[
+			S\indices{^{ab}_c} 
+			T\indices{^d_e} 
+			\neq
+			S\indices{^{da}_e} 
+			T\indices{^b_c} 
+		\]
+		The advantages are that it is convenient, especially in showing 
+		contractions, but the drawback is that when you deal with higher rank tensors 
+		such as tensors greater than 26 dimensions, you will run out of letters.
+
+		Feeding a tensor arguments in index-free notation. Say you have a tensor $G\in(0,2)$,
+		which accepts vectors $u,v\in V$. In index free, as we have seen before, this is 
+		rather cumbersome. 
+		\begin{align*}
+			G &= G_{\mu\nu}\dd{x^\mu}\otimes\dd{x^\nu}\\
+			G(u,v) &= G_{\mu\nu}\dd{x^\mu}\otimes\dd{x^\nu}(u^\alpha \p_\alpha, v^\beta \p_\beta)\\
+			G(u,v) &= G_{\mu\nu}\dd{x^\mu}(u^\alpha \p_\alpha)\dd{x^\nu}(v^\beta \p_\beta)\\
+			G(u,v) &= u^\alpha v^\beta G_{\mu\nu}\delta\indices{^\mu_\alpha}\delta\indices{^\nu_\beta}\\
+			G(u,v) &= u^\alpha v^\beta G_{\alpha\beta}
+		\end{align*}
+
+		In AIN, feeding a tensor just means placing a vector beside it. A contraction is then implied 
+		by the matching indices.
+		\[
+			G(u,v) 
+			=
+			G_{ab} u^a v^b
+		\]
+		A contraction $C\indices{^i_j}T$ is identical to feeding the tensor the 
+		$i$-th and $j$-th basis vector.
+		\[
+			C\indices{^i_j} T = T(\p_i, dx^j)
+		\]
+		In index-free notation, this is rather cumbersome to represent. However, in ANI, we can simplify 
+		the representation. Say we have a tensor $R\indices{^h_{ijk}}$. A contraction 
+		is represented as
+		\begin{align*}
+			R\indices{^h_{ijk}} 
+			&=
+			R\indices{^h_{ijk}} \delta\indices{^j_h}\\
+			&=
+			R\indices{^j_{ijk}} =  
+			R\indices{^h_{ihk}} \\
+			&=
+			R\indices{_{ik}} 
+		\end{align*}
+		Which rather simplifies how a contraction decreases the rank of a tensor.	
+		\newpage
+	\subsubsection{Metric as a raising/lowering operator}
+		The metric is the most importat tensor in GR and in differential geometry in general.
+		It provides both a description of the curvature of the manifold (we will see more of this in the later meetings),
+		and gives a sense of length and correspondence between vectors. However, another 
+		utility of the metric is a map from vectors to covectors and vice versa.
+
+		We discussed earlier that, a metric, when fed two vectors, becomes a real number.
+		\[
+			g_{ab} u^a v^b \in \R
+		\]
+		We also discussed, that a metric is symmetric by definition, i.e.,
+		\[
+			g_{ab} u^a u^b = g_{ba} u^a u^b
+		\]
+
+		We then discussed that a metric, when fed only one vector, becomes a covector
+		\[
+			g(*,\overline{u}) = \underline{u}
+		\]
+		It's the same kernel, but the vector has now been mapped linearly to a covector.
+		It is not an isomorphisim, but a map, i.e.,
+		\[
+			g:V\to V^*
+		\]
+		or if you prefer to talk in terms of manifolds,
+		\[
+			g:T_p \mcal M \to T_p^* \mcal M
+		\]
+		The metric therefore, is a natural correspondence between the tangent space
+		and cotangent space. This map is dependent on $g$ being a nondegenerate
+		structure.\footnote{
+			There is a similar concept in Lagrangian mechanics called the symplectic matrix, or symplectic
+			structure. It is a bilinear, antisymmetric two form defined to be nondegenerate,
+			which facilitates a correspondence between Lagrangian and Newtonian mechanics.
+			You can look that up if you want, but combining the symplectic matrix and metric tensor forms 
+			is not really common in in Physics.
+		}
+
+		In AIN, we denote that
+		\[
+			g(*,\overline{u}) = \underline{u} \iff u_a = g_{ab} u^b
+		\]
+		That is, it denotes the mapping from vectors to covectors.
+
+		Now, because it is a one-to-one map, there must exist an inverse $g\inv$
+		such that
+		\[
+			g\inv:V^*\to V
+		\]
+		or 
+		\[
+			g\inv:T^*_p\mcal{M}\to T_p \mcal{M}
+		\]
+		We can then reason that this inverse must be a $(2,0)$ tensor that
+		accepts covectors and returns a vector
+		\[
+			(g\inv)^{ab} \omega_b = \omega^a
+		\]
+		\begin{proof}
+		    Exercise to the reader
+		\end{proof}
+
+		By convention, we no longer write the $-1$, and just denote this
+		metric inverse as
+		\[
+			g^{ab} \equiv (g\inv)^{ab}
+		\]
+		We can then show that the metric and the metric inverse when 
+		applied result to an identity map, using the same kernel.
+		\[
+			g^{ab}g_{bc} = \Id\indices{^a_c}
+		\]
+		We can now then have a structure which converts from covectors to vector, i.e.,
+		for a covector $u_b$, when the metric inverse is applied, becomes a vector.
+		\[
+			u^a = g^{ab}u_b
+		\]
+
+		The metric tensor $g_{ab}$ can then be referred to as a \textit{lowering operator}, since it lowers
+		the indices of a vector, and the metric inverse $g^{ab}$ as a \textit{raising} operator, since
+		it raises the indices of covectors. This can work for any rank 1 tensor in general,
+		as long as the indices match upstairs and downstairs.
+
+		\begin{align*}
+			g_{ab}:\quad g_{ab}u^a = u_b &\implies \text{Lowering operator}\\
+			g^{ab}:\quad g^{ab}u_a = u^b &\implies \text{Raising operator}\\
+		\end{align*}
+
+		This notation is common in GR, since raising and lowering indices is 
+		performed a lot in calculations.\footnote{Raising and lowering operations are 
+		also common in mathematics, but it's a lot more difficult because index-free notation
+		is a pain in the ass to use.}
+
+	\subsubsection{Symmetrization and Antisymmetrization}
+		
+		A tensor which accepts two vectors is in general, antisymmetric. i.e.,
+		for a $(0,2)$ tensor,
+		\[
+			C(\overline{u},\overline{v})\in \R
+		\]
+		The following is generally true for 
+		any arbitrary vectors $u$ and $v$.
+
+		\[
+			C(\overline{u},\overline{v})\neq C(\overline{v}, \overline{u})
+		\]
+
+		To get a symmetric result, we define an operator $\mathrm{Sym}$ such that
+		\begin{equation}
+			\label{eq:sym-operator}
+			\mathrm{Sym}\  
+			C (\overline{u},\overline{v}) 
+			\equiv
+			\frac{1}{2}
+			\pqty{
+				C (\overline{u},\overline{v}) 
+				+
+				C (\overline{v},\overline{u}) 
+			}
+		\end{equation}
+		This works for $(2,0)$ tensors also
+		\[
+			\mathrm{Sym}\  
+			C (\underline{u},\underline{v}) 
+			\equiv
+			\frac{1}{2}
+			\pqty{
+				C (\underline{u},\underline{v}) 
+				+
+				C (\underline{v},\underline{u}) 
+			}
+		\]
+
+		In AIN, this distinction is rather easy to represent. We 
+		define a symmetrization of a tensor $C_{ab}$ with a parenthesis
+		on the indices. 
+		\begin{equation}
+			\label{eq:sym-operator-AIN}
+			C_{(ab)} = \frac{1}{2}(C_{ab}+C_{ba}) 
+		\end{equation}
+		For rank 3 tensors, we have
+		\[
+			C_{(abc)} = \frac{1}{3!}
+			\pqty{
+				C_{abc} + 
+				C_{cab} + 
+				C_{bca} + 
+				C_{acb} + 
+				C_{bac} + 
+				C_{cba}  
+			}
+		\]
+		Where the sum of all the permulations of the indices of $C_{abc}$ are taken.
+		In general, a symmetrization of a tensor is
+		\[
+			C_{(a1\cdots a_n)} =
+			\frac{1}{n!}
+			\pqty{
+				C_{a_1\cdots a_n} + \cdots \text{all permutations}
+			}
+		\]
+		The same is true for purely contravariant tensors.
+		Just raise the indices.
+		\[
+			C^{(a1\cdots a_n)} =
+			\frac{1}{n!}
+			\pqty{
+				C^{a_1\cdots a_n} + \cdots \text{all permutations}
+			}
+		\]
+
+		If you have, for example a rank 4 covariant tensor $R_{abcd}$, and you
+		only want to symmetrize between $a$ and $b$, you can group them together.
+		\[
+			R_{(ab)cd} 
+			=
+			\frac{1}{2}
+			\pqty{
+				R_{abcd} +
+				R_{bacd}
+			}
+		\]
+		or, if you want to symmetrize betwene $b$ and $d$, we have
+		\[
+			R_{a(b)c(d)} 
+			=
+			\frac{1}{2}
+			\pqty{
+				R_{abcd} +
+				R_{adcb}
+			}
+		\]
+		In general, if you want to symmetrize $m$ indices for a rank $n$
+		tensor, you need to do
+		\[
+			R_{(a_1\cdots a_m)\cdots a_n}
+			=
+			\frac{1}{m!}
+			\pqty{
+				R_{a_1\cdots a_m} +
+				\text{all permutations between } a_1\text{ to }a_m
+			}
+		\]
+		The grouping is arbitrary, but this is the general rule.
+
+		Symmetrization is only allowed for indices that are upstairs together, or downstairs together.
+		You can only group them together with covariant or contravariant groups.
+		Symmetrization between $a$ and $b$ in $C\indices{^a_b}$ is not allowed.
+
+		If you want to symmetrize, say
+		\[
+			R\indices{_{(a)b}^{(c)}_d}
+		\]
+		you would need to perform a lowering operation for index $c$ first, then symmetrize.
+
+		The opposite operation is called \textit{antisymmetrization}, where 
+		we only want to get the antisymmetric part of a tensor. We denote it as
+		\[
+			C_{[ab]} = \frac{1}{2}\pqty{
+				C_{ab} - C_{ba}
+			} 
+		\]
+		We wish to permute the indices such that we only have odd permutations.
+		In general
+		\[
+			C_{[a_1\cdots a_n]}
+			=
+			\frac{1}{n!}
+			\sum (-1)^\pi
+			C_{\pi (a)\pi (b)\pi (c)\cdots \pi (c_m)}
+		\]
+		where $\pi$ indicates the odd permuation.
+		
+		You can see how this all would be difficult in index-free notation,
+		since you need to write it all out. 
+
+		These operations are done because, as you will see in the coming weeks, we need
+		to work with symmetric tensors a lot, and sometimes there are nonsymmetric tensors,
+		which to manipulate mathematically, we need to symmetrize first.
+		\newpage
+\subsubsection{The Geodesic Equation}
+	
+	Metric tensors are core to the definition of the inner product.
+	It defines both the inner product of a tangent space,
+	\[
+		g_{ab}: V\times V\to \R
+	\]
+	and the inner product of the cotangent space.
+	\[
+		g^{ab}: V^*\times V^* \to \R
+	\]
+
+	We have discussed in detail in \S\ref{subsubsec:inner-product},
+	how the metric provides a sense of length of vectors.
+	Now, we use that sense to provide a sense of lengths for 
+	curves or lines in a manifold $\mcal M$.
+
+	Let us begin with the intuitive notion of an arc in the Euclidean space $\R^n$.
+	Suppose the parametric equation of a curve $C(t)$ in  the natural coordinate systm
+	$[x,y]$ is $x= x(t)$ and $y = y(t)$, then the square length 
+	of a curve segment $\dd{\ell}$ is $\dd{\ell}^2$. From Pythagoras,
+	we have
+	\begin{align*}
+		d\ell^2 &= dx^2 + dy^2 \\
+				&= \pqty{
+					\pqty{
+						\dv{x}{t} 
+					}^2
+					+
+					\pqty{
+						\dv{y}{t} 
+					}^2
+				}
+				\dd{t}\\
+				&=
+				\pqty{
+					(T^1)^2 
+					+
+					(T^2)^2
+				}\dd{t}^2\\
+				&=
+				\abs{T}^2\dd{t}^2
+	\end{align*}
+	where $T$ is a tangent vector of $C(t)$ at $t$. From this, we get
+	\[
+		\dd{\ell} = \abs{T}\dd{t}
+	\]
+	and we define the \textit{arc length} of $C(t)$ as
+	\[
+		\ell = \int \abs{T}\dd{t}
+	\]
+
+	This equation can be generalized to any manifold $\mcal M$ with 
+	a positive definite metric field $g$. 
+
+	Suppose that $\gamma$ is a curve, such that
+	\[
+		\gamma:\R\to \mcal M
+	\]
+	Let the parameter of $\gamma$ be $\lambda\in I\subseteq\R$, i.e,
+	the curve is $\gamma(\lambda)$.
+
+	How do we find the vector tangent to this curve? Let us recall
+	the definition of a tangent vector. Let $\dot\gamma$ be a vector such that
+	\begin{equation}
+		\label{eq:gamma-tanvec}
+		\dot \gamma [\psi] = \dv{(\psi\circ\gamma)}{\lambda} 
+	\end{equation}
+	that is, we are taking the image of the curve and parametrizing it.%
+	\footnote{
+		A small sidenote here is that curves $\gamma(\lambda)$, for which
+		$\lambda$ can take on the entire real line, i.e., $\lambda\in(-\infty,\infty)$,
+		are called \textit{complete curves}. For bounded manifolds, such as torids and spheres,
+		if $\lambda$ spans the entire bound, it is also called complete. Later, when we learn about singularities,
+		this notion of completeness will come into play. Incompleteness means that for some curves, you cannot 
+		extend the parameter to include the bounds. This happens in black holes and singularities, recall Penrose's or Hawking's incompleteness theorems.
+	}
+	
+	In terms of a chart, $\psi\circ\gamma$, which we often just call the curve $\gamma$, we have
+	\[
+		\gamma = x^\alpha(\lambda).
+	\]
+	From which, we can define the tangent vector (from (\ref{eq:gamma-tanvec})) to be
+	\begin{align*}
+		\dot\gamma &= \dv{x^\alpha}{\lambda}\p_\alpha \\
+				   &= \dot x^\alpha \p_\alpha
+	\end{align*}
+
+	The norm of the tangent vector $\dot \gamma$ is defined as the square root of its inner product with itself.
+	\[
+		\abs{\dot \gamma} = \sqrt{g(\dot\gamma,\dot\gamma)}
+	\]
+	Hence, the arc length of $\gamma(\lambda)$,
+	from point $\lambda_1$ to $\lambda_2$, 
+	can be naturally written as
+	\begin{equation}
+		\label{eq:gamma-arclength}
+		\ell(\gamma) = \int_{\lambda_1}^{\lambda_2} \sqrt{
+			g(\dot\gamma,\dot\gamma)
+		}
+		\dd{\lambda}
+	\end{equation}
+	Note here that $\ell$ is a functional. It takes a function, in this case a
+	curve, evaluates it on $\lambda$, and returns a 
+	real number. This is not unfamiliar, this is prominently used in Lagrangian mechanics.
+	\[
+		\ell : C\to \R
+	\]
+
+	Now, let's define what $g(\dot\gamma,\dot\gamma)$ is.
+
+	Recall that $g$ is a symmetric tensor, such that
+	\[
+		g = g_{\mu\nu}\dd{x^\mu}\otimes\dd{x^\nu}
+	\]
+	We now feed this tensor the tangent vector $\dot\gamma = x^\alpha\p_\alpha$:
+	\begin{align*}
+		g(
+			\dot{x}^\alpha\p_\alpha,
+			\dot{x}^\beta\p_\beta
+		)
+		&=
+		\dot{x}^\alpha
+		\dot{x}^\beta
+		g(\p_\alpha,\p_\beta)\\
+		&= 
+		g_{\alpha\beta} 
+		\dot{x}^\alpha
+		\dot{x}^\beta
+	\end{align*}
+
+	Hence, (\ref{eq:gamma-arclength}) becomes
+	\[
+		\ell(\gamma) = \int_{\lambda_1}^{\lambda_2} 
+		\sqrt{
+			g_{\alpha\beta} 
+			\dot{x}^\alpha
+			\dot{x}^\beta
+		}
+		\dd{\lambda}
+	\]
+	The entire expression inside the radical is just a real number, or a product of real numbers, evaluated at the curve.
+	To be more explicit, we can express it as
+	\begin{equation}
+		\label{eq:gamma-total-arclength}
+		\ell(\gamma) = \int
+		\sqrt{
+			g_{\alpha\beta}(x^\gamma(\lambda))
+			\dv{x^\alpha}{\lambda} 
+			\dv{x^\beta}{\lambda} 
+		}
+		\dd{\lambda}
+	\end{equation}
+	Note here that we have expressed the metric components $g_{\alpha\beta}$ as a function.
+	It is a function that depends on the coordinate representation of the curve $\gamma=x^\gamma(\lambda)$,
+	which is also dependent on the parameter $\lambda$
+
+	Now, if we aim to determine the total arc length of the curve, then we are done. Eq. (\ref{eq:gamma-total-arclength})
+	would suit your purposes just fine.
+
+	However, what if we want more? What if we want to find the extremizations
+	of the arclength? The maximal or minimal paths? Then we perform the tools used in variational principles, i.e.,
+	the principle of least action.
+
+	Recall Lagrangian mechanics. Given a functional $S$, such that:
+	\[
+		S[q] = \int_{t_1}^{t_2} L(q,\dot{q},t)\dd{t}
+	\]
+	where $L$ is the Lagrangian,
+	the physical trajectory $q(t)$ is the one for which the action is \textit{stationary}
+	under small variations $\delta q$ that vanish at the end points, i.e.,
+	\[
+		\var{S} = 0
+	\]
+
+	When you carry out the variation $\var{S}$ and set it to zero, we get the Euler-Lagrange equations\footnote{
+		This is really the Euler equation. Euler formulated this, but it is Lagrange that gave it physical meaning.
+		However, the concept is really only by Euler. We only call it Euler-Lagrange in the context of mechanics.
+	}
+	\begin{equation}
+		\label{eq:euler-lagrange}
+	    \dv{}{\lambda}
+		\pqty{
+			\pdv{L}{\dot q^\mu}  
+		}
+		=
+		\pdv{L}{q^\mu}
+	\end{equation}
+
+	To make our lives easier, consider (\ref{eq:gamma-total-arclength}). Note that the square root, $\sqrt{x}$,
+	is a monotonically increasing function.  As such, if we do minimization, it really has no 
+	effect on the stationary path, and minimizing the length is equivalent to minimizing the argument of the radical, i.e.,
+	minimizing $\sqrt{x}$ has the same effect as minimizing $x$
+	Therefore, we might as well just use $x$.
+	\begin{equation}
+		\label{eq:gamma-action}
+		S
+		= \int
+		{
+			g_{\alpha\beta}(x^\gamma(\lambda))
+			\dv{x^\alpha}{\lambda} 
+			\dv{x^\beta}{\lambda} 
+		}
+		\dd{\lambda}
+	\end{equation}
+	So we have this ``action'' like term, $S$, and a ``Lagrangian'' like term, 
+	$
+			L=g_{\alpha\beta}(x^\gamma(\lambda))
+			\dv{x^\alpha}{\lambda} 
+			\dv{x^\beta}{\lambda} 
+	$. This can be easily extremized using the Euler-Lagrange formulation.
+	We now perform variation on $S$, requiring $\var{S}= 0$.
+
+	We solve for each of the terms of (\ref{eq:euler-lagrange})
+
+	For the RHS, we have
+	\begin{align*}
+	    \pdv{L}{x^\mu} 
+		&= 
+		\pdv{g_{\alpha\beta}}{\lambda^\mu}
+		\dot{x}^\alpha
+		\dot{x}^\beta\\
+		&=
+		\p_\mu g_{\alpha\beta}
+		\dot{x}^\alpha
+		\dot{x}^\beta
+	\end{align*}
+
+	The term $\displaystyle \pdv{g_{\alpha\beta}}{x^\mu}$ comes up
+	so often in GR and Differential geometry that we make a shorthand notation for it.\footnote{
+		Sir uses $g_{\alpha\beta,\mu}$, and he did for the lecture.
+		However, I prefer to use $\p_\mu g_{\alpha\beta}$, since it is more
+		indicative of the derivative operation. That is what we will be using 
+		for the rest of this notes. Just bear in mind it is equivalent.
+	}
+	\[
+		\pdv{g_{\alpha\beta}}{x^\mu} \equiv \p_\mu g_{\alpha\beta} \equiv g_{\alpha\beta,\mu} 
+	\]
+
+	For the LHS, we have
+	\begin{align*}
+		\pdv{L}{\dot{x}^\mu}
+		&= 
+		g_{\alpha\beta} \pdv{}{\dot{x}^\mu}  
+		\pqty{
+				\dot{x}^\alpha \dot{x^\beta}
+			}\\
+		&= 
+		g_{\alpha\beta} 
+		\pqty{
+			\dot{x^\beta}
+			\pdv{
+				\dot{x}^\alpha 
+			}{
+				\dot{x}^\mu
+			} 
+			+
+			\dot{x^\alpha}
+			\pdv{
+				\dot{x}^\beta 
+			}{
+				\dot{x}^\mu
+			} 
+		}\\
+		&= 
+		g_{\alpha\beta} 
+		\pqty{
+			\dot{x^\beta}
+			\delta\indices{^\alpha_\mu}
+			+
+			\dot{x^\alpha}
+			\delta\indices{^\beta_\mu}
+		}\\
+		&= 
+		g_{\alpha\beta} 
+		\dot{x^\beta}
+		\delta\indices{^\alpha_\mu}
+		+
+		g_{\alpha\beta} 
+		\dot{x^\alpha}
+		\delta\indices{^\beta_\mu}\\
+		&= 
+		g_{\mu\beta} 
+		\dot{x^\beta}
+		+
+		g_{\alpha\mu} 
+		\dot{x^\alpha}
+	\end{align*}
+	Since the metric is symmetrical, i.e., $g_{\mu\beta}= g_{\beta\mu}$, we can
+	use the symmetry argument to just show
+	\[
+		g_{\mu\beta}\dot{x}^\beta = g_{\beta\mu}\dot{x}^\beta
+	\]
+	And we rename the second dummy index to $\alpha$, hence
+	\[
+		g_{\mu\beta}\dot{x}^\beta = g_{\mu\alpha}\dot{x}^\alpha
+	\]
+	So the two terms are identical, and their sum is just twice of one of them. We choose the $\beta$ term.
+	\[
+		\pdv{L}{\dot{x}^\mu}
+		= 
+		2g_{\mu\beta}\dot{x}^\beta
+	\]
+	We then do the derivation operation
+	\begin{align*}
+	    \dv{}{\lambda}
+		\pqty{
+			\pdv{L}{\dot{x}^\mu}
+		}
+		&= 
+		2\dv{g_\mu\beta}{\lambda}\dot{x}^\beta + 2g_{\mu\beta}\dv{\dot{x}^\beta}{\lambda}\\
+		&= 
+		2\pdv{g_{\mu\beta}}{x^\alpha}\dv{x^\alpha}{\lambda}\dot{x}^\beta + 2g_{\mu\beta}\dv{\dot{x}^\beta}{\lambda}\\
+		&= 
+		2\p_\alpha{g_{\mu\beta}}\dot{x}^\alpha \dot{x}^\beta + 2g_{\mu\beta}\ddot{x}^\beta
+	\end{align*}
+	Thus, equating the RHS and LHS together, and dividing by 2 on both sides, we have
+	\[
+		\frac{1}{2} 
+		\p_\mu g_{\alpha\beta}
+		\dot{x}^\alpha
+		\dot{x}^\beta
+		=
+		\p_\alpha{g_{\mu\beta}}\dot{x}^\alpha \dot{x}^\beta 
+		+ 
+		g_{\mu\beta}\ddot{x}^\beta
+	\]
+	This is just a plain, garden variety, system of linear ordinary differential equations.
+	We rewrite it to isolate the second order term
+	\[
+		g_{\mu\beta}\ddot{x}^\beta
+		=
+		\frac{1}{2} 
+		\p_\mu g_{\alpha\beta}
+		\dot{x}^\alpha
+		\dot{x}^\beta
+		-
+		\p_\alpha{g_{\mu\beta}}\dot{x}^\alpha \dot{x}^\beta 
+	\]
+	We rewrite this in a rather strange form, but you will see its utility later
+	\[
+		g_{\mu\beta}\ddot{x}^\beta
+		=
+		-
+		\frac{1}{2} 
+		\pqty{
+			2
+			\p_\alpha{g_{\mu\beta}}
+			\dot{x}^\alpha 
+			\dot{x}^\beta 
+			-
+			\p_\mu g_{\alpha\beta}
+			\dot{x}^\alpha
+			\dot{x}^\beta
+		}
+	\]
+	We can pull out the common terms
+	\[
+		g_{\mu\beta}\ddot{x}^\beta
+		=
+		-
+		\frac{1}{2} 
+		\pqty{
+			2
+			\p_\alpha{g_{\mu\beta}}
+			-
+			\p_\mu g_{\alpha\beta}
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	\]
+	Really, we're done here. This is the equation we are looking for, and in fact it is easier to work with.
+	However, we can make the equation look neater.
+
+	Here, we again exploit the symmetries of the system. Since
+	this is just ordinary multiplication, it is symmetric.
+	Because $\alpha$ and $\beta$ are dummy indices, we can interchange them.
+	That is,
+	\[
+		\p_\alpha
+		g_{\mu\beta} 
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+		=
+		\p_\beta
+		g_{\mu\alpha}
+		\dot{x}^\beta 
+		\dot{x}^\alpha 
+	\]
+	And because ordinary multiplication commutes,
+	\[
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+		=
+		\dot{x}^\beta 
+		\dot{x}^\alpha 
+	\]
+	Therefore,
+	\[
+		\p_\alpha
+		g_{\mu\beta} 
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+		=
+		\p_\beta
+		g_{\mu\alpha}
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	\]
+	We can average these two equal expressions,
+	\[
+		\p_\alpha
+		g_{\mu\beta} 
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+		=
+		\frac{1}{2}
+		\pqty{
+			\p_\alpha
+			g_{\mu\beta} 
+			\dot{x}^\alpha 
+			\dot{x}^\beta 
+			+
+			\p_\beta
+			g_{\mu\alpha}
+			\dot{x}^\alpha 
+			\dot{x}^\beta 
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	\]
+	Thus we can separate the $2 \p_\alpha{g_{\mu\beta}}$ term to have
+	\[
+		g_{\mu\beta}\ddot{x}^\beta
+		=
+		-
+		\frac{1}{2} 
+		\pqty{
+			\p_\alpha{g_{\mu\beta}}
+			+
+			\p_\beta{g_{\mu\alpha}}
+			-
+			\p_\mu g_{\alpha\beta}
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	\]
+	Now, we want to isolate the $\ddot{x}^\beta$ term to be on its own.
+	Notice that when we apply the inverse metric,
+	\[
+		g^{\sigma\mu}
+		g_{\mu\beta}
+		=
+		\delta\indices{^\sigma_\beta}
+	\]
+	Hence
+	\begin{align*}
+		g^{\sigma\mu}
+		g_{\mu\beta}
+		\ddot{x}^\beta
+		&=
+		-
+		\frac{1}{2} 
+		g^{\sigma\mu}
+		\pqty{
+			\p_\alpha{g_{\mu\beta}}
+			+
+			\p_\beta{g_{\mu\alpha}}
+			-
+			\p_\mu g_{\alpha\beta}
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta \\
+		\delta\indices{^\sigma_\beta}
+		\ddot{x}^\beta
+		&=
+		-
+		\frac{1}{2} 
+		g^{\sigma\mu}
+		\pqty{
+			\p_\alpha{g_{\mu\beta}}
+			+
+			\p_\beta{g_{\mu\alpha}}
+			-
+			\p_\mu g_{\alpha\beta}
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta \\
+		\ddot{x}^\sigma
+		&=
+		-
+		\frac{1}{2} 
+		g^{\sigma\mu}
+		\pqty{
+			\p_\alpha{g_{\mu\beta}}
+			+
+			\p_\beta{g_{\mu\alpha}}
+			-
+			\p_\mu g_{\alpha\beta}
+		}
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	\end{align*}
+
+	This is the form we are looking for. To tidy up, the term in front of 
+	$
+		\dot{x}^\alpha 
+		\dot{x}^\beta 
+	$ is so
+	common in GR and differential geometry, that it has a name. It is called the Christoffel symbols of the first kind.
+	\begin{definition}{Christoffel Symbols}
+		For a manifold $\mcal M$ with metric $g_{\mu\nu}$,
+		the Christoffel symbols $\Gamma^\sigma_{\alpha\beta}$ are 
+		the connection coefficients which encode how coordinate 
+		basis vectors vary as one moves along the manifold.
+		\begin{equation}
+			\label{eq:christoffel-symbol}
+			\Gamma^{\sigma}_{\alpha\beta}
+			= 
+			\frac{1}{2} 
+			g^{\sigma\mu}
+			\pqty{
+				\p_\alpha{g_{\mu\beta}}
+				+
+				\p_\beta{g_{\mu\alpha}}
+				-
+				\p_\mu g_{\alpha\beta}
+			}
+		\end{equation}
+	\end{definition}
+	
+	Hence, we can now rewrite our final result with this symbol, and 
+	we derive the the extremal path
+	in a manifold, the famous geodesic equation.
+
+	\begin{theorem}{Geodesic equation}
+		A free particle follows
+		the straightest possible path in a manifold $\mcal{M}$ 
+		(a geodesic) $x^\sigma(\lambda)$ satisfying
+
+		\begin{equation}
+			\label{eq:geodesic-eqn}
+			\ddot{x}^\sigma
+			+
+			\Gamma^{\sigma}_{\alpha\beta}
+			\dot{x}^\alpha 
+			\dot{x}^\beta 
+			=
+			0
+		\end{equation}
+	\end{theorem}
+
+	If we expand it to explicitly show the dependencies on the 
+	curve, we have
+	\begin{equation}
+		\label{eq:geodesic-eqn-explicit}
+		\dv[2]{x^\sigma}{\lambda} 
+		+ 
+		\Gamma^\sigma_{\alpha\beta}(x^\sigma(\lambda)) 
+		\dv{x^\alpha}{\lambda} 
+		\dv{x^\beta}{\lambda} 
+		=
+		0
+	\end{equation}
+	To be specific, it is the extremal path on Riemannian 
+	and semi-Riemannian manifolds.
+
+	This does not immediately imply the shortest or minimal route
+	in a manifold. To do that, you have to check the second derivative.
+
+	In Riemannian mafolds, where all the elements of the metric is positive,
+	it is indeed the minimal path. 
+	However, for Lorentzian manifolds, it is the maximal path, the path 
+	where proper time will be maximized.
+
+	\paragraph{Significance}
+
+	Solving geodesics have a lot of implications. It 
+	has a lot of physical significances. Firstly, 
+	for normal geometry or for positive definite manifolds, 
+	it is the shortest or straightest 
+	possible path between two points, the most optimized
+	curve between them. Second, it is the curve where
+	vectors remain parallel to their starting point (this is known
+	as a parallel transport).
+	However, most significantly, it is the special curve
+	that the world line of freely falling bodies follow.
+
+	To get the path of inertial observers, solve the geodesic equation.
+
+	To get the orbit of planets, such as the orbits of Earth, or Mercury.
+	use the Schwarzschild metric and solve the geodesic equation.
+	All inertial observers follow the path of maximuzed proper time,
+	and to obtain that path requirees solving the geodesic equation.
+
+	Solving the equation is very hard. Firstly, it is obviously
+	nonlinear, so you have elements of chaos theory affecting your results,
+	so small differences in initial conditions lead to large differences
+	in time propagation.
+	Geodesics in general space time, i.e., arbitrary metrics, are 
+	nigh impossible to solve. Most of the times, it is solved numerically.
+
+	As such, we will learn techniques in the following weeks,
+	that exploit conserved quantities and symmetries in the metric
+	that allow us to solve for it generally. We will learn Killing vectors,
+	which exploit the symmetries in space time and give conserved
+	quantities, isometries, such as symmetries of the metric.
+	
+	For a general metric with no symmetries, solving the 
+	geodesic equation is impossible analytically. That's 
+	why people resort to numerical relativity\footnote{The 
+	objectively correct path} to do GR, because analytic solutions
+	are rare and those that are trivial (or at least relatively easy),
+	such as the Minkowski or Schwarzschild metrics have all been solved
+	analytically. 
+
+	Normally today, especially in higher level research, all the work we do 
+	is done using \textsc{Mathematica}, or some other 
+	computer program, to solve for the geodesic equation,
+	for the metric, and for the Christoffel symbols, for it is simply too 
+	cumbersome to solve for them by hand analytically.
+	
+	\begin{remark}
+	    The Christoffel symbol is not a tensor!
+		
+		\hspace{1em}
+		While it is indexed, i.e.,
+		\[
+			\Gamma^\sigma_{\alpha\beta}
+		\]
+		However, it does not transform like a tensor. 
+		The components of a Christoffel tensor is 
+		known as a connection.
+
+		\hspace{1em}Here we learn that not all indexed quantities are 
+		tensors. For example, the Levi-Civita symbol 
+		$\varepsilon\indices{_{ij}^k}$
+		is not a tensor. It is a pseudotensor.
+		This is a similar case with the Christoffel symbols.
+	\end{remark}
+
+	\begin{remark}
+		There is a dual version of the geodesic equation. The equation describes a vector acceleration. To convert, all you need to do is
+		multiply a lowering operator for each vector, and you will have the covector acceleration.
+		\begin{equation}
+			\label{eq:geodesic-eqn-dual}
+			\ddot{x}_\sigma 
+			+
+			\Gamma^{\alpha\beta}_\sigma
+			\dot{x}_\alpha
+			\dot{x}_\beta
+			=0
+		\end{equation}
+	\end{remark}
+	There is a very similar class of curves to geodesic curves, called autoparallel curves, which 
+	are curves that parallel transport tangent vectors. They are governed
+	by the autoparallel equation, which we will introduced later. It is very similar to the geodesic equation. They
+	are natural connections on manifolds, which require the coefficients
+	of the connection to be Christoffel. 
+
+	We are motivating this because we are setting up the path to describe what a parallel transport of 
+	a tangent vector is, which is going to be important later on.
+	\begin{question}{If a metric is not dependent on the parameter $\lambda$, does it mean it is 0 all throughout?}
+
+		No, not quite. 
+		Consider the Scwharschild metric,
+		\[
+			\dd{s}^2 = 
+			-\pqty{
+				1 - \frac{2GM}{rc^2} 
+			}\dd{t}^2
+			+
+			\pqty{
+				1 - 
+				\frac{2GM}{rc^2} 
+			}\inv \dd{r}^2
+			+ 
+			r^2 \pqty{
+				\dd{\theta}^2 + 
+				\sin^2\theta\dd{\phi}
+			}
+		\]
+		The chart is the Schwarzschild coordinates $(t,r,\theta,\phi)$
+		Notice that for the $\dd{t}$ term, there is no time dependence.
+		However, it does not mean that the result is zero.
+		\[
+			\pqty{
+				\pdv{L}{\dot t}\neq 0  
+			}  
+		\]
+		Rather, it implies that there is a constant.
+		\[
+			{
+				\pdv{L}{\dot t} = \text{constant}
+			}  
+		\]
+		In this case, you will find that for this term, the constant
+		is equal to $E/m$, the mass per energy unit of the particle.
+		Similarly, for $\pdv{L}{\phi}$, which has no $\phi$ dependence,
+		you will find that 
+		\[
+			\pdv{L}{\dot \phi} = \text{constant} 
+		\]
+		In this case it is the angular momentum per unit mass.
+		These constants describe the conserved quantities for a metric.
+	\end{question}

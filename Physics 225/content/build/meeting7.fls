@@ -4,3 +4,6 @@ INPUT meeting7.tex
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\content\build\meeting7.log
 OUTPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\content\build\meeting7.pdf
 INPUT C:\Users\verci\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm

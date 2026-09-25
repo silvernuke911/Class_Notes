@@ -1,0 +1,365 @@
+\documentclass[12pt,a4paper]{article}
+\input{preset}
+\input{preamble}
+\usepackage{bbm}
+\begin{document}
+	\input{title}
+	% ===========================
+	% PROBLEM SET 10
+	% ===========================
+	\stepcounter{section}
+	\section*{
+		Problem 10.1
+	}
+	\begin{problem}
+		Show that the general solutions of the free-particle Dirac equation for 
+		a particle with momentum $\vb p$ are obtainable from the solutions for a 
+		particle at rest via Lorentz transformations. Hint: What are the Lorentz 
+		transformation properties of the Dirac spinors?
+
+		At rest:
+		\begin{equation}
+			\label{eq:at-rest}
+		    u_1(m,0) 
+			=
+			\bmqty{
+				1\\0\\0\\0
+			},\quad  
+		    u_2(m,0) 
+			=
+			\bmqty{
+				0\\1\\0\\0
+			},\quad  
+		    u_3(m,0) 
+			=
+			\bmqty{
+				0\\0\\1\\0
+			},\quad  
+		    u_4(m,0) 
+			=
+			\bmqty{
+				0\\0\\0\\1
+			}
+		\end{equation}
+
+		Moving (i.e., there is a boost, like \textit{riding a rocket}):
+		\begin{equation}
+			\label{eq:moving}
+		    u_1
+			=
+			N
+			\bmqty{
+				1\\0\\
+				\dfrac{p_z}{E+m} 
+				\\
+				\dfrac{p_x + ip_y}{E+m} 
+			},\quad  
+		    u_2
+			=
+			N
+			\bmqty{
+				0\\1\\
+				\dfrac{p_x - ip_y}{E+m} 
+				\\
+				\dfrac{-p_z}{E+m} 
+			},\quad  
+		    u_3
+			=
+			N
+			\bmqty{
+				\dfrac{p_z}{E+m} 
+				\\
+				\dfrac{p_x + ip_y}{E+m} 
+				\\
+				1\\0
+			},\quad  
+		    u_4
+			=
+			N
+			\bmqty{
+				\dfrac{p_x - ip_y}{E+m} 
+				\\
+				\dfrac{-p_z}{E+m} 
+				\\
+				0\\1
+			}
+		\end{equation}
+	\end{problem}
+	\begin{solution_pset}
+		\begin{proof}
+			\nocite{flores2026}
+			As hinted, a key point is that the Diract spinors 
+			transform under the spinor representation of the Lorentz
+			group. A boosted solution is therefore obtained by applying 
+			the corresponding spinor boost to a rest-frame solultion.
+
+			Consider the four-momentum of a particle at rest, $p_0^\mu$:
+			\begin{equation}
+				\label{eq:4p-rest}
+				p_0^\mu = (m,\vb{0})
+			\end{equation}
+			
+			Boosting it would lead to a new momentum and energy
+			\begin{equation}
+				\label{eq:4p-moving}
+				p^\mu = (E, \vb{p})
+			\end{equation}
+			where $E = \sqrt{\vb{p}^2 + m^2}$
+
+			The spinor transformation is then 
+			\begin{equation}
+				\label{eq:spinor-transformation}
+				u(p) = S(\Lambda) u(m,0)
+			\end{equation}
+
+			Where $S(\Lambda)$ comes from how a Dirac spinor transforms
+			\[
+				\psi' = S(\Lambda)\psi
+			\]
+			and has values 
+			\[
+				S(\Lambda) = \exp(
+					- \frac{i}{4}\omega_{\mu\nu}\sigma^{\mu\nu} 
+				)
+			\]
+			where $\omega_{\mu\nu}$ are the six Lorentz parameters, and the spinor generators are:
+			\[
+				\sigma^{\mu\nu} = \frac{i}{2}[\gamma^\mu,\gamma^\nu] 
+			\]
+
+			For a pure boost, the Lorentz parameters are
+			$\omega_{0i} = \phi\,\hat{n}_i$ with all $\omega_{ij} = 0$,
+			so
+			\[
+				S(\Lambda)
+				=
+				\exp\pqty{
+					-\frac{i\phi}{2}\,\hat{n}_i\,\sigma^{0i}
+				}.
+			\]
+
+			Using $\sigma^{0i} = i\gamma^0\gamma^i = i\alpha^i$, where
+			$\alpha^i \equiv \gamma^0\gamma^i$, this becomes
+			\[
+				S(\Lambda)
+				=
+				\exp\pqty{
+					\frac{\phi}{2}\,\vu{n}\cdot\vb*{\alpha}
+				}.
+			\]
+
+			Since $(\vu{n}\cdot\vb*{\alpha})^2 = I$, the exponential
+			linearizes:
+			\[
+				S(\Lambda)
+				=
+				\cosh\pqty{\frac{\phi}{2}}I
+				+
+				\sinh\pqty{\frac{\phi}{2}}
+				(\vu{n}\cdot\vb*{\alpha}).
+			\]
+
+			At this stage, the transformation is specified by the boost
+			direction $\hat{n}$ and rapidity $\phi$. We now trade these for
+			the components of the four-momentum $\vb{p}$. The boost takes
+			the rest momentum $p_0^\mu = (m,\vb{0})$ to
+			$p^\mu = (E,\vb{p})$, so the rapidity satisfies
+			\[
+				\cosh\phi = \frac{E}{m},
+				\qquad
+				\sinh\phi = \frac{\abs{\vb{p}}}{m},
+			\]
+			and the boost direction is $\hat{n} = \vb{p}/\abs{\vb{p}}$. The
+			half-angle identities then give
+			\[
+				\cosh\pqty{\frac{\phi}{2}}
+				=
+				\sqrt{\frac{E+m}{2m}},
+				\qquad
+				\sinh\pqty{\frac{\phi}{2}}
+				=
+				\frac{\abs{\vb{p}}}{\sqrt{2m(E+m)}}.
+			\]
+
+			Substituting and factoring out $\sqrt{(E+m)/2m}$, we obtain
+			the spinor boost:
+			\[
+				S(\Lambda)
+				=
+				\sqrt{\frac{E+m}{2m}}
+				\pqty{
+					I + \frac{\vb*{\alpha}\cdot\vb{p}}{E+m}
+				}.
+			\]
+			\newpage
+			Since a given four-momentum $p^\mu = (E,\vb{p})$ with
+			$p^\mu p_\mu = m^2$ is reached from the rest momentum by a
+			\emph{unique} pure boost $\Lambda_p$, the transformation is now
+			fully determined by $\vb{p}$ alone. We may therefore replace
+			the argument $\Lambda$ by the momentum $\vb{p}$ and write the spinor boost matrix as
+			\begin{equation}
+				\label{eq:Sp}
+				S(\vb{p})
+				=
+				\sqrt{\frac{E+m}{2m}}
+				\pqty{
+					I + \frac{\vb*{\alpha}\cdot\vb{p}}{E+m}
+				}.
+			\end{equation}
+
+			In the dirac representation,
+			\[
+				\vb*{\alpha} = 
+				\bmqty{
+					0 & \vb*{\sigma}\\
+					\vb*{\sigma}& 0
+				}, 
+			\]
+			So, we rewrite the spinor bost matrix as
+			\begin{equation}
+				\label{eq:Sp2}
+				S(\vb{p}) = 
+				\sqrt{
+					\frac{E+m}{2m} 
+				}
+				\bmqty{
+					I & \frac{\vb*{\sigma}\cdot\vb{p}}{E+m} \\
+					\frac{\vb*{\sigma}\cdot\vb{p}}{E+m} & I\\
+				} 
+			\end{equation}
+
+			Since \cite{flores2026},
+			\[
+				\vb*{\sigma}\cdot \vb{p}
+				=
+				\bmqty{
+					p_z & p_x - ip_y \\
+					p_x + ip_y & -pz
+				} 
+			\]
+			We expand the entire boost operator as a $4\times 4$ matrix
+			\[
+				S(\vb{p})
+				=
+				\sqrt{\frac{E+m}{2m}}
+				\begin{bmatrix}
+					1 & 0 & \dfrac{p_z}{E+m} & \dfrac{p_x - ip_y}{E+m} \\[8pt]
+					0 & 1 & \dfrac{p_x + ip_y}{E+m} & \dfrac{-p_z}{E+m} \\[8pt]
+					\dfrac{p_z}{E+m} & \dfrac{p_x - ip_y}{E+m} & 1 & 0 \\[8pt]
+					\dfrac{p_x + ip_y}{E+m} & \dfrac{-p_z}{E+m} & 0 & 1
+				\end{bmatrix}
+			\]
+
+			Now we apply this spinor boost operator to the four rest spinors.
+
+			Take $u_1(m,0)$. It is
+			\[
+				u_1(m,0) = 
+				\bmqty{
+					1\\0\\0\\0
+				} 
+			\]
+
+			Applying the spinor boost operator to $u_1$, we obtain
+			\begin{align*}
+				S(\vb{p}) u_1(m,0)
+				&=
+				\sqrt{\frac{E+m}{2m}}
+				\begin{bmatrix}
+					1 & 0 & \dfrac{p_z}{E+m} & \dfrac{p_x - ip_y}{E+m} \\[8pt]
+					0 & 1 & \dfrac{p_x + ip_y}{E+m} & \dfrac{-p_z}{E+m} \\[8pt]
+					\dfrac{p_z}{E+m} & \dfrac{p_x - ip_y}{E+m} & 1 & 0 \\[8pt]
+					\dfrac{p_x + ip_y}{E+m} & \dfrac{-p_z}{E+m} & 0 & 1
+				\end{bmatrix}
+				\bmqty{
+					1\\0\\0\\0
+				}\\
+				&=
+				\sqrt{\frac{E+m}{2m}}
+				\bmqty{
+					1\\0\\
+					\dfrac{p_z}{E+m} 
+					\\
+					\dfrac{p_x + ip_y}{E+m} 
+				}
+			\end{align*}
+
+			If we set 
+			\[
+				N = 
+				\sqrt{\frac{E+m}{2m}}
+			\]
+			Then we obtain the general solution for a boost of $u_1$.
+			\begin{equation}
+				u_1 = 
+				\label{eq:boost-u1}
+				N
+				\bmqty{
+					1\\0\\
+					\dfrac{p_z}{E+m} 
+					\\
+					\dfrac{p_x + ip_y}{E+m} 
+				}
+			\end{equation}
+			Which is precisely what we wanted to show.
+
+			It can be shown trivially\footnote{Which is nerdspeak for ``I am tired of typing this out, and the next answers are obvious'', lmao}.
+			that the rest of the spinor basis $u_i, i=2,3,4$ are \textit{unit basis spinors}\footnote{unit basis vector equivalents? Is this what you call it? idk man I'm a relativist, spinors are beyond me. Dunno what those are, but they look like unit basis vectors so yah that's what I'll call em I think} can be written as the $i$-th column 
+			of the spinor boost matrix, multiplied by $N$. Hence, it follows that
+			\begin{equation}
+				\label{eq:sols}
+				u_2
+				=
+				N
+				\bmqty{
+					0\\1\\
+					\dfrac{p_x - ip_y}{E+m} 
+					\\
+					\dfrac{-p_z}{E+m} 
+				},\qquad  
+				u_3
+				=
+				N
+				\bmqty{
+					\dfrac{p_z}{E+m} 
+					\\
+					\dfrac{p_x + ip_y}{E+m} 
+					\\
+					1\\0
+				},\qquad  
+				u_4
+				=
+				N
+				\bmqty{
+					\dfrac{p_x - ip_y}{E+m} 
+					\\
+					\dfrac{-p_z}{E+m} 
+					\\
+					0\\1
+				}
+			\end{equation}
+			Thus, we show the general solutions for the free-particle Dirac equation.
+		\end{proof}
+	\end{solution_pset}
+	\newpage
+
+	% ===========================
+	\stepcounter{section}
+	\bibliographystyle{unsrturl} 
+	\bibliography{references} 
+	\stepcounter{section}
+	% ===========================
+	\section*{Appendices}
+		\label{appendix}
+	
+		\subsection*{Code} 
+		No code was used for this problem set
+	\vfill
+	\begin{center}
+		\textit{Thank you Mr. Kong}\\
+		\vspace{1cm}
+		{\large
+		\textsc{Physica Vincit Omnia}
+		}
+	\end{center}
+\end{document}

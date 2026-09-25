@@ -9,9 +9,9 @@
 \contentsline {subsection}{Reminders}{v}{section*.5}%
 \contentsline {subsection}{Preface}{vi}{section*.5}%
 \contentsline {subsection}{Contents}{vii}{section*.5}%
-\contentsline {subsection}{List of Figures}{xi}{section*.5}%
-\contentsline {subsection}{List of Definitions}{xiii}{section*.5}%
-\contentsline {subsection}{List of Theorems}{xiv}{section*.5}%
+\contentsline {subsection}{List of Figures}{xii}{section*.5}%
+\contentsline {subsection}{List of Definitions}{xiv}{section*.5}%
+\contentsline {subsection}{List of Theorems}{xvi}{section*.5}%
 \contentsline {section}{Chapter 1: Review of Newtonian Physics}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Newton's Law of Gravitation}{2}{subsubsection.1.1.1}%
@@ -34,103 +34,126 @@
 \contentsline {subsubsection}{\numberline {1.3.4}From Special to General Relativity}{22}{subsubsection.1.3.4}%
 \contentsline {paragraph}{Relativity is more general than Light}{23}{section*.12}%
 \contentsline {paragraph}{The Role of $c$}{23}{section*.13}%
-\contentsline {section}{Chapter 2: Special Relativity}{25}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Relativity without Light}{25}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}The Transformation Problem}{25}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Principle of Relativity}{27}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Isotropy of Space}{27}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}The Invariance of Straight Lines}{28}{subsubsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.5}Homogeneity of Spacetime}{30}{subsubsection.2.1.5}%
-\contentsline {subsubsection}{\numberline {2.1.6}Parity Constraints}{30}{subsubsection.2.1.6}%
-\contentsline {subsubsection}{\numberline {2.1.7}Inverse transformation and composition constraints}{31}{subsubsection.2.1.7}%
-\contentsline {subsubsection}{\numberline {2.1.8}The Trivial and Nontrivial Branches}{32}{subsubsection.2.1.8}%
+\contentsline {subsection}{\numberline {1.4}Relativity without Light}{25}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}The Transformation Problem}{25}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Principle of Relativity}{26}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Isotropy of Space}{27}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}The Invariance of Straight Lines}{28}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}Homogeneity of Spacetime}{29}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.6}Parity Constraints}{30}{subsubsection.1.4.6}%
+\contentsline {subsubsection}{\numberline {1.4.7}Inverse transformation and composition constraints}{31}{subsubsection.1.4.7}%
+\contentsline {subsubsection}{\numberline {1.4.8}The Trivial and Nontrivial Branches}{32}{subsubsection.1.4.8}%
 \contentsline {paragraph}{Case 1:}{32}{section*.15}%
-\contentsline {paragraph}{Case 2:}{33}{section*.16}%
-\contentsline {subsubsection}{\numberline {2.1.9}The motion of the origin of $S'$}{33}{subsubsection.2.1.9}%
-\contentsline {subsubsection}{\numberline {2.1.10}Introduction of a Third Observer}{34}{subsubsection.2.1.10}%
-\contentsline {subsubsection}{\numberline {2.1.11}The Emergence of an Invariant Speed}{35}{subsubsection.2.1.11}%
-\contentsline {subsubsection}{\numberline {2.1.12}The Relevance of Light}{38}{subsubsection.2.1.12}%
-\contentsline {subsubsection}{\numberline {2.1.13}The Galilean Limit}{39}{subsubsection.2.1.13}%
-\contentsline {subsubsection}{\numberline {2.1.14}Lorentzian, Galilean, and Carrollian kinematics}{39}{subsubsection.2.1.14}%
-\contentsline {subsubsection}{\numberline {2.1.15}Conclusion}{41}{subsubsection.2.1.15}%
-\contentsline {section}{Chapter 3: Aspects of Differential Geometry}{44}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Manifolds and Topological Spaces}{44}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Spacetime}{45}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Manifolds}{48}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Topological Space}{50}{subsubsection.3.1.3}%
+\contentsline {paragraph}{Case 2:}{32}{section*.16}%
+\contentsline {subsubsection}{\numberline {1.4.9}The motion of the origin of $S'$}{33}{subsubsection.1.4.9}%
+\contentsline {subsubsection}{\numberline {1.4.10}Introduction of a Third Observer}{34}{subsubsection.1.4.10}%
+\contentsline {subsubsection}{\numberline {1.4.11}The Emergence of an Invariant Speed}{35}{subsubsection.1.4.11}%
+\contentsline {subsubsection}{\numberline {1.4.12}The Relevance of Light}{38}{subsubsection.1.4.12}%
+\contentsline {subsubsection}{\numberline {1.4.13}The Galilean Limit}{39}{subsubsection.1.4.13}%
+\contentsline {subsubsection}{\numberline {1.4.14}Lorentzian, Galilean, and Carrollian kinematics}{39}{subsubsection.1.4.14}%
+\contentsline {subsubsection}{\numberline {1.4.15}Conclusion}{41}{subsubsection.1.4.15}%
+\contentsline {section}{Chapter 2: Aspects of Differential Geometry}{44}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Manifolds and Topological Spaces}{44}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Spacetime}{45}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Manifolds}{48}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Topological Space}{50}{subsubsection.2.1.3}%
 \contentsline {paragraph}{Indiscrete Topology}{51}{section*.20}%
 \contentsline {paragraph}{Discrete Topology}{52}{section*.21}%
-\contentsline {subsubsection}{\numberline {3.1.4}Continuity}{53}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4}Continuity}{53}{subsubsection.2.1.4}%
 \contentsline {paragraph}{What is a preimage?}{53}{section*.22}%
 \contentsline {paragraph}{Usual examples of Topologies}{54}{section*.24}%
-\contentsline {subsubsection}{\numberline {3.1.5}Homeomorphism}{56}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Charts}{57}{subsubsection.3.1.6}%
-\contentsline {subsubsection}{\numberline {3.1.7}Differentiable Manifolds}{59}{subsubsection.3.1.7}%
-\contentsline {subsubsection}{\numberline {3.1.8}Examples}{62}{subsubsection.3.1.8}%
+\contentsline {subsubsection}{\numberline {2.1.5}Homeomorphism}{56}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Charts}{57}{subsubsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}Differentiable Manifolds}{59}{subsubsection.2.1.7}%
+\contentsline {subsubsection}{\numberline {2.1.8}Examples}{62}{subsubsection.2.1.8}%
 \contentsline {paragraph}{Addendum}{64}{section*.29}%
-\contentsline {subsection}{\numberline {3.2}Structures on Manifolds}{65}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Spacetime as a Manifold}{65}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}General Covariance}{67}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Scalar Functions}{68}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Vectors}{70}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Directional Derivatives}{72}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}The Tangent Space}{74}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}The Coordinate Basis}{75}{subsubsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.8}Abstract Index Notation (Preliminary)}{78}{subsubsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.3}Vectors on Manifolds}{80}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Review of Structures on Manifolds}{80}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Coordinate Bases}{81}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Change of Coordinates}{83}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Vector Transformation Laws}{87}{subsubsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.5}Contravariant and Covariant Vectors}{89}{subsubsection.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.6}Non-Coordinate Bases}{91}{subsubsection.3.3.6}%
+\contentsline {subsection}{\numberline {2.2}Structures on Manifolds}{65}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Spacetime as a Manifold}{65}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}General Covariance}{67}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Scalar Functions}{68}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Vectors}{70}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Directional Derivatives}{72}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}The Tangent Space}{74}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}The Coordinate Basis}{75}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Abstract Index Notation (Preliminary)}{78}{subsubsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.3}Vectors on Manifolds}{80}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Review of Structures on Manifolds}{80}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Coordinate Bases}{81}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Change of Coordinates}{83}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Vector Transformation Laws}{87}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Contravariant and Covariant Vectors}{89}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Non-Coordinate Bases}{91}{subsubsection.2.3.6}%
 \contentsline {paragraph}{Recovering the Geometric Arrow}{92}{section*.36}%
-\contentsline {subsection}{\numberline {3.4}Curves and Tangent Vectors}{92}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Curves}{92}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Coordinate Curves}{94}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Tangent Vectors at Curves}{96}{subsubsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.5}Tangent Vectors}{98}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Tangent Vector Components}{99}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Vector Fields}{107}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Connection}{110}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Physicsal Examples}{112}{subsubsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.6}Dual Vectors}{124}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Dual Space}{126}{subsubsection.3.6.1}%
-\contentsline {paragraph}{Notation.}{128}{section*.46}%
-\contentsline {subsubsection}{\numberline {3.6.2}Properties and Operations}{128}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}Dual Basis}{129}{subsubsection.3.6.3}%
-\contentsline {paragraph}{Linear independence}{130}{section*.47}%
-\contentsline {paragraph}{Spanning}{130}{section*.48}%
-\contentsline {subsubsection}{\numberline {3.6.4}Double-dual space}{131}{subsubsection.3.6.4}%
-\contentsline {paragraph}{Going back to manifolds}{132}{section*.49}%
-\contentsline {subsubsection}{\numberline {3.6.5}The Differential of a Function}{132}{subsubsection.3.6.5}%
-\contentsline {subsubsection}{\numberline {3.6.6}$n$-forms}{133}{subsubsection.3.6.6}%
-\contentsline {subsubsection}{\numberline {3.6.7}Differential Basis}{136}{subsubsection.3.6.7}%
-\contentsline {subsubsection}{\numberline {3.6.8}The Interior Product}{138}{subsubsection.3.6.8}%
-\contentsline {subsection}{\numberline {3.7}Tensors}{141}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}Definition}{141}{subsubsection.3.7.1}%
-\contentsline {paragraph}{Multilinearity}{141}{section*.50}%
-\contentsline {subsubsection}{\numberline {3.7.2}Vectors and covectors as tensors}{142}{subsubsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.3}Tensors as vector/covector operators}{142}{subsubsection.3.7.3}%
-\contentsline {paragraph}{Tensor Rank}{143}{section*.51}%
-\contentsline {paragraph}{Examples}{144}{section*.52}%
-\contentsline {paragraph}{Ordering of Covectors and Vectors}{146}{section*.53}%
-\contentsline {subsubsection}{\numberline {3.7.4}Tensor Product}{147}{subsubsection.3.7.4}%
-\contentsline {paragraph}{Example}{148}{section*.54}%
-\contentsline {paragraph}{Properties}{148}{section*.55}%
-\contentsline {subsubsection}{\numberline {3.7.5}Basis Tensors}{149}{subsubsection.3.7.5}%
-\contentsline {paragraph}{Example}{151}{section*.56}%
-\contentsline {subsubsection}{\numberline {3.7.6}Symmetric Tensor Product and Transformation Law}{151}{subsubsection.3.7.6}%
-\contentsline {subsubsection}{\numberline {3.7.7}Contraction Operation}{154}{subsubsection.3.7.7}%
-\contentsline {subsubsection}{\numberline {3.7.8}Abstract Index Notation}{155}{subsubsection.3.7.8}%
-\contentsline {subsubsection}{\numberline {3.7.9}Metric Tensor}{160}{subsubsection.3.7.9}%
-\contentsline {subsubsection}{\numberline {3.7.10}Inner Product}{160}{subsubsection.3.7.10}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{161}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{162}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{163}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{164}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{165}{section.8}%
-\contentsline {section}{Back Matter}{166}{section.8}%
-\contentsline {subsection}{Additional References}{166}{section*.57}%
-\contentsline {subsection}{Author's Note}{167}{section*.57}%
-\contentsline {subsection}{Colophon}{169}{section*.57}%
+\contentsline {subsection}{\numberline {2.4}Curves and Tangent Vectors}{92}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Curves}{92}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Coordinate Curves}{94}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Tangent Vectors at Curves}{96}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Tangent Vectors}{98}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Tangent Vector Components}{99}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Vector Fields}{107}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Connection}{110}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Physical Examples}{112}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Visual Examples}{124}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Pushback and Pullforward}{124}{subsubsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.6}Dual Vectors}{125}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Dual Space}{127}{subsubsection.2.6.1}%
+\contentsline {paragraph}{Notation.}{129}{section*.46}%
+\contentsline {subsubsection}{\numberline {2.6.2}Properties and Operations}{129}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Dual Basis}{130}{subsubsection.2.6.3}%
+\contentsline {paragraph}{Linear independence}{131}{section*.47}%
+\contentsline {paragraph}{Spanning}{131}{section*.48}%
+\contentsline {subsubsection}{\numberline {2.6.4}Double-dual space}{132}{subsubsection.2.6.4}%
+\contentsline {paragraph}{Going back to manifolds}{133}{section*.49}%
+\contentsline {subsubsection}{\numberline {2.6.5}The Differential of a Function}{133}{subsubsection.2.6.5}%
+\contentsline {subsubsection}{\numberline {2.6.6}$n$-forms}{134}{subsubsection.2.6.6}%
+\contentsline {subsubsection}{\numberline {2.6.7}Differential Basis}{137}{subsubsection.2.6.7}%
+\contentsline {subsubsection}{\numberline {2.6.8}The Interior Product}{139}{subsubsection.2.6.8}%
+\contentsline {subsection}{\numberline {2.7}Tensors}{142}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Definition}{142}{subsubsection.2.7.1}%
+\contentsline {paragraph}{Multilinearity}{142}{section*.50}%
+\contentsline {subsubsection}{\numberline {2.7.2}Vectors and covectors as tensors}{143}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Tensors as vector/covector operators}{143}{subsubsection.2.7.3}%
+\contentsline {paragraph}{Tensor Rank}{144}{section*.51}%
+\contentsline {paragraph}{Examples}{145}{section*.52}%
+\contentsline {paragraph}{Ordering of Covectors and Vectors}{147}{section*.53}%
+\contentsline {subsubsection}{\numberline {2.7.4}Tensor Product}{148}{subsubsection.2.7.4}%
+\contentsline {paragraph}{Example}{149}{section*.54}%
+\contentsline {paragraph}{Properties}{149}{section*.55}%
+\contentsline {subsubsection}{\numberline {2.7.5}Basis Tensors}{150}{subsubsection.2.7.5}%
+\contentsline {paragraph}{Example}{152}{section*.56}%
+\contentsline {subsubsection}{\numberline {2.7.6}Symmetric Tensor Product}{152}{subsubsection.2.7.6}%
+\contentsline {subsubsection}{\numberline {2.7.7}Tensor Transformation Law}{154}{subsubsection.2.7.7}%
+\contentsline {paragraph}{Tensor Field}{155}{section*.57}%
+\contentsline {subsubsection}{\numberline {2.7.8}Contraction Operation}{156}{subsubsection.2.7.8}%
+\contentsline {subsubsection}{\numberline {2.7.9}Abstract Index Notation}{158}{subsubsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.8}The Metric Tensor}{163}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Definition}{163}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}Inner Product}{165}{subsubsection.2.8.2}%
+\contentsline {paragraph}{Metric Types}{168}{section*.58}%
+\contentsline {paragraph}{Signature of the Metric}{169}{section*.59}%
+\contentsline {paragraph}{Metric as a vector/covector map}{170}{section*.60}%
+\contentsline {paragraph}{Some pointers on Abstract Index Notation}{171}{section*.61}%
+\contentsline {subsubsection}{\numberline {2.8.3}Metric as a raising/lowering operator}{173}{subsubsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.4}Symmetrization and Antisymmetrization}{175}{subsubsection.2.8.4}%
+\contentsline {subsubsection}{\numberline {2.8.5}The Geodesic Equation}{177}{subsubsection.2.8.5}%
+\contentsline {paragraph}{Significance}{183}{section*.62}%
+\contentsline {section}{Chapter 3: Special Relativity}{187}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Elements of Special Relativity}{187}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}$n$-Dimensional Euclidean Space}{187}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Minkowski Spacetime}{189}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Concepts and Notions}{190}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Lorentz Transformations}{195}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Invariance of $c$ from the metric}{198}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Proper Time}{201}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}Four-velocity, Four-momentum}{203}{subsubsection.3.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.8}Energy}{203}{subsubsection.3.1.8}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{204}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{205}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{206}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{207}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{208}{section.8}%
+\contentsline {section}{Back Matter}{209}{section.8}%
+\contentsline {subsection}{Appendices}{209}{section*.66}%
+\contentsline {subsection}{Additional References}{210}{section*.66}%
+\contentsline {subsection}{Author's Note}{211}{section*.66}%
+\contentsline {subsection}{Colophon}{213}{section*.66}%

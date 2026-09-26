@@ -137,23 +137,31 @@
 \contentsline {subsubsection}{\numberline {2.8.4}Symmetrization and Antisymmetrization}{175}{subsubsection.2.8.4}%
 \contentsline {subsubsection}{\numberline {2.8.5}The Geodesic Equation}{177}{subsubsection.2.8.5}%
 \contentsline {paragraph}{Significance}{183}{section*.62}%
-\contentsline {section}{Chapter 3: Special Relativity}{187}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Elements of Special Relativity}{187}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}$n$-Dimensional Euclidean Space}{187}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Minkowski Spacetime}{189}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Concepts and Notions}{190}{subsubsection.3.1.3}%
+\contentsline {section}{Chapter 3: Special Relativity}{186}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Elements of Special Relativity}{186}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}$n$-Dimensional Euclidean Space}{186}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Minkowski Spacetime}{188}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Concepts and Notions}{189}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Lorentz Transformations}{195}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Invariance of $c$ from the metric}{198}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Proper Time}{201}{subsubsection.3.1.6}%
-\contentsline {subsubsection}{\numberline {3.1.7}Four-velocity, Four-momentum}{203}{subsubsection.3.1.7}%
-\contentsline {subsubsection}{\numberline {3.1.8}Energy}{203}{subsubsection.3.1.8}%
-\contentsline {section}{Chapter 4: Einstein Field Equations}{204}{section.4}%
-\contentsline {section}{Chapter 5: Matter Models}{205}{section.5}%
-\contentsline {section}{Chapter 6: Weak-field Solutions}{206}{section.6}%
-\contentsline {section}{Chapter 7: Spherical Symmetry}{207}{section.7}%
-\contentsline {section}{Chapter 8: Basic Cosmology}{208}{section.8}%
-\contentsline {section}{Back Matter}{209}{section.8}%
-\contentsline {subsection}{Appendices}{209}{section*.66}%
-\contentsline {subsection}{Additional References}{210}{section*.66}%
-\contentsline {subsection}{Author's Note}{211}{section*.66}%
-\contentsline {subsection}{Colophon}{213}{section*.66}%
+\contentsline {subsubsection}{\numberline {3.1.6}Particle velocity bounds}{201}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}Proper Time}{203}{subsubsection.3.1.7}%
+\contentsline {paragraph}{Comoving observer}{205}{section*.66}%
+\contentsline {paragraph}{Affine parameter}{206}{section*.67}%
+\contentsline {subsubsection}{\numberline {3.1.8}Four-velocity, Four-momentum}{207}{subsubsection.3.1.8}%
+\contentsline {paragraph}{Four-velocity}{207}{section*.68}%
+\contentsline {paragraph}{Four-velocity of null curves}{212}{section*.69}%
+\contentsline {paragraph}{Four-momentum}{214}{section*.70}%
+\contentsline {paragraph}{Conservation}{215}{section*.71}%
+\contentsline {subsubsection}{\numberline {3.1.9}Energy}{216}{subsubsection.3.1.9}%
+\contentsline {paragraph}{Measuring energy}{216}{section*.72}%
+\contentsline {section}{Chapter 4: Einstein Field Equations}{220}{section.4}%
+\contentsline {section}{Chapter 5: Matter Models}{221}{section.5}%
+\contentsline {section}{Chapter 6: Weak-field Solutions}{222}{section.6}%
+\contentsline {section}{Chapter 7: Spherical Symmetry}{223}{section.7}%
+\contentsline {section}{Chapter 8: Basic Cosmology}{224}{section.8}%
+\contentsline {section}{Back Matter}{225}{section.8}%
+\contentsline {subsection}{Appendices}{225}{section*.74}%
+\contentsline {subsection}{Additional References}{226}{section*.74}%
+\contentsline {subsection}{Author's Note}{227}{section*.74}%
+\contentsline {subsection}{Colophon}{229}{section*.74}%

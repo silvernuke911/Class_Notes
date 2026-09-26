@@ -24,5 +24,6 @@
 \contentsline {figure}{\numberline {23}{\ignorespaces Representing a vector field in $T_p\mathbb {R}$ as a different axis}}{109}{figure.caption.44}%
 \contentsline {figure}{\numberline {24}{\ignorespaces A 1D vector as a function in $\mathbb {R}$}}{126}{figure.caption.45}%
 \contentsline {figure}{\numberline {25}{\ignorespaces A light cone showing the causal structure of spacetime. The $z$ axis is contracted. Events on $-t$ represent the past, and events on $+t$ represent the future. It is the causal boundary of an observer.}}{191}{figure.caption.63}%
-\contentsline {figure}{\numberline {26}{\ignorespaces The trajectory of a particle in $\mathbb {R}^3$ and its corresponding world line in spacetime. The spatial coordinate $z$ has been contracted for visualization.}}{194}{figure.caption.64}%
+\contentsline {figure}{\numberline {26}{\ignorespaces The trajectory of a particle in $\mathbb {R}^3$ and its corresponding world line in spacetime. This is a spacetime diagram. The spatial coordinate $z$ has been contracted for visualization.}}{193}{figure.caption.64}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Worldlines of timelike, null, and spacelike curves on the light cone}}{202}{figure.caption.65}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Two worldlines, $\gamma _0$ and $\gamma _1$. The observer $\gamma _0$ measures $\gamma _1$ from its own frame}}{217}{figure.caption.73}%

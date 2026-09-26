@@ -143,7 +143,7 @@
 				x^\mu
 			}
 			=
-			(t,x,y,z)
+			(ct,x,y,z)
 		\]
 		This is the Minkowski spacetime, it is defined with the Minkowski metric.
 
@@ -167,18 +167,42 @@
 		concepts describe how physical systems move through spacetime and
 		how they assign coordinates and measurements to physical events.
 
+		\begin{definition}{Event}
+			An event is defined to be a point in
+			space and time, $(t,x,y,z)$. A collection
+			of all the events is called a \textbf{spacetime},
+			and thus each event is a spacetime point.
+		\end{definition}
+
+		An event is, in general, just a point in a 4-dimensional
+		manifold (with proper additional structures such as a Lorentzian metric).
+		An example of an event is a supernovae. It happened at a particular
+		time $t_\star$, and at a position $(x_\star,y_\star, z_\star)$.
+		Therefore, this particular event can be descrived as a point, $x^\mu$,
+		such that
+		\[
+			x^\mu = (t_\star, x_\star, y_\star, z_\star)
+		\]
+			
 		\begin{definition}{Observer}
 			An observer is an idealized physical system which carries an
-			instrument to measure its local passing of time, i.e, clock
+			instrument to measure its local passing of time, i.e, a clock
 			and measuring apparatus, and which makes observations and
 			measurements along its world line.
 		\end{definition}
+		To make a measurement, the observer should
+		be equipped with an accurate clock, called a \textbf{standard clock}, and the reading of this
+		clock is called the \textbf{proper time} of this observer (see \S\ref{subsubsec:proper-time} for details). More
+		generally, one can consider that any point mass carries a standard clock, and each
+		point mass has its own proper time. Additionally, an observer must 
+		have an instrument which allows it to measure distances and displacements relative
+		to itself.
 
-		An observer can only make measurements at its own location in
+		An observer can only make direct measurements at its own location in
 		spacetime. In other words, all measurements made by an observer are
 		local; the observer can directly measure only quantities associated
-		with the event at which it is located at that particular moment.
-		It cannot measure events on other locations instantaneously.
+		with the event in its own world line.
+		It cannot measure events on other locations instantaneously. 
 
 		An observer can nevertheless obtain information about events that
 		occur elsewhere. This is possible only when some physical
@@ -218,6 +242,13 @@
 		\[
 			r=ct.
 		\]
+		Similarly, a light signal arriving at the observer at $t=0$ must
+		have been emitted at a spatial distance $r=-ct$ at the corresponding
+		past time. These boundaries separate spacetime into regions with
+		different causal relationships to the event.%
+		\footnote{A light-cone is really a 4D structure. However, in its 
+		3D projection, we visualize it as a cone, hence the name.}
+\newpage
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=3in, height=3in]{images/lightcone.pdf}
@@ -227,15 +258,7 @@
 			of an observer.}
 			\label{fig:lightcone}
 		\end{figure}
-
-		Similarly, a light signal arriving at the observer at $t=0$ must
-		have been emitted at a spatial distance $r=-ct$ at the corresponding
-		past time. These boundaries separate spacetime into regions with
-		different causal relationships to the event.%
-		\footnote{A light-cone is really a 4D structure. However, in its 
-		3D projection, we visualize it as a cone, hence the name.}
-
-
+	
 		An observer can receive information only from events lying within
 		or on its past light cone. Conversely, an observer can causally
 		influence only events lying within or on its future light cone.
@@ -250,7 +273,7 @@
 
 
 		\begin{definition}{Particle}
-			A particle is an idealized physical object whose spatial extent
+			A particle is an idealized physical point mass object whose spatial extent
 			is neglected, so that it may be represented as a point in space
 			at each instant of time. Its motion through spacetime is therefore
 			represented by a world line.
@@ -301,21 +324,28 @@
 		\[
 			x^\mu(\tau),
 		\]
-		where $\tau$ is the particle's proper time for a massive particle.
+		where $\tau$ is the particle's proper time for a massive particle,
 		The parameter $\tau$ measures the time recorded by a clock moving
-		along the particle's world line. We will discuss more about proper time
-		in \S\ref{subsubsec:proper-time}
+		along the particle's world line, and each point $x^\mu{\tau}$ is
+		an event.
 
 		For an inertial observer, the world line is a straight timelike
 		line in Minkowski spacetime. Equivalently, it is a geodesic of
 		Minkowski spacetime. An observer that accelerates, on the other
 		hand, follows a non-geodesic world line.
 
+		Representing a world line in a graph is called a \textbf{spacetime diagram}.
+		In a spacetime diagram,
+		the upward direction represents the time direction, and the horizontal directions
+		represent spatial directions. Each horizontal slice represents the whole space at a
+		certain moment of time. One can see the whole process of the motion (evolution) by
+		viewing the spacetime diagram from the bottom up.
+
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=4in,height=3in]{images/wordline.pdf}
 			\caption{The trajectory of a particle in $\R^3$ and its
-			corresponding world line in spacetime. The spatial coordinate
+			corresponding world line in spacetime. This is a spacetime diagram. The spatial coordinate
 			$z$ has been contracted for visualization.}
 			\label{fig:worldline}
 		\end{figure}
@@ -341,6 +371,23 @@
 		coordinate axes of such a frame may be regarded as being carried
 		by an idealized congruence of observers whose world lines are
 		straight and parallel.
+		All inertial observers are on an equal footing, i.e., no inertial observer is pre-
+		ferred over any other; that is, one cannot choose a special element (or several) from
+		the subset formed by inertial observers. For example, one cannot ask which inertial
+		observer is at absolute rest.	
+
+		A reference frame is defined abstractly as an infinite set 
+		of observers (each carrying a standard clock and labeled by spatial 
+		coordinates) such that every point in spacetime — or in an open subset
+		of it — is passed through by exactly one observer, meaning each observer's 
+		worldline is unique and non-intersecting. This formalizes and generalizes
+		the intuitive notion of a frame. For example, the familiar ``train frame" imagines 
+		observers filling all of space and moving together with the train, while 
+		the ``ground frame" is another such set with a relative velocity, and in 
+		a spacetime diagram their worldlines appear as parallel oblique 
+		lines versus vertical lines. The definition also permits more general 
+		frames where worldlines need not be parallel, allowing distances between 
+		observers to change over time.
 
 		Thus, we may think of a reference frame as an extended network
 		of idealized observers, each carrying a clock and occupying a
@@ -371,8 +418,9 @@
 			\label{eq:lorentz-inverse-transform}
 			x^\nu  = (\Lambda\inv)\indices{^\nu_\mu} x'^\mu
 		\end{equation}
-		It is conventional to denote the inverse as a lower indix prior to
-		the one upstairs.
+		It is conventional to denote the inverse as a lower index prior to
+		the one upstairs. This is done to denote that the inverse of a Lorentz transformation
+		is also a Lorentz transformation.
 		\[
 			\Lambda\indices{_\mu^\nu}
 			=
@@ -423,7 +471,7 @@
 			&= \eta_{\mu\nu}\\
 			&= \diag(-1,1,1,1)
 		\end{align*}
-		We can relate togehter to see 
+		We can relate them together to see 
 		how the basis vectors transform under the change of coordinates,
 		recall how a vector transforms:
 		\[
@@ -523,7 +571,7 @@
 			\Lambda\eta\Lambda^\top = \eta
 		\]
 		All Lorentz transformations satisfy this property. The Minkowski
-		metric must remain invariant
+		metric must remain invariant under Lorentz transformations.
 
 		What else can we find from this condition?
 		We can try to find the determinant of the matrix $\Lambda$.
@@ -576,10 +624,10 @@
 		an improper transformation applied to another may result to a proper transformation.
 		Additionally, if you try to analyze this physically, the improper 
 		transformations flip the direction of time. It implies a particle
-		moving backwards in time\footnote{Antiparticles? Could be}, which
-		is not physical, because we can, from the principles of causality, 
-		only allow of particles that move forward through time. So improper
-		transformations are not physical.
+		moving backwards in time, which is the standard Feynman-St\"uckelberg
+		interpretation of antiparticles. However, improper transformations
+		don't form a connected group with the identity, or map the physical
+		configuration of space to something physically inequivalent.
 
 		Hence, we will only use proper Lorentz transformations
 		for physics applications.
@@ -594,7 +642,7 @@
 		\begin{theorem}{Norm Invariance}
 		    For a vector $p$ in a manifold $\mcal M$ equipped
 			with a metric $g$, the inner product is invariant 
-			under coodinate transformations.
+			under coordinate transformations.
 			\begin{equation}
 				\label{eq:norm-invariance}
 			    g'(p',p') = g(p,p)
@@ -658,7 +706,7 @@
 				p^\beta
 			\end{align*}
 			Therefore, the coordinate transformation did not change 
-			the resulting number;
+			the resulting inner product;
 			\[
 				g'(p',p') = g(p,p)
 			\]
@@ -727,7 +775,7 @@
 		\]
 		That is, different coordinate systems give the same value.
 		What is this value?
-		This is basically just the dot product (normal Euclidean space) of the velocity
+		This is basically just the dot product (normal Euclidean space) of the typical velocity
 		\[
 			c^2 = \vb{v}\cdot \vb{v} = v^2
 		\]
@@ -748,11 +796,8 @@
 		of relativity, we now see that the invariance of $c$ also follows
 		directly from the Minkowski metric.
 		
-	\subsubsection{Proper Time}	
-		\label{subsubsec:proper-time}
-
-		We will now discuss what is arguably one of the 
-		most important invariant in general relativity.
+	\subsubsection{Particle velocity bounds}
+		\label{subsubsex:particle-velocity-bounds}
 
 		Consider a timelike curve $\gamma$, with tangent vector $u$.
 		Let $u$ be parameterized by $t$, or $x^0$, so that its tangent 
@@ -809,7 +854,7 @@
 		\]
 		That is, for a timelike curve, a particle must always have a speed $v<c$.
 
-		Using a similar argument for spacelike curves, we obtain that they must have
+		Using a similar argument for spacelike curves, $g(u,u)> 0$, we obtain that they must have
 		a speed $v > c$. 
 		
 		We can further prove the following (See \S\ref{}), that 
@@ -831,7 +876,7 @@
 	
 		For an observer, timelike curves are worldlines that lie
 		\textit{within} the light cone, while null curves are worldlines
-		that lie along the light cone. Finally, hypothetical superluminal
+		that lie along the light cone, i.e., it is tangent to the light cone. Finally, hypothetical superluminal
 		particles, or spacelike curves, have worldlines that lie
 		outside the light cone.
 		
@@ -856,7 +901,13 @@
 		separated events cannot be causally connected, different inertial
 		observers can disagree about their temporal ordering. In this
 		sense, there is no invariant notion of which event occurs first.
-		Thus, we mostly think it's not physical. 
+		Additionally, for superluminal particles, we also have difficulty
+		assigning the concept of mass. If we take the mathematics literally,
+		it would show that superluminal particles (called Tachyons) can either have
+		negative mass, or travel in imaginary time.
+
+		Nothing has been empirically observed before. 
+		Thus, we mostly think it's not physical.  
 
 		\begin{remark}
 			On Lorentz coordinates, we often see a factor of $c$
@@ -873,14 +924,1005 @@
 			metric, embedded in $\R^4$. It is all spatial.
 
 			\hspace{1em}There is also a convention in which we set $c=1$, so that 
+			time has a unit of length, and
 			the metric simply becomes.
 			\[
 				ds^2 = - dt^2 + dx^2 + dy^2 + dz^2
 			\]
-			This is known as using natural units, it simplifies
+			This is known as using natural units. It is a unit 
+			of convenience, since $c$ is a prefactor that is present
+			everywhere. It simplifies
 			calculations, and we will adopt
 			this convention from time to time.
 		\end{remark}
+
+	\subsubsection{Proper Time}	
+		\label{subsubsec:proper-time}
+
+		We will now discuss what is arguably one of the 
+		most important invariant in general relativity.
+
+		Consider the spacetime interval $\dd{s}$. It has value
+		\begin{align*}
+			\dd{s^2} &= g_{\alpha\beta}\dd{x^\alpha}\dd{x^\beta}\\
+					 &=\eta_{\alpha\beta}\dd{x^\alpha}\dd{x^\beta}
+		\end{align*}
+		Suppose
+		we have a timelike curve $\gamma$ in spacetime, and we wish 
+		to find the arclength of this curve from a point $A$ to
+		another point $B$\footnote{Arclength is a term we use here, since it's 4D, it's mostly an analogy}.
+		We get that.
+		\[
+			\ell(\gamma) 
+			=
+			\int_A^B \sqrt{-\dd{s^2}}
+		\]
+		We put $-\dd{s^2}$ under the radicand since for timelike curves,
+		$\dd{s^2}<0$.
+
+		Suppose we wish to know the time traversed by a particle
+		to get from point $A$ to $B$. Since $\dd{s}$ is a distance
+		(recall that all the components of the Lorentz coordinates
+		have units of distance), a natural thing to do to obtain a
+		time is to divide a distance by a velocity. The natural
+		velocity to use is the invariant speed $c$.
+		\[
+			\tau = \frac{\lambda}{c} 
+		\]
+		Thus, we have this \textit{invariant time} of the spacetime
+		arclength, which is the time a particle moving 
+		in spacetime traverses to get from an event $A$ to an event $B$.
+		\[
+			\tau \equiv \frac{1}{c} 
+			\int_A^B \sqrt{-\dd{s^2}}
+		\]
+		Suppose that we parametrize $\gamma$ with a parameter $\lambda$,
+		since curves require parameters, and a world line is a curve.
+		The tangent vector of $\gamma$ is
+		\[
+			\dot\gamma = \pdv{}{\lambda} 
+		\]
+		We can then substitute that in the definition of $\tau$, so 
+		that we have an even more concrete relation
+		\[
+			\tau = 
+			\frac{1}{c}\int_{\lambda_A}^{\lambda_B} 
+			\sqrt{
+				-\eta\qty(
+				\pdv{}{\lambda},
+				\pdv{\lambda}
+				)
+			}
+			\dd{\lambda}
+		\]
+		But $\pdv{}{\lambda}$ in terms of its components is just
+		\[
+			\pdv{}{\lambda} 
+			=
+			\dv{x^\alpha}{\lambda} 
+			\pdv{}{x^\alpha} 
+		\]
+		Hence
+		\begin{align*}
+			\tau = 
+			\frac{1}{c}\int_{\lambda_A}^{\lambda_B} 
+			\sqrt{
+				-
+				\eta_{\alpha\beta}
+				\dv{x^\alpha}{\lambda}
+				\dv{x^\beta}{\lambda} 
+			}
+			\dd{\lambda}
+		\end{align*}
+
+		We can explicity expand the term inside the radicand
+		with the Lorentz coordinates $x^\alpha = (-ct,x,y,z)$,
+		to get
+		\[
+			\tau = 
+			\frac{1}{c}\int_{\lambda_A}^{\lambda_B} 
+			\sqrt{
+				c^2 
+				\qty(
+					\dv{t}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{x}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{y}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{z}{\lambda} 
+				)^2
+			}
+			\dd{\lambda}
+		\]
+		We can take the differential of $\tau$, and by the first
+		fundamental theorem of calculus, we get
+		\[
+			\dd{\tau} 
+			=
+			\frac{1}{c}
+			\sqrt{
+				c^2 
+				\qty(
+					\dv{t}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{x}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{y}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{z}{\lambda} 
+				)^2
+			}
+			\dd{\lambda}
+		\]
+		We can square both sides to get
+		\[
+			\dd{\tau}^2
+			=
+			\frac{1}{c^2}
+			\pqty{
+				c^2 
+				\qty(
+					\dv{t}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{x}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{y}{\lambda} 
+				)^2
+				-
+				\qty(
+					\dv{z}{\lambda} 
+				)^2
+			}
+			\dd{\lambda}^2
+		\]
+		But this is just
+		\[
+			\dd{\tau^2}
+			=
+			-
+			\frac{1}{c^2}
+			\pqty{
+				-c^2\dd{t}^2
+				+
+				\dd{x}^2
+				+
+				\dd{y}^2
+				+
+				\dd{z}^2
+			}
+		\]
+		In Lorentz coordinates, $\dd{s}^2$ is defined to be
+		\begin{align*}
+			\dd{s}^2 
+			&= 
+			\eta_{\alpha\beta}\dd{x^\alpha}\dd{x^\beta}\\
+			&=
+				-c^2\dd{t}^2
+				+
+				\dd{x}^2
+				+
+				\dd{y}^2
+				+
+				\dd{z}^2
+		\end{align*}
+		Hence, the value of $\dd{\tau}^2$ is just
+		\[
+			\dd{\tau^2}
+			=
+			-
+			\frac{\dd{s^2}}{c^2} 
+		\]
+		or, if one prefers,
+		\[
+			\dd{\tau^2}
+			=
+			\dd{t}^2
+			-
+			\frac{
+				\dd{x}^2
+				+
+				\dd{y}^2
+				+
+				\dd{z}^2
+			}{c^2} 
+		\]
+		Notice that this quantity is invariant. 
+		It does not change with different observers.
+		Switching coordinates will vary $t,x,y,$ and $z$,
+		but $\tau$ remains invariant. That is,
+		all observers will agree on the value of $\tau$. 
+
+		\paragraph{Comoving observer}
+
+		A comoving observer is an observer that travels along
+		with a particle along the same world line. They move with
+		the particle with zero displacement. 
+
+		Since they are an observer, they are allowed
+		to make measurements of the spacetime around them.
+		For a comoving observer, the particle has no relative 
+		displacement. To him, the values of the spatial components are
+		\[
+			\dd{x} = 0,\quad \dd{y}=0,\quad \dd{y} = 0
+		\]
+		Thus, for a comoving observer, they will measure $\tau$ as simply
+		\[
+			\dd{\tau} 
+			\overset{*}{=}
+			\dd{t}
+		\]
+		The $*$ there signifies the comoving observer's measurement.
+		Thus, $\tau$ is precisely the time measured by a clock traveling 
+		along a world line. It is the measurement the elapsed time of events 
+		that occured on the world line. It is what a comoving observer would measure as 
+		the time that has elapsed on their reference frame.
+
+		By definition, you are comoving with yourself. Hence, $\tau$
+		is precisely the elapsed time that you can measure between events happening 
+		in your own world line.
+
+		Since it is invariant, non-comoving observers will measure different 
+		$\dd{t}$ and  $\dd{x}$ and so on, but they will measure the same $\dd{\tau}$.
+		They will all agree that an event happened in $\tau$ amount of time from
+		their own observations.
+		Hence, it is a special invariant quantity.
+		We call this measurement the \textit{proper time}.
+
+		\begin{definition}{Proper Time}
+		    The proper time $\tau$ is an invariant quantity
+			that an
+			observer will measure as the elapsed time in their local world line
+			and reference frame.
+			It is defined to be
+			\begin{equation}
+				\label{eq:proper-time}
+				\dd{\tau}^2 = -
+				\frac{1}{c^2} \eta_{\mu\nu}\dd{x^\mu}\dd{x^\nu} 
+			\end{equation}
+			External observers can calculate $\dd{\tau}$
+			from measurements taken from their respective worldlines, and
+			all will agree on its value.
+		\end{definition}
+
+		\paragraph{Affine parameter}
+
+		The quantity $\tau$ is an affine parameter. It can be chosen
+		as a parameter for the curve $\gamma$, for which the geodesic
+		equation takes its standard form, and lienar transformations on
+		it preserve the geodesic equation. 
+
+		Any other affine parameter is related to it by a linear transformation.
+		For example, if 
+		\[
+			\tau' = 	a \tau + b
+		\]
+		Then $\tau'$ is also affine.
+		
+
+
+		% The parameter $\lambda$
+		% describes the curve, while the quantity inside the square root is
+		% the contraction of the tangent vector with itself under the metric.
+		% Under a change of coordinates, both the components of the tangent
+		% vector and the components of the metric change, but $\tau$
+		% does not. Thus, the value of $\tau$ is independent of the coordinates
+		% used to describe the curve.
+
+		% That is, we can change the parameter from $\lambda$ to be $\tau$
+
+		% Thus, $\tau$ is precisely the time measured by a clock traveling
+		% along the worldline. Since it was constructed from the invariant
+		% spacetime interval, this elapsed time is itself invariant.
 	\subsubsection{Four-velocity, Four-momentum}
+		\paragraph{Four-velocity}
+		When we defined $\tau$, we used an arbitrary parameter $\lambda$.
+		However, since $\tau$ is invariant of the coordinates and is an affine
+		parameter, we might as well just use $\tau$
+		as the parameter for the curve. We can then define the tangent vector 
+		of a curve $\gamma$ to be
+		\[
+			\dot{\gamma} = \pdv{}{\tau} 
+		\]
+		Or, when expanded with coordinates $\qty{x^\mu}$, it becomes
+		\[
+			\pdv{}{\tau} = \dv{x^\mu}{\tau} \pdv{}{x^\mu}   
+		\]
+		This is a vector. Since it is spatial coordinates differentiated with \textit{time},
+		we can therefore think of it as a velocity. Therefore, we have
+		the velocity of the world line to be
+		\[
+			u = \pdv{}{\tau} 
+		\]
+		We can expand this using the coordinates to be
+		\begin{align*}
+			u &= \pdv{x^\mu}{\tau} \pdv{}{x^\mu}  \\
+			  &= \dot x^\mu \p_\mu
+		\end{align*}
+		This velocity has four dimensions, which is 
+		how each of $(t,x,y,z)$ changes over time. This is
+		what we call the \textbf{Four-velocity}.
+		\begin{definition}{Four-velocity}
+		    The four-velocity of a particle with a worldline 
+			$x^\mu(\tau)$ is the tangent vector to that world line
+			with respect to proper time,
+			\[
+				u = \pdv{x^\mu}{\tau} \p_\mu 
+			\]
+		\end{definition}
+			
+		To differentiate with the usual velocity, the three-velocity
+		\begin{align*}
+		    v &= 
+			\dv{x^\alpha}{t}\p_\alpha\\
+			 &=
+			\dv{x^\alpha}{x^0}\p_\alpha
+		\end{align*}
+		we denote the three-velocity as $v_{(3)}$ and the four-velocity
+		as $v_{(4)}$. However, when you see something like $v^a$ (AIN), it is
+		usually taken to be the four-velocity. 
+
+		We can take the norm of the four-velocity, and we can show that
+		\begin{align*}
+			\eta(v, v)
+			&=
+			\eta_{\mu\nu} v^\mu v^\nu \\
+			&= 
+			\frac{-c^2 dt^2 + dx^2 + dy^2 + dz^2}{d\tau} \\
+			&=
+			\frac{ds^2}{d\tau^2} \\
+			&=
+			\frac{-c^2 \qty(-\dfrac{ds^2}{c^2})}{d\tau^2} \\
+			&= -c^2 \frac{\dd{\tau}^2}{\dd{\tau}^2} \\ 
+			&= -c^2
+		\end{align*}
+		The magnitude is thus $\abs{v_{(4)}}= c$. Hence, all particles travel with speed $c$ in space time. 
+		We are all moving at the speed of light.
+
+		This is another interpretation of why nothing can go faster than
+		light, because all particles are already moving at the speed of light
+		in space time. If we are to define $\vb{x} = (x,y,z)$ and define $\dd{s}$ from there,
+		we find that
+		\[
+			ds^2 = \dd{\vb{x}}^2 - c^2\dd{t^2}
+		\]
+		Photon velocity, or lightlike curve velocity, has norm $\dd{s} = 0$. In spacetime is maximally spatial, which means that
+		all of its four-velocity components is spatial, and its temporal component
+		is 0, $\dd{t}=0$, which is why the proper time of photons is 0. 
+		\begin{align*}
+			ds^2 &= \dd{\vb{x}}^2 - c^2\dd{t^2}\\
+			0 &= \dd{\vb{x}}^2 - c^2\dd{t^2}\\
+			c^2 \dd{t}^2 &= \dd{\vb{x}}^2\\
+			c^2 &= \frac{\dd{\vb{x}^2}}{\dd{t}^2} \\
+			c &= \dv{\vb{x}}{t} 
+		\end{align*}
+		A particle at rest 
+		has maximal temporal velocity, which means it is traveling through
+		space time with 0 spatial velocity, i.e., $\dd{\vb{x}}/\dd{t}=0$. It therefore perceives proper time
+		as simply its own time. 
+		\begin{align*}
+			ds^2 &= \dd{\vb{x}}^2 - c^2\dd{t^2}\\
+			ds^2 &= -c^2\dd{t^2}\\
+			-\frac{ds^2}{c^2} &= \dd{t^2}\\
+			\dd{\tau}^2 &= \dd{t^2}\\
+			\dd{\tau} &= \dd{t}
+		\end{align*}
+
+		A moving particle has components of spatial
+		and temporal velocity, and since the four-velocity is constant, it has 
+		to trade off between components of spatial and temporal velocity. Hence, 
+		the greater its spatial velocity (the greater the speed), the lower the temporal
+		velocity (the slower time flows). This is where the phenomenon of time dilation 
+		at high speeds originate. We will discuss this in detail in a bit. 
+
+		We need a way to switch between the 4D spacetime picture,
+		and the usual 3D picture we are more familiar to. We defined
+		the four-velocity to be
+		\[
+			u^a = \pdv{}{\tau} 
+		\]
+		We can expand its components 
+		\[
+			u^a = u^\alpha \p_\alpha 
+		\]
+		and define those components to be the Lorentz coodinates.
+		\[
+			u^a = \pqty{
+				c\dv{t}{\tau},
+				\dv{x}{\tau},
+				\dv{y}{\tau},
+				\dv{z}{\tau},
+			}
+		\]
+		Let $\vb{x} = x^i = (x,y,z)$. The $i$ here does not denote AIN, but rather denotes spatial components.
+		We can therefore compactify the notation to be
+		\[
+			u^a = \pqty{
+				c \dv{t}{\tau},
+				\dv{\vb{x}}{\tau} 
+			}
+		\]
+		We can use chain rule to pull out $\dv{t}{\tau}$ on the spatial components
+		\[
+			u^a 
+			=
+			\pqty{
+				c \dv{t}{\tau},
+				\dv{\vb{x}}{t} \dv{t}{\tau}  
+			}
+		\]
+		And we can pull out the $\dv{t}{\tau}$ on the entire expression.
+		\[
+			u^a 
+			=
+			\dv{t}{\tau} 
+			\pqty{
+				c,
+				\dv{\vb{x}}{t} 
+			}
+		\]
+		Notice that on the left hands side is $u^a$, a four velocity, $v_{(4)}$,
+		and on the right hand side is the components of the three velocity, $v^i_{(3)}$.
+		Hence, to convert between $v_{(4)}$ and $v_{(3)}$, we have
+		\[
+			v_{(4)}
+			=
+			\dv{t}{\tau}
+			\pqty{
+				c,
+				v^i_{(3)}
+			}
+		\]
+		While $v_{(4)}$ is invariant in space time, $v_{(3)}$ itself 
+		is not invariant. However, since we know the norm of $v_{(4)}$,
+		\[
+			\eta_{\alpha\beta}u^\alpha u^\beta = -c^2
+		\]
+		We can determine $\displaystyle\dv{t}{\tau}$.
+		That is,
+		\begin{align*}
+			\abs{v_{(4)}} 
+			&= 
+			-
+			\pqty{
+				c \dv{t}{\tau} 
+			}^2
+			+
+			\pqty{
+				\dv{\vb{x}}{\tau} 
+			}^2\\
+			-c^2
+			&=
+			-
+			\pqty{
+				c \dv{t}{\tau} 
+			}^2
+			+
+			\pqty{
+				\dv{\vb{x}}{t} 
+			}^2
+			\pqty{
+				\dv{t}{\tau} 
+			}^2
+			\\
+			&=
+			\pqty{
+				\dv{t}{\tau} 
+			}^2
+			\pqty{
+				-c^2
+			+
+				\pqty{
+					\dv{\vb{x}}{t} 
+				}^2
+			}
+			\\
+			-c^2
+			&=
+			\pqty{
+				\dv{t}{\tau} 
+			}^2
+			\pqty{
+				-c^2
+			+
+				v^2_{(3)}	
+			}\\
+			\pqty{
+				\dv{t}{\tau} 
+			}^2
+			&=
+			\frac{
+				c^2
+			}{
+				\pqty{
+					c^2
+				-
+					v^2_{(3)}	
+				}
+			}
+			\\
+			\dv{t}{\tau} 
+			&=
+			\sqrt{
+				\frac{
+					c^2
+				}{
+					{
+						c^2
+					-
+						v^2_{(3)}	
+					}
+				}
+			}
+			\\
+			\dv{t}{\tau} 
+			&=
+			\sqrt{
+				\frac{
+					1
+				}{
+					{
+						1
+						-
+						\frac{
+							v^2_{(3)}	
+						}{c^2} 
+					}
+				}
+			}
+			\\
+			\dv{t}{\tau} 
+			&=
+			\frac{
+					1
+				}{
+					\sqrt{
+						1
+						-
+						\frac{
+							v^2_{(3)}	
+						}{c^2} 
+					}
+				}
+		\end{align*}
+		This is just the $\gamma$ factor in Lorentz transformation, or the Lorentz factor.
+		It is a function of $v_{(3)}$. Note that $v^2_{(3)}$ is the squared
+		norm of $v_{(3)}$, while $v^i_{(3)}$ refers to the components itself.
+
+		Hence, we have 
+		arrived with the value of the rate of change of time 
+		with respect to proper time:
+		\begin{equation}
+			\label{eq:dtdtau-gamma}
+			\dv{t}{\tau} = \gamma(v_{(3)}) 
+		\end{equation}
+
+		This is where the notion that the rate of the passage time of an object in high speed,
+		with respect to your proper time (which you measure locally) slows down. As a 
+		particle goes faster, $\dd{t}/\dd{\tau}$ becomes lower and lower, until it is $0$ at
+		$c$, which means time has completely stopped. 
+
+		This is made clearer by explicitly showing their proportionaly relation.
+		\[
+			\dd{\tau} = \frac{1}{\gamma}\dd{t} 
+		\]
+
+		From this, we also learn how to convert from three-velocity to four-velocity. 
+		\begin{equation}
+			\label{eq:3vel-to-4vel}
+			v_{(4)} = \gamma(v_{(3)}) \pqty{ c , v^i_{(3)} }
+		\end{equation}
+
+		Explicity, if $v_x = \dv{x}{t}$, and $v_y$ and $v_z$ are 
+		all three-velocities, then
+		\[
+			v_{(4)} = 
+			\frac{1}{
+				\sqrt{
+					1 - 
+					\dfrac{
+						v_x^2 + v_y^2 + v_z^2  
+					}{c^2} 
+				}
+			}
+			\bigl(
+				c, v_x, v_y, v_z
+			\bigr)
+		\]
+		Thus, this formulation bridges the gap between $\R^3$ and Minkowski 
+		spacetime. 
+		That is, if we know the three-velocity, we can immediately know
+		the four-velocity. This will work for any three-velocity $v_{(3)} < c$.
+		If the three-velocity is larger than $c$, the conversion will take
+		an imaginary value. While it can be studied, it has been done before,
+		it does not have any physical meaning. Thus,
+		it is deemed to be non-physical. Any object travelling with speed below $c$ will always travel 
+		below it, and any object traveling with speed above $c$ can only travel above it.
+
+		\begin{remark}
+			$v_{(3)}$ is not a vector in the spacetime manifold, it does not
+			deserve an arrow. Only $v_{(4)}$ is a true vector in spacetime. 
+		\end{remark}
+		
+		\paragraph{Four-velocity of null curves}
+			Null curves have no proper time. Its proper time is 0. However,
+			light still has four velocity, why is that?
+
+			Four velocity is defined to be 
+			\[
+				u = \dv{x^\alpha}{\tau}\p_\alpha 
+			\]
+			However, since for null curves, $d\tau=0$ everywhere, then
+			\[
+				u_\gamma = \frac{\dd{x^\alpha}}{0} \implies \text{undefined} 
+			\]
+			So there is no four-velocity for null curves in the proper sense.
+
+			Instead, we parameterize the tangent vector of a null curve
+			by an affine parameter $\lambda$, which is \textit{not} proper time.
+			\[
+				k^a = \dv{x^\alpha}{\lambda}\p_\alpha 
+			\]
+			This is called the wave vector, or null tangent/null vector. 
+			Its defining property is:
+			\[
+				\eta_{ab} k^a k^b = 0 
+			\]
+			This is the key difference between a massive and 
+			massless particle. $k^a$ plays the same strutural
+			role as $u^a$.
+
+			It is tangent to the worldline, it satisfies the geodesic equation, i.e.,
+			\[
+				\dv{k^\sigma}{\lambda} + \Gamma^{\sigma}_{\mu\nu} k^\mu k^\nu = 0 
+			\]
+			It transforms as a four-vector under Lorentz transformations,
+			and its components give frequency and direction.
+			\[
+				k^\alpha = (\omega/c, \vb{k})
+			\]
+			It looks like a four-velocity, and in casual usage people refer
+			to it as such, but strictly speaking, it's a null vector.
+			Its normalization condition is different and proper time plays no role.
+			Since the speed of a lightlike curve is constant, the affine parameter
+			has no physical scale. It is arbitrary. What is physical is the direction
+			of the null vector, and the curve it traces, not its magnitude. The coordinate
+			speed of light is always $c$.
+
+			The speed of light comes from the \textit{null condition}.
+			\[
+				\eta_{\alpha\beta} k^\alpha k^\beta = 0
+			\]
+			Writing the components as $k^\alpha = (k^0, \vb{k})$, we have
+			\[
+				-(k^0)^2 + \norm{\vb{k}}^2 = 0 \implies \norm{\vb{k}} = k^0
+			\]
+			So the coordinate speed is:
+			\[
+				\frac{\norm{\vb{k}}}{k^0} = 1
+			\]
+			This is for units of $c=1$
+			The ratio is scale-invariant. i.e., $k^a \to \frac{1}{p}k^a, p\in\R$ does not
+			change it. So the speed $c$ is a consequence of the null condition. For massive
+			particles, proper time \textit{fixes} the scale of $u^a$, because its squared norm 
+			is always $-c^2$. Thus, it has a physical magnitude. For a photon, analogous
+			normalization is 0, which fixes nothing. Hence, a photon has 
+			no preferred scale.
+
+			Light, or any other massless particles, have a world line that is a \textit{null geodesic}.
+			That is, the path along which light rays propagate in 
+			spacetime follow a null geodesic. It is null because $d\tau=0$ along it, no proper
+			time elapses. It is a geodesic because it is force-free, following the straightest
+			available path.
+			\begin{remark}
+				\textbf{Notation}\hspace{1em}
+				Indicating a four and three vector is cumbersome.
+				So we will adopt the following notation.
+				When you see $u^a$ or $v^a$, it is the four-velocity,
+				similarly for $p^a$ being momentum.
+				We reserve bold-face fonts to represented a three-vector,
+				and the index $i$ to give the spatial components of 
+				a four-vector (which is kinda equivalent to the three vector).
+				Hence, when you see a bold face $\vb{v}$,
+				it's a three-velocity. When you see $v^i$, it's a either components of the three velocity, or the
+				spatial components of the four-velocity.
+				When you see $x^i$, it's the spatial component of 
+				a spactime position, and $\vb{x}$, is the three-position. 
+				When you see $\vb{p}$, it's the three-momentum, and $p^i$ is either components 
+				of the three-momentum, or spatial components of the four-momentum.
+
+				We will specify what $i$ denotes depending on what we work with. Just keep this in mind.
+			\end{remark}
+		\paragraph{Four-momentum}
+			
+			The four-momentum, or just momentum\footnote{Sir goes on a rant here that it really should not be called the four-momentum, it's just the momentum. The 3-momentum is just the spatial components of the momentum}
+			is the product of a quantity called the 
+			invariant mass\footnote{This is just normal inertial mass which
+			is invariant for observers. There is no such thing called 
+			relativistic mass} and the four-velocity.
+			
+			\begin{definition}{Four-momentum}
+			    For a particle with mass $m$ and four-velocity $u^a$, the 
+				four-momentum is
+				\[
+					p^a = mu^a
+				\]
+			\end{definition}
+			
+			
+			If you solve for the squared-norm of the four-momentum, we have
+			\[
+				\eta_{ab} p^a p^b = -m^2c^2
+			\]
+			The first component of the four-momentum, $p^0$ is:
+			\begin{align*}
+			    p^0
+				&=
+				mu^0\\
+				&= 
+				m\gamma c
+			\end{align*}
+			To make sense of what that is, 
+			let's try multiplying it by $c$.
+			\begin{align*}
+				cp^0 
+				&= m\gamma c^2 \\
+				&= m \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} c^2
+			\end{align*}
+			We can do an expansion to show that 
+			\begin{align*}
+				m\gamma c^2 &= 
+				mc^2 \qty(1 - \frac{1}{2}\frac{v^2}{c^2}+\cdots )\\
+							&= 
+				mc^2 + \frac{1}{2}mv^2 + \cdots 
+			\end{align*}
+			Here you will notice that the 
+			first term is the well known \textit{rest-mass} energy,
+			and the second term is the nonrelativistic kinetic energy,
+			and the rest are higher order corrections, and hence we find
+			that $m\gamma c^2$ is just the total relativistic energy of a particle.
+			\[
+				m\gamma c^2 = E
+			\]
+			Hence, the first component of the four-momentum is
+			\[
+				p^0 = \frac{E}{c} 
+			\]
+			For the spatial components of the momentum, $p^i$, $i=1,2,3$, we have
+			\begin{align*}
+			    p^\mu
+				&=
+				m\gamma v^i\\
+				&=
+				\gamma \vb{p}\\
+				&=
+				\vb{p} \pqty{1 + \frac{1}{2} \frac{v^2}{c^2} + \cdots}
+			\end{align*}
+			The spatial components of the four-momentum are what is colloquially 
+			known as the \textit{relativistic momentum}.
+
+			Thus, the components of the four-momentum is
+			\[
+				p^\alpha = 
+				\pqty{
+					\gamma mc, \gamma m v^i
+				}
+				=
+				\pqty{
+					\frac{E}{c},
+					p^i
+				}
+			\]
+
+			\paragraph{Conservation}
+
+			Four-momentum is conserved in any interaction. That is,
+			\[
+				\sum p^a = \sum p^b
+			\]
+			Where $p^a$ is the momentum of the system before the interaction,
+			and $p^b$ is the momentum of the system after.
+
+			This single statement implies both the conservation of energy,
+			and the conservation of 3-momentum.
+			
+			% $p^a$ transforms as a four-vector under Lorentz transformations, just
+			% like any other. You can therefore read off $E$ and $\vb{p}$ in any new frame. More on this later.
+			% Free particles parallel transport momentum along geodesics.
+
+			The norm is invariant, i.e., frame independent. Any 
+			observer measuring the norm of the four-momentum of a particle
+			will agree on the norm of the momentum. 
+			\[
+				\eta_{ab} p^a p^b = -m^2 c^2
+			\]
+			This is the mass-shell condition (see Remark at the end of the subsection).
+			It's the same in every frame. In some definitions, this is
+			how the \textit{invariant mass} is defined in relativity. It is
+			defined from the invariant four momentum.
+			\[
+				m = \sqrt{-\frac{1}{c^2} \eta_{ab} p^a p^b}
+			\]
+			
 	\subsubsection{Energy}
+	Since the norm is $\norm{p} = -mc^2$, we can show that
+			\[
+				\eta_{\alpha\beta} p^\alpha p^\beta = - m^2c^2
+			\]
+			Expanding this out, we have
+			\[
+				-\pqty{\frac{E}{c^2}} + (p^i)^2 = -m^2c^2
+			\]
+			Solving for $E$, we arive with the famous formula
+			every undergraduate can recite by heart.\footnote{We kinda just contract $p^i\to p$ here to denote the spatial components of the momentum, to get the well known form.}
+			\begin{equation}
+				\label{eq:energy-momentum relation}
+				E^2 = p^2 c^2 + m^2 c^4
+			\end{equation}
+			With a nonmoving particle, $p=0$. Hence, you get
+			the celebrated equation that Einstein is known for the most: The mass-energy equivalence.\footnote{Finally I got to write $E=mc^2$ in an offical capacity. Hell yeah.}
+			\begin{equation}
+				\label{eq:mass-energy-equivalence}
+			    E = mc^2
+			\end{equation}
+
+			\paragraph{Measuring energy}
+			
+			How does one measure the energy of a particle?
+
+			Suppose we have two world lines, $\gamma_0$, which is the
+			observer, and $\gamma_1$ the particle being observed.
+			How does one measure the energy of $\gamma_1$?.
+
+			Doing what we have learned previously,
+			it's kinda cumbersome, is it not?
+
+			Naively, you'd have to
+			\begin{enumerate}
+			    \item Set up a Lorentz frame adapted to the observer $\gamma_0$.
+				\item Find the basis vectors orthogonal to $t$.
+				\item Express the particles four velocity $u^a$ in that frame's coodinates.
+				\item Determine the mass of the particle.
+				\item Combine them to get the energy.
+			\end{enumerate}
+
+			This works, but it's clunky. It forces you to pick coordinates
+			and do book keeping which hides the geometry.
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=4in, height = 3in]{images/two_worldlines.pdf}
+				\caption{Two worldlines, $\gamma_0$ and $\gamma_1$. The observer $\gamma_0$
+				measures $\gamma_1$ from its own frame}
+				\label{fig:two-worldlines.}
+			\end{figure}
+
+			However, knowing the energy-momentum relation, this process
+			is simplified. We just have to get the 0-th component of the four momentum?
+			How do we do this? We just feed it the $0$-th basis vector, the time basis.
+			\[
+				p^a(\p_t) = \frac{E}{c} 
+			\]
+			How do you get the 0th basis vector? Well, it's the time basis vector,
+			so the observer, $\gamma_1$ also has it. All he needs to do
+			is project the particles four-momentum with his four velocity.
+			\[
+				E = -\eta_{ab} p^a u^b
+			\]
+			Where $p^a = mu_{0}^a$, the particle's four momentum, and $u^b$ is
+			the observer's four velocity, no frame-building required. 
+
+			Why does this work?
+
+			You are always comoving with yourself, your four velocity
+			$u^b$ is always tangent to your world line by definition.	
+			The observer's rest frame is defined by the tangent velocity $u^b$.
+			Therefore, your four-velocity's spatial coordinates 
+			is always zero. Your world line, in your perspective,
+			is maximally temporal, and therefore the only component
+			in your four-velocity is the time basis vector, $u^b / c$,
+			and the spatial basis vectors are any three vectors orthogonal 
+			to it. That is, the observer's tangent vector is, by definition,
+			the time basis vector.
+			\[
+				\eta_{ab} p^a u^b = -\frac{E}{c}
+			\]
+			Projecting $p^a$ in the observer's time direction therefore
+			extracts exactly the enregy that the observer assigns to the particle.
+
+			To put it more rigorously, in the observer's rest frame, the 
+			four velocity is
+			\[
+				u^\beta = (c, 0, 0 ,0)
+			\]
+			So, 
+			\begin{align*}
+				\eta_{ab} p^a p^b 
+				&= \eta_{00} p^0 u^0\\
+				&= -1 \qty(\frac{E}{c}) (c)\\
+				&= - E
+			\end{align*}
+			Hence:
+			\[
+				E = -\eta_{ab}p^a p^b
+			\]
+			This is the answer to the question ``What will an observer measure?".
+			Given an observer, with four-velocity $u^b$, the energy they assign
+			to the particle with four momentum $p^a$ is the scalar $E = -\eta_{ab} p^a u^b$.
+
+			The momentum $p^a$ transforms as a four-vector under Lorentz transformations, $p'^c = \Lambda^c_a p^a$.
+			As such, you can transform the momeuntum in another frame and read off both $E$ and the 
+			spatial momentum $\vb{p}$ in the new frame, by again just operating it on your tangent vector.
+
+			The deeper point, is that energy is not an intrinsic property of the particle — it's a relationship between 
+			the particle and the observer. Different observers, different 
+			different measured energies. You can know what others are doing relative to you, 
+			but there is no frame-independent ``energy of the particle" independent of who measures it.	
+		
+			In other words,
+			You can know what others are doing, but you can't know what you yourself 
+			are doing.
+			\begin{question}{Does this only work for constant velocities?}
+				The answer is no, it does not. Nowhere in the formulation
+				did we assume a constant velocity $u^a$, so the formulation
+				in general can work
+				for accelerated observers. SR in general, works for accelerating
+				observers, there is just more calculus involved.
+
+				\hspace{1em}
+				The only restrictions we impose is that we are in Minkowski 
+				spacetime, and that all particles are Lorentzian observers,
+				where moving particles relative to observers are described
+				by Lorentzian transformations.
+
+				\hspace{1em}
+				No assumption of constant $u^a$ was ever made.
+			\end{question}
+			
+		
+			\begin{remark}
+				In particle physics, particles which satisfy the energy-momentum relation are 
+				called on-shell or on-mass shell, i.e.,
+				\[
+					p^\alpha p_\alpha = -m^2 c^2
+				\]
+				Or in 3-vector form, 
+				\[
+					E^2 = p^2 c^2 + m^2 c^4
+				\]
+
+				The relation $E^2 - p^2 c^2 = m^2 c^4$ defines a hyperboloid
+				in energy-momentum space, a \textit{shell} at fixed mass $m$.
+				A particle whose four-momentum
+				\[
+					p^\mu = (E/c, \vb{p})
+				\]
+				lies on this surface is on-shell. One that doesn't is called 
+				off-shell. On-shell particles are real, asymptotic particles.
+				An example is a photon or an electron. For a photon, the 
+				mass-shell is the lightcone, $p^\mu p_\mu = 0$. It also means 
+				that four-momentum is conserved. On-shell is a declaration of 
+				timelike curves.
+				
+				\hspace{1em}Particles that are off-shell violate the energy-momentum
+				relation. Examples include virtual particles such as virtual
+				photons in QED, and internal propagators.
+			\end{remark}
+
 		

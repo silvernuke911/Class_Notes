@@ -878,6 +878,36 @@ INPUT .\preamble\backmatter.tex
 INPUT .\preamble\backmatter.tex
 INPUT .\preamble\backmatter.tex
 INPUT preamble\backmatter.tex
+INPUT .\preamble\appendices.tex
+INPUT .\preamble\appendices.tex
+INPUT .\preamble\appendices.tex
+INPUT .\preamble\appendices.tex
+INPUT preamble\appendices.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
+INPUT .\problem_sets\ps1.tex
+INPUT .\problem_sets\ps1.tex
+INPUT .\problem_sets\ps1.tex
+INPUT .\problem_sets\ps1.tex
+INPUT problem_sets\ps1.tex
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
+INPUT .\images\k1.pdf
+INPUT .\images\k1.pdf
+INPUT .\images\k1.pdf
+INPUT .\images\k1.pdf
+INPUT .\images\k1.pdf
+INPUT .\images\k1.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k0.pdf
+INPUT .\images\k-1.pdf
+INPUT .\images\k-1.pdf
+INPUT .\images\k-1.pdf
+INPUT .\images\k-1.pdf
+INPUT .\images\k-1.pdf
+INPUT .\images\k-1.pdf
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.bbl
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.bbl
 INPUT C:\Users\verci\Documents\code\Class Notes - V\Physics 225\build\p225.bbl
@@ -909,6 +939,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
@@ -917,6 +949,8 @@ INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Users\verci\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb

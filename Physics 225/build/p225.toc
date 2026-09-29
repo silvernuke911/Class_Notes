@@ -162,6 +162,7 @@
 \contentsline {section}{Chapter 8: Basic Cosmology}{224}{section.8}%
 \contentsline {section}{Back Matter}{225}{section.8}%
 \contentsline {subsection}{Appendices}{225}{section*.74}%
-\contentsline {subsection}{Additional References}{226}{section*.74}%
-\contentsline {subsection}{Author's Note}{227}{section*.74}%
-\contentsline {subsection}{Colophon}{229}{section*.74}%
+\contentsline {subsubsection}{Problem Set 1}{226}{section*.74}%
+\contentsline {subsection}{Additional References}{250}{equation.9.7.2}%
+\contentsline {subsection}{Author's Note}{251}{equation.9.7.2}%
+\contentsline {subsection}{Colophon}{253}{equation.9.7.2}%

@@ -1,18 +1,18 @@
-\documentclass[12pt,a4paper]{article}
-\input{preset}
-\input{preamble}
-\newcommand{\und}[1]{\underline{#1}}
-\newcommand{\ovr}[1]{\overline{#1}}
-\newcommand{\mcal}[1]{\mathcal{#1}}
-% \usepackage[outer]{showlabels} 
-% \renewcommand{\showlabelfont}{\ttfamily\tiny}
-\begin{document}
-	\input{title}
+	\begin{center}
+		{
+			\vspace*{3in}
+			\LARGE
+			\textsc{
+				Problem Set 1
+			}
+		}
+	\end{center}
+	\newpage
 	% ===========================
 	% PROBLEM 1.1
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.1
 	}
 	\begin{problem}
@@ -172,7 +172,6 @@
 
 				This is a \textbf{valid option}, and is in fact the assumption
 				adopted by Newtonian and other classical mechanics theories.
-				\newpage
 
 			\item $k < 0$
 
@@ -256,7 +255,6 @@
 
 				Physically, it has no meaning, but geometrically, it is a valid transformation.
 		\end{enumerate}
-		\newpage
 		Below are figures which plot the transformation
 		of the world line from the perspective of $S$ (red),
 		and $S'$ (blue), with the coordinate curves of $S$ (left)
@@ -267,33 +265,33 @@
 
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=4.5in]{images/k1.pdf}
+			\includegraphics[width=3.2in, height = 1.6in]{images/k1.pdf}
 			\caption{A Lorentz Transformation $(k=1)$}
 			\label{fig:lorentzk1}
 		\end{figure}
 
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=4.5in]{images/k0.pdf}
+			\includegraphics[width=3.2in, height = 1.6in]{images/k0.pdf}
 			\caption{A Galilean Transformation $(k=0)$}
 			\label{fig:lorentzk0}
 		\end{figure}
 
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=4.5in]{images/k-1.pdf}
+			\includegraphics[width=3.2in, height = 1.6in]{images/k-1.pdf}
 			\caption{A $k<0$ Lorentz Transformation $(k=-1)$}
 			\label{fig:lorentzk-1}
 		\end{figure}
 
 	\end{solution_pset}
-
+	\ 
 	\newpage
 	% ===========================
 	% PROBLEM 1.2
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.2
 	}
 	\begin{problem}
@@ -575,8 +573,8 @@
 	% ===========================
 	% PROBLEM 1.3
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.3
 	}
 	\begin{problem}
@@ -756,8 +754,8 @@
 	% ===========================
 	% PROBLEM 1.4
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.4
 	}
 	\begin{problem}
@@ -1067,8 +1065,8 @@
 	% ===========================
 	% PROBLEM 1.5
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.5
 	}
 	\begin{problem}
@@ -1077,7 +1075,6 @@
 		$g\inv g = gg\inv = \mathrm{Id}$, is a $(2,0)$ tensor.
 	\end{problem}
 	\begin{solution_pset}
-		\begin{multicols*}{2}
 			\begin{proof}
 				A $(2,0)$ tensor is a bilinear map such that, if $\alpha\in(2,0), \omega,\eta\in V^*$
 				\[
@@ -1159,14 +1156,13 @@
 				g^{\mu\alpha}g_{\alpha\nu} = \delta\indices{^\mu_\nu}.
 			\]
 			Hence, $g\inv$ is a $(2,0)$ tensor with components $g^{\mu\nu}$.
-		\end{multicols*}
 	\end{solution_pset}
 	\newpage
 	% ===========================
 	% PROBLEM 1.6
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.6
 	}
 	\begin{problem}
@@ -1390,8 +1386,8 @@
 	% ===========================
 	% PROBLEM 1.7
 	% ===========================
-	\stepcounter{section}
-	\section*{
+	\stepcounter{subsection}
+	\subsection*{
 		Problem 1.7
 	}
 	\begin{problem}
@@ -1513,26 +1509,4 @@
 		So the identity $(1,1)$ tensor is just the Euclidean metric, or 
 		the Kronecker delta, or the identity under contraction operator.
 		Among other names.
-		
-
-
 	\end{solution_pset}
-	\newpage
-	% ===========================
-	\stepcounter{section}
-	\bibliographystyle{unsrturl} 
-	\bibliography{references} 
-	\stepcounter{section}
-	% ===========================
-	\section*{Appendices}
-		\label{appendix}
-		\subsection*{Code} 
-		No code was used for this problem set
-	\vfill
-	\begin{center}
-		{
-			\Large
-			\textsc{Physica Vincit Omnia}
-		}
-	\end{center}
-\end{document}

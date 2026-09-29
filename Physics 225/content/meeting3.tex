@@ -33,8 +33,8 @@
 		In Galilean transformations, the relationship betwen the two reference
 		frames can be described as 
 		\begin{align*}
-			x' &= x + vt\\
-			t' &= t'
+			x' &= x - vt\\
+			t' &= t
 		\end{align*}
 		That is, expressed in matrix form, 
 		\begin{equation}
@@ -43,7 +43,7 @@
 			}
 			= 
 			\bmqty{
-				1 & v\\
+				1 & -v\\
 				0 & 1
 			}
 			\bmqty{
@@ -79,14 +79,14 @@
 			=
 			\gamma
 			\bmqty{
-				1 & -v \\
-				-\beta & 1
+				1 & -\beta c \\
+				-\beta/c & 1
 			}
 			\bmqty{
 				x\\t
 			}
 		\end{equation}
-		where $\gamma = \dfrac{1}{\sqrt{1-\beta^2}}$ and $\beta = \dfrac{v^2}{c^2}$
+		where $\gamma = \dfrac{1}{\sqrt{1-\beta^2}}$ and $\beta = \dfrac{v}{c}$
 
 		An interesting question arises: Where does $c$ come from if we never assume light?
 
@@ -655,7 +655,7 @@
 
 		The empirical question that can then be raised is: Which value $k$ describes our universe?
 
-		Experiment tells us that the invarient speed is the speed of light in a vacuum.
+		Experiment tells us that the invariant speed is the speed of light in a vacuum.
 		\begin{equation}
 		    \kappa = c
 		\end{equation}
@@ -821,7 +821,7 @@
 				\[
 					u = \dv{x'}{t'} 
 				\]
-				as messured from $S'$. 
+				as measured from $S'$. 
 
 				We also know that $S'$ travels at a velocity $v$ relative to $S$.
 				We aim to determine $w$ in terms of $u$ and $v$. 

@@ -8,4 +8,11 @@ Vercil Juan.
 \newblock URL:
   \url{https://github.com/silvernuke911/Class_Notes/blob/main/Physics\%20225/p225.pdf}.
 
+\bibitem{Liang2023}
+Canbin Liang and Bin Zhou.
+\newblock {\em Differential Geometry and General Relativity}.
+\newblock Graduate Texts in Physics. Springer, Singapore, 2023.
+\newblock \href {https://doi.org/10.1007/978-981-99-0022-0}
+  {\path{doi:10.1007/978-981-99-0022-0}}.
+
 \end{thebibliography}

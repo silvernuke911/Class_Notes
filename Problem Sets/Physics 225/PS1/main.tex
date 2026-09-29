@@ -28,7 +28,7 @@
 	\begin{solution_pset}
 		\nocite{juan2026}
 
-		From the lecture\cite{juan2026}, aside from the
+		From the lecture, discussed in \S 1.4 of \cite{juan2026}, aside from the
 		derivation of the constant that naturally arises 
 		from fundamental assumptions, $k$.
 		\begin{equation}
@@ -305,7 +305,7 @@
 		in the problem above. What about the off diagonal components? Explore.
 	\end{problem}
 	\begin{solution_pset}
-		We again refer to \cite{juan2026}. For a velocity $w$ with respect from reference frame $S$ 
+		We again refer to \S1.4,\cite{juan2026}. For a velocity $w$ with respect from reference frame $S$ 
 		to $S''$, transformation obtained has general form
 		\begin{equation}
 			\label{eq:Mw}
@@ -647,7 +647,7 @@
 				  we must know how 
 				  each $\und{e}^i$ acts on $\ovr{v}$, $\forall \ovr{v}\in V$.
 
-				  By definition, a dual vector
+				  By definition (\S 2.6, \cite{juan2026}), a dual vector
 				  is a linear map acting on a vector such that, if $\und\omega\in V^*$,
 				  $\ovr v\in V$, then
 				  \[
@@ -672,7 +672,7 @@
 						completely determined. 
 					\end{proof}
 			\item For $\qty{\und{e}^i}$ to be a basis, it must be both linearly independent and 
-				  spans the entire dual vector space. We prove these two separately.
+				spans the entire dual vector space (\S 2.2.7\cite{juan2026}). We prove these two separately.
 			
 				\begin{enumerate}
 
@@ -896,7 +896,7 @@
 						C\indices{^\lambda_{\mu\nu}}
 						&=0.
 					\end{align*}
-					Since $\lambda,\mu,\nu$ are arbitrary,
+					Since the indices $\lambda,\mu,\nu$ are arbitrary, we can replace them. Hence,
 					\[
 						C\indices{^\alpha_{\beta\gamma}}=0
 					\]
@@ -978,7 +978,7 @@
 						\delta\indices{^\gamma_\nu}
 						\\
 						&=
-						G\indices{^\alpha_{\beta\nu}}
+						G\indices{^\alpha_{\beta\gamma}}
 						\ovr e_{\alpha}
 						[\und e^\lambda]
 						\und e^{\beta}
@@ -987,7 +987,7 @@
 						[\ovr e_\nu]
 						\\
 						&=
-						G\indices{^\lambda_{\mu\gamma}}
+						G\indices{^\alpha_{\beta\gamma}}
 						(
 							\ovr e_\alpha \otimes \und e^\beta \otimes \und e^\gamma
 						)
@@ -1009,7 +1009,7 @@
 							\ovr e_\gamma
 						]
 						&=
-						G\indices{^\lambda_{\mu\nu}}\ 
+						G\indices{^\alpha_{\beta\nu}}\ 
 						\ovr e_\alpha \otimes \und e^\beta \otimes \und e^\gamma
 						[
 							\und e^\lambda,
@@ -1174,8 +1174,8 @@
 		standard transformation law for $(k,l)$-tensor components under a change of coordinates.
 	\end{problem}
 	\begin{solution_pset}
-		The standard Tensor component transformation law under change of 
-		coordinates from $\{x^\sigma\}$ to $\{x'^{\mu}\}$ is \cite{juan2026, Liang2023}
+		The standard tensor component transformation law under change of 
+		coordinates from $\{x^\sigma\}$ to $\{x'^{\mu}\}$ is (\S 2.7.7 \cite{juan2026},\cite{Liang2023})
 		\begin{equation}
 			\label{eq:tensor-transformation-law}
 			{T'}\indices{^{{\mu_1}\ldots{\mu_k}}_{{\nu_1}\ldots{\nu_l}}}
@@ -1191,7 +1191,7 @@
 		We derive it, from the definition alone, as follows:
 
 		\begin{proof}
-		The definition of a tensor, as stated from the lecture, is \cite{juan2026}:
+		The definition of a tensor, as stated from the lecture, is (\S 2.7 \cite{juan2026}):
 
 		A tensor of $(k,l)$ type is a multilinear map 
 		from the product of dual and vector spaces to real numbers,
@@ -1234,8 +1234,8 @@
 		definition (see the solution on Problem 1.4.2 which uses this method).
 
 		With all that done,
-		we find that a tensor $T\in(k,l)$ defined in a chart $\{x^\mu\}$ 
-		has component form, which is the form that we need 
+		we find that a tensor $T\in(k,l)$ defined in a chart with basis functions $\{x^\mu\}$ 
+		has a component form, which is the form that we need 
 		to define the transformation in general.
 		\begin{equation}
 			\label{eq:tensor-component-form}
@@ -1415,15 +1415,18 @@
 
 			A $(1,1)$ identity tensor can be viewed as a map
 			\[
-				V\to V,\qquad V^* \to V^*
+				\binom{1}{1}:
+				V\to V,\qquad 
+				\binom{1}{1}:
+				V^* \to V^*
 			\]
 			or equivalently, as a bilinear map
 			\[
+				\binom{1}{1}:
 				V^*\times V\to \R
 			\]
 
 			We start with $\Id_1:V\to V$. 
-
 			For any $v\in V$, then
 			\[
 				\Id_1[v]= v.

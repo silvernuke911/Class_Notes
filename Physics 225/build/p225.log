@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 SEP 2026 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  29 SEP 2026 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2335,7 +2335,7 @@ If that doesn't work, type  X <return>  to quit.
 [202] [203] [204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [
 215]
 
-LaTeX Warning: File `images/two_worldlines.pdf' not found on input line 1814.
+LaTeX Warning: File `images/two_worldlines.pdf' not found on input line 1816.
 
 
 ! Package pdftex.def Error: File `images/two_worldlines.pdf' not found: using d
@@ -2345,7 +2345,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1814 ...height = 3in]{images/two_worldlines.pdf}
+l.1816 ...height = 3in]{images/two_worldlines.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2419,12 +2419,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 766--767
  []
 
 [239] [240] [241]
-Underfull \hbox (badness 10000) in paragraph at lines 1077--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1081
 
  []
 
 [242] [243] [244]
-Overfull \hbox (43.61185pt too wide) detected at line 1299
+Overfull \hbox (43.61185pt too wide) detected at line 1301
 \OML/lmm/m/it/10 T \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 T[] [] \OMS/lmsy/m/n/10 
  [] 
  [] 
@@ -2433,7 +2433,7 @@ Overfull \hbox (43.61185pt too wide) detected at line 1299
  []
 
 
-Overfull \hbox (30.83357pt too wide) detected at line 1332
+Overfull \hbox (30.83357pt too wide) detected at line 1334
 [][][]\OML/lmm/m/it/10 T \OT1/lmr/m/n/10 = [] [] [][] [] []\OML/lmm/m/it/10 T[]
  [] \OMS/lmsy/m/n/10 
  [] 
@@ -2457,7 +2457,7 @@ ps : / / github . com / silvernuke911 /
  []
 
 ) [250] [251] [252] [253]
-<images/sphere.pdf, id=2989, 216.81pt x 216.81pt>
+<images/sphere.pdf, id=2990, 216.81pt x 216.81pt>
 File: images/sphere.pdf Graphic file (type pdf)
 <use images/sphere.pdf>
 Package pdftex.def Info: images/sphere.pdf  used on input line 112.
@@ -2484,7 +2484,7 @@ Here is how much of TeX's memory you used:
  90359 multiletter control sequences out of 15000+600000
  685976 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,17n,110p,788b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,17n,110p,788b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\verci\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esi
 nt10.pk><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx8.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/publi
@@ -2543,9 +2543,9 @@ bm10.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msbm7.pfb><C:/Users/verci/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/rsfs/rsfs10.pfb>
 Output written on "C:\Users\verci\Documents\code\Class Notes - V\Physics 225\bu
-ild\p225.pdf" (272 pages, 6152254 bytes).
+ild\p225.pdf" (272 pages, 6152761 bytes).
 PDF statistics:
- 3368 PDF objects out of 3580 (max. 8388607)
+ 3369 PDF objects out of 3580 (max. 8388607)
  892 named destinations out of 1000 (max. 500000)
  1277 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -28,7 +28,7 @@
 	\begin{solution_pset}
 		\nocite{juan2026}
 
-		From the lecture\cite{juan2026}, aside from the
+		From the lecture, discussed in \S 1.4 of \cite{juan2026}, aside from the
 		derivation of the constant that naturally arises 
 		from fundamental assumptions, $k$.
 		\begin{equation}
@@ -303,7 +303,7 @@
 		in the problem above. What about the off diagonal components? Explore.
 	\end{problem}
 	\begin{solution_pset}
-		We again refer to \cite{juan2026}. For a velocity $w$ with respect from reference frame $S$ 
+		We again refer to \S1.4\cite{juan2026}. For a velocity $w$ with respect from reference frame $S$ 
 		to $S''$, transformation obtained has general form
 		\begin{equation}
 			\label{eq:Mw}
@@ -645,7 +645,7 @@
 				  we must know how 
 				  each $\und{e}^i$ acts on $\ovr{v}$, $\forall \ovr{v}\in V$.
 
-				  By definition, a dual vector
+				  By definition (\S 2.6, \cite{juan2026}), a dual vector
 				  is a linear map acting on a vector such that, if $\und\omega\in V^*$,
 				  $\ovr v\in V$, then
 				  \[
@@ -894,7 +894,7 @@
 						C\indices{^\lambda_{\mu\nu}}
 						&=0.
 					\end{align*}
-					Since $\lambda,\mu,\nu$ are arbitrary,
+					Since the indices $\lambda,\mu,\nu$ are arbitrary, we can replace them. Hence,
 					\[
 						C\indices{^\alpha_{\beta\gamma}}=0
 					\]
@@ -970,13 +970,13 @@
 						\delta\indices{^\beta_\mu}
 						\\
 						&=
-						G\indices{^\alpha_{\beta\nu}}
+						G\indices{^\alpha_{\beta\gamma}}\ 
 						\delta\indices{^\lambda_\alpha}
 						\delta\indices{^\beta_\mu}
 						\delta\indices{^\gamma_\nu}
 						\\
 						&=
-						G\indices{^\alpha_{\beta\nu}}
+						G\indices{^\alpha_{\beta\gamma}}\ 
 						\ovr e_{\alpha}
 						[\und e^\lambda]
 						\und e^{\beta}
@@ -985,9 +985,11 @@
 						[\ovr e_\nu]
 						\\
 						&=
-						G\indices{^\lambda_{\mu\gamma}}
+						G\indices{^\alpha_{\beta\gamma}}
 						(
-							\ovr e_\alpha \otimes \und e^\beta \otimes \und e^\gamma
+							\ovr e_\alpha \otimes 
+							\und e^\beta \otimes 
+							\und e^\gamma
 						)
 						[
 							\und e^\lambda,
@@ -1007,7 +1009,7 @@
 							\ovr e_\gamma
 						]
 						&=
-						G\indices{^\lambda_{\mu\nu}}\ 
+						G\indices{^\alpha_{\beta\gamma}}\ 
 						\ovr e_\alpha \otimes \und e^\beta \otimes \und e^\gamma
 						[
 							\und e^\lambda,
@@ -1187,7 +1189,7 @@
 		We derive it, from the definition alone, as follows:
 
 		\begin{proof}
-		The definition of a tensor, as stated from the lecture, is \cite{juan2026}:
+		The definition of a tensor, as stated from the lecture, is (\S 2.7 \cite{juan2026}):
 
 		A tensor of $(k,l)$ type is a multilinear map 
 		from the product of dual and vector spaces to real numbers,
@@ -1411,15 +1413,18 @@
 
 			A $(1,1)$ identity tensor can be viewed as a map
 			\[
-				V\to V,\qquad V^* \to V^*
+				\binom{1}{1}:
+				V\to V,\qquad 
+				\binom{1}{1}:
+				V^* \to V^*
 			\]
 			or equivalently, as a bilinear map
 			\[
+				\binom{1}{1}:
 				V^*\times V\to \R
 			\]
 
 			We start with $\Id_1:V\to V$. 
-
 			For any $v\in V$, then
 			\[
 				\Id_1[v]= v.
